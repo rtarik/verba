@@ -84,133 +84,254 @@
     {
       "unit": 5,
       "level": "A2",
+      "title": "Hoy he trabajado",
+      "titleEn": "Today I have worked",
+      "focus": [
+        "pretérito perfecto",
+        "past participles",
+        "ya, todavía, nunca",
+        "talking about today"
+      ],
+      "textIds": [],
+      "summaryEn": "The first past tense, and the one you hear most in Spain: 'he comido', '¿has visto?'. Built from 'haber' plus a participle, and used for anything still attached to today."
+    },
+    {
+      "unit": 6,
+      "level": "A2",
       "title": "El pasado",
       "titleEn": "The past",
       "focus": [
         "pretérito indefinido",
         "time markers",
-        "irregular past forms"
+        "irregular past forms",
+        "telling a story"
       ],
-      "summaryEn": "Talking about finished events: what you did yesterday, last week, last year.",
-      "textIds": []
+      "textIds": [],
+      "summaryEn": "The tense for finished events at a definite time — 'ayer comí', 'el año pasado fui a México'. Regular forms first, then the handful of irregulars that carry most of the weight."
     },
     {
-      "unit": 6,
+      "unit": 7,
       "level": "A2",
       "title": "Cuando era pequeño",
       "titleEn": "When I was small",
       "focus": [
         "imperfecto",
         "indefinido vs imperfecto",
-        "describing the past"
+        "describing the past",
+        "childhood and habits"
       ],
-      "summaryEn": "The second past tense, for how things used to be — and when to use which.",
-      "textIds": []
-    },
-    {
-      "unit": 7,
-      "level": "A2",
-      "title": "Planes",
-      "titleEn": "Plans",
-      "focus": [
-        "future tense",
-        "conditional",
-        "por vs para",
-        "ir a + infinitive"
-      ],
-      "summaryEn": "Making plans, talking about what will happen and what would happen.",
-      "textIds": []
+      "textIds": [],
+      "summaryEn": "The second past tense, for how things used to be and what was going on. The forms are easy; choosing between this and the indefinido is the real work of A2."
     },
     {
       "unit": 8,
       "level": "A2",
-      "title": "De viaje",
-      "titleEn": "Travelling",
+      "title": "Ahora mismo",
+      "titleEn": "Right now",
       "focus": [
-        "direct and indirect objects",
-        "comparatives",
-        "superlatives"
+        "estar + gerundio",
+        "adverbs in -mente",
+        "frequency",
+        "what is happening now"
       ],
-      "summaryEn": "Travel, transport and hotels, with the pronouns that replace things already mentioned.",
-      "textIds": []
+      "textIds": [],
+      "summaryEn": "'Estoy comiendo' — what is happening at this very moment, and the adverbs that say how often and how something is done."
     },
     {
       "unit": 9,
+      "level": "A2",
+      "title": "Planes",
+      "titleEn": "Plans",
+      "focus": [
+        "ir a + infinitive",
+        "future tense",
+        "conditional",
+        "por vs para"
+      ],
+      "textIds": [],
+      "summaryEn": "Three ways to talk about what has not happened yet, from the everyday 'voy a' to the full future tense, plus the conditional for what would happen."
+    },
+    {
+      "unit": 10,
+      "level": "A2",
+      "title": "De viaje",
+      "titleEn": "Travelling",
+      "focus": [
+        "direct and indirect object pronouns",
+        "comparatives and superlatives",
+        "affirmative imperative",
+        "usted and formality"
+      ],
+      "textIds": [],
+      "summaryEn": "Replacing nouns with pronouns ('lo, la, se lo'), comparing things, giving directions and instructions, and the formal 'usted' you need with strangers."
+    },
+    {
+      "unit": 11,
       "level": "B1",
       "title": "Ojalá",
       "titleEn": "If only",
       "focus": [
         "present subjunctive",
-        "expressing wishes",
-        "doubt and emotion"
+        "wishes and hopes",
+        "querer que",
+        "ojalá"
       ],
-      "summaryEn": "The subjunctive, introduced gently: wishes, doubts and feelings about things not yet real.",
-      "textIds": []
+      "textIds": [],
+      "summaryEn": "A whole new verb mood. Spanish reaches for it when a sentence is about wanting, hoping or asking rather than stating. Starts with the forms and the clearest triggers."
     },
     {
-      "unit": 10,
+      "unit": 12,
       "level": "B1",
-      "title": "Si pudiera",
-      "titleEn": "If I could",
+      "title": "No creo que",
+      "titleEn": "I don't think that",
       "focus": [
-        "imperfect subjunctive",
-        "conditional sentences",
-        "hypotheticals"
+        "subjunctive with doubt",
+        "emotion and judgement",
+        "impersonal expressions",
+        "subjunctive vs indicative"
       ],
-      "summaryEn": "Talking about what would happen if things were different.",
-      "textIds": []
+      "textIds": [],
+      "summaryEn": "The subjunctive after doubt, feelings and opinions — and the contrast that decides everything: 'creo que es' but 'no creo que sea'."
     },
     {
-      "unit": 11,
+      "unit": 13,
+      "level": "B1",
+      "title": "Cuando llegues",
+      "titleEn": "When you arrive",
+      "focus": [
+        "subjunctive after conjunctions",
+        "cuando, aunque, para que",
+        "negative imperative",
+        "referring to the future"
+      ],
+      "textIds": [],
+      "summaryEn": "Why 'cuando llego' and 'cuando llegue' mean different things, plus telling someone *not* to do something — which borrows the same subjunctive forms."
+    },
+    {
+      "unit": 14,
+      "level": "B1",
+      "title": "Ya había pasado",
+      "titleEn": "It had already happened",
+      "focus": [
+        "pluscuamperfecto",
+        "futuro perfecto",
+        "condicional compuesto",
+        "sequencing events"
+      ],
+      "textIds": [],
+      "summaryEn": "Putting events in order when one happened before another — 'ya había salido cuando llegué' — and the compound tenses for what will have, or would have, happened."
+    },
+    {
+      "unit": 15,
+      "level": "B1",
+      "title": "Se dice que",
+      "titleEn": "They say that",
+      "focus": [
+        "impersonal and passive se",
+        "reported speech",
+        "perífrasis verbales",
+        "acabar de, seguir, volver a"
+      ],
+      "textIds": [],
+      "summaryEn": "Saying things without saying who did them, reporting what other people said, and the verb chains Spanish leans on constantly: 'acabo de llegar', 'sigo pensando'."
+    },
+    {
+      "unit": 16,
       "level": "B1",
       "title": "Opiniones",
       "titleEn": "Opinions",
       "focus": [
         "relative clauses",
+        "que, quien, cuyo, el que",
         "connectors",
         "agreeing and disagreeing"
       ],
-      "summaryEn": "Holding an opinion in Spanish: linking ideas and building longer arguments.",
-      "textIds": []
+      "textIds": [],
+      "summaryEn": "Joining short sentences into longer, more natural ones, and the connectors that let you build an argument instead of a list."
     },
     {
-      "unit": 12,
+      "unit": 17,
+      "level": "B2",
+      "title": "Si pudiera",
+      "titleEn": "If I could",
+      "focus": [
+        "imperfect subjunctive",
+        "second conditional",
+        "hypotheticals",
+        "polite requests"
+      ],
+      "textIds": [],
+      "summaryEn": "'Si tuviera tiempo, iría' — talking about what is not the case. Also the source of the most polite way to ask for anything: 'quisiera'."
+    },
+    {
+      "unit": 18,
+      "level": "B2",
+      "title": "Si hubiera sabido",
+      "titleEn": "If I had known",
+      "focus": [
+        "pluperfect subjunctive",
+        "third conditional",
+        "condicional compuesto",
+        "regret and hindsight"
+      ],
+      "textIds": [],
+      "summaryEn": "The hardest structure in everyday Spanish, and the one that unlocks regret: 'si hubiera sabido, habría venido'. All three conditional types side by side."
+    },
+    {
+      "unit": 19,
       "level": "B2",
       "title": "El mundo del trabajo",
       "titleEn": "The world of work",
       "focus": [
         "formal register",
-        "reported speech",
-        "passive constructions"
+        "professional correspondence",
+        "circumlocution",
+        "precision and hedging"
       ],
-      "summaryEn": "Professional Spanish: emails, meetings and reporting what other people said.",
-      "textIds": []
+      "textIds": [],
+      "summaryEn": "Spanish at work — how formality reshapes verb forms, vocabulary and sentence length, and how to say something carefully rather than bluntly."
     },
     {
-      "unit": 13,
+      "unit": 20,
       "level": "B2",
       "title": "Debate",
       "titleEn": "Debate",
       "focus": [
         "concession",
+        "aunque and a pesar de",
         "advanced connectors",
-        "nuance and hedging"
+        "structuring an argument"
       ],
-      "summaryEn": "Arguing a case, conceding a point, and the connectors that make writing flow.",
-      "textIds": []
+      "textIds": [],
+      "summaryEn": "Conceding a point before making your own, and the discourse markers that hold a long argument together."
     },
     {
-      "unit": 14,
+      "unit": 21,
+      "level": "B2",
+      "title": "Matices",
+      "titleEn": "Shades of meaning",
+      "focus": [
+        "subjunctive in relative clauses",
+        "ser vs estar advanced",
+        "past tense aspect",
+        "nuance"
+      ],
+      "textIds": [],
+      "summaryEn": "Where more than one form is grammatical and the choice changes the meaning — 'busco un piso que tiene' against 'que tenga'. This is what separates fluent Spanish from merely correct Spanish."
+    },
+    {
+      "unit": 22,
       "level": "B2",
       "title": "Cultura y literatura",
       "titleEn": "Culture and literature",
       "focus": [
         "literary tenses",
         "register shifts",
-        "idiom and metaphor"
+        "idiom and metaphor",
+        "reading real texts"
       ],
-      "summaryEn": "Reading Spanish as it is actually written, across registers and regions.",
-      "textIds": []
+      "textIds": [],
+      "summaryEn": "Reading Spanish written for Spanish speakers rather than for learners — the tenses that survive mainly in writing, and the idioms that refuse to translate."
     }
   ]
 }

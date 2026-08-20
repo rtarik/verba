@@ -202,27 +202,23 @@ smoothness while visible, `timeupdate` as the floor when it is not.
 Vocabulary-controlled and cumulative. Each text introduces **8–12 new lemmas**; everything else
 must already have appeared. Text length grows with level.
 
-| Unit | Focus | Words/text |
-|---|---|---|
-| A1 U1 | greetings, `ser`, pronouns, gender & articles | 40–60 |
-| A1 U2 | present tense, reflexives, telling the time | 30–45 |
-| A1 U3 | places, `hay` vs `estar`, directions, numbers | 60–80 |
-| A1 U4 | `gustar` properly, `querer`/`poder`, quantities | 70–90 |
-| A2 U5 | `pretérito indefinido` | 90–120 |
-| A2 U6 | `imperfecto`, and contrasting the two pasts | 110–140 |
-| A2 U7 | future, conditional, `por`/`para` | 130–160 |
-| A2 U8 | objects pronouns, comparatives, travel | 150–180 |
-| B1 U9 | present subjunctive: wishes, doubt, emotion | 170–200 |
-| B1 U10 | imperfect subjunctive, conditional sentences | 190–220 |
-| B1 U11 | relative clauses, connectors, opinions | 200+ |
-| B2 U12 | formal register, reported speech, passives | 220+ |
-| B2 U13 | concession, advanced connectors, hedging | 240+ |
-| B2 U14 | literary tenses, register, idiom | 260+ |
+**22 units, weighted toward the upper levels.** The original plan gave A1 four units and B1/B2
+three each, which had it backwards: the higher levels carry more grammar, not less. A structure
+audit found several major structures with nowhere to live —
+`pretérito perfecto` and `estar + gerundio` (absent from A2 entirely), the negative imperative
+and subjunctive after conjunctions (B1), and `pluperfect subjunctive` with the third conditional
+(B2), which is the structure that most defines the level. Reported speech was also parked in B2
+when it belongs in B1, and the imperfect subjunctive sat at B1 before the present subjunctive had
+been consolidated.
 
-All 14 units are declared in `curriculum.json` from the start, with the unwritten ones carrying
-an empty `textIds`. The library renders those as **Coming soon** rather than hiding them, so the
-shape of the whole course is visible on day one. Word counts above are targets: texts should
-lengthen as the cumulative lexicon grows, leaning on words already met rather than on new ones.
+| Level | Units | Territory |
+|---|---|---|
+| A1 | 1–4 | ser/estar, present tense, gender, articles, gustar, querer/poder, numbers, time, hay |
+| A2 | 5–10 | perfecto, indefinido, imperfecto and the contrast, present continuous, future, conditional, object pronouns, imperative, usted |
+| B1 | 11–16 | present subjunctive across its triggers, negative imperative, compound tenses, passive/impersonal se, reported speech, relative clauses |
+| B2 | 17–22 | imperfect and pluperfect subjunctive, all three conditionals, formal register, argumentation, nuance, literary reading |
+
+At six texts per unit that is **132 texts** at completion. A1 is done (24).
 
 ### 2.2 The progressive guarantee, machine-checked
 
