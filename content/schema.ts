@@ -102,11 +102,19 @@ export const zText = z
     }
   })
 
+/**
+ * Shared dictionary, keyed by *surface form* as it appears in the texts
+ * ("llamo", "llamas", "llamó"), each pointing at its dictionary form.
+ *
+ * This is where vocabulary lives. A text only needs `glosses` entries for
+ * words whose meaning is specific to that context — everything else resolves
+ * here, so text 6 does not have to re-gloss "mi", "es", "y" and "de".
+ */
 export const zLexiconEntry = z.object({
   lemma: z.string().min(1),
   gloss: z.string().min(1),
   pos: z.string().min(1),
-  level: z.enum(['A1', 'A2', 'B1']),
+  level: z.enum(['A1', 'A2', 'B1']).optional(),
   note: z.string().optional(),
 })
 export const zLexicon = z.record(z.string(), zLexiconEntry)

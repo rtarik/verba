@@ -5,23 +5,20 @@ import { coverage, tally, useVocab, vocab, type Status } from '@/lib/vocab'
 
 const COLORS: Record<Status, string> = {
   known: 'var(--accent)',
-  learning: 'var(--learning)',
   unknown: 'var(--unknown-line)',
-  ignored: 'var(--edge)',
 }
-const FILTERS: Array<Status | 'all'> = ['all', 'learning', 'known', 'unknown', 'ignored']
+const FILTERS: Array<Status | 'all'> = ['all', 'unknown', 'known']
 
 export default function Stats() {
   const state = useVocab()
   const counts = tally(state)
   const fileInput = useRef<HTMLInputElement>(null)
-  const [filter, setFilter] = useState<Status | 'all'>('learning')
+  const [filter, setFilter] = useState<Status | 'all'>('unknown')
   const [query, setQuery] = useState('')
   const [notice, setNotice] = useState<string | null>(null)
 
   const totalInCorpus = Object.keys(lexicon).length
   const encountered = Object.keys(state).length
-  const solid = counts.known + counts.ignored
 
   const rows = useMemo(() => {
     const q = query.trim().toLowerCase()
@@ -62,7 +59,7 @@ export default function Stats() {
       <div className="mt-6 grid grid-cols-3 gap-3">
         {[
           { label: 'Words known', value: counts.known },
-          { label: 'Learning', value: counts.learning },
+          { label: 'Still new', value: counts.unknown },
           { label: 'Encountered', value: `${encountered}/${totalInCorpus}` },
         ].map((s) => (
           <div key={s.label} className="rounded-lg px-4 py-3" style={{ background: 'var(--surface)', border: '1px solid var(--edge)' }}>
@@ -75,12 +72,12 @@ export default function Stats() {
       {encountered > 0 && (
         <div className="mt-4">
           <div className="flex h-2.5 overflow-hidden rounded" style={{ background: 'var(--edge)' }}>
-            {(['known', 'learning', 'unknown', 'ignored'] as Status[]).map((s) =>
+            {(['known', 'unknown'] as Status[]).map((s) =>
               counts[s] ? <div key={s} style={{ width: `${(counts[s] / encountered) * 100}%`, background: COLORS[s] }} /> : null
             )}
           </div>
           <div className="mt-2 flex flex-wrap gap-3 text-[11px]" style={{ color: 'var(--ink-soft)' }}>
-            {(['known', 'learning', 'unknown', 'ignored'] as Status[]).map((s) => (
+            {(['known', 'unknown'] as Status[]).map((s) => (
               <span key={s} className="flex items-center gap-1.5">
                 <span className="inline-block h-2 w-2 rounded-full" style={{ background: COLORS[s] }} />
                 {s} {counts[s]}
@@ -92,7 +89,7 @@ export default function Stats() {
 
       <h2 className="mt-10 text-lg font-semibold" style={{ fontFamily: 'var(--font-reading)' }}>Readiness by text</h2>
       <p className="mt-1 text-sm" style={{ color: 'var(--ink-soft)' }}>
-        How much of each text you already know. {solid > 0 ? 'Aim to read where this is high.' : 'Mark words as you read to fill this in.'}
+        How much of each text you already know. {counts.known > 0 ? 'Aim to read where this is high.' : 'Look words up as you read to fill this in.'}
       </p>
       <ul className="mt-4 space-y-2">
         {readingOrder.map((t) => {

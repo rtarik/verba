@@ -3,6 +3,9 @@ import type { Phrase, Text, WordToken } from '@content/schema'
 import { useVocab, vocab } from '@/lib/vocab'
 import { HoverCard, type HoverTarget } from './HoverCard'
 
+/** How long the cursor must rest on a word before it counts as looked up. */
+const DWELL_MS = 400
+
 /** Word index -> the phrase containing it, so hovering lights the whole group. */
 function phraseIndex(phrases: Phrase[]): Map<number, Phrase> {
   const m = new Map<number, Phrase>()
@@ -14,19 +17,19 @@ export function TextBody({
   text,
   current,
   playing,
-  onPlayFromHere,
   fontSize,
 }: {
   text: Text
   current: number
   playing: boolean
-  onPlayFromHere: (i: number) => void
   fontSize: number
 }) {
   const state = useVocab()
   const phrases = useMemo(() => phraseIndex(text.phrases), [text])
+  const words = useMemo(() => text.tokens.filter((t): t is WordToken => t.k === 'w'), [text])
   const [target, setTarget] = useState<HoverTarget | null>(null)
   const closeTimer = useRef<number | null>(null)
+  const dwellTimer = useRef<number | null>(null)
   const container = useRef<HTMLDivElement>(null)
 
   // Keep the spoken word on screen without yanking the page around.
@@ -40,13 +43,34 @@ export function TextBody({
     }
   }, [current, playing])
 
-  const open = (word: WordToken, el: HTMLElement) => {
+  useEffect(() => () => {
     if (closeTimer.current) window.clearTimeout(closeTimer.current)
-    setTarget({ word, phrase: phrases.get(word.i) ?? null, rect: el.getBoundingClientRect() })
+    if (dwellTimer.current) window.clearTimeout(dwellTimer.current)
+  }, [])
+
+  const enter = (word: WordToken, el: HTMLElement) => {
+    if (closeTimer.current) window.clearTimeout(closeTimer.current)
+    if (dwellTimer.current) window.clearTimeout(dwellTimer.current)
+
+    const phrase = phrases.get(word.i) ?? null
+    setTarget({ word, phrase, rect: el.getBoundingClientRect() })
+
+    // Looking a word up is what marks it known. The dwell delay matters: without
+    // it, sweeping the cursor across a line would mark the whole line known.
+    dwellTimer.current = window.setTimeout(() => {
+      const lemmas = phrase
+        ? words.filter((w) => w.i >= phrase.from && w.i <= phrase.to && w.pos !== 'name').map((w) => w.lemma)
+        : word.pos === 'name'
+          ? []
+          : [word.lemma]
+      if (lemmas.length) vocab.markKnown(lemmas)
+    }, DWELL_MS)
   }
-  const scheduleClose = () => {
+
+  const leave = () => {
+    if (dwellTimer.current) window.clearTimeout(dwellTimer.current)
     if (closeTimer.current) window.clearTimeout(closeTimer.current)
-    closeTimer.current = window.setTimeout(() => setTarget(null), 140)
+    closeTimer.current = window.setTimeout(() => setTarget(null), 120)
   }
 
   const hoveredPhrase = target?.phrase ?? null
@@ -56,15 +80,17 @@ export function TextBody({
       <div
         ref={container}
         style={{ fontFamily: 'var(--font-reading)', fontSize, lineHeight: 1.95 }}
-        onMouseLeave={scheduleClose}
+        onMouseLeave={leave}
       >
         {text.tokens.map((t, k) => {
           if (t.k === 'br') return <div key={k} style={{ height: '1.1em' }} />
           if (t.k === 'p') return <span key={k}>{t.s}</span>
 
-          const status = state[t.lemma]?.status ?? 'unknown'
+          // Proper nouns are not vocabulary — they are skipped by the tracker, so
+          // if they were tinted they would stay tinted forever. Render them plain
+          // while keeping them hoverable for the gloss.
+          const status = t.pos === 'name' ? 'known' : state[t.lemma]?.status ?? 'unknown'
           const inPhrase = hoveredPhrase && t.i >= hoveredPhrase.from && t.i <= hoveredPhrase.to
-          const isPlaying = playing && t.i === current
 
           return (
             <span
@@ -74,11 +100,11 @@ export function TextBody({
                 'w',
                 `w-${status}`,
                 inPhrase ? 'w-inphrase' : '',
-                isPlaying ? 'w-playing' : '',
+                playing && t.i === current ? 'w-playing' : '',
               ].join(' ')}
-              onMouseEnter={(e) => open(t, e.currentTarget)}
-              onClick={() => vocab.cycle(t.lemma)}
-              title={t.gloss}
+              onMouseEnter={(e) => enter(t, e.currentTarget)}
+              onMouseLeave={leave}
+              onClick={() => t.pos !== 'name' && vocab.toggle(t.lemma)}
             >
               {t.s}
             </span>
@@ -86,14 +112,7 @@ export function TextBody({
         })}
       </div>
 
-      {target && (
-        <HoverCard
-          target={target}
-          onClose={scheduleClose}
-          onPlayFromHere={onPlayFromHere}
-          hasAudio={Boolean(text.audio)}
-        />
-      )}
+      {target && <HoverCard target={target} />}
     </>
   )
 }

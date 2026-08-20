@@ -118,9 +118,15 @@ verba/
 
 ### 1.3 GitHub Pages specifics
 
-- Name is **Verba**, matching the existing folder. Site serves from
-  `https://<user>.github.io/verba/`, so Vite gets `base: '/verba/'` and every audio path is
-  resolved relative to it (never a hardcoded leading `/`).
+- Name is **Verba**, matching the existing folder. Vite uses `base: './'` rather than a
+  hardcoded `/verba/`: all emitted paths are relative, so the built site runs from a Pages
+  subpath or any other static host. Verified by serving `dist/` at a `/verba/` subpath — index,
+  JS, CSS and MP3 all 200, audio resolving as `./audio/...`. Nothing is coupled to the repo name.
+- **Opening from disk needs its own build.** Relative paths are necessary but not sufficient:
+  browsers block ES module *loading* over `file://` (opaque origin -> CORS failure), so the
+  code-split module build renders a blank page when double-clicked. `npm run build:offline`
+  emits a single self-contained `index.html` with CSS and JS inlined and code splitting off;
+  an inline module has nothing to fetch. Audio stays external beside it.
 - SPA routing: use `HashRouter`. GH Pages has no rewrite rules, so a deep link to
   `/verba/read/a1-u1-01` would 404 on refresh with a normal router. Hash routing sidesteps this
   entirely. (Alternative — copy `index.html` to `404.html` — gives cleaner URLs; easy to switch later.)
@@ -128,13 +134,17 @@ verba/
 
 ### 1.4 Vocabulary + stats engine
 
-Status per lemma, cycled by clicking a word — the LingQ/Readlang model, which works because it
-turns reading itself into the tracking mechanism:
+Two states per lemma: `unknown` (default) and `known`.
 
-`unknown` (default) → `learning` → `known` → `ignored`
+Looking a word up is what teaches it, so **resting the cursor on a word marks it known** and it
+loses its highlight; hovering any word of a phrase covers the whole phrase. Clicking toggles a
+word back. There is no intermediate "learning" tier — reading is the review.
 
-- Unknown/learning words get a subtle tint in the text; known words render plain. Progress
-  becomes visible *in the text you're reading*, not just on a stats page.
+- Unknown words get a subtle tint; known words render plain. Progress becomes visible *in the
+  text you're reading*, not just on a stats page.
+- A short dwell delay guards the auto-marking, so sweeping the cursor across a line does not
+  mark the line known. Verified: a 90ms-per-word sweep marks nothing; a 700ms rest marks.
+- The lookup card is non-interactive by design, so it never intercepts a click on the text.
 - `localStorage` holds `{ lemma: { status, firstSeen, lastSeen, seenCount } }`.
 - Export/import as JSON so a browser reset doesn't wipe months of progress.
 
@@ -241,6 +251,21 @@ texts that use it. Cross-linked both ways with `grammarRefs`.
 
 Build a **vertical slice first**: Unit 1 complete (6 texts + audio + grammar docs + lexicon)
 before scaling out. If anything about the pipeline is wrong, it surfaces at 6 texts, not 60.
+
+**Status: Unit 1 complete.** 6 texts, 231 words, 81 lemmas, 7 grammar pages, 824 KB of audio
+(137 KB average per text — extrapolating to ~8 MB for a 60-text course, comfortably inside the
+GitHub Pages budget). All six passed the progressive-vocabulary gate on the first run, and all
+six passed the TTS word-count assertion, dialogue with em-dashes included.
+
+Vocabulary pacing after the foundational first text: 10, 10, 11, 12, 12 new lemmas — inside the
+8–12 target throughout.
+
+**Structural change made during authoring.** `content/lexicon.json` was originally keyed by
+lemma and held only curated overrides, which meant each text had to gloss *every* word it
+contained, including ones taught units earlier — text 6 would have re-glossed `mi`, `es`, `y`
+and `de`. It is now the shared dictionary keyed by **surface form**, and a text's own `glosses`
+carry only context-specific meaning. This was worth fixing before writing five texts rather
+than after.
 
 ---
 

@@ -1,0 +1,19 @@
+{
+  "id": "a1-u1-06-en-mi-clase",
+  "level": "A1",
+  "unit": 1,
+  "order": 6,
+  "title": "En mi clase",
+  "titleEn": "In my class",
+  "blurbEn": "The last text of the unit. It introduces 'hay' — one small word that covers both 'there is' and 'there are'.",
+  "grammarRefs": ["hay", "plurals"],
+  "body": "En mi clase hay muchos estudiantes. Hay chicos y chicas de países diferentes.\n\nLa profesora se llama Marta. Es española y habla muy despacio.\n\nEn la mesa hay libros y un ordenador.\n\nMe gusta mucho mi clase.",
+  "translationEn": "In my class there are many students. There are boys and girls from different countries.\n\nThe teacher is called Marta. She is Spanish and she speaks very slowly.\n\nOn the table there are books and a computer.\n\nI like my class a lot.",
+  "newLemmas": ["clase", "haber", "chico", "chica", "diferente", "profesor", "hablar", "despacio", "mesa", "libro", "ordenador", "gustar"],
+  "glosses": {
+    "española": { "lemma": "español", "gloss": "Spanish", "pos": "adjective", "note": "Nationalities are not capitalised in Spanish." }
+  },
+  "phrases": [
+    { "s": "Me gusta", "gloss": "I like", "note": "Literally 'it pleases me'. The thing you like is the subject, so it is 'me gusta mi clase', not 'yo gusto'." }
+  ]
+}

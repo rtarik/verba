@@ -1,0 +1,22 @@
+{
+  "id": "a1-u1-03-de-donde-eres",
+  "level": "A1",
+  "unit": 1,
+  "order": 3,
+  "title": "¿De dónde eres?",
+  "titleEn": "Where are you from?",
+  "blurbEn": "Ana's friends come from three different countries. This text introduces the subject pronouns and the word 'the'.",
+  "grammarRefs": ["subject-pronouns", "ser-basics"],
+  "body": "Yo soy de España. Mi amigo Pablo es de México. Él vive en una ciudad muy grande.\n\nMi amiga Sofía es de Argentina. Ella es estudiante.\n\nNosotros somos amigos, pero no vivimos en el mismo país.\n\n¿Y tú? ¿De dónde eres?",
+  "translationEn": "I am from Spain. My friend Pablo is from Mexico. He lives in a very big city.\n\nMy friend Sofía is from Argentina. She is a student.\n\nWe are friends, but we do not live in the same country.\n\nAnd you? Where are you from?",
+  "newLemmas": ["yo", "amigo", "él", "ella", "estudiante", "nosotros", "no", "el", "mismo", "país"],
+  "glosses": {
+    "amiga": { "lemma": "amigo", "gloss": "friend (female)", "pos": "noun", "note": "Same word as 'amigo', ending in -a because Sofía is female." },
+    "el": { "lemma": "el", "gloss": "the", "pos": "article", "note": "'el' is 'the' for masculine nouns like 'país'." }
+  },
+  "phrases": [
+    { "s": "soy de", "gloss": "I am from", "note": "'ser' + 'de' is how you give where someone is from." },
+    { "s": "no vivimos", "gloss": "we do not live", "note": "To make a sentence negative, put 'no' straight before the verb. Nothing else changes." },
+    { "s": "¿De dónde eres?", "gloss": "Where are you from?" }
+  ]
+}

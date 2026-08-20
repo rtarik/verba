@@ -1,0 +1,20 @@
+{
+  "id": "a1-u1-02-mi-familia",
+  "level": "A1",
+  "unit": 1,
+  "order": 2,
+  "title": "Mi familia",
+  "titleEn": "My family",
+  "blurbEn": "Ana introduces her family. You meet possessives, and the Spanish way of giving someone's age — which is not the English way.",
+  "grammarRefs": ["ser-basics", "possessives"],
+  "body": "Mi familia es pequeña. Mi padre se llama Carlos y mi madre se llama Elena.\n\nTambién tengo una hermana. Se llama Lucía y tiene doce años. Es muy simpática.\n\nMi padre trabaja en Madrid. Mi madre trabaja en casa.\n\n¿Y tu familia? ¿Es grande o pequeña?",
+  "translationEn": "My family is small. My father is called Carlos and my mother is called Elena.\n\nI also have a sister. She is called Lucía and she is twelve years old. She is very friendly.\n\nMy father works in Madrid. My mother works at home.\n\nAnd your family? Is it big or small?",
+  "newLemmas": ["familia", "padre", "madre", "también", "hermana", "doce", "año", "trabajar", "tu", "o"],
+  "glosses": {
+    "tu": { "lemma": "tu", "gloss": "your", "pos": "possessive", "note": "No accent here. 'tu' means 'your'; 'tú' with an accent means 'you'." }
+  },
+  "phrases": [
+    { "s": "Se llama", "gloss": "is called", "note": "The same pattern as 'me llamo', but about someone else.", "at": 6 },
+    { "s": "tiene doce años", "gloss": "is twelve years old", "note": "Spanish says you *have* years rather than that you *are* a number of years old." }
+  ]
+}

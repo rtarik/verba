@@ -1,0 +1,22 @@
+{
+  "id": "a1-u1-05-que-tal",
+  "level": "A1",
+  "unit": 1,
+  "order": 5,
+  "title": "¿Qué tal?",
+  "titleEn": "How are you?",
+  "blurbEn": "A short conversation. Here you meet 'estar', the second Spanish verb for 'to be' — the one used for how someone feels.",
+  "grammarRefs": ["estar-basics", "ser-basics"],
+  "body": "—Hola, Ana. ¿Qué tal estás?\n\n—Muy bien, gracias. ¿Y tú?\n\n—Hoy estoy un poco cansada.\n\n—¿Por qué?\n\n—Porque trabajo mucho.\n\n—Adiós, Ana.",
+  "translationEn": "\"Hello, Ana. How are you?\"\n\n\"Very well, thank you. And you?\"\n\n\"Today I am a little tired.\"\n\n\"Why?\"\n\n\"Because I work a lot.\"\n\n\"Goodbye, Ana.\"",
+  "newLemmas": ["qué", "tal", "estar", "bien", "gracias", "hoy", "poco", "cansado", "por", "porque", "mucho", "adiós"],
+  "glosses": {
+    "estás": { "lemma": "estar", "gloss": "you are", "pos": "verb", "note": "From 'estar', not 'ser'. Feelings and moods use 'estar'." },
+    "cansada": { "lemma": "cansado", "gloss": "tired", "pos": "adjective", "note": "Ends in -a because Ana is female." }
+  },
+  "phrases": [
+    { "s": "¿Qué tal estás?", "gloss": "How are you?", "note": "The everyday greeting. '¿Qué tal?' on its own works too." },
+    { "s": "un poco", "gloss": "a little" },
+    { "s": "¿Por qué?", "gloss": "Why?", "note": "Two words with an accent. Written as one word without an accent, 'porque', it means 'because'." }
+  ]
+}

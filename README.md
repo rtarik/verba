@@ -19,8 +19,8 @@ without touching a line of app code, and it is validated on its own.
 content/
   schema.ts      one zod definition; the app derives its types from it
   curriculum.json  unit and reading order
-  lexicon.json     curated glosses (optional overrides)
-  texts/           authoring sources: prose + glosses
+  lexicon.json     shared dictionary, keyed by surface form
+  texts/           authoring sources: prose + context-specific glosses
   audio/           timing sidecars written by the TTS script
   grammar/         markdown reference pages
   build/           compiled output the app imports (generated, gitignored)
@@ -49,7 +49,18 @@ Adding a text:
 npm run content:new -- --unit 1 --id mi-familia --title "Mi familia"
 ```
 
-Then fill in `body`, `glosses`, and `phrases`, and run `npm run content:check`.
+Then fill in `body` and `phrases`, add any new words to `content/lexicon.json`, and run
+`npm run content:check`.
+
+### Where vocabulary lives
+
+`content/lexicon.json` is the shared dictionary, keyed by the **surface form** as it appears in
+the text (`llamo`, `llamas`, `llama`), each pointing at its dictionary form. Put every new word
+there and later texts inherit it automatically.
+
+A text's own `glosses` are only for meaning that is specific to *that* context — for example
+`una` carrying the note "feminine, because 'ciudad' is a feminine noun". Without this split,
+text 6 would have to re-gloss `mi`, `es`, `y` and `de`.
 
 ### What the checker enforces
 
@@ -78,8 +89,49 @@ mapping and refuses to write audio if it breaks. Write numerals as words (`veint
 
 Generated MP3s and sidecars are committed, so CI needs neither Python nor network access.
 
+## Opening it without a server
+
+`npm run dev` and `npm run preview` both need a local server. To get a copy you can just
+double-click:
+
+```bash
+npm run build:offline
+open dist-offline/index.html
+```
+
+That emits a single self-contained `index.html` (~470 KB) with the CSS and JS inlined and no
+code splitting, plus the `audio/` folder beside it. Keep the two together.
+
+**Why a separate build:** browsers block ES module loading over `file://` — each file is an
+opaque origin, so a `<script type="module" src="...">` fails CORS and the page renders blank.
+The normal build is code-split and module-based, so it cannot be opened directly. The offline
+build inlines the module instead, and an inline module needs no fetch.
+
+**Implementation note for anyone touching `scripts/build-offline.ts`:** the inlining must use a
+replacer *function*, never a replacement string. In a string replacement `$&`, `$1` and
+`` $` `` are substitution patterns, and the React and remark bundles contain `$&` inside their
+own `.replace()` calls — a string replacement rewrites those and silently corrupts the bundle.
+
 ## Deployment
 
-Pushing to `main` runs the content check, builds, and publishes to GitHub Pages. The site is
-served from a subpath, set as `base: '/verba/'` in `vite.config.ts` — rename the repo and that
-value has to change with it.
+Pushing to `main` runs the content check, builds, and publishes to GitHub Pages.
+
+`vite.config.ts` uses `base: './'`, so every emitted path is relative and the built site runs
+unchanged from any of:
+
+- `file:///path/to/dist/index.html` — just open it, no server
+- `https://<user>.github.io/verba/` — or any other subpath
+- any static host at any depth
+
+Routing is hash-based, so no server rewrites are needed and refreshing a deep link works
+everywhere. Nothing is coupled to the repository name.
+
+## Reading model
+
+A word starts **unknown** and highlighted. Resting the cursor on it shows what it means and
+marks it **known**, so the highlight disappears — the text visibly empties out as you learn.
+Hovering any word of a phrase covers the whole phrase. Clicking a word toggles it back.
+
+The lookup card is deliberately non-interactive (`pointer-events: none`) so it can never sit
+between the cursor and the text. There is a short dwell delay before a word counts as looked
+up, so sweeping the cursor across a line does not mark the line known.

@@ -5,8 +5,21 @@
       "level": "A1",
       "title": "Hola, ¿qué tal?",
       "titleEn": "Hello, how are you?",
-      "focus": ["ser", "subject pronouns", "noun gender", "articles", "introducing yourself"],
-      "textIds": ["a1-u1-01-me-llamo-ana"]
+      "focus": [
+        "ser",
+        "subject pronouns",
+        "noun gender",
+        "articles",
+        "introducing yourself"
+      ],
+      "textIds": [
+        "a1-u1-01-me-llamo-ana",
+        "a1-u1-02-mi-familia",
+        "a1-u1-03-de-donde-eres",
+        "a1-u1-04-mis-amigos",
+        "a1-u1-05-que-tal",
+        "a1-u1-06-en-mi-clase"
+      ]
     }
   ]
 }

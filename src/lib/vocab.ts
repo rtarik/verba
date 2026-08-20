@@ -1,16 +1,17 @@
 /**
  * Vocabulary tracking, persisted to localStorage.
  *
+ * Two states only. A word starts unknown and highlighted; looking it up (or
+ * clicking it) marks it known and it drops its highlight. There is no
+ * intermediate "learning" tier — reading is the review.
+ *
  * There is no backend, so this store is the entire user record. It is exposed
  * through useSyncExternalStore so the reader, the stats page, and the library
- * all reflect a status change the moment it happens.
+ * all reflect a change the moment it happens.
  */
 import { useSyncExternalStore } from 'react'
 
-export type Status = 'unknown' | 'learning' | 'known' | 'ignored'
-
-/** Click order. 'ignored' is reachable deliberately, not by cycling past 'known'. */
-const CYCLE: Status[] = ['unknown', 'learning', 'known']
+export type Status = 'unknown' | 'known'
 
 export interface Record_ {
   status: Status
@@ -27,7 +28,15 @@ const today = () => new Date().toISOString().slice(0, 10)
 function load(): VocabState {
   try {
     const raw = localStorage.getItem(KEY)
-    return raw ? (JSON.parse(raw) as VocabState) : {}
+    if (!raw) return {}
+    const parsed = JSON.parse(raw) as VocabState
+    // Older saves used 'learning' / 'ignored'; fold them into the two-state model.
+    for (const rec of Object.values(parsed)) {
+      if (rec.status !== 'known' && rec.status !== 'unknown') {
+        rec.status = (rec.status as string) === 'learning' ? 'known' : 'unknown'
+      }
+    }
+    return parsed
   } catch {
     return {}
   }
@@ -55,13 +64,6 @@ export const vocab = {
 
   statusOf: (lemma: string): Status => state[lemma]?.status ?? 'unknown',
 
-  /** Advance a word one step: unknown -> learning -> known -> unknown. */
-  cycle(lemma: string) {
-    const cur = state[lemma]?.status ?? 'unknown'
-    const next = cur === 'ignored' ? 'unknown' : CYCLE[(CYCLE.indexOf(cur) + 1) % CYCLE.length]
-    vocab.setStatus(lemma, next)
-  },
-
   setStatus(lemma: string, status: Status) {
     const prev = state[lemma]
     commit({
@@ -73,6 +75,28 @@ export const vocab = {
         seenCount: prev?.seenCount ?? 1,
       },
     })
+  },
+
+  toggle(lemma: string) {
+    vocab.setStatus(lemma, (state[lemma]?.status ?? 'unknown') === 'known' ? 'unknown' : 'known')
+  },
+
+  /** Mark one or more lemmas known. Used when a word or phrase is looked up. */
+  markKnown(lemmas: string[]) {
+    const next = { ...state }
+    let changed = false
+    for (const lemma of lemmas) {
+      if (next[lemma]?.status === 'known') continue
+      const prev = next[lemma]
+      next[lemma] = {
+        status: 'known',
+        firstSeen: prev?.firstSeen ?? today(),
+        lastSeen: today(),
+        seenCount: prev?.seenCount ?? 1,
+      }
+      changed = true
+    }
+    if (changed) commit(next)
   },
 
   /** Record that these lemmas were encountered, without changing any status. */
@@ -97,24 +121,24 @@ export const vocab = {
 
   exportJSON: () => JSON.stringify({ version: 1, exported: new Date().toISOString(), vocab: state }, null, 2),
 
-  /** Merge an export back in, keeping the stronger status on conflict. */
+  /** Merge an export back in. Known always wins over unknown. */
   importJSON(raw: string): { added: number; merged: number } {
     const parsed = JSON.parse(raw) as { vocab?: VocabState }
     const incoming = parsed.vocab ?? (parsed as unknown as VocabState)
-    const rank: Record<Status, number> = { unknown: 0, ignored: 1, learning: 2, known: 3 }
     const next = { ...state }
     let added = 0
     let merged = 0
     for (const [lemma, rec] of Object.entries(incoming)) {
       if (!rec || typeof rec.status !== 'string') continue
+      const status: Status = (rec.status as string) === 'unknown' ? 'unknown' : 'known'
       if (!next[lemma]) {
-        next[lemma] = rec
+        next[lemma] = { ...rec, status }
         added++
       } else {
         merged++
         next[lemma] = {
           ...next[lemma],
-          status: rank[rec.status] > rank[next[lemma].status] ? rec.status : next[lemma].status,
+          status: next[lemma].status === 'known' || status === 'known' ? 'known' : 'unknown',
           seenCount: Math.max(next[lemma].seenCount, rec.seenCount ?? 0),
           firstSeen: [next[lemma].firstSeen, rec.firstSeen].filter(Boolean).sort()[0],
         }
@@ -130,22 +154,17 @@ export function useVocab(): VocabState {
 }
 
 export function useStatus(lemma: string): Status {
-  const state = useVocab()
-  return state[lemma]?.status ?? 'unknown'
+  return useVocab()[lemma]?.status ?? 'unknown'
 }
 
-/** Share of a text's vocabulary already marked known or ignored. */
+/** Share of a text's vocabulary already known. */
 export function coverage(lemmas: string[], state: VocabState): number {
   if (!lemmas.length) return 0
-  const solid = lemmas.filter((l) => {
-    const s = state[l]?.status
-    return s === 'known' || s === 'ignored'
-  }).length
-  return solid / lemmas.length
+  return lemmas.filter((l) => state[l]?.status === 'known').length / lemmas.length
 }
 
 export function tally(state: VocabState) {
-  const out = { unknown: 0, learning: 0, known: 0, ignored: 0 }
+  const out = { unknown: 0, known: 0 }
   for (const rec of Object.values(state)) out[rec.status]++
   return out
 }

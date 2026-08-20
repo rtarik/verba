@@ -94,7 +94,6 @@ export default function Reader() {
           text={text}
           current={audio.current}
           playing={audio.playing}
-          onPlayFromHere={audio.seekToWord}
           fontSize={fontSize}
         />
       </div>
@@ -106,8 +105,9 @@ export default function Reader() {
       )}
 
       <p className="mt-5 text-xs leading-relaxed" style={{ color: 'var(--ink-soft)' }}>
-        Hover a word for its meaning · click to cycle <em>new → learning → known</em> · words you
-        mark known lose their highlight.
+        Hover a word to see what it means — looking it up marks it known and it loses its
+        highlight. Hovering any word of a phrase covers the whole phrase. Click a word to
+        un-mark it.
       </p>
 
       <nav className="mt-8 flex justify-between text-sm">

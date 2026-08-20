@@ -174,7 +174,14 @@ export function compileText(
     if (t.k === 'br') { tokens.push({ k: 'br' }); continue }
     if (t.k === 'p') { tokens.push({ k: 'p', s: t.s }); continue }
 
-    const entry = src.glosses[t.s] ?? src.glosses[t.s.toLowerCase()] ?? curated[t.s.toLowerCase()]
+    // Text-level override first (context-specific meaning), then the shared
+    // dictionary. Exact case before lowercase, so "Se" finds "se" but a
+    // deliberately capitalised entry still wins.
+    const entry =
+      src.glosses[t.s] ??
+      src.glosses[t.s.toLowerCase()] ??
+      curated[t.s] ??
+      curated[t.s.toLowerCase()]
     if (!entry) {
       missing.add(t.s)
       // Keep compiling so one run reports every missing gloss, not just the first.
@@ -191,7 +198,10 @@ export function compileText(
   }
 
   if (missing.size) {
-    errors.push(`${src.id}: ${missing.size} word(s) have no gloss: ${[...missing].sort().join(', ')}`)
+    errors.push(
+      `${src.id}: ${missing.size} word(s) have no gloss: ${[...missing].sort().join(', ')}\n` +
+        `      -> add to content/lexicon.json (shared) or this text's "glosses" (context-specific)`
+    )
   }
 
   // ---- resolve phrases from surface text to word-index ranges -------------

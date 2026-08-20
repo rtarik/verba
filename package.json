@@ -11,7 +11,8 @@
     "content:audio": ".venv/bin/python scripts/tts.py",
     "content:new": "tsx scripts/new-text.ts",
     "content:build": "tsx scripts/build.ts",
-    "content:all": "npm run content:build && npm run content:audio && npm run content:build"
+    "content:all": "npm run content:build && npm run content:audio && npm run content:build",
+    "build:offline": "npm run content:build && tsx scripts/build-offline.ts"
   },
   "dependencies": {
     "react": "^19.2.8",
