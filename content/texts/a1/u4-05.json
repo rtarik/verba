@@ -1,0 +1,77 @@
+{
+  "id": "a1-u4-05-no-se-cocinar",
+  "level": "A1",
+  "unit": 4,
+  "order": 5,
+  "title": "No sé cocinar",
+  "titleEn": "I can't cook",
+  "blurbEn": "Ana admits a weakness. Two verbs that both mean 'can' in English, and the difference between them.",
+  "grammarRefs": [
+    "querer-poder"
+  ],
+  "body": "Tengo un problema: no sé cocinar.\n\nCuando estoy sola en casa, siempre como lo mismo: pan con queso o una ensalada rápida.\n\nMi madre dice que cocinar no es difícil, pero para mí es imposible. No puedo aprender.\n\n—¿Quieres aprender? —me pregunta ella—. Puedo enseñarte los domingos.\n\nTal vez este año digo que sí. Comer bien todos los días es importante, y mis amigos siempre quieren cenar en mi casa.",
+  "translationEn": "I have a problem: I do not know how to cook.\n\nWhen I am alone at home, I always eat the same thing: bread with cheese or a quick salad.\n\nMy mother says that cooking is not difficult, but for me it is impossible. I cannot learn.\n\n\"Do you want to learn?\" she asks me. \"I can teach you on Sundays.\"\n\nMaybe this year I will say yes. Eating well every day is important, and my friends always want to have dinner at my house.",
+  "newLemmas": [
+    "problema",
+    "saber",
+    "cuando",
+    "solo",
+    "queso",
+    "imposible",
+    "aprender",
+    "enseñar",
+    "sí",
+    "año",
+    "lo"
+  ],
+  "glosses": {
+    "sé": {
+      "lemma": "saber",
+      "gloss": "I know how to",
+      "pos": "verb",
+      "note": "'saber' + verb is knowing *how* to do something. 'poder' is being able to right now — see the next line."
+    },
+    "puedo": {
+      "lemma": "poder",
+      "gloss": "I can",
+      "pos": "verb",
+      "note": "'No sé cocinar' means I never learned. 'No puedo cocinar' would mean something is stopping me today."
+    },
+    "lo": {
+      "lemma": "lo",
+      "gloss": "the",
+      "pos": "article",
+      "note": "'lo mismo' — the same thing. 'lo' makes an adjective into a general idea."
+    },
+    "sola": {
+      "lemma": "solo",
+      "gloss": "alone",
+      "pos": "adjective",
+      "note": "Ends in -a because Ana is female."
+    },
+    "sí": {
+      "lemma": "sí",
+      "gloss": "yes",
+      "pos": "adverb",
+      "note": "With an accent it is 'yes'. Without one, 'si' means 'if'."
+    }
+  },
+  "phrases": [
+    {
+      "s": "no sé cocinar",
+      "gloss": "I don't know how to cook"
+    },
+    {
+      "s": "lo mismo",
+      "gloss": "the same thing"
+    },
+    {
+      "s": "Tal vez",
+      "gloss": "Maybe"
+    },
+    {
+      "s": "todos los días",
+      "gloss": "every day"
+    }
+  ]
+}

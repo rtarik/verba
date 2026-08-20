@@ -1,0 +1,64 @@
+{
+  "id": "a1-u4-06-una-receta-facil",
+  "level": "A1",
+  "unit": 4,
+  "order": 6,
+  "title": "Una receta fácil",
+  "titleEn": "An easy recipe",
+  "blurbEn": "The last text of A1: how to make a Spanish omelette, written the way recipes actually talk to you.",
+  "grammarRefs": [
+    "querer-poder",
+    "quantities"
+  ],
+  "body": "Esta es una receta muy fácil. Puedes prepararla en quince minutos.\n\nNecesitas tres huevos, un poco de aceite y una patata grande.\n\nPrimero corta la patata en trozos pequeños. Luego pon el aceite en la sartén.\n\nCuando el aceite está caliente, añade la patata. Después de cinco minutos añade los huevos.\n\nEn diez minutos la tortilla está lista. Es el plato más famoso de España, y ahora puedes hacerlo en tu casa.",
+  "translationEn": "This is a very easy recipe. You can prepare it in fifteen minutes.\n\nYou need three eggs, a little oil and a large potato.\n\nFirst cut the potato into small pieces. Then put the oil in the frying pan.\n\nWhen the oil is hot, add the potato. After five minutes add the eggs.\n\nIn ten minutes the omelette is ready. It is the most famous dish in Spain, and now you can make it at home.",
+  "newLemmas": [
+    "fácil",
+    "patata",
+    "cortar",
+    "trozo",
+    "sartén",
+    "caliente",
+    "añadir",
+    "tortilla",
+    "listo",
+    "famoso",
+    "ahora",
+    "diez"
+  ],
+  "glosses": {
+    "lista": {
+      "lemma": "listo",
+      "gloss": "ready",
+      "pos": "adjective",
+      "note": "Careful: 'una lista' is a shopping list. Here 'lista' is an adjective meaning ready."
+    },
+    "corta": {
+      "lemma": "cortar",
+      "gloss": "cut",
+      "pos": "verb",
+      "note": "A command. Recipes use this form throughout: corta, pon, añade."
+    },
+    "hacerlo": {
+      "lemma": "hacer",
+      "gloss": "to make it",
+      "pos": "verb",
+      "note": "'lo' attaches to the end of the verb — 'hacer' + 'lo' = make it."
+    }
+  },
+  "phrases": [
+    {
+      "s": "un poco de",
+      "gloss": "a little"
+    },
+    {
+      "s": "el plato más famoso",
+      "gloss": "the most famous dish",
+      "note": "'el más ...' is how Spanish makes a superlative."
+    },
+    {
+      "s": "está lista",
+      "gloss": "is ready"
+    }
+  ]
+}

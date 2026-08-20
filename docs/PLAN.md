@@ -263,24 +263,25 @@ texts that use it. Cross-linked both ways with `grammarRefs`.
 Build a **vertical slice first**: Unit 1 complete (6 texts + audio + grammar docs + lexicon)
 before scaling out. If anything about the pipeline is wrong, it surfaces at 6 texts, not 60.
 
-**Status: Units 1–3 complete.** 18 texts, 841 words, 218 lemmas, 14 grammar pages, 2.6 MB audio.
-Live at https://rtarik.github.io/verba/
+**Status: A1 complete — Units 1–4.** 24 texts, 1,247 words, 287 lemmas, 17 grammar pages,
+3.7 MB audio. Live at https://rtarik.github.io/verba/
 
-Unit 3 delivered the agreed shift to longer texts: average **67 words against Unit 2's 34**, with
-**69–77% of every text made of vocabulary already taught**. That is the ratio to hold from here —
-length should come from recycling the lexicon, not from spending more new-word budget. All six
-texts stayed inside the 8–12 new-lemma target while roughly doubling in length.
+The progression works as designed. Texts roughly doubled in length while the new-word budget
+stayed flat, which is only possible because recycling rose to meet it:
 
-The gate caught eleven slips this round, all of the same family: inflected forms missing from the
-shared dictionary (`pequeño` when only `pequeña` existed, `salir` when only `salgo` did,
-`domingo` when only `domingos` did), plus `librería` used in text 1 but declared in text 5. None
-would have been visible by eye; each would have shipped as a dead tooltip.
+| Unit | Avg length | Recycled vocabulary |
+|---|---|---|
+| 1 Hola, ¿qué tal? | 39 w | 43% |
+| 2 Mi día | 34 w | 57% |
+| 3 En la ciudad | 67 w | 72% |
+| 4 La comida | 68 w | 74% |
 
-Unit 2 pacing: 11, 11, 11, 11, 10, 12 new lemmas — inside the 8–12 target throughout. The
-progressive gate caught three real slips on the first run (`hablamos` and `habla` in the lexicon
-but not `hablo`; `trabaja`/`trabajo` but not the infinitive `trabajar`; `libros` but not singular
-`libro`) plus a mis-guessed phrase position, and named the correct indices in the error. That is
-the gate paying for itself.
+That last column is the health metric for the course. If it ever falls while texts lengthen, new
+vocabulary is being pushed too fast. Target for A2 is to hold 70–80% while texts grow toward
+90–120 words.
+
+Every unit stayed inside the 8–13 new-lemma band, and no text has ever failed the TTS
+word-count assertion.
 
 **Unit 1 detail.** 6 texts, 231 words, 81 lemmas, 7 grammar pages, 824 KB of audio
 (137 KB average per text — extrapolating to ~8 MB for a 60-text course, comfortably inside the

@@ -1494,5 +1494,530 @@
     "lemma": "leer",
     "gloss": "he/she reads",
     "pos": "verb"
+  },
+  "gustan": {
+    "lemma": "gustar",
+    "gloss": "are pleasing",
+    "pos": "verb"
+  },
+  "comen": {
+    "lemma": "comer",
+    "gloss": "they eat",
+    "pos": "verb"
+  },
+  "dice": {
+    "lemma": "decir",
+    "gloss": "he/she says",
+    "pos": "verb"
+  },
+  "dicen": {
+    "lemma": "decir",
+    "gloss": "they say",
+    "pos": "verb"
+  },
+  "digo": {
+    "lemma": "decir",
+    "gloss": "I say",
+    "pos": "verb"
+  },
+  "pagamos": {
+    "lemma": "pagar",
+    "gloss": "we pay",
+    "pos": "verb"
+  },
+  "necesitas": {
+    "lemma": "necesitar",
+    "gloss": "you need",
+    "pos": "verb"
+  },
+  "noches": {
+    "lemma": "noche",
+    "gloss": "nights",
+    "pos": "noun"
+  },
+  "frutas": {
+    "lemma": "fruta",
+    "gloss": "fruits",
+    "pos": "noun"
+  },
+  "buena": {
+    "lemma": "bueno",
+    "gloss": "good",
+    "pos": "adjective"
+  },
+  "buenas": {
+    "lemma": "bueno",
+    "gloss": "good",
+    "pos": "adjective"
+  },
+  "rápida": {
+    "lemma": "rápido",
+    "gloss": "quick",
+    "pos": "adjective"
+  },
+  "toda": {
+    "lemma": "todo",
+    "gloss": "all, whole",
+    "pos": "adjective"
+  },
+  "esta": {
+    "lemma": "este",
+    "gloss": "this",
+    "pos": "adjective"
+  },
+  "querer": {
+    "lemma": "querer",
+    "gloss": "to want",
+    "pos": "verb"
+  },
+  "quiero": {
+    "lemma": "querer",
+    "gloss": "I want",
+    "pos": "verb"
+  },
+  "quieres": {
+    "lemma": "querer",
+    "gloss": "you want",
+    "pos": "verb"
+  },
+  "quieren": {
+    "lemma": "querer",
+    "gloss": "they want",
+    "pos": "verb"
+  },
+  "poder": {
+    "lemma": "poder",
+    "gloss": "to be able to",
+    "pos": "verb"
+  },
+  "puedo": {
+    "lemma": "poder",
+    "gloss": "I can",
+    "pos": "verb"
+  },
+  "puedes": {
+    "lemma": "poder",
+    "gloss": "you can",
+    "pos": "verb"
+  },
+  "sé": {
+    "lemma": "saber",
+    "gloss": "I know how to",
+    "pos": "verb"
+  },
+  "prefiere": {
+    "lemma": "preferir",
+    "gloss": "he/she prefers",
+    "pos": "verb"
+  },
+  "pedimos": {
+    "lemma": "pedir",
+    "gloss": "we ask for",
+    "pos": "verb"
+  },
+  "probar": {
+    "lemma": "probar",
+    "gloss": "to try",
+    "pos": "verb"
+  },
+  "ayudo": {
+    "lemma": "ayudar",
+    "gloss": "I help",
+    "pos": "verb"
+  },
+  "pongo": {
+    "lemma": "poner",
+    "gloss": "I put",
+    "pos": "verb"
+  },
+  "pon": {
+    "lemma": "poner",
+    "gloss": "put",
+    "pos": "verb"
+  },
+  "preparo": {
+    "lemma": "preparar",
+    "gloss": "I prepare",
+    "pos": "verb"
+  },
+  "prepararla": {
+    "lemma": "preparar",
+    "gloss": "to prepare it",
+    "pos": "verb"
+  },
+  "aprender": {
+    "lemma": "aprender",
+    "gloss": "to learn",
+    "pos": "verb"
+  },
+  "enseñarte": {
+    "lemma": "enseñar",
+    "gloss": "to teach you",
+    "pos": "verb"
+  },
+  "corta": {
+    "lemma": "cortar",
+    "gloss": "cut",
+    "pos": "verb"
+  },
+  "añade": {
+    "lemma": "añadir",
+    "gloss": "add",
+    "pos": "verb"
+  },
+  "comida": {
+    "lemma": "comida",
+    "gloss": "food, meal",
+    "pos": "noun"
+  },
+  "verduras": {
+    "lemma": "verdura",
+    "gloss": "vegetables",
+    "pos": "noun"
+  },
+  "pescado": {
+    "lemma": "pescado",
+    "gloss": "fish",
+    "pos": "noun"
+  },
+  "carne": {
+    "lemma": "carne",
+    "gloss": "meat",
+    "pos": "noun"
+  },
+  "arroz": {
+    "lemma": "arroz",
+    "gloss": "rice",
+    "pos": "noun"
+  },
+  "plato": {
+    "lemma": "plato",
+    "gloss": "dish, plate",
+    "pos": "noun"
+  },
+  "ensalada": {
+    "lemma": "ensalada",
+    "gloss": "salad",
+    "pos": "noun"
+  },
+  "pollo": {
+    "lemma": "pollo",
+    "gloss": "chicken",
+    "pos": "noun"
+  },
+  "postre": {
+    "lemma": "postre",
+    "gloss": "dessert",
+    "pos": "noun"
+  },
+  "queso": {
+    "lemma": "queso",
+    "gloss": "cheese",
+    "pos": "noun"
+  },
+  "huevos": {
+    "lemma": "huevo",
+    "gloss": "eggs",
+    "pos": "noun"
+  },
+  "naranja": {
+    "lemma": "naranja",
+    "gloss": "orange",
+    "pos": "noun"
+  },
+  "naranjas": {
+    "lemma": "naranja",
+    "gloss": "oranges",
+    "pos": "noun"
+  },
+  "patata": {
+    "lemma": "patata",
+    "gloss": "potato",
+    "pos": "noun"
+  },
+  "tortilla": {
+    "lemma": "tortilla",
+    "gloss": "omelette",
+    "pos": "noun"
+  },
+  "ajo": {
+    "lemma": "ajo",
+    "gloss": "garlic",
+    "pos": "noun"
+  },
+  "aceite": {
+    "lemma": "aceite",
+    "gloss": "oil",
+    "pos": "noun"
+  },
+  "receta": {
+    "lemma": "receta",
+    "gloss": "recipe",
+    "pos": "noun"
+  },
+  "cena": {
+    "lemma": "cena",
+    "gloss": "dinner",
+    "pos": "noun"
+  },
+  "mercado": {
+    "lemma": "mercado",
+    "gloss": "market",
+    "pos": "noun"
+  },
+  "camarero": {
+    "lemma": "camarero",
+    "gloss": "waiter",
+    "pos": "noun"
+  },
+  "menú": {
+    "lemma": "menú",
+    "gloss": "menu",
+    "pos": "noun"
+  },
+  "cuenta": {
+    "lemma": "cuenta",
+    "gloss": "bill",
+    "pos": "noun"
+  },
+  "sartén": {
+    "lemma": "sartén",
+    "gloss": "frying pan",
+    "pos": "noun"
+  },
+  "trozos": {
+    "lemma": "trozo",
+    "gloss": "pieces",
+    "pos": "noun"
+  },
+  "docena": {
+    "lemma": "docena",
+    "gloss": "dozen",
+    "pos": "noun"
+  },
+  "problema": {
+    "lemma": "problema",
+    "gloss": "problem",
+    "pos": "noun"
+  },
+  "favorito": {
+    "lemma": "favorito",
+    "gloss": "favourite",
+    "pos": "adjective"
+  },
+  "barato": {
+    "lemma": "barato",
+    "gloss": "cheap",
+    "pos": "adjective"
+  },
+  "difícil": {
+    "lemma": "difícil",
+    "gloss": "difficult",
+    "pos": "adjective"
+  },
+  "imposible": {
+    "lemma": "imposible",
+    "gloss": "impossible",
+    "pos": "adjective"
+  },
+  "fácil": {
+    "lemma": "fácil",
+    "gloss": "easy",
+    "pos": "adjective"
+  },
+  "caliente": {
+    "lemma": "caliente",
+    "gloss": "hot",
+    "pos": "adjective"
+  },
+  "famoso": {
+    "lemma": "famoso",
+    "gloss": "famous",
+    "pos": "adjective"
+  },
+  "mejor": {
+    "lemma": "mejor",
+    "gloss": "best, better",
+    "pos": "adjective"
+  },
+  "solo": {
+    "lemma": "solo",
+    "gloss": "alone",
+    "pos": "adjective"
+  },
+  "claro": {
+    "lemma": "claro",
+    "gloss": "of course",
+    "pos": "interjection"
+  },
+  "le": {
+    "lemma": "le",
+    "gloss": "to him, to her",
+    "pos": "pronoun"
+  },
+  "les": {
+    "lemma": "le",
+    "gloss": "to them",
+    "pos": "pronoun"
+  },
+  "nos": {
+    "lemma": "nos",
+    "gloss": "to us",
+    "pos": "pronoun"
+  },
+  "mí": {
+    "lemma": "mí",
+    "gloss": "me",
+    "pos": "pronoun"
+  },
+  "ti": {
+    "lemma": "ti",
+    "gloss": "you",
+    "pos": "pronoun"
+  },
+  "nuestra": {
+    "lemma": "nuestro",
+    "gloss": "our",
+    "pos": "possessive"
+  },
+  "cuando": {
+    "lemma": "cuando",
+    "gloss": "when",
+    "pos": "conjunction"
+  },
+  "nadie": {
+    "lemma": "nadie",
+    "gloss": "nobody",
+    "pos": "pronoun"
+  },
+  "sí": {
+    "lemma": "sí",
+    "gloss": "yes",
+    "pos": "adverb"
+  },
+  "favor": {
+    "lemma": "favor",
+    "gloss": "favour",
+    "pos": "noun"
+  },
+  "señora": {
+    "lemma": "señora",
+    "gloss": "madam",
+    "pos": "noun"
+  },
+  "viernes": {
+    "lemma": "viernes",
+    "gloss": "Friday",
+    "pos": "noun"
+  },
+  "quince": {
+    "lemma": "quince",
+    "gloss": "fifteen",
+    "pos": "number"
+  },
+  "momento": {
+    "lemma": "momento",
+    "gloss": "moment",
+    "pos": "noun"
+  },
+  "padres": {
+    "lemma": "padre",
+    "gloss": "parents",
+    "pos": "noun"
+  },
+  "preparar": {
+    "lemma": "preparar",
+    "gloss": "to prepare",
+    "pos": "verb"
+  },
+  "botella": {
+    "lemma": "botella",
+    "gloss": "bottle",
+    "pos": "noun"
+  },
+  "contentos": {
+    "lemma": "contento",
+    "gloss": "happy",
+    "pos": "adjective"
+  },
+  "tomar": {
+    "lemma": "tomar",
+    "gloss": "to take, to have",
+    "pos": "verb"
+  },
+  "favorita": {
+    "lemma": "favorito",
+    "gloss": "favourite",
+    "pos": "adjective"
+  },
+  "mira": {
+    "lemma": "mirar",
+    "gloss": "looks at",
+    "pos": "verb"
+  },
+  "todos": {
+    "lemma": "todo",
+    "gloss": "everyone, all",
+    "pos": "pronoun"
+  },
+  "comer": {
+    "lemma": "comer",
+    "gloss": "to eat",
+    "pos": "verb"
+  },
+  "año": {
+    "lemma": "año",
+    "gloss": "year",
+    "pos": "noun"
+  },
+  "cenar": {
+    "lemma": "cenar",
+    "gloss": "to have dinner",
+    "pos": "verb"
+  },
+  "cocinar": {
+    "lemma": "cocinar",
+    "gloss": "to cook",
+    "pos": "verb"
+  },
+  "días": {
+    "lemma": "día",
+    "gloss": "days",
+    "pos": "noun"
+  },
+  "este": {
+    "lemma": "este",
+    "gloss": "this",
+    "pos": "adjective"
+  },
+  "importante": {
+    "lemma": "importante",
+    "gloss": "important",
+    "pos": "adjective"
+  },
+  "vez": {
+    "lemma": "vez",
+    "gloss": "time, occasion",
+    "pos": "noun"
+  },
+  "primero": {
+    "lemma": "primero",
+    "gloss": "first",
+    "pos": "adverb"
+  },
+  "ahora": {
+    "lemma": "ahora",
+    "gloss": "now",
+    "pos": "adverb"
+  },
+  "lo": {
+    "lemma": "lo",
+    "gloss": "it, the",
+    "pos": "pronoun"
+  },
+  "sola": {
+    "lemma": "solo",
+    "gloss": "alone",
+    "pos": "adjective"
   }
 }

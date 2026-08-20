@@ -72,8 +72,14 @@
         "quantities",
         "ordering food"
       ],
-      "summaryEn": "Eating out and shopping for food, plus saying what you want and what you like.",
-      "textIds": []
+      "textIds": [
+        "a1-u4-01-me-gusta-la-comida",
+        "a1-u4-02-en-el-restaurante",
+        "a1-u4-03-en-el-mercado",
+        "a1-u4-04-la-cena-del-domingo",
+        "a1-u4-05-no-se-cocinar",
+        "a1-u4-06-una-receta-facil"
+      ]
     },
     {
       "unit": 5,

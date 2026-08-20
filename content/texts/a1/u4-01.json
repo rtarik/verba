@@ -1,0 +1,61 @@
+{
+  "id": "a1-u4-01-me-gusta-la-comida",
+  "level": "A1",
+  "unit": 4,
+  "order": 1,
+  "title": "Me gusta la comida española",
+  "titleEn": "I like Spanish food",
+  "blurbEn": "You have used 'me gusta' since Unit 1. Here is what it is actually doing — and why it becomes 'gustan' when there is more than one thing.",
+  "grammarRefs": [
+    "gustar"
+  ],
+  "body": "Me gusta mucho la comida española. Es muy buena y no es difícil.\n\nMe gustan las verduras y el pescado. Mi plato favorito es el arroz con verduras.\n\nA mi hermana no le gusta el pescado. Ella prefiere la carne.\n\nA mis padres les gusta todo. Ellos comen de todo y nunca dicen que no.\n\n¿Y a ti? ¿Qué comida te gusta más?",
+  "translationEn": "I like Spanish food a lot. It is very good and not difficult.\n\nI like vegetables and fish. My favourite dish is rice with vegetables.\n\nMy sister does not like fish. She prefers meat.\n\nMy parents like everything. They eat everything and never say no.\n\nAnd you? What food do you like most?",
+  "newLemmas": [
+    "comida",
+    "difícil",
+    "verdura",
+    "pescado",
+    "plato",
+    "favorito",
+    "arroz",
+    "le",
+    "preferir",
+    "carne",
+    "ti",
+    "decir"
+  ],
+  "glosses": {
+    "gustan": {
+      "lemma": "gustar",
+      "gloss": "are pleasing",
+      "pos": "verb",
+      "note": "Plural, because 'las verduras' is plural. The food is the subject, not you."
+    },
+    "le": {
+      "lemma": "le",
+      "gloss": "to her",
+      "pos": "pronoun",
+      "note": "'A mi hermana no le gusta' — the 'a mi hermana' and the 'le' both point at the same person. Spanish says it twice."
+    }
+  },
+  "phrases": [
+    {
+      "s": "Me gustan",
+      "gloss": "I like (plural things)",
+      "note": "Literally 'they please me'. The verb agrees with the thing liked, never with you."
+    },
+    {
+      "s": "no le gusta",
+      "gloss": "she does not like"
+    },
+    {
+      "s": "les gusta",
+      "gloss": "they like"
+    },
+    {
+      "s": "de todo",
+      "gloss": "a bit of everything"
+    }
+  ]
+}

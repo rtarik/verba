@@ -1,0 +1,63 @@
+{
+  "id": "a1-u4-04-la-cena-del-domingo",
+  "level": "A1",
+  "unit": 4,
+  "order": 4,
+  "title": "La cena del domingo",
+  "titleEn": "Sunday dinner",
+  "blurbEn": "The whole family at the grandparents' table. Almost every word here is one you already know.",
+  "grammarRefs": [
+    "gustar"
+  ],
+  "body": "Los domingos toda la familia come en casa de mis abuelos.\n\nMi abuela cocina desde la mañana. Su receta favorita es el pollo con ajo y aceite.\n\nYo la ayudo en la cocina. Pongo la mesa y preparo la ensalada.\n\nA todos nos gusta esta cena. Hablamos mucho, comemos despacio y nadie mira el ordenador.\n\nPara mí es el mejor momento de la semana.",
+  "translationEn": "On Sundays the whole family eats at my grandparents' house.\n\nMy grandmother cooks from the morning onwards. Her favourite recipe is chicken with garlic and oil.\n\nI help her in the kitchen. I set the table and prepare the salad.\n\nWe all like this dinner. We talk a lot, we eat slowly and nobody looks at the computer.\n\nFor me it is the best moment of the week.",
+  "newLemmas": [
+    "cena",
+    "receta",
+    "ajo",
+    "aceite",
+    "ayudar",
+    "poner",
+    "nos",
+    "este",
+    "nadie",
+    "momento",
+    "la",
+    "preparar"
+  ],
+  "glosses": {
+    "cocina": {
+      "lemma": "cocinar",
+      "gloss": "cooks",
+      "pos": "verb",
+      "note": "Here it is the verb. Two lines later 'la cocina' is the kitchen — same spelling, different word."
+    },
+    "la": {
+      "lemma": "la",
+      "gloss": "her",
+      "pos": "pronoun",
+      "note": "'Yo la ayudo' — 'la' stands in for 'mi abuela'. Not the article 'the' this time."
+    },
+    "nos": {
+      "lemma": "nos",
+      "gloss": "to us",
+      "pos": "pronoun",
+      "note": "Same pattern as 'me gusta', but for a group: 'a todos nos gusta'."
+    }
+  },
+  "phrases": [
+    {
+      "s": "toda la familia",
+      "gloss": "the whole family"
+    },
+    {
+      "s": "Pongo la mesa",
+      "gloss": "I set the table",
+      "note": "Literally 'I put the table'."
+    },
+    {
+      "s": "nos gusta",
+      "gloss": "we like"
+    }
+  ]
+}
