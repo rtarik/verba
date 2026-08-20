@@ -164,8 +164,24 @@ export function coverage(lemmas: string[], state: VocabState): number {
   return lemmas.filter((l) => state[l]?.status === 'known').length / lemmas.length
 }
 
-export function tally(state: VocabState) {
-  const out = { unknown: 0, known: 0 }
-  for (const rec of Object.values(state)) out[rec.status]++
-  return out
+/**
+ * Counts measured against the course vocabulary, not against the saved store.
+ *
+ * A word you have never met is still an unknown word — it simply has no record
+ * yet. Counting store entries instead would report "2 unknown" for a learner
+ * who has opened one text, and would disagree with the vocabulary table below,
+ * which already treats an unmarked lemma as unknown.
+ *
+ * Counting over the corpus also drops stale lemmas left behind by earlier
+ * content edits, which would otherwise inflate the totals forever.
+ */
+export function tally(state: VocabState, corpusLemmas: string[]) {
+  let known = 0
+  let seen = 0
+  for (const lemma of corpusLemmas) {
+    const rec = state[lemma]
+    if (rec) seen++
+    if (rec?.status === 'known') known++
+  }
+  return { known, unknown: corpusLemmas.length - known, seen, total: corpusLemmas.length }
 }

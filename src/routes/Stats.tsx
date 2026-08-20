@@ -10,17 +10,19 @@ const COLORS: Record<Status, string> = {
 }
 const FILTERS: Array<Status | 'all'> = ['all', 'unknown', 'known']
 
+/** The list is for scanning, not exhaustive reading; search narrows it. */
+const ROW_CAP = 200
+
 export default function Stats() {
   const state = useVocab()
   const readState = useProgress()
-  const counts = tally(state)
+  const corpusLemmas = useMemo(() => Object.keys(lexicon), [])
+  const counts = tally(state, corpusLemmas)
   const fileInput = useRef<HTMLInputElement>(null)
   const [filter, setFilter] = useState<Status | 'all'>('unknown')
   const [query, setQuery] = useState('')
   const [notice, setNotice] = useState<string | null>(null)
 
-  const totalInCorpus = Object.keys(lexicon).length
-  const encountered = Object.keys(state).length
 
   const rows = useMemo(() => {
     const q = query.trim().toLowerCase()
@@ -66,7 +68,7 @@ export default function Stats() {
       <div className="mt-6 grid grid-cols-3 gap-3">
         {[
           { label: 'Words known', value: counts.known },
-          { label: 'Still new', value: counts.unknown },
+          { label: 'Unknown', value: counts.unknown },
           { label: 'Texts read', value: `${Object.keys(readState).length}/${readingOrder.length}` },
         ].map((s) => (
           <div key={s.label} className="rounded-lg px-4 py-3" style={{ background: 'var(--surface)', border: '1px solid var(--edge)' }}>
@@ -76,26 +78,17 @@ export default function Stats() {
         ))}
       </div>
 
-      {encountered > 0 && (
-        <div className="mt-4">
-          <div className="flex h-2.5 overflow-hidden rounded" style={{ background: 'var(--edge)' }}>
-            {(['known', 'unknown'] as Status[]).map((s) =>
-              counts[s] ? <div key={s} style={{ width: `${(counts[s] / encountered) * 100}%`, background: COLORS[s] }} /> : null
-            )}
-          </div>
-          <p className="mt-2 text-[11px]" style={{ color: 'var(--ink-soft)' }}>
-            You have met {encountered} of the {totalInCorpus} words in the course.
-          </p>
-          <div className="mt-1.5 flex flex-wrap gap-3 text-[11px]" style={{ color: 'var(--ink-soft)' }}>
-            {(['known', 'unknown'] as Status[]).map((s) => (
-              <span key={s} className="flex items-center gap-1.5">
-                <span className="inline-block h-2 w-2 rounded-full" style={{ background: COLORS[s] }} />
-                {s} {counts[s]}
-              </span>
-            ))}
-          </div>
+      <div className="mt-4">
+        <div className="flex h-2.5 overflow-hidden rounded" style={{ background: COLORS.unknown }}>
+          {counts.known > 0 && (
+            <div style={{ width: `${(counts.known / counts.total) * 100}%`, background: COLORS.known }} />
+          )}
         </div>
-      )}
+        <p className="mt-2 text-[11px]" style={{ color: 'var(--ink-soft)' }}>
+          {counts.known} of {counts.total} course words known
+          {counts.seen > 0 && ` · ${counts.seen} met so far in texts you have opened`}
+        </p>
+      </div>
 
       <h2 className="mt-10 text-lg font-semibold" style={{ fontFamily: 'var(--font-reading)' }}>Readiness by text</h2>
       <p className="mt-1 text-sm" style={{ color: 'var(--ink-soft)' }}>
@@ -118,18 +111,21 @@ export default function Stats() {
 
       <h2 className="mt-10 text-lg font-semibold" style={{ fontFamily: 'var(--font-reading)' }}>Vocabulary</h2>
       <div className="mt-3 flex flex-wrap items-center gap-2">
-        {FILTERS.map((f) => (
-          <button
-            key={f}
-            onClick={() => setFilter(f)}
-            className="rounded px-2.5 py-1.5 text-xs capitalize"
-            style={filter === f
-              ? { background: 'var(--accent)', color: 'var(--paper)' }
-              : { background: 'var(--accent-soft)', color: 'var(--ink-soft)' }}
-          >
-            {f}
-          </button>
-        ))}
+        {FILTERS.map((f) => {
+          const n = f === 'all' ? counts.total : f === 'known' ? counts.known : counts.unknown
+          return (
+            <button
+              key={f}
+              onClick={() => setFilter(f)}
+              className="rounded px-2.5 py-1.5 text-xs capitalize"
+              style={filter === f
+                ? { background: 'var(--accent)', color: 'var(--paper)' }
+                : { background: 'var(--accent-soft)', color: 'var(--ink-soft)' }}
+            >
+              {f} <span className="tabular-nums opacity-70">{n}</span>
+            </button>
+          )
+        })}
         <input
           value={query}
           onChange={(e) => setQuery(e.target.value)}
@@ -143,7 +139,7 @@ export default function Stats() {
         {rows.length === 0 ? (
           <p className="px-4 py-6 text-center text-sm" style={{ color: 'var(--ink-soft)' }}>Nothing here yet.</p>
         ) : (
-          rows.slice(0, 200).map(({ lemma, entry, rec }, i) => (
+          rows.slice(0, ROW_CAP).map(({ lemma, entry, rec }, i) => (
             <div
               key={lemma}
               className="flex items-baseline gap-3 px-4 py-2"
@@ -157,6 +153,12 @@ export default function Stats() {
           ))
         )}
       </div>
+
+      {rows.length > ROW_CAP && (
+        <p className="mt-2 text-[11px]" style={{ color: 'var(--ink-soft)' }}>
+          Showing the first {ROW_CAP} of {rows.length}. Use the search box to narrow it down.
+        </p>
+      )}
 
       <h2 className="mt-10 text-lg font-semibold" style={{ fontFamily: 'var(--font-reading)' }}>Your data</h2>
       <p className="mt-1 max-w-xl text-sm leading-relaxed" style={{ color: 'var(--ink-soft)' }}>
