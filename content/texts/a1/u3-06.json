@@ -1,0 +1,66 @@
+{
+  "id": "a1-u3-06-los-numeros",
+  "level": "A1",
+  "unit": 3,
+  "order": 6,
+  "title": "Los números",
+  "titleEn": "Numbers",
+  "blurbEn": "The last text of the unit: counting to a hundred, and the numbers you actually use — street numbers, prices and ages.",
+  "grammarRefs": [
+    "numbers-to-100",
+    "asking-questions"
+  ],
+  "body": "Los números son importantes en la ciudad.\n\nMi calle es la número treinta. El autobús que tomo cada mañana es el cuarenta y dos.\n\nMi abuela tiene setenta y cinco años y mi abuelo tiene ochenta. Los dos viven en el mismo pueblo desde hace mucho tiempo.\n\nEn el supermercado un kilo de tomates cuesta dos euros. Mi compra de cada semana cuesta cuarenta euros. Cien euros es mucho dinero para una familia pequeña.\n\n¿Y tú? ¿Cuántos años tienes? ¿En qué calle vives?",
+  "translationEn": "Numbers are important in the city.\n\nMy street is number thirty. The bus I take every morning is the forty-two.\n\nMy grandmother is seventy-five years old and my grandfather is eighty. The two of them have lived in the same village for a long time.\n\nAt the supermarket a kilo of tomatoes costs two euros. My weekly shopping costs forty euros. A hundred euros is a lot of money for a small family.\n\nAnd you? How old are you? What street do you live on?",
+  "newLemmas": [
+    "número",
+    "importante",
+    "treinta",
+    "cuarenta",
+    "setenta",
+    "ochenta",
+    "tomate",
+    "compra",
+    "cien",
+    "dinero",
+    "desde",
+    "kilo"
+  ],
+  "glosses": {
+    "kilo": {
+      "lemma": "kilo",
+      "gloss": "kilo",
+      "pos": "noun"
+    },
+    "desde": {
+      "lemma": "desde",
+      "gloss": "since, from",
+      "pos": "preposition"
+    },
+    "cuarenta": {
+      "lemma": "cuarenta",
+      "gloss": "forty",
+      "pos": "number",
+      "note": "Compound numbers use 'y': cuarenta y dos, setenta y cinco."
+    }
+  },
+  "phrases": [
+    {
+      "s": "cuarenta y dos",
+      "gloss": "forty-two"
+    },
+    {
+      "s": "setenta y cinco",
+      "gloss": "seventy-five"
+    },
+    {
+      "s": "desde hace mucho tiempo",
+      "gloss": "for a long time"
+    },
+    {
+      "s": "¿Cuántos años tienes?",
+      "gloss": "How old are you?",
+      "note": "Literally 'how many years do you have?' — the same 'have years' pattern from Unit 1."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "a1-u3-04-la-casa-de-mis-abuelos",
+  "level": "A1",
+  "unit": 3,
+  "order": 4,
+  "title": "La casa de mis abuelos",
+  "titleEn": "My grandparents' house",
+  "blurbEn": "A house in the countryside, room by room — and more of the position words that let you say where anything is.",
+  "grammarRefs": [
+    "prepositions-of-place",
+    "hay-vs-estar"
+  ],
+  "body": "Mis abuelos viven en un pueblo pequeño, lejos de la ciudad. Su casa es pequeña pero muy bonita.\n\nLa casa tiene cuatro habitaciones. Arriba están las habitaciones y abajo está la cocina.\n\nDetrás de la casa hay un jardín con muchos árboles y flores. Mi abuela pasa mucho tiempo en el jardín. Mi abuelo lee debajo de un árbol grande.\n\nMe gusta mucho ir a su casa los domingos.",
+  "translationEn": "My grandparents live in a small village, far from the city. Their house is small but very pretty.\n\nThe house has four rooms. Upstairs are the bedrooms and downstairs is the kitchen.\n\nBehind the house there is a garden with many trees and flowers. My grandmother spends a lot of time in the garden. My grandfather reads under a big tree.\n\nI like going to their house on Sundays very much.",
+  "newLemmas": [
+    "abuelo",
+    "pueblo",
+    "su",
+    "habitación",
+    "arriba",
+    "abajo",
+    "detrás",
+    "jardín",
+    "árbol",
+    "flor",
+    "tiempo",
+    "debajo"
+  ],
+  "glosses": {
+    "debajo": {
+      "lemma": "debajo",
+      "gloss": "under",
+      "pos": "adverb"
+    },
+    "lee": {
+      "lemma": "leer",
+      "gloss": "he/she reads",
+      "pos": "verb"
+    },
+    "su": {
+      "lemma": "su",
+      "gloss": "their",
+      "pos": "possessive",
+      "note": "One word covering his, her, its and their. Context decides which."
+    }
+  },
+  "phrases": [
+    {
+      "s": "Detrás de",
+      "gloss": "Behind"
+    },
+    {
+      "s": "debajo de",
+      "gloss": "underneath"
+    },
+    {
+      "s": "pasa mucho tiempo",
+      "gloss": "spends a lot of time"
+    }
+  ]
+}

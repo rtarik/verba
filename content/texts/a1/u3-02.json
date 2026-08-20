@@ -1,0 +1,66 @@
+{
+  "id": "a1-u3-02-donde-esta-el-museo",
+  "level": "A1",
+  "unit": 3,
+  "order": 2,
+  "title": "¿Dónde está el museo?",
+  "titleEn": "Where is the museum?",
+  "blurbEn": "Asking a stranger for directions, and the handful of words that get you anywhere in a Spanish city.",
+  "grammarRefs": [
+    "asking-questions",
+    "prepositions-of-place"
+  ],
+  "body": "—Perdón, ¿dónde está el museo?\n\n—Está muy cerca de aquí. Sigue todo recto y después toma la primera calle a la derecha, no a la izquierda.\n\n—¿Está lejos?\n\n—No, está a cinco minutos caminando. El museo está en una plaza grande, al lado de un café muy bonito.\n\n—Muchas gracias.\n\n—De nada.",
+  "translationEn": "\"Excuse me, where is the museum?\"\n\n\"It is very close to here. Carry straight on and then take the first street on the right, not on the left.\"\n\n\"Is it far?\"\n\n\"No, it is five minutes on foot. The museum is in a big square, next to a very pretty café.\"\n\n\"Thank you very much.\"\n\n\"You're welcome.\"",
+  "newLemmas": [
+    "perdón",
+    "aquí",
+    "seguir",
+    "todo",
+    "recto",
+    "tomar",
+    "primero",
+    "derecha",
+    "izquierda",
+    "nada",
+    "museo"
+  ],
+  "glosses": {
+    "aquí": {
+      "lemma": "aquí",
+      "gloss": "here",
+      "pos": "adverb"
+    },
+    "caminando": {
+      "lemma": "caminar",
+      "gloss": "walking",
+      "pos": "verb",
+      "note": "The -ando ending is Spanish's '-ing'."
+    },
+    "Sigue": {
+      "lemma": "seguir",
+      "gloss": "carry on",
+      "pos": "verb",
+      "note": "A command, not a statement. Giving directions uses this form."
+    }
+  },
+  "phrases": [
+    {
+      "s": "todo recto",
+      "gloss": "straight on"
+    },
+    {
+      "s": "a la derecha",
+      "gloss": "on the right"
+    },
+    {
+      "s": "a la izquierda",
+      "gloss": "on the left"
+    },
+    {
+      "s": "De nada",
+      "gloss": "You're welcome",
+      "note": "Literally 'of nothing'. The standard reply to gracias."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "a1-u3-01-mi-barrio",
+  "level": "A1",
+  "unit": 3,
+  "order": 1,
+  "title": "Mi barrio",
+  "titleEn": "My neighbourhood",
+  "blurbEn": "Ana describes where she lives. Watch how 'hay' introduces things you did not know were there, while 'está' places something you already know about.",
+  "grammarRefs": [
+    "hay-vs-estar",
+    "prepositions-of-place"
+  ],
+  "body": "Vivo en un barrio pequeño, cerca de la universidad.\n\nEn mi calle hay muchas tiendas. Hay un supermercado y un banco.\n\nAl lado de mi casa hay una plaza muy bonita. Por la tarde hay mucha gente en la plaza. Los niños juegan y las personas hablan.\n\nEl parque está lejos, pero me gusta caminar. Cada domingo camino al parque con mi hermana.",
+  "translationEn": "I live in a small neighbourhood, near the university.\n\nOn my street there are many shops. There is a supermarket and a bank.\n\nNext to my house there is a very pretty square. In the afternoon there are a lot of people in the square. The children play and people talk.\n\nThe park is far away, but I like walking. Every Sunday I walk to the park with my sister.",
+  "newLemmas": [
+    "barrio",
+    "calle",
+    "tienda",
+    "supermercado",
+    "banco",
+    "plaza",
+    "gente",
+    "niño",
+    "jugar",
+    "caminar",
+    "lejos",
+    "lado"
+  ],
+  "glosses": {
+    "hay": {
+      "lemma": "haber",
+      "gloss": "there is, there are",
+      "pos": "verb",
+      "note": "Introduces something new. Notice it is followed by 'un', 'una' or 'muchas' — never by 'el' or 'la'."
+    },
+    "está": {
+      "lemma": "estar",
+      "gloss": "is",
+      "pos": "verb",
+      "note": "Used here because you already know which park is meant. 'Hay un parque' would be introducing one for the first time."
+    }
+  },
+  "phrases": [
+    {
+      "s": "Al lado de",
+      "gloss": "Next to",
+      "note": "Literally 'at the side of'. Most Spanish position words end in 'de'."
+    },
+    {
+      "s": "El parque está lejos",
+      "gloss": "The park is far away"
+    }
+  ]
+}

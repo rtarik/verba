@@ -994,5 +994,505 @@
     "lemma": "libro",
     "gloss": "book",
     "pos": "noun"
+  },
+  "está": {
+    "lemma": "estar",
+    "gloss": "he/she/it is",
+    "pos": "verb"
+  },
+  "están": {
+    "lemma": "estar",
+    "gloss": "they are",
+    "pos": "verb"
+  },
+  "viven": {
+    "lemma": "vivir",
+    "gloss": "they live",
+    "pos": "verb"
+  },
+  "vamos": {
+    "lemma": "ir",
+    "gloss": "we go",
+    "pos": "verb"
+  },
+  "tienes": {
+    "lemma": "tener",
+    "gloss": "you have",
+    "pos": "verb"
+  },
+  "pasar": {
+    "lemma": "pasar",
+    "gloss": "to spend, to pass",
+    "pos": "verb"
+  },
+  "barrio": {
+    "lemma": "barrio",
+    "gloss": "neighbourhood",
+    "pos": "noun"
+  },
+  "calle": {
+    "lemma": "calle",
+    "gloss": "street",
+    "pos": "noun"
+  },
+  "calles": {
+    "lemma": "calle",
+    "gloss": "streets",
+    "pos": "noun"
+  },
+  "tiendas": {
+    "lemma": "tienda",
+    "gloss": "shops",
+    "pos": "noun"
+  },
+  "supermercado": {
+    "lemma": "supermercado",
+    "gloss": "supermarket",
+    "pos": "noun"
+  },
+  "banco": {
+    "lemma": "banco",
+    "gloss": "bank",
+    "pos": "noun"
+  },
+  "plaza": {
+    "lemma": "plaza",
+    "gloss": "square",
+    "pos": "noun"
+  },
+  "museo": {
+    "lemma": "museo",
+    "gloss": "museum",
+    "pos": "noun"
+  },
+  "librería": {
+    "lemma": "librería",
+    "gloss": "bookshop",
+    "pos": "noun"
+  },
+  "pueblo": {
+    "lemma": "pueblo",
+    "gloss": "village, town",
+    "pos": "noun"
+  },
+  "centro": {
+    "lemma": "centro",
+    "gloss": "centre",
+    "pos": "noun"
+  },
+  "jardín": {
+    "lemma": "jardín",
+    "gloss": "garden",
+    "pos": "noun"
+  },
+  "habitaciones": {
+    "lemma": "habitación",
+    "gloss": "rooms",
+    "pos": "noun"
+  },
+  "lado": {
+    "lemma": "lado",
+    "gloss": "side",
+    "pos": "noun"
+  },
+  "lejos": {
+    "lemma": "lejos",
+    "gloss": "far",
+    "pos": "adverb"
+  },
+  "arriba": {
+    "lemma": "arriba",
+    "gloss": "upstairs, above",
+    "pos": "adverb"
+  },
+  "abajo": {
+    "lemma": "abajo",
+    "gloss": "downstairs, below",
+    "pos": "adverb"
+  },
+  "detrás": {
+    "lemma": "detrás",
+    "gloss": "behind",
+    "pos": "adverb"
+  },
+  "derecha": {
+    "lemma": "derecha",
+    "gloss": "right",
+    "pos": "noun"
+  },
+  "izquierda": {
+    "lemma": "izquierda",
+    "gloss": "left",
+    "pos": "noun"
+  },
+  "recto": {
+    "lemma": "recto",
+    "gloss": "straight",
+    "pos": "adverb"
+  },
+  "primera": {
+    "lemma": "primero",
+    "gloss": "first",
+    "pos": "adjective"
+  },
+  "gente": {
+    "lemma": "gente",
+    "gloss": "people",
+    "pos": "noun"
+  },
+  "niños": {
+    "lemma": "niño",
+    "gloss": "children",
+    "pos": "noun"
+  },
+  "abuelos": {
+    "lemma": "abuelo",
+    "gloss": "grandparents",
+    "pos": "noun"
+  },
+  "abuela": {
+    "lemma": "abuelo",
+    "gloss": "grandmother",
+    "pos": "noun"
+  },
+  "abuelo": {
+    "lemma": "abuelo",
+    "gloss": "grandfather",
+    "pos": "noun"
+  },
+  "árboles": {
+    "lemma": "árbol",
+    "gloss": "trees",
+    "pos": "noun"
+  },
+  "flores": {
+    "lemma": "flor",
+    "gloss": "flowers",
+    "pos": "noun"
+  },
+  "agua": {
+    "lemma": "agua",
+    "gloss": "water",
+    "pos": "noun"
+  },
+  "botellas": {
+    "lemma": "botella",
+    "gloss": "bottles",
+    "pos": "noun"
+  },
+  "tomates": {
+    "lemma": "tomate",
+    "gloss": "tomatoes",
+    "pos": "noun"
+  },
+  "lista": {
+    "lemma": "lista",
+    "gloss": "list",
+    "pos": "noun"
+  },
+  "compra": {
+    "lemma": "compra",
+    "gloss": "shopping",
+    "pos": "noun"
+  },
+  "dinero": {
+    "lemma": "dinero",
+    "gloss": "money",
+    "pos": "noun"
+  },
+  "euros": {
+    "lemma": "euro",
+    "gloss": "euros",
+    "pos": "noun"
+  },
+  "coche": {
+    "lemma": "coche",
+    "gloss": "car",
+    "pos": "noun"
+  },
+  "autobús": {
+    "lemma": "autobús",
+    "gloss": "bus",
+    "pos": "noun"
+  },
+  "tiempo": {
+    "lemma": "tiempo",
+    "gloss": "time",
+    "pos": "noun"
+  },
+  "número": {
+    "lemma": "número",
+    "gloss": "number",
+    "pos": "noun"
+  },
+  "números": {
+    "lemma": "número",
+    "gloss": "numbers",
+    "pos": "noun"
+  },
+  "mediodía": {
+    "lemma": "mediodía",
+    "gloss": "midday",
+    "pos": "noun"
+  },
+  "juegan": {
+    "lemma": "jugar",
+    "gloss": "they play",
+    "pos": "verb"
+  },
+  "caminar": {
+    "lemma": "caminar",
+    "gloss": "to walk",
+    "pos": "verb"
+  },
+  "camino": {
+    "lemma": "caminar",
+    "gloss": "I walk",
+    "pos": "verb"
+  },
+  "sigue": {
+    "lemma": "seguir",
+    "gloss": "carry on, follow",
+    "pos": "verb"
+  },
+  "toma": {
+    "lemma": "tomar",
+    "gloss": "take",
+    "pos": "verb"
+  },
+  "tomo": {
+    "lemma": "tomar",
+    "gloss": "I take",
+    "pos": "verb"
+  },
+  "hacemos": {
+    "lemma": "hacer",
+    "gloss": "we make",
+    "pos": "verb"
+  },
+  "compramos": {
+    "lemma": "comprar",
+    "gloss": "we buy",
+    "pos": "verb"
+  },
+  "necesita": {
+    "lemma": "necesitar",
+    "gloss": "he/she needs",
+    "pos": "verb"
+  },
+  "cuesta": {
+    "lemma": "costar",
+    "gloss": "it costs",
+    "pos": "verb"
+  },
+  "pregunta": {
+    "lemma": "preguntar",
+    "gloss": "asks",
+    "pos": "verb"
+  },
+  "paga": {
+    "lemma": "pagar",
+    "gloss": "he/she pays",
+    "pos": "verb"
+  },
+  "miro": {
+    "lemma": "mirar",
+    "gloss": "I look at",
+    "pos": "verb"
+  },
+  "entro": {
+    "lemma": "entrar",
+    "gloss": "I go in",
+    "pos": "verb"
+  },
+  "diez": {
+    "lemma": "diez",
+    "gloss": "ten",
+    "pos": "number"
+  },
+  "veinte": {
+    "lemma": "veinte",
+    "gloss": "twenty",
+    "pos": "number"
+  },
+  "treinta": {
+    "lemma": "treinta",
+    "gloss": "thirty",
+    "pos": "number"
+  },
+  "cuarenta": {
+    "lemma": "cuarenta",
+    "gloss": "forty",
+    "pos": "number"
+  },
+  "cincuenta": {
+    "lemma": "cincuenta",
+    "gloss": "fifty",
+    "pos": "number"
+  },
+  "setenta": {
+    "lemma": "setenta",
+    "gloss": "seventy",
+    "pos": "number"
+  },
+  "ochenta": {
+    "lemma": "ochenta",
+    "gloss": "eighty",
+    "pos": "number"
+  },
+  "cien": {
+    "lemma": "cien",
+    "gloss": "a hundred",
+    "pos": "number"
+  },
+  "perdón": {
+    "lemma": "perdón",
+    "gloss": "excuse me",
+    "pos": "interjection"
+  },
+  "nada": {
+    "lemma": "nada",
+    "gloss": "nothing",
+    "pos": "pronoun"
+  },
+  "todo": {
+    "lemma": "todo",
+    "gloss": "everything, all",
+    "pos": "pronoun"
+  },
+  "luego": {
+    "lemma": "luego",
+    "gloss": "then, later",
+    "pos": "adverb"
+  },
+  "así": {
+    "lemma": "así",
+    "gloss": "so, like this",
+    "pos": "adverb"
+  },
+  "que": {
+    "lemma": "que",
+    "gloss": "that",
+    "pos": "conjunction"
+  },
+  "del": {
+    "lemma": "de",
+    "gloss": "of the",
+    "pos": "preposition"
+  },
+  "su": {
+    "lemma": "su",
+    "gloss": "his, her, their",
+    "pos": "possessive"
+  },
+  "cuánto": {
+    "lemma": "cuánto",
+    "gloss": "how much",
+    "pos": "question word"
+  },
+  "cuántos": {
+    "lemma": "cuánto",
+    "gloss": "how many",
+    "pos": "question word"
+  },
+  "vieja": {
+    "lemma": "viejo",
+    "gloss": "old",
+    "pos": "adjective"
+  },
+  "contenta": {
+    "lemma": "contento",
+    "gloss": "happy",
+    "pos": "adjective"
+  },
+  "importantes": {
+    "lemma": "importante",
+    "gloss": "important",
+    "pos": "adjective"
+  },
+  "mucha": {
+    "lemma": "mucho",
+    "gloss": "a lot of",
+    "pos": "adjective"
+  },
+  "día": {
+    "lemma": "día",
+    "gloss": "day",
+    "pos": "noun"
+  },
+  "llega": {
+    "lemma": "llegar",
+    "gloss": "it arrives",
+    "pos": "verb"
+  },
+  "pequeño": {
+    "lemma": "pequeño",
+    "gloss": "small",
+    "pos": "adjective"
+  },
+  "hace": {
+    "lemma": "hacer",
+    "gloss": "it makes, it does",
+    "pos": "verb"
+  },
+  "vives": {
+    "lemma": "vivir",
+    "gloss": "you live",
+    "pos": "verb"
+  },
+  "kilo": {
+    "lemma": "kilo",
+    "gloss": "kilo",
+    "pos": "noun"
+  },
+  "desde": {
+    "lemma": "desde",
+    "gloss": "since, from",
+    "pos": "preposition"
+  },
+  "domingo": {
+    "lemma": "domingo",
+    "gloss": "Sunday",
+    "pos": "noun"
+  },
+  "hablan": {
+    "lemma": "hablar",
+    "gloss": "they talk",
+    "pos": "verb"
+  },
+  "bonito": {
+    "lemma": "bonito",
+    "gloss": "pretty",
+    "pos": "adjective"
+  },
+  "salir": {
+    "lemma": "salir",
+    "gloss": "to leave",
+    "pos": "verb"
+  },
+  "volvemos": {
+    "lemma": "volver",
+    "gloss": "we go back",
+    "pos": "verb"
+  },
+  "ir": {
+    "lemma": "ir",
+    "gloss": "to go",
+    "pos": "verb"
+  },
+  "árbol": {
+    "lemma": "árbol",
+    "gloss": "tree",
+    "pos": "noun"
+  },
+  "debajo": {
+    "lemma": "debajo",
+    "gloss": "under",
+    "pos": "adverb"
+  },
+  "lee": {
+    "lemma": "leer",
+    "gloss": "he/she reads",
+    "pos": "verb"
   }
 }

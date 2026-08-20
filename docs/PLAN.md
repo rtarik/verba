@@ -263,7 +263,18 @@ texts that use it. Cross-linked both ways with `grammarRefs`.
 Build a **vertical slice first**: Unit 1 complete (6 texts + audio + grammar docs + lexicon)
 before scaling out. If anything about the pipeline is wrong, it surfaces at 6 texts, not 60.
 
-**Status: Units 1–2 complete.** 12 texts, 437 words, 147 lemmas, 10 grammar pages, 1.4 MB audio.
+**Status: Units 1–3 complete.** 18 texts, 841 words, 218 lemmas, 14 grammar pages, 2.6 MB audio.
+Live at https://rtarik.github.io/verba/
+
+Unit 3 delivered the agreed shift to longer texts: average **67 words against Unit 2's 34**, with
+**69–77% of every text made of vocabulary already taught**. That is the ratio to hold from here —
+length should come from recycling the lexicon, not from spending more new-word budget. All six
+texts stayed inside the 8–12 new-lemma target while roughly doubling in length.
+
+The gate caught eleven slips this round, all of the same family: inflected forms missing from the
+shared dictionary (`pequeño` when only `pequeña` existed, `salir` when only `salgo` did,
+`domingo` when only `domingos` did), plus `librería` used in text 1 but declared in text 5. None
+would have been visible by eye; each would have shipped as a dead tooltip.
 
 Unit 2 pacing: 11, 11, 11, 11, 10, 12 new lemmas — inside the 8–12 target throughout. The
 progressive gate caught three real slips on the first run (`hablamos` and `habla` in the lexicon

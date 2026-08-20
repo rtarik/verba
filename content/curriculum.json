@@ -52,8 +52,14 @@
         "directions",
         "numbers to 100"
       ],
-      "summaryEn": "Finding your way around: shops, streets and asking where things are.",
-      "textIds": []
+      "textIds": [
+        "a1-u3-01-mi-barrio",
+        "a1-u3-02-donde-esta-el-museo",
+        "a1-u3-03-en-el-supermercado",
+        "a1-u3-04-la-casa-de-mis-abuelos",
+        "a1-u3-05-un-dia-en-la-ciudad",
+        "a1-u3-06-los-numeros"
+      ]
     },
     {
       "unit": 4,

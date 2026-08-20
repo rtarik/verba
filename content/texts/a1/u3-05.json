@@ -1,0 +1,50 @@
+{
+  "id": "a1-u3-05-un-dia-en-la-ciudad",
+  "level": "A1",
+  "unit": 3,
+  "order": 5,
+  "title": "Un día en la ciudad",
+  "titleEn": "A day in the city",
+  "blurbEn": "A whole Sunday told start to finish. Almost every word here is one you have already met — that is the point.",
+  "grammarRefs": [
+    "prepositions-of-place"
+  ],
+  "body": "Los domingos me gusta pasar el día en la ciudad.\n\nNo tengo coche, así que tomo el autobús cerca de mi casa. El autobús llega en veinte minutos.\n\nLuego camino por las calles del centro y miro las tiendas. A veces entro en una librería y leo un poco.\n\nAl mediodía como en un restaurante pequeño con mis amigos. Después vamos al museo o al parque.\n\nVuelvo a casa por la noche, cansada pero contenta.",
+  "translationEn": "On Sundays I like to spend the day in the city.\n\nI do not have a car, so I take the bus near my house. The bus arrives in twenty minutes.\n\nThen I walk through the streets of the centre and look at the shops. Sometimes I go into a bookshop and read a little.\n\nAt midday I eat in a small restaurant with my friends. Afterwards we go to the museum or the park.\n\nI come home at night, tired but happy.",
+  "newLemmas": [
+    "coche",
+    "así",
+    "que",
+    "autobús",
+    "luego",
+    "mirar",
+    "entrar",
+    "librería",
+    "mediodía",
+    "contento",
+    "centro",
+    "día"
+  ],
+  "glosses": {
+    "del": {
+      "lemma": "de",
+      "gloss": "of the",
+      "pos": "preposition",
+      "note": "'de' + 'el' always contracts to 'del', just as 'a' + 'el' becomes 'al'."
+    }
+  },
+  "phrases": [
+    {
+      "s": "así que",
+      "gloss": "so, therefore"
+    },
+    {
+      "s": "A veces",
+      "gloss": "Sometimes"
+    },
+    {
+      "s": "Al mediodía",
+      "gloss": "At midday"
+    }
+  ]
+}

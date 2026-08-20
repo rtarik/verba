@@ -1,0 +1,19 @@
+{
+  "id": "a1-u3-03-en-el-supermercado",
+  "level": "A1", "unit": 3, "order": 3,
+  "title": "En el supermercado",
+  "titleEn": "At the supermarket",
+  "blurbEn": "The Saturday shop, with the two questions you need in any Spanish shop: how much does it cost, and how much is that altogether.",
+  "grammarRefs": ["asking-questions", "numbers-to-100"],
+  "body": "Los sábados voy al supermercado con mi madre. Antes de salir hacemos una lista en la cocina.\n\nCompramos pan, leche y fruta. Mi madre necesita dos botellas de agua y también un poco de café.\n\n—¿Cuánto cuesta todo? —pregunta mi madre.\n\n—Veinte euros.\n\nMi madre paga y volvemos a casa. Por la tarde comemos en casa con mi padre y mi hermana.",
+  "translationEn": "On Saturdays I go to the supermarket with my mother. Before leaving we make a list in the kitchen.\n\nWe buy bread, milk and fruit. My mother needs two bottles of water and also a little coffee.\n\n\"How much does it all cost?\" my mother asks.\n\n\"Twenty euros.\"\n\nMy mother pays and we go back home. In the afternoon we eat at home with my father and my sister.",
+  "newLemmas": ["hacer", "lista", "comprar", "necesitar", "botella", "agua", "cuánto", "costar", "preguntar", "veinte", "euro", "pagar"],
+  "glosses": {
+    "agua": { "lemma": "agua", "gloss": "water", "pos": "noun", "note": "Feminine, but takes 'el' in the singular ('el agua') because 'la a-' would be awkward to say. In the plural it is 'las aguas'." }
+  },
+  "phrases": [
+    { "s": "Antes de salir", "gloss": "Before leaving", "note": "'antes de' + the plain verb form." },
+    { "s": "¿Cuánto cuesta todo?", "gloss": "How much does it all cost?" },
+    { "s": "un poco de", "gloss": "a little" }
+  ]
+}
