@@ -1,0 +1,22 @@
+{
+  "id": "a2-u7-06-el-dia-que-conoci-a-sofia",
+  "level": "A2", "unit": 7, "order": 6,
+  "title": "El día que conocí a Sofía",
+  "titleEn": "The day I met Sofía",
+  "blurbEn": "The last text of the unit: a full story, with the scene in one tense and everything that happens in the other.",
+  "grammarRefs": ["imperfecto-vs-indefinido", "describing-in-the-past"],
+  "body": "Conocí a Sofía hace cuatro años, en una cafetería del centro.\n\nEra una tarde de septiembre y hacía mucho calor. Yo estaba sentada al lado de la ventana y leía un libro de historia bastante aburrido.\n\nHabía mucha gente y no quedaban sitios libres. Sofía llegó, miró alrededor y me preguntó si podía sentarse en mi mesa.\n\nDije que sí. Ella pidió un café, sacó un cuaderno y empezó a escribir.\n\nDespués de diez minutos cerré el libro y empezamos a hablar. Estuvimos allí tres horas.\n\nDesde entonces somos amigas.",
+  "translationEn": "I met Sofía four years ago, in a café in the centre.\n\nIt was a September afternoon and it was very hot. I was sitting next to the window reading a fairly boring history book.\n\nThere were a lot of people and no free seats were left. Sofía arrived, looked around and asked me if she could sit at my table.\n\nI said yes. She ordered a coffee, took out a notebook and started to write.\n\nAfter ten minutes I closed the book and we started talking. We were there for three hours.\n\nWe have been friends ever since.",
+  "newLemmas": ["cafetería", "septiembre", "sentar", "historia", "bastante", "sitio", "libre", "alrededor", "sacar", "cuaderno"],
+  "glosses": {
+    "Era": { "lemma": "ser", "gloss": "it was", "pos": "verb", "note": "The whole second paragraph is scene-setting — afternoon, weather, where she sat, what she was reading. All imperfecto, not one event among them." },
+    "llegó": { "lemma": "llegar", "gloss": "arrived", "pos": "verb", "note": "And here the story starts moving. Everything from this point is preterite." },
+    "Conocí": { "lemma": "conocer", "gloss": "I met", "pos": "verb", "note": "In the preterite 'conocer' means met for the first time. 'Conocía a Sofía' would mean I already knew her." }
+  },
+  "phrases": [
+    { "s": "hace cuatro años", "gloss": "four years ago" },
+    { "s": "no quedaban sitios libres", "gloss": "there were no free seats left" },
+    { "s": "empezó a escribir", "gloss": "started to write", "note": "'empezar a' + verb. The 'a' is required." },
+    { "s": "Desde entonces", "gloss": "Ever since then" }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "a2-u7-01-cuando-era-pequena",
+  "level": "A2", "unit": 7, "order": 1,
+  "title": "Cuando era pequeña",
+  "titleEn": "When I was small",
+  "blurbEn": "The third past tense, and the friendliest: only three irregular verbs in the whole language. It is for how things used to be.",
+  "grammarRefs": ["imperfecto"],
+  "body": "Cuando era pequeña, vivía en un pueblo muy pequeño con mis padres y mi hermana.\n\nTodos los días iba al colegio a pie. El colegio estaba cerca de casa y el camino era muy tranquilo, entre árboles y campos.\n\nPor las tardes jugaba en la plaza con mis amigos hasta la hora de cenar. Nadie nos vigilaba y nadie tenía miedo.\n\nEn verano nadábamos en el río y volvíamos a casa con hambre.\n\nMi abuela vivía con nosotros y cocinaba todos los domingos. La casa olía muy bien.\n\nÉramos felices y no lo sabíamos. Ahora lo recuerdo todo con mucho cariño.",
+  "translationEn": "When I was small, I lived in a very small village with my parents and my sister.\n\nEvery day I went to school on foot. The school was near home and the way there was very peaceful, between trees and fields.\n\nIn the afternoons I played in the square with my friends until dinner time. Nobody watched over us and nobody was afraid.\n\nIn summer we swam in the river and came home hungry.\n\nMy grandmother lived with us and cooked every Sunday. The house smelled wonderful.\n\nWe were happy and we did not know it. Now I remember it all very fondly.",
+  "newLemmas": ["colegio", "pie", "camino", "entre", "vigilar", "río", "hambre", "oler", "recordar", "cariño"],
+  "glosses": {
+    "era": { "lemma": "ser", "gloss": "was, used to be", "pos": "verb", "note": "Imperfecto of 'ser'. One of only three irregular verbs in this whole tense." },
+    "iba": { "lemma": "ir", "gloss": "used to go", "pos": "verb", "note": "Imperfecto of 'ir'. Note it does not look like 'fui' at all — different tense, different stem." },
+    "vivía": { "lemma": "vivir", "gloss": "used to live", "pos": "verb", "note": "Regular: -er and -ir verbs take -ía. No exceptions worth worrying about." },
+    "Éramos": { "lemma": "ser", "gloss": "we were", "pos": "verb" }
+  },
+  "phrases": [
+    { "s": "Cuando era pequeña", "gloss": "When I was small", "note": "The classic opening for childhood memories, and the reason this unit is named after it." },
+    { "s": "Todos los días iba", "gloss": "Every day I went", "note": "A repeated habit, not a single event. That is what this tense is for." },
+    { "s": "a pie", "gloss": "on foot" }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "a2-u7-03-llovia-cuando-sali",
+  "level": "A2",
+  "unit": 7,
+  "order": 3,
+  "title": "Llovía cuando salí",
+  "titleEn": "It was raining when I left",
+  "blurbEn": "The most important text in the unit. Two past tenses in the same sentence: one paints the scene, the other moves the story on.",
+  "grammarRefs": [
+    "imperfecto-vs-indefinido"
+  ],
+  "body": "Ayer salí de casa a las ocho. Llovía mucho y no tenía paraguas.\n\nEsperé el autobús veinte minutos. Mientras esperaba, leí los mensajes del teléfono.\n\nCuando llegó el autobús, ya estaba completamente mojada.\n\nDentro hacía calor y había mucha gente. Una señora mayor me miró y sonrió.\n\nDe repente el autobús paró. El conductor dijo que había un problema.\n\nBajamos todos y caminé hasta la oficina. Llegué tarde, pero de buen humor.",
+  "translationEn": "Yesterday I left home at eight. It was raining hard and I did not have an umbrella.\n\nI waited for the bus for twenty minutes. While I was waiting, I read the messages on my phone.\n\nWhen the bus arrived, I was already completely soaked.\n\nInside it was hot and there were a lot of people. An elderly lady looked at me and smiled.\n\nSuddenly the bus stopped. The driver said there was a problem.\n\nWe all got off and I walked to the office. I arrived late, but in a good mood.",
+  "newLemmas": [
+    "paraguas",
+    "mientras",
+    "completamente",
+    "mojado",
+    "dentro",
+    "calor",
+    "mayor",
+    "repente",
+    "parar",
+    "conductor",
+    "bajar",
+    "humor"
+  ],
+  "glosses": {
+    "Llovía": {
+      "lemma": "llover",
+      "gloss": "it was raining",
+      "pos": "verb",
+      "note": "The scene, not an event. The rain had no beginning or end in this story — it was simply going on."
+    },
+    "salí": {
+      "lemma": "salir",
+      "gloss": "I left",
+      "pos": "verb",
+      "note": "One completed action at one moment. That is why it is the preterite while 'llovía' is not."
+    },
+    "esperaba": {
+      "lemma": "esperar",
+      "gloss": "I was waiting",
+      "pos": "verb",
+      "note": "'Mientras' almost always brings the imperfecto: it describes what was going on when something else happened."
+    },
+    "había": {
+      "lemma": "haber",
+      "gloss": "there was, there were",
+      "pos": "verb",
+      "note": "The past of 'hay'. Still one form for singular and plural."
+    }
+  },
+  "phrases": [
+    {
+      "s": "Llovía mucho",
+      "gloss": "It was raining hard",
+      "note": "Background. Compare 'llovió mucho' — that would mean the rain happened and finished."
+    },
+    {
+      "s": "Mientras esperaba",
+      "gloss": "While I was waiting"
+    },
+    {
+      "s": "Cuando llegó el autobús",
+      "gloss": "When the bus arrived",
+      "note": "The event that interrupts. 'Cuando' + preterite is the thing that happens; the imperfecto around it is the setting."
+    },
+    {
+      "s": "De repente",
+      "gloss": "Suddenly"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "a2-u7-05-mientras-yo-estudiaba",
+  "level": "A2", "unit": 7, "order": 5,
+  "title": "Mientras yo estudiaba",
+  "titleEn": "While I was studying",
+  "blurbEn": "Several things going on at once, and one decision that cuts through them.",
+  "grammarRefs": ["imperfecto-vs-indefinido", "imperfecto"],
+  "body": "El año pasado estudiaba por las noches, después del trabajo.\n\nMientras yo estudiaba en la cocina, mi hermana veía la televisión en el salón y mi madre hablaba por teléfono. La casa nunca estaba en silencio.\n\nUna noche de marzo no podía concentrarme. Los vecinos hacían obras, la televisión estaba muy alta y el gato quería jugar. Nadie se quejaba nunca, solo yo.\n\nCerré el libro, cogí el abrigo y salí a la biblioteca.\n\nAllí no había ruido. Estudié tres horas seguidas y entendí por primera vez la diferencia entre «era» y «fue».\n\nVolví a casa muy contenta.",
+  "translationEn": "Last year I used to study at night, after work.\n\nWhile I was studying in the kitchen, my sister was watching television in the living room and my mother was talking on the phone. The house was never silent.\n\nOne night in March I could not concentrate. The neighbours were doing building work, the television was very loud and the cat wanted to play. Nobody ever complained, only me.\n\nI closed the book, picked up my coat and went out to the library.\n\nThere was no noise there. I studied three hours in a row and understood for the first time the difference between \"era\" and \"fue\".\n\nI came home very happy.",
+  "newLemmas": ["salón", "marzo", "concentrar", "vecino", "obra", "abrigo", "biblioteca", "seguido", "quejar"],
+  "glosses": {
+    "estudiaba": { "lemma": "estudiar", "gloss": "I used to study", "pos": "verb", "note": "A habit across a whole year. Three verbs in the next sentence are all imperfecto too — they were all going on together." },
+    "Cerré": { "lemma": "cerrar", "gloss": "I closed", "pos": "verb", "note": "Here the tense changes and the story moves. Three preterites in a row: closed, picked up, went out." }
+  },
+  "phrases": [
+    { "s": "Mientras yo estudiaba", "gloss": "While I was studying" },
+    { "s": "no podía concentrarme", "gloss": "I could not concentrate" },
+    { "s": "tres horas seguidas", "gloss": "three hours in a row" },
+    { "s": "por primera vez", "gloss": "for the first time" }
+  ]
+}

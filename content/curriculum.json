@@ -132,8 +132,14 @@
         "describing the past",
         "childhood and habits"
       ],
-      "textIds": [],
-      "summaryEn": "The second past tense, for how things used to be and what was going on. The forms are easy; choosing between this and the indefinido is the real work of A2."
+      "textIds": [
+        "a2-u7-01-cuando-era-pequena",
+        "a2-u7-02-la-casa-de-mi-infancia",
+        "a2-u7-03-llovia-cuando-sali",
+        "a2-u7-04-todos-los-dias-lo-mismo",
+        "a2-u7-05-mientras-yo-estudiaba",
+        "a2-u7-06-el-dia-que-conoci-a-sofia"
+      ]
     },
     {
       "unit": 8,

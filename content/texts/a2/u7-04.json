@@ -1,0 +1,64 @@
+{
+  "id": "a2-u7-04-todos-los-dias-lo-mismo",
+  "level": "A2",
+  "unit": 7,
+  "order": 4,
+  "title": "Todos los días lo mismo",
+  "titleEn": "The same thing every day",
+  "blurbEn": "A routine that went on for years, and the single afternoon that broke it. Habits in one tense, the turning point in the other.",
+  "grammarRefs": [
+    "imperfecto-vs-indefinido"
+  ],
+  "body": "Antes mi vida era muy tranquila y siempre igual.\n\nMe levantaba a las siete, desayunaba café con tostadas y salía de casa a las ocho. Trabajaba hasta las seis, volvía a casa, cenaba y leía un rato antes de dormir.\n\nTodos los días lo mismo. No era una vida mala, pero era un poco aburrida.\n\nUn día de octubre decidí cambiar algo. Busqué clases de español por internet y me apunté a un curso.\n\nAquella tarde no leí un libro. Escribí mi primera frase en español: «Me llamo Ana y quiero aprender».",
+  "translationEn": "Before, my life was very quiet and always the same.\n\nI got up at seven, had coffee and toast for breakfast and left home at eight. I worked until six, came home, had dinner and read for a while before sleeping.\n\nEvery day the same. It was not a bad life, but it was a little boring.\n\nOne day in October I decided to change something. I looked for Spanish classes on the internet and signed up for a course.\n\nThat afternoon I did not read a book. I wrote my first sentence in Spanish: \"My name is Ana and I want to learn.\"",
+  "newLemmas": [
+    "igual",
+    "tostada",
+    "rato",
+    "malo",
+    "aburrido",
+    "octubre",
+    "buscar",
+    "internet",
+    "apuntar",
+    "curso",
+    "frase",
+    "aquel",
+    "vida"
+  ],
+  "glosses": {
+    "Me levantaba": {
+      "lemma": "levantar",
+      "gloss": "I used to get up",
+      "pos": "verb",
+      "note": "Not one morning — every morning, for years. English hides this behind a plain 'I got up'."
+    },
+    "decidí": {
+      "lemma": "decidir",
+      "gloss": "I decided",
+      "pos": "verb",
+      "note": "The tense switches here, and the switch is the whole point: one October day, once. That is what ends the routine."
+    },
+    "Aquella": {
+      "lemma": "aquel",
+      "gloss": "that",
+      "pos": "adjective",
+      "note": "'aquel' points further away than 'ese' — that one, back then."
+    }
+  },
+  "phrases": [
+    {
+      "s": "siempre igual",
+      "gloss": "always the same"
+    },
+    {
+      "s": "Todos los días lo mismo",
+      "gloss": "The same thing every day"
+    },
+    {
+      "s": "Un día de octubre decidí",
+      "gloss": "One day in October I decided",
+      "note": "'Un día' plus the preterite. A single point in time, breaking a run of habits."
+    }
+  ]
+}

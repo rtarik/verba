@@ -1,0 +1,65 @@
+{
+  "id": "a2-u7-02-la-casa-de-mi-infancia",
+  "level": "A2",
+  "unit": 7,
+  "order": 2,
+  "title": "La casa de mi infancia",
+  "titleEn": "The house of my childhood",
+  "blurbEn": "Describing how things were: buildings, weather, age, feelings. In Spanish, description in the past is almost always this tense.",
+  "grammarRefs": [
+    "describing-in-the-past",
+    "imperfecto"
+  ],
+  "body": "La casa de mi infancia era grande y muy oscura.\n\nTenía un techo que hacía mucho ruido cuando llovía. En invierno hacía frío por las mañanas y mi madre encendía la luz muy pronto, porque la casa estaba siempre oscura.\n\nMi habitación estaba arriba, al lado de la habitación de mi hermana. Desde la ventana veía el jardín, la plaza y, más lejos, las montañas.\n\nPor la noche todo estaba en silencio.\n\nYo tenía ocho años y pensaba que esa casa era todo el mundo.",
+  "translationEn": "The house of my childhood was big and very dark.\n\nIt had a roof that made a lot of noise when it rained. In winter it was cold in the mornings and my mother switched the light on very early, because the house was always dark.\n\nMy bedroom was upstairs, next to my sister's. From the window I could see the garden, the square and, further away, the mountains.\n\nAt night everything was silent.\n\nI was eight years old and I thought that house was the whole world.",
+  "newLemmas": [
+    "infancia",
+    "techo",
+    "ruido",
+    "llover",
+    "invierno",
+    "frío",
+    "encender",
+    "luz",
+    "oscuro",
+    "ventana",
+    "silencio",
+    "mundo",
+    "pensar"
+  ],
+  "glosses": {
+    "hacía": {
+      "lemma": "hacer",
+      "gloss": "it was",
+      "pos": "verb",
+      "note": "Weather uses 'hacer': 'hacía frío' is literally 'it made cold'. You met 'hace buen tiempo' in Unit 3."
+    },
+    "veía": {
+      "lemma": "ver",
+      "gloss": "could see",
+      "pos": "verb",
+      "note": "Imperfecto of 'ver' — the third and last irregular, and barely irregular at all."
+    },
+    "tenía": {
+      "lemma": "tener",
+      "gloss": "was",
+      "pos": "verb",
+      "note": "'Yo tenía ocho años' — age in the past is always this tense, never the preterite."
+    }
+  },
+  "phrases": [
+    {
+      "s": "hacía frío",
+      "gloss": "it was cold"
+    },
+    {
+      "s": "Yo tenía ocho años",
+      "gloss": "I was eight years old",
+      "note": "Age, like weather and time, is background — so it takes the imperfecto."
+    },
+    {
+      "s": "estaba en silencio",
+      "gloss": "was silent"
+    }
+  ]
+}
