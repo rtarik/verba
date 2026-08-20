@@ -1,0 +1,70 @@
+{
+  "id": "a2-u6-06-la-historia-de-mis-abuelos",
+  "level": "A2",
+  "unit": 6,
+  "order": 6,
+  "title": "La historia de mis abuelos",
+  "titleEn": "My grandparents' story",
+  "blurbEn": "The last text of the unit: a whole life told in the preterite, which is exactly what this tense is for.",
+  "grammarRefs": [
+    "preterito-indefinido",
+    "irregular-preterites"
+  ],
+  "body": "Mis abuelos se conocieron en mil novecientos sesenta, en una fiesta de pueblo.\n\nMi abuelo la vio y no dijo nada durante toda la noche. Al final ella se acercó y le preguntó su nombre.\n\nSe casaron dos años después. Vivieron primero en Madrid, pero no les gustó la ciudad y volvieron al pueblo.\n\nAllí nacieron mis tíos y mi madre.\n\nMi abuelo trabajó cuarenta años en el campo. Mi abuela abrió una tienda pequeña en la plaza y la llevó hasta el año pasado.\n\nTodavía viven en la misma casa.",
+  "translationEn": "My grandparents met in nineteen sixty, at a village party.\n\nMy grandfather saw her and said nothing all evening. In the end she came over and asked him his name.\n\nThey married two years later. They lived in Madrid first, but they did not like the city and went back to the village.\n\nMy uncles and my mother were born there.\n\nMy grandfather worked forty years in the countryside. My grandmother opened a small shop in the square and ran it until last year.\n\nThey still live in the same house.",
+  "newLemmas": [
+    "conocer",
+    "mil",
+    "novecientos",
+    "sesenta",
+    "fiesta",
+    "durante",
+    "acercar",
+    "nombre",
+    "casar",
+    "nacer",
+    "tío",
+    "campo",
+    "llevar"
+  ],
+  "glosses": {
+    "conocieron": {
+      "lemma": "conocer",
+      "gloss": "they met",
+      "pos": "verb",
+      "note": "'conocer' in the preterite means *met for the first time*, not *knew*. The tense changes the meaning of the verb itself."
+    },
+    "vio": {
+      "lemma": "ver",
+      "gloss": "saw",
+      "pos": "verb",
+      "note": "Short and irregular. No accent, unlike most he/she preterites."
+    },
+    "acercó": {
+      "lemma": "acercar",
+      "gloss": "came over",
+      "pos": "verb"
+    },
+    "nacieron": {
+      "lemma": "nacer",
+      "gloss": "were born",
+      "pos": "verb",
+      "note": "Spanish uses an active verb here where English uses a passive: they 'were born' is literally 'they born-ed'."
+    }
+  },
+  "phrases": [
+    {
+      "s": "mil novecientos sesenta",
+      "gloss": "nineteen sixty",
+      "note": "Spanish reads years as full numbers: 'one thousand nine hundred sixty', never as two pairs."
+    },
+    {
+      "s": "Se casaron",
+      "gloss": "They got married"
+    },
+    {
+      "s": "no les gustó",
+      "gloss": "they did not like it"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "a2-u6-02-el-fin-de-semana-pasado",
+  "level": "A2",
+  "unit": 6,
+  "order": 2,
+  "title": "El fin de semana pasado",
+  "titleEn": "Last weekend",
+  "blurbEn": "A trip to the mountains, told with -er and -ir verbs — which share one set of endings between them.",
+  "grammarRefs": [
+    "preterito-indefinido"
+  ],
+  "body": "El fin de semana pasado salí de la ciudad con dos amigos.\n\nEl sábado cogimos el tren muy temprano y viajamos hasta un pueblo pequeño en la montaña.\n\nComimos en un restaurante muy barato y bebimos un vino muy bueno. Después subimos hasta un lago y nadamos un poco.\n\nEl domingo volvimos a casa muy tarde. Escribí un mensaje a mi hermana y le mandé unas fotos.\n\nQuiero volver pronto.",
+  "translationEn": "Last weekend I left the city with two friends.\n\nOn Saturday we caught the train very early and travelled to a small village in the mountains.\n\nWe ate in a very cheap restaurant and drank a very good wine. Afterwards we walked up to a lake and swam a little.\n\nOn Sunday we came home very late. I wrote a message to my sister and sent her some photos.\n\nI want to go back soon.",
+  "newLemmas": [
+    "pasado",
+    "coger",
+    "tren",
+    "montaña",
+    "vino",
+    "subir",
+    "lago",
+    "nadar",
+    "mensaje",
+    "mandar",
+    "foto"
+  ],
+  "glosses": {
+    "cogimos": {
+      "lemma": "coger",
+      "gloss": "we caught, we took",
+      "pos": "verb",
+      "note": "Everyday in Spain for taking transport. In much of Latin America 'tomar' is used instead, and 'coger' is best avoided."
+    },
+    "comimos": {
+      "lemma": "comer",
+      "gloss": "we ate",
+      "pos": "verb",
+      "note": "Identical to the present 'we eat'. Only the sentence tells you which — here, 'el sábado'."
+    }
+  },
+  "phrases": [
+    {
+      "s": "El fin de semana pasado",
+      "gloss": "Last weekend",
+      "note": "'pasado' after the noun means 'last'. It is one of the clearest signals for this tense."
+    }
+  ]
+}

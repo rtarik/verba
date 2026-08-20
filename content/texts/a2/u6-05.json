@@ -1,0 +1,23 @@
+{
+  "id": "a2-u6-05-no-pude-dormir",
+  "level": "A2", "unit": 6, "order": 5,
+  "title": "No pude dormir",
+  "titleEn": "I couldn't sleep",
+  "blurbEn": "A bad night, and the rest of the irregular preterites: hice, puse, vine, dije, pude.",
+  "grammarRefs": ["irregular-preterites"],
+  "body": "Anoche no pude dormir.\n\nHice todo lo posible: puse música tranquila, bebí un vaso de leche caliente y cerré los ojos. Nada de eso ayudó.\n\nA las tres de la mañana vino mi gato y se puso encima de mi cama. No me hizo caso.\n\nAl final me levanté y leí un libro hasta las cinco.\n\nEsta mañana mi jefe me preguntó por qué llegué tarde. Le dije la verdad y sonrió. Él tampoco duerme bien.\n\nHoy he bebido cuatro cafés.",
+  "translationEn": "Last night I couldn't sleep.\n\nI did everything possible: I put on quiet music, drank a glass of warm milk and closed my eyes. None of it helped.\n\nAt three in the morning my cat came and settled on top of my bed. He paid no attention to me.\n\nIn the end I got up and read a book until five.\n\nThis morning my boss asked me why I arrived late. I told him the truth and he smiled. He does not sleep well either.\n\nToday I have drunk four coffees.",
+  "newLemmas": ["anoche", "posible", "música", "vaso", "cerrar", "ojo", "venir", "encima", "cama", "caso", "verdad"],
+  "glosses": {
+    "pude": { "lemma": "poder", "gloss": "I could", "pos": "verb", "note": "Stem 'pud-'. 'No pude dormir' means I tried and failed — not that I was forbidden." },
+    "Hice": { "lemma": "hacer", "gloss": "I did", "pos": "verb", "note": "Stem 'hic-', but it becomes 'hizo' in the he/she form to keep the soft sound." },
+    "puse": { "lemma": "poner", "gloss": "I put on", "pos": "verb", "note": "Stem 'pus-', same family as 'tuve' and 'estuve'." },
+    "vino": { "lemma": "venir", "gloss": "came", "pos": "verb", "note": "Careful: identical to 'el vino', the wine. Only the sentence separates them." },
+    "dije": { "lemma": "decir", "gloss": "I said", "pos": "verb", "note": "Stem 'dij-'. Note the ellos form is 'dijeron', not 'dijieron'." }
+  },
+  "phrases": [
+    { "s": "todo lo posible", "gloss": "everything possible" },
+    { "s": "No me hizo caso", "gloss": "He paid no attention to me", "note": "'hacer caso' is to pay attention or take notice." },
+    { "s": "Al final", "gloss": "In the end" }
+  ]
+}

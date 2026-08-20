@@ -1,0 +1,62 @@
+{
+  "id": "a2-u6-01-ayer-trabaje-mucho",
+  "level": "A2",
+  "unit": 6,
+  "order": 1,
+  "title": "Ayer trabajé mucho",
+  "titleEn": "Yesterday I worked a lot",
+  "blurbEn": "The second past tense, for time that is finished and gone. Regular -ar verbs first — and notice the accent on the last syllable.",
+  "grammarRefs": [
+    "preterito-indefinido"
+  ],
+  "body": "Ayer trabajé mucho. Me levanté muy temprano y llegué a la oficina a las ocho.\n\nPor la mañana hablé con tres clientes y preparé un informe largo para mi jefe. Después comí un bocadillo rápido en la calle, cerca del parque.\n\nPor la tarde terminé la presentación y ayudé a Sofía con un problema difícil. Antes de salir revisé los correos otra vez.\n\nSalí de la oficina a las siete y media. Llegué a casa muy cansada, cené algo ligero y me acosté pronto.\n\nHoy he descansado. Ayer trabajé demasiado.",
+  "translationEn": "Yesterday I worked a lot. I got up very early and arrived at the office at eight.\n\nIn the morning I spoke with three clients and prepared a long report for my boss. Afterwards I ate a quick sandwich on the street, near the park.\n\nIn the afternoon I finished the presentation and helped Sofía with a difficult problem. Before leaving I checked the emails again.\n\nI left the office at half past seven. I got home very tired, had a light dinner and went to bed early.\n\nToday I have rested. Yesterday I worked too much.",
+  "newLemmas": [
+    "ayer",
+    "informe",
+    "bocadillo",
+    "revisar",
+    "otro",
+    "acostar",
+    "pronto",
+    "algo",
+    "ligero",
+    "demasiado",
+    "levantar",
+    "cliente"
+  ],
+  "glosses": {
+    "trabajé": {
+      "lemma": "trabajar",
+      "gloss": "I worked",
+      "pos": "verb",
+      "note": "The accent is on the last syllable and it matters: 'trabajo' is I work, 'trabajó' is he worked, 'trabajé' is I worked."
+    },
+    "llegué": {
+      "lemma": "llegar",
+      "gloss": "I arrived",
+      "pos": "verb",
+      "note": "Spelled with 'gu' to keep the hard g sound before -é. 'llegé' would be pronounced differently."
+    },
+    "Ayer": {
+      "lemma": "ayer",
+      "gloss": "yesterday",
+      "pos": "adverb",
+      "note": "Finished time. This is the word that forces this tense rather than 'he trabajado'."
+    }
+  },
+  "phrases": [
+    {
+      "s": "Me levanté",
+      "gloss": "I got up"
+    },
+    {
+      "s": "me acosté pronto",
+      "gloss": "I went to bed early"
+    },
+    {
+      "s": "otra vez",
+      "gloss": "again"
+    }
+  ]
+}

@@ -68,3 +68,69 @@ export const progress = {
 export function useProgress(): ProgressState {
   return useSyncExternalStore(progress.subscribe, progress.snapshot, progress.snapshot)
 }
+
+
+/* ------------------------------------------------------------------ *
+ * Grammar pages read
+ *
+ * Kept in its own store rather than sharing the text map above: the
+ * library counts Object.keys(progress) as "texts read", and folding
+ * grammar ids into it would quietly corrupt that number.
+ * ------------------------------------------------------------------ */
+
+export type GrammarReadState = Record<string, { readAt: string }>
+
+const GRAMMAR_KEY = 'verba.grammar.v1'
+
+function loadGrammar(): GrammarReadState {
+  try {
+    const raw = localStorage.getItem(GRAMMAR_KEY)
+    return raw ? (JSON.parse(raw) as GrammarReadState) : {}
+  } catch {
+    return {}
+  }
+}
+
+let grammarState: GrammarReadState = loadGrammar()
+const grammarListeners = new Set<() => void>()
+
+function commitGrammar(next: GrammarReadState) {
+  grammarState = next
+  try {
+    localStorage.setItem(GRAMMAR_KEY, JSON.stringify(next))
+  } catch {
+    /* non-fatal */
+  }
+  grammarListeners.forEach((l) => l())
+}
+
+export const grammarProgress = {
+  subscribe(l: () => void) {
+    grammarListeners.add(l)
+    return () => grammarListeners.delete(l)
+  },
+  snapshot: () => grammarState,
+
+  isRead: (id: string) => Boolean(grammarState[id]),
+
+  markRead(id: string) {
+    if (grammarState[id]) return
+    commitGrammar({ ...grammarState, [id]: { readAt: today() } })
+  },
+
+  toggle(id: string) {
+    if (grammarState[id]) {
+      const next = { ...grammarState }
+      delete next[id]
+      commitGrammar(next)
+    } else {
+      commitGrammar({ ...grammarState, [id]: { readAt: today() } })
+    }
+  },
+
+  reset: () => commitGrammar({}),
+}
+
+export function useGrammarProgress(): GrammarReadState {
+  return useSyncExternalStore(grammarProgress.subscribe, grammarProgress.snapshot, grammarProgress.snapshot)
+}

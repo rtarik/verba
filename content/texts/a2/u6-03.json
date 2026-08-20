@@ -1,0 +1,55 @@
+{
+  "id": "a2-u6-03-hoy-he-comido-ayer-comi",
+  "level": "A2",
+  "unit": 6,
+  "order": 3,
+  "title": "Hoy he comido, ayer comí",
+  "titleEn": "Today I have eaten, yesterday I ate",
+  "blurbEn": "The heart of the unit. Two past tenses, one question: is the time it happened in over yet?",
+  "grammarRefs": [
+    "perfecto-vs-indefinido"
+  ],
+  "body": "En español hay dos maneras de hablar del pasado, y la diferencia es el tiempo.\n\nHoy he comido con Sofía. Esta semana he trabajado mucho. Este año he viajado poco. Ese tiempo todavía no ha terminado, y por eso uso 'he'.\n\nPero ayer comí con mi hermana. La semana pasada trabajé doce horas. El año pasado viajé a Francia. Ese tiempo ya terminó, y entonces uso otra forma.\n\nMi profesora lo explica así: si puedes decir 'hoy', usa 'he'. Si puedes decir 'ayer', usa la otra.\n\nAl principio es difícil. Después es automático. Es cuestión de práctica.",
+  "translationEn": "In Spanish there are two ways of talking about the past, and the difference is time.\n\nToday I have eaten with Sofía. This week I have worked a lot. This year I have travelled little. That time has not finished yet, and that is why I use 'he'.\n\nBut yesterday I ate with my sister. Last week I worked twelve hours. Last year I travelled to France. That time is already over, and so I use another form.\n\nMy teacher explains it like this: if you can say 'today', use 'he'. If you can say 'yesterday', use the other one.\n\nAt first it is difficult. Later it is automatic. It is a matter of practice.",
+  "newLemmas": [
+    "manera",
+    "diferencia",
+    "entonces",
+    "forma",
+    "principio",
+    "automático",
+    "cuestión",
+    "práctica",
+    "usar",
+    "si",
+    "ese"
+  ],
+  "glosses": {
+    "terminó": {
+      "lemma": "terminar",
+      "gloss": "finished",
+      "pos": "verb",
+      "note": "'ha terminado' would mean the finishing is still relevant now. 'terminó' closes the door on it."
+    },
+    "si": {
+      "lemma": "si",
+      "gloss": "if",
+      "pos": "conjunction",
+      "note": "No accent. 'sí' with an accent is 'yes'."
+    }
+  },
+  "phrases": [
+    {
+      "s": "por eso",
+      "gloss": "that is why"
+    },
+    {
+      "s": "Al principio",
+      "gloss": "At first"
+    },
+    {
+      "s": "Es cuestión de práctica",
+      "gloss": "It is a matter of practice"
+    }
+  ]
+}

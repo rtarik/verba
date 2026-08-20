@@ -2634,5 +2634,740 @@
     "lemma": "ir",
     "gloss": "is going",
     "pos": "verb"
+  },
+  "trabajé": {
+    "lemma": "trabajar",
+    "gloss": "I worked",
+    "pos": "verb"
+  },
+  "trabajó": {
+    "lemma": "trabajar",
+    "gloss": "he/she worked",
+    "pos": "verb"
+  },
+  "levanté": {
+    "lemma": "levantar",
+    "gloss": "I got up",
+    "pos": "verb"
+  },
+  "llegué": {
+    "lemma": "llegar",
+    "gloss": "I arrived",
+    "pos": "verb"
+  },
+  "hablé": {
+    "lemma": "hablar",
+    "gloss": "I spoke",
+    "pos": "verb"
+  },
+  "preparé": {
+    "lemma": "preparar",
+    "gloss": "I prepared",
+    "pos": "verb"
+  },
+  "terminé": {
+    "lemma": "terminar",
+    "gloss": "I finished",
+    "pos": "verb"
+  },
+  "terminó": {
+    "lemma": "terminar",
+    "gloss": "it finished",
+    "pos": "verb"
+  },
+  "ayudé": {
+    "lemma": "ayudar",
+    "gloss": "I helped",
+    "pos": "verb"
+  },
+  "cené": {
+    "lemma": "cenar",
+    "gloss": "I had dinner",
+    "pos": "verb"
+  },
+  "acosté": {
+    "lemma": "acostar",
+    "gloss": "I went to bed",
+    "pos": "verb"
+  },
+  "revisé": {
+    "lemma": "revisar",
+    "gloss": "I checked",
+    "pos": "verb"
+  },
+  "viajamos": {
+    "lemma": "viajar",
+    "gloss": "we travelled",
+    "pos": "verb"
+  },
+  "nadamos": {
+    "lemma": "nadar",
+    "gloss": "we swam",
+    "pos": "verb"
+  },
+  "mandé": {
+    "lemma": "mandar",
+    "gloss": "I sent",
+    "pos": "verb"
+  },
+  "esperó": {
+    "lemma": "esperar",
+    "gloss": "waited",
+    "pos": "verb"
+  },
+  "invitaron": {
+    "lemma": "invitar",
+    "gloss": "they invited",
+    "pos": "verb"
+  },
+  "pagué": {
+    "lemma": "pagar",
+    "gloss": "I paid",
+    "pos": "verb"
+  },
+  "preguntó": {
+    "lemma": "preguntar",
+    "gloss": "asked",
+    "pos": "verb"
+  },
+  "sonrió": {
+    "lemma": "sonreír",
+    "gloss": "smiled",
+    "pos": "verb"
+  },
+  "casaron": {
+    "lemma": "casar",
+    "gloss": "they married",
+    "pos": "verb"
+  },
+  "llevó": {
+    "lemma": "llevar",
+    "gloss": "ran, carried",
+    "pos": "verb"
+  },
+  "gustó": {
+    "lemma": "gustar",
+    "gloss": "pleased",
+    "pos": "verb"
+  },
+  "bailando": {
+    "lemma": "bailar",
+    "gloss": "dancing",
+    "pos": "verb"
+  },
+  "comí": {
+    "lemma": "comer",
+    "gloss": "I ate",
+    "pos": "verb"
+  },
+  "comimos": {
+    "lemma": "comer",
+    "gloss": "we ate",
+    "pos": "verb"
+  },
+  "salí": {
+    "lemma": "salir",
+    "gloss": "I went out",
+    "pos": "verb"
+  },
+  "bebí": {
+    "lemma": "beber",
+    "gloss": "I drank",
+    "pos": "verb"
+  },
+  "bebimos": {
+    "lemma": "beber",
+    "gloss": "we drank",
+    "pos": "verb"
+  },
+  "subimos": {
+    "lemma": "subir",
+    "gloss": "we went up",
+    "pos": "verb"
+  },
+  "volvimos": {
+    "lemma": "volver",
+    "gloss": "we returned",
+    "pos": "verb"
+  },
+  "volvieron": {
+    "lemma": "volver",
+    "gloss": "they returned",
+    "pos": "verb"
+  },
+  "escribí": {
+    "lemma": "escribir",
+    "gloss": "I wrote",
+    "pos": "verb"
+  },
+  "leí": {
+    "lemma": "leer",
+    "gloss": "I read",
+    "pos": "verb"
+  },
+  "cogimos": {
+    "lemma": "coger",
+    "gloss": "we caught, we took",
+    "pos": "verb"
+  },
+  "vivieron": {
+    "lemma": "vivir",
+    "gloss": "they lived",
+    "pos": "verb"
+  },
+  "nacieron": {
+    "lemma": "nacer",
+    "gloss": "they were born",
+    "pos": "verb"
+  },
+  "abrió": {
+    "lemma": "abrir",
+    "gloss": "opened",
+    "pos": "verb"
+  },
+  "conocieron": {
+    "lemma": "conocer",
+    "gloss": "they met",
+    "pos": "verb"
+  },
+  "cerré": {
+    "lemma": "cerrar",
+    "gloss": "I closed",
+    "pos": "verb"
+  },
+  "mereció": {
+    "lemma": "merecer",
+    "gloss": "was worth",
+    "pos": "verb"
+  },
+  "fui": {
+    "lemma": "ir",
+    "gloss": "I went",
+    "pos": "verb"
+  },
+  "fue": {
+    "lemma": "ser",
+    "gloss": "it was",
+    "pos": "verb"
+  },
+  "fuimos": {
+    "lemma": "ir",
+    "gloss": "we went",
+    "pos": "verb"
+  },
+  "estuve": {
+    "lemma": "estar",
+    "gloss": "I was",
+    "pos": "verb"
+  },
+  "estuvimos": {
+    "lemma": "estar",
+    "gloss": "we were",
+    "pos": "verb"
+  },
+  "tuve": {
+    "lemma": "tener",
+    "gloss": "I had",
+    "pos": "verb"
+  },
+  "pude": {
+    "lemma": "poder",
+    "gloss": "I could",
+    "pos": "verb"
+  },
+  "hice": {
+    "lemma": "hacer",
+    "gloss": "I did, I made",
+    "pos": "verb"
+  },
+  "hizo": {
+    "lemma": "hacer",
+    "gloss": "did, made",
+    "pos": "verb"
+  },
+  "dije": {
+    "lemma": "decir",
+    "gloss": "I said",
+    "pos": "verb"
+  },
+  "dijo": {
+    "lemma": "decir",
+    "gloss": "said",
+    "pos": "verb"
+  },
+  "puse": {
+    "lemma": "poner",
+    "gloss": "I put",
+    "pos": "verb"
+  },
+  "puso": {
+    "lemma": "poner",
+    "gloss": "settled, placed itself",
+    "pos": "verb"
+  },
+  "vino": {
+    "lemma": "vino",
+    "gloss": "wine",
+    "pos": "noun"
+  },
+  "vio": {
+    "lemma": "ver",
+    "gloss": "saw",
+    "pos": "verb"
+  },
+  "revisar": {
+    "lemma": "revisar",
+    "gloss": "to check",
+    "pos": "verb"
+  },
+  "coger": {
+    "lemma": "coger",
+    "gloss": "to take, to catch",
+    "pos": "verb"
+  },
+  "subir": {
+    "lemma": "subir",
+    "gloss": "to go up",
+    "pos": "verb"
+  },
+  "nadar": {
+    "lemma": "nadar",
+    "gloss": "to swim",
+    "pos": "verb"
+  },
+  "mandar": {
+    "lemma": "mandar",
+    "gloss": "to send",
+    "pos": "verb"
+  },
+  "pienso": {
+    "lemma": "pensar",
+    "gloss": "I think",
+    "pos": "verb"
+  },
+  "esperar": {
+    "lemma": "esperar",
+    "gloss": "to wait",
+    "pos": "verb"
+  },
+  "merecer": {
+    "lemma": "merecer",
+    "gloss": "to deserve",
+    "pos": "verb"
+  },
+  "cerrar": {
+    "lemma": "cerrar",
+    "gloss": "to close",
+    "pos": "verb"
+  },
+  "venir": {
+    "lemma": "venir",
+    "gloss": "to come",
+    "pos": "verb"
+  },
+  "conocer": {
+    "lemma": "conocer",
+    "gloss": "to meet, to know",
+    "pos": "verb"
+  },
+  "nacer": {
+    "lemma": "nacer",
+    "gloss": "to be born",
+    "pos": "verb"
+  },
+  "llevar": {
+    "lemma": "llevar",
+    "gloss": "to carry, to run",
+    "pos": "verb"
+  },
+  "usa": {
+    "lemma": "usar",
+    "gloss": "use",
+    "pos": "verb"
+  },
+  "uso": {
+    "lemma": "usar",
+    "gloss": "I use",
+    "pos": "verb"
+  },
+  "explica": {
+    "lemma": "explicar",
+    "gloss": "explains",
+    "pos": "verb"
+  },
+  "ayudó": {
+    "lemma": "ayudar",
+    "gloss": "helped",
+    "pos": "verb"
+  },
+  "informe": {
+    "lemma": "informe",
+    "gloss": "report",
+    "pos": "noun"
+  },
+  "bocadillo": {
+    "lemma": "bocadillo",
+    "gloss": "sandwich",
+    "pos": "noun"
+  },
+  "tren": {
+    "lemma": "tren",
+    "gloss": "train",
+    "pos": "noun"
+  },
+  "montaña": {
+    "lemma": "montaña",
+    "gloss": "mountain",
+    "pos": "noun"
+  },
+  "lago": {
+    "lemma": "lago",
+    "gloss": "lake",
+    "pos": "noun"
+  },
+  "mensaje": {
+    "lemma": "mensaje",
+    "gloss": "message",
+    "pos": "noun"
+  },
+  "fotos": {
+    "lemma": "foto",
+    "gloss": "photos",
+    "pos": "noun"
+  },
+  "viaje": {
+    "lemma": "viaje",
+    "gloss": "trip",
+    "pos": "noun"
+  },
+  "manera": {
+    "lemma": "manera",
+    "gloss": "way",
+    "pos": "noun"
+  },
+  "diferencia": {
+    "lemma": "diferencia",
+    "gloss": "difference",
+    "pos": "noun"
+  },
+  "forma": {
+    "lemma": "forma",
+    "gloss": "form",
+    "pos": "noun"
+  },
+  "principio": {
+    "lemma": "principio",
+    "gloss": "beginning",
+    "pos": "noun"
+  },
+  "cuestión": {
+    "lemma": "cuestión",
+    "gloss": "matter",
+    "pos": "noun"
+  },
+  "práctica": {
+    "lemma": "práctica",
+    "gloss": "practice",
+    "pos": "noun"
+  },
+  "aeropuerto": {
+    "lemma": "aeropuerto",
+    "gloss": "airport",
+    "pos": "noun"
+  },
+  "suerte": {
+    "lemma": "suerte",
+    "gloss": "luck",
+    "pos": "noun"
+  },
+  "hotel": {
+    "lemma": "hotel",
+    "gloss": "hotel",
+    "pos": "noun"
+  },
+  "playa": {
+    "lemma": "playa",
+    "gloss": "beach",
+    "pos": "noun"
+  },
+  "pena": {
+    "lemma": "pena",
+    "gloss": "sorrow, trouble",
+    "pos": "noun"
+  },
+  "música": {
+    "lemma": "música",
+    "gloss": "music",
+    "pos": "noun"
+  },
+  "vaso": {
+    "lemma": "vaso",
+    "gloss": "glass",
+    "pos": "noun"
+  },
+  "ojos": {
+    "lemma": "ojo",
+    "gloss": "eyes",
+    "pos": "noun"
+  },
+  "cama": {
+    "lemma": "cama",
+    "gloss": "bed",
+    "pos": "noun"
+  },
+  "caso": {
+    "lemma": "caso",
+    "gloss": "case, attention",
+    "pos": "noun"
+  },
+  "verdad": {
+    "lemma": "verdad",
+    "gloss": "truth",
+    "pos": "noun"
+  },
+  "fiesta": {
+    "lemma": "fiesta",
+    "gloss": "party",
+    "pos": "noun"
+  },
+  "nombre": {
+    "lemma": "nombre",
+    "gloss": "name",
+    "pos": "noun"
+  },
+  "tíos": {
+    "lemma": "tío",
+    "gloss": "uncles",
+    "pos": "noun"
+  },
+  "campo": {
+    "lemma": "campo",
+    "gloss": "countryside",
+    "pos": "noun"
+  },
+  "ayer": {
+    "lemma": "ayer",
+    "gloss": "yesterday",
+    "pos": "adverb"
+  },
+  "anoche": {
+    "lemma": "anoche",
+    "gloss": "last night",
+    "pos": "adverb"
+  },
+  "pasado": {
+    "lemma": "pasado",
+    "gloss": "last, past",
+    "pos": "adjective"
+  },
+  "pasada": {
+    "lemma": "pasado",
+    "gloss": "last, past",
+    "pos": "adjective"
+  },
+  "demasiado": {
+    "lemma": "demasiado",
+    "gloss": "too much",
+    "pos": "adverb"
+  },
+  "algo": {
+    "lemma": "algo",
+    "gloss": "something",
+    "pos": "pronoun"
+  },
+  "ligero": {
+    "lemma": "ligero",
+    "gloss": "light",
+    "pos": "adjective"
+  },
+  "otra": {
+    "lemma": "otro",
+    "gloss": "other, another",
+    "pos": "adjective"
+  },
+  "entonces": {
+    "lemma": "entonces",
+    "gloss": "then",
+    "pos": "adverb"
+  },
+  "automático": {
+    "lemma": "automático",
+    "gloss": "automatic",
+    "pos": "adjective"
+  },
+  "allí": {
+    "lemma": "allí",
+    "gloss": "there",
+    "pos": "adverb"
+  },
+  "amable": {
+    "lemma": "amable",
+    "gloss": "kind",
+    "pos": "adjective"
+  },
+  "conmigo": {
+    "lemma": "conmigo",
+    "gloss": "with me",
+    "pos": "pronoun"
+  },
+  "posible": {
+    "lemma": "posible",
+    "gloss": "possible",
+    "pos": "adjective"
+  },
+  "encima": {
+    "lemma": "encima",
+    "gloss": "on top",
+    "pos": "adverb"
+  },
+  "durante": {
+    "lemma": "durante",
+    "gloss": "during",
+    "pos": "preposition"
+  },
+  "mil": {
+    "lemma": "mil",
+    "gloss": "a thousand",
+    "pos": "number"
+  },
+  "novecientos": {
+    "lemma": "novecientos",
+    "gloss": "nine hundred",
+    "pos": "number"
+  },
+  "sesenta": {
+    "lemma": "sesenta",
+    "gloss": "sixty",
+    "pos": "number"
+  },
+  "catorce": {
+    "lemma": "catorce",
+    "gloss": "fourteen",
+    "pos": "number"
+  },
+  "unas": {
+    "lemma": "un",
+    "gloss": "some",
+    "pos": "article"
+  },
+  "increíble": {
+    "lemma": "increíble",
+    "gloss": "incredible",
+    "pos": "adjective"
+  },
+  "ese": {
+    "lemma": "ese",
+    "gloss": "that",
+    "pos": "adjective"
+  },
+  "acostar": {
+    "lemma": "acostar",
+    "gloss": "to go to bed",
+    "pos": "verb"
+  },
+  "casar": {
+    "lemma": "casar",
+    "gloss": "to marry",
+    "pos": "verb"
+  },
+  "acercó": {
+    "lemma": "acercar",
+    "gloss": "came over",
+    "pos": "verb"
+  },
+  "clientes": {
+    "lemma": "cliente",
+    "gloss": "clients",
+    "pos": "noun"
+  },
+  "largo": {
+    "lemma": "largo",
+    "gloss": "long",
+    "pos": "adjective"
+  },
+  "aunque": {
+    "lemma": "aunque",
+    "gloss": "although",
+    "pos": "conjunction"
+  },
+  "bueno": {
+    "lemma": "bueno",
+    "gloss": "good",
+    "pos": "adjective"
+  },
+  "decir": {
+    "lemma": "decir",
+    "gloss": "to say",
+    "pos": "verb"
+  },
+  "hablar": {
+    "lemma": "hablar",
+    "gloss": "to speak",
+    "pos": "verb"
+  },
+  "maneras": {
+    "lemma": "manera",
+    "gloss": "ways",
+    "pos": "noun"
+  },
+  "viajé": {
+    "lemma": "viajar",
+    "gloss": "I travelled",
+    "pos": "verb"
+  },
+  "capital": {
+    "lemma": "capital",
+    "gloss": "capital",
+    "pos": "noun"
+  },
+  "bebido": {
+    "lemma": "beber",
+    "gloss": "drunk",
+    "pos": "verb"
+  },
+  "cafés": {
+    "lemma": "café",
+    "gloss": "coffees",
+    "pos": "noun"
+  },
+  "duerme": {
+    "lemma": "dormir",
+    "gloss": "sleeps",
+    "pos": "verb"
+  },
+  "tranquila": {
+    "lemma": "tranquilo",
+    "gloss": "quiet, calm",
+    "pos": "adjective"
+  },
+  "levantar": {
+    "lemma": "levantar",
+    "gloss": "to get up",
+    "pos": "verb"
+  },
+  "acercar": {
+    "lemma": "acercar",
+    "gloss": "to come closer",
+    "pos": "verb"
+  },
+  "volver": {
+    "lemma": "volver",
+    "gloss": "to go back",
+    "pos": "verb"
+  },
+  "Ciudad": {
+    "lemma": "Ciudad de México",
+    "gloss": "Mexico City",
+    "pos": "name"
+  },
+  "misma": {
+    "lemma": "mismo",
+    "gloss": "same",
+    "pos": "adjective"
+  },
+  "tienda": {
+    "lemma": "tienda",
+    "gloss": "shop",
+    "pos": "noun"
   }
 }

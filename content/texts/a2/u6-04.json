@@ -1,0 +1,74 @@
+{
+  "id": "a2-u6-04-fui-a-mexico",
+  "level": "A2",
+  "unit": 6,
+  "order": 4,
+  "title": "Fui a México",
+  "titleEn": "I went to Mexico",
+  "blurbEn": "The trip finally happens. Here come the irregular preterites — and the strangest one: 'fui' is both 'I went' and 'I was'.",
+  "grammarRefs": [
+    "irregular-preterites"
+  ],
+  "body": "El año pasado fui a México por fin.\n\nFue un viaje largo. Estuve muchas horas en el avión y llegué al aeropuerto muy cansada.\n\nPablo me esperó allí con su familia. Tuve mucha suerte: ellos me invitaron a su casa y no pagué nada de hotel.\n\nEstuvimos una semana en Ciudad de México y después fuimos a la playa.\n\nLa comida fue increíble y la gente fue muy amable conmigo. Tuve que aprender muchas palabras nuevas, pero mereció la pena.",
+  "translationEn": "Last year I finally went to Mexico.\n\nIt was a long trip. I spent many hours on the plane and arrived at the airport very tired.\n\nPablo waited for me there with his family. I was very lucky: they invited me to their house and I did not pay anything for a hotel.\n\nWe spent a week in Mexico City and afterwards we went to the beach.\n\nThe food was incredible and the people were very kind to me. I had to learn many new words, but it was worth it.",
+  "newLemmas": [
+    "aeropuerto",
+    "esperar",
+    "allí",
+    "suerte",
+    "hotel",
+    "playa",
+    "increíble",
+    "amable",
+    "conmigo",
+    "merecer",
+    "pena",
+    "viaje"
+  ],
+  "glosses": {
+    "fui": {
+      "lemma": "ir",
+      "gloss": "I went",
+      "pos": "verb",
+      "note": "'ir' and 'ser' share exactly the same preterite. 'Fui a México' is I went; 'Fui feliz' is I was happy. Context decides, always."
+    },
+    "fue": {
+      "lemma": "ser",
+      "gloss": "it was",
+      "pos": "verb",
+      "note": "Same form as 'he/she went'. Here it is 'ser' — 'fue un viaje largo'."
+    },
+    "Estuve": {
+      "lemma": "estar",
+      "gloss": "I was, I spent",
+      "pos": "verb",
+      "note": "From 'estar'. Irregular stem 'estuv-' plus its own set of endings, with no accents."
+    },
+    "Tuve": {
+      "lemma": "tener",
+      "gloss": "I had",
+      "pos": "verb",
+      "note": "From 'tener'. Stem 'tuv-' — the same pattern as 'estuve'."
+    }
+  },
+  "phrases": [
+    {
+      "s": "por fin",
+      "gloss": "at last"
+    },
+    {
+      "s": "Tuve mucha suerte",
+      "gloss": "I was very lucky",
+      "note": "Spanish *has* luck rather than *is* lucky, just as it has years rather than is them."
+    },
+    {
+      "s": "Tuve que aprender",
+      "gloss": "I had to learn",
+      "note": "'tener que' + verb means 'have to'."
+    },
+    {
+      "s": "mereció la pena",
+      "gloss": "it was worth it"
+    }
+  ]
+}

@@ -259,8 +259,8 @@ texts that use it. Cross-linked both ways with `grammarRefs`.
 Build a **vertical slice first**: Unit 1 complete (6 texts + audio + grammar docs + lexicon)
 before scaling out. If anything about the pipeline is wrong, it surfaces at 6 texts, not 60.
 
-**Status: A1 complete plus A2 Unit 5.** 30 texts, 1,740 words, 346 lemmas, 20 grammar pages,
-4.9 MB audio. Live at https://rtarik.github.io/verba/
+**Status: A1 complete, A2 Units 5–6.** 36 texts, 2,249 words, 412 lemmas, 23 grammar pages,
+6.2 MB audio. Live at https://rtarik.github.io/verba/
 
 | Unit | Avg length | Recycled vocabulary |
 |---|---|---|
@@ -269,6 +269,7 @@ before scaling out. If anything about the pipeline is wrong, it surfaces at 6 te
 | A1 3 En la ciudad | 67 w | 72% |
 | A1 4 La comida | 68 w | 74% |
 | A2 5 Hoy he trabajado | 82 w | 81% |
+| A2 6 El pasado | 85 w | 80% |
 
 That last column is the health metric for the course. If it ever falls while texts lengthen, new
 vocabulary is being pushed too fast. Target for A2 is to hold 70–80% while texts grow toward
@@ -314,6 +315,11 @@ between Units 1 and 2:
   "Continue" below the fold.
   Jump links scroll programmatically rather than via `href="#unit-3"` anchors, because hash
   routing owns the URL fragment and an anchor would be parsed as a route.
+- **Grammar read-state.** Reference pages track whether they have been read, shown as an accent
+  left border plus a tick, with per-category counts. Marked automatically after a 2.5s dwell —
+  a bounce through on the way elsewhere should not count — with a manual toggle on the page for
+  override. Stored under its own `verba.grammar.v1` key rather than folded into the text
+  progress map, because the library counts that map's size as "texts read".
 - **Theme control.** Three states — follow the system, force light, force dark — rather than a
   plain switch, so picking a theme once does not permanently sever the link to the OS setting.
   The dark palette is declared twice: under `prefers-color-scheme`, guarded by

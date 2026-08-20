@@ -1,13 +1,24 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { grammarDocs, grammarByCategory, grammarById, textsUsingGrammar } from '@/lib/content'
+import { grammarProgress, useGrammarProgress } from '@/lib/progress'
 
 export default function Grammar() {
   const { id } = useParams()
   const doc = id ? grammarById(id) : null
   const [query, setQuery] = useState('')
+  const readState = useGrammarProgress()
+
+  // Opening a reference page and staying on it counts as having read it.
+  // The delay keeps a mis-click, or a bounce through on the way somewhere
+  // else, from silently marking the page done.
+  useEffect(() => {
+    if (!doc) return
+    const t = window.setTimeout(() => grammarProgress.markRead(doc.id), 2500)
+    return () => window.clearTimeout(t)
+  }, [doc?.id])
 
   const groups = useMemo(() => {
     const q = query.trim().toLowerCase()
@@ -42,6 +53,16 @@ export default function Grammar() {
         <div className="prose-grammar mt-5 max-w-none">
           <ReactMarkdown remarkPlugins={[remarkGfm]}>{doc.body}</ReactMarkdown>
         </div>
+
+        <button
+          onClick={() => grammarProgress.toggle(doc.id)}
+          className="mt-8 rounded px-3 py-1.5 text-xs"
+          style={readState[doc.id]
+            ? { background: 'var(--accent-soft)', color: 'var(--accent)' }
+            : { border: '1px solid var(--edge)', color: 'var(--ink-soft)' }}
+        >
+          {readState[doc.id] ? '✓ Read' : 'Mark as read'}
+        </button>
 
         {used.length > 0 && (
           <div className="mt-10 rounded-xl px-5 py-4" style={{ background: 'var(--surface)', border: '1px solid var(--edge)' }}>
@@ -103,26 +124,56 @@ export default function Grammar() {
 
       {groups.map((g) => (
         <section key={g.category} className="mt-8">
-          <h2 className="text-[11px] uppercase tracking-wide" style={{ color: 'var(--accent)' }}>{g.category}</h2>
+          <div className="flex items-baseline justify-between gap-3">
+            <h2 className="text-[11px] uppercase tracking-wide" style={{ color: 'var(--accent)' }}>{g.category}</h2>
+            <span className="text-[11px] tabular-nums" style={{ color: 'var(--ink-soft)' }}>
+              {g.docs.filter((d) => readState[d.id]).length}/{g.docs.length} read
+            </span>
+          </div>
           <ul className="mt-2.5 space-y-2">
-            {g.docs.map((d) => (
-              <li key={d.id}>
-                <Link
-                  to={`/grammar/${d.id}`}
-                  className="flex items-baseline justify-between gap-3 rounded-lg px-4 py-3"
-                  style={{ background: 'var(--surface)', border: '1px solid var(--edge)' }}
-                >
-                  <span className="font-medium" style={{ fontFamily: 'var(--font-reading)' }}>{d.title}</span>
-                  <span className="shrink-0 text-xs" style={{ color: 'var(--ink-soft)' }}>{d.level}</span>
-                </Link>
-              </li>
-            ))}
+            {g.docs.map((d) => {
+              const isRead = Boolean(readState[d.id])
+              return (
+                <li key={d.id}>
+                  <Link
+                    to={`/grammar/${d.id}`}
+                    className="flex items-baseline justify-between gap-3 rounded-lg py-3 pr-4"
+                    style={{
+                      background: 'var(--surface)',
+                      border: '1px solid var(--edge)',
+                      // A thick left edge marks a page already read. Unread
+                      // pages keep an edge of the same width in the border
+                      // colour, so nothing shifts sideways between states.
+                      borderLeft: `3px solid ${isRead ? 'var(--accent)' : 'var(--edge)'}`,
+                      paddingLeft: 'calc(1rem - 2px)',
+                    }}
+                  >
+                    <span className="flex items-baseline gap-2">
+                      <span
+                        className="w-3 shrink-0 text-xs"
+                        style={{ color: 'var(--accent)', opacity: isRead ? 1 : 0 }}
+                        aria-hidden="true"
+                      >
+                        ✓
+                      </span>
+                      <span
+                        className="font-medium"
+                        style={{ fontFamily: 'var(--font-reading)', color: isRead ? 'var(--ink-soft)' : 'var(--ink)' }}
+                      >
+                        {d.title}
+                      </span>
+                    </span>
+                    <span className="shrink-0 text-xs" style={{ color: 'var(--ink-soft)' }}>{d.level}</span>
+                  </Link>
+                </li>
+              )
+            })}
           </ul>
         </section>
       ))}
 
       <p className="mt-8 text-xs" style={{ color: 'var(--ink-soft)' }}>
-        {grammarDocs.length} topics
+        {grammarDocs.length} topics · {Object.keys(readState).length} read
       </p>
     </div>
   )

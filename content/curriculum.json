@@ -112,8 +112,14 @@
         "irregular past forms",
         "telling a story"
       ],
-      "textIds": [],
-      "summaryEn": "The tense for finished events at a definite time — 'ayer comí', 'el año pasado fui a México'. Regular forms first, then the handful of irregulars that carry most of the weight."
+      "textIds": [
+        "a2-u6-01-ayer-trabaje-mucho",
+        "a2-u6-02-el-fin-de-semana-pasado",
+        "a2-u6-03-hoy-he-comido-ayer-comi",
+        "a2-u6-04-fui-a-mexico",
+        "a2-u6-05-no-pude-dormir",
+        "a2-u6-06-la-historia-de-mis-abuelos"
+      ]
     },
     {
       "unit": 7,
