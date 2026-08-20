@@ -1,0 +1,63 @@
+{
+  "id": "a2-u9-04-me-gustaria-vivir-alli",
+  "level": "A2",
+  "unit": 9,
+  "order": 4,
+  "title": "Me gustaría vivir allí",
+  "titleEn": "I'd like to live there",
+  "blurbEn": "The conditional: what would happen, and the politest way to ask for anything in Spanish.",
+  "grammarRefs": [
+    "condicional"
+  ],
+  "body": "Me gustaría vivir en México algún día.\n\nNo sé si sería fácil. Echaría de menos a mi familia, la comida de mi madre y las calles de Madrid. Pero creo que aprendería muchísimo.\n\nViviría en una casa pequeña, cerca del mar. Trabajaría por la mañana y estudiaría por la tarde. Los fines de semana viajaría a los pueblos pequeños y conocería a gente de todo el país.\n\nSería una vida más lenta y más tranquila, con menos ruido y menos prisa.\n\nPodría escribir un blog sobre la experiencia.\n\nMi madre dice que yo no aguantaría ni tres meses lejos de casa. Probablemente tiene razón. Pero me gustaría intentarlo.",
+  "translationEn": "I'd like to live in Mexico one day.\n\nI don't know if it would be easy. I would miss my family, my mother's cooking and the streets of Madrid. But I think I would learn an enormous amount.\n\nI would live in a small house, near the sea. I would work in the morning and study in the afternoon. At weekends I would travel to the small villages and meet people from all over the country.\n\nIt would be a slower, quieter life, with less noise and less hurry.\n\nI could write a blog about the experience.\n\nMy mother says I wouldn't last even three months away from home. She's probably right. But I'd like to try.",
+  "newLemmas": [
+    "echar",
+    "muchísimo",
+    "mar",
+    "aguantar",
+    "intentar",
+    "blog",
+    "experiencia",
+    "servir"
+  ],
+  "glosses": {
+    "gustaría": {
+      "lemma": "gustar",
+      "gloss": "would like",
+      "pos": "verb",
+      "note": "You have been using this since Unit 5. It is the conditional of 'gustar', and it is softer and more polite than 'me gusta'."
+    },
+    "sería": {
+      "lemma": "ser",
+      "gloss": "would be",
+      "pos": "verb",
+      "note": "Same stem as the future ('será'), different endings — the conditional uses the imperfecto endings -ía, -ías, -ía."
+    },
+    "Echaría de menos": {
+      "lemma": "echar",
+      "gloss": "I would miss",
+      "pos": "verb"
+    }
+  },
+  "phrases": [
+    {
+      "s": "Me gustaría",
+      "gloss": "I would like",
+      "at": 0
+    },
+    {
+      "s": "algún día",
+      "gloss": "one day"
+    },
+    {
+      "s": "Echaría de menos",
+      "gloss": "I would miss",
+      "note": "'echar de menos' is the Spanish for missing someone. Literally 'to throw of less', which helps nobody — learn it whole."
+    },
+    {
+      "s": "me gustaría intentarlo",
+      "gloss": "I'd like to try it"
+    }
+  ]
+}

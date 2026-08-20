@@ -1,0 +1,63 @@
+{
+  "id": "a2-u9-06-dentro-de-cinco-anos",
+  "level": "A2",
+  "unit": 9,
+  "order": 6,
+  "title": "Dentro de cinco años",
+  "titleEn": "Five years from now",
+  "blurbEn": "The last text of the unit: everything Ana expects, hopes and is not sure about — all three futures at once.",
+  "grammarRefs": [
+    "futuro",
+    "condicional"
+  ],
+  "body": "No sé exactamente dónde estaré dentro de cinco años, pero tengo algunas ideas.\n\nHablaré español con fluidez. Eso lo tengo claro: voy a seguir estudiando hasta conseguirlo.\n\nProbablemente viviré todavía en Madrid, aunque me gustaría pasar un año fuera. Tendré un trabajo mejor que el de ahora.\n\nMi hermana terminará la universidad y trabajará en algo creativo.\n\nMis abuelos seguirán en su pueblo, con el jardín y el gato.\n\nQuizá tendré hijos. Quizá no. No tengo prisa por decidirlo.\n\nY yo volveré a México cada verano, si puedo.\n\nDentro de cinco años releeré este texto. Espero sonreír.",
+  "translationEn": "I don't know exactly where I will be five years from now, but I have some ideas.\n\nI will speak Spanish fluently. That much is clear to me: I'm going to keep studying until I manage it.\n\nI will probably still live in Madrid, although I'd like to spend a year abroad. I will have a better job than the one I have now.\n\nMy sister will finish university and will work in something creative.\n\nMy grandparents will still be in their village, with the garden and the cat.\n\nMaybe I will have children. Maybe not. I'm in no hurry to decide.\n\nAnd I will go back to Mexico every summer, if I can.\n\nFive years from now I will reread this text. I hope I smile.",
+  "newLemmas": [
+    "idea",
+    "fluidez",
+    "conseguir",
+    "creativo",
+    "releer",
+    "quizá",
+    "hijo",
+    "único"
+  ],
+  "glosses": {
+    "estaré": {
+      "lemma": "estar",
+      "gloss": "I will be",
+      "pos": "verb",
+      "note": "'estar' because it is about location, not identity. The Unit 1 rule still applies four units later."
+    },
+    "seguirán": {
+      "lemma": "seguir",
+      "gloss": "will still be",
+      "pos": "verb",
+      "note": "'seguir' + a place means to still be there."
+    },
+    "Quizá": {
+      "lemma": "quizá",
+      "gloss": "maybe",
+      "pos": "adverb"
+    }
+  },
+  "phrases": [
+    {
+      "s": "Dentro de cinco años",
+      "gloss": "Five years from now",
+      "at": 5
+    },
+    {
+      "s": "con fluidez",
+      "gloss": "fluently"
+    },
+    {
+      "s": "hasta conseguirlo",
+      "gloss": "until I manage it"
+    },
+    {
+      "s": "No tengo prisa",
+      "gloss": "I'm in no hurry"
+    }
+  ]
+}

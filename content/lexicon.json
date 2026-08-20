@@ -4769,5 +4769,720 @@
     "lemma": "texto",
     "gloss": "text",
     "pos": "noun"
+  },
+  "cambiará": {
+    "lemma": "cambiar",
+    "gloss": "will change",
+    "pos": "verb"
+  },
+  "cambiaré": {
+    "lemma": "cambiar",
+    "gloss": "I will change",
+    "pos": "verb"
+  },
+  "terminaré": {
+    "lemma": "terminar",
+    "gloss": "I will finish",
+    "pos": "verb"
+  },
+  "terminará": {
+    "lemma": "terminar",
+    "gloss": "will finish",
+    "pos": "verb"
+  },
+  "presentaré": {
+    "lemma": "presentar",
+    "gloss": "I will put myself forward",
+    "pos": "verb"
+  },
+  "buscará": {
+    "lemma": "buscar",
+    "gloss": "will look for",
+    "pos": "verb"
+  },
+  "trabajaré": {
+    "lemma": "trabajar",
+    "gloss": "I will work",
+    "pos": "verb"
+  },
+  "trabajará": {
+    "lemma": "trabajar",
+    "gloss": "will work",
+    "pos": "verb"
+  },
+  "ganaré": {
+    "lemma": "ganar",
+    "gloss": "I will earn",
+    "pos": "verb"
+  },
+  "aprenderé": {
+    "lemma": "aprender",
+    "gloss": "I will learn",
+    "pos": "verb"
+  },
+  "empezará": {
+    "lemma": "empezar",
+    "gloss": "will start",
+    "pos": "verb"
+  },
+  "vivirá": {
+    "lemma": "vivir",
+    "gloss": "will live",
+    "pos": "verb"
+  },
+  "viviré": {
+    "lemma": "vivir",
+    "gloss": "I will live",
+    "pos": "verb"
+  },
+  "conoceré": {
+    "lemma": "conocer",
+    "gloss": "I will meet",
+    "pos": "verb"
+  },
+  "hablaré": {
+    "lemma": "hablar",
+    "gloss": "I will speak",
+    "pos": "verb"
+  },
+  "hablará": {
+    "lemma": "hablar",
+    "gloss": "will speak",
+    "pos": "verb"
+  },
+  "estaré": {
+    "lemma": "estar",
+    "gloss": "I will be",
+    "pos": "verb"
+  },
+  "estará": {
+    "lemma": "estar",
+    "gloss": "will be",
+    "pos": "verb"
+  },
+  "serán": {
+    "lemma": "ser",
+    "gloss": "they will be",
+    "pos": "verb"
+  },
+  "volveré": {
+    "lemma": "volver",
+    "gloss": "I will go back",
+    "pos": "verb"
+  },
+  "seguirán": {
+    "lemma": "seguir",
+    "gloss": "will carry on",
+    "pos": "verb"
+  },
+  "releeré": {
+    "lemma": "releer",
+    "gloss": "I will reread",
+    "pos": "verb"
+  },
+  "releer": {
+    "lemma": "releer",
+    "gloss": "to reread",
+    "pos": "verb"
+  },
+  "tendré": {
+    "lemma": "tener",
+    "gloss": "I will have",
+    "pos": "verb"
+  },
+  "podré": {
+    "lemma": "poder",
+    "gloss": "I will be able to",
+    "pos": "verb"
+  },
+  "podremos": {
+    "lemma": "poder",
+    "gloss": "we will be able to",
+    "pos": "verb"
+  },
+  "habrá": {
+    "lemma": "haber",
+    "gloss": "there will be",
+    "pos": "verb"
+  },
+  "diré": {
+    "lemma": "decir",
+    "gloss": "I will say",
+    "pos": "verb"
+  },
+  "dirá": {
+    "lemma": "decir",
+    "gloss": "will say",
+    "pos": "verb"
+  },
+  "pondré": {
+    "lemma": "poner",
+    "gloss": "I will get, I will put",
+    "pos": "verb"
+  },
+  "saldrá": {
+    "lemma": "salir",
+    "gloss": "will come out",
+    "pos": "verb"
+  },
+  "querrá": {
+    "lemma": "querer",
+    "gloss": "will want",
+    "pos": "verb"
+  },
+  "sabré": {
+    "lemma": "saber",
+    "gloss": "I will know",
+    "pos": "verb"
+  },
+  "sería": {
+    "lemma": "ser",
+    "gloss": "would be",
+    "pos": "verb"
+  },
+  "echaría": {
+    "lemma": "echar",
+    "gloss": "I would miss",
+    "pos": "verb"
+  },
+  "aprendería": {
+    "lemma": "aprender",
+    "gloss": "I would learn",
+    "pos": "verb"
+  },
+  "viviría": {
+    "lemma": "vivir",
+    "gloss": "I would live",
+    "pos": "verb"
+  },
+  "trabajaría": {
+    "lemma": "trabajar",
+    "gloss": "I would work",
+    "pos": "verb"
+  },
+  "estudiaría": {
+    "lemma": "estudiar",
+    "gloss": "I would study",
+    "pos": "verb"
+  },
+  "viajaría": {
+    "lemma": "viajar",
+    "gloss": "I would travel",
+    "pos": "verb"
+  },
+  "aguantaría": {
+    "lemma": "aguantar",
+    "gloss": "I would last",
+    "pos": "verb"
+  },
+  "podría": {
+    "lemma": "poder",
+    "gloss": "I could",
+    "pos": "verb"
+  },
+  "conocería": {
+    "lemma": "conocer",
+    "gloss": "I would meet",
+    "pos": "verb"
+  },
+  "practicar": {
+    "lemma": "practicar",
+    "gloss": "to practise",
+    "pos": "verb"
+  },
+  "reservado": {
+    "lemma": "reservar",
+    "gloss": "booked",
+    "pos": "verb"
+  },
+  "improvisar": {
+    "lemma": "improvisar",
+    "gloss": "to improvise",
+    "pos": "verb"
+  },
+  "descubrir": {
+    "lemma": "descubrir",
+    "gloss": "to discover",
+    "pos": "verb"
+  },
+  "cuidarme": {
+    "lemma": "cuidar",
+    "gloss": "to look after myself",
+    "pos": "verb"
+  },
+  "presentar": {
+    "lemma": "presentar",
+    "gloss": "to put forward",
+    "pos": "verb"
+  },
+  "apruebo": {
+    "lemma": "aprobar",
+    "gloss": "I pass",
+    "pos": "verb"
+  },
+  "aprobar": {
+    "lemma": "aprobar",
+    "gloss": "to pass",
+    "pos": "verb"
+  },
+  "jubila": {
+    "lemma": "jubilar",
+    "gloss": "retires",
+    "pos": "verb"
+  },
+  "jubilar": {
+    "lemma": "jubilar",
+    "gloss": "to retire",
+    "pos": "verb"
+  },
+  "ganar": {
+    "lemma": "ganar",
+    "gloss": "to earn, to win",
+    "pos": "verb"
+  },
+  "importa": {
+    "lemma": "importar",
+    "gloss": "matters",
+    "pos": "verb"
+  },
+  "importar": {
+    "lemma": "importar",
+    "gloss": "to matter",
+    "pos": "verb"
+  },
+  "nota": {
+    "lemma": "notar",
+    "gloss": "notices",
+    "pos": "verb"
+  },
+  "notar": {
+    "lemma": "notar",
+    "gloss": "to notice",
+    "pos": "verb"
+  },
+  "juzgar": {
+    "lemma": "juzgar",
+    "gloss": "to judge",
+    "pos": "verb"
+  },
+  "echar": {
+    "lemma": "echar",
+    "gloss": "to throw, to miss",
+    "pos": "verb"
+  },
+  "aguantar": {
+    "lemma": "aguantar",
+    "gloss": "to put up with",
+    "pos": "verb"
+  },
+  "intentarlo": {
+    "lemma": "intentar",
+    "gloss": "to try it",
+    "pos": "verb"
+  },
+  "intentar": {
+    "lemma": "intentar",
+    "gloss": "to try",
+    "pos": "verb"
+  },
+  "encanta": {
+    "lemma": "encantar",
+    "gloss": "I love",
+    "pos": "verb"
+  },
+  "encantar": {
+    "lemma": "encantar",
+    "gloss": "to delight",
+    "pos": "verb"
+  },
+  "confundía": {
+    "lemma": "confundir",
+    "gloss": "I used to get confused",
+    "pos": "verb"
+  },
+  "confundir": {
+    "lemma": "confundir",
+    "gloss": "to confuse",
+    "pos": "verb"
+  },
+  "conseguirlo": {
+    "lemma": "conseguir",
+    "gloss": "to achieve it",
+    "pos": "verb"
+  },
+  "conseguir": {
+    "lemma": "conseguir",
+    "gloss": "to achieve",
+    "pos": "verb"
+  },
+  "sirven": {
+    "lemma": "servir",
+    "gloss": "serve, are good for",
+    "pos": "verb"
+  },
+  "servir": {
+    "lemma": "servir",
+    "gloss": "to serve",
+    "pos": "verb"
+  },
+  "espero": {
+    "lemma": "esperar",
+    "gloss": "I hope",
+    "pos": "verb"
+  },
+  "paseo": {
+    "lemma": "pasear",
+    "gloss": "I walk",
+    "pos": "verb"
+  },
+  "billete": {
+    "lemma": "billete",
+    "gloss": "ticket",
+    "pos": "noun"
+  },
+  "turistas": {
+    "lemma": "turista",
+    "gloss": "tourists",
+    "pos": "noun"
+  },
+  "junio": {
+    "lemma": "junio",
+    "gloss": "June",
+    "pos": "noun"
+  },
+  "examen": {
+    "lemma": "examen",
+    "gloss": "exam",
+    "pos": "noun"
+  },
+  "certificado": {
+    "lemma": "certificado",
+    "gloss": "certificate",
+    "pos": "noun"
+  },
+  "empresa": {
+    "lemma": "empresa",
+    "gloss": "company",
+    "pos": "noun"
+  },
+  "piso": {
+    "lemma": "piso",
+    "gloss": "flat",
+    "pos": "noun"
+  },
+  "tonterías": {
+    "lemma": "tontería",
+    "gloss": "silly things",
+    "pos": "noun"
+  },
+  "pausa": {
+    "lemma": "pausa",
+    "gloss": "pause",
+    "pos": "noun"
+  },
+  "mar": {
+    "lemma": "mar",
+    "gloss": "sea",
+    "pos": "noun"
+  },
+  "blog": {
+    "lemma": "blog",
+    "gloss": "blog",
+    "pos": "noun"
+  },
+  "experiencia": {
+    "lemma": "experiencia",
+    "gloss": "experience",
+    "pos": "noun"
+  },
+  "sueños": {
+    "lemma": "sueño",
+    "gloss": "dreams",
+    "pos": "noun"
+  },
+  "traductor": {
+    "lemma": "traductor",
+    "gloss": "translator",
+    "pos": "noun"
+  },
+  "gusto": {
+    "lemma": "gusto",
+    "gloss": "pleasure, taste",
+    "pos": "noun"
+  },
+  "objetivo": {
+    "lemma": "objetivo",
+    "gloss": "aim",
+    "pos": "noun"
+  },
+  "causa": {
+    "lemma": "causa",
+    "gloss": "cause",
+    "pos": "noun"
+  },
+  "lugar": {
+    "lemma": "lugar",
+    "gloss": "place",
+    "pos": "noun"
+  },
+  "motivo": {
+    "lemma": "motivo",
+    "gloss": "reason",
+    "pos": "noun"
+  },
+  "destino": {
+    "lemma": "destino",
+    "gloss": "destination",
+    "pos": "noun"
+  },
+  "ideas": {
+    "lemma": "idea",
+    "gloss": "ideas",
+    "pos": "noun"
+  },
+  "fluidez": {
+    "lemma": "fluidez",
+    "gloss": "fluency",
+    "pos": "noun"
+  },
+  "hijos": {
+    "lemma": "hijo",
+    "gloss": "children",
+    "pos": "noun"
+  },
+  "juntos": {
+    "lemma": "junto",
+    "gloss": "together",
+    "pos": "adjective"
+  },
+  "preocupada": {
+    "lemma": "preocupado",
+    "gloss": "worried",
+    "pos": "adjective"
+  },
+  "alguien": {
+    "lemma": "alguien",
+    "gloss": "someone",
+    "pos": "pronoun"
+  },
+  "interesantes": {
+    "lemma": "interesante",
+    "gloss": "interesting",
+    "pos": "adjective"
+  },
+  "seguramente": {
+    "lemma": "seguro",
+    "gloss": "surely",
+    "pos": "adverb"
+  },
+  "seguro": {
+    "lemma": "seguro",
+    "gloss": "sure",
+    "pos": "adjective"
+  },
+  "nerviosa": {
+    "lemma": "nervioso",
+    "gloss": "nervous",
+    "pos": "adjective"
+  },
+  "peor": {
+    "lemma": "peor",
+    "gloss": "worst",
+    "pos": "adjective"
+  },
+  "llena": {
+    "lemma": "lleno",
+    "gloss": "full",
+    "pos": "adjective"
+  },
+  "muchísimo": {
+    "lemma": "muchísimo",
+    "gloss": "a huge amount",
+    "pos": "adverb"
+  },
+  "creativo": {
+    "lemma": "creativo",
+    "gloss": "creative",
+    "pos": "adjective"
+  },
+  "quizá": {
+    "lemma": "quizá",
+    "gloss": "maybe",
+    "pos": "adverb"
+  },
+  "único": {
+    "lemma": "único",
+    "gloss": "only",
+    "pos": "adjective"
+  },
+  "algunas": {
+    "lemma": "alguno",
+    "gloss": "some",
+    "pos": "adjective"
+  },
+  "algún": {
+    "lemma": "alguno",
+    "gloss": "some",
+    "pos": "adjective"
+  },
+  "reservar": {
+    "lemma": "reservar",
+    "gloss": "to book",
+    "pos": "verb"
+  },
+  "cuidar": {
+    "lemma": "cuidar",
+    "gloss": "to look after",
+    "pos": "verb"
+  },
+  "tontería": {
+    "lemma": "tontería",
+    "gloss": "silly thing",
+    "pos": "noun"
+  },
+  "nervioso": {
+    "lemma": "nervioso",
+    "gloss": "nervous",
+    "pos": "adjective"
+  },
+  "preocupado": {
+    "lemma": "preocupado",
+    "gloss": "worried",
+    "pos": "adjective"
+  },
+  "lleno": {
+    "lemma": "lleno",
+    "gloss": "full",
+    "pos": "adjective"
+  },
+  "hijo": {
+    "lemma": "hijo",
+    "gloss": "child",
+    "pos": "noun"
+  },
+  "idea": {
+    "lemma": "idea",
+    "gloss": "idea",
+    "pos": "noun"
+  },
+  "turista": {
+    "lemma": "turista",
+    "gloss": "tourist",
+    "pos": "noun"
+  },
+  "correo": {
+    "lemma": "correo",
+    "gloss": "email",
+    "pos": "noun"
+  },
+  "estar": {
+    "lemma": "estar",
+    "gloss": "to be",
+    "pos": "verb"
+  },
+  "hacer": {
+    "lemma": "hacer",
+    "gloss": "to do, to make",
+    "pos": "verb"
+  },
+  "mirar": {
+    "lemma": "mirar",
+    "gloss": "to look at",
+    "pos": "verb"
+  },
+  "primeros": {
+    "lemma": "primero",
+    "gloss": "first",
+    "pos": "adjective"
+  },
+  "primer": {
+    "lemma": "primero",
+    "gloss": "first",
+    "pos": "adjective"
+  },
+  "quedarme": {
+    "lemma": "quedar",
+    "gloss": "to stay",
+    "pos": "verb"
+  },
+  "semanas": {
+    "lemma": "semana",
+    "gloss": "weeks",
+    "pos": "noun"
+  },
+  "sitio": {
+    "lemma": "sitio",
+    "gloss": "place",
+    "pos": "noun"
+  },
+  "oficial": {
+    "lemma": "oficial",
+    "gloss": "official",
+    "pos": "adjective"
+  },
+  "gramática": {
+    "lemma": "gramática",
+    "gloss": "grammar",
+    "pos": "noun"
+  },
+  "hermano": {
+    "lemma": "hermano",
+    "gloss": "brother",
+    "pos": "noun"
+  },
+  "interesante": {
+    "lemma": "interesante",
+    "gloss": "interesting",
+    "pos": "adjective"
+  },
+  "fines": {
+    "lemma": "fin",
+    "gloss": "ends",
+    "pos": "noun"
+  },
+  "lenta": {
+    "lemma": "lento",
+    "gloss": "slow",
+    "pos": "adjective"
+  },
+  "pueblos": {
+    "lemma": "pueblo",
+    "gloss": "villages",
+    "pos": "noun"
+  },
+  "vivir": {
+    "lemma": "vivir",
+    "gloss": "to live",
+    "pos": "verb"
+  },
+  "estudiar": {
+    "lemma": "estudiar",
+    "gloss": "to study",
+    "pos": "verb"
+  },
+  "canciones": {
+    "lemma": "canción",
+    "gloss": "songs",
+    "pos": "noun"
+  },
+  "razones": {
+    "lemma": "razón",
+    "gloss": "reasons",
+    "pos": "noun"
+  },
+  "decidirlo": {
+    "lemma": "decidir",
+    "gloss": "to decide it",
+    "pos": "verb"
+  },
+  "escucho": {
+    "lemma": "escuchar",
+    "gloss": "I listen to",
+    "pos": "verb"
+  },
+  "usamos": {
+    "lemma": "usar",
+    "gloss": "we use",
+    "pos": "verb"
   }
 }

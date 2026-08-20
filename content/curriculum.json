@@ -172,8 +172,14 @@
         "conditional",
         "por vs para"
       ],
-      "textIds": [],
-      "summaryEn": "Three ways to talk about what has not happened yet, from the everyday 'voy a' to the full future tense, plus the conditional for what would happen."
+      "textIds": [
+        "a2-u9-01-que-vas-a-hacer",
+        "a2-u9-02-el-ano-que-viene",
+        "a2-u9-03-no-sabre-que-decir",
+        "a2-u9-04-me-gustaria-vivir-alli",
+        "a2-u9-05-por-y-para",
+        "a2-u9-06-dentro-de-cinco-anos"
+      ]
     },
     {
       "unit": 10,

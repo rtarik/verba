@@ -1,0 +1,63 @@
+{
+  "id": "a2-u9-02-el-ano-que-viene",
+  "level": "A2",
+  "unit": 9,
+  "order": 2,
+  "title": "El año que viene",
+  "titleEn": "Next year",
+  "blurbEn": "The proper future tense — and a rare piece of good news: one set of endings for all three verb types.",
+  "grammarRefs": [
+    "futuro"
+  ],
+  "body": "El año que viene mi vida cambiará bastante.\n\nTerminaré el curso de español en junio y me presentaré al examen. Si apruebo, tendré un certificado oficial.\n\nTambién cambiaré de trabajo. Mi jefe se jubila en septiembre y la empresa buscará a alguien nuevo. Yo me presentaré al puesto.\n\nTrabajaré más horas, pero ganaré más dinero y aprenderé cosas nuevas.\n\nMi hermana empezará la universidad en octubre. Vivirá con nosotros el primer año y después buscará un piso con sus amigas.\n\nSerán doce meses interesantes.",
+  "translationEn": "Next year my life will change quite a lot.\n\nI will finish the Spanish course in June and I will take the exam. If I pass, I will have an official certificate.\n\nI will also change jobs. My boss retires in September and the company will look for someone new. I will put myself forward for the position.\n\nI will work more hours, but I will earn more money and I will learn new things.\n\nMy sister will start university in October. She will live with us for the first year and afterwards she will look for a flat with her friends.\n\nIt will be an interesting twelve months.",
+  "newLemmas": [
+    "junio",
+    "presentar",
+    "examen",
+    "aprobar",
+    "certificado",
+    "jubilar",
+    "empresa",
+    "alguien",
+    "puesto",
+    "ganar",
+    "piso",
+    "interesante",
+    "oficial"
+  ],
+  "glosses": {
+    "cambiará": {
+      "lemma": "cambiar",
+      "gloss": "will change",
+      "pos": "verb",
+      "note": "The ending is added to the whole infinitive, not to a stem: cambiar + á. This is why the tense is so regular."
+    },
+    "Serán": {
+      "lemma": "ser",
+      "gloss": "they will be",
+      "pos": "verb",
+      "note": "Even 'ser' is regular here: ser + án. After the preterite, a relief."
+    },
+    "se jubila": {
+      "lemma": "jubilar",
+      "gloss": "retires",
+      "pos": "verb",
+      "note": "Present tense, not future — Spanish often uses the present for scheduled events, exactly as English does with 'he retires in September'."
+    }
+  },
+  "phrases": [
+    {
+      "s": "El año que viene",
+      "gloss": "Next year"
+    },
+    {
+      "s": "cambiaré de trabajo",
+      "gloss": "I will change jobs"
+    },
+    {
+      "s": "me presentaré al puesto",
+      "gloss": "I will apply for the position"
+    }
+  ]
+}

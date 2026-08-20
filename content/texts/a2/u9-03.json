@@ -1,0 +1,67 @@
+{
+  "id": "a2-u9-03-no-sabre-que-decir",
+  "level": "A2",
+  "unit": 9,
+  "order": 3,
+  "title": "No sabré qué decir",
+  "titleEn": "I won't know what to say",
+  "blurbEn": "Meeting the family, and the twelve verbs whose future stem is not quite the infinitive.",
+  "grammarRefs": [
+    "futuro"
+  ],
+  "body": "Dentro de dos semanas conoceré a la familia de Pablo, y no sé si podré decir algo interesante.\n\nTendré que hablar español todo el tiempo. No habrá diccionario, no habrá subtítulos, no habrá pausa.\n\nSeguramente diré muchas tonterías. Me pondré nerviosa y saldrá lo peor de mi gramática.\n\nPero Pablo dice que no importa. Dice que su madre hablará por las dos, que su padre no dirá casi nada y que su hermano querrá practicar inglés conmigo. Dice que nadie me va a juzgar.\n\nAsí que todo saldrá bien.\n\nY si no, siempre podremos comer. Con la boca llena nadie nota los errores.",
+  "translationEn": "In two weeks I will meet Pablo's family, and I don't know if I will be able to say anything interesting.\n\nI will have to speak Spanish the whole time. There will be no dictionary, no subtitles, no pause.\n\nI will surely say a lot of silly things. I will get nervous and the worst of my grammar will come out.\n\nBut Pablo says it doesn't matter. He says his mother will talk for both of them, that his father will say almost nothing and that his brother will want to practise English with me. He says nobody is going to judge me.\n\nSo everything will turn out fine.\n\nAnd if not, we can always eat. With a full mouth nobody notices the mistakes.",
+  "newLemmas": [
+    "seguro",
+    "tontería",
+    "nervioso",
+    "peor",
+    "importar",
+    "notar",
+    "lleno",
+    "pausa",
+    "juzgar",
+    "gramática",
+    "hermano"
+  ],
+  "glosses": {
+    "Tendré": {
+      "lemma": "tener",
+      "gloss": "I will have",
+      "pos": "verb",
+      "note": "Not 'teneré'. A dozen common verbs shorten or alter their stem — but they all take the same endings."
+    },
+    "habrá": {
+      "lemma": "haber",
+      "gloss": "there will be",
+      "pos": "verb",
+      "note": "The future of 'hay'. Still one form for singular and plural."
+    },
+    "saldrá": {
+      "lemma": "salir",
+      "gloss": "will come out",
+      "pos": "verb",
+      "note": "salir → saldr-. The i drops and a d appears, which also happens to tener, poner and venir."
+    },
+    "querrá": {
+      "lemma": "querer",
+      "gloss": "will want",
+      "pos": "verb",
+      "note": "querer → querr-. Just one letter lost, but it doubles the r."
+    }
+  },
+  "phrases": [
+    {
+      "s": "Tendré que hablar",
+      "gloss": "I will have to speak"
+    },
+    {
+      "s": "todo saldrá bien",
+      "gloss": "everything will turn out fine"
+    },
+    {
+      "s": "no importa",
+      "gloss": "it doesn't matter"
+    }
+  ]
+}

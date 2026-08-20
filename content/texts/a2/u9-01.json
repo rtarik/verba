@@ -1,0 +1,21 @@
+{
+  "id": "a2-u9-01-que-vas-a-hacer",
+  "level": "A2", "unit": 9, "order": 1,
+  "title": "¿Qué vas a hacer este verano?",
+  "titleEn": "What are you going to do this summer?",
+  "blurbEn": "The everyday future, and the one Spanish speakers actually use most: 'ir a' plus a verb.",
+  "grammarRefs": ["ir-a-infinitivo"],
+  "body": "—¿Qué vas a hacer este verano?\n\n—Voy a ir a México por fin. Ya tengo el billete y el hotel reservado.\n\n—¡Qué bien! ¿Cuánto tiempo vas a estar allí?\n\n—Tres semanas. Voy a quedarme en casa de Pablo los primeros días y después vamos a viajar juntos por el país.\n\n—¿Y no vas a trabajar?\n\n—No. Este año no voy a mirar el correo ni una vez.\n\nTodavía no sé qué vamos a hacer exactamente. Vamos a improvisar, porque es la mejor manera de descubrir un sitio nuevo.\n\nMi madre está preocupada, claro. Siempre lo está. Pero ya soy mayor y sé cuidarme sola.",
+  "translationEn": "\"What are you going to do this summer?\"\n\n\"I'm finally going to go to Mexico. I already have the ticket and the hotel booked.\"\n\n\"Great! How long are you going to be there?\"\n\n\"Three weeks. I'm going to stay at Pablo's house for the first few days and then we're going to travel around the country together.\"\n\n\"And you're not going to work?\"\n\n\"No. This year I'm not going to look at my email even once.\"\n\nI still don't know exactly what we're going to do. We're going to improvise, because that's the best way to discover a new place.\n\nMy mother is worried, of course. She always is. But I'm grown up now and I know how to look after myself.",
+  "newLemmas": ["billete", "reservar", "junto", "improvisar", "descubrir", "preocupado", "cuidar", "practicar"],
+  "glosses": {
+    "vas": { "lemma": "ir", "gloss": "you are going", "pos": "verb", "note": "'ir' + 'a' + a plain verb. The 'a' is not optional." },
+    "Voy a ir": { "lemma": "ir", "gloss": "I'm going to go", "pos": "verb", "note": "Yes, 'ir' twice. It sounds odd to English ears and completely normal in Spanish." }
+  },
+  "phrases": [
+    { "s": "¿Qué vas a hacer", "gloss": "What are you going to do" },
+    { "s": "Voy a ir", "gloss": "I'm going to go" },
+    { "s": "Vamos a improvisar", "gloss": "We're going to improvise" },
+    { "s": "ni una vez", "gloss": "not even once" }
+  ]
+}
