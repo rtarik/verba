@@ -1,0 +1,21 @@
+{
+  "id": "a2-u5-04-esta-semana-en-el-trabajo",
+  "level": "A2", "unit": 5, "order": 4,
+  "title": "Esta semana en el trabajo",
+  "titleEn": "This week at work",
+  "blurbEn": "A working week, told in the tense that Spain uses for anything inside 'this week'.",
+  "grammarRefs": ["preterito-perfecto", "past-participles"],
+  "body": "Esta semana ha sido muy larga en la oficina.\n\nEl lunes hemos tenido una reunión de tres horas. Mi jefe ha explicado el nuevo proyecto y todos hemos escuchado.\n\nEl martes y el miércoles he preparado una presentación para un cliente importante. La he escrito tres veces, pero por fin está lista.\n\nHoy el cliente ha dicho que le gusta mucho. Mi jefe ha sonreído y no ha dicho nada más.\n\nHa sido una semana difícil, pero he aprendido muchas cosas nuevas.",
+  "translationEn": "This week has been very long at the office.\n\nOn Monday we had a three-hour meeting. My boss explained the new project and we all listened.\n\nOn Tuesday and Wednesday I prepared a presentation for an important client. I wrote it three times, but at last it is ready.\n\nToday the client said that he likes it a lot. My boss smiled and said nothing more.\n\nIt has been a difficult week, but I have learned a lot of new things.",
+  "newLemmas": ["largo", "lunes", "reunión", "jefe", "explicar", "proyecto", "escuchar", "martes", "miércoles", "presentación", "cliente", "fin"],
+  "glosses": {
+    "hemos": { "lemma": "haber", "gloss": "we have", "pos": "verb" },
+    "sido": { "lemma": "ser", "gloss": "been", "pos": "verb", "note": "Participle of 'ser'. 'Ha sido una semana difícil' — it has been a difficult week." },
+    "dicho": { "lemma": "decir", "gloss": "said", "pos": "verb", "note": "Irregular participle of 'decir'." }
+  },
+  "phrases": [
+    { "s": "Esta semana ha sido", "gloss": "This week has been", "note": "'esta semana' is not over, so the perfecto is the natural choice." },
+    { "s": "por fin", "gloss": "at last" },
+    { "s": "hemos tenido", "gloss": "we have had" }
+  ]
+}

@@ -259,18 +259,16 @@ texts that use it. Cross-linked both ways with `grammarRefs`.
 Build a **vertical slice first**: Unit 1 complete (6 texts + audio + grammar docs + lexicon)
 before scaling out. If anything about the pipeline is wrong, it surfaces at 6 texts, not 60.
 
-**Status: A1 complete — Units 1–4.** 24 texts, 1,247 words, 287 lemmas, 17 grammar pages,
-3.7 MB audio. Live at https://rtarik.github.io/verba/
-
-The progression works as designed. Texts roughly doubled in length while the new-word budget
-stayed flat, which is only possible because recycling rose to meet it:
+**Status: A1 complete plus A2 Unit 5.** 30 texts, 1,740 words, 346 lemmas, 20 grammar pages,
+4.9 MB audio. Live at https://rtarik.github.io/verba/
 
 | Unit | Avg length | Recycled vocabulary |
 |---|---|---|
-| 1 Hola, ¿qué tal? | 39 w | 43% |
-| 2 Mi día | 34 w | 57% |
-| 3 En la ciudad | 67 w | 72% |
-| 4 La comida | 68 w | 74% |
+| A1 1 Hola, ¿qué tal? | 39 w | 43% |
+| A1 2 Mi día | 34 w | 57% |
+| A1 3 En la ciudad | 67 w | 72% |
+| A1 4 La comida | 68 w | 74% |
+| A2 5 Hoy he trabajado | 82 w | 81% |
 
 That last column is the health metric for the course. If it ever falls while texts lengthen, new
 vocabulary is being pushed too fast. Target for A2 is to hold 70–80% while texts grow toward

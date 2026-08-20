@@ -1,0 +1,59 @@
+{
+  "id": "a2-u5-06-todavia-no-he-terminado",
+  "level": "A2",
+  "unit": 5,
+  "order": 6,
+  "title": "Todavía no he terminado",
+  "titleEn": "I haven't finished yet",
+  "blurbEn": "The last text of the unit, and the one closest to home: what three months of Spanish actually changes.",
+  "grammarRefs": [
+    "ya-todavia",
+    "preterito-perfecto"
+  ],
+  "body": "Hace tres meses que estudio español. Todavía no hablo bien, pero he cambiado mucho.\n\nHe aprendido muchas palabras nuevas. He leído textos largos sin ayuda. Esta semana he entendido una canción en la radio, y eso me ha hecho muy feliz.\n\nTodavía no he hablado con una persona española fuera de clase. Tengo un poco de miedo.\n\nPero mi profesora dice que ya he empezado lo más difícil, y que ahora todo va a ser más fácil.\n\nPoco a poco. Nadie ha aprendido un idioma en un día.",
+  "translationEn": "I have been studying Spanish for three months. I still don't speak well, but I have changed a lot.\n\nI have learned many new words. I have read long texts without help. This week I understood a song on the radio, and that made me very happy.\n\nI still haven't spoken with a Spanish person outside class. I am a little afraid.\n\nBut my teacher says I have already started the hardest part, and that now everything is going to be easier.\n\nLittle by little. Nobody has learned a language in a day.",
+  "newLemmas": [
+    "mes",
+    "cambiar",
+    "palabra",
+    "texto",
+    "sin",
+    "ayuda",
+    "entender",
+    "canción",
+    "radio",
+    "eso",
+    "miedo",
+    "idioma"
+  ],
+  "glosses": {
+    "Hace": {
+      "lemma": "hacer",
+      "gloss": "ago, for",
+      "pos": "verb",
+      "note": "'Hace tres meses que estudio' — I have been studying for three months. Spanish uses the present tense here where English uses a past."
+    },
+    "empezado": {
+      "lemma": "empezar",
+      "gloss": "started",
+      "pos": "verb"
+    },
+    "eso": {
+      "lemma": "eso",
+      "gloss": "that",
+      "pos": "pronoun",
+      "note": "Points at the whole idea just mentioned, not at a specific noun."
+    }
+  },
+  "phrases": [
+    {
+      "s": "Hace tres meses que",
+      "gloss": "For three months now",
+      "note": "'hace' + time + 'que' + present tense. A very common way to say how long something has been going on."
+    },
+    {
+      "s": "Poco a poco",
+      "gloss": "Little by little"
+    }
+  ]
+}

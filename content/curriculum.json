@@ -92,8 +92,14 @@
         "ya, todavía, nunca",
         "talking about today"
       ],
-      "textIds": [],
-      "summaryEn": "The first past tense, and the one you hear most in Spain: 'he comido', '¿has visto?'. Built from 'haber' plus a participle, and used for anything still attached to today."
+      "textIds": [
+        "a2-u5-01-que-has-hecho-hoy",
+        "a2-u5-02-ya-lo-he-hecho",
+        "a2-u5-03-nunca-he-estado-en-mexico",
+        "a2-u5-04-esta-semana-en-el-trabajo",
+        "a2-u5-05-un-fin-de-semana-en-casa",
+        "a2-u5-06-todavia-no-he-terminado"
+      ]
     },
     {
       "unit": 6,

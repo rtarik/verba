@@ -1,0 +1,69 @@
+{
+  "id": "a2-u5-05-un-fin-de-semana-en-casa",
+  "level": "A2",
+  "unit": 5,
+  "order": 5,
+  "title": "Un fin de semana en casa",
+  "titleEn": "A weekend at home",
+  "blurbEn": "A quiet weekend and a birthday, with the last of the irregular participles: visto, abierto, hecho.",
+  "grammarRefs": [
+    "past-participles",
+    "preterito-perfecto"
+  ],
+  "body": "Este fin de semana me he quedado en casa. No he salido casi nada.\n\nEl sábado he descansado toda la mañana. Por la tarde he visto una película muy buena y he leído un libro.\n\nEl domingo ha sido el cumpleaños de mi hermana. Hemos invitado a toda la familia y mi madre ha hecho una tarta.\n\nLucía ha abierto sus regalos y ha estado muy feliz todo el día.\n\nHa sido un fin de semana tranquilo, pero uno de los mejores del año.",
+  "translationEn": "This weekend I stayed at home. I hardly went out at all.\n\nOn Saturday I rested all morning. In the afternoon I watched a very good film and read a book.\n\nOn Sunday it was my sister's birthday. We invited the whole family and my mother made a cake.\n\nLucía opened her presents and was very happy all day.\n\nIt was a quiet weekend, but one of the best of the year.",
+  "newLemmas": [
+    "quedar",
+    "casi",
+    "descansar",
+    "ver",
+    "película",
+    "cumpleaños",
+    "invitar",
+    "tarta",
+    "abrir",
+    "regalo",
+    "feliz",
+    "tranquilo"
+  ],
+  "glosses": {
+    "visto": {
+      "lemma": "ver",
+      "gloss": "seen, watched",
+      "pos": "verb",
+      "note": "Irregular participle of 'ver'."
+    },
+    "abierto": {
+      "lemma": "abrir",
+      "gloss": "opened",
+      "pos": "verb",
+      "note": "Irregular participle of 'abrir'. Verbs ending in -brir behave this way."
+    },
+    "leído": {
+      "lemma": "leer",
+      "gloss": "read",
+      "pos": "verb",
+      "note": "Regular, but it takes an accent: le-í-do is three syllables."
+    },
+    "me he quedado": {
+      "lemma": "quedar",
+      "gloss": "I stayed",
+      "pos": "verb"
+    }
+  },
+  "phrases": [
+    {
+      "s": "me he quedado en casa",
+      "gloss": "I stayed at home",
+      "note": "With a reflexive verb the pronoun comes first: me he, te has, se ha."
+    },
+    {
+      "s": "casi nada",
+      "gloss": "hardly anything"
+    },
+    {
+      "s": "uno de los mejores",
+      "gloss": "one of the best"
+    }
+  ]
+}

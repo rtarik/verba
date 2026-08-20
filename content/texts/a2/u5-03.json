@@ -1,0 +1,21 @@
+{
+  "id": "a2-u5-03-nunca-he-estado-en-mexico",
+  "level": "A2", "unit": 5, "order": 3,
+  "title": "Nunca he estado en México",
+  "titleEn": "I've never been to Mexico",
+  "blurbEn": "The tense for life so far — what you have and haven't done, with no date attached.",
+  "grammarRefs": ["ya-todavia", "past-participles"],
+  "body": "—¿Has viajado alguna vez fuera de España?\n\n—Sí, he estado en Francia dos veces. Pero nunca he ido a México.\n\n—Yo tampoco. Me gustaría mucho.\n\nMi amigo Pablo es de México y siempre habla de su país. Dice que la comida es muy buena y que la gente es muy abierta.\n\nEste año he ahorrado un poco de dinero. He mirado los precios de los aviones y no son muy caros.\n\nTodavía no he decidido nada, pero creo que voy a ir en verano.",
+  "translationEn": "\"Have you ever travelled outside Spain?\"\n\n\"Yes, I've been to France twice. But I've never been to Mexico.\"\n\n\"Me neither. I'd love to.\"\n\nMy friend Pablo is from Mexico and always talks about his country. He says the food is very good and the people are very welcoming.\n\nThis year I've saved a little money. I've looked at the prices of flights and they aren't very expensive.\n\nI haven't decided anything yet, but I think I'm going to go in summer.",
+  "newLemmas": ["viajar", "fuera", "alguno", "tampoco", "abierto", "ahorrar", "precio", "avión", "caro", "verano", "creer"],
+  "glosses": {
+    "estado": { "lemma": "estar", "gloss": "been", "pos": "verb", "note": "'he estado en Francia' — been to a place. Note it is 'estar' here, not 'ser'." },
+    "ido": { "lemma": "ir", "gloss": "gone", "pos": "verb", "note": "Participle of 'ir'. Short and irregular — compare 'sido' from 'ser'." }
+  },
+  "phrases": [
+    { "s": "alguna vez", "gloss": "ever", "note": "The standard way to ask about life experience: '¿Has viajado alguna vez...?'" },
+    { "s": "nunca he ido", "gloss": "I have never been" },
+    { "s": "Yo tampoco", "gloss": "Me neither", "note": "The negative twin of 'yo también'." },
+    { "s": "Me gustaría", "gloss": "I would like", "note": "A softer, more polite 'me gusta'. You will meet this form properly in Unit 9." }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "a2-u5-01-que-has-hecho-hoy",
+  "level": "A2",
+  "unit": 5,
+  "order": 1,
+  "title": "¿Qué has hecho hoy?",
+  "titleEn": "What have you done today?",
+  "blurbEn": "Your first past tense. Two words instead of one — 'he trabajado' — and it covers anything still attached to today.",
+  "grammarRefs": [
+    "preterito-perfecto",
+    "past-participles"
+  ],
+  "body": "—¿Qué has hecho hoy, Ana?\n\n—He trabajado toda la mañana en la oficina. Después he comido con Sofía en un restaurante nuevo cerca del centro.\n\n—¿Y por la tarde?\n\n—He estudiado un poco y he escrito dos correos. También he hablado con mi madre por teléfono.\n\n—¿Has terminado el trabajo?\n\n—Todavía no. Pero esta semana he trabajado mucho, y mañana es sábado.\n\n—Yo hoy no he hecho nada especial. He dormido hasta las once y he mirado la televisión.",
+  "translationEn": "\"What have you done today, Ana?\"\n\n\"I have worked all morning at the office. Afterwards I ate with Sofía at a new restaurant near the centre.\"\n\n\"And in the afternoon?\"\n\n\"I studied a little and wrote two emails. I also spoke with my mother on the phone.\"\n\n\"Have you finished the work?\"\n\n\"Not yet. But this week I have worked a lot, and tomorrow is Saturday.\"\n\n\"I haven't done anything special today. I slept until eleven and watched television.\"",
+  "newLemmas": [
+    "escribir",
+    "correo",
+    "teléfono",
+    "terminar",
+    "todavía",
+    "dormir",
+    "once",
+    "hasta",
+    "especial",
+    "televisión",
+    "nuevo",
+    "oficina"
+  ],
+  "glosses": {
+    "he": {
+      "lemma": "haber",
+      "gloss": "I have",
+      "pos": "verb",
+      "note": "The same verb as 'hay', doing a completely different job. Here it is a helper: 'he' plus a participle makes a past."
+    },
+    "hecho": {
+      "lemma": "hacer",
+      "gloss": "done",
+      "pos": "verb",
+      "note": "Irregular participle of 'hacer'. Not 'hacido'."
+    },
+    "escrito": {
+      "lemma": "escribir",
+      "gloss": "written",
+      "pos": "verb",
+      "note": "Irregular participle of 'escribir'."
+    },
+    "Todavía": {
+      "lemma": "todavía",
+      "gloss": "still, yet",
+      "pos": "adverb",
+      "note": "'Todavía no' is the standard answer for something not done yet."
+    }
+  },
+  "phrases": [
+    {
+      "s": "¿Qué has hecho hoy?",
+      "gloss": "What have you done today?",
+      "note": "'hoy' is the giveaway. Time that has not finished yet takes this tense."
+    },
+    {
+      "s": "He trabajado",
+      "gloss": "I have worked",
+      "note": "Two words: 'he' (the helper) plus 'trabajado' (the participle). The participle never changes.",
+      "at": 5
+    },
+    {
+      "s": "Todavía no",
+      "gloss": "Not yet"
+    }
+  ]
+}
