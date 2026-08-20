@@ -1,0 +1,21 @@
+{
+  "id": "a2-u8-05-estaba-durmiendo",
+  "level": "A2", "unit": 8, "order": 5,
+  "title": "Estaba durmiendo cuando llamaste",
+  "titleEn": "I was asleep when you called",
+  "blurbEn": "The same structure moved into the past — which is where it meets the imperfecto from Unit 7.",
+  "grammarRefs": ["estar-gerundio", "imperfecto-vs-indefinido"],
+  "body": "Anoche me llamaste tres veces y no contesté.\n\nLo siento. Estaba durmiendo.\n\nÚltimamente estoy muy cansada. Esta semana estoy trabajando doce horas al día porque estamos preparando el informe anual.\n\nAyer, cuando me llamaste a las diez, estaba corrigiendo la última página. A las once ya estaba en la cama.\n\nNecesito dormir ocho horas seguidas. Necesito recuperar el sueño perdido.\n\nMi jefe dice que la semana que viene todo va a ser más tranquilo. No le creo, pero es agradable oírlo.\n\nEsta noche voy a apagar el teléfono. Si me llamas y no contesto, ya sabes por qué.",
+  "translationEn": "Last night you called me three times and I didn't answer.\n\nI'm sorry. I was asleep.\n\nLately I have been very tired. This week I'm working twelve hours a day because we are preparing the annual report.\n\nYesterday, when you called me at ten, I was correcting the last page. By eleven I was already in bed.\n\nI need to sleep eight hours in a row. I need to catch up on lost sleep.\n\nMy boss says that next week everything is going to be quieter. I don't believe him, but it is pleasant to hear.\n\nTonight I'm going to switch off the phone. If you call me and I don't answer, you already know why.",
+  "newLemmas": ["contestar", "sentir", "anual", "corregir", "página", "recuperar", "sueño", "perder", "agradable", "apagar"],
+  "glosses": {
+    "Estaba durmiendo": { "lemma": "estar", "gloss": "I was sleeping", "pos": "verb", "note": "'estar' in the imperfecto plus a gerund. It says what was going on when something else cut across it." },
+    "corrigiendo": { "lemma": "corregir", "gloss": "correcting", "pos": "verb", "note": "The e becomes i, and the g becomes j to keep the sound." },
+    "Lo siento": { "lemma": "sentir", "gloss": "I'm sorry", "pos": "verb", "note": "Literally 'I feel it'." }
+  },
+  "phrases": [
+    { "s": "Estaba durmiendo", "gloss": "I was sleeping", "note": "You could also say 'dormía'. The gerund version stresses that it was in progress right then." },
+    { "s": "la semana que viene", "gloss": "next week" },
+    { "s": "el sueño perdido", "gloss": "lost sleep" }
+  ]
+}

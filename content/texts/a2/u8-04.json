@@ -1,0 +1,62 @@
+{
+  "id": "a2-u8-04-con-que-frecuencia",
+  "level": "A2",
+  "unit": 8,
+  "order": 4,
+  "title": "¿Con qué frecuencia?",
+  "titleEn": "How often?",
+  "blurbEn": "A conversation with the teacher about study habits, and the whole scale from 'siempre' down to 'casi nunca'.",
+  "grammarRefs": [
+    "frequency",
+    "adverbs-mente"
+  ],
+  "body": "—¿Con qué frecuencia hablas español fuera de clase?\n\n—Casi nunca. A veces escribo mensajes a Pablo, pero eso es todo.\n\n—¿Y cuántas veces por semana estudias?\n\n—Tres o cuatro veces. A menudo por la noche, cuando la casa está tranquila.\n\n—¿Escuchas la radio en español?\n\n—De vez en cuando. Normalmente pongo música mientras cocino.\n\n—¿Y ves películas en español?\n\n—Sí, pero siempre con subtítulos en inglés.\n\n—Tienes que quitarlos. Al principio vas a entender la mitad, y después casi todo.\n\nMi profesora escribe algo en su cuaderno y sonríe.\n\n—Necesitas hablar más a menudo. Leer y escuchar no son suficientes. Hay que abrir la boca.",
+  "translationEn": "\"How often do you speak Spanish outside class?\"\n\n\"Almost never. Sometimes I write messages to Pablo, but that's all.\"\n\n\"And how many times a week do you study?\"\n\n\"Three or four times. Often at night, when the house is quiet.\"\n\n\"Do you listen to the radio in Spanish?\"\n\n\"Now and then. Normally I put music on while I cook.\"\n\n\"And do you watch films in Spanish?\"\n\n\"Yes, but always with English subtitles.\"\n\n\"You have to take them off. At first you'll understand half, and afterwards almost everything.\"\n\nMy teacher writes something in her notebook and smiles.\n\n\"You need to speak more often. Reading and listening are not enough. You have to open your mouth.\"",
+  "newLemmas": [
+    "frecuencia",
+    "menudo",
+    "suficiente",
+    "boca",
+    "subtítulo",
+    "inglés",
+    "quitar",
+    "mitad"
+  ],
+  "glosses": {
+    "menudo": {
+      "lemma": "menudo",
+      "gloss": "often",
+      "pos": "adverb",
+      "note": "Only ever appears as 'a menudo'. The word alone means something else entirely."
+    },
+    "Normalmente": {
+      "lemma": "normal",
+      "gloss": "normally",
+      "pos": "adverb"
+    }
+  },
+  "phrases": [
+    {
+      "s": "¿Con qué frecuencia",
+      "gloss": "How often"
+    },
+    {
+      "s": "Casi nunca",
+      "gloss": "Almost never"
+    },
+    {
+      "s": "A menudo",
+      "gloss": "Often",
+      "at": 30
+    },
+    {
+      "s": "De vez en cuando",
+      "gloss": "Now and then"
+    },
+    {
+      "s": "Hay que abrir la boca",
+      "gloss": "You have to open your mouth",
+      "note": "'hay que' + verb is an impersonal 'one must'. Nobody in particular is being told."
+    }
+  ]
+}

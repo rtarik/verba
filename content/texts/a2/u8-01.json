@@ -1,0 +1,22 @@
+{
+  "id": "a2-u8-01-que-estas-haciendo",
+  "level": "A2", "unit": 8, "order": 1,
+  "title": "¿Qué estás haciendo?",
+  "titleEn": "What are you doing?",
+  "blurbEn": "After three past tenses, something easier: how to say what is happening at this exact moment.",
+  "grammarRefs": ["estar-gerundio"],
+  "body": "—¿Qué estás haciendo?\n\n—Estoy preparando la cena. ¿Y tú?\n\n—Estoy viendo una serie. Bueno, en realidad estoy mirando el teléfono mientras la serie sigue sola.\n\nEn mi casa, a esta hora, siempre pasa lo mismo. Mi hermana está estudiando en su habitación, mi padre está leyendo el periódico y mi madre está hablando por teléfono con mi abuela.\n\nEl gato está durmiendo encima del sofá, como siempre.\n\nYo estoy escribiendo esto en español, muy despacio, con el diccionario al lado. Tardo veinte minutos en escribir un párrafo, pero cada día tardo un poco menos.",
+  "translationEn": "\"What are you doing?\"\n\n\"I'm making dinner. And you?\"\n\n\"I'm watching a series. Well, actually I'm looking at my phone while the series carries on by itself.\"\n\nAt my house, at this hour, the same thing always happens. My sister is studying in her room, my father is reading the newspaper and my mother is talking on the phone with my grandmother.\n\nThe cat is sleeping on top of the sofa, as always.\n\nI am writing this in Spanish, very slowly, with the dictionary beside me. It takes me twenty minutes to write a paragraph, but every day it takes me a little less.",
+  "newLemmas": ["serie", "realidad", "seguir", "periódico", "sofá", "esto", "diccionario", "tardar", "párrafo", "menos"],
+  "glosses": {
+    "estás": { "lemma": "estar", "gloss": "you are", "pos": "verb", "note": "'estar' plus a gerund, never 'ser'. This is one of the jobs 'estar' exists for." },
+    "haciendo": { "lemma": "hacer", "gloss": "doing", "pos": "verb", "note": "The gerund — Spanish's '-ing'. Regular -ar verbs take -ando; -er and -ir verbs take -iendo." },
+    "leyendo": { "lemma": "leer", "gloss": "reading", "pos": "verb", "note": "Not 'leiendo'. When the stem ends in a vowel the i becomes a y." },
+    "durmiendo": { "lemma": "dormir", "gloss": "sleeping", "pos": "verb", "note": "The o of 'dormir' becomes u. A small group of -ir verbs do this." }
+  },
+  "phrases": [
+    { "s": "¿Qué estás haciendo?", "gloss": "What are you doing?", "note": "Right now, this second. For habits you would use the plain present: '¿Qué haces?'" },
+    { "s": "Estoy preparando", "gloss": "I am making" },
+    { "s": "en realidad", "gloss": "actually" }
+  ]
+}

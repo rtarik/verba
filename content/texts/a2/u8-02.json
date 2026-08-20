@@ -1,0 +1,21 @@
+{
+  "id": "a2-u8-02-esta-lloviendo-otra-vez",
+  "level": "A2", "unit": 8, "order": 2,
+  "title": "Está lloviendo otra vez",
+  "titleEn": "It's raining again",
+  "blurbEn": "A rainy street seen from an office window, and the handful of gerunds that don't follow the rule.",
+  "grammarRefs": ["estar-gerundio"],
+  "body": "Está lloviendo otra vez.\n\nDesde la ventana de la oficina veo la calle. La gente está corriendo con paraguas, los coches están parando en el semáforo y un hombre está esperando el autobús sin abrigo. Está temblando de frío.\n\nMi compañero Diego está diciendo algo sobre el proyecto, pero yo no estoy escuchando. Estoy pensando en el fin de semana.\n\n—¿Me estás oyendo? —pregunta.\n\n—Claro —miento.\n\nDiego está sonriendo. Sabe perfectamente que no.",
+  "translationEn": "It's raining again.\n\nFrom the office window I can see the street. People are running with umbrellas, the cars are stopping at the traffic light and a man is waiting for the bus without a coat. He is shivering with cold.\n\nMy colleague Diego is saying something about the project, but I am not listening. I am thinking about the weekend.\n\n\"Are you listening to me?\" he asks.\n\n\"Of course,\" I lie.\n\nDiego is smiling. He knows perfectly well that I'm not.",
+  "newLemmas": ["correr", "semáforo", "hombre", "temblar", "compañero", "sobre", "oír", "mentir", "perfecto"],
+  "glosses": {
+    "diciendo": { "lemma": "decir", "gloss": "saying", "pos": "verb", "note": "The e of 'decir' becomes i. Same change as 'pidiendo' from 'pedir'." },
+    "oyendo": { "lemma": "oír", "gloss": "hearing", "pos": "verb", "note": "Another vowel stem, so another y — like 'leyendo'." },
+    "perfectamente": { "lemma": "perfecto", "gloss": "perfectly", "pos": "adverb", "note": "Adjective plus -mente. You will meet the pattern properly in the next text." }
+  },
+  "phrases": [
+    { "s": "Está lloviendo", "gloss": "It is raining", "note": "Weather works with this too. Compare 'llueve' — it rains, generally." },
+    { "s": "¿Me estás oyendo?", "gloss": "Are you listening to me?", "note": "The pronoun goes before the whole unit, exactly as with 'he comido'." },
+    { "s": "sin abrigo", "gloss": "without a coat" }
+  ]
+}

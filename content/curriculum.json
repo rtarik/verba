@@ -152,8 +152,14 @@
         "frequency",
         "what is happening now"
       ],
-      "textIds": [],
-      "summaryEn": "'Estoy comiendo' — what is happening at this very moment, and the adverbs that say how often and how something is done."
+      "textIds": [
+        "a2-u8-01-que-estas-haciendo",
+        "a2-u8-02-esta-lloviendo-otra-vez",
+        "a2-u8-03-poco-a-poco",
+        "a2-u8-04-con-que-frecuencia",
+        "a2-u8-05-estaba-durmiendo",
+        "a2-u8-06-ahora-mismo"
+      ]
     },
     {
       "unit": 9,

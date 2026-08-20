@@ -1,0 +1,21 @@
+{
+  "id": "a2-u8-06-ahora-mismo",
+  "level": "A2", "unit": 8, "order": 6,
+  "title": "Ahora mismo",
+  "titleEn": "Right now",
+  "blurbEn": "The last text of the unit, and a look back: this time last year, none of this was readable.",
+  "grammarRefs": ["estar-gerundio", "frequency"],
+  "body": "Ahora mismo son las nueve de la noche.\n\nEstoy sentada en la cocina con un café. Mi hermana está viendo una película en el salón y mi madre está hablando por teléfono, como siempre.\n\nFuera está lloviendo suavemente. Desde la ventana veo las luces de la calle y a un hombre que está paseando un perro enorme.\n\nHace un año, a esta hora, yo estaba viendo la televisión sin pensar en nada. No sabía decir ni «buenas noches» correctamente.\n\nAhora estoy escribiendo un texto entero en español, sin diccionario, y lo estoy entendiendo todo.\n\nTodavía cometo muchos errores, especialmente con los verbos irregulares. Pero estoy avanzando.",
+  "translationEn": "Right now it is nine in the evening.\n\nI am sitting in the kitchen with a coffee. My sister is watching a film in the living room and my mother is talking on the phone, as always.\n\nOutside it is raining softly. From the window I can see the street lights and a man who is walking an enormous dog.\n\nA year ago, at this hour, I was watching television without thinking about anything. I could not say even \"good evening\" correctly.\n\nNow I am writing a whole text in Spanish, without a dictionary, and I am understanding all of it.\n\nI still make a lot of mistakes, especially with irregular verbs. But I am making progress.",
+  "newLemmas": ["suave", "pasear", "enorme", "cometer", "error", "avanzar", "verbo", "irregular", "correcto", "ni", "entero"],
+  "glosses": {
+    "suavemente": { "lemma": "suave", "gloss": "softly", "pos": "adverb" },
+    "lo estoy entendiendo": { "lemma": "entender", "gloss": "I am understanding it", "pos": "verb", "note": "The pronoun can also attach to the end: 'estoy entendiéndolo'. Both are correct; the first is more common in speech." },
+    "ni": { "lemma": "ni", "gloss": "not even", "pos": "conjunction" }
+  },
+  "phrases": [
+    { "s": "Ahora mismo", "gloss": "Right now" },
+    { "s": "Hace un año", "gloss": "A year ago" },
+    { "s": "estoy avanzando", "gloss": "I am making progress" }
+  ]
+}
