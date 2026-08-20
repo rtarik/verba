@@ -1,0 +1,12 @@
+{
+  "units": [
+    {
+      "unit": 1,
+      "level": "A1",
+      "title": "Hola, ¿qué tal?",
+      "titleEn": "Hello, how are you?",
+      "focus": ["ser", "subject pronouns", "noun gender", "articles", "introducing yourself"],
+      "textIds": ["a1-u1-01-me-llamo-ana"]
+    }
+  ]
+}

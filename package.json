@@ -1,0 +1,35 @@
+{
+  "name": "verba",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run content:build && tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "content:check": "tsx scripts/validate.ts",
+    "content:audio": ".venv/bin/python scripts/tts.py",
+    "content:new": "tsx scripts/new-text.ts",
+    "content:build": "tsx scripts/build.ts",
+    "content:all": "npm run content:build && npm run content:audio && npm run content:build"
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-markdown": "^10.1.0",
+    "react-router-dom": "^7.18.2",
+    "remark-gfm": "^4.0.1",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^26.2.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "@vitejs/plugin-react": "^6.1.0",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.2"
+  }
+}

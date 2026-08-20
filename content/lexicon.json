@@ -1,0 +1,16 @@
+{
+  "ser": {
+    "lemma": "ser",
+    "gloss": "to be",
+    "pos": "verb",
+    "level": "A1",
+    "note": "One of two verbs meaning 'to be'. Use it for identity, origin, and lasting qualities."
+  },
+  "llamar": {
+    "lemma": "llamar",
+    "gloss": "to call",
+    "pos": "verb",
+    "level": "A1",
+    "note": "Reflexive as 'llamarse' when giving names: me llamo, te llamas, se llama."
+  }
+}
