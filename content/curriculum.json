@@ -192,8 +192,14 @@
         "affirmative imperative",
         "usted and formality"
       ],
-      "textIds": [],
-      "summaryEn": "Replacing nouns with pronouns ('lo, la, se lo'), comparing things, giving directions and instructions, and the formal 'usted' you need with strangers."
+      "textIds": [
+        "a2-u10-01-donde-lo-has-puesto",
+        "a2-u10-02-se-lo-di-a-pablo",
+        "a2-u10-03-mas-grande-de-lo-que-pensaba",
+        "a2-u10-04-toma-la-segunda-calle",
+        "a2-u10-05-puede-ayudarme",
+        "a2-u10-06-lo-mejor-del-viaje"
+      ]
     },
     {
       "unit": 11,

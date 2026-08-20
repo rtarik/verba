@@ -1,0 +1,21 @@
+{
+  "id": "a2-u10-02-se-lo-di-a-pablo",
+  "level": "A2", "unit": 10, "order": 2,
+  "title": "Se lo di a Pablo",
+  "titleEn": "I gave it to Pablo",
+  "blurbEn": "Presents for the family, and what happens when two pronouns end up side by side.",
+  "grammarRefs": ["object-pronouns"],
+  "body": "Antes del viaje compré regalos para la familia de Pablo. Elegir los regalos fue lo más difícil de todo.\n\nA su madre le compré un libro de fotos de Madrid. A su padre le llevé una botella de vino español. A su hermano le mandé unos auriculares por internet, porque no cabían en la maleta.\n\nCuando llegué, se los di todos en la primera cena.\n\nLa madre de Pablo me dio dos besos y me dijo que no hacía falta. Su padre abrió el vino inmediatamente. Su hermano se puso los auriculares y no nos escuchó en toda la noche.\n\nCreo que acerté.",
+  "translationEn": "Before the trip I bought presents for Pablo's family. Choosing the presents was the hardest part of all.\n\nFor his mother I bought a book of photos of Madrid. For his father I took a bottle of Spanish wine. For his brother I sent some headphones over the internet, because they didn't fit in the suitcase.\n\nWhen I arrived, I gave them all to them at the first dinner.\n\nPablo's mother gave me two kisses and told me there was no need. His father opened the wine immediately. His brother put on the headphones and didn't listen to us all evening.\n\nI think I got it right.",
+  "newLemmas": ["elegir", "auricular", "caber", "beso", "falta", "inmediato", "acertar", "dar"],
+  "glosses": {
+    "le": { "lemma": "le", "gloss": "to her", "pos": "pronoun", "note": "The indirect object — who receives. Spanish names the person *and* uses 'le': 'A su madre le compré'." },
+    "se": { "lemma": "se", "gloss": "to them", "pos": "pronoun", "note": "This should be 'les los', but Spanish refuses two l-pronouns in a row, so 'le/les' becomes 'se'. Hence 'se los di'." },
+    "me dio": { "lemma": "dar", "gloss": "gave me", "pos": "verb" }
+  },
+  "phrases": [
+    { "s": "se los di", "gloss": "I gave them to them", "note": "Indirect first, then direct: se + los + verb. The order never varies." },
+    { "s": "no hacía falta", "gloss": "there was no need" },
+    { "s": "se puso los auriculares", "gloss": "put on the headphones" }
+  ]
+}

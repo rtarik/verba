@@ -1,0 +1,67 @@
+{
+  "id": "a2-u10-01-donde-lo-has-puesto",
+  "level": "A2",
+  "unit": 10,
+  "order": 1,
+  "title": "¿Dónde lo has puesto?",
+  "titleEn": "Where did you put it?",
+  "blurbEn": "Packing for the trip, and the little words that save you repeating the noun: lo, la, los, las.",
+  "grammarRefs": [
+    "object-pronouns"
+  ],
+  "body": "—¿Has visto mi pasaporte?\n\n—Lo tienes en la mano.\n\n—Ah. ¿Y las maletas?\n\n—Las bajé al coche hace media hora.\n\n—¿Y los billetes?\n\n—Los tengo yo. También tengo tu tarjeta, porque siempre la olvidas.\n\nMi hermana es muy organizada. Yo no.\n\nElla prepara las maletas una semana antes; yo las preparo la noche anterior. Ella hace listas y las revisa dos veces. Yo escribo una lista y después no la encuentro.\n\nPor eso viajamos bien juntas. Ella lo controla todo y yo lo disfruto todo.",
+  "translationEn": "\"Have you seen my passport?\"\n\n\"You're holding it.\"\n\n\"Ah. And the suitcases?\"\n\n\"I took them down to the car half an hour ago.\"\n\n\"And the tickets?\"\n\n\"I've got them. I've also got your card, because you always forget it.\"\n\nMy sister is very organised. I am not.\n\nShe packs the suitcases a week ahead; I pack mine the night before. She makes lists and checks them twice. I write a list and then can't find it.\n\nThat's why we travel well together. She controls everything and I enjoy everything.",
+  "newLemmas": [
+    "pasaporte",
+    "mano",
+    "maleta",
+    "tarjeta",
+    "organizado",
+    "anterior",
+    "encontrar",
+    "controlar",
+    "disfrutar",
+    "ah"
+  ],
+  "glosses": {
+    "Lo": {
+      "lemma": "lo",
+      "gloss": "it",
+      "pos": "pronoun",
+      "note": "Replaces 'el pasaporte'. Masculine singular, so 'lo'."
+    },
+    "Las": {
+      "lemma": "la",
+      "gloss": "them",
+      "pos": "pronoun",
+      "note": "Replaces 'las maletas'. The pronoun matches the gender and number of what it stands for."
+    },
+    "Los": {
+      "lemma": "lo",
+      "gloss": "them",
+      "pos": "pronoun",
+      "note": "Replaces 'los billetes'. Not the article 'the' here."
+    },
+    "la": {
+      "lemma": "la",
+      "gloss": "it",
+      "pos": "pronoun",
+      "note": "Replaces 'tu tarjeta'. Feminine, so 'la'."
+    }
+  },
+  "phrases": [
+    {
+      "s": "Lo tienes en la mano",
+      "gloss": "You're holding it"
+    },
+    {
+      "s": "siempre la olvidas",
+      "gloss": "you always forget it",
+      "note": "The pronoun goes before the verb, never after it — unlike English."
+    },
+    {
+      "s": "Por eso",
+      "gloss": "That's why"
+    }
+  ]
+}

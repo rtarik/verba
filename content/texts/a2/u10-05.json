@@ -1,0 +1,72 @@
+{
+  "id": "a2-u10-05-puede-ayudarme",
+  "level": "A2",
+  "unit": 10,
+  "order": 5,
+  "title": "¿Puede ayudarme?",
+  "titleEn": "Can you help me?",
+  "blurbEn": "The last A2 grammar point, and one you need on day one abroad: how to speak to a stranger.",
+  "grammarRefs": [
+    "usted",
+    "imperative"
+  ],
+  "body": "En el aeropuerto de vuelta tuve un problema con el billete. Había mucha cola en el mostrador.\n\n—Buenos días. ¿Puede ayudarme, por favor?\n\n—Claro, señorita. ¿Me enseña su pasaporte?\n\n—Aquí lo tiene.\n\n—Un momento... Su vuelo sale de otra terminal. Tiene que ir a la terminal dos.\n\n—¿Y cómo llego?\n\n—Salga por esa puerta y tome el autobús gratuito. Sale cada diez minutos. No se preocupe, tiene tiempo de sobra.\n\nLe di las gracias tres veces.\n\nEn español, hablar de usted no es difícil: solo usas la forma de él o ella. Lo difícil es acordarse de hacerlo cuando estás nervioso.",
+  "translationEn": "At the airport on the way back I had a problem with my ticket. There was a long queue at the counter.\n\n\"Good morning. Can you help me, please?\"\n\n\"Of course, miss. May I see your passport?\"\n\n\"Here you are.\"\n\n\"One moment... Your flight leaves from another terminal. You need to go to terminal two.\"\n\n\"And how do I get there?\"\n\n\"Go out through that door and take the free bus. It leaves every ten minutes. Don't worry, you have plenty of time.\"\n\nI thanked her three times.\n\nIn Spanish, using 'usted' is not difficult: you just use the he/she form. The hard part is remembering to do it when you're nervous.",
+  "newLemmas": [
+    "vuelta",
+    "cola",
+    "mostrador",
+    "señorita",
+    "vuelo",
+    "terminal",
+    "gratuito",
+    "sobra",
+    "acordar",
+    "usted",
+    "preocupar"
+  ],
+  "glosses": {
+    "Puede": {
+      "lemma": "poder",
+      "gloss": "can you",
+      "pos": "verb",
+      "note": "The he/she form, used to address one person politely. That is the whole trick of 'usted'."
+    },
+    "Su": {
+      "lemma": "su",
+      "gloss": "your",
+      "pos": "possessive",
+      "note": "With 'usted', 'your' is 'su' — the same word as his/her. Not 'tu'."
+    },
+    "Salga": {
+      "lemma": "salir",
+      "gloss": "go out",
+      "pos": "verb",
+      "note": "The usted command. Note it is not 'sale' — polite commands borrow the subjunctive, which you will meet properly in Unit 11."
+    },
+    "usted": {
+      "lemma": "usted",
+      "gloss": "you (formal)",
+      "pos": "pronoun",
+      "note": "For strangers, officials and older people. In Spain 'tú' is used more widely than learners expect; in much of Latin America 'usted' is safer."
+    }
+  },
+  "phrases": [
+    {
+      "s": "¿Puede ayudarme?",
+      "gloss": "Can you help me?"
+    },
+    {
+      "s": "Aquí lo tiene",
+      "gloss": "Here you are"
+    },
+    {
+      "s": "No se preocupe",
+      "gloss": "Don't worry"
+    },
+    {
+      "s": "tiempo de sobra",
+      "gloss": "plenty of time"
+    }
+  ]
+}

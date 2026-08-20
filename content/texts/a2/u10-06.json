@@ -1,0 +1,22 @@
+{
+  "id": "a2-u10-06-lo-mejor-del-viaje",
+  "level": "A2", "unit": 10, "order": 6,
+  "title": "Lo mejor del viaje",
+  "titleEn": "The best part of the trip",
+  "blurbEn": "The last text of A2. Ana comes home, and takes stock of a year of Spanish.",
+  "grammarRefs": ["comparatives", "object-pronouns"],
+  "body": "Ya estoy en casa. Deshice la maleta ayer y todavía no me he acostumbrado al silencio de mi barrio.\n\nLo mejor del viaje no fueron los sitios. Fue la gente.\n\nFue la madre de Pablo enseñándome a cocinar un plato tradicional durante cuatro horas. Fue su padre contándome historias de cuando era joven. Fue su hermano, que al final se quitó los auriculares y me habló de música toda una noche.\n\nTraje fotos, recuerdos y tres kilos de más.\n\nMe lo pasé mejor de lo que esperaba. Hablé español todo el tiempo, sin traductor y sin miedo. Aprendí que viajar sola da menos miedo de lo que parece.\n\nTodavía cometo errores. Muchos. Pero ya no me importan.\n\nEstoy orgullosa de mí misma. El año que viene vuelvo.",
+  "translationEn": "I'm home. I unpacked yesterday and I still haven't got used to the silence of my neighbourhood.\n\nThe best part of the trip wasn't the places. It was the people.\n\nIt was Pablo's mother teaching me to cook a traditional dish for four hours. It was his father telling me stories from when he was young. It was his brother, who in the end took off his headphones and talked to me about music for a whole evening.\n\nI brought back photos, souvenirs and three extra kilos.\n\nI had a better time than I expected. I spoke Spanish the whole time, without a translator and without fear. I learned that travelling alone is less frightening than it seems.\n\nI still make mistakes. Plenty. But they don't bother me any more.\n\nI'm proud of myself. Next year I'm going back.",
+  "newLemmas": ["deshacer", "acostumbrar", "tradicional", "contar", "traer", "recuerdo", "parecer", "orgulloso"],
+  "glosses": {
+    "enseñándome": { "lemma": "enseñar", "gloss": "teaching me", "pos": "verb", "note": "The pronoun attached to a gerund, with an accent added — the alternative to 'me estaba enseñando'." },
+    "Me lo pasé": { "lemma": "pasar", "gloss": "I had a time", "pos": "verb", "note": "'pasárselo bien' is to have a good time. The 'lo' refers to nothing in particular — it is just part of the expression." },
+    "mí": { "lemma": "mí", "gloss": "myself", "pos": "pronoun" }
+  },
+  "phrases": [
+    { "s": "Lo mejor del viaje", "gloss": "The best part of the trip" },
+    { "s": "Me lo pasé mejor de lo que esperaba", "gloss": "I had a better time than I expected" },
+    { "s": "tres kilos de más", "gloss": "three extra kilos" },
+    { "s": "Estoy orgullosa de mí misma", "gloss": "I'm proud of myself" }
+  ]
+}

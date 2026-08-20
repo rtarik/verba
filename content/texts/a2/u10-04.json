@@ -1,0 +1,22 @@
+{
+  "id": "a2-u10-04-toma-la-segunda-calle",
+  "level": "A2", "unit": 10, "order": 4,
+  "title": "Toma la segunda calle",
+  "titleEn": "Take the second street",
+  "blurbEn": "Directions to the market. You have been reading commands since the recipe in Unit 4 — here is how they are built.",
+  "grammarRefs": ["imperative"],
+  "body": "Pablo me dio instrucciones para llegar al mercado:\n\n—Sal del hotel y gira a la derecha. Camina tres calles y cruza la avenida grande. Toma la segunda calle a la izquierda y sigue recto hasta la iglesia amarilla.\n\n—¿Y después?\n\n—Pregunta a alguien. Todo el mundo lo conoce.\n\n—¿Y si me pierdo?\n\n—Llámame. Pero no te vas a perder.\n\nMe perdí dos veces.\n\nLa primera vez pregunté a una señora, que me acompañó tres calles. La segunda vez pregunté a un chico joven, que me acompañó hasta la puerta del mercado y no quiso aceptar nada a cambio.",
+  "translationEn": "Pablo gave me directions to get to the market:\n\n\"Go out of the hotel and turn right. Walk three streets and cross the big avenue. Take the second street on the left and carry straight on to the yellow church.\"\n\n\"And then?\"\n\n\"Ask someone. Everybody knows it.\"\n\n\"And if I get lost?\"\n\n\"Call me. But you're not going to get lost.\"\n\nI got lost twice.\n\nThe first time I asked a lady, who walked three streets with me. The second time I asked a young man, who walked with me all the way to the market gate and refused to accept anything in return.",
+  "newLemmas": ["instrucción", "girar", "cruzar", "avenida", "segundo", "iglesia", "amarillo", "acompañar", "joven", "aceptar", "cambio", "puerta"],
+  "glosses": {
+    "Sal": { "lemma": "salir", "gloss": "go out", "pos": "verb", "note": "Irregular command. A handful of very common verbs have one-syllable imperatives: sal, ven, pon, haz, di, ten, ve, sé." },
+    "gira": { "lemma": "girar", "gloss": "turn", "pos": "verb", "note": "Regular: for -ar verbs the tú command looks like the he/she present. 'él gira' → '¡gira!'" },
+    "Llámame": { "lemma": "llamar", "gloss": "call me", "pos": "verb", "note": "The pronoun attaches to the end of a command, and an accent appears to keep the stress." },
+    "quiso": { "lemma": "querer", "gloss": "refused", "pos": "verb", "note": "'No quiso' in the preterite means refused, not 'did not want'. The tense changes the verb's meaning." }
+  },
+  "phrases": [
+    { "s": "gira a la derecha", "gloss": "turn right" },
+    { "s": "sigue recto", "gloss": "carry straight on" },
+    { "s": "a cambio", "gloss": "in return" }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "a2-u10-03-mas-grande-de-lo-que-pensaba",
+  "level": "A2",
+  "unit": 10,
+  "order": 3,
+  "title": "Más grande de lo que imaginaba",
+  "titleEn": "Bigger than I imagined",
+  "blurbEn": "Mexico City against Madrid, and every way Spanish has of saying more, less, better and worst.",
+  "grammarRefs": [
+    "comparatives"
+  ],
+  "body": "Ciudad de México es más grande de lo que imaginaba. Mucho más grande.\n\nMadrid tiene tres millones de habitantes; Ciudad de México tiene más de veinte. Es la ciudad más poblada que he visto en mi vida.\n\nEl tráfico es peor que en Madrid, pero la comida es mejor. Los tacos del mercado son mejores que cualquier restaurante caro de mi barrio.\n\nLa gente habla más rápido que Pablo, y eso ya es decir mucho.\n\nLo más difícil no fue el idioma. Fue el ruido, el calor y las distancias.\n\nLo mejor fue todo lo demás.",
+  "translationEn": "Mexico City is bigger than I imagined. Much bigger.\n\nMadrid has three million inhabitants; Mexico City has more than twenty. It is the most populated city I have ever seen.\n\nThe traffic is worse than in Madrid, but the food is better. The tacos from the market are better than any expensive restaurant in my neighbourhood.\n\nPeople speak faster than Pablo, and that is saying something.\n\nThe hardest part was not the language. It was the noise, the heat and the distances.\n\nThe best part was everything else.",
+  "newLemmas": [
+    "imaginar",
+    "millón",
+    "habitante",
+    "poblado",
+    "tráfico",
+    "cualquiera",
+    "distancia",
+    "demás",
+    "taco"
+  ],
+  "glosses": {
+    "más": {
+      "lemma": "más",
+      "gloss": "more",
+      "pos": "adverb",
+      "note": "'más ... que' compares two things. With a number it becomes 'más de': 'más de veinte'."
+    },
+    "peor": {
+      "lemma": "peor",
+      "gloss": "worse",
+      "pos": "adjective",
+      "note": "Never 'más malo'. Like better/worse in English, Spanish has its own word."
+    },
+    "Lo mejor": {
+      "lemma": "mejor",
+      "gloss": "The best part",
+      "pos": "adjective",
+      "note": "'lo' + adjective makes an abstract noun: lo mejor, lo difícil, lo demás."
+    }
+  },
+  "phrases": [
+    {
+      "s": "más grande de lo que imaginaba",
+      "gloss": "bigger than I imagined",
+      "note": "When you compare with a whole clause rather than a noun, it is 'de lo que', not 'que'."
+    },
+    {
+      "s": "la ciudad más poblada",
+      "gloss": "the most populated city"
+    },
+    {
+      "s": "más de veinte",
+      "gloss": "more than twenty"
+    },
+    {
+      "s": "Lo mejor",
+      "gloss": "The best part",
+      "at": 90
+    }
+  ]
+}
