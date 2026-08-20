@@ -2,6 +2,7 @@ import { useMemo, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { lexicon, readingOrder } from '@/lib/content'
 import { coverage, tally, useVocab, vocab, type Status } from '@/lib/vocab'
+import { progress, useProgress, type ProgressState } from '@/lib/progress'
 
 const COLORS: Record<Status, string> = {
   known: 'var(--accent)',
@@ -11,6 +12,7 @@ const FILTERS: Array<Status | 'all'> = ['all', 'unknown', 'known']
 
 export default function Stats() {
   const state = useVocab()
+  const readState = useProgress()
   const counts = tally(state)
   const fileInput = useRef<HTMLInputElement>(null)
   const [filter, setFilter] = useState<Status | 'all'>('unknown')
@@ -34,7 +36,9 @@ export default function Stats() {
   }, [state, filter, query])
 
   const download = () => {
-    const blob = new Blob([vocab.exportJSON()], { type: 'application/json' })
+    // Both stores travel together — exporting only vocabulary would quietly
+    // drop which texts have been read.
+    const blob = new Blob([vocab.exportJSON({ progress: readState })], { type: 'application/json' })
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
     a.href = url
@@ -45,7 +49,10 @@ export default function Stats() {
 
   const upload = async (file: File) => {
     try {
-      const { added, merged } = vocab.importJSON(await file.text())
+      const raw = await file.text()
+      const { added, merged } = vocab.importJSON(raw)
+      const parsed = JSON.parse(raw) as { progress?: ProgressState }
+      if (parsed.progress) progress.replace({ ...readState, ...parsed.progress })
       setNotice(`Imported — ${added} new word${added === 1 ? '' : 's'}, ${merged} merged.`)
     } catch {
       setNotice('That file could not be read as a Verba backup.')
@@ -53,14 +60,14 @@ export default function Stats() {
   }
 
   return (
-    <div className="pt-8">
+    <div className="mx-auto max-w-3xl px-5 pt-8">
       <h1 className="text-2xl font-semibold" style={{ fontFamily: 'var(--font-reading)' }}>Progress</h1>
 
       <div className="mt-6 grid grid-cols-3 gap-3">
         {[
           { label: 'Words known', value: counts.known },
           { label: 'Still new', value: counts.unknown },
-          { label: 'Encountered', value: `${encountered}/${totalInCorpus}` },
+          { label: 'Texts read', value: `${Object.keys(readState).length}/${readingOrder.length}` },
         ].map((s) => (
           <div key={s.label} className="rounded-lg px-4 py-3" style={{ background: 'var(--surface)', border: '1px solid var(--edge)' }}>
             <div className="text-2xl font-semibold tabular-nums">{s.value}</div>
@@ -76,7 +83,10 @@ export default function Stats() {
               counts[s] ? <div key={s} style={{ width: `${(counts[s] / encountered) * 100}%`, background: COLORS[s] }} /> : null
             )}
           </div>
-          <div className="mt-2 flex flex-wrap gap-3 text-[11px]" style={{ color: 'var(--ink-soft)' }}>
+          <p className="mt-2 text-[11px]" style={{ color: 'var(--ink-soft)' }}>
+            You have met {encountered} of the {totalInCorpus} words in the course.
+          </p>
+          <div className="mt-1.5 flex flex-wrap gap-3 text-[11px]" style={{ color: 'var(--ink-soft)' }}>
             {(['known', 'unknown'] as Status[]).map((s) => (
               <span key={s} className="flex items-center gap-1.5">
                 <span className="inline-block h-2 w-2 rounded-full" style={{ background: COLORS[s] }} />
@@ -173,8 +183,9 @@ export default function Stats() {
         />
         <button
           onClick={() => {
-            if (confirm('Erase all vocabulary progress? This cannot be undone.')) {
+            if (confirm('Erase all vocabulary and reading progress? This cannot be undone.')) {
               vocab.reset()
+              progress.reset()
               setNotice('Progress cleared.')
             }
           }}

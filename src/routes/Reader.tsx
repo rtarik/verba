@@ -1,9 +1,10 @@
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import type { Text } from '@content/schema'
 import { loadText, assetUrl, neighbours, grammarById } from '@/lib/content'
 import { useAudioSync } from '@/lib/useAudioSync'
-import { vocab } from '@/lib/vocab'
+import { coverage, useVocab, vocab } from '@/lib/vocab'
+import { progress, useProgress } from '@/lib/progress'
 import { TextBody } from '@/components/TextBody'
 import { Player } from '@/components/Player'
 
@@ -16,7 +17,17 @@ export default function Reader() {
   const [showTranslation, setShowTranslation] = useState(false)
   const [fontSize, setFontSize] = useState(19)
 
-  const audio = useAudioSync(text)
+  const vocabState = useVocab()
+  const readState = useProgress()
+  const isRead = Boolean(readState[id])
+
+  const markRead = useCallback(() => {
+    if (!text) return
+    const lemmas = [...new Set(text.tokens.flatMap((x) => (x.k === 'w' && x.pos !== 'name' ? [x.lemma] : [])))]
+    progress.markRead(id, coverage(lemmas, vocabState))
+  }, [text, id, vocabState])
+
+  const audio = useAudioSync(text, markRead)
 
   useEffect(() => {
     let live = true
@@ -37,18 +48,18 @@ export default function Reader() {
 
   if (error) {
     return (
-      <div className="pt-16 text-center">
+      <div className="mx-auto max-w-3xl px-5 pt-16 text-center">
         <p style={{ color: 'var(--ink-soft)' }}>{error}</p>
         <Link to="/" className="mt-3 inline-block text-sm" style={{ color: 'var(--accent)' }}>← Back to the library</Link>
       </div>
     )
   }
-  if (!text) return <div className="pt-16 text-center text-sm" style={{ color: 'var(--ink-soft)' }}>Loading…</div>
+  if (!text) return <div className="mx-auto max-w-3xl px-5 pt-16 text-center text-sm" style={{ color: 'var(--ink-soft)' }}>Loading…</div>
 
   const { prev, next } = neighbours(id)
 
   return (
-    <article className="pt-8">
+    <article className="mx-auto max-w-3xl px-5 pt-8">
       <Link to="/" className="text-xs" style={{ color: 'var(--ink-soft)' }}>← Library</Link>
 
       <header className="mt-3">
@@ -109,6 +120,23 @@ export default function Reader() {
         highlight. Hovering any word of a phrase covers the whole phrase. Click a word to
         un-mark it.
       </p>
+
+      <div className="mt-6 flex items-center gap-3">
+        <button
+          onClick={() => (isRead ? progress.unmarkRead(id) : markRead())}
+          className="rounded px-3 py-1.5 text-xs"
+          style={isRead
+            ? { background: 'var(--accent)', color: 'var(--paper)' }
+            : { background: 'transparent', border: '1px solid var(--edge)', color: 'var(--ink-soft)' }}
+        >
+          {isRead ? '✓ Read' : 'Mark as read'}
+        </button>
+        {isRead && (
+          <span className="text-[11px]" style={{ color: 'var(--ink-soft)' }}>
+            {Math.round((readState[id]?.coverage ?? 0) * 100)}% of its words were known
+          </span>
+        )}
+      </div>
 
       <nav className="mt-8 flex justify-between text-sm">
         {prev ? <Link to={`/read/${prev.id}`} style={{ color: 'var(--accent)' }}>← {prev.title}</Link> : <span />}

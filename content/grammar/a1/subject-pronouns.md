@@ -2,6 +2,8 @@
 id: subject-pronouns
 title: "I, you, he, she: the subject pronouns"
 level: A1
+category: "Pronouns & possessives"
+order: 10
 related: [ser-basics]
 ---
 

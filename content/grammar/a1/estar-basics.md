@@ -2,6 +2,8 @@
 id: estar-basics
 title: "The other 'to be': estar"
 level: A1
+category: "Verbs"
+order: 20
 related: [ser-basics]
 ---
 

@@ -2,6 +2,8 @@
 id: gender-and-articles
 title: "Every noun has a gender"
 level: A1
+category: "Nouns & articles"
+order: 10
 related: [ser-basics]
 ---
 

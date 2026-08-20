@@ -2,6 +2,8 @@
 id: hay
 title: "There is, there are: hay"
 level: A1
+category: "Verbs"
+order: 30
 related: [gender-and-articles, plurals]
 ---
 

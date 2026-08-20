@@ -2,6 +2,8 @@
 id: ser-basics
 title: "Saying what something is: ser"
 level: A1
+category: "Verbs"
+order: 10
 related: [gender-and-articles]
 ---
 

@@ -1,0 +1,62 @@
+{
+  "id": "a1-u2-01-me-levanto-temprano",
+  "level": "A1",
+  "unit": 2,
+  "order": 1,
+  "title": "Me levanto temprano",
+  "titleEn": "I get up early",
+  "blurbEn": "Ana's morning. This text introduces reflexive verbs — the ones where you do something to yourself — and how to say what time it happens.",
+  "grammarRefs": [
+    "reflexive-verbs",
+    "telling-time"
+  ],
+  "body": "Me levanto a las siete. Es muy temprano.\n\nDespués me ducho.\n\nMi hermana se levanta más tarde. Ella nunca se levanta temprano.\n\nA las ocho salgo de casa.",
+  "translationEn": "I get up at seven. It is very early.\n\nAfterwards I shower.\n\nMy sister gets up later. She never gets up early.\n\nAt eight I leave the house.",
+  "newLemmas": [
+    "levantar",
+    "a",
+    "siete",
+    "temprano",
+    "después",
+    "duchar",
+    "más",
+    "tarde",
+    "nunca",
+    "ocho",
+    "salir"
+  ],
+  "glosses": {
+    "me": {
+      "lemma": "me",
+      "gloss": "myself",
+      "pos": "pronoun",
+      "note": "'Levantarse' means to raise yourself. The 'me' is doing the work of 'myself'."
+    },
+    "las": {
+      "lemma": "el",
+      "gloss": "the",
+      "pos": "article",
+      "note": "Times are always feminine plural in Spanish: 'las siete', because it means 'the seven [hours]'."
+    }
+  },
+  "phrases": [
+    {
+      "s": "Me levanto",
+      "gloss": "I get up",
+      "note": "Literally 'I raise myself'. The verb needs the 'me' — 'levanto' alone would mean lifting something else."
+    },
+    {
+      "s": "a las siete",
+      "gloss": "at seven o'clock"
+    },
+    {
+      "s": "se levanta",
+      "gloss": "she gets up",
+      "at": 13
+    },
+    {
+      "s": "más tarde",
+      "gloss": "later"
+    }
+  ]
+}

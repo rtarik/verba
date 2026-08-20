@@ -25,8 +25,14 @@
   --playing: #fde68a;
 }
 
+/*
+  Dark palette is declared twice on purpose:
+    - under the media query, guarded so an explicit light choice still wins
+    - under [data-theme="dark"], so the toggle beats the system setting
+  With no attribute set, the media query decides — i.e. "auto".
+*/
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --paper: #16130f;
     --ink: #ece5da;
     --ink-soft: #a49c90;
@@ -40,6 +46,21 @@
     --unknown-line: #3f5977;
     --playing: #5c4a12;
   }
+}
+
+:root[data-theme="dark"] {
+  --paper: #16130f;
+  --ink: #ece5da;
+  --ink-soft: #a49c90;
+  --edge: #2f2921;
+  --surface: #1e1a15;
+  --accent: #e0a06a;
+  --accent-soft: #3a2b1e;
+  --learning: #d99a4e;
+  --learning-bg: #3a2c17;
+  --unknown-bg: #1e2836;
+  --unknown-line: #3f5977;
+  --playing: #5c4a12;
 }
 
 html, body, #root { height: 100%; }

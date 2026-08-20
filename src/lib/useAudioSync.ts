@@ -27,7 +27,7 @@ function indexAt(starts: number[], t: number): number {
 
 export const SPEEDS = [0.6, 0.75, 0.85, 1] as const
 
-export function useAudioSync(text: Text | null) {
+export function useAudioSync(text: Text | null, onFinished?: () => void) {
   const ref = useRef<HTMLAudioElement | null>(null)
   const [current, setCurrent] = useState(-1)
   const [playing, setPlaying] = useState(false)
@@ -98,6 +98,8 @@ export function useAudioSync(text: Text | null) {
       setPlaying(false)
       setCurrent(-1)
       setProgress(1)
+      // Hearing a text through counts as having read it.
+      onFinished?.()
     },
   }
 

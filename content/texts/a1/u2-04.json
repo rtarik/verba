@@ -1,0 +1,20 @@
+{
+  "id": "a1-u2-04-la-hora",
+  "level": "A1", "unit": 2, "order": 4,
+  "title": "¿Qué hora es?",
+  "titleEn": "What time is it?",
+  "blurbEn": "Everything you need to tell the time, and the numbers that go with it.",
+  "grammarRefs": ["telling-time"],
+  "body": "¿Qué hora es? Son las tres y media.\n\nMi clase de español empieza a las cuatro y termina a las seis.\n\nSiempre llego cinco minutos antes. No me gusta llegar tarde.\n\nDespués de la clase vuelvo a casa.",
+  "translationEn": "What time is it? It is half past three.\n\nMy Spanish class starts at four and finishes at six.\n\nI always arrive five minutes early. I do not like arriving late.\n\nAfter the class I go back home.",
+  "newLemmas": ["hora", "tres", "medio", "cuatro", "terminar", "seis", "siempre", "cinco", "minuto", "antes", "volver"],
+  "glosses": {
+    "media": { "lemma": "medio", "gloss": "half", "pos": "adjective", "note": "'y media' is 'and a half', so 'las tres y media' is half past three." }
+  },
+  "phrases": [
+    { "s": "¿Qué hora es?", "gloss": "What time is it?", "note": "Singular 'es' for the question, but plural 'son' for the answer — because the hours are plural." },
+    { "s": "Son las tres y media", "gloss": "It is half past three" },
+    { "s": "No me gusta", "gloss": "I do not like", "note": "'no' goes before the whole 'me gusta' group." },
+    { "s": "Después de", "gloss": "After" }
+  ]
+}

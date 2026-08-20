@@ -61,7 +61,10 @@ writeFileSync(htmlPath, html)
 const leftovers = [
   ...html.matchAll(/<script[^>]+src="([^"]+)"/gi),
   ...html.matchAll(/<link[^>]+href="([^"]+)"/gi),
-].map((m) => m[1])
+]
+  .map((m) => m[1])
+  // data: URIs are inline (the favicon), so they are not a fetch.
+  .filter((u) => !u.startsWith('data:') && !u.startsWith('#'))
 
 const kb = (n: number) => `${Math.round(n / 1024)} KB`
 console.log(`\noffline build -> ${htmlPath.slice(ROOT.length + 1)}  ${kb(Buffer.byteLength(html))}`)

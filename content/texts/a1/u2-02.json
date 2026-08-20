@@ -1,0 +1,19 @@
+{
+  "id": "a1-u2-02-el-desayuno",
+  "level": "A1", "unit": 2, "order": 2,
+  "title": "El desayuno",
+  "titleEn": "Breakfast",
+  "blurbEn": "Breakfast at Ana's house, and your first good look at how regular verbs change their endings depending on who is doing the action.",
+  "grammarRefs": ["present-tense-regular"],
+  "body": "Por la mañana desayuno en la cocina. Bebo café con leche y como pan.\n\nMi padre bebe té. Mi madre come fruta.\n\nNosotros hablamos mucho.\n\nMe gusta mucho la mañana.",
+  "translationEn": "In the morning I have breakfast in the kitchen. I drink coffee with milk and eat bread.\n\nMy father drinks tea. My mother eats fruit.\n\nWe talk a lot.\n\nI like the morning very much.",
+  "newLemmas": ["mañana", "desayunar", "cocina", "beber", "café", "leche", "con", "comer", "pan", "té", "fruta"],
+  "glosses": {
+    "bebo": { "lemma": "beber", "gloss": "I drink", "pos": "verb", "note": "'beber' is an -er verb: beb-o for I, beb-e for he or she." }
+  },
+  "phrases": [
+    { "s": "Por la mañana", "gloss": "In the morning" },
+    { "s": "café con leche", "gloss": "coffee with milk", "note": "The standard Spanish breakfast coffee." },
+    { "s": "Me gusta", "gloss": "I like" }
+  ]
+}

@@ -59,7 +59,7 @@ export const zAudio = z.object({
 export const zText = z
   .object({
     id: z.string().regex(/^[a-z0-9-]+$/, 'id must be kebab-case'),
-    level: z.enum(['A1', 'A2', 'B1']),
+    level: z.enum(['A1', 'A2', 'B1', 'B2']),
     unit: z.number().int().positive(),
     order: z.number().int().positive(),
     title: z.string().min(1),
@@ -114,28 +114,53 @@ export const zLexiconEntry = z.object({
   lemma: z.string().min(1),
   gloss: z.string().min(1),
   pos: z.string().min(1),
-  level: z.enum(['A1', 'A2', 'B1']).optional(),
+  level: z.enum(['A1', 'A2', 'B1', 'B2']).optional(),
   note: z.string().optional(),
 })
 export const zLexicon = z.record(z.string(), zLexiconEntry)
 
 export const zUnit = z.object({
   unit: z.number().int().positive(),
-  level: z.enum(['A1', 'A2', 'B1']),
+  level: z.enum(['A1', 'A2', 'B1', 'B2']),
   title: z.string().min(1),
   titleEn: z.string().min(1),
   focus: z.array(z.string()),
-  /** Reading order within the unit. Drives the progressive-vocabulary walk. */
+  /** One line on what the unit covers. Shown for units not yet written. */
+  summaryEn: z.string().optional(),
+  /**
+   * Reading order within the unit, and the spine of the progressive-vocabulary
+   * walk. An empty list marks a unit as planned but not yet written — the
+   * library renders those as "coming soon" rather than hiding them, so the
+   * shape of the whole course is visible from the start.
+   */
   textIds: z.array(z.string()),
 })
 export const zCurriculum = z.object({ units: z.array(zUnit) })
 
+/**
+ * Grammar sections, in the order they are displayed. Keeping this a closed set
+ * (rather than free text) is what stops the reference fragmenting into thirty
+ * ad-hoc headings as it grows.
+ */
+export const GRAMMAR_CATEGORIES = [
+  'Verbs',
+  'Nouns & articles',
+  'Pronouns & possessives',
+  'Numbers & time',
+  'Sentences & questions',
+] as const
+
 export const zGrammarMeta = z.object({
   id: z.string().regex(/^[a-z0-9-]+$/),
   title: z.string().min(1),
-  level: z.enum(['A1', 'A2', 'B1']),
+  level: z.enum(['A1', 'A2', 'B1', 'B2']),
+  category: z.enum(GRAMMAR_CATEGORIES),
+  /** Sort order within the category. Lower comes first. */
+  order: z.number().int().nonnegative().default(50),
   related: z.array(z.string()).default([]),
 })
+
+export type GrammarCategory = (typeof GRAMMAR_CATEGORIES)[number]
 
 export type WordToken = z.infer<typeof zWordToken>
 export type Token = z.infer<typeof zToken>
@@ -177,7 +202,7 @@ export const zSourcePhrase = z.object({
 
 export const zSourceText = z.object({
   id: z.string().regex(/^[a-z0-9-]+$/, 'id must be kebab-case'),
-  level: z.enum(['A1', 'A2', 'B1']),
+  level: z.enum(['A1', 'A2', 'B1', 'B2']),
   unit: z.number().int().positive(),
   order: z.number().int().positive(),
   title: z.string().min(1),

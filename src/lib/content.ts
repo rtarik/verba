@@ -6,6 +6,7 @@
  * does. Texts are discovered by glob, so adding one needs no code edit here.
  */
 import type { Text, Unit, LexiconEntry } from '@content/schema'
+import { GRAMMAR_CATEGORIES } from '@content/schema'
 import indexJson from '@content/build/index.json'
 import lexiconJson from '@content/build/lexicon.json'
 
@@ -61,7 +62,15 @@ export const neighbours = (id: string) => {
 
 /* ---- grammar ---------------------------------------------------------- */
 
-export interface GrammarDoc { id: string; title: string; level: string; related: string[]; body: string }
+export interface GrammarDoc {
+  id: string
+  title: string
+  level: string
+  category: string
+  order: number
+  related: string[]
+  body: string
+}
 
 const grammarModules = import.meta.glob<string>('/content/grammar/**/*.md', { query: '?raw', import: 'default', eager: true })
 
@@ -79,12 +88,21 @@ export const grammarDocs: GrammarDoc[] = Object.values(grammarModules)
       id: meta.id,
       title: meta.title,
       level: meta.level,
+      category: meta.category,
+      order: Number(meta.order ?? 50),
       related: (meta.related ?? '').replace(/[[\]]/g, '').split(',').map((s) => s.trim()).filter(Boolean),
       body: m[2],
     }
   })
   .filter((d): d is GrammarDoc => Boolean(d?.id))
-  .sort((a, b) => a.level.localeCompare(b.level) || a.title.localeCompare(b.title))
+  .sort((a, b) => a.order - b.order || a.title.localeCompare(b.title))
+
+/** Grammar grouped into its display sections, empty categories dropped. */
+export const grammarByCategory: Array<{ category: string; docs: GrammarDoc[] }> =
+  GRAMMAR_CATEGORIES.map((category) => ({
+    category,
+    docs: grammarDocs.filter((d) => d.category === category),
+  })).filter((g) => g.docs.length > 0)
 
 export const grammarById = (id: string) => grammarDocs.find((d) => d.id === id)
 

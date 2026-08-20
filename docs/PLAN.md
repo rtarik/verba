@@ -205,13 +205,24 @@ must already have appeared. Text length grows with level.
 | Unit | Focus | Words/text |
 |---|---|---|
 | A1 U1 | greetings, `ser`, pronouns, gender & articles | 40–60 |
-| A1 U2 | present `-ar`, family, numbers | 60–80 |
-| A1 U3 | present `-er/-ir`, food, `ser` vs `estar` | 80–100 |
-| A1 U4 | reflexives, daily routine, time, adjectives | 100–120 |
-| A2 U5 | `pretérito indefinido` | 120–150 |
-| A2 U6 | `imperfecto`, and contrasting the two pasts | 150–180 |
-| A2 U7 | future, conditional, `por`/`para` | 180–200 |
-| B1 U8 | subjunctive introduction | 200+ |
+| A1 U2 | present tense, reflexives, telling the time | 30–45 |
+| A1 U3 | places, `hay` vs `estar`, directions, numbers | 60–80 |
+| A1 U4 | `gustar` properly, `querer`/`poder`, quantities | 70–90 |
+| A2 U5 | `pretérito indefinido` | 90–120 |
+| A2 U6 | `imperfecto`, and contrasting the two pasts | 110–140 |
+| A2 U7 | future, conditional, `por`/`para` | 130–160 |
+| A2 U8 | objects pronouns, comparatives, travel | 150–180 |
+| B1 U9 | present subjunctive: wishes, doubt, emotion | 170–200 |
+| B1 U10 | imperfect subjunctive, conditional sentences | 190–220 |
+| B1 U11 | relative clauses, connectors, opinions | 200+ |
+| B2 U12 | formal register, reported speech, passives | 220+ |
+| B2 U13 | concession, advanced connectors, hedging | 240+ |
+| B2 U14 | literary tenses, register, idiom | 260+ |
+
+All 14 units are declared in `curriculum.json` from the start, with the unwritten ones carrying
+an empty `textIds`. The library renders those as **Coming soon** rather than hiding them, so the
+shape of the whole course is visible on day one. Word counts above are targets: texts should
+lengthen as the cumulative lexicon grows, leaning on words already met rather than on new ones.
 
 ### 2.2 The progressive guarantee, machine-checked
 
@@ -252,7 +263,15 @@ texts that use it. Cross-linked both ways with `grammarRefs`.
 Build a **vertical slice first**: Unit 1 complete (6 texts + audio + grammar docs + lexicon)
 before scaling out. If anything about the pipeline is wrong, it surfaces at 6 texts, not 60.
 
-**Status: Unit 1 complete.** 6 texts, 231 words, 81 lemmas, 7 grammar pages, 824 KB of audio
+**Status: Units 1–2 complete.** 12 texts, 437 words, 147 lemmas, 10 grammar pages, 1.4 MB audio.
+
+Unit 2 pacing: 11, 11, 11, 11, 10, 12 new lemmas — inside the 8–12 target throughout. The
+progressive gate caught three real slips on the first run (`hablamos` and `habla` in the lexicon
+but not `hablo`; `trabaja`/`trabajo` but not the infinitive `trabajar`; `libros` but not singular
+`libro`) plus a mis-guessed phrase position, and named the correct indices in the error. That is
+the gate paying for itself.
+
+**Unit 1 detail.** 6 texts, 231 words, 81 lemmas, 7 grammar pages, 824 KB of audio
 (137 KB average per text — extrapolating to ~8 MB for a 60-text course, comfortably inside the
 GitHub Pages budget). All six passed the progressive-vocabulary gate on the first run, and all
 six passed the TTS word-count assertion, dialogue with em-dashes included.
@@ -268,6 +287,39 @@ carry only context-specific meaning. This was worth fixing before writing five t
 than after.
 
 ---
+
+### 2.6 Navigation, added before scaling up
+
+Retrofitting structure at 48 texts would have been far worse than doing it at 12, so this landed
+between Units 1 and 2:
+
+- **Grammar categories.** A closed set (`Verbs`, `Nouns & articles`, `Pronouns & possessives`,
+  `Numbers & time`, `Sentences & questions`) declared in the schema and enforced by the
+  validator, so the reference cannot fragment into ad-hoc headings as it grows. The grammar
+  index groups by category and has a search box.
+- **Library index.** A sticky sidebar listing all 14 units (written ones showing progress,
+  planned ones dimmed), with the unit you are currently working through highlighted. Units in
+  the main column collapse and expand, and **only the active unit is open on arrival** — the one
+  holding your next unread text, or the last written unit once everything is read. Expansion
+  survives navigating into a text and back, and resets on reload, at which point the active-unit
+  default is correct again.
+  Also: a "Continue" card, overall and per-unit progress, read checkmarks, and an A1–B2 level
+  filter. On phones there is no side, so the index collapses behind a toggle rather than pushing
+  "Continue" below the fold.
+  Jump links scroll programmatically rather than via `href="#unit-3"` anchors, because hash
+  routing owns the URL fragment and an anchor would be parsed as a route.
+- **Theme control.** Three states — follow the system, force light, force dark — rather than a
+  plain switch, so picking a theme once does not permanently sever the link to the OS setting.
+  The dark palette is declared twice: under `prefers-color-scheme`, guarded by
+  `:root:not([data-theme="light"])` so an explicit light choice still wins, and under
+  `:root[data-theme="dark"]` so the toggle beats the system. A small blocking script in `<head>`
+  applies the stored choice before first paint, so a chosen theme never flashes the other
+  palette. Verified: forcing light while the OS prefers dark yields the light palette.
+- **Reading completion.** A separate `verba.progress.v1` store: knowing every word in a text is
+  not the same as having worked through it, and the library needs the second fact to know where
+  to send you next. Marked explicitly, or automatically when the audio plays to the end.
+- **Backups cover both stores.** Export/import/reset now carry vocabulary *and* reading
+  progress; previously a reset would have silently dropped which texts had been read.
 
 ## 3. Phase 3 — Final touches
 

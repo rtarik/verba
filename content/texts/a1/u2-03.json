@@ -1,0 +1,20 @@
+{
+  "id": "a1-u2-03-en-el-trabajo",
+  "level": "A1", "unit": 2, "order": 3,
+  "title": "En el trabajo",
+  "titleEn": "At work",
+  "blurbEn": "Ana's working day, with more regular verbs in action — including the -ir group you have not met yet.",
+  "grammarRefs": ["present-tense-regular"],
+  "body": "Trabajo en una oficina pequeña. Llego a las nueve y empiezo a trabajar.\n\nEscribo correos y hablo con muchas personas.\n\nA las dos como con mis compañeros. Comemos en un restaurante cerca de la oficina.\n\nPor la tarde leo mucho.",
+  "translationEn": "I work in a small office. I arrive at nine and start working.\n\nI write emails and speak with many people.\n\nAt two I eat with my colleagues. We eat in a restaurant near the office.\n\nIn the afternoon I read a lot.",
+  "newLemmas": ["oficina", "llegar", "nueve", "empezar", "escribir", "correo", "persona", "compañero", "restaurante", "cerca", "leer"],
+  "glosses": {
+    "escribo": { "lemma": "escribir", "gloss": "I write", "pos": "verb", "note": "'escribir' is an -ir verb. In the 'I' form, -er and -ir verbs look identical: como, escribo." },
+    "tarde": { "lemma": "tarde", "gloss": "afternoon", "pos": "noun", "note": "The same word you met as 'late'. 'Por la tarde' means in the afternoon." }
+  },
+  "phrases": [
+    { "s": "empiezo a trabajar", "gloss": "I start working", "note": "'empezar a' + verb is how Spanish says 'start doing' something." },
+    { "s": "cerca de", "gloss": "near to" },
+    { "s": "Por la tarde", "gloss": "In the afternoon" }
+  ]
+}

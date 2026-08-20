@@ -4,7 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Verba — Learn Spanish by Reading</title>
-    <meta name="description" content="Learn Spanish from zero through progressive readings with instant translation and synced audio." />
+    <meta name="description" content="Learn Spanish from zero through progressive readings with instant translation and word-synced audio." />
+    <meta name="theme-color" content="#fbf8f3" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#16130f" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%239a5b2e'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='20' fill='%23fbf8f3' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E" />
+    <meta property="og:title" content="Verba — Learn Spanish by Reading" />
+    <meta property="og:description" content="Progressive Spanish readings with instant translation and word-synced audio." />
+    <meta property="og:type" content="website" />
+    <script>
+      // Runs before paint so a chosen theme never flashes the other palette.
+      // Must stay inside <head> and stay blocking — moving it after the body
+      // opens the door to a flash of the wrong palette.
+      try {
+        var t = localStorage.getItem('verba.theme.v1');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    </script>
   </head>
   <body>
     <div id="root"></div>

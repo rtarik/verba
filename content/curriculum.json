@@ -20,6 +20,185 @@
         "a1-u1-05-que-tal",
         "a1-u1-06-en-mi-clase"
       ]
+    },
+    {
+      "unit": 2,
+      "level": "A1",
+      "title": "Mi día",
+      "titleEn": "My day",
+      "focus": [
+        "present tense",
+        "reflexive verbs",
+        "telling the time",
+        "daily routine"
+      ],
+      "textIds": [
+        "a1-u2-01-me-levanto-temprano",
+        "a1-u2-02-el-desayuno",
+        "a1-u2-03-en-el-trabajo",
+        "a1-u2-04-la-hora",
+        "a1-u2-05-por-la-noche",
+        "a1-u2-06-el-fin-de-semana"
+      ]
+    },
+    {
+      "unit": 3,
+      "level": "A1",
+      "title": "En la ciudad",
+      "titleEn": "Around town",
+      "focus": [
+        "places",
+        "hay vs estar",
+        "directions",
+        "numbers to 100"
+      ],
+      "summaryEn": "Finding your way around: shops, streets and asking where things are.",
+      "textIds": []
+    },
+    {
+      "unit": 4,
+      "level": "A1",
+      "title": "La comida",
+      "titleEn": "Food",
+      "focus": [
+        "gustar properly",
+        "querer and poder",
+        "quantities",
+        "ordering food"
+      ],
+      "summaryEn": "Eating out and shopping for food, plus saying what you want and what you like.",
+      "textIds": []
+    },
+    {
+      "unit": 5,
+      "level": "A2",
+      "title": "El pasado",
+      "titleEn": "The past",
+      "focus": [
+        "pretérito indefinido",
+        "time markers",
+        "irregular past forms"
+      ],
+      "summaryEn": "Talking about finished events: what you did yesterday, last week, last year.",
+      "textIds": []
+    },
+    {
+      "unit": 6,
+      "level": "A2",
+      "title": "Cuando era pequeño",
+      "titleEn": "When I was small",
+      "focus": [
+        "imperfecto",
+        "indefinido vs imperfecto",
+        "describing the past"
+      ],
+      "summaryEn": "The second past tense, for how things used to be — and when to use which.",
+      "textIds": []
+    },
+    {
+      "unit": 7,
+      "level": "A2",
+      "title": "Planes",
+      "titleEn": "Plans",
+      "focus": [
+        "future tense",
+        "conditional",
+        "por vs para",
+        "ir a + infinitive"
+      ],
+      "summaryEn": "Making plans, talking about what will happen and what would happen.",
+      "textIds": []
+    },
+    {
+      "unit": 8,
+      "level": "A2",
+      "title": "De viaje",
+      "titleEn": "Travelling",
+      "focus": [
+        "direct and indirect objects",
+        "comparatives",
+        "superlatives"
+      ],
+      "summaryEn": "Travel, transport and hotels, with the pronouns that replace things already mentioned.",
+      "textIds": []
+    },
+    {
+      "unit": 9,
+      "level": "B1",
+      "title": "Ojalá",
+      "titleEn": "If only",
+      "focus": [
+        "present subjunctive",
+        "expressing wishes",
+        "doubt and emotion"
+      ],
+      "summaryEn": "The subjunctive, introduced gently: wishes, doubts and feelings about things not yet real.",
+      "textIds": []
+    },
+    {
+      "unit": 10,
+      "level": "B1",
+      "title": "Si pudiera",
+      "titleEn": "If I could",
+      "focus": [
+        "imperfect subjunctive",
+        "conditional sentences",
+        "hypotheticals"
+      ],
+      "summaryEn": "Talking about what would happen if things were different.",
+      "textIds": []
+    },
+    {
+      "unit": 11,
+      "level": "B1",
+      "title": "Opiniones",
+      "titleEn": "Opinions",
+      "focus": [
+        "relative clauses",
+        "connectors",
+        "agreeing and disagreeing"
+      ],
+      "summaryEn": "Holding an opinion in Spanish: linking ideas and building longer arguments.",
+      "textIds": []
+    },
+    {
+      "unit": 12,
+      "level": "B2",
+      "title": "El mundo del trabajo",
+      "titleEn": "The world of work",
+      "focus": [
+        "formal register",
+        "reported speech",
+        "passive constructions"
+      ],
+      "summaryEn": "Professional Spanish: emails, meetings and reporting what other people said.",
+      "textIds": []
+    },
+    {
+      "unit": 13,
+      "level": "B2",
+      "title": "Debate",
+      "titleEn": "Debate",
+      "focus": [
+        "concession",
+        "advanced connectors",
+        "nuance and hedging"
+      ],
+      "summaryEn": "Arguing a case, conceding a point, and the connectors that make writing flow.",
+      "textIds": []
+    },
+    {
+      "unit": 14,
+      "level": "B2",
+      "title": "Cultura y literatura",
+      "titleEn": "Culture and literature",
+      "focus": [
+        "literary tenses",
+        "register shifts",
+        "idiom and metaphor"
+      ],
+      "summaryEn": "Reading Spanish as it is actually written, across registers and regions.",
+      "textIds": []
     }
   ]
 }

@@ -1,134 +1,998 @@
 {
-  "hola":       { "lemma": "hola",  "gloss": "hello",              "pos": "interjection" },
-  "adiós":      { "lemma": "adiós", "gloss": "goodbye",            "pos": "interjection" },
-  "gracias":    { "lemma": "gracias","gloss": "thank you",         "pos": "interjection" },
-
-  "soy":        { "lemma": "ser", "gloss": "I am",        "pos": "verb", "level": "A1", "note": "From 'ser', used for identity, origin and lasting qualities." },
-  "eres":       { "lemma": "ser", "gloss": "you are",     "pos": "verb" },
-  "es":         { "lemma": "ser", "gloss": "is",          "pos": "verb" },
-  "somos":      { "lemma": "ser", "gloss": "we are",      "pos": "verb" },
-  "son":        { "lemma": "ser", "gloss": "they are",    "pos": "verb" },
-
-  "estoy":      { "lemma": "estar", "gloss": "I am",      "pos": "verb", "note": "From 'estar' — the other 'to be', for how you feel and where you are." },
-  "estás":      { "lemma": "estar", "gloss": "you are",   "pos": "verb" },
-
-  "llamo":      { "lemma": "llamar", "gloss": "I call",       "pos": "verb" },
-  "llamas":     { "lemma": "llamar", "gloss": "you call",     "pos": "verb" },
-  "llama":      { "lemma": "llamar", "gloss": "he/she calls", "pos": "verb" },
-
-  "vivo":       { "lemma": "vivir", "gloss": "I live",      "pos": "verb" },
-  "vive":       { "lemma": "vivir", "gloss": "he/she lives","pos": "verb" },
-  "vivimos":    { "lemma": "vivir", "gloss": "we live",     "pos": "verb" },
-
-  "tengo":      { "lemma": "tener", "gloss": "I have",      "pos": "verb" },
-  "tiene":      { "lemma": "tener", "gloss": "he/she has",  "pos": "verb" },
-
-  "trabaja":    { "lemma": "trabajar", "gloss": "he/she works", "pos": "verb" },
-  "trabajo":    { "lemma": "trabajar", "gloss": "I work",       "pos": "verb" },
-  "estudian":   { "lemma": "estudiar", "gloss": "they study",   "pos": "verb" },
-  "habla":      { "lemma": "hablar",   "gloss": "he/she speaks","pos": "verb" },
-  "gusta":      { "lemma": "gustar",   "gloss": "is pleasing",  "pos": "verb", "note": "Spanish says 'it pleases me' rather than 'I like it'." },
-  "hay":        { "lemma": "haber",    "gloss": "there is, there are", "pos": "verb", "note": "One word for both singular and plural." },
-
-  "yo":         { "lemma": "yo",       "gloss": "I",     "pos": "pronoun" },
-  "tú":         { "lemma": "tú",       "gloss": "you",   "pos": "pronoun" },
-  "él":         { "lemma": "él",       "gloss": "he",    "pos": "pronoun" },
-  "ella":       { "lemma": "ella",     "gloss": "she",   "pos": "pronoun" },
-  "nosotros":   { "lemma": "nosotros", "gloss": "we",    "pos": "pronoun" },
-  "ellos":      { "lemma": "ellos",    "gloss": "they",  "pos": "pronoun" },
-  "me":         { "lemma": "me", "gloss": "myself",           "pos": "pronoun" },
-  "te":         { "lemma": "te", "gloss": "yourself",         "pos": "pronoun" },
-  "se":         { "lemma": "se", "gloss": "himself, herself", "pos": "pronoun" },
-
-  "mi":         { "lemma": "mi", "gloss": "my",           "pos": "possessive" },
-  "mis":        { "lemma": "mi", "gloss": "my (plural)",  "pos": "possessive" },
-  "tu":         { "lemma": "tu", "gloss": "your",         "pos": "possessive", "note": "No accent: 'tu' is 'your', 'tú' is 'you'." },
-
-  "un":         { "lemma": "un", "gloss": "a",              "pos": "article" },
-  "una":        { "lemma": "un", "gloss": "a",              "pos": "article" },
-  "el":         { "lemma": "el", "gloss": "the",            "pos": "article" },
-  "la":         { "lemma": "el", "gloss": "the (feminine)", "pos": "article" },
-  "los":        { "lemma": "el", "gloss": "the (plural)",   "pos": "article" },
-
-  "y":          { "lemma": "y",      "gloss": "and",     "pos": "conjunction" },
-  "o":          { "lemma": "o",      "gloss": "or",      "pos": "conjunction" },
-  "pero":       { "lemma": "pero",   "gloss": "but",     "pos": "conjunction" },
-  "porque":     { "lemma": "porque", "gloss": "because", "pos": "conjunction" },
-  "de":         { "lemma": "de",  "gloss": "from, of", "pos": "preposition" },
-  "en":         { "lemma": "en",  "gloss": "in, on",   "pos": "preposition" },
-  "por":        { "lemma": "por", "gloss": "for, by",  "pos": "preposition" },
-
-  "cómo":       { "lemma": "cómo",  "gloss": "how",   "pos": "question word" },
-  "dónde":      { "lemma": "dónde", "gloss": "where", "pos": "question word" },
-  "qué":        { "lemma": "qué",   "gloss": "what",  "pos": "question word" },
-  "tal":        { "lemma": "tal",   "gloss": "such",  "pos": "adverb" },
-
-  "no":         { "lemma": "no",       "gloss": "not, no",    "pos": "adverb" },
-  "muy":        { "lemma": "muy",      "gloss": "very",       "pos": "adverb" },
-  "también":    { "lemma": "también",  "gloss": "also, too",  "pos": "adverb" },
-  "bien":       { "lemma": "bien",     "gloss": "well, fine", "pos": "adverb" },
-  "hoy":        { "lemma": "hoy",      "gloss": "today",      "pos": "adverb" },
-  "poco":       { "lemma": "poco",     "gloss": "little",     "pos": "adverb" },
-  "mucho":      { "lemma": "mucho",    "gloss": "a lot",      "pos": "adverb" },
-  "muchos":     { "lemma": "mucho",    "gloss": "many",       "pos": "adjective" },
-  "despacio":   { "lemma": "despacio", "gloss": "slowly",     "pos": "adverb" },
-
-  "casa":         { "lemma": "casa",        "gloss": "house",     "pos": "noun" },
-  "ciudad":       { "lemma": "ciudad",      "gloss": "city",      "pos": "noun" },
-  "gato":         { "lemma": "gato",        "gloss": "cat",       "pos": "noun" },
-  "gatos":        { "lemma": "gato",        "gloss": "cats",      "pos": "noun" },
-  "perro":        { "lemma": "perro",       "gloss": "dog",       "pos": "noun" },
-  "familia":      { "lemma": "familia",     "gloss": "family",    "pos": "noun" },
-  "padre":        { "lemma": "padre",       "gloss": "father",    "pos": "noun" },
-  "madre":        { "lemma": "madre",       "gloss": "mother",    "pos": "noun" },
-  "hermana":      { "lemma": "hermana",     "gloss": "sister",    "pos": "noun" },
-  "años":         { "lemma": "año",         "gloss": "years",     "pos": "noun" },
-  "amigo":        { "lemma": "amigo",       "gloss": "friend",    "pos": "noun" },
-  "amiga":        { "lemma": "amigo",       "gloss": "friend (female)", "pos": "noun" },
-  "amigos":       { "lemma": "amigo",       "gloss": "friends",   "pos": "noun" },
-  "estudiante":   { "lemma": "estudiante",  "gloss": "student",   "pos": "noun" },
-  "estudiantes":  { "lemma": "estudiante",  "gloss": "students",  "pos": "noun" },
-  "país":         { "lemma": "país",        "gloss": "country",   "pos": "noun" },
-  "países":       { "lemma": "país",        "gloss": "countries", "pos": "noun" },
-  "universidad":  { "lemma": "universidad", "gloss": "university","pos": "noun" },
-  "clase":        { "lemma": "clase",       "gloss": "class, classroom", "pos": "noun" },
-  "chicos":       { "lemma": "chico",       "gloss": "boys, kids","pos": "noun" },
-  "chicas":       { "lemma": "chica",       "gloss": "girls",     "pos": "noun" },
-  "profesora":    { "lemma": "profesor",    "gloss": "teacher (female)", "pos": "noun" },
-  "mesa":         { "lemma": "mesa",        "gloss": "table",     "pos": "noun" },
-  "libros":       { "lemma": "libro",       "gloss": "books",     "pos": "noun" },
-  "ordenador":    { "lemma": "ordenador",   "gloss": "computer",  "pos": "noun" },
-  "español":      { "lemma": "español",     "gloss": "Spanish",   "pos": "noun" },
-
-  "grande":     { "lemma": "grande",    "gloss": "big",             "pos": "adjective" },
-  "pequeña":    { "lemma": "pequeño",   "gloss": "small",           "pos": "adjective" },
-  "pequeños":   { "lemma": "pequeño",   "gloss": "small (plural)",  "pos": "adjective" },
-  "bonita":     { "lemma": "bonito",    "gloss": "pretty",          "pos": "adjective" },
-  "negro":      { "lemma": "negro",     "gloss": "black",           "pos": "adjective" },
-  "blancos":    { "lemma": "blanco",    "gloss": "white (plural)",  "pos": "adjective" },
-  "simpático":  { "lemma": "simpático", "gloss": "friendly",        "pos": "adjective" },
-  "simpática":  { "lemma": "simpático", "gloss": "friendly",        "pos": "adjective" },
-  "buenos":     { "lemma": "bueno",     "gloss": "good (plural)",   "pos": "adjective" },
-  "alto":       { "lemma": "alto",      "gloss": "tall",            "pos": "adjective" },
-  "baja":       { "lemma": "bajo",      "gloss": "short",           "pos": "adjective" },
-  "divertidos": { "lemma": "divertido", "gloss": "fun, funny",      "pos": "adjective" },
-  "cansada":    { "lemma": "cansado",   "gloss": "tired",           "pos": "adjective" },
-  "mismo":      { "lemma": "mismo",     "gloss": "same",            "pos": "adjective" },
-  "diferentes": { "lemma": "diferente", "gloss": "different",       "pos": "adjective" },
-  "española":   { "lemma": "español",   "gloss": "Spanish (feminine)", "pos": "adjective" },
-  "doce":       { "lemma": "doce",      "gloss": "twelve",          "pos": "number" },
-  "dos":        { "lemma": "dos",       "gloss": "two",             "pos": "number" },
-
-  "Ana":       { "lemma": "Ana",       "gloss": "Ana",       "pos": "name" },
-  "España":    { "lemma": "España",    "gloss": "Spain",     "pos": "name" },
-  "Madrid":    { "lemma": "Madrid",    "gloss": "Madrid",    "pos": "name" },
-  "Michi":     { "lemma": "Michi",     "gloss": "Michi",     "pos": "name" },
-  "Carlos":    { "lemma": "Carlos",    "gloss": "Carlos",    "pos": "name" },
-  "Elena":     { "lemma": "Elena",     "gloss": "Elena",     "pos": "name" },
-  "Lucía":     { "lemma": "Lucía",     "gloss": "Lucía",     "pos": "name" },
-  "Pablo":     { "lemma": "Pablo",     "gloss": "Pablo",     "pos": "name" },
-  "México":    { "lemma": "México",    "gloss": "Mexico",    "pos": "name" },
-  "Sofía":     { "lemma": "Sofía",     "gloss": "Sofía",     "pos": "name" },
-  "Argentina": { "lemma": "Argentina", "gloss": "Argentina", "pos": "name" },
-  "Marta":     { "lemma": "Marta",     "gloss": "Marta",     "pos": "name" }
+  "hola": {
+    "lemma": "hola",
+    "gloss": "hello",
+    "pos": "interjection"
+  },
+  "adiós": {
+    "lemma": "adiós",
+    "gloss": "goodbye",
+    "pos": "interjection"
+  },
+  "gracias": {
+    "lemma": "gracias",
+    "gloss": "thank you",
+    "pos": "interjection"
+  },
+  "soy": {
+    "lemma": "ser",
+    "gloss": "I am",
+    "pos": "verb",
+    "level": "A1",
+    "note": "From 'ser', used for identity, origin and lasting qualities."
+  },
+  "eres": {
+    "lemma": "ser",
+    "gloss": "you are",
+    "pos": "verb"
+  },
+  "es": {
+    "lemma": "ser",
+    "gloss": "is",
+    "pos": "verb"
+  },
+  "somos": {
+    "lemma": "ser",
+    "gloss": "we are",
+    "pos": "verb"
+  },
+  "son": {
+    "lemma": "ser",
+    "gloss": "they are",
+    "pos": "verb"
+  },
+  "estoy": {
+    "lemma": "estar",
+    "gloss": "I am",
+    "pos": "verb",
+    "note": "From 'estar' — the other 'to be', for how you feel and where you are."
+  },
+  "estás": {
+    "lemma": "estar",
+    "gloss": "you are",
+    "pos": "verb"
+  },
+  "llamo": {
+    "lemma": "llamar",
+    "gloss": "I call",
+    "pos": "verb"
+  },
+  "llamas": {
+    "lemma": "llamar",
+    "gloss": "you call",
+    "pos": "verb"
+  },
+  "llama": {
+    "lemma": "llamar",
+    "gloss": "he/she calls",
+    "pos": "verb"
+  },
+  "vivo": {
+    "lemma": "vivir",
+    "gloss": "I live",
+    "pos": "verb"
+  },
+  "vive": {
+    "lemma": "vivir",
+    "gloss": "he/she lives",
+    "pos": "verb"
+  },
+  "vivimos": {
+    "lemma": "vivir",
+    "gloss": "we live",
+    "pos": "verb"
+  },
+  "tengo": {
+    "lemma": "tener",
+    "gloss": "I have",
+    "pos": "verb"
+  },
+  "tiene": {
+    "lemma": "tener",
+    "gloss": "he/she has",
+    "pos": "verb"
+  },
+  "trabaja": {
+    "lemma": "trabajar",
+    "gloss": "he/she works",
+    "pos": "verb"
+  },
+  "trabajo": {
+    "lemma": "trabajar",
+    "gloss": "I work",
+    "pos": "verb"
+  },
+  "estudian": {
+    "lemma": "estudiar",
+    "gloss": "they study",
+    "pos": "verb"
+  },
+  "habla": {
+    "lemma": "hablar",
+    "gloss": "he/she speaks",
+    "pos": "verb"
+  },
+  "gusta": {
+    "lemma": "gustar",
+    "gloss": "is pleasing",
+    "pos": "verb",
+    "note": "Spanish says 'it pleases me' rather than 'I like it'."
+  },
+  "hay": {
+    "lemma": "haber",
+    "gloss": "there is, there are",
+    "pos": "verb",
+    "note": "One word for both singular and plural."
+  },
+  "yo": {
+    "lemma": "yo",
+    "gloss": "I",
+    "pos": "pronoun"
+  },
+  "tú": {
+    "lemma": "tú",
+    "gloss": "you",
+    "pos": "pronoun"
+  },
+  "él": {
+    "lemma": "él",
+    "gloss": "he",
+    "pos": "pronoun"
+  },
+  "ella": {
+    "lemma": "ella",
+    "gloss": "she",
+    "pos": "pronoun"
+  },
+  "nosotros": {
+    "lemma": "nosotros",
+    "gloss": "we",
+    "pos": "pronoun"
+  },
+  "ellos": {
+    "lemma": "ellos",
+    "gloss": "they",
+    "pos": "pronoun"
+  },
+  "me": {
+    "lemma": "me",
+    "gloss": "myself",
+    "pos": "pronoun"
+  },
+  "te": {
+    "lemma": "te",
+    "gloss": "yourself",
+    "pos": "pronoun"
+  },
+  "se": {
+    "lemma": "se",
+    "gloss": "himself, herself",
+    "pos": "pronoun"
+  },
+  "mi": {
+    "lemma": "mi",
+    "gloss": "my",
+    "pos": "possessive"
+  },
+  "mis": {
+    "lemma": "mi",
+    "gloss": "my (plural)",
+    "pos": "possessive"
+  },
+  "tu": {
+    "lemma": "tu",
+    "gloss": "your",
+    "pos": "possessive",
+    "note": "No accent: 'tu' is 'your', 'tú' is 'you'."
+  },
+  "un": {
+    "lemma": "un",
+    "gloss": "a",
+    "pos": "article"
+  },
+  "una": {
+    "lemma": "un",
+    "gloss": "a",
+    "pos": "article"
+  },
+  "el": {
+    "lemma": "el",
+    "gloss": "the",
+    "pos": "article"
+  },
+  "la": {
+    "lemma": "el",
+    "gloss": "the (feminine)",
+    "pos": "article"
+  },
+  "los": {
+    "lemma": "el",
+    "gloss": "the (plural)",
+    "pos": "article"
+  },
+  "y": {
+    "lemma": "y",
+    "gloss": "and",
+    "pos": "conjunction"
+  },
+  "o": {
+    "lemma": "o",
+    "gloss": "or",
+    "pos": "conjunction"
+  },
+  "pero": {
+    "lemma": "pero",
+    "gloss": "but",
+    "pos": "conjunction"
+  },
+  "porque": {
+    "lemma": "porque",
+    "gloss": "because",
+    "pos": "conjunction"
+  },
+  "de": {
+    "lemma": "de",
+    "gloss": "from, of",
+    "pos": "preposition"
+  },
+  "en": {
+    "lemma": "en",
+    "gloss": "in, on",
+    "pos": "preposition"
+  },
+  "por": {
+    "lemma": "por",
+    "gloss": "for, by",
+    "pos": "preposition"
+  },
+  "cómo": {
+    "lemma": "cómo",
+    "gloss": "how",
+    "pos": "question word"
+  },
+  "dónde": {
+    "lemma": "dónde",
+    "gloss": "where",
+    "pos": "question word"
+  },
+  "qué": {
+    "lemma": "qué",
+    "gloss": "what",
+    "pos": "question word"
+  },
+  "tal": {
+    "lemma": "tal",
+    "gloss": "such",
+    "pos": "adverb"
+  },
+  "no": {
+    "lemma": "no",
+    "gloss": "not, no",
+    "pos": "adverb"
+  },
+  "muy": {
+    "lemma": "muy",
+    "gloss": "very",
+    "pos": "adverb"
+  },
+  "también": {
+    "lemma": "también",
+    "gloss": "also, too",
+    "pos": "adverb"
+  },
+  "bien": {
+    "lemma": "bien",
+    "gloss": "well, fine",
+    "pos": "adverb"
+  },
+  "hoy": {
+    "lemma": "hoy",
+    "gloss": "today",
+    "pos": "adverb"
+  },
+  "poco": {
+    "lemma": "poco",
+    "gloss": "little",
+    "pos": "adverb"
+  },
+  "mucho": {
+    "lemma": "mucho",
+    "gloss": "a lot",
+    "pos": "adverb"
+  },
+  "muchos": {
+    "lemma": "mucho",
+    "gloss": "many",
+    "pos": "adjective"
+  },
+  "despacio": {
+    "lemma": "despacio",
+    "gloss": "slowly",
+    "pos": "adverb"
+  },
+  "casa": {
+    "lemma": "casa",
+    "gloss": "house",
+    "pos": "noun"
+  },
+  "ciudad": {
+    "lemma": "ciudad",
+    "gloss": "city",
+    "pos": "noun"
+  },
+  "gato": {
+    "lemma": "gato",
+    "gloss": "cat",
+    "pos": "noun"
+  },
+  "gatos": {
+    "lemma": "gato",
+    "gloss": "cats",
+    "pos": "noun"
+  },
+  "perro": {
+    "lemma": "perro",
+    "gloss": "dog",
+    "pos": "noun"
+  },
+  "familia": {
+    "lemma": "familia",
+    "gloss": "family",
+    "pos": "noun"
+  },
+  "padre": {
+    "lemma": "padre",
+    "gloss": "father",
+    "pos": "noun"
+  },
+  "madre": {
+    "lemma": "madre",
+    "gloss": "mother",
+    "pos": "noun"
+  },
+  "hermana": {
+    "lemma": "hermana",
+    "gloss": "sister",
+    "pos": "noun"
+  },
+  "años": {
+    "lemma": "año",
+    "gloss": "years",
+    "pos": "noun"
+  },
+  "amigo": {
+    "lemma": "amigo",
+    "gloss": "friend",
+    "pos": "noun"
+  },
+  "amiga": {
+    "lemma": "amigo",
+    "gloss": "friend (female)",
+    "pos": "noun"
+  },
+  "amigos": {
+    "lemma": "amigo",
+    "gloss": "friends",
+    "pos": "noun"
+  },
+  "estudiante": {
+    "lemma": "estudiante",
+    "gloss": "student",
+    "pos": "noun"
+  },
+  "estudiantes": {
+    "lemma": "estudiante",
+    "gloss": "students",
+    "pos": "noun"
+  },
+  "país": {
+    "lemma": "país",
+    "gloss": "country",
+    "pos": "noun"
+  },
+  "países": {
+    "lemma": "país",
+    "gloss": "countries",
+    "pos": "noun"
+  },
+  "universidad": {
+    "lemma": "universidad",
+    "gloss": "university",
+    "pos": "noun"
+  },
+  "clase": {
+    "lemma": "clase",
+    "gloss": "class, classroom",
+    "pos": "noun"
+  },
+  "chicos": {
+    "lemma": "chico",
+    "gloss": "boys, kids",
+    "pos": "noun"
+  },
+  "chicas": {
+    "lemma": "chica",
+    "gloss": "girls",
+    "pos": "noun"
+  },
+  "profesora": {
+    "lemma": "profesor",
+    "gloss": "teacher (female)",
+    "pos": "noun"
+  },
+  "mesa": {
+    "lemma": "mesa",
+    "gloss": "table",
+    "pos": "noun"
+  },
+  "libros": {
+    "lemma": "libro",
+    "gloss": "books",
+    "pos": "noun"
+  },
+  "ordenador": {
+    "lemma": "ordenador",
+    "gloss": "computer",
+    "pos": "noun"
+  },
+  "español": {
+    "lemma": "español",
+    "gloss": "Spanish",
+    "pos": "noun"
+  },
+  "grande": {
+    "lemma": "grande",
+    "gloss": "big",
+    "pos": "adjective"
+  },
+  "pequeña": {
+    "lemma": "pequeño",
+    "gloss": "small",
+    "pos": "adjective"
+  },
+  "pequeños": {
+    "lemma": "pequeño",
+    "gloss": "small (plural)",
+    "pos": "adjective"
+  },
+  "bonita": {
+    "lemma": "bonito",
+    "gloss": "pretty",
+    "pos": "adjective"
+  },
+  "negro": {
+    "lemma": "negro",
+    "gloss": "black",
+    "pos": "adjective"
+  },
+  "blancos": {
+    "lemma": "blanco",
+    "gloss": "white (plural)",
+    "pos": "adjective"
+  },
+  "simpático": {
+    "lemma": "simpático",
+    "gloss": "friendly",
+    "pos": "adjective"
+  },
+  "simpática": {
+    "lemma": "simpático",
+    "gloss": "friendly",
+    "pos": "adjective"
+  },
+  "buenos": {
+    "lemma": "bueno",
+    "gloss": "good (plural)",
+    "pos": "adjective"
+  },
+  "alto": {
+    "lemma": "alto",
+    "gloss": "tall",
+    "pos": "adjective"
+  },
+  "baja": {
+    "lemma": "bajo",
+    "gloss": "short",
+    "pos": "adjective"
+  },
+  "divertidos": {
+    "lemma": "divertido",
+    "gloss": "fun, funny",
+    "pos": "adjective"
+  },
+  "cansada": {
+    "lemma": "cansado",
+    "gloss": "tired",
+    "pos": "adjective"
+  },
+  "mismo": {
+    "lemma": "mismo",
+    "gloss": "same",
+    "pos": "adjective"
+  },
+  "diferentes": {
+    "lemma": "diferente",
+    "gloss": "different",
+    "pos": "adjective"
+  },
+  "española": {
+    "lemma": "español",
+    "gloss": "Spanish (feminine)",
+    "pos": "adjective"
+  },
+  "doce": {
+    "lemma": "doce",
+    "gloss": "twelve",
+    "pos": "number"
+  },
+  "dos": {
+    "lemma": "dos",
+    "gloss": "two",
+    "pos": "number"
+  },
+  "Ana": {
+    "lemma": "Ana",
+    "gloss": "Ana",
+    "pos": "name"
+  },
+  "España": {
+    "lemma": "España",
+    "gloss": "Spain",
+    "pos": "name"
+  },
+  "Madrid": {
+    "lemma": "Madrid",
+    "gloss": "Madrid",
+    "pos": "name"
+  },
+  "Michi": {
+    "lemma": "Michi",
+    "gloss": "Michi",
+    "pos": "name"
+  },
+  "Carlos": {
+    "lemma": "Carlos",
+    "gloss": "Carlos",
+    "pos": "name"
+  },
+  "Elena": {
+    "lemma": "Elena",
+    "gloss": "Elena",
+    "pos": "name"
+  },
+  "Lucía": {
+    "lemma": "Lucía",
+    "gloss": "Lucía",
+    "pos": "name"
+  },
+  "Pablo": {
+    "lemma": "Pablo",
+    "gloss": "Pablo",
+    "pos": "name"
+  },
+  "México": {
+    "lemma": "México",
+    "gloss": "Mexico",
+    "pos": "name"
+  },
+  "Sofía": {
+    "lemma": "Sofía",
+    "gloss": "Sofía",
+    "pos": "name"
+  },
+  "Argentina": {
+    "lemma": "Argentina",
+    "gloss": "Argentina",
+    "pos": "name"
+  },
+  "Marta": {
+    "lemma": "Marta",
+    "gloss": "Marta",
+    "pos": "name"
+  },
+  "levanto": {
+    "lemma": "levantar",
+    "gloss": "I get up",
+    "pos": "verb"
+  },
+  "levanta": {
+    "lemma": "levantar",
+    "gloss": "he/she gets up",
+    "pos": "verb"
+  },
+  "ducho": {
+    "lemma": "duchar",
+    "gloss": "I shower",
+    "pos": "verb"
+  },
+  "salgo": {
+    "lemma": "salir",
+    "gloss": "I leave",
+    "pos": "verb"
+  },
+  "desayuno": {
+    "lemma": "desayunar",
+    "gloss": "I have breakfast",
+    "pos": "verb"
+  },
+  "bebo": {
+    "lemma": "beber",
+    "gloss": "I drink",
+    "pos": "verb"
+  },
+  "bebe": {
+    "lemma": "beber",
+    "gloss": "he/she drinks",
+    "pos": "verb"
+  },
+  "como": {
+    "lemma": "comer",
+    "gloss": "I eat",
+    "pos": "verb"
+  },
+  "come": {
+    "lemma": "comer",
+    "gloss": "he/she eats",
+    "pos": "verb"
+  },
+  "comemos": {
+    "lemma": "comer",
+    "gloss": "we eat",
+    "pos": "verb"
+  },
+  "hablamos": {
+    "lemma": "hablar",
+    "gloss": "we talk",
+    "pos": "verb"
+  },
+  "llego": {
+    "lemma": "llegar",
+    "gloss": "I arrive",
+    "pos": "verb"
+  },
+  "llegar": {
+    "lemma": "llegar",
+    "gloss": "to arrive",
+    "pos": "verb"
+  },
+  "empiezo": {
+    "lemma": "empezar",
+    "gloss": "I start",
+    "pos": "verb"
+  },
+  "empieza": {
+    "lemma": "empezar",
+    "gloss": "it starts",
+    "pos": "verb"
+  },
+  "escribo": {
+    "lemma": "escribir",
+    "gloss": "I write",
+    "pos": "verb"
+  },
+  "leo": {
+    "lemma": "leer",
+    "gloss": "I read",
+    "pos": "verb"
+  },
+  "termina": {
+    "lemma": "terminar",
+    "gloss": "it finishes",
+    "pos": "verb"
+  },
+  "vuelvo": {
+    "lemma": "volver",
+    "gloss": "I return",
+    "pos": "verb"
+  },
+  "ceno": {
+    "lemma": "cenar",
+    "gloss": "I have dinner",
+    "pos": "verb"
+  },
+  "cenamos": {
+    "lemma": "cenar",
+    "gloss": "we have dinner",
+    "pos": "verb"
+  },
+  "vemos": {
+    "lemma": "ver",
+    "gloss": "we watch",
+    "pos": "verb"
+  },
+  "acuesto": {
+    "lemma": "acostar",
+    "gloss": "I go to bed",
+    "pos": "verb"
+  },
+  "duermo": {
+    "lemma": "dormir",
+    "gloss": "I sleep",
+    "pos": "verb"
+  },
+  "voy": {
+    "lemma": "ir",
+    "gloss": "I go",
+    "pos": "verb"
+  },
+  "descanso": {
+    "lemma": "descansar",
+    "gloss": "I rest",
+    "pos": "verb"
+  },
+  "cocino": {
+    "lemma": "cocinar",
+    "gloss": "I cook",
+    "pos": "verb"
+  },
+  "pasa": {
+    "lemma": "pasar",
+    "gloss": "it passes",
+    "pos": "verb"
+  },
+  "tres": {
+    "lemma": "tres",
+    "gloss": "three",
+    "pos": "number"
+  },
+  "cuatro": {
+    "lemma": "cuatro",
+    "gloss": "four",
+    "pos": "number"
+  },
+  "cinco": {
+    "lemma": "cinco",
+    "gloss": "five",
+    "pos": "number"
+  },
+  "seis": {
+    "lemma": "seis",
+    "gloss": "six",
+    "pos": "number"
+  },
+  "siete": {
+    "lemma": "siete",
+    "gloss": "seven",
+    "pos": "number"
+  },
+  "ocho": {
+    "lemma": "ocho",
+    "gloss": "eight",
+    "pos": "number"
+  },
+  "nueve": {
+    "lemma": "nueve",
+    "gloss": "nine",
+    "pos": "number"
+  },
+  "once": {
+    "lemma": "once",
+    "gloss": "eleven",
+    "pos": "number"
+  },
+  "hora": {
+    "lemma": "hora",
+    "gloss": "hour, time",
+    "pos": "noun"
+  },
+  "horas": {
+    "lemma": "hora",
+    "gloss": "hours",
+    "pos": "noun"
+  },
+  "minutos": {
+    "lemma": "minuto",
+    "gloss": "minutes",
+    "pos": "noun"
+  },
+  "media": {
+    "lemma": "medio",
+    "gloss": "half",
+    "pos": "adjective"
+  },
+  "mañana": {
+    "lemma": "mañana",
+    "gloss": "morning",
+    "pos": "noun"
+  },
+  "tarde": {
+    "lemma": "tarde",
+    "gloss": "late; afternoon",
+    "pos": "adverb"
+  },
+  "noche": {
+    "lemma": "noche",
+    "gloss": "night",
+    "pos": "noun"
+  },
+  "temprano": {
+    "lemma": "temprano",
+    "gloss": "early",
+    "pos": "adverb"
+  },
+  "después": {
+    "lemma": "después",
+    "gloss": "afterwards",
+    "pos": "adverb"
+  },
+  "antes": {
+    "lemma": "antes",
+    "gloss": "before",
+    "pos": "adverb"
+  },
+  "siempre": {
+    "lemma": "siempre",
+    "gloss": "always",
+    "pos": "adverb"
+  },
+  "nunca": {
+    "lemma": "nunca",
+    "gloss": "never",
+    "pos": "adverb"
+  },
+  "pronto": {
+    "lemma": "pronto",
+    "gloss": "soon, early",
+    "pos": "adverb"
+  },
+  "cada": {
+    "lemma": "cada",
+    "gloss": "each, every",
+    "pos": "adjective"
+  },
+  "veces": {
+    "lemma": "vez",
+    "gloss": "times",
+    "pos": "noun"
+  },
+  "normalmente": {
+    "lemma": "normalmente",
+    "gloss": "usually",
+    "pos": "adverb"
+  },
+  "rápido": {
+    "lemma": "rápido",
+    "gloss": "fast",
+    "pos": "adverb"
+  },
+  "sábados": {
+    "lemma": "sábado",
+    "gloss": "Saturdays",
+    "pos": "noun"
+  },
+  "domingos": {
+    "lemma": "domingo",
+    "gloss": "Sundays",
+    "pos": "noun"
+  },
+  "semana": {
+    "lemma": "semana",
+    "gloss": "week",
+    "pos": "noun"
+  },
+  "fin": {
+    "lemma": "fin",
+    "gloss": "end",
+    "pos": "noun"
+  },
+  "a": {
+    "lemma": "a",
+    "gloss": "at, to",
+    "pos": "preposition"
+  },
+  "al": {
+    "lemma": "a",
+    "gloss": "to the",
+    "pos": "preposition"
+  },
+  "las": {
+    "lemma": "el",
+    "gloss": "the (feminine plural)",
+    "pos": "article"
+  },
+  "con": {
+    "lemma": "con",
+    "gloss": "with",
+    "pos": "preposition"
+  },
+  "para": {
+    "lemma": "para",
+    "gloss": "for",
+    "pos": "preposition"
+  },
+  "más": {
+    "lemma": "más",
+    "gloss": "more",
+    "pos": "adverb"
+  },
+  "cerca": {
+    "lemma": "cerca",
+    "gloss": "near",
+    "pos": "adverb"
+  },
+  "muchas": {
+    "lemma": "mucho",
+    "gloss": "many",
+    "pos": "adjective"
+  },
+  "cocina": {
+    "lemma": "cocina",
+    "gloss": "kitchen",
+    "pos": "noun"
+  },
+  "café": {
+    "lemma": "café",
+    "gloss": "coffee",
+    "pos": "noun"
+  },
+  "leche": {
+    "lemma": "leche",
+    "gloss": "milk",
+    "pos": "noun"
+  },
+  "pan": {
+    "lemma": "pan",
+    "gloss": "bread",
+    "pos": "noun"
+  },
+  "té": {
+    "lemma": "té",
+    "gloss": "tea",
+    "pos": "noun"
+  },
+  "fruta": {
+    "lemma": "fruta",
+    "gloss": "fruit",
+    "pos": "noun"
+  },
+  "oficina": {
+    "lemma": "oficina",
+    "gloss": "office",
+    "pos": "noun"
+  },
+  "correos": {
+    "lemma": "correo",
+    "gloss": "emails",
+    "pos": "noun"
+  },
+  "personas": {
+    "lemma": "persona",
+    "gloss": "people",
+    "pos": "noun"
+  },
+  "compañeros": {
+    "lemma": "compañero",
+    "gloss": "colleagues",
+    "pos": "noun"
+  },
+  "restaurante": {
+    "lemma": "restaurante",
+    "gloss": "restaurant",
+    "pos": "noun"
+  },
+  "televisión": {
+    "lemma": "televisión",
+    "gloss": "television",
+    "pos": "noun"
+  },
+  "parque": {
+    "lemma": "parque",
+    "gloss": "park",
+    "pos": "noun"
+  },
+  "hablo": {
+    "lemma": "hablar",
+    "gloss": "I speak",
+    "pos": "verb"
+  },
+  "trabajar": {
+    "lemma": "trabajar",
+    "gloss": "to work",
+    "pos": "verb"
+  },
+  "libro": {
+    "lemma": "libro",
+    "gloss": "book",
+    "pos": "noun"
+  }
 }

@@ -126,6 +126,15 @@ unchanged from any of:
 Routing is hash-based, so no server rewrites are needed and refreshing a deep link works
 everywhere. Nothing is coupled to the repository name.
 
+## Theming
+
+Three states: follow the system (default), force light, force dark — toggled from the header and
+stored in `localStorage`. Colour tokens are defined light-first on `:root`; the dark palette is
+repeated under both `@media (prefers-color-scheme: dark)` (guarded with
+`:root:not([data-theme="light"])`) and `:root[data-theme="dark"]`, so the toggle wins in either
+direction. A blocking script in `<head>` applies the stored choice before first paint — keep it
+inside `<head>` and keep it blocking, or a chosen theme flashes the wrong palette on load.
+
 ## Reading model
 
 A word starts **unknown** and highlighted. Resting the cursor on it shows what it means and

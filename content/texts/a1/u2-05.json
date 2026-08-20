@@ -1,0 +1,19 @@
+{
+  "id": "a1-u2-05-por-la-noche",
+  "level": "A1", "unit": 2, "order": 5,
+  "title": "Por la noche",
+  "titleEn": "At night",
+  "blurbEn": "The end of Ana's day, and two more reflexive verbs that Spanish uses where English would not.",
+  "grammarRefs": ["reflexive-verbs"],
+  "body": "Por la noche ceno con mi familia. Normalmente cenamos a las nueve.\n\nDespués vemos la televisión o leo un libro.\n\nMe acuesto a las once y me duermo pronto.\n\nDuermo ocho horas cada noche.",
+  "translationEn": "At night I have dinner with my family. We usually have dinner at nine.\n\nAfterwards we watch television or I read a book.\n\nI go to bed at eleven and I fall asleep quickly.\n\nI sleep eight hours every night.",
+  "newLemmas": ["noche", "cenar", "normalmente", "ver", "televisión", "acostar", "once", "dormir", "pronto", "cada"],
+  "glosses": {
+    "duermo": { "lemma": "dormir", "gloss": "I sleep", "pos": "verb", "note": "Compare 'me duermo' (I fall asleep) with 'duermo' (I sleep). The 'me' changes the meaning." }
+  },
+  "phrases": [
+    { "s": "Me acuesto", "gloss": "I go to bed", "note": "Literally 'I lay myself down'." },
+    { "s": "me duermo", "gloss": "I fall asleep" },
+    { "s": "cada noche", "gloss": "every night" }
+  ]
+}

@@ -2,6 +2,8 @@
 id: plurals
 title: "Making things plural"
 level: A1
+category: "Nouns & articles"
+order: 20
 related: [gender-and-articles, possessives]
 ---
 

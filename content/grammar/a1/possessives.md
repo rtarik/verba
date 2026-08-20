@@ -2,6 +2,8 @@
 id: possessives
 title: "Saying whose it is: mi, tu, su"
 level: A1
+category: "Pronouns & possessives"
+order: 20
 related: [gender-and-articles, plurals]
 ---
 

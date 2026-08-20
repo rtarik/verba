@@ -10,7 +10,7 @@ import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs'
 import { join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import {
-  zSourceText, zLexicon, zCurriculum, zAudioSidecar, zText,
+  zSourceText, zLexicon, zCurriculum, zAudioSidecar, zText, zGrammarMeta,
   type SourceText, type Text, type Token, type WordToken,
   type Phrase, type LexiconEntry, type Curriculum, type AudioSidecar,
 } from '../../content/schema.ts'
@@ -127,34 +127,56 @@ export function compileAll(): CompiledCorpus {
 
     // --- grammar cross-references ----------------------------------------
     for (const ref of src.grammarRefs) {
-      if (!grammarIds().has(ref)) errors.push(`${id}: grammarRefs "${ref}" has no matching doc in content/grammar/`)
+      if (!grammar().ids.has(ref)) errors.push(`${id}: grammarRefs "${ref}" has no matching doc in content/grammar/`)
     }
 
     texts.push({ ...text, body: src.body, bodyHash: hashBody(src.body) })
   }
 
+  errors.push(...grammar().errors)
+
   return { texts, lexicon, curriculum, diagnostics: { errors, warnings } }
 }
 
-let _grammarIds: Set<string> | null = null
-function grammarIds(): Set<string> {
-  if (_grammarIds) return _grammarIds
-  const dir = join(CONTENT, 'grammar')
+let _grammar: { ids: Set<string>; errors: string[] } | null = null
+
+/** Parse every grammar page's frontmatter, so a bad category fails the check. */
+function grammar(): { ids: Set<string>; errors: string[] } {
+  if (_grammar) return _grammar
   const ids = new Set<string>()
+  const errs: string[] = []
   const walk = (d: string) => {
     if (!existsSync(d)) return
     for (const entry of readdirSync(d)) {
       const p = join(d, entry)
-      if (statSync(p).isDirectory()) walk(p)
-      else if (entry.endsWith('.md')) {
-        const m = readFileSync(p, 'utf8').match(/^---\s*[\s\S]*?\bid:\s*([a-z0-9-]+)/)
-        if (m) ids.add(m[1])
+      if (statSync(p).isDirectory()) { walk(p); continue }
+      if (!entry.endsWith('.md')) continue
+      const rel = p.slice(ROOT.length + 1)
+      const raw = readFileSync(p, 'utf8')
+      const m = raw.match(/^---\r?\n([\s\S]*?)\r?\n---/)
+      if (!m) { errs.push(`${rel}: missing frontmatter block`); continue }
+      const fields: Record<string, unknown> = {}
+      for (const line of m[1].split(/\r?\n/)) {
+        const i = line.indexOf(':')
+        if (i < 0) continue
+        const key = line.slice(0, i).trim()
+        const val = line.slice(i + 1).trim().replace(/^["']|["']$/g, '')
+        fields[key] = key === 'order' ? Number(val)
+          : key === 'related' ? val.replace(/[[\]]/g, '').split(',').map((x) => x.trim()).filter(Boolean)
+          : val
       }
+      const parsed = zGrammarMeta.safeParse(fields)
+      if (!parsed.success) {
+        for (const issue of parsed.error.issues) errs.push(`${rel}: ${issue.path.join('.')} — ${issue.message}`)
+        continue
+      }
+      if (ids.has(parsed.data.id)) errs.push(`${rel}: duplicate grammar id "${parsed.data.id}"`)
+      ids.add(parsed.data.id)
     }
   }
-  walk(dir)
-  _grammarIds = ids
-  return ids
+  walk(join(CONTENT, 'grammar'))
+  _grammar = { ids, errors: errs }
+  return _grammar
 }
 
 export function compileText(

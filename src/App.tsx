@@ -3,6 +3,7 @@ import Library from './routes/Library'
 import Reader from './routes/Reader'
 import Grammar from './routes/Grammar'
 import Stats from './routes/Stats'
+import { ThemeToggle } from './components/ThemeToggle'
 
 const tabs = [
   { to: '/', label: 'Read', end: true },
@@ -14,7 +15,7 @@ export default function App() {
   return (
     <div className="min-h-full">
       <header className="sticky top-0 z-40 backdrop-blur" style={{ background: 'color-mix(in srgb, var(--paper) 88%, transparent)', borderBottom: '1px solid var(--edge)' }}>
-        <div className="mx-auto flex max-w-3xl items-center gap-6 px-5 py-3">
+        <div className="mx-auto flex max-w-5xl items-center gap-6 px-5 py-3">
           <NavLink to="/" className="text-lg font-semibold tracking-tight" style={{ fontFamily: 'var(--font-reading)' }}>
             Verba
           </NavLink>
@@ -30,10 +31,13 @@ export default function App() {
               </NavLink>
             ))}
           </nav>
+          <div className="ml-auto">
+            <ThemeToggle />
+          </div>
         </div>
       </header>
 
-      <main className="mx-auto max-w-3xl px-5 pb-16">
+      <main className="pb-16">
         <Routes>
           <Route path="/" element={<Library />} />
           <Route path="/read/:id" element={<Reader />} />

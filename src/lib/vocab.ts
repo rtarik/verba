@@ -119,7 +119,8 @@ export const vocab = {
 
   reset: () => commit({}),
 
-  exportJSON: () => JSON.stringify({ version: 1, exported: new Date().toISOString(), vocab: state }, null, 2),
+  exportJSON: (extra: Record<string, unknown> = {}) =>
+    JSON.stringify({ version: 2, exported: new Date().toISOString(), vocab: state, ...extra }, null, 2),
 
   /** Merge an export back in. Known always wins over unknown. */
   importJSON(raw: string): { added: number; merged: number } {

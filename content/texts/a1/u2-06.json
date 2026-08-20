@@ -1,0 +1,20 @@
+{
+  "id": "a1-u2-06-el-fin-de-semana",
+  "level": "A1", "unit": 2, "order": 6,
+  "title": "El fin de semana",
+  "titleEn": "The weekend",
+  "blurbEn": "The last text of the unit. Ana's weekend looks nothing like her weekdays — and you meet the irregular verb 'ir'.",
+  "grammarRefs": ["present-tense-regular", "telling-time"],
+  "body": "Los sábados no trabajo. Me levanto tarde y desayuno despacio.\n\nPor la mañana voy al parque con mis amigos.\n\nLos domingos descanso en casa. A veces cocino para mi familia.\n\nEl fin de semana pasa rápido.",
+  "translationEn": "On Saturdays I do not work. I get up late and have breakfast slowly.\n\nIn the morning I go to the park with my friends.\n\nOn Sundays I rest at home. Sometimes I cook for my family.\n\nThe weekend passes quickly.",
+  "newLemmas": ["sábado", "ir", "parque", "domingo", "descansar", "vez", "cocinar", "para", "fin", "semana", "pasar", "rápido"],
+  "glosses": {
+    "al": { "lemma": "a", "gloss": "to the", "pos": "preposition", "note": "'a' + 'el' always squashes together into 'al'. You never write 'a el'." },
+    "voy": { "lemma": "ir", "gloss": "I go", "pos": "verb", "note": "'ir' is completely irregular — 'voy' looks nothing like it. Learn this one by heart." }
+  },
+  "phrases": [
+    { "s": "Los sábados", "gloss": "On Saturdays", "note": "'los' + a day means 'every' that day. No word for 'on' is needed." },
+    { "s": "A veces", "gloss": "Sometimes" },
+    { "s": "El fin de semana", "gloss": "The weekend", "note": "Literally 'the end of week'." }
+  ]
+}
