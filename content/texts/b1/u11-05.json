@@ -1,0 +1,21 @@
+{
+  "id": "b1-u11-05-dile-que-venga",
+  "level": "B1", "unit": 11, "order": 5,
+  "title": "Dile que venga",
+  "titleEn": "Tell him to come",
+  "blurbEn": "Asking people to do things at work, where the subjunctive does most of its everyday work.",
+  "grammarRefs": ["subjuntivo-deseos"],
+  "body": "Mi jefe quiere que organice la reunión del viernes.\n\nMe ha pedido que llame a los clientes, que reserve una sala y que prepare los documentos antes del jueves.\n\nTambién quiere que Diego venga, aunque Diego odia las reuniones.\n\n—Dile que venga —me dice mi jefe.\n\n—Dile tú —pienso, pero no lo digo.\n\nAl final le escribo un mensaje: «Diego, el jefe pide que estés el viernes a las diez. Lo siento».\n\nContesta en dos segundos: «Dile que tengo una cita con el dentista».\n\nNo tiene ninguna cita. Los dos lo sabemos. Es una excusa perfecta y yo nunca me atrevo a inventarme una.\n\nPero le admiro un poco.",
+  "translationEn": "My boss wants me to organise Friday's meeting.\n\nHe has asked me to call the clients, book a room and prepare the documents before Thursday.\n\nHe also wants Diego to come, although Diego hates meetings.\n\n\"Tell him to come,\" my boss says.\n\n\"You tell him,\" I think, but I don't say it.\n\nIn the end I write him a message: \"Diego, the boss is asking you to be here on Friday at ten. Sorry.\"\n\nHe replies in two seconds: \"Tell him I have a dentist's appointment.\"\n\nHe doesn't have any appointment. We both know it. It's a perfect excuse and I never dare invent one.\n\nBut I admire him a little.",
+  "newLemmas": ["organizar", "sala", "documento", "jueves", "odiar", "cita", "dentista", "admirar", "ninguno", "excusa", "inventar"],
+  "glosses": {
+    "organice": { "lemma": "organizar", "gloss": "organise", "pos": "verb", "note": "The z becomes c before e. A spelling change, not a grammar one." },
+    "Dile que venga": { "lemma": "venir", "gloss": "Tell him to come", "pos": "verb", "note": "'decir que' + subjunctive is an instruction. With the indicative — 'dile que viene' — it would report a fact: tell him that he is coming." },
+    "estés": { "lemma": "estar", "gloss": "you be", "pos": "verb" }
+  },
+  "phrases": [
+    { "s": "quiere que organice", "gloss": "wants me to organise" },
+    { "s": "Me ha pedido que llame", "gloss": "He has asked me to call", "note": "'pedir que' always takes the subjunctive — asking is wanting by another name." },
+    { "s": "Dile que venga", "gloss": "Tell him to come" }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "b1-u11-04-quiero-ir-quiero-que-vengas",
+  "level": "B1",
+  "unit": 11,
+  "order": 4,
+  "title": "Quiero ir, quiero que vengas",
+  "titleEn": "I want to go, I want you to come",
+  "blurbEn": "The rule that decides everything: count the subjects. One means an infinitive, two mean the subjunctive.",
+  "grammarRefs": [
+    "subjuntivo-deseos"
+  ],
+  "body": "En español hay una regla que al principio parece extraña y luego resulta lógica.\n\nSi el sujeto es el mismo, se usa el infinitivo: «Quiero ir a Sevilla».\n\nSi hay dos sujetos distintos, aparece el subjuntivo: «Quiero que vengas a Sevilla».\n\nEn el primer caso yo quiero y yo voy. En el segundo yo quiero y tú vienes. Son dos personas, así que la frase necesita dos verbos y un «que» entre los dos.\n\nMi profesora lo explica con un ejemplo que no olvido:\n\n«Espero aprobar» significa que espero aprobar yo.\n\n«Espero que apruebes» significa que el examen es tuyo y yo solo cruzo los dedos.\n\nUna palabra de diferencia. Dos situaciones completamente distintas.",
+  "translationEn": "In Spanish there is a rule that seems strange at first and then turns out to be logical.\n\nIf the subject is the same, you use the infinitive: \"Quiero ir a Sevilla\".\n\nIf there are two different subjects, the subjunctive appears: \"Quiero que vengas a Sevilla\".\n\nIn the first case I want and I go. In the second I want and you come. They are two people, so the sentence needs two verbs and a \"que\" between them.\n\nMy teacher explains it with an example I never forget:\n\n\"Espero aprobar\" means I hope to pass myself.\n\n\"Espero que apruebes\" means the exam is yours and I am just crossing my fingers.\n\nOne word of difference. Two completely different situations.",
+  "newLemmas": [
+    "regla",
+    "extraño",
+    "resultar",
+    "lógico",
+    "sujeto",
+    "infinitivo",
+    "distinto",
+    "subjuntivo",
+    "caso",
+    "ejemplo",
+    "dedo",
+    "tuyo",
+    "aparecer",
+    "situación"
+  ],
+  "glosses": {
+    "apruebes": {
+      "lemma": "aprobar",
+      "gloss": "you pass",
+      "pos": "verb",
+      "note": "Subjunctive. Compare 'Espero aprobar' one line above — no 'que', no change, because there is only one person involved."
+    },
+    "aparece": {
+      "lemma": "aparecer",
+      "gloss": "appears",
+      "pos": "verb"
+    },
+    "situaciones": {
+      "lemma": "situación",
+      "gloss": "situations",
+      "pos": "noun"
+    }
+  },
+  "phrases": [
+    {
+      "s": "Espero aprobar",
+      "gloss": "I hope to pass",
+      "note": "One subject: I hope, I pass. Infinitive.",
+      "at": 84
+    },
+    {
+      "s": "Espero que apruebes",
+      "gloss": "I hope you pass",
+      "note": "Two subjects: I hope, you pass. Subjunctive."
+    },
+    {
+      "s": "cruzo los dedos",
+      "gloss": "I cross my fingers"
+    }
+  ]
+}

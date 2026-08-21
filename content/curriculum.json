@@ -212,8 +212,14 @@
         "querer que",
         "ojalá"
       ],
-      "textIds": [],
-      "summaryEn": "A whole new verb mood. Spanish reaches for it when a sentence is about wanting, hoping or asking rather than stating. Starts with the forms and the clearest triggers."
+      "textIds": [
+        "b1-u11-01-quiero-que-vengas",
+        "b1-u11-02-ojala-llueva",
+        "b1-u11-03-espero-que-todo-salga-bien",
+        "b1-u11-04-quiero-ir-quiero-que-vengas",
+        "b1-u11-05-dile-que-venga",
+        "b1-u11-06-ojala-el-ano-que-viene"
+      ]
     },
     {
       "unit": 12,

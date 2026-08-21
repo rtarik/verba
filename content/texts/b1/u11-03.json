@@ -1,0 +1,22 @@
+{
+  "id": "b1-u11-03-espero-que-todo-salga-bien",
+  "level": "B1", "unit": 11, "order": 3,
+  "title": "Espero que todo salga bien",
+  "titleEn": "I hope everything goes well",
+  "blurbEn": "A hospital waiting room, and the irregular subjunctive forms you will use most.",
+  "grammarRefs": ["subjuntivo-presente", "subjuntivo-deseos"],
+  "body": "Mañana mi madre tiene una operación pequeña. Nada grave, dicen los médicos, pero yo no duermo bien desde el lunes. Es la primera vez que la veo en un hospital.\n\nEspero que todo salga bien. Espero que no tenga dolor. Espero que los médicos sepan lo que hacen y que mi madre esté tranquila cuando entre en el quirófano.\n\nElla, por supuesto, está más tranquila que yo.\n\n—No quiero que vengas —me dijo ayer—. Prefiero que vayas a trabajar y que me llames por la tarde.\n\nVoy a ir de todas formas. Que se enfade si quiere.\n\nMi padre finge que está tranquilo. No engaña a nadie.\n\nOjalá dentro de una semana esto sea solo un recuerdo aburrido.",
+  "translationEn": "Tomorrow my mother has a small operation. Nothing serious, the doctors say, but I haven't slept well since Monday. It's the first time I've seen her in a hospital.\n\nI hope everything goes well. I hope she isn't in pain. I hope the doctors know what they're doing and that my mother is calm when she goes into the operating theatre.\n\nShe, of course, is calmer than I am.\n\n\"I don't want you to come,\" she told me yesterday. \"I'd rather you went to work and called me in the afternoon.\"\n\nI'm going anyway. Let her be annoyed if she likes.\n\nMy father is pretending to be calm. He isn't fooling anyone.\n\nI hope that in a week's time this is just a boring memory.",
+  "newLemmas": ["operación", "grave", "médico", "dolor", "quirófano", "supuesto", "enfadar", "hospital", "fingir", "engañar"],
+  "glosses": {
+    "salga": { "lemma": "salir", "gloss": "turns out", "pos": "verb", "note": "Subjunctive of 'salir'. Built from the yo form 'salgo': drop the -o, add the opposite vowel." },
+    "sepan": { "lemma": "saber", "gloss": "know", "pos": "verb", "note": "Subjunctive of 'saber'. Completely irregular — 'sepa, sepas, sepa, sepamos, sepan'." },
+    "Que se enfade": { "lemma": "enfadar", "gloss": "Let her be annoyed", "pos": "verb", "note": "A bare 'que' + subjunctive works as a third-person command: let her, may she." }
+  },
+  "phrases": [
+    { "s": "Espero que todo salga bien", "gloss": "I hope everything goes well", "note": "The single most useful subjunctive sentence in Spanish. Learn it whole." },
+    { "s": "por supuesto", "gloss": "of course" },
+    { "s": "de todas formas", "gloss": "anyway" },
+    { "s": "No engaña a nadie", "gloss": "He isn't fooling anyone" }
+  ]
+}

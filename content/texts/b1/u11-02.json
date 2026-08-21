@@ -1,0 +1,21 @@
+{
+  "id": "b1-u11-02-ojala-llueva",
+  "level": "B1", "unit": 11, "order": 2,
+  "title": "Ojalá llueva",
+  "titleEn": "I hope it rains",
+  "blurbEn": "One word that always takes the subjunctive, and a small piece of history hiding inside it.",
+  "grammarRefs": ["ojala", "subjuntivo-presente"],
+  "body": "Ojalá llueva este fin de semana.\n\nSuena raro, lo sé. Pero llevamos dos meses sin agua y los campos de mi abuelo están secos. Él mira el cielo todas las mañanas y no dice nada, que es su manera de preocuparse.\n\nOjalá llueva mucho. Ojalá llueva una semana entera.\n\nMi abuela dice que «ojalá» viene del árabe, de una expresión que significaba «si Dios quiere». Me gusta saberlo. Es una palabra que cruzó el mar, cambió de idioma y sigue significando exactamente lo mismo: quiero algo que no depende de mí.\n\nOjalá el próximo verano sea más fácil para ellos.\n\nY ojalá yo esté allí para verlo.",
+  "translationEn": "I hope it rains this weekend.\n\nIt sounds strange, I know. But we have gone two months without water and my grandfather's fields are dry. He looks at the sky every morning and says nothing, which is his way of worrying.\n\nI hope it rains hard. I hope it rains for a whole week.\n\nMy grandmother says that \"ojalá\" comes from Arabic, from an expression meaning \"if God wills\". I like knowing that. It is a word that crossed the sea, changed language and still means exactly the same thing: I want something that does not depend on me.\n\nI hope next summer is easier for them.\n\nAnd I hope I am there to see it.",
+  "newLemmas": ["sonar", "raro", "seco", "cielo", "árabe", "expresión", "significar", "depender", "próximo", "Dios"],
+  "glosses": {
+    "llueva": { "lemma": "llover", "gloss": "rains", "pos": "verb", "note": "Not 'llueve'. 'Ojalá' is the one word in Spanish that takes the subjunctive one hundred per cent of the time." },
+    "sea": { "lemma": "ser", "gloss": "is", "pos": "verb", "note": "Subjunctive of 'ser'. It looks nothing like 'es' — this is one to memorise." },
+    "esté": { "lemma": "estar", "gloss": "I am", "pos": "verb", "note": "Subjunctive of 'estar', with an accent on the end. Compare 'este' (this) and 'esté' (be) — different words." }
+  },
+  "phrases": [
+    { "s": "Ojalá llueva", "gloss": "I hope it rains", "at": 0 },
+    { "s": "llevamos dos meses sin agua", "gloss": "we've gone two months without water", "note": "'llevar' + time is how Spanish says how long something has been going on." },
+    { "s": "si Dios quiere", "gloss": "if God wills" }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "b1-u11-01-quiero-que-vengas",
+  "level": "B1",
+  "unit": 11,
+  "order": 1,
+  "title": "Quiero que vengas",
+  "titleEn": "I want you to come",
+  "blurbEn": "Not a new tense but a new mood. Spanish changes the verb when a sentence stops stating facts and starts wanting things.",
+  "grammarRefs": [
+    "subjuntivo-presente",
+    "subjuntivo-deseos"
+  ],
+  "body": "Mi hermana quiere que vaya con ella a Sevilla en abril.\n\nYo quiero ir. El problema es el trabajo.\n\n—Habla con tu jefe —me dice—. Dile que necesitas cuatro días.\n\n—No es tan fácil. Prefiero que él lo proponga, no yo.\n\n—Pues espera sentada.\n\nTiene razón, claro. Nunca pasa nada si no lo pides. Mi hermana es más valiente que yo: siempre pide lo que quiere, sin miedo al no. Yo casi nunca me atrevo.\n\nAyer por fin hablé con él. Le dije que quería cuatro días en abril y que trabajaría más en marzo.\n\nMe escuchó, miró el calendario y dijo que lo pensaría.\n\nMi hermana quiere que sea optimista. Yo prefiero que las cosas ocurran antes de celebrarlas.\n\nPero ojalá diga que sí.",
+  "translationEn": "My sister wants me to go with her to Seville in April.\n\nI want to go. The problem is work.\n\n\"Talk to your boss,\" she tells me. \"Tell him you need four days.\"\n\n\"It's not that easy. I'd rather he suggested it, not me.\"\n\n\"Well, don't hold your breath.\"\n\nShe's right, of course. Nothing ever happens if you don't ask. My sister is braver than me: she always asks for what she wants, unafraid of a no. I hardly ever dare.\n\nYesterday I finally spoke to him. I told him I wanted four days in April and that I'd work more in March.\n\nHe listened, looked at the calendar and said he'd think about it.\n\nMy sister wants me to be optimistic. I'd rather things happened before I celebrate them.\n\nBut I hope he says yes.",
+  "newLemmas": [
+    "proponer",
+    "pues",
+    "calendario",
+    "optimista",
+    "ocurrir",
+    "celebrar",
+    "ojalá",
+    "abril",
+    "valiente",
+    "atrever",
+    "tan"
+  ],
+  "glosses": {
+    "vaya": {
+      "lemma": "ir",
+      "gloss": "go",
+      "pos": "verb",
+      "note": "Not 'voy'. When one person wants another person to do something, the second verb changes form entirely. This form is the subjunctive."
+    },
+    "proponga": {
+      "lemma": "proponer",
+      "gloss": "proposes",
+      "pos": "verb",
+      "note": "'Prefiero que él lo proponga' — I prefer, he proposes. Two different people, so the subjunctive appears."
+    },
+    "ocurran": {
+      "lemma": "ocurrir",
+      "gloss": "happen",
+      "pos": "verb"
+    },
+    "diga": {
+      "lemma": "decir",
+      "gloss": "says",
+      "pos": "verb",
+      "note": "After 'ojalá' the subjunctive is compulsory. Always."
+    }
+  },
+  "phrases": [
+    {
+      "s": "quiere que vaya",
+      "gloss": "wants me to go",
+      "note": "Spanish cannot say 'wants me to go' with an infinitive. It must be 'quiere QUE' plus a changed verb."
+    },
+    {
+      "s": "Yo quiero ir",
+      "gloss": "I want to go",
+      "note": "Same person wanting and going, so no 'que' and no change — just the plain infinitive. Compare the first line."
+    },
+    {
+      "s": "espera sentada",
+      "gloss": "don't hold your breath",
+      "note": "Literally 'wait sitting down'."
+    },
+    {
+      "s": "ojalá diga que sí",
+      "gloss": "I hope he says yes"
+    }
+  ]
+}

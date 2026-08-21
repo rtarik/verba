@@ -1,0 +1,21 @@
+{
+  "id": "b1-u11-06-ojala-el-ano-que-viene",
+  "level": "B1", "unit": 11, "order": 6,
+  "title": "Ojalá el año que viene",
+  "titleEn": "Here's hoping for next year",
+  "blurbEn": "The last text of the unit: a year of Spanish, counted in wishes rather than resolutions.",
+  "grammarRefs": ["ojala", "subjuntivo-deseos"],
+  "body": "Es diciembre otra vez.\n\nEl año pasado, por estas fechas, no sabía decir casi nada en español. Ahora escribo esto sin diccionario y solo miro dos o tres palabras.\n\nPara el año que viene tengo deseos, no propósitos. Los propósitos se rompen en febrero.\n\nOjalá siga estudiando aunque el trabajo se complique. Ojalá vuelva a México y esta vez entienda los chistes. Ojalá mi madre esté bien y mis abuelos sigan en su pueblo, con el jardín y el gato.\n\nQuiero que mi hermana disfrute de la universidad. Quiero que Pablo venga a Madrid en primavera. Y quiero que alguien, algún día, me pregunte algo en español por la calle y no note que soy extranjera.\n\nOjalá.\n\nEs una palabra preciosa. Significa que todavía espero algo.",
+  "translationEn": "It's December again.\n\nLast year, around this time, I couldn't say almost anything in Spanish. Now I write this without a dictionary and only look up two or three words.\n\nFor next year I have wishes, not resolutions. Resolutions break in February.\n\nI hope I keep studying even if work gets complicated. I hope I go back to Mexico and this time understand the jokes. I hope my mother is well and my grandparents are still in their village, with the garden and the cat.\n\nI want my sister to enjoy university. I want Pablo to come to Madrid in spring. And I want someone, one day, to ask me something in Spanish on the street and not notice that I'm a foreigner.\n\nHere's hoping.\n\nIt's a lovely word. It means I'm still expecting something.",
+  "newLemmas": ["diciembre", "fecha", "deseo", "propósito", "romper", "febrero", "complicar", "chiste", "extranjero", "precioso", "primavera"],
+  "glosses": {
+    "siga": { "lemma": "seguir", "gloss": "I keep", "pos": "verb", "note": "Subjunctive of 'seguir'. Here 'ojalá' is about the speaker herself — the subjunctive appears because of 'ojalá', not because of two subjects." },
+    "se rompen": { "lemma": "romper", "gloss": "break", "pos": "verb", "note": "'se' makes it happen by itself — resolutions break, nobody breaks them." },
+    "entienda": { "lemma": "entender", "gloss": "I understand", "pos": "verb" }
+  },
+  "phrases": [
+    { "s": "Ojalá siga estudiando", "gloss": "I hope I keep studying" },
+    { "s": "Quiero que mi hermana disfrute", "gloss": "I want my sister to enjoy" },
+    { "s": "Es una palabra preciosa", "gloss": "It's a lovely word" }
+  ]
+}

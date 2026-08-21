@@ -259,8 +259,8 @@ texts that use it. Cross-linked both ways with `grammarRefs`.
 Build a **vertical slice first**: Unit 1 complete (6 texts + audio + grammar docs + lexicon)
 before scaling out. If anything about the pipeline is wrong, it surfaces at 6 texts, not 60.
 
-**Status: A1 and A2 complete — Units 1–10.** 60 texts, 4,552 words, 647 lemmas, 37 grammar pages,
-13 MB audio — 45% of the planned 132 texts. Live at https://rtarik.github.io/verba/
+**Status: A1 and A2 complete, B1 Unit 11.** 66 texts, 5,251 words, 712 lemmas, 40 grammar pages,
+14 MB audio — 50% of the planned 132 texts. Live at https://rtarik.github.io/verba/
 
 | Unit | Avg length | Recycled vocabulary |
 |---|---|---|
@@ -274,6 +274,7 @@ before scaling out. If anything about the pipeline is wrong, it surfaces at 6 te
 | A2 8 Ahora mismo | 92 w | 85% |
 | A2 9 Planes | 101 w | 86% |
 | A2 10 De viaje | 102 w | 84% |
+| B1 11 Ojalá | 117 w | 84% |
 
 That last column is the health metric for the course. If it ever falls while texts lengthen, new
 vocabulary is being pushed too fast. Target for A2 was 70–80% while texts grew toward 90–120 words. **Both met**: A2 finished at
