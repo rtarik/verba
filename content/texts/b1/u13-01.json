@@ -1,0 +1,67 @@
+{
+  "id": "b1-u13-01-cuando-llegues-llamame",
+  "level": "B1",
+  "unit": 13,
+  "order": 1,
+  "title": "Cuando llegues, llámame",
+  "titleEn": "When you arrive, call me",
+  "blurbEn": "Two sentences that look identical in English. In Spanish one is a habit and the other has not happened yet.",
+  "grammarRefs": [
+    "subjuntivo-conjunciones"
+  ],
+  "body": "Mi hermana se va a Sevilla el viernes. Tiene la maleta hecha desde el martes, porque es así.\n\n—Cuando llegues, llámame —le digo.\n\n—Siempre te llamo cuando llego —contesta.\n\nLas dos frases parecen iguales, pero no lo son. La suya habla de todas las veces que ha llegado; la mía habla de una vez que todavía no ha ocurrido.\n\nEn español eso se marca en el verbo. Cuando algo ya es costumbre, va en indicativo: «cuando llego, te llamo». Cuando todavía no ha pasado, va en subjuntivo: «cuando llegues, llámame».\n\nEs una distinción sutil, casi invisible, y sin embargo cambia el sentido entero de la frase. Durante meses lo dije todo mal y nadie me lo señaló.\n\nAhora la oigo en todas partes, como una música de fondo.\n\n—Cuando puedas —dice mi jefe.\n\n—En cuanto termine —contesto yo.",
+  "translationEn": "My sister leaves for Seville on Friday. Her suitcase has been packed since Tuesday, because that's how she is.\n\n\"When you get there, call me,\" I tell her.\n\n\"I always call you when I get there,\" she replies.\n\nThe two sentences look the same, but they aren't. Hers is about every time she has arrived; mine is about one time that hasn't happened yet.\n\nIn Spanish that is marked in the verb. When something is already a habit, it takes the indicative: \"cuando llego, te llamo\". When it hasn't happened yet, it takes the subjunctive: \"cuando llegues, llámame\".\n\nIt's a subtle distinction, almost invisible, and yet it changes the whole sense of the sentence. For months I got it wrong and nobody pointed it out.\n\nNow I hear it everywhere, like background music.\n\n\"Whenever you can,\" says my boss.\n\n\"As soon as I finish,\" I reply.",
+  "newLemmas": [
+    "suyo",
+    "costumbre",
+    "distinción",
+    "sutil",
+    "invisible",
+    "embargo",
+    "sentido",
+    "señalar",
+    "fondo",
+    "mío"
+  ],
+  "glosses": {
+    "llegues": {
+      "lemma": "llegar",
+      "gloss": "you arrive",
+      "pos": "verb",
+      "note": "Subjunctive, because the arrival is still in the future. Not a habit — one specific time that has not happened."
+    },
+    "llego": {
+      "lemma": "llegar",
+      "gloss": "I arrive",
+      "pos": "verb",
+      "note": "Indicative, because this describes what always happens. Same conjunction, opposite mood."
+    },
+    "sin embargo": {
+      "lemma": "embargo",
+      "gloss": "however",
+      "pos": "noun"
+    }
+  },
+  "phrases": [
+    {
+      "s": "Cuando llegues, llámame",
+      "gloss": "When you arrive, call me",
+      "note": "Future reference. The arrival is hypothetical until it happens.",
+      "at": 18
+    },
+    {
+      "s": "cuando llego",
+      "gloss": "when I arrive",
+      "at": 26,
+      "note": "Habit. It has happened many times already, so the indicative."
+    },
+    {
+      "s": "sin embargo",
+      "gloss": "however"
+    },
+    {
+      "s": "En cuanto termine",
+      "gloss": "As soon as I finish"
+    }
+  ]
+}

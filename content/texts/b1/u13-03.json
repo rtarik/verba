@@ -1,0 +1,65 @@
+{
+  "id": "b1-u13-03-para-que-lo-entiendas",
+  "level": "B1",
+  "unit": 13,
+  "order": 3,
+  "title": "Para que lo entiendas",
+  "titleEn": "So that you understand",
+  "blurbEn": "A word that means everything and nothing, and the conjunction that always takes the subjunctive: para que.",
+  "grammarRefs": [
+    "para-que-aunque"
+  ],
+  "body": "Le escribo a Pablo para que me explique una cosa.\n\nEn México dicen «ahorita» todo el tiempo y yo nunca sé qué significa.\n\n—Depende —contesta—. Puede ser ahora mismo, dentro de diez minutos o nunca.\n\n—¿Y cómo lo sabéis?\n\n—Por el tono. Te lo digo para que no esperes sentada.\n\nLe mando un mensaje a mi hermana para que se ría. Ella me manda otro para que yo me ría también, con una lista de palabras españolas que tampoco significan nada concreto: «luego», «un rato», «enseguida».\n\nMe hace gracia que un país entero se ponga de acuerdo en ser impreciso.\n\nTodos los idiomas tienen palabras así. Sirven para que la gente no tenga que comprometerse.\n\nEs una forma de cortesía. Y también, a veces, una forma de escapar.",
+  "translationEn": "I write to Pablo so that he can explain something to me.\n\nIn Mexico they say \"ahorita\" all the time and I never know what it means.\n\n\"It depends,\" he replies. \"It can be right now, in ten minutes, or never.\"\n\n\"And how do you know which?\"\n\n\"From the tone. I'm telling you so you don't sit around waiting.\"\n\nI send my sister a message to make her laugh. She sends me another to make me laugh too, with a list of Spanish words that don't mean anything specific either: \"luego\", \"un rato\", \"enseguida\".\n\nIt amuses me that a whole country has agreed to be imprecise.\n\nEvery language has words like this. They exist so that people don't have to commit themselves.\n\nIt's a form of politeness. And also, sometimes, a form of escape.",
+  "newLemmas": [
+    "tono",
+    "reír",
+    "concreto",
+    "enseguida",
+    "comprometer",
+    "cortesía",
+    "escapar",
+    "gracia",
+    "acuerdo",
+    "impreciso",
+    "ahorita"
+  ],
+  "glosses": {
+    "explique": {
+      "lemma": "explicar",
+      "gloss": "explains",
+      "pos": "verb",
+      "note": "'para que' takes the subjunctive without exception — a purpose is by definition not yet achieved."
+    },
+    "ría": {
+      "lemma": "reír",
+      "gloss": "laughs",
+      "pos": "verb",
+      "note": "Subjunctive of 'reír'. Note the accent: 'ría', not 'ria'."
+    },
+    "ponga": {
+      "lemma": "poner",
+      "gloss": "agrees",
+      "pos": "verb",
+      "note": "'ponerse de acuerdo' is to reach an agreement."
+    }
+  },
+  "phrases": [
+    {
+      "s": "para que me explique",
+      "gloss": "so that he explains to me"
+    },
+    {
+      "s": "para que no esperes sentada",
+      "gloss": "so you don't sit around waiting"
+    },
+    {
+      "s": "Me hace gracia",
+      "gloss": "It amuses me"
+    },
+    {
+      "s": "ponga de acuerdo",
+      "gloss": "agree"
+    }
+  ]
+}

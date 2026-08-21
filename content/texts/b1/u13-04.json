@@ -1,0 +1,71 @@
+{
+  "id": "b1-u13-04-aunque-llueva",
+  "level": "B1",
+  "unit": 13,
+  "order": 4,
+  "title": "Aunque llueva",
+  "titleEn": "Even if it rains",
+  "blurbEn": "One conjunction, two moods, two meanings: a fact you are conceding, or a possibility you are allowing for.",
+  "grammarRefs": [
+    "para-que-aunque"
+  ],
+  "body": "El sábado vamos al campo aunque llueva.\n\nMi hermana lo ha decidido y no hay discusión posible. Aunque llueve desde el martes y aunque el pronóstico dice que va a seguir, ella insiste.\n\n—Aunque llueve —le corrijo—, no «aunque llueva». Está lloviendo de verdad.\n\n—Las dos cosas —dice—. Llueve ahora, y aunque llueva el sábado, vamos igual.\n\nTiene razón otra vez, y encima con la gramática correcta.\n\n«Aunque llueve» reconoce un hecho: está lloviendo, y aun así vamos. «Aunque llueva» plantea una posibilidad: puede que llueva, y aun así iríamos.\n\nUn hecho o una hipótesis. El verbo lo dice todo.\n\nNos llevamos las botas de agua por si acaso.\n\nEl sábado, por cierto, hizo sol.",
+  "translationEn": "On Saturday we're going to the countryside even if it rains.\n\nMy sister has decided and there's no arguing. Even though it has been raining since Tuesday and even though the forecast says it will carry on, she insists.\n\n\"Aunque llueve,\" I correct her, \"not 'aunque llueva'. It really is raining.\"\n\n\"Both,\" she says. \"It's raining now, and even if it rains on Saturday, we're going anyway.\"\n\nShe's right again, and with correct grammar on top.\n\n\"Aunque llueve\" acknowledges a fact: it is raining, and we're going anyway. \"Aunque llueva\" raises a possibility: it might rain, and we'd go anyway.\n\nA fact or a hypothesis. The verb says it all.\n\nWe took our wellingtons just in case.\n\nSaturday, as it turned out, was sunny.",
+  "newLemmas": [
+    "discusión",
+    "pronóstico",
+    "insistir",
+    "plantear",
+    "hipótesis",
+    "cierto",
+    "sol",
+    "aun",
+    "bota",
+    "acaso"
+  ],
+  "glosses": {
+    "llueva": {
+      "lemma": "llover",
+      "gloss": "it rains",
+      "pos": "verb",
+      "note": "Subjunctive: a possibility, not yet real. 'Even if it rains.'"
+    },
+    "llueve": {
+      "lemma": "llover",
+      "gloss": "it is raining",
+      "pos": "verb",
+      "note": "Indicative: a fact being conceded. 'Even though it is raining.' Both appear in this text, three lines apart."
+    },
+    "aun así": {
+      "lemma": "aun",
+      "gloss": "even so",
+      "pos": "adverb",
+      "note": "'aun' without an accent means 'even'. 'Aún' with one means 'still'."
+    },
+    "por cierto": {
+      "lemma": "cierto",
+      "gloss": "by the way",
+      "pos": "adjective"
+    }
+  },
+  "phrases": [
+    {
+      "s": "aunque llueva",
+      "gloss": "even if it rains",
+      "at": 5
+    },
+    {
+      "s": "aunque llueve",
+      "gloss": "even though it is raining",
+      "at": 17
+    },
+    {
+      "s": "por si acaso",
+      "gloss": "just in case"
+    },
+    {
+      "s": "por cierto",
+      "gloss": "by the way"
+    }
+  ]
+}

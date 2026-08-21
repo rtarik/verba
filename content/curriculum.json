@@ -252,8 +252,14 @@
         "negative imperative",
         "referring to the future"
       ],
-      "textIds": [],
-      "summaryEn": "Why 'cuando llego' and 'cuando llegue' mean different things, plus telling someone *not* to do something — which borrows the same subjunctive forms."
+      "textIds": [
+        "b1-u13-01-cuando-llegues-llamame",
+        "b1-u13-02-en-cuanto-termine",
+        "b1-u13-03-para-que-lo-entiendas",
+        "b1-u13-04-aunque-llueva",
+        "b1-u13-05-no-te-preocupes",
+        "b1-u13-06-cuando-apruebe"
+      ]
     },
     {
       "unit": 14,

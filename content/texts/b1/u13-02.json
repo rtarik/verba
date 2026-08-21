@@ -1,0 +1,22 @@
+{
+  "id": "b1-u13-02-en-cuanto-termine",
+  "level": "B1", "unit": 13, "order": 2,
+  "title": "En cuanto termine",
+  "titleEn": "As soon as I finish",
+  "blurbEn": "A list of things to do after the exam, and every time conjunction that points at the future.",
+  "grammarRefs": ["subjuntivo-conjunciones"],
+  "body": "Tengo una lista de cosas que voy a hacer en cuanto termine el examen. La escribí en septiembre y ha crecido cada semana.\n\nVoy a dormir hasta que me despierte sola, sin alarma. Voy a leer una novela entera en español, aunque tarde un mes. Voy a ver el mar.\n\nAntes de que empiece el verano quiero reservar el vuelo a México.\n\nDespués de que mi hermana vuelva de Sevilla, vamos a cenar las dos y me va a contar todo.\n\nY voy a borrar la aplicación de verbos irregulares del teléfono.\n\nMientras espero los resultados, voy a intentar no pensar en el examen. Esa última parte es la más difícil.\n\nMi madre dice que no me preocupe hasta que salgan las notas. Tiene razón, como siempre. Pero preocuparse antes de tiempo es lo único que se me da bien.",
+  "translationEn": "I have a list of things I'm going to do as soon as the exam is over. I wrote it in September and it has grown every week.\n\nI'm going to sleep until I wake up on my own, with no alarm. I'm going to read a whole novel in Spanish, even if it takes me a month. I'm going to see the sea.\n\nBefore summer starts I want to book the flight to Mexico.\n\nAfter my sister gets back from Seville, the two of us are going for dinner and she's going to tell me everything.\n\nAnd I'm going to delete the irregular verbs app from my phone.\n\nWhile I wait for the results, I'm going to try not to think about the exam. That last part is the hardest.\n\nMy mother says not to worry until the marks come out. She's right, as always. But worrying ahead of time is the only thing I'm good at.",
+  "newLemmas": ["crecer", "despertar", "alarma", "novela", "borrar", "aplicación", "resultado", "nota", "absoluto"],
+  "glosses": {
+    "termine": { "lemma": "terminar", "gloss": "finishes", "pos": "verb", "note": "'en cuanto' points at the future, so the subjunctive follows — the exam is not over yet." },
+    "salgan": { "lemma": "salir", "gloss": "come out", "pos": "verb", "note": "'hasta que' + subjunctive when the moment has not arrived." },
+    "empiece": { "lemma": "empezar", "gloss": "starts", "pos": "verb", "note": "'antes de que' *always* takes the subjunctive, no matter the timing — what comes after has by definition not happened." }
+  },
+  "phrases": [
+    { "s": "en cuanto termine", "gloss": "as soon as I finish" },
+    { "s": "hasta que me despierte", "gloss": "until I wake up" },
+    { "s": "Antes de que empiece", "gloss": "Before it starts" },
+    { "s": "se me da bien", "gloss": "I'm good at", "note": "Literally 'it gives itself well to me'. The skill is the subject, as with gustar." }
+  ]
+}

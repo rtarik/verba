@@ -1,0 +1,61 @@
+{
+  "id": "b1-u13-05-no-te-preocupes",
+  "level": "B1",
+  "unit": 13,
+  "order": 5,
+  "title": "No te preocupes",
+  "titleEn": "Don't worry",
+  "blurbEn": "A phone call the night before the exam, and the discovery that you have been using the subjunctive for two years without knowing it.",
+  "grammarRefs": [
+    "imperativo-negativo"
+  ],
+  "body": "Mi madre me llamó la noche antes del examen.\n\n—No te pongas nerviosa. No estudies hasta tarde. No bebas cinco cafés. Y no mires el móvil en la cama.\n\n—Vale, mamá.\n\n—No me digas «vale» con ese tono.\n\nMe lo repitió tres veces, por si acaso. Le hice caso a medias, que es lo máximo que consigo.\n\nLo curioso es que en español los mandatos negativos no se parecen a los positivos. «Estudia» es un imperativo normal, pero «no estudies» usa el subjuntivo. «Ven» es normal; «no vengas» no lo es.\n\nAsí que llevo meses usando el subjuntivo cada vez que le digo a alguien que no haga algo, sin saberlo.\n\nAl final dormí seis horas y bebí tres cafés.\n\nUna victoria parcial.",
+  "translationEn": "My mother called me the night before the exam.\n\n\"Don't get nervous. Don't study late. Don't drink five coffees. And don't look at your phone in bed.\"\n\n\"OK, Mum.\"\n\n\"Don't say 'OK' to me in that tone.\"\n\nShe repeated it three times, just in case. I half took her advice, which is the most I manage.\n\nThe curious thing is that in Spanish negative commands look nothing like positive ones. \"Estudia\" is an ordinary imperative, but \"no estudies\" uses the subjunctive. \"Ven\" is ordinary; \"no vengas\" is not.\n\nSo I've spent months using the subjunctive every time I tell someone not to do something, without knowing it.\n\nIn the end I slept six hours and drank three coffees.\n\nA partial victory.",
+  "newLemmas": [
+    "móvil",
+    "vale",
+    "mamá",
+    "máximo",
+    "mandato",
+    "positivo",
+    "victoria",
+    "parcial",
+    "imperativo",
+    "negativo"
+  ],
+  "glosses": {
+    "pongas": {
+      "lemma": "poner",
+      "gloss": "get",
+      "pos": "verb",
+      "note": "Negative commands use the subjunctive for every person, with no exceptions."
+    },
+    "estudies": {
+      "lemma": "estudiar",
+      "gloss": "study",
+      "pos": "verb",
+      "note": "Compare the positive 'estudia'. The negative is not 'no estudia' — the mood changes."
+    },
+    "digas": {
+      "lemma": "decir",
+      "gloss": "say",
+      "pos": "verb",
+      "note": "From 'digo' → 'diga' → 'digas'. The yo-form irregularity carries through, as always."
+    }
+  },
+  "phrases": [
+    {
+      "s": "No te pongas nerviosa",
+      "gloss": "Don't get nervous",
+      "note": "With a negative command the pronoun goes *before* the verb — the opposite of a positive one, where it attaches to the end."
+    },
+    {
+      "s": "a medias",
+      "gloss": "halfway, half-heartedly"
+    },
+    {
+      "s": "Le hice caso",
+      "gloss": "I took her advice"
+    }
+  ]
+}

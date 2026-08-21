@@ -1,0 +1,22 @@
+{
+  "id": "b1-u13-06-cuando-apruebe",
+  "level": "B1", "unit": 13, "order": 6,
+  "title": "Cuando apruebe",
+  "titleEn": "When I pass",
+  "blurbEn": "The last text of the unit: what happens after the exam, and what an exam actually measures.",
+  "grammarRefs": ["subjuntivo-conjunciones", "para-que-aunque"],
+  "body": "Cuando apruebe el examen, voy a hacer tres cosas.\n\nLa primera: llamar a Pablo y contárselo en español, sin preparar la frase antes.\n\nLa segunda: escribirle a mi profesora para que sepa que sus consejos de la nevera funcionaron.\n\nLa tercera: no estudiar nada durante dos semanas, aunque me sienta culpable.\n\nY después, en cuanto empiece septiembre, volver a empezar. Porque aprobar un examen no significa saber un idioma. Significa que alguien, un martes por la mañana, decidió que sabía lo suficiente.\n\nMi profesora dice que no me obsesione con el certificado. Dice que el certificado se queda en un cajón y que lo que no se queda en un cajón es la conversación que tendré en México en julio.\n\nEs una idea que me tranquiliza más de lo que esperaba.\n\nOjalá tenga razón. Suele tenerla.",
+  "translationEn": "When I pass the exam, I'm going to do three things.\n\nThe first: call Pablo and tell him about it in Spanish, without preparing the sentence beforehand.\n\nThe second: write to my teacher so she knows her fridge advice worked.\n\nThe third: study nothing for two weeks, even if I feel guilty.\n\nAnd then, as soon as September starts, begin again. Because passing an exam doesn't mean knowing a language. It means that someone, on a Tuesday morning, decided I knew enough.\n\nMy teacher says I shouldn't obsess over the certificate. She says the certificate ends up in a drawer, and what doesn't end up in a drawer is the conversation I'll have in Mexico in July.\n\nIt's an idea that reassures me more than I expected.\n\nI hope she's right. She usually is.",
+  "newLemmas": ["tercero", "culpable", "obsesionar", "cajón", "conversación", "soler", "julio", "funcionar", "tranquilizar"],
+  "glosses": {
+    "apruebe": { "lemma": "aprobar", "gloss": "I pass", "pos": "verb", "note": "'Cuando' + subjunctive. The passing has not happened — that is the whole reason for the mood." },
+    "sepa": { "lemma": "saber", "gloss": "knows", "pos": "verb", "note": "'para que' again, three units of triggers now stacking up in one sentence." },
+    "sienta": { "lemma": "sentir", "gloss": "I feel", "pos": "verb", "note": "'aunque' + subjunctive: she does not know yet whether she will feel guilty." }
+  },
+  "phrases": [
+    { "s": "Cuando apruebe", "gloss": "When I pass" },
+    { "s": "para que sepa", "gloss": "so that she knows" },
+    { "s": "aunque me sienta culpable", "gloss": "even if I feel guilty" },
+    { "s": "Suele tenerla", "gloss": "She usually is", "note": "'soler' + infinitive means to usually do something. Here 'tenerla' stands for 'tener razón'." }
+  ]
+}
