@@ -323,6 +323,20 @@
     },
     {
       "unit": 17,
+      "level": "B1",
+      "title": "Si puedo, iré",
+      "titleEn": "If I can, I'll go",
+      "focus": [
+        "real conditions with si",
+        "present perfect subjunctive",
+        "the personal a",
+        "passive with ser"
+      ],
+      "textIds": [],
+      "summaryEn": "The pieces that finish B1: conditions that might actually happen, the subjunctive combined with a participle ('espero que hayas llegado'), the little 'a' before a person that has been in every text since Unit 7, and the formal passive."
+    },
+    {
+      "unit": 18,
       "level": "B2",
       "title": "Si pudiera",
       "titleEn": "If I could",
@@ -336,7 +350,7 @@
       "summaryEn": "'Si tuviera tiempo, iría' — talking about what is not the case. Also the source of the most polite way to ask for anything: 'quisiera'."
     },
     {
-      "unit": 18,
+      "unit": 19,
       "level": "B2",
       "title": "Si hubiera sabido",
       "titleEn": "If I had known",
@@ -350,7 +364,7 @@
       "summaryEn": "The hardest structure in everyday Spanish, and the one that unlocks regret: 'si hubiera sabido, habría venido'. All three conditional types side by side."
     },
     {
-      "unit": 19,
+      "unit": 20,
       "level": "B2",
       "title": "El mundo del trabajo",
       "titleEn": "The world of work",
@@ -364,7 +378,7 @@
       "summaryEn": "Spanish at work — how formality reshapes verb forms, vocabulary and sentence length, and how to say something carefully rather than bluntly."
     },
     {
-      "unit": 20,
+      "unit": 21,
       "level": "B2",
       "title": "Debate",
       "titleEn": "Debate",
@@ -378,7 +392,7 @@
       "summaryEn": "Conceding a point before making your own, and the discourse markers that hold a long argument together."
     },
     {
-      "unit": 21,
+      "unit": 22,
       "level": "B2",
       "title": "Matices",
       "titleEn": "Shades of meaning",
@@ -392,7 +406,7 @@
       "summaryEn": "Where more than one form is grammatical and the choice changes the meaning — 'busco un piso que tiene' against 'que tenga'. This is what separates fluent Spanish from merely correct Spanish."
     },
     {
-      "unit": 22,
+      "unit": 23,
       "level": "B2",
       "title": "Cultura y literatura",
       "titleEn": "Culture and literature",

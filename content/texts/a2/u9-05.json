@@ -1,22 +1,64 @@
 {
   "id": "a2-u9-05-por-y-para",
-  "level": "A2", "unit": 9, "order": 5,
+  "level": "A2",
+  "unit": 9,
+  "order": 5,
   "title": "Por y para",
   "titleEn": "Por and para",
   "blurbEn": "Two words that both become 'for' in English, and the one question that tells them apart.",
-  "grammarRefs": ["por-para"],
+  "grammarRefs": [
+    "por-para",
+    "verbos-como-gustar"
+  ],
   "body": "Estudio español por dos razones y para tres cosas.\n\nEstudio por Pablo, porque quiero hablar con su familia sin traductor. Y estudio por gusto, porque me encanta el idioma.\n\nEstudio para viajar, para trabajar mejor y para entender las canciones que escucho.\n\nMi profesora dice que «por» explica la causa y «para» explica el objetivo. Por qué lo hago, y para qué lo hago. Es la diferencia entre el motivo y el destino.\n\nTambién usamos «por» para el tiempo y el lugar: paseo por el parque por la tarde.\n\nY «para» cuando algo es de alguien: este libro es para ti.\n\nAl principio me confundía siempre. Ahora casi nunca.",
   "translationEn": "I study Spanish for two reasons and for three things.\n\nI study because of Pablo, because I want to talk with his family without a translator. And I study for pleasure, because I love the language.\n\nI study in order to travel, to work better and to understand the songs I listen to.\n\nMy teacher says that \"por\" explains the cause and \"para\" explains the aim. Why I do it, and what I do it for. It is the difference between the motive and the destination.\n\nWe also use \"por\" for time and place: I walk through the park in the afternoon.\n\nAnd \"para\" when something belongs to someone: this book is for you.\n\nAt first I always got them confused. Now almost never.",
-  "newLemmas": ["traductor", "gusto", "encantar", "objetivo", "causa", "lugar", "confundir", "motivo", "destino"],
+  "newLemmas": [
+    "traductor",
+    "gusto",
+    "encantar",
+    "objetivo",
+    "causa",
+    "lugar",
+    "confundir",
+    "motivo",
+    "destino"
+  ],
   "glosses": {
-    "por": { "lemma": "por", "gloss": "because of, for", "pos": "preposition", "note": "Looking backwards: the reason something happens." },
-    "para": { "lemma": "para", "gloss": "in order to, for", "pos": "preposition", "note": "Looking forwards: the purpose or destination." },
-    "encanta": { "lemma": "encantar", "gloss": "I love", "pos": "verb", "note": "Works exactly like 'gustar' — the thing loved is the subject: 'me encanta el idioma'." }
+    "por": {
+      "lemma": "por",
+      "gloss": "because of, for",
+      "pos": "preposition",
+      "note": "Looking backwards: the reason something happens."
+    },
+    "para": {
+      "lemma": "para",
+      "gloss": "in order to, for",
+      "pos": "preposition",
+      "note": "Looking forwards: the purpose or destination."
+    },
+    "encanta": {
+      "lemma": "encantar",
+      "gloss": "I love",
+      "pos": "verb",
+      "note": "Works exactly like 'gustar' — the thing loved is the subject: 'me encanta el idioma'."
+    }
   },
   "phrases": [
-    { "s": "por dos razones", "gloss": "for two reasons" },
-    { "s": "para viajar", "gloss": "in order to travel" },
-    { "s": "por gusto", "gloss": "for pleasure" },
-    { "s": "es para ti", "gloss": "is for you" }
+    {
+      "s": "por dos razones",
+      "gloss": "for two reasons"
+    },
+    {
+      "s": "para viajar",
+      "gloss": "in order to travel"
+    },
+    {
+      "s": "por gusto",
+      "gloss": "for pleasure"
+    },
+    {
+      "s": "es para ti",
+      "gloss": "is for you"
+    }
   ]
 }

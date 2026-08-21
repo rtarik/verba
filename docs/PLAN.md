@@ -215,10 +215,26 @@ been consolidated.
 |---|---|---|
 | A1 | 1–4 | ser/estar, present tense, gender, articles, gustar, querer/poder, numbers, time, hay |
 | A2 | 5–10 | perfecto, indefinido, imperfecto and the contrast, present continuous, future, conditional, object pronouns, imperative, usted |
-| B1 | 11–16 | present subjunctive across its triggers, negative imperative, compound tenses, passive/impersonal se, reported speech, relative clauses |
-| B2 | 17–22 | imperfect and pluperfect subjunctive, all three conditionals, formal register, argumentation, nuance, literary reading |
+| B1 | 11–17 | present subjunctive across its triggers, negative imperative, compound tenses, passive/impersonal se, reported speech, relative clauses |
+| B2 | 18–23 | imperfect and pluperfect subjunctive, all three conditionals, formal register, argumentation, nuance, literary reading |
 
-At six texts per unit that is **132 texts** at completion. A1 is done (24).
+At six texts per unit that is **138 texts** at completion.
+
+**Second coverage audit (after Unit 16).** A sweep for structures *used in the texts but never
+explained anywhere* found nine gaps. They split into two kinds, and the distinction decided how
+to fix them:
+
+- **Seven were already being read without explanation** — demonstratives, the negation system,
+  `muy` vs `mucho`, `hace`/`llevar` + time, the `gustar` verb family, the personal `a`, and real
+  `si` conditions. Five of those needed only a reference page, since the texts already
+  demonstrate them; those pages were written and wired into the units where each first appears.
+- **Two were absent entirely** — the present perfect subjunctive (`espero que hayas llegado`) and
+  the passive with `ser`. Those need texts, and together with the personal `a` and `si` clauses
+  they became **B1 Unit 17**, pushing B2 to 18–23.
+
+The lesson for the remaining units: a structure can pass the vocabulary gate and still be
+invisible to a reader, because the gate checks words, not grammar. A periodic sweep for
+used-but-unexplained structures is worth repeating at the end of B2.
 
 ### 2.2 The progressive guarantee, machine-checked
 
@@ -259,8 +275,8 @@ texts that use it. Cross-linked both ways with `grammarRefs`.
 Build a **vertical slice first**: Unit 1 complete (6 texts + audio + grammar docs + lexicon)
 before scaling out. If anything about the pipeline is wrong, it surfaces at 6 texts, not 60.
 
-**Status: A1 and A2 complete, B1 Units 11–15.** 90 texts, 8,468 words, 962 lemmas, 52 grammar
-pages, 22 MB audio — 68% of the planned 132 texts. Live at https://rtarik.github.io/verba/
+**Status: A1 and A2 complete, B1 Units 11–16.** 96 texts, 9,351 words, 1,026 lemmas, 60 grammar
+pages, 24 MB audio — 70% of the planned 138 texts. Live at https://rtarik.github.io/verba/
 
 | Unit | Avg length | Recycled vocabulary |
 |---|---|---|
@@ -279,6 +295,7 @@ pages, 22 MB audio — 68% of the planned 132 texts. Live at https://rtarik.gith
 | B1 13 Cuando llegues | 130 w | 86% |
 | B1 14 Ya había pasado | 136 w | 89% |
 | B1 15 Se dice que | 146 w | 85% |
+| B1 16 Opiniones | 147 w | 86% |
 
 That last column is the health metric for the course. If it ever falls while texts lengthen, new
 vocabulary is being pushed too fast. Target for A2 was 70–80% while texts grew toward 90–120 words. **Both met**: A2 finished at

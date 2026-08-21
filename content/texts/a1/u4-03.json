@@ -1,20 +1,56 @@
 {
   "id": "a1-u4-03-en-el-mercado",
-  "level": "A1", "unit": 4, "order": 3,
+  "level": "A1",
+  "unit": 4,
+  "order": 3,
   "title": "En el mercado",
   "titleEn": "At the market",
   "blurbEn": "Saturday at the market with Ana's grandmother, and the words for buying things by weight.",
-  "grammarRefs": ["querer-poder", "quantities"],
+  "grammarRefs": [
+    "querer-poder",
+    "quantities",
+    "muy-mucho"
+  ],
   "body": "Los sábados por la mañana voy al mercado con mi abuela.\n\nEn el mercado hay muchas frutas y verduras. Todo es más barato que en el supermercado, y mi abuela dice que también es mejor.\n\n—¿Puedo probar una naranja? —pregunta mi abuela.\n\n—Claro, señora.\n\nCompramos un kilo de naranjas, medio kilo de tomates y una docena de huevos.\n\nVolvemos a casa despacio, con mucha comida y poco dinero.",
   "translationEn": "On Saturday mornings I go to the market with my grandmother.\n\nAt the market there is a lot of fruit and vegetables. Everything is cheaper than at the supermarket, and my grandmother says it is better too.\n\n\"Can I try an orange?\" my grandmother asks.\n\n\"Of course, madam.\"\n\nWe buy a kilo of oranges, half a kilo of tomatoes and a dozen eggs.\n\nWe go home slowly, with a lot of food and little money.",
-  "newLemmas": ["mercado", "barato", "poder", "probar", "claro", "señora", "naranja", "docena", "huevo", "mejor"],
+  "newLemmas": [
+    "mercado",
+    "barato",
+    "poder",
+    "probar",
+    "claro",
+    "señora",
+    "naranja",
+    "docena",
+    "huevo",
+    "mejor"
+  ],
   "glosses": {
-    "medio": { "lemma": "medio", "gloss": "half", "pos": "adjective", "note": "The same word as in 'las tres y media'. Here it counts weight rather than time." }
+    "medio": {
+      "lemma": "medio",
+      "gloss": "half",
+      "pos": "adjective",
+      "note": "The same word as in 'las tres y media'. Here it counts weight rather than time."
+    }
   },
   "phrases": [
-    { "s": "más barato que", "gloss": "cheaper than", "note": "'más ... que' is how Spanish compares two things." },
-    { "s": "¿Puedo probar", "gloss": "Can I try", "note": "'poder' + a plain verb. The second verb never changes." },
-    { "s": "un kilo de", "gloss": "a kilo of" },
-    { "s": "una docena de", "gloss": "a dozen" }
+    {
+      "s": "más barato que",
+      "gloss": "cheaper than",
+      "note": "'más ... que' is how Spanish compares two things."
+    },
+    {
+      "s": "¿Puedo probar",
+      "gloss": "Can I try",
+      "note": "'poder' + a plain verb. The second verb never changes."
+    },
+    {
+      "s": "un kilo de",
+      "gloss": "a kilo of"
+    },
+    {
+      "s": "una docena de",
+      "gloss": "a dozen"
+    }
   ]
 }
