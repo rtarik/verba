@@ -1,0 +1,22 @@
+{
+  "id": "b1-u14-04-yo-habria-hecho-lo-mismo",
+  "level": "B1", "unit": 14, "order": 4,
+  "title": "Yo habría hecho lo mismo",
+  "titleEn": "I'd have done the same",
+  "blurbEn": "What you would have done, in a past that never happened. The tense of hindsight and regret.",
+  "grammarRefs": ["condicional-compuesto"],
+  "body": "Mi hermana discutió con su compañera de piso por una tontería enorme —el turno de la basura— y se fue de Sevilla dos días antes.\n\n—¿Habrías hecho lo mismo? —me pregunta.\n\nYo habría aguantado. Habría dicho que no pasa nada, habría sonreído y habría vuelto a casa el domingo, como estaba previsto. Y después habría estado enfadada tres semanas sin decírselo a nadie. Habría escrito un mensaje larguísimo y no lo habría enviado.\n\nAsí que no: yo no habría hecho lo mismo. Yo habría hecho algo peor.\n\nSe lo digo y se ríe.\n\n—Deberías enfadarte más a menudo —me dice.\n\nPuede que tenga razón. Enfadarse a tiempo es una habilidad que nadie me enseñó.\n\nElla lo hace sin esfuerzo. Es un talento raro y me da envidia.\n\nYo pido perdón cuando alguien me pisa el pie.",
+  "translationEn": "My sister argued with her flatmate over something enormous — whose turn it was to take out the rubbish — and left Seville two days early.\n\n\"Would you have done the same?\" she asks me.\n\nI would have put up with it. I would have said it didn't matter, I would have smiled and I would have gone home on Sunday, as planned. And then I would have been angry for three weeks without telling anyone. I would have written an enormously long message and not sent it.\n\nSo no: I wouldn't have done the same. I would have done something worse.\n\nI tell her and she laughs.\n\n\"You should get angry more often,\" she says.\n\nShe may be right. Getting angry in time is a skill nobody taught me.\n\nShe does it effortlessly. It's a rare talent and I envy it.\n\nI apologise when somebody steps on my foot.",
+  "newLemmas": ["turno", "basura", "prever", "deber", "habilidad", "esfuerzo", "talento", "envidia", "pisar", "enviar"],
+  "glosses": {
+    "habría": { "lemma": "haber", "gloss": "would have", "pos": "verb", "note": "The conditional of 'haber' plus a participle. For a past that did not happen." },
+    "Habrías hecho": { "lemma": "hacer", "gloss": "would you have done", "pos": "verb" },
+    "Deberías": { "lemma": "deber", "gloss": "you should", "pos": "verb", "note": "'deber' in the conditional is the standard way to give advice — softer than a command." },
+    "estaba previsto": { "lemma": "prever", "gloss": "was planned", "pos": "verb" }
+  },
+  "phrases": [
+    { "s": "Yo habría aguantado", "gloss": "I would have put up with it" },
+    { "s": "como estaba previsto", "gloss": "as planned" },
+    { "s": "me da envidia", "gloss": "I envy it", "note": "Like 'me da rabia' — the feeling is the subject and you are the object." }
+  ]
+}

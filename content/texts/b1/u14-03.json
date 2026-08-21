@@ -1,0 +1,60 @@
+{
+  "id": "b1-u14-03-ya-habre-terminado",
+  "level": "B1",
+  "unit": 14,
+  "order": 3,
+  "title": "Para cuando llegues, ya habré terminado",
+  "titleEn": "By the time you arrive, I'll have finished",
+  "blurbEn": "A tense for what will already be done — and, oddly, for guessing about what has just happened.",
+  "grammarRefs": [
+    "futuro-perfecto"
+  ],
+  "body": "—¿A qué hora llegas?\n\n—Sobre las nueve.\n\n—Perfecto. Para cuando llegues, ya habré terminado de cocinar.\n\nMi hermana vuelve hoy de Sevilla y he decidido preparar algo decente por una vez. Había comprado los ingredientes por la mañana, siguiendo una receta de internet con demasiados pasos.\n\nA las siete he empezado. A las ocho y media todavía estaba cortando cebolla y llorando.\n\nHabré terminado a las nueve. Puede. Quizá.\n\nLo curioso del futuro perfecto es que también sirve para adivinar el pasado. Si alguien no contesta al teléfono, dices «se habrá dormido». Si llega tarde, «habrá perdido el tren». No sabes nada, pero lo dices con toda la confianza del mundo.\n\nMi hermana llegó a las nueve y cuarto. Yo no había terminado.\n\n—¿Qué habrá pasado aquí? —dijo, mirando la cocina.\n\nCenamos fuera.",
+  "translationEn": "\"What time do you get in?\"\n\n\"Around nine.\"\n\n\"Perfect. By the time you arrive, I'll have finished cooking.\"\n\nMy sister comes back from Seville today and I've decided to make something decent for once. I had bought the ingredients in the morning, following an internet recipe with too many steps.\n\nAt seven I started. At half past eight I was still chopping onion and crying.\n\nI'll have finished by nine. Maybe. Possibly.\n\nThe curious thing about the future perfect is that it also serves for guessing about the past. If someone doesn't answer the phone, you say \"he'll have fallen asleep\". If they're late, \"they'll have missed the train\". You know nothing, but you say it with all the confidence in the world.\n\nMy sister arrived at quarter past nine. I hadn't finished.\n\n\"What will have happened here?\" she said, looking at the kitchen.\n\nWe ate out.",
+  "newLemmas": [
+    "decente",
+    "ingrediente",
+    "paso",
+    "cebolla",
+    "llorar",
+    "adivinar",
+    "confianza",
+    "cuarto",
+    "futuro"
+  ],
+  "glosses": {
+    "habré": {
+      "lemma": "haber",
+      "gloss": "I will have",
+      "pos": "verb",
+      "note": "The future of 'haber' plus a participle. It says something will already be finished by a point ahead."
+    },
+    "se habrá dormido": {
+      "lemma": "dormir",
+      "gloss": "he'll have fallen asleep",
+      "pos": "verb",
+      "note": "Not about the future at all — a guess about what just happened. Spanish does this constantly."
+    },
+    "habrá pasado": {
+      "lemma": "pasar",
+      "gloss": "will have happened",
+      "pos": "verb",
+      "note": "Same guessing use, here as a rhetorical question: what on earth happened?"
+    }
+  },
+  "phrases": [
+    {
+      "s": "Para cuando llegues",
+      "gloss": "By the time you arrive",
+      "note": "'cuando' + subjunctive from Unit 13, now with the future perfect in the main clause."
+    },
+    {
+      "s": "ya habré terminado",
+      "gloss": "I'll have already finished"
+    },
+    {
+      "s": "por una vez",
+      "gloss": "for once"
+    }
+  ]
+}

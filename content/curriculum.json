@@ -272,8 +272,14 @@
         "condicional compuesto",
         "sequencing events"
       ],
-      "textIds": [],
-      "summaryEn": "Putting events in order when one happened before another — 'ya había salido cuando llegué' — and the compound tenses for what will have, or would have, happened."
+      "textIds": [
+        "b1-u14-01-ya-se-habia-ido",
+        "b1-u14-02-nunca-habia-entendido-nada",
+        "b1-u14-03-ya-habre-terminado",
+        "b1-u14-04-yo-habria-hecho-lo-mismo",
+        "b1-u14-05-todo-lo-que-habia-pasado",
+        "b1-u14-06-lo-que-habria-dicho"
+      ]
     },
     {
       "unit": 15,

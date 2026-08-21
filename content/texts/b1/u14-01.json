@@ -1,0 +1,21 @@
+{
+  "id": "b1-u14-01-ya-se-habia-ido",
+  "level": "B1", "unit": 14, "order": 1,
+  "title": "Cuando llegué, ya se había ido",
+  "titleEn": "When I got there, he'd already left",
+  "blurbEn": "A past inside the past. When two things happened and you need to say which came first.",
+  "grammarRefs": ["pluscuamperfecto"],
+  "body": "Ayer quedé con Diego a las siete en el bar de siempre, ese que tiene las sillas incómodas.\n\nLlegué a las siete y diez. Él ya se había ido.\n\nMe dejó una nota en la barra: «He esperado ocho minutos. Un récord. Te espero en la librería».\n\nCuando llegué a la librería, ya había comprado dos libros y se había sentado en el suelo a leer uno.\n\n—Llegas tarde —me dijo, sin levantar la vista.\n\n—Tú llegas tarde a todo desde que te conozco.\n\n—Por eso hoy he llegado pronto. Para verte llegar tarde a ti.\n\nNunca había visto a Diego puntual. Creo que nadie lo había visto.\n\nLe hice una foto como prueba, por si nadie me creía. Fingió que le molestaba, pero guardó la foto.",
+  "translationEn": "Yesterday I arranged to meet Diego at seven in the usual bar, the one with the uncomfortable chairs.\n\nI arrived at ten past seven. He had already left.\n\nHe left me a note on the counter: \"I waited eight minutes. A record. See you at the bookshop.\"\n\nWhen I got to the bookshop, he had already bought two books and sat down on the floor to read one.\n\n\"You're late,\" he said, without looking up.\n\n\"You've been late for everything since I've known you.\"\n\n\"That's why I came early today. To watch you be late for once.\"\n\nI had never seen Diego on time. I don't think anyone had.\n\nI took a photo as proof, in case nobody believed me. He pretended to be annoyed, but he kept the photo.",
+  "newLemmas": ["bar", "silla", "incómodo", "barra", "récord", "suelo", "vista", "prueba", "guardar"],
+  "glosses": {
+    "había": { "lemma": "haber", "gloss": "had", "pos": "verb", "note": "The imperfecto of 'haber' plus a participle. Same construction as 'he ido', shifted one step further back." },
+    "se había ido": { "lemma": "ir", "gloss": "had left", "pos": "verb", "note": "The leaving happened *before* the arriving. Both are past; this marks which came first." },
+    "Nunca había visto": { "lemma": "ver", "gloss": "I had never seen", "pos": "verb" }
+  },
+  "phrases": [
+    { "s": "ya se había ido", "gloss": "he had already left" },
+    { "s": "sin levantar la vista", "gloss": "without looking up" },
+    { "s": "por si", "gloss": "in case" }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "b1-u14-05-todo-lo-que-habia-pasado",
+  "level": "B1", "unit": 14, "order": 5,
+  "title": "Todo lo que había pasado antes",
+  "titleEn": "Everything that had happened before",
+  "blurbEn": "Running into the teacher who taught her first six months, and everything that had changed since.",
+  "grammarRefs": ["pluscuamperfecto", "futuro-perfecto"],
+  "body": "Ayer volví a ver a la profesora que me enseñó español el primer año.\n\nSe había jubilado en septiembre y no habíamos vuelto a hablar desde entonces.\n\nLa reconocí enseguida, aunque llevaba el pelo más corto. Ella tardó un poco más. Me sorprendió lo pequeña que parecía fuera del aula.\n\n—Ana —dijo al final—. La que nunca hablaba en clase.\n\nEra verdad. Durante seis meses no había abierto la boca más de tres veces. Había hecho todos los deberes, había aprobado todos los exámenes y no había dicho una sola frase completa en voz alta.\n\nAyer estuvimos veinte minutos hablando en español en mitad de la calle.\n\nLe di las gracias con torpeza y ella hizo un gesto con la mano.\n\n—Sabía que hablarías. Todos hablan al final. Solo hay que esperar.\n\nHabrá dicho lo mismo a cien alumnos. No me importa.",
+  "translationEn": "Yesterday I ran into the teacher who taught me Spanish in my first year.\n\nShe had retired in September and we hadn't spoken since.\n\nI recognised her immediately, although her hair was shorter. She took a little longer. I was surprised by how small she seemed outside the classroom.\n\n\"Ana,\" she said finally. \"The one who never spoke in class.\"\n\nIt was true. For six months I hadn't opened my mouth more than three times. I had done all the homework, I had passed all the exams and I had not said a single complete sentence out loud.\n\nYesterday we spent twenty minutes talking in Spanish in the middle of the street.\n\nI thanked her clumsily and she made a gesture with her hand.\n\n\"I knew you'd speak. They all speak in the end. You just have to wait.\"\n\nShe'll have said the same thing to a hundred students. I don't care.",
+  "newLemmas": ["pelo", "corto", "aula", "deberes", "voz", "torpeza", "gesto", "alumno"],
+  "glosses": {
+    "Se había jubilado": { "lemma": "jubilar", "gloss": "she had retired", "pos": "verb", "note": "Before the meeting, so one step further back than 'volví a ver'." },
+    "hablarías": { "lemma": "hablar", "gloss": "you would speak", "pos": "verb", "note": "The plain conditional, used here for the future seen from a point in the past: I knew, back then, that you would." },
+    "Habrá dicho": { "lemma": "decir", "gloss": "She'll have said", "pos": "verb", "note": "Guessing again, not future: she has probably said it many times." }
+  },
+  "phrases": [
+    { "s": "volví a ver", "gloss": "I saw again", "note": "'volver a' + verb means to do something again." },
+    { "s": "en voz alta", "gloss": "out loud" },
+    { "s": "en mitad de la calle", "gloss": "in the middle of the street" }
+  ]
+}

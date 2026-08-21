@@ -1,0 +1,55 @@
+{
+  "id": "b1-u14-02-nunca-habia-entendido-nada",
+  "level": "B1",
+  "unit": 14,
+  "order": 2,
+  "title": "Nunca había entendido nada",
+  "titleEn": "I had never understood a thing",
+  "blurbEn": "Two attempts at the same film, six months apart, and everything that had happened in between.",
+  "grammarRefs": [
+    "pluscuamperfecto"
+  ],
+  "body": "La primera vez que puse una película en español sin subtítulos, no entendí absolutamente nada.\n\nHabía estudiado seis meses. Había aprendido cientos de palabras. Había hecho todos los ejercicios del libro. Y aun así, durante noventa minutos, solo reconocí tres frases: «sí», «no» y «vamos».\n\nApagué la televisión y me sentí estafada.\n\nLo que no sabía entonces es que había estado escuchando el idioma equivocado. En el libro todos hablaban despacio, terminaban las palabras y respetaban los silencios. En la película nadie hacía nada de eso.\n\nAnoche puse la misma película otra vez.\n\nEntendí casi todo. Me perdí en dos escenas y tuve que volver atrás una vez, con el dedo en el botón.\n\nSigo sin entender por qué el protagonista hace lo que hace, pero eso ya no es culpa del idioma.",
+  "translationEn": "The first time I put on a film in Spanish without subtitles, I understood absolutely nothing.\n\nI had studied for six months. I had learned hundreds of words. I had done every exercise in the book. And even so, for ninety minutes, I recognised only three phrases: \"yes\", \"no\" and \"let's go\".\n\nI switched off the television and felt cheated.\n\nWhat I didn't know then is that I had been listening to the wrong language. In the book everyone spoke slowly, finished their words and respected the silences. In the film nobody did any of that.\n\nLast night I put the same film on again.\n\nI understood almost everything. I got lost in two scenes and had to go back once, finger on the button.\n\nI still don't understand why the main character does what he does, but that's no longer the language's fault.",
+  "newLemmas": [
+    "ciento",
+    "ejercicio",
+    "estafar",
+    "equivocado",
+    "respetar",
+    "escena",
+    "atrás",
+    "protagonista",
+    "culpa",
+    "botón",
+    "noventa"
+  ],
+  "glosses": {
+    "Había estudiado": {
+      "lemma": "estudiar",
+      "gloss": "I had studied",
+      "pos": "verb",
+      "note": "Everything in this paragraph happened before the film. Three 'había' verbs stack up the background."
+    },
+    "había estado escuchando": {
+      "lemma": "estar",
+      "gloss": "I had been listening",
+      "pos": "verb",
+      "note": "The pluscuamperfecto of 'estar' plus a gerund — Unit 8's construction, moved back in time."
+    }
+  },
+  "phrases": [
+    {
+      "s": "Había estudiado seis meses",
+      "gloss": "I had studied for six months"
+    },
+    {
+      "s": "aun así",
+      "gloss": "even so"
+    },
+    {
+      "s": "el idioma equivocado",
+      "gloss": "the wrong language"
+    }
+  ]
+}

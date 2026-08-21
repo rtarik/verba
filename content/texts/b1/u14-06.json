@@ -1,0 +1,22 @@
+{
+  "id": "b1-u14-06-lo-que-habria-dicho",
+  "level": "B1", "unit": 14, "order": 6,
+  "title": "Lo que habría dicho",
+  "titleEn": "What I would have said",
+  "blurbEn": "The last text of the unit, and the reason behind a year of Spanish.",
+  "grammarRefs": ["condicional-compuesto", "pluscuamperfecto"],
+  "body": "Hay una frase que llevo meses queriendo decir en español y todavía no he encontrado el momento.\n\nEs para mi abuela, que cumple ochenta y siete años en julio.\n\nCuando yo era pequeña, ella me contaba historias todas las noches. Nunca me leyó un libro: se las inventaba sobre la marcha, con personajes que cambiaban de nombre cada noche.\n\nYo no lo supe hasta los diez años, cuando una prima me lo dijo sin querer. Cuando lo descubrí, me enfadé muchísimo. Le dije que me había mentido durante años. Me sentí traicionada.\n\nElla se rió y me dijo que las historias inventadas son las únicas que no se acaban nunca, porque nadie las ha escrito.\n\nHabría dado cualquier cosa por entenderlo entonces. Pero hay cosas que solo se entienden tarde.\n\nEn julio voy a verla. Para cuando llegue, ya habré preparado la frase.\n\nOjalá me salga.",
+  "translationEn": "There's a sentence I've spent months wanting to say in Spanish and still haven't found the moment for.\n\nIt's for my grandmother, who turns eighty-seven in July.\n\nWhen I was small, she used to tell me stories every night. She never read me a book: she made them up as she went, with characters who changed their names every night.\n\nI didn't find out until I was ten, when a cousin told me without meaning to. When I discovered it, I got furious. I told her she had lied to me for years. I felt betrayed.\n\nShe laughed and told me that made-up stories are the only ones that never end, because nobody has written them down.\n\nI would have given anything to understand that then. But there are things you only understand late.\n\nIn July I'm going to see her. By the time I arrive, I'll have prepared the sentence.\n\nI hope it comes out right.",
+  "newLemmas": ["cumplir", "marcha", "personaje", "primo", "traicionar", "acabar", "comprender", "sílaba", "orgullo", "suponer"],
+  "glosses": {
+    "había mentido": { "lemma": "mentir", "gloss": "had lied", "pos": "verb", "note": "The lying came before the telling-off, which came before now. Three layers of past in one paragraph." },
+    "Habría dado": { "lemma": "dar", "gloss": "I would have given", "pos": "verb", "note": "A past that never happened — she did not understand, and cannot go back." },
+    "habré preparado": { "lemma": "preparar", "gloss": "I'll have prepared", "pos": "verb", "note": "All three compound tenses appear in this text: había, habría, habré." }
+  },
+  "phrases": [
+    { "s": "sobre la marcha", "gloss": "as she went along" },
+    { "s": "sin querer", "gloss": "without meaning to" },
+    { "s": "Habría dado cualquier cosa", "gloss": "I would have given anything" },
+    { "s": "Ojalá me salga", "gloss": "I hope it comes out right" }
+  ]
+}
