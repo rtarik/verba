@@ -312,8 +312,14 @@
         "connectors",
         "agreeing and disagreeing"
       ],
-      "textIds": [],
-      "summaryEn": "Joining short sentences into longer, more natural ones, and the connectors that let you build an argument instead of a list."
+      "textIds": [
+        "b1-u16-01-la-chica-que-vive-arriba",
+        "b1-u16-02-la-persona-con-quien-hable",
+        "b1-u16-03-mi-abuela-que-tiene",
+        "b1-u16-04-sin-embargo-por-lo-tanto",
+        "b1-u16-05-no-estoy-de-acuerdo",
+        "b1-u16-06-lo-que-he-aprendido"
+      ]
     },
     {
       "unit": 17,

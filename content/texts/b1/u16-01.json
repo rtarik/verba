@@ -1,0 +1,62 @@
+{
+  "id": "b1-u16-01-la-chica-que-vive-arriba",
+  "level": "B1",
+  "unit": 16,
+  "order": 1,
+  "title": "La chica que vive arriba",
+  "titleEn": "The girl who lives upstairs",
+  "blurbEn": "One word does most of the joining in Spanish. Learn what 'que' can carry and you can build far longer sentences.",
+  "grammarRefs": [
+    "relativos"
+  ],
+  "body": "La chica que vive en el piso de arriba toca el piano los domingos por la mañana.\n\nAl principio me molestaba. Ahora es la única cosa que me dice que es domingo.\n\nEn español, «que» sirve para casi todo. Es la palabra que une las frases, la que evita repetir el sustantivo, la que convierte dos ideas en una.\n\n«Tengo una vecina. La vecina toca el piano» se convierte en «tengo una vecina que toca el piano». Una palabra y desaparece la repetición.\n\nFunciona para personas y para cosas, en singular y en plural. Es la única de todas las palabras relativas que nunca cambia.\n\nPor eso el noventa por ciento de las veces «que» es la respuesta correcta.\n\nUn día se lo dije en el ascensor y se puso roja. Ahora toca más flojo.\n\nEl otro diez por ciento es lo que complica el asunto.",
+  "translationEn": "The girl who lives in the flat upstairs plays the piano on Sunday mornings.\n\nAt first it annoyed me. Now it's the only thing that tells me it's Sunday.\n\nIn Spanish, \"que\" does almost everything. It's the word that joins sentences, the one that avoids repeating the noun, the one that turns two ideas into one.\n\n\"Tengo una vecina. La vecina toca el piano\" becomes \"tengo una vecina que toca el piano\". One word and the repetition disappears.\n\nIt works for people and for things, singular and plural. It's the only one of all the relative words that never changes.\n\nThat's why ninety per cent of the time \"que\" is the right answer.\n\nOne day I mentioned it in the lift and she went red. Now she plays more softly.\n\nThe other ten per cent is what complicates matters.",
+  "newLemmas": [
+    "tocar",
+    "piano",
+    "unir",
+    "evitar",
+    "sustantivo",
+    "repetición",
+    "relativo",
+    "asunto",
+    "ascensor",
+    "rojo",
+    "flojo",
+    "plural",
+    "singular"
+  ],
+  "glosses": {
+    "que": {
+      "lemma": "que",
+      "gloss": "who, that, which",
+      "pos": "pronoun",
+      "note": "One word for who, whom, that and which. It never changes for gender or number."
+    },
+    "la que": {
+      "lemma": "que",
+      "gloss": "the one that",
+      "pos": "pronoun",
+      "note": "'la que' picks out one item from several. Here: the word that joins, the one that avoids repetition."
+    },
+    "flojo": {
+      "lemma": "flojo",
+      "gloss": "softly, weakly",
+      "pos": "adverb"
+    }
+  },
+  "phrases": [
+    {
+      "s": "La chica que vive",
+      "gloss": "The girl who lives"
+    },
+    {
+      "s": "la palabra que une",
+      "gloss": "the word that joins"
+    },
+    {
+      "s": "se puso roja",
+      "gloss": "she went red"
+    }
+  ]
+}

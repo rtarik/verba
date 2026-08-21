@@ -1,0 +1,66 @@
+{
+  "id": "b1-u16-05-no-estoy-de-acuerdo",
+  "level": "B1",
+  "unit": 16,
+  "order": 5,
+  "title": "No estoy de acuerdo",
+  "titleEn": "I don't agree",
+  "blurbEn": "Arguing with Diego about nothing in particular, and the set phrases that make disagreement possible.",
+  "grammarRefs": [
+    "acuerdo-desacuerdo",
+    "conectores"
+  ],
+  "body": "Diego y yo discutimos casi todos los días, siempre de cosas sin importancia: el café, el fútbol, la mejor manera de aprender un idioma.\n\n—Los idiomas se aprenden mejor viajando —dice.\n\n—No estoy de acuerdo. Se aprenden mejor estudiando y luego viajando.\n\n—Eso es lo mismo.\n\n—No lo es en absoluto.\n\nDiscutir en español es un ejercicio útil, porque tiene sus propias fórmulas. «Estoy de acuerdo contigo». «Tienes razón, pero...». «Depende». «Ya, bueno». «No lo veo así».\n\nEsa última es mi favorita: suena educada y significa exactamente lo contrario.\n\nDiego usa mucho «ya, bueno», que en la práctica quiere decir «no pienso seguir hablando de esto».\n\nNunca nos enfadamos de verdad. Sería aburridísimo. Es un deporte, no una guerra, y como todo deporte tiene reglas que nadie ha escrito.\n\nAl final siempre acabamos de acuerdo en algo distinto de lo que discutíamos.",
+  "translationEn": "Diego and I argue almost every day, always about unimportant things: coffee, football, the best way to learn a language.\n\n\"Languages are learned better by travelling,\" he says.\n\n\"I don't agree. They're learned better by studying and then travelling.\"\n\n\"That's the same thing.\"\n\n\"It absolutely is not.\"\n\nArguing in Spanish is a useful exercise, because it has its own set phrases. \"I agree with you.\" \"You're right, but...\" \"It depends.\" \"Yeah, well.\" \"I don't see it that way.\"\n\nThat last one is my favourite: it sounds polite and means exactly the opposite.\n\nDiego uses \"ya, bueno\" a lot, which in practice means \"I don't intend to keep talking about this\".\n\nWe never really fall out. It would be incredibly boring. It's a sport, not a war, and like every sport it has rules nobody has written down.\n\nIn the end we always end up agreeing on something different from what we were arguing about.",
+  "newLemmas": [
+    "importancia",
+    "fórmula",
+    "educado",
+    "contrario",
+    "fútbol",
+    "deporte",
+    "guerra",
+    "apreciar",
+    "contigo",
+    "propio",
+    "útil"
+  ],
+  "glosses": {
+    "de acuerdo": {
+      "lemma": "acuerdo",
+      "gloss": "in agreement",
+      "pos": "noun",
+      "note": "'estar de acuerdo con' is to agree with. Never 'estoy acuerdo'."
+    },
+    "en absoluto": {
+      "lemma": "absoluto",
+      "gloss": "absolutely not",
+      "pos": "adjective",
+      "note": "Despite the word, it is emphatically negative: 'not at all'."
+    },
+    "Ya, bueno": {
+      "lemma": "ya",
+      "gloss": "Yeah, well",
+      "pos": "adverb",
+      "note": "Formally an agreement; in practice it closes a conversation down."
+    }
+  },
+  "phrases": [
+    {
+      "s": "No estoy de acuerdo",
+      "gloss": "I don't agree"
+    },
+    {
+      "s": "en absoluto",
+      "gloss": "not at all"
+    },
+    {
+      "s": "No lo veo así",
+      "gloss": "I don't see it that way"
+    },
+    {
+      "s": "Tienes razón, pero",
+      "gloss": "You're right, but"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "b1-u16-03-mi-abuela-que-tiene",
+  "level": "B1",
+  "unit": 16,
+  "order": 3,
+  "title": "Mi abuela, que tiene ochenta y siete años",
+  "titleEn": "My grandmother, who is eighty-seven",
+  "blurbEn": "A comma that changes the meaning of a sentence, and the relative pronoun almost nobody says out loud.",
+  "grammarRefs": [
+    "relativos"
+  ],
+  "body": "Mi abuela, que cumple ochenta y siete años en julio, sigue viviendo sola en el pueblo.\n\nTiene una vecina cuyo hijo es médico y pasa a verla dos veces por semana. Es un acuerdo que nadie ha firmado y que funciona perfectamente.\n\nLa coma cambia el sentido. «Mi hermana que vive en Sevilla» significa que tengo varias hermanas y hablo de una. «Mi hermana, que vive en Sevilla» significa que solo tengo una, y de paso menciono dónde vive.\n\nEs una diferencia pequeña que en inglés se marca igual, aunque casi nadie lo sabe.\n\n«Cuyo» es más raro. Casi no se usa hablando, pero aparece en cualquier texto escrito, y concuerda con lo poseído, no con el poseedor: cuyo hijo, cuya hija, cuyos hijos.\n\nLe he explicado tres veces lo que es una videollamada. Dice que prefiere el teléfono, porque así puede fingir que está peinada.",
+  "translationEn": "My grandmother, who turns eighty-seven in July, still lives alone in the village.\n\nShe has a neighbour whose son is a doctor and drops in to see her twice a week. It's an arrangement nobody has signed and which works perfectly.\n\nThe comma changes the meaning. \"Mi hermana que vive en Sevilla\" means I have several sisters and I'm talking about one of them. \"Mi hermana, que vive en Sevilla\" means I only have one, and I'm mentioning where she lives in passing.\n\nIt's a small difference that English marks the same way, though hardly anyone knows it.\n\n\"Cuyo\" is rarer. It's barely used in speech, but it turns up in any written text, and it agrees with the thing possessed, not with the possessor: cuyo hijo, cuya hija, cuyos hijos.\n\nI've explained three times what a video call is. She says she prefers the phone, because that way she can pretend her hair is done.",
+  "newLemmas": [
+    "firmar",
+    "coma",
+    "varios",
+    "mencionar",
+    "concordar",
+    "poseer",
+    "poseedor",
+    "cuyo",
+    "videollamada",
+    "peinar",
+    "hija"
+  ],
+  "glosses": {
+    "cuyo": {
+      "lemma": "cuyo",
+      "gloss": "whose",
+      "pos": "pronoun",
+      "note": "Agrees with what is owned, not with the owner: 'cuyo hijo' even though the neighbour is female."
+    },
+    "que cumple": {
+      "lemma": "que",
+      "gloss": "who turns",
+      "pos": "pronoun",
+      "note": "Between commas, so it adds information rather than identifying which grandmother. She has only one."
+    }
+  },
+  "phrases": [
+    {
+      "s": "cuyo hijo es médico",
+      "gloss": "whose son is a doctor"
+    },
+    {
+      "s": "de paso",
+      "gloss": "in passing"
+    },
+    {
+      "s": "pasa a verla",
+      "gloss": "drops in to see her"
+    }
+  ]
+}

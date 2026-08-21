@@ -1,0 +1,67 @@
+{
+  "id": "b1-u16-02-la-persona-con-quien-hable",
+  "level": "B1",
+  "unit": 16,
+  "order": 2,
+  "title": "La persona con quien hablé",
+  "titleEn": "The person I spoke to",
+  "blurbEn": "What happens to 'que' after a preposition, and the phrase that lets you refer to a whole idea at once.",
+  "grammarRefs": [
+    "relativos"
+  ],
+  "body": "Ayer llamé al banco por un problema con la tarjeta.\n\nLa persona con quien hablé fue amable pero inútil. Me pasó con otro departamento, en el que nadie contestó durante veinte minutos.\n\nLo que más me molesta de estas llamadas no es el tiempo. Es la sensación de estar hablando con un sistema que no escucha.\n\nDespués de una preposición, «que» necesita ayuda: se usa «quien» para personas y «el que» o «la que» para cosas. La persona con quien hablé. El departamento en el que nadie contestó.\n\nY «lo que» sirve para referirse a una idea entera, no a un sustantivo concreto: lo que me molesta, lo que dijiste, lo que pasó.\n\nAl final resolvieron el problema. Tardaron cuarenta minutos en hacer algo que un botón habría hecho en tres segundos.\n\nColgué con más paciencia de la que esperaba tener. Es un tipo de cansancio muy moderno.",
+  "translationEn": "Yesterday I called the bank about a problem with my card.\n\nThe person I spoke to was pleasant but useless. She put me through to another department, where nobody answered for twenty minutes.\n\nWhat annoys me most about these calls isn't the time. It's the feeling of talking to a system that isn't listening.\n\nAfter a preposition, \"que\" needs help: you use \"quien\" for people and \"el que\" or \"la que\" for things. The person I spoke to. The department where nobody answered.\n\nAnd \"lo que\" is for referring to a whole idea rather than a specific noun: what annoys me, what you said, what happened.\n\nIn the end they sorted the problem out. They took forty minutes to do something a button would have done in three seconds.\n\nI hung up with more patience than I expected to have. It's a very modern kind of tiredness.",
+  "newLemmas": [
+    "inútil",
+    "departamento",
+    "llamada",
+    "preposición",
+    "referir",
+    "resolver",
+    "colgar",
+    "tipo",
+    "cansancio",
+    "moderno",
+    "quien"
+  ],
+  "glosses": {
+    "con quien": {
+      "lemma": "quien",
+      "gloss": "with whom",
+      "pos": "pronoun",
+      "note": "After a preposition, 'que' alone will not do for a person. Use 'quien' — or 'el que' / 'la que'."
+    },
+    "en el que": {
+      "lemma": "que",
+      "gloss": "in which",
+      "pos": "pronoun",
+      "note": "The article agrees with the noun: el departamento → en **el** que."
+    },
+    "Lo que": {
+      "lemma": "lo",
+      "gloss": "What, the thing that",
+      "pos": "pronoun",
+      "note": "Refers to a whole idea, never to a specific noun. 'Lo que me molesta' — the thing that annoys me."
+    }
+  },
+  "phrases": [
+    {
+      "s": "La persona con quien hablé",
+      "gloss": "The person I spoke to",
+      "at": 10
+    },
+    {
+      "s": "en el que nadie contestó",
+      "gloss": "where nobody answered",
+      "at": 24
+    },
+    {
+      "s": "Lo que más me molesta",
+      "gloss": "What annoys me most"
+    },
+    {
+      "s": "más paciencia de la que esperaba",
+      "gloss": "more patience than I expected"
+    }
+  ]
+}

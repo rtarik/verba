@@ -1,0 +1,22 @@
+{
+  "id": "b1-u16-06-lo-que-he-aprendido",
+  "level": "B1", "unit": 16, "order": 6,
+  "title": "Lo que he aprendido",
+  "titleEn": "What I've learned",
+  "blurbEn": "The last text of B1, looking back over the whole level.",
+  "grammarRefs": ["relativos", "conectores"],
+  "body": "Hoy termino el último texto de este nivel.\n\nLo que he aprendido en estos meses no cabe en una lista, pero lo intento igualmente.\n\nHe aprendido que un idioma no se aprende por partes, sino todo a la vez y mal, y que un día las partes encajan solas.\n\nHe aprendido que el subjuntivo, que me parecía un capricho, es la manera que tiene el español de separar lo que es de lo que solo quiero que sea.\n\nHe aprendido que entender una canción entera vale más que aprobar un examen, aunque el examen sea lo que me dio la disciplina.\n\nHe aprendido que la vergüenza se pasa antes que el acento, y que nadie se ríe de ti tanto como temes.\n\nHe aprendido a soportar el silencio de no encontrar la palabra.\n\nY he aprendido que la gente con quien hablas importa más que el método.\n\nMañana empiezo el nivel siguiente. Dicen que es el más difícil, porque ya no hay excusas.\n\nYa veremos. Tengo curiosidad y ninguna prisa.",
+  "translationEn": "Today I finish the last text of this level.\n\nWhat I've learned in these months doesn't fit in a list, but I'll try anyway.\n\nI've learned that a language isn't learned in parts, but all at once and badly, and that one day the parts fit together on their own.\n\nI've learned that the subjunctive, which seemed to me a whim, is Spanish's way of separating what is from what I merely want to be.\n\nI've learned that understanding a whole song is worth more than passing an exam, even though the exam is what gave me the discipline.\n\nI've learned that embarrassment passes before the accent does, and that nobody laughs at you as much as you fear.\n\nI've learned to bear the silence of not finding the word.\n\nAnd I've learned that the people you talk to matter more than the method.\n\nTomorrow I start the next level. They say it's the hardest, because there are no excuses left.\n\nWe'll see. I'm curious and in no hurry.",
+  "newLemmas": ["nivel", "encajar", "capricho", "disciplina", "acento", "soportar", "curiosidad", "siguiente"],
+  "glosses": {
+    "lo que": { "lemma": "lo", "gloss": "what", "pos": "pronoun", "note": "Four of them in this text, each standing for a whole idea rather than a noun." },
+    "sino": { "lemma": "sino", "gloss": "but rather", "pos": "conjunction", "note": "Corrects the negative before it: not in parts, but all at once." },
+    "con quien hablas": { "lemma": "quien", "gloss": "you talk to", "pos": "pronoun" }
+  },
+  "phrases": [
+    { "s": "Lo que he aprendido", "gloss": "What I've learned" },
+    { "s": "todo a la vez", "gloss": "all at once" },
+    { "s": "la gente con quien hablas", "gloss": "the people you talk to" },
+    { "s": "Ya veremos", "gloss": "We'll see" }
+  ]
+}

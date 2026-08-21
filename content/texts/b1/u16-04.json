@@ -1,0 +1,72 @@
+{
+  "id": "b1-u16-04-sin-embargo-por-lo-tanto",
+  "level": "B1",
+  "unit": 16,
+  "order": 4,
+  "title": "Sin embargo, por lo tanto",
+  "titleEn": "However, therefore",
+  "blurbEn": "The words that turn a list of sentences into an argument — and the danger of using too many.",
+  "grammarRefs": [
+    "conectores"
+  ],
+  "body": "Estoy escribiendo un texto sobre por qué merece la pena aprender un idioma de adulto.\n\nEs más difícil que de niño; sin embargo, se aprende con más conciencia. Un niño absorbe. Un adulto entiende lo que absorbe, y además sabe por qué se equivoca.\n\nPor otro lado, un adulto tiene menos tiempo, más vergüenza y una memoria peor. Por lo tanto, necesita métodos distintos.\n\nEn cambio, tiene algo que ningún niño tiene: sabe exactamente por qué quiere aprender.\n\nEs decir, tiene un motivo. Y un motivo, a largo plazo, vale más que un oído perfecto.\n\nMi profesora leyó el texto y escribió una sola cosa al margen: «demasiados conectores».\n\nTenía razón. Los quité casi todos y el texto mejoró bastante.\n\nUn conector bien puesto ordena una idea. Cinco seguidos la esconden.",
+  "translationEn": "I'm writing a text about why it's worth learning a language as an adult.\n\nIt's harder than as a child; however, you learn with more awareness. A child absorbs. An adult understands what they absorb, and also knows why they get things wrong.\n\nOn the other hand, an adult has less time, more embarrassment and a worse memory. Therefore, they need different methods.\n\nOn the other hand, they have something no child has: they know exactly why they want to learn.\n\nThat is to say, they have a motive. And a motive, in the long run, is worth more than a perfect ear.\n\nMy teacher read the text and wrote one thing in the margin: \"too many connectors\".\n\nShe was right. I removed almost all of them and the text improved a lot.\n\nOne well-placed connector organises an idea. Five in a row hide it.",
+  "newLemmas": [
+    "adulto",
+    "conciencia",
+    "absorber",
+    "memoria",
+    "método",
+    "plazo",
+    "oído",
+    "margen",
+    "conector",
+    "esconder",
+    "además",
+    "ordenar"
+  ],
+  "glosses": {
+    "sin embargo": {
+      "lemma": "embargo",
+      "gloss": "however",
+      "pos": "noun",
+      "note": "The standard contrast connector, and more formal than 'pero'."
+    },
+    "Por lo tanto": {
+      "lemma": "tanto",
+      "gloss": "Therefore",
+      "pos": "adjective",
+      "note": "Introduces a consequence. 'Por eso' does the same job less formally."
+    },
+    "En cambio": {
+      "lemma": "cambio",
+      "gloss": "On the other hand",
+      "pos": "noun",
+      "note": "Marks a direct contrast between two things, not a concession."
+    },
+    "Es decir": {
+      "lemma": "decir",
+      "gloss": "That is to say",
+      "pos": "verb",
+      "note": "Used to rephrase what you just said more clearly."
+    }
+  },
+  "phrases": [
+    {
+      "s": "sin embargo",
+      "gloss": "however"
+    },
+    {
+      "s": "Por otro lado",
+      "gloss": "On the other hand"
+    },
+    {
+      "s": "Por lo tanto",
+      "gloss": "Therefore"
+    },
+    {
+      "s": "a largo plazo",
+      "gloss": "in the long run"
+    }
+  ]
+}
