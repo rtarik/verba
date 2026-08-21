@@ -1,0 +1,22 @@
+{
+  "id": "b1-u12-05-dudo-que-llegue-a-tiempo",
+  "level": "B1", "unit": 12, "order": 5,
+  "title": "Dudo que llegue a tiempo",
+  "titleEn": "I doubt he'll get here on time",
+  "blurbEn": "Waiting for a colleague who is never punctual, with every way Spanish has of saying 'probably not'.",
+  "grammarRefs": ["subjuntivo-duda"],
+  "body": "Diego llega tarde a todo.\n\nDudo que llegue a tiempo a la reunión. Dudo que esté siquiera fuera de casa.\n\nQuizás esté en el metro. Quizás duerma todavía. Con él nunca se sabe.\n\nNo es que sea irresponsable. Simplemente no es puntual, y no creo que lo sea nunca: vive quince minutos por detrás del resto del mundo.\n\nLe he escrito tres mensajes. No creo que los lea hasta la tarde.\n\nMi jefe pregunta por él cada dos minutos. Le digo que seguramente viene de camino, aunque no estoy nada segura.\n\nA las diez y veinte aparece, con dos cafés y una sonrisa.\n\n—Perdón. Es posible que pierda la noción del tiempo a veces.\n\nNadie le dice nada. Trae café. Eso lo arregla todo.",
+  "translationEn": "Diego is late for everything.\n\nI doubt he'll get to the meeting on time. I doubt he's even out of the house.\n\nMaybe he's on the underground. Maybe he's still asleep. With him you never know.\n\nIt's not that he's irresponsible. He simply isn't punctual, and I don't think he ever will be: he lives fifteen minutes behind the rest of the world.\n\nI've written him three messages. I don't think he'll read them until the afternoon.\n\nMy boss asks after him every two minutes. I tell him he's surely on his way, though I'm not remotely sure.\n\nAt twenty past ten he appears, with two coffees and a smile.\n\n\"Sorry. It's possible I lose track of time sometimes.\"\n\nNobody says anything to him. He brings coffee. That fixes everything.",
+  "newLemmas": ["siquiera", "metro", "irresponsable", "puntual", "resto", "noción", "arreglar", "sonrisa", "detrás"],
+  "glosses": {
+    "llegue": { "lemma": "llegar", "gloss": "arrives", "pos": "verb", "note": "'dudar que' always takes the subjunctive — doubt is the trigger in its purest form." },
+    "Quizás": { "lemma": "quizá", "gloss": "maybe", "pos": "adverb", "note": "'quizá' and 'tal vez' take the subjunctive when you are genuinely unsure, and the indicative when you are fairly confident. Here she is guessing." },
+    "duerma": { "lemma": "dormir", "gloss": "is asleep", "pos": "verb" }
+  },
+  "phrases": [
+    { "s": "Dudo que llegue", "gloss": "I doubt he'll arrive" },
+    { "s": "No es que sea", "gloss": "It's not that he's" },
+    { "s": "Es posible que", "gloss": "It's possible that" },
+    { "s": "de camino", "gloss": "on the way" }
+  ]
+}

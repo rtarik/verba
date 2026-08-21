@@ -1,0 +1,22 @@
+{
+  "id": "b1-u12-06-ya-no-me-parece-raro",
+  "level": "B1", "unit": 12, "order": 6,
+  "title": "Ya no me parece raro",
+  "titleEn": "It doesn't seem strange any more",
+  "blurbEn": "The last text of the unit, and a change of mind about the hardest thing in Spanish.",
+  "grammarRefs": ["subjuntivo-duda", "subjuntivo-emocion"],
+  "body": "Hace un año el subjuntivo me parecía una crueldad innecesaria.\n\nAhora no digo que sea fácil, pero ya no me parece absurdo. Es el modo de todo lo que no es un hecho: lo que quiero, lo que temo, lo que dudo, lo que espero.\n\nEs lógico que un idioma marque esa diferencia. Es raro que el inglés no la marque.\n\nMe alegro de que exista, aunque me cueste. Es una forma de reconocer que no todo lo que decimos es verdad.\n\nNo creo que lo domine este año. Ni el año que viene. Pero es posible que un día lo use sin pensar, como uso el pretérito ahora sin darme cuenta.\n\nSolo necesito paciencia y unos cuantos años más.\n\nY si no, siempre me quedará el indicativo.",
+  "translationEn": "A year ago the subjunctive seemed to me an unnecessary cruelty.\n\nNow I'm not saying it's easy, but it no longer seems absurd to me. It's the mood for everything that isn't a fact: what I want, what I fear, what I doubt, what I hope for.\n\nIt's logical for a language to mark that difference. It's odd that English doesn't mark it.\n\nI'm glad it exists, even though I find it hard. It's a way of acknowledging that not everything we say is true.\n\nI don't think I'll master it this year. Nor next year. But it's possible that one day I'll use it without thinking, the way I use the preterite now without noticing.\n\nI just need patience and a good few more years.\n\nAnd if not, I'll always have the indicative.",
+  "newLemmas": ["crueldad", "innecesario", "absurdo", "temer", "marcar", "existir", "dominar", "paciencia", "cuanto"],
+  "glosses": {
+    "sea": { "lemma": "ser", "gloss": "it is", "pos": "verb", "note": "'No digo que sea fácil' — denying, so subjunctive. 'Digo que es fácil' would be asserting." },
+    "marque": { "lemma": "marcar", "gloss": "marks", "pos": "verb", "note": "'Es lógico que' is an impersonal expression, so the subjunctive follows even though the fact is real." },
+    "darme cuenta": { "lemma": "dar", "gloss": "to notice", "pos": "verb", "note": "'darse cuenta de' is to realise or notice." }
+  },
+  "phrases": [
+    { "s": "no digo que sea fácil", "gloss": "I'm not saying it's easy" },
+    { "s": "el modo de todo lo que no es un hecho", "gloss": "the mood for everything that isn't a fact" },
+    { "s": "sin darme cuenta", "gloss": "without noticing" },
+    { "s": "unos cuantos años más", "gloss": "a good few more years" }
+  ]
+}

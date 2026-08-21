@@ -1,0 +1,72 @@
+{
+  "id": "b1-u12-03-es-importante-que-practiques",
+  "level": "B1",
+  "unit": 12,
+  "order": 3,
+  "title": "Es importante que practiques",
+  "titleEn": "It's important that you practise",
+  "blurbEn": "A list of advice on the fridge door, and the pattern behind every line of it: es + adjective + que.",
+  "grammarRefs": [
+    "expresiones-impersonales"
+  ],
+  "body": "Mi profesora me ha dado una lista de consejos para el examen.\n\nEs importante que practiques todos los días, aunque sea diez minutos.\n\nEs mejor que leas textos completos que listas de palabras sueltas.\n\nEs normal que te equivoques. Es raro que alguien no se equivoque.\n\nNo es necesario que entiendas todo. Es suficiente con que entiendas lo esencial.\n\nEs una pena que la gente abandone justo cuando empieza a mejorar.\n\nY la última, subrayada dos veces: es fundamental que hables, aunque te dé vergüenza.\n\nHe puesto la lista en la nevera, al lado de la foto de mis abuelos.\n\nOjalá le haga caso.",
+  "translationEn": "My teacher has given me a list of tips for the exam.\n\nIt's important that you practise every day, even if it's only ten minutes.\n\nIt's better to read whole texts than lists of isolated words.\n\nIt's normal to get things wrong. It's strange for anyone not to get things wrong.\n\nIt isn't necessary to understand everything. It's enough to understand the essentials.\n\nIt's a shame that people give up just when they start to improve.\n\nAnd the last one, underlined twice: it's essential that you speak, even if it embarrasses you.\n\nI've put the list on the fridge, next to the photo of my grandparents.\n\nI hope I take my own advice.",
+  "newLemmas": [
+    "consejo",
+    "suelto",
+    "equivocar",
+    "esencial",
+    "abandonar",
+    "mejorar",
+    "subrayar",
+    "fundamental",
+    "vergüenza",
+    "nevera",
+    "justo",
+    "completo",
+    "necesario"
+  ],
+  "glosses": {
+    "practiques": {
+      "lemma": "practicar",
+      "gloss": "you practise",
+      "pos": "verb",
+      "note": "'Es importante que' + subjunctive. Every 'es + adjective + que' works this way."
+    },
+    "dé": {
+      "lemma": "dar",
+      "gloss": "gives",
+      "pos": "verb",
+      "note": "Subjunctive of 'dar', with an accent so it is not read as the preposition 'de'."
+    },
+    "justo": {
+      "lemma": "justo",
+      "gloss": "just, exactly",
+      "pos": "adverb"
+    },
+    "haga caso": {
+      "lemma": "hacer",
+      "gloss": "take notice",
+      "pos": "verb",
+      "note": "'hacer caso' is to pay attention. 'Ojalá le haga caso' — I hope I listen to it."
+    }
+  },
+  "phrases": [
+    {
+      "s": "Es importante que practiques",
+      "gloss": "It's important that you practise"
+    },
+    {
+      "s": "Es normal que te equivoques",
+      "gloss": "It's normal to get things wrong"
+    },
+    {
+      "s": "Es una pena que",
+      "gloss": "It's a shame that"
+    },
+    {
+      "s": "aunque te dé vergüenza",
+      "gloss": "even if it embarrasses you"
+    }
+  ]
+}

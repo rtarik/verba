@@ -1,0 +1,69 @@
+{
+  "id": "b1-u12-04-creo-que-si-no-creo-que-no",
+  "level": "B1",
+  "unit": 12,
+  "order": 4,
+  "title": "Creo que sí, no creo que no",
+  "titleEn": "I think so, I don't think not",
+  "blurbEn": "The rule behind the whole unit: certainty takes the indicative, doubt takes the subjunctive, and a single 'no' can flip a sentence from one to the other.",
+  "grammarRefs": [
+    "subjuntivo-duda"
+  ],
+  "body": "Hay una asimetría en español que me costó entender.\n\n«Creo que es difícil» lleva indicativo. «No creo que sea difícil» lleva subjuntivo.\n\nLa misma idea, la misma persona, y el verbo cambia solo porque he puesto un «no» delante.\n\nMi profesora lo explica así: cuando afirmas, presentas los hechos. Cuando niegas o dudas, el hecho deja de ser un hecho y pasa a ser una posibilidad. El subjuntivo es el modo de las posibilidades.\n\nLo mismo ocurre con «es verdad que viene» y «no es verdad que venga». Con «está claro que puede» y «no está claro que pueda».\n\nTodo lo seguro va en indicativo. Todo lo dudoso, en subjuntivo.\n\nDurante semanas lo apliqué mal y nadie me corrigió. Ahora me sale solo, casi sin pensarlo.\n\nEs la clase de detalle que separa hablar de comunicarse.",
+  "translationEn": "There is an asymmetry in Spanish that took me a while to understand.\n\n\"Creo que es difícil\" takes the indicative. \"No creo que sea difícil\" takes the subjunctive.\n\nThe same idea, the same person, and the verb changes only because I put a \"no\" in front.\n\nMy teacher explains it like this: when you assert, you present facts. When you deny or doubt, the fact stops being a fact and becomes a possibility. The subjunctive is the mood of possibilities.\n\nThe same happens with \"es verdad que viene\" and \"no es verdad que venga\". With \"está claro que puede\" and \"no está claro que pueda\".\n\nEverything certain goes in the indicative. Everything doubtful, in the subjunctive.\n\nFor weeks I applied it wrongly and nobody corrected me. Now it comes out by itself, almost without thinking.\n\nIt's the kind of detail that separates speaking from communicating.",
+  "newLemmas": [
+    "asimetría",
+    "indicativo",
+    "hecho",
+    "posibilidad",
+    "modo",
+    "dudoso",
+    "detalle",
+    "aplicar",
+    "separar",
+    "comunicar",
+    "delante",
+    "clase",
+    "dejar",
+    "mal"
+  ],
+  "glosses": {
+    "sea": {
+      "lemma": "ser",
+      "gloss": "is",
+      "pos": "verb",
+      "note": "The whole difference from the line above is the word 'no'. Nothing else in the sentence moved."
+    },
+    "venga": {
+      "lemma": "venir",
+      "gloss": "comes",
+      "pos": "verb",
+      "note": "'Es verdad que viene' states a fact. 'No es verdad que venga' denies one, so the mood shifts."
+    },
+    "delante": {
+      "lemma": "delante",
+      "gloss": "in front",
+      "pos": "adverb"
+    },
+    "clase": {
+      "lemma": "clase",
+      "gloss": "kind, sort",
+      "pos": "noun",
+      "note": "Here it means 'kind of thing', not a lesson."
+    }
+  },
+  "phrases": [
+    {
+      "s": "el modo de las posibilidades",
+      "gloss": "the mood of possibilities"
+    },
+    {
+      "s": "Todo lo seguro va en indicativo",
+      "gloss": "Everything certain goes in the indicative"
+    },
+    {
+      "s": "me sale solo",
+      "gloss": "it comes out by itself"
+    }
+  ]
+}

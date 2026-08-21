@@ -232,8 +232,14 @@
         "impersonal expressions",
         "subjunctive vs indicative"
       ],
-      "textIds": [],
-      "summaryEn": "The subjunctive after doubt, feelings and opinions — and the contrast that decides everything: 'creo que es' but 'no creo que sea'."
+      "textIds": [
+        "b1-u12-01-no-creo-que-sea-tan-dificil",
+        "b1-u12-02-me-alegro-de-que-estes-bien",
+        "b1-u12-03-es-importante-que-practiques",
+        "b1-u12-04-creo-que-si-no-creo-que-no",
+        "b1-u12-05-dudo-que-llegue-a-tiempo",
+        "b1-u12-06-ya-no-me-parece-raro"
+      ]
     },
     {
       "unit": 13,

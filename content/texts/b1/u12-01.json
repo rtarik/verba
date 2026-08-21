@@ -1,0 +1,68 @@
+{
+  "id": "b1-u12-01-no-creo-que-sea-tan-dificil",
+  "level": "B1",
+  "unit": 12,
+  "order": 1,
+  "title": "No creo que sea tan difícil",
+  "titleEn": "I don't think it's that hard",
+  "blurbEn": "Doubt changes the verb. Say you believe something and it stays ordinary; say you doubt it and the mood shifts.",
+  "grammarRefs": [
+    "subjuntivo-duda"
+  ],
+  "body": "Mi hermana no cree que yo pueda aprobar el examen en junio.\n\n—No es que dude de ti —dice—. Es que quedan cuatro meses y todavía confundes el pretérito con el imperfecto.\n\nTiene razón, pero no me ayuda. Me lo dijo con cariño y me molestó igual.\n\nYo creo que puedo. Ella no cree que pueda. Lo curioso del español es que esa diferencia se ve en el verbo: yo digo «creo que puedo» y ella dice «no creo que puedas».\n\nCuando afirmas algo, el verbo va normal. Cuando lo dudas o lo niegas, cambia.\n\nReconozco que tiene parte de razón, aunque duela. No creo que sea incapaz. Solo creo que soy lenta.\n\nMi profesora dice que no está segura de que apruebe a la primera, pero que está segura de que aprobaré algún día.\n\nEs la frase más amable que me han dicho en meses.",
+  "translationEn": "My sister doesn't think I can pass the exam in June.\n\n\"It's not that I doubt you,\" she says. \"It's that there are four months left and you still confuse the preterite with the imperfect.\"\n\nShe's right, but it doesn't help. She said it kindly and it annoyed me all the same.\n\nI think I can. She doesn't think I can. The curious thing about Spanish is that the difference shows in the verb: I say \"creo que puedo\" and she says \"no creo que puedas\".\n\nWhen you assert something, the verb stays normal. When you doubt or deny it, it changes.\n\nI admit she's partly right, even if it stings. I don't think I'm incapable. I just think I'm slow.\n\nMy teacher says she isn't sure I'll pass first time, but that she's sure I'll pass one day.\n\nIt's the kindest sentence anyone has said to me in months.",
+  "newLemmas": [
+    "dudar",
+    "pretérito",
+    "curioso",
+    "afirmar",
+    "negar",
+    "molestar",
+    "reconocer",
+    "doler",
+    "incapaz",
+    "imperfecto",
+    "parte"
+  ],
+  "glosses": {
+    "pueda": {
+      "lemma": "poder",
+      "gloss": "can",
+      "pos": "verb",
+      "note": "Subjunctive, because 'no cree' casts doubt. Compare 'Yo creo que puedo' three lines down — asserting, so indicative."
+    },
+    "dude": {
+      "lemma": "dudar",
+      "gloss": "doubt",
+      "pos": "verb",
+      "note": "'No es que...' always takes the subjunctive: it raises an idea in order to reject it."
+    },
+    "duela": {
+      "lemma": "doler",
+      "gloss": "it hurts",
+      "pos": "verb",
+      "note": "'aunque' + subjunctive concedes something without confirming it."
+    }
+  },
+  "phrases": [
+    {
+      "s": "no cree que yo pueda",
+      "gloss": "doesn't think I can"
+    },
+    {
+      "s": "creo que puedo",
+      "gloss": "I think I can",
+      "note": "Believing is asserting, so the verb stays in the indicative.",
+      "at": 48
+    },
+    {
+      "s": "no creo que puedas",
+      "gloss": "I don't think you can",
+      "note": "One 'no' at the front, and the verb changes mood. That is the whole unit."
+    },
+    {
+      "s": "a la primera",
+      "gloss": "first time"
+    }
+  ]
+}

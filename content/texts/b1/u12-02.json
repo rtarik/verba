@@ -1,0 +1,70 @@
+{
+  "id": "b1-u12-02-me-alegro-de-que-estes-bien",
+  "level": "B1",
+  "unit": 12,
+  "order": 2,
+  "title": "Me alegro de que estés bien",
+  "titleEn": "I'm glad you're well",
+  "blurbEn": "Feelings take the subjunctive too — not because you doubt the fact, but because you are reacting to it.",
+  "grammarRefs": [
+    "subjuntivo-emocion"
+  ],
+  "body": "Mi madre salió del hospital el jueves.\n\nMe alegro de que esté en casa. Me alegro de que coma, de que discuta con mi padre por el mando de la televisión y de que se queje del ruido de la calle. Todo eso significa que está bien.\n\nMe sorprende que tenga tanta energía. Me da rabia que no descanse.\n\n—Siéntate —le digo.\n\n—Estoy harta de sentarme —contesta.\n\nEs raro que una operación te devuelva a tu madre exactamente igual que antes, pero con más ganas de discutir.\n\nEspero que dure.\n\nY siento que mi padre tenga que aguantarla, aunque parece más feliz que en toda la semana.",
+  "translationEn": "My mother came out of hospital on Thursday.\n\nI'm glad she's home. I'm glad she's eating, that she's arguing with my father over the television remote and complaining about the noise from the street. All of that means she's well.\n\nIt surprises me that she has so much energy. It infuriates me that she won't rest.\n\n\"Sit down,\" I tell her.\n\n\"I'm sick of sitting down,\" she replies.\n\nIt's strange that an operation gives you back your mother exactly as she was before, but with more appetite for arguing.\n\nI hope it lasts.\n\nAnd I'm sorry my father has to put up with her, though he looks happier than he has all week.",
+  "newLemmas": [
+    "alegrar",
+    "discutir",
+    "mando",
+    "sorprender",
+    "rabia",
+    "harto",
+    "devolver",
+    "gana",
+    "durar",
+    "energía",
+    "tanto"
+  ],
+  "glosses": {
+    "esté": {
+      "lemma": "estar",
+      "gloss": "she is",
+      "pos": "verb",
+      "note": "She really is home — this is a fact. The subjunctive appears because the sentence is a *reaction* to it, not a report of it."
+    },
+    "coma": {
+      "lemma": "comer",
+      "gloss": "she eats",
+      "pos": "verb"
+    },
+    "energía": {
+      "lemma": "energía",
+      "gloss": "energy",
+      "pos": "noun"
+    },
+    "siento": {
+      "lemma": "sentir",
+      "gloss": "I'm sorry",
+      "pos": "verb",
+      "note": "'sentir que' + subjunctive means to regret. Nothing to do with feeling something physically."
+    }
+  },
+  "phrases": [
+    {
+      "s": "Me alegro de que esté",
+      "gloss": "I'm glad she is",
+      "note": "Emotion verbs take 'de que'. Dropping the 'de' is common in speech but frowned on in writing."
+    },
+    {
+      "s": "Me da rabia que",
+      "gloss": "It infuriates me that"
+    },
+    {
+      "s": "Estoy harta de",
+      "gloss": "I'm sick of"
+    },
+    {
+      "s": "Es raro que",
+      "gloss": "It's strange that"
+    }
+  ]
+}
