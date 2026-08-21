@@ -1,0 +1,21 @@
+{
+  "id": "b1-u15-02-se-venden-pisos",
+  "level": "B1", "unit": 15, "order": 2,
+  "title": "Se venden pisos",
+  "titleEn": "Flats for sale",
+  "blurbEn": "The same 'se', now agreeing with what it describes — and a neighbourhood changing hands.",
+  "grammarRefs": ["se-impersonal"],
+  "body": "En mi calle se venden tres pisos y se alquilan dos.\n\nLos carteles llevan meses en las ventanas. En uno pone «se vende, trato directo». En otro, «se alquila, no se admiten animales».\n\nMi hermana dice que en esta ciudad ya no se puede vivir. Que los precios se han duplicado en cinco años y que los sueldos no se han movido.\n\nTiene razón, aunque me cueste admitirlo.\n\nAl lado se abrió un café hace tres meses. Cerró la semana pasada. Se dice que el alquiler subió un cuarenta por ciento.\n\nAhora en el cristal hay otro cartel: «se traspasa».\n\nEs curioso cómo un idioma cuenta la historia de un barrio con una sola palabra.",
+  "translationEn": "On my street three flats are for sale and two are for rent.\n\nThe signs have been in the windows for months. One says \"for sale, direct from owner\". Another, \"to let, no animals allowed\".\n\nMy sister says you can't live in this city any more. That prices have doubled in five years and wages haven't moved.\n\nShe's right, though I find it hard to admit.\n\nNext door a café opened three months ago. It closed last week. They say the rent went up by forty per cent.\n\nNow there's another sign in the glass: \"lease for sale\".\n\nIt's curious how a language tells the story of a neighbourhood in a single word.",
+  "newLemmas": ["vender", "alquilar", "trato", "directo", "admitir", "animal", "duplicar", "sueldo", "mover", "cristal", "traspasar"],
+  "glosses": {
+    "se venden": { "lemma": "vender", "gloss": "are sold", "pos": "verb", "note": "Plural, because 'tres pisos' is plural. This is the passive 'se' — it agrees with the thing, unlike the impersonal one." },
+    "se vende": { "lemma": "vender", "gloss": "for sale", "pos": "verb", "note": "Singular here, for one flat. Compare the plural in the first line." },
+    "se traspasa": { "lemma": "traspasar", "gloss": "lease for sale", "pos": "verb", "note": "What Spanish shops put in the window when the business, not the property, is changing hands." }
+  },
+  "phrases": [
+    { "s": "se venden tres pisos", "gloss": "three flats are for sale" },
+    { "s": "ya no se puede vivir", "gloss": "you can't live here any more" },
+    { "s": "por ciento", "gloss": "per cent" }
+  ]
+}

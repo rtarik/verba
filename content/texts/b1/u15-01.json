@@ -1,0 +1,65 @@
+{
+  "id": "b1-u15-01-aqui-se-habla-espanol",
+  "level": "B1",
+  "unit": 15,
+  "order": 1,
+  "title": "Aquí se habla español",
+  "titleEn": "Spanish spoken here",
+  "blurbEn": "How Spanish says things without saying who did them — and why that is so convenient.",
+  "grammarRefs": [
+    "se-impersonal"
+  ],
+  "body": "En el bar de abajo hay un cartel que dice: «Aquí se habla español, inglés y paciencia». El dueño es griego y lleva treinta años detrás de la barra.\n\nMe hizo gracia la primera vez que lo leí y ahora lo miro todos los días.\n\nEn español se usa mucho esta forma. No se dice quién hace la acción porque no importa: se come bien en Madrid, se trabaja demasiado en esta empresa, se tarda veinte minutos en llegar.\n\nEn inglés harían falta dos o tres palabras más para no decir nada. En español no hace falta ninguna. Se dice y ya está.\n\nEs una manera cómoda de opinar sin responsabilizarse. «Se dice que va a subir el alquiler». ¿Quién lo dice? Nadie. Todos.\n\nMi abuela lo usaba constantemente: «eso no se hace», «así no se habla».\n\nNunca supe quién había decidido esas reglas. Supongo que se heredan.",
+  "translationEn": "In the bar downstairs there's a sign that says: \"Spanish, English and patience spoken here.\" The owner is Greek and has been behind that counter for thirty years.\n\nIt amused me the first time I read it and now I look at it every day.\n\nSpanish uses this form a lot. It doesn't say who performs the action because it doesn't matter: one eats well in Madrid, people work too much at this company, it takes twenty minutes to get there.\n\nIn English it would take two or three extra words to say nothing at all. In Spanish it takes none. You just say it and that's that.\n\nIt's a convenient way of giving an opinion without taking responsibility. \"They say the rent is going up.\" Who says so? Nobody. Everybody.\n\nMy grandmother used it constantly: \"that isn't done\", \"we don't speak like that\".\n\nI never found out who had decided those rules. I suppose they're inherited.",
+  "newLemmas": [
+    "cartel",
+    "dueño",
+    "griego",
+    "acción",
+    "cómodo",
+    "opinar",
+    "responsabilizar",
+    "alquiler",
+    "constante",
+    "heredar",
+    "quién"
+  ],
+  "glosses": {
+    "se habla": {
+      "lemma": "hablar",
+      "gloss": "is spoken",
+      "pos": "verb",
+      "note": "No subject at all. English needs 'one', 'you', 'people' or a passive; Spanish just adds 'se'."
+    },
+    "se come": {
+      "lemma": "comer",
+      "gloss": "one eats",
+      "pos": "verb",
+      "note": "'Se come bien en Madrid' — the eating is general, and nobody in particular is doing it."
+    },
+    "se heredan": {
+      "lemma": "heredar",
+      "gloss": "they're inherited",
+      "pos": "verb"
+    }
+  },
+  "phrases": [
+    {
+      "s": "Aquí se habla español",
+      "gloss": "Spanish spoken here"
+    },
+    {
+      "s": "Se dice que",
+      "gloss": "They say that",
+      "note": "The most useful impersonal of all — it lets you report a rumour without owning it."
+    },
+    {
+      "s": "no hace falta",
+      "gloss": "there's no need"
+    },
+    {
+      "s": "eso no se hace",
+      "gloss": "that isn't done"
+    }
+  ]
+}

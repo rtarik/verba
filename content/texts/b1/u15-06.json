@@ -1,0 +1,66 @@
+{
+  "id": "b1-u15-06-se-aprende-sin-darse-cuenta",
+  "level": "B1",
+  "unit": 15,
+  "order": 6,
+  "title": "Se aprende sin darse cuenta",
+  "titleEn": "You learn without noticing",
+  "blurbEn": "The last text of the unit: fourteen months on, rereading the first thing she ever wrote in Spanish.",
+  "grammarRefs": [
+    "se-impersonal",
+    "perifrasis"
+  ],
+  "body": "Dicen que un idioma se aprende sin darse cuenta. No es del todo verdad, pero tampoco es mentira: es una de esas frases que suenan bien y explican poco.\n\nSe aprende sin darse cuenta cuando ya llevas mucho tiempo dándote cuenta a diario.\n\nAcabo de releer el primer texto que escribí en español, hace catorce meses. Tenía cuarenta palabras y tres errores en la primera frase, que ahora veo enseguida.\n\nVolví a leerlo dos veces. La segunda me reí.\n\nCatorce meses no es nada y a la vez es una cantidad ridícula de horas. Las he contado alguna vez y luego he preferido olvidarlo.\n\nSigo cometiendo errores, claro. Pero ya no son los mismos, y eso es lo único que me importa.\n\nMi profesora me dijo que el progreso no se ve de día en día, sino de año en año. Que hay que dejar de mirarse los pies y mirar el camino.\n\nEs un consuelo pobre pero honesto.\n\nSe dice que lo difícil es empezar. Se dice mal. Lo difícil es seguir.",
+  "translationEn": "They say you learn a language without noticing. It isn't entirely true, but it isn't a lie either: it's one of those phrases that sound good and explain little.\n\nYou learn without noticing once you've spent a long time noticing daily.\n\nI've just reread the first text I wrote in Spanish, fourteen months ago. It had forty words and three mistakes in the first sentence, which I now spot immediately.\n\nI read it again twice. The second time I laughed.\n\nFourteen months is nothing and at the same time it's a ridiculous number of hours. I've counted them once and then preferred to forget it.\n\nI'm still making mistakes, of course. But they're no longer the same ones, and that's the only thing I care about.\n\nMy teacher told me that progress isn't visible from day to day, but from year to year. That you have to stop looking at your feet and look at the road.\n\nIt's a poor consolation but an honest one.\n\nThey say the hard part is starting. They say it wrong. The hard part is carrying on.",
+  "newLemmas": [
+    "diario",
+    "progreso",
+    "sino",
+    "mentira",
+    "cantidad",
+    "ridículo",
+    "consuelo",
+    "pobre",
+    "honesto",
+    "catorce"
+  ],
+  "glosses": {
+    "se aprende": {
+      "lemma": "aprender",
+      "gloss": "one learns",
+      "pos": "verb",
+      "note": "Impersonal — nobody in particular does the learning."
+    },
+    "sino": {
+      "lemma": "sino",
+      "gloss": "but rather",
+      "pos": "conjunction",
+      "note": "'no ... sino' corrects a negative: not X but Y. Different from 'pero', which simply adds a contrast."
+    },
+    "hay que dejar de": {
+      "lemma": "dejar",
+      "gloss": "you have to stop",
+      "pos": "verb",
+      "note": "Two structures at once: impersonal 'hay que' plus the chain 'dejar de'."
+    }
+  },
+  "phrases": [
+    {
+      "s": "sin darse cuenta",
+      "gloss": "without noticing",
+      "at": 6
+    },
+    {
+      "s": "Acabo de releer",
+      "gloss": "I've just reread"
+    },
+    {
+      "s": "de día en día",
+      "gloss": "from day to day"
+    },
+    {
+      "s": "Lo difícil es seguir",
+      "gloss": "The hard part is carrying on"
+    }
+  ]
+}

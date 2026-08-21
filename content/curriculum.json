@@ -292,8 +292,14 @@
         "perífrasis verbales",
         "acabar de, seguir, volver a"
       ],
-      "textIds": [],
-      "summaryEn": "Saying things without saying who did them, reporting what other people said, and the verb chains Spanish leans on constantly: 'acabo de llegar', 'sigo pensando'."
+      "textIds": [
+        "b1-u15-01-aqui-se-habla-espanol",
+        "b1-u15-02-se-venden-pisos",
+        "b1-u15-03-dijo-que-vendria",
+        "b1-u15-04-me-pregunto-si-queria",
+        "b1-u15-05-acabo-de-llegar",
+        "b1-u15-06-se-aprende-sin-darse-cuenta"
+      ]
     },
     {
       "unit": 16,

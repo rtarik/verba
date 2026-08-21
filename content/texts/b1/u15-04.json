@@ -1,0 +1,62 @@
+{
+  "id": "b1-u15-04-me-pregunto-si-queria",
+  "level": "B1",
+  "unit": 15,
+  "order": 4,
+  "title": "Me preguntó si quería",
+  "titleEn": "He asked me whether I wanted to",
+  "blurbEn": "A conversation in the boss's office, and what happens to questions and orders when you repeat them.",
+  "grammarRefs": [
+    "estilo-indirecto"
+  ],
+  "body": "Mi jefe me llamó a su despacho el lunes, que nunca es buena señal.\n\nMe preguntó si quería cambiar de equipo. Me preguntó cuánto tiempo llevaba en el puesto. Me preguntó si había pensado en el futuro.\n\nYo no había pensado en el futuro. Le dije que sí, claro.\n\nMe ha pedido que lo piense una semana.\n\nCuando cuentas una pregunta, desaparecen los signos y aparece «si» o la palabra interrogativa: «¿quieres?» se convierte en «me preguntó si quería»; «¿cuánto tiempo llevas?» se convierte en «me preguntó cuánto tiempo llevaba».\n\nY cuando cuentas una orden, aparece el subjuntivo: «piénsalo» se convierte en «me pide que lo piense».\n\nSalí del despacho con la sensación de haber dicho algo importante sin querer.\n\nLlevo tres días pensándolo y sigo sin saber qué quiero. Eso también es una respuesta.\n\nDiego dice que debería pedir un aumento. Diego siempre dice eso.",
+  "translationEn": "My boss called me into his office on Monday, which is never a good sign.\n\nHe asked whether I wanted to change teams. He asked how long I'd been in the post. He asked whether I'd thought about the future.\n\nI hadn't thought about the future. I said yes, of course.\n\nHe's asked me to think it over for a week.\n\nWhen you report a question, the marks disappear and \"si\" or the question word appears: \"¿quieres?\" becomes \"me preguntó si quería\"; \"¿cuánto tiempo llevas?\" becomes \"me preguntó cuánto tiempo llevaba\".\n\nAnd when you report an order, the subjunctive appears: \"piénsalo\" becomes \"me pide que lo piense\".\n\nI left the office with the feeling of having said something important without meaning to.\n\nI've spent three days thinking about it and I still don't know what I want. That's an answer too.\n\nDiego says I should ask for a raise. Diego always says that.",
+  "newLemmas": [
+    "despacho",
+    "señal",
+    "equipo",
+    "desaparecer",
+    "signo",
+    "interrogativo",
+    "orden",
+    "respuesta",
+    "sensación",
+    "aumento"
+  ],
+  "glosses": {
+    "si": {
+      "lemma": "si",
+      "gloss": "whether",
+      "pos": "conjunction",
+      "note": "In a reported yes/no question 'si' means 'whether', not 'if'. Same word, different job."
+    },
+    "quería": {
+      "lemma": "querer",
+      "gloss": "I wanted",
+      "pos": "verb",
+      "note": "He asked '¿quieres?' — present. Reported after a past verb, it steps back to the imperfecto."
+    },
+    "cuánto": {
+      "lemma": "cuánto",
+      "gloss": "how much",
+      "pos": "question word",
+      "note": "The question word keeps its accent even inside a reported question, with no question marks around it."
+    }
+  },
+  "phrases": [
+    {
+      "s": "Me preguntó si quería",
+      "gloss": "He asked whether I wanted to",
+      "at": 14
+    },
+    {
+      "s": "me pide que lo piense",
+      "gloss": "he asks me to think it over",
+      "note": "A reported order takes the subjunctive — the same 'pedir que' from Unit 11."
+    },
+    {
+      "s": "sin querer",
+      "gloss": "without meaning to"
+    }
+  ]
+}

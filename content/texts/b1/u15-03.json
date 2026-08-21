@@ -1,0 +1,69 @@
+{
+  "id": "b1-u15-03-dijo-que-vendria",
+  "level": "B1",
+  "unit": 15,
+  "order": 3,
+  "title": "Dijo que vendría",
+  "titleEn": "He said he'd come",
+  "blurbEn": "Repeating what someone said, and the way every tense steps one pace backwards when you do.",
+  "grammarRefs": [
+    "estilo-indirecto"
+  ],
+  "body": "Pablo me llamó ayer, a una hora rara, y me dijo tres cosas.\n\nDijo que estaba bien. Dijo que había hablado con su madre sobre mi visita. Y dijo que vendría a Madrid en primavera si conseguía las vacaciones.\n\nCuando cuentas lo que alguien ha dicho, los tiempos se mueven hacia atrás. Él dijo «estoy bien» y yo cuento «dijo que estaba bien». Él dijo «he hablado» y yo cuento «había hablado». Él dijo «iré» y yo cuento «que vendría».\n\nEl presente se convierte en imperfecto, el perfecto en pluscuamperfecto, el futuro en condicional.\n\nAl principio la regla me parecía innecesaria: si ya sabemos quién habló, ¿para qué cambiar el verbo? Pero el cambio marca la distancia. Lo dicho pertenece a otro momento, y el idioma lo señala. Es una especie de cortesía temporal.\n\nDijo también que echaba de menos hablar español conmigo, lo cual me pareció generoso y probablemente falso.",
+  "translationEn": "Pablo called me yesterday, at an odd hour, and told me three things.\n\nHe said he was fine. He said he had spoken to his mother about my visit. And he said he would come to Madrid in spring if he could get the time off.\n\nWhen you report what someone has said, the tenses move backwards. He said \"estoy bien\" and I report \"dijo que estaba bien\". He said \"he hablado\" and I report \"había hablado\". He said \"iré\" and I report \"que vendría\".\n\nThe present becomes the imperfect, the perfect becomes the pluperfect, the future becomes the conditional.\n\nAt first the rule seemed unnecessary to me: if we already know who spoke, why change the verb? But the change marks the distance. What was said belongs to another moment, and the language signals it. It's a kind of temporal politeness.\n\nHe also said he missed speaking Spanish with me, which struck me as generous and probably false.",
+  "newLemmas": [
+    "visita",
+    "vacaciones",
+    "convertir",
+    "cadena",
+    "pertenecer",
+    "especie",
+    "temporal",
+    "cual",
+    "generoso",
+    "falso",
+    "condicional",
+    "hacia",
+    "pluscuamperfecto",
+    "presente"
+  ],
+  "glosses": {
+    "estaba": {
+      "lemma": "estar",
+      "gloss": "he was",
+      "pos": "verb",
+      "note": "He said 'estoy bien'. Reported, the present becomes the imperfecto."
+    },
+    "vendría": {
+      "lemma": "venir",
+      "gloss": "he would come",
+      "pos": "verb",
+      "note": "He said 'iré' — a future. Reported, futures become conditionals."
+    },
+    "lo cual": {
+      "lemma": "cual",
+      "gloss": "which",
+      "pos": "pronoun",
+      "note": "Refers back to the whole previous statement, not to one noun."
+    }
+  },
+  "phrases": [
+    {
+      "s": "Dijo que estaba bien",
+      "gloss": "He said he was fine",
+      "at": 13
+    },
+    {
+      "s": "dijo que vendría",
+      "gloss": "he said he would come"
+    },
+    {
+      "s": "hacia atrás",
+      "gloss": "backwards"
+    },
+    {
+      "s": "echaba de menos",
+      "gloss": "he missed"
+    }
+  ]
+}

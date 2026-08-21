@@ -1,0 +1,70 @@
+{
+  "id": "b1-u15-05-acabo-de-llegar",
+  "level": "B1",
+  "unit": 15,
+  "order": 5,
+  "title": "Acabo de llegar",
+  "titleEn": "I've just arrived",
+  "blurbEn": "Five two-verb structures that carry half of everyday Spanish, and cost almost nothing to learn.",
+  "grammarRefs": [
+    "perifrasis"
+  ],
+  "body": "El español encadena verbos con una facilidad que al principio me confundía y ahora me parece elegante.\n\nAcabo de llegar. Sigo estudiando. Volví a leer el mismo capítulo tres veces. Dejé de usar el diccionario en marzo. Me puse a llorar con un anuncio de la tele, uno de esos de Navidad.\n\nTodas esas frases llevan dos verbos, y el segundo no cambia nunca.\n\n«Acabar de» significa que algo pasó hace un momento. «Seguir» más gerundio, que continúa. «Volver a», que se repite. «Dejar de», que se termina. «Ponerse a», que empieza de golpe.\n\nSon cinco estructuras y cubren la mitad de lo que uno quiere decir en un día normal. Es un sistema económico: pocas piezas, muchas combinaciones.\n\nAhora las uso sin pensar. Acabo de escribir tres en este texto sin darme cuenta.\n\nSigo mejorando, aunque a veces no lo parezca.",
+  "translationEn": "Spanish chains verbs together with an ease that confused me at first and now strikes me as elegant.\n\nI've just arrived. I'm still studying. I read the same chapter three times over. I stopped using the dictionary in March. I burst into tears at a television advert, one of those Christmas ones.\n\nAll those sentences carry two verbs, and the second one never changes.\n\n\"Acabar de\" means something happened a moment ago. \"Seguir\" plus a gerund, that it continues. \"Volver a\", that it happens again. \"Dejar de\", that it stops. \"Ponerse a\", that it starts suddenly.\n\nThey're five structures and they cover half of what you want to say on an ordinary day. It's an economical system: few pieces, many combinations.\n\nNow I use them without thinking. I've just written three in this text without noticing.\n\nI'm still improving, even if it doesn't always look like it.",
+  "newLemmas": [
+    "encadenar",
+    "facilidad",
+    "capítulo",
+    "anuncio",
+    "estructura",
+    "cubrir",
+    "golpe",
+    "sistema",
+    "pieza",
+    "combinación",
+    "Navidad",
+    "gerundio",
+    "elegante",
+    "económico",
+    "continuar",
+    "tele"
+  ],
+  "glosses": {
+    "Acabo de llegar": {
+      "lemma": "acabar",
+      "gloss": "I've just arrived",
+      "pos": "verb",
+      "note": "'acabar de' + infinitive is the Spanish for 'to have just'. There is no other way to say it."
+    },
+    "Sigo estudiando": {
+      "lemma": "seguir",
+      "gloss": "I'm still studying",
+      "pos": "verb",
+      "note": "'seguir' takes a gerund, not an infinitive. 'Sigo estudiar' is wrong."
+    },
+    "Me puse a llorar": {
+      "lemma": "poner",
+      "gloss": "I burst into tears",
+      "pos": "verb",
+      "note": "'ponerse a' is to start suddenly — more abrupt than 'empezar a'."
+    }
+  },
+  "phrases": [
+    {
+      "s": "Acabo de llegar",
+      "gloss": "I've just arrived"
+    },
+    {
+      "s": "Volví a leer",
+      "gloss": "I read again"
+    },
+    {
+      "s": "Dejé de usar",
+      "gloss": "I stopped using"
+    },
+    {
+      "s": "de golpe",
+      "gloss": "suddenly"
+    }
+  ]
+}
