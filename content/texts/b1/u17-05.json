@@ -1,0 +1,66 @@
+{
+  "id": "b1-u17-05-fue-construido",
+  "level": "B1",
+  "unit": 17,
+  "order": 5,
+  "title": "Fue construido hace un siglo",
+  "titleEn": "It was built a century ago",
+  "blurbEn": "Spanish does have a passive with 'ser' — and mostly prefers not to use it.",
+  "grammarRefs": [
+    "voz-pasiva",
+    "se-impersonal"
+  ],
+  "body": "El edificio donde vivo fue construido en mil novecientos veinte.\n\nLo sé porque hay una placa en la entrada, medio borrada, que nadie lee.\n\nLa voz pasiva con «ser» existe en español, pero se usa mucho menos que en inglés. Suena formal, casi de periódico: «el acuerdo fue firmado ayer», «la novela fue escrita en otro país».\n\nEn la lengua hablada, el español prefiere otras dos soluciones. La primera es el «se» impersonal: «se construyó en mil novecientos veinte». La segunda es cambiar el sujeto: «lo construyeron entonces».\n\nLas tres frases dicen lo mismo. La primera suena a documento, la segunda a guía de viaje y la tercera a conversación.\n\nEs una de esas cosas que no se aprenden traduciendo. Si traduces del inglés, escribes pasivas todo el tiempo y suenas raro sin saber por qué.\n\nPor eso, cuando escribo en español, intento traducir menos y escuchar más.\n\nLa placa, por cierto, lleva un siglo en la pared y sigue siendo ilegible.",
+  "translationEn": "The building where I live was built in nineteen twenty.\n\nI know because there's a plaque in the entrance, half worn away, that nobody reads.\n\nThe passive with \"ser\" exists in Spanish, but it's used far less than in English. It sounds formal, almost journalistic: \"the agreement was signed yesterday\", \"the novel was written in another country\".\n\nIn spoken language, Spanish prefers two other solutions. The first is the impersonal \"se\": \"se construyó en mil novecientos veinte\". The second is to change the subject: \"lo construyeron entonces\".\n\nAll three sentences say the same thing. The first sounds like a document, the second like a travel guide and the third like conversation.\n\nIt's one of those things you don't learn by translating. If you translate from English, you write passives all the time and sound strange without knowing why.\n\nThat's why, when I write in Spanish, I try to translate less and listen more.\n\nThe plaque, incidentally, has been on the wall for a century and is still illegible.",
+  "newLemmas": [
+    "edificio",
+    "construir",
+    "placa",
+    "entrada",
+    "pasivo",
+    "solución",
+    "guía",
+    "traducir",
+    "pared",
+    "siglo",
+    "ilegible",
+    "lengua",
+    "donde",
+    "formal",
+    "impersonal"
+  ],
+  "glosses": {
+    "fue construido": {
+      "lemma": "construir",
+      "gloss": "was built",
+      "pos": "verb",
+      "note": "'ser' + participle. The participle agrees with the subject: 'la novela fue escrita', feminine."
+    },
+    "se construyó": {
+      "lemma": "construir",
+      "gloss": "it was built",
+      "pos": "verb",
+      "note": "The impersonal 'se' from Unit 15, doing the same job more naturally."
+    },
+    "lo construyeron": {
+      "lemma": "construir",
+      "gloss": "they built it",
+      "pos": "verb",
+      "note": "The commonest solution of all: an unspecified 'they'."
+    }
+  },
+  "phrases": [
+    {
+      "s": "fue construido",
+      "gloss": "was built"
+    },
+    {
+      "s": "fue firmado ayer",
+      "gloss": "was signed yesterday"
+    },
+    {
+      "s": "traducir menos y escuchar más",
+      "gloss": "translate less and listen more"
+    }
+  ]
+}

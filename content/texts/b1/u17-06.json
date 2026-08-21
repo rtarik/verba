@@ -1,0 +1,60 @@
+{
+  "id": "b1-u17-06-se-acaba-un-nivel",
+  "level": "B1",
+  "unit": 17,
+  "order": 6,
+  "title": "Se acaba un nivel",
+  "titleEn": "A level ends",
+  "blurbEn": "The last text of B1, written in the language it is about.",
+  "grammarRefs": [
+    "condicionales-reales",
+    "subjuntivo-perfecto"
+  ],
+  "body": "Este es el último texto de este nivel.\n\nHace catorce meses no sabía decir mi nombre completo sin pensarlo. Ahora discuto con Diego sobre conectores.\n\nHe contado los textos: noventa y seis. Y las palabras: más de mil. Ninguna cifra significa gran cosa, pero las miro igual.\n\nNo creo que haya aprendido español. Creo que he aprendido a aprenderlo, que es distinto y probablemente más útil a largo plazo.\n\nLo que más me sorprende no es lo que entiendo, sino la cantidad de cosas que ya no me asustan: un menú, una llamada, una conversación de tres horas en una cafetería.\n\nSi sigo así, dentro de un año leeré una novela entera sin diccionario. Si no sigo, se me olvidará casi todo en seis meses. Las dos cosas son igual de fáciles, y esa simetría me da un poco de miedo.\n\nEspero que la primera me apetezca más que la segunda.\n\nDicen que el nivel siguiente es donde se separa la gente que habla un idioma de la gente que lo estudia. Es una frase pretenciosa y probablemente falsa, pero se me ha quedado grabada.\n\nNo sé en cuál de los dos grupos estoy.\n\nPero he invitado a doce personas a cenar, así que de momento el plan es sencillo: aprobar.",
+  "translationEn": "This is the last text of this level.\n\nFourteen months ago I couldn't say my full name without thinking about it. Now I argue with Diego about connectors.\n\nI've counted the texts: ninety-six. And the words: more than a thousand. Neither figure means very much, but I look at them anyway.\n\nI don't think I've learned Spanish. I think I've learned how to learn it, which is different and probably more useful in the long run.\n\nWhat surprises me most isn't what I understand, but the number of things that no longer frighten me: a menu, a phone call, a three-hour conversation in a café.\n\nIf I keep going, in a year I'll read a whole novel without a dictionary. If I don't, I'll forget almost everything in six months. Both are equally easy, and that symmetry frightens me a little.\n\nI hope the first appeals to me more than the second.\n\nThey say the next level is where the people who speak a language separate from the people who study it. It's a pretentious phrase and probably false, but it has stuck with me.\n\nI don't know which of the two groups I'm in.\n\nBut I've invited twelve people to dinner, so for now the plan is simple: pass.",
+  "newLemmas": [
+    "cifra",
+    "asustar",
+    "simetría",
+    "apetecer",
+    "grupo",
+    "pretencioso",
+    "grabar",
+    "cuál",
+    "plan"
+  ],
+  "glosses": {
+    "haya aprendido": {
+      "lemma": "haber",
+      "gloss": "I have learned",
+      "pos": "verb",
+      "note": "Perfect subjunctive after 'no creo que' — doubting something already done."
+    },
+    "Si sigo": {
+      "lemma": "seguir",
+      "gloss": "If I keep going",
+      "pos": "verb",
+      "note": "Present after 'si', future in the main clause. A real condition."
+    },
+    "apetezca": {
+      "lemma": "apetecer",
+      "gloss": "appeals",
+      "pos": "verb",
+      "note": "'apetecer' works like 'gustar' — the thing appeals to you."
+    }
+  },
+  "phrases": [
+    {
+      "s": "he aprendido a aprenderlo",
+      "gloss": "I've learned how to learn it"
+    },
+    {
+      "s": "a largo plazo",
+      "gloss": "in the long run"
+    },
+    {
+      "s": "se me ha quedado grabada",
+      "gloss": "it has stuck with me"
+    }
+  ]
+}

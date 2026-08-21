@@ -1,0 +1,21 @@
+{
+  "id": "b1-u17-03-no-creo-que-haya-sido-facil",
+  "level": "B1", "unit": 17, "order": 3,
+  "title": "No creo que haya sido fácil",
+  "titleEn": "I don't think it can have been easy",
+  "blurbEn": "Something her mother mentioned in passing, thirty-two years late.",
+  "grammarRefs": ["subjuntivo-perfecto"],
+  "body": "Ayer mi madre me contó una cosa que no sabía, entre el segundo plato y el postre, como quien no quiere la cosa.\n\nCuando yo tenía seis años, ella empezó a estudiar por las noches, después de acostarnos. Estudió por libre, sin ir a clase. Tardó nueve años en terminar la carrera, asignatura por asignatura.\n\nTrabajaba de día, estudiaba de noche y nos llevaba al colegio por la mañana.\n\nNo creo que haya sido fácil. No creo que haya dormido más de cinco horas en toda esa década.\n\nNunca lo mencionó. Cuando le pregunté por qué, dijo que no le pareció importante.\n\nMe molesta que no me lo haya dicho antes. Y me molesta más que yo nunca se lo haya preguntado, que es peor.\n\nMe he pasado la vida creyendo que mi madre no había hecho nada extraordinario. Es un tipo de vergüenza que se cura despacio.\n\nLe he dicho que la admiro y no supe explicarle por qué exactamente.\n\nElla se ha reído, ha cambiado de tema y ha vuelto a callarse.",
+  "translationEn": "Yesterday my mother told me something I didn't know, between the main course and dessert, as if it were nothing.\n\nWhen I was six, she started studying at night, after putting us to bed. She studied independently, without attending classes. It took her nine years to finish the degree, one module at a time.\n\nShe worked by day, studied by night and took us to school in the morning.\n\nI don't think it can have been easy. I don't think she slept more than five hours in that entire decade.\n\nShe never mentioned it. When I asked her why, she said it hadn't seemed important.\n\nIt bothers me that she didn't tell me sooner. And it bothers me more that I never asked her, which is worse.\n\nI've spent my life believing my mother had done nothing extraordinary. It's a kind of shame that heals slowly.\n\nI told her I admire her and couldn't explain exactly why.\n\nShe laughed, changed the subject and went quiet again.",
+  "newLemmas": ["carrera", "asignatura", "década", "tema", "extraordinario", "curar", "callar", "libre"],
+  "glosses": {
+    "haya sido": { "lemma": "haber", "gloss": "it has been", "pos": "verb", "note": "'No creo que' + perfect subjunctive: doubting something already finished." },
+    "haya dicho": { "lemma": "haber", "gloss": "she has said", "pos": "verb", "note": "'Me molesta que' — emotion, not doubt. Same form, different trigger." },
+    "como quien no quiere la cosa": { "lemma": "querer", "gloss": "as if it were nothing", "pos": "verb", "note": "A set phrase: casually, as though it hardly mattered." }
+  },
+  "phrases": [
+    { "s": "No creo que haya sido fácil", "gloss": "I don't think it can have been easy" },
+    { "s": "por libre", "gloss": "independently" },
+    { "s": "asignatura por asignatura", "gloss": "one module at a time" }
+  ]
+}

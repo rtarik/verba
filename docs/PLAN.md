@@ -291,8 +291,9 @@ texts that use it. Cross-linked both ways with `grammarRefs`.
 Build a **vertical slice first**: Unit 1 complete (6 texts + audio + grammar docs + lexicon)
 before scaling out. If anything about the pipeline is wrong, it surfaces at 6 texts, not 60.
 
-**Status: A1 and A2 complete, B1 Units 11–16.** 96 texts, 9,351 words, 1,026 lemmas, 60 grammar
-pages, 24 MB audio — 70% of the planned 138 texts. Live at https://rtarik.github.io/verba/
+**Status: A1, A2 and B1 complete — Units 1–17.** 102 texts, 10,382 words, 1,086 lemmas, 68
+grammar pages, 26 MB audio — 71% of the planned 144 texts.
+Live at https://rtarik.github.io/verba/ Live at https://rtarik.github.io/verba/
 
 | Unit | Avg length | Recycled vocabulary |
 |---|---|---|
@@ -312,11 +313,12 @@ pages, 24 MB audio — 70% of the planned 138 texts. Live at https://rtarik.gith
 | B1 14 Ya había pasado | 136 w | 89% |
 | B1 15 Se dice que | 146 w | 85% |
 | B1 16 Opiniones | 147 w | 86% |
+| B1 17 Si puedo, iré | 172 w | 89% |
 
 That last column is the health metric for the course. If it ever falls while texts lengthen, new
 vocabulary is being pushed too fast. Target for A2 was 70–80% while texts grew toward 90–120 words. **Both met**: A2 finished at
 82% average recycling with texts averaging 90–102 words, having roughly tripled A1's opening
-length. Target for B1 is to hold **80%+** as texts reach 120–150 words — at 647 lemmas the base
+length. Target for B1 was **80%+** as texts reached 120–150 words. **Met**: B1 averaged 86% recycling with texts running 117–172 words. Target for B2 is 85%+ at 160–200 words — at 647 lemmas the base
 is now large enough that length costs almost nothing in new vocabulary.
 
 Every unit stayed inside the 8–13 new-lemma band, and no text has ever failed the TTS

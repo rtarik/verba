@@ -332,8 +332,14 @@
         "the personal a",
         "passive with ser"
       ],
-      "textIds": [],
-      "summaryEn": "The pieces that finish B1: conditions that might actually happen, the subjunctive combined with a participle ('espero que hayas llegado'), the little 'a' before a person that has been in every text since Unit 7, and the formal passive."
+      "textIds": [
+        "b1-u17-01-si-apruebo-te-invito",
+        "b1-u17-02-espero-que-hayas-llegado",
+        "b1-u17-03-no-creo-que-haya-sido-facil",
+        "b1-u17-04-conoci-a-sofia",
+        "b1-u17-05-fue-construido",
+        "b1-u17-06-se-acaba-un-nivel"
+      ]
     },
     {
       "unit": 18,

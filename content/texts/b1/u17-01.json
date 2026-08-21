@@ -1,0 +1,60 @@
+{
+  "id": "b1-u17-01-si-apruebo-te-invito",
+  "level": "B1",
+  "unit": 17,
+  "order": 1,
+  "title": "Si apruebo, te invito",
+  "titleEn": "If I pass, dinner's on me",
+  "blurbEn": "Conditions that might really happen — and the one thing Spanish will not let you put after 'si'.",
+  "grammarRefs": [
+    "condicionales-reales"
+  ],
+  "body": "El examen es el sábado que viene y llevo dos semanas durmiendo mal.\n\nSi apruebo, invito a toda la clase a cenar. Lo he prometido delante de testigos, así que ya no hay marcha atrás.\n\nSi suspendo, me lo tomaré con calma y me presentaré en septiembre. Eso también lo he dicho, aunque con bastante menos entusiasmo.\n\nLas condiciones reales en español son sencillas: «si» más presente, y después futuro o presente. Si llueve, no salgo. Si tengo tiempo, te llamo. Si apruebo, invito a todos.\n\nLo único que no se puede hacer es poner el futuro detrás de «si». «Si aprobaré» no existe. En inglés tampoco, aunque nadie lo explica nunca.\n\nDiego dice que si invito a cenar a doce personas voy a necesitar aprobar y un préstamo.\n\nTiene razón, como siempre. Y como siempre, no pienso hacerle caso.",
+  "translationEn": "The exam is next Saturday and I've been sleeping badly for two weeks.\n\nIf I pass, I'm taking the whole class out to dinner. I've promised it in front of witnesses, so there's no going back now.\n\nIf I fail, I'll take it calmly and sit it again in September. I've said that too, though with considerably less enthusiasm.\n\nReal conditions in Spanish are simple: \"si\" plus the present, then the future or the present. If it rains, I don't go out. If I have time, I'll call you. If I pass, I'm buying dinner.\n\nThe one thing you can't do is put the future after \"si\". \"Si aprobaré\" doesn't exist. It doesn't in English either, though nobody ever explains that.\n\nDiego says that if I take twelve people out to dinner I'm going to need to pass and a loan.\n\nHe's right, as always. And as always, I don't intend to listen.",
+  "newLemmas": [
+    "prometer",
+    "testigo",
+    "suspender",
+    "calma",
+    "entusiasmo",
+    "condición",
+    "real",
+    "sencillo",
+    "préstamo",
+    "apuesta"
+  ],
+  "glosses": {
+    "Si apruebo": {
+      "lemma": "aprobar",
+      "gloss": "If I pass",
+      "pos": "verb",
+      "note": "Present tense after 'si', even though it clearly refers to the future. This is the rule the whole text turns on."
+    },
+    "invito": {
+      "lemma": "invitar",
+      "gloss": "I'll take out",
+      "pos": "verb",
+      "note": "The main clause can be present or future. The present sounds more certain, almost like a promise."
+    },
+    "apuesta": {
+      "lemma": "apuesta",
+      "gloss": "bet",
+      "pos": "noun"
+    }
+  },
+  "phrases": [
+    {
+      "s": "Si apruebo, invito",
+      "gloss": "If I pass, I'm buying",
+      "at": 13
+    },
+    {
+      "s": "no hay marcha atrás",
+      "gloss": "there's no going back"
+    },
+    {
+      "s": "me lo tomaré con calma",
+      "gloss": "I'll take it calmly"
+    }
+  ]
+}

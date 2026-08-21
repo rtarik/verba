@@ -1,0 +1,58 @@
+{
+  "id": "b1-u17-02-espero-que-hayas-llegado",
+  "level": "B1",
+  "unit": 17,
+  "order": 2,
+  "title": "Espero que hayas llegado bien",
+  "titleEn": "I hope you got there safely",
+  "blurbEn": "Two things you already know, finally combined: the subjunctive and the perfect.",
+  "grammarRefs": [
+    "subjuntivo-perfecto"
+  ],
+  "body": "Mi hermana se fue esta mañana a Sevilla otra vez, con la misma maleta y menos ilusión. Todavía no me ha escrito.\n\nHe mirado el móvil catorce veces. Es un gesto absurdo y automático, como comprobar si llueve mirando el techo.\n\nEspero que haya llegado bien. Espero que no haya perdido el tren, que haya encontrado el piso sin problemas y que su compañera nueva no sea como la anterior, que dejaba los platos sucios tres días.\n\nEs la primera vez que uso esta forma sin pensarla. «Haya» más participio: el subjuntivo del pasado reciente.\n\nSe usa cuando dudas o deseas algo sobre lo que ya ha pasado. No creo que haya llamado. Me alegro de que hayas venido. Ojalá no se haya enfadado.\n\nEs la combinación de dos cosas que ya sabía por separado, y aun así tardé meses en juntarlas.\n\nAcaba de escribirme: «Todo bien. El piso es feo pero la compañera parece maja».\n\nMe alegro de que haya llegado. Me alegro más de que haya escrito.",
+  "translationEn": "My sister left for Seville again this morning, with the same suitcase and less enthusiasm. She still hasn't written to me.\n\nI've looked at my phone fourteen times. It's an absurd, automatic gesture, like checking whether it's raining by looking at the ceiling.\n\nI hope she got there safely. I hope she didn't miss the train, that she found the flat without trouble and that her new flatmate isn't like the last one, who left dirty plates out for three days.\n\nIt's the first time I've used this form without thinking about it. \"Haya\" plus a participle: the subjunctive of the recent past.\n\nYou use it when you doubt or wish something about what has already happened. I don't think he's called. I'm glad you came. I hope she didn't get annoyed.\n\nIt's the combination of two things I already knew separately, and even so it took me months to put them together.\n\nShe's just written: \"All fine. The flat is ugly but the flatmate seems nice.\"\n\nI'm glad she arrived. I'm gladder that she wrote.",
+  "newLemmas": [
+    "ilusión",
+    "comprobar",
+    "participio",
+    "reciente",
+    "juntar",
+    "feo",
+    "majo",
+    "sucio",
+    "urgente",
+    "desear"
+  ],
+  "glosses": {
+    "haya llegado": {
+      "lemma": "haber",
+      "gloss": "she has arrived",
+      "pos": "verb",
+      "note": "Subjunctive of 'haber' plus a participle. Use it when the trigger is a wish or doubt and the event is already over."
+    },
+    "hayas venido": {
+      "lemma": "haber",
+      "gloss": "you have come",
+      "pos": "verb"
+    },
+    "urgente": {
+      "lemma": "urgente",
+      "gloss": "urgent",
+      "pos": "adjective"
+    }
+  },
+  "phrases": [
+    {
+      "s": "Espero que haya llegado",
+      "gloss": "I hope she got there"
+    },
+    {
+      "s": "No creo que haya llamado",
+      "gloss": "I don't think he's called"
+    },
+    {
+      "s": "por separado",
+      "gloss": "separately"
+    }
+  ]
+}

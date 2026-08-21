@@ -1,0 +1,60 @@
+{
+  "id": "b1-u17-04-conoci-a-sofia",
+  "level": "B1",
+  "unit": 17,
+  "order": 4,
+  "title": "Conocí a Sofía",
+  "titleEn": "I met Sofía",
+  "blurbEn": "One letter you have been reading since Unit 7 without anyone explaining why it is there.",
+  "grammarRefs": [
+    "a-personal"
+  ],
+  "body": "Hay una letra que llevo un año escribiendo sin saber exactamente por qué.\n\nConocí a Sofía. Ayudé a mi hermana. Vi a Diego en el bar. Llamé al banco.\n\nEs la «a» personal, y en español es obligatoria: cuando el complemento directo es una persona, lleva «a» delante. No es una preposición de lugar ni de dirección. No significa nada. Solo marca que lo que viene después es alguien, no algo.\n\n«Veo la casa» y «veo a mi hermana». La misma estructura, una letra de diferencia.\n\nSirve para evitar confusiones, porque el español mueve las palabras de sitio con mucha libertad. «El perro mordió al niño» y «al niño lo mordió el perro» significan lo mismo, y sin esa «a» no se sabría quién mordió a quién.\n\nTambién se usa con animales queridos. A mi gato sí. A un gato cualquiera, no.\n\nNadie me la explicó nunca porque a nadie le parece que necesite explicación. Los hispanohablantes la ponen sin pensar. Yo todavía dudo medio segundo.\n\nEs una letra pequeña que hace un trabajo enorme.",
+  "translationEn": "There's a letter I've spent a year writing without knowing exactly why.\n\nI met Sofía. I helped my sister. I saw Diego at the bar. I called the bank.\n\nIt's the personal \"a\", and in Spanish it's compulsory: when the direct object is a person, it takes an \"a\" in front. It isn't a preposition of place or direction. It means nothing. It only marks that what follows is somebody, not something.\n\n\"Veo la casa\" and \"veo a mi hermana\". The same structure, one letter of difference.\n\nIt serves to avoid confusion, because Spanish moves words around with great freedom. \"The dog bit the boy\" and \"the boy was bitten by the dog\" mean the same, and without that \"a\" you wouldn't know who bit whom.\n\nIt's also used with beloved animals. My cat, yes. Some random cat, no.\n\nNobody ever explained it to me because nobody thinks it needs explaining. Spanish speakers put it in without thinking. I still hesitate for half a second.\n\nIt's a small letter doing an enormous job.",
+  "newLemmas": [
+    "letra",
+    "obligatorio",
+    "complemento",
+    "dirección",
+    "confusión",
+    "libertad",
+    "morder",
+    "querido",
+    "hispanohablante",
+    "explicación",
+    "personal"
+  ],
+  "glosses": {
+    "a Sofía": {
+      "lemma": "a",
+      "gloss": "(marks a person)",
+      "pos": "preposition",
+      "note": "Untranslatable. It marks Sofía as the direct object, and it is not optional."
+    },
+    "al banco": {
+      "lemma": "a",
+      "gloss": "to the bank",
+      "pos": "preposition",
+      "note": "Here 'a' really is a preposition of direction — a different word doing a different job. A bank is not a person."
+    },
+    "cualquiera": {
+      "lemma": "cualquiera",
+      "gloss": "any old",
+      "pos": "adjective"
+    }
+  },
+  "phrases": [
+    {
+      "s": "Conocí a Sofía",
+      "gloss": "I met Sofía"
+    },
+    {
+      "s": "veo a mi hermana",
+      "gloss": "I see my sister"
+    },
+    {
+      "s": "quién mordió a quién",
+      "gloss": "who bit whom"
+    }
+  ]
+}
