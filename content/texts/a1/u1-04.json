@@ -6,16 +6,51 @@
   "title": "Mis amigos",
   "titleEn": "My friends",
   "blurbEn": "Descriptions of two friends and their pets. Watch how every adjective changes its ending to match what it describes.",
-  "grammarRefs": ["plurals", "gender-and-articles"],
+  "grammarRefs": [
+    "plurals",
+    "gender-and-articles",
+    "posicion-adjetivos"
+  ],
   "body": "Tengo dos amigos muy buenos. Pablo es alto y Sofía es baja.\n\nLos dos son estudiantes. Ellos estudian español en la universidad.\n\nPablo tiene un perro grande. Sofía tiene dos gatos pequeños. Los gatos son blancos.\n\nMis amigos son muy divertidos.",
   "translationEn": "I have two very good friends. Pablo is tall and Sofía is short.\n\nThe two of them are students. They study Spanish at the university.\n\nPablo has a big dog. Sofía has two small cats. The cats are white.\n\nMy friends are very funny.",
-  "newLemmas": ["dos", "bueno", "alto", "bajo", "ellos", "estudiar", "español", "universidad", "perro", "blanco", "divertido"],
+  "newLemmas": [
+    "dos",
+    "bueno",
+    "alto",
+    "bajo",
+    "ellos",
+    "estudiar",
+    "español",
+    "universidad",
+    "perro",
+    "blanco",
+    "divertido"
+  ],
   "glosses": {
-    "buenos": { "lemma": "bueno", "gloss": "good (plural)", "pos": "adjective", "note": "Plural -s, because it describes two friends." },
-    "pequeños": { "lemma": "pequeño", "gloss": "small (plural)", "pos": "adjective", "note": "You have seen 'pequeña' for a house. Here it is masculine and plural, for two cats." },
-    "la": { "lemma": "el", "gloss": "the (feminine)", "pos": "article", "note": "'la' is 'the' for feminine nouns like 'universidad'." }
+    "buenos": {
+      "lemma": "bueno",
+      "gloss": "good (plural)",
+      "pos": "adjective",
+      "note": "Plural -s, because it describes two friends."
+    },
+    "pequeños": {
+      "lemma": "pequeño",
+      "gloss": "small (plural)",
+      "pos": "adjective",
+      "note": "You have seen 'pequeña' for a house. Here it is masculine and plural, for two cats."
+    },
+    "la": {
+      "lemma": "el",
+      "gloss": "the (feminine)",
+      "pos": "article",
+      "note": "'la' is 'the' for feminine nouns like 'universidad'."
+    }
   },
   "phrases": [
-    { "s": "Los dos", "gloss": "Both of them", "note": "Literally 'the two'." }
+    {
+      "s": "Los dos",
+      "gloss": "Both of them",
+      "note": "Literally 'the two'."
+    }
   ]
 }

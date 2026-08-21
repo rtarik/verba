@@ -1,21 +1,65 @@
 {
   "id": "a1-u4-02-en-el-restaurante",
-  "level": "A1", "unit": 4, "order": 2,
+  "level": "A1",
+  "unit": 4,
+  "order": 2,
   "title": "En el restaurante",
   "titleEn": "At the restaurant",
   "blurbEn": "Dinner out from start to bill. Everything you need to order food in Spanish, and your first look at 'querer'.",
-  "grammarRefs": ["querer-poder", "gustar"],
+  "grammarRefs": [
+    "querer-poder",
+    "gustar",
+    "verbos-irregulares-presente"
+  ],
   "body": "Los viernes ceno en un restaurante con mis amigos.\n\nEl camarero llega a nuestra mesa con el menú.\n\n—Buenas noches. ¿Qué quieren tomar?\n\n—Yo quiero una ensalada y pollo con arroz, por favor —dice mi amiga Sofía.\n\n—Para mí, pescado y una botella de agua —digo yo.\n\nLa comida llega en quince minutos y está muy buena. Después del postre pedimos la cuenta. Pagamos y volvemos a casa contentos.",
   "translationEn": "On Fridays I have dinner in a restaurant with my friends.\n\nThe waiter arrives at our table with the menu.\n\n\"Good evening. What would you like to order?\"\n\n\"I want a salad and chicken with rice, please,\" says my friend Sofía.\n\n\"For me, fish and a bottle of water,\" I say.\n\nThe food arrives in fifteen minutes and it is very good. After dessert we ask for the bill. We pay and go home happy.",
-  "newLemmas": ["viernes", "camarero", "nuestro", "menú", "querer", "ensalada", "pollo", "favor", "mí", "postre", "pedir", "cuenta", "quince"],
+  "newLemmas": [
+    "viernes",
+    "camarero",
+    "nuestro",
+    "menú",
+    "querer",
+    "ensalada",
+    "pollo",
+    "favor",
+    "mí",
+    "postre",
+    "pedir",
+    "cuenta",
+    "quince"
+  ],
   "glosses": {
-    "quieren": { "lemma": "querer", "gloss": "do you want", "pos": "verb", "note": "The polite plural form, used by waiters addressing a table." },
-    "Buenas": { "lemma": "bueno", "gloss": "good", "pos": "adjective", "note": "'Buenas noches' works as both hello and goodbye after dark." }
+    "quieren": {
+      "lemma": "querer",
+      "gloss": "do you want",
+      "pos": "verb",
+      "note": "The polite plural form, used by waiters addressing a table."
+    },
+    "Buenas": {
+      "lemma": "bueno",
+      "gloss": "good",
+      "pos": "adjective",
+      "note": "'Buenas noches' works as both hello and goodbye after dark."
+    }
   },
   "phrases": [
-    { "s": "Buenas noches", "gloss": "Good evening" },
-    { "s": "por favor", "gloss": "please" },
-    { "s": "Para mí", "gloss": "For me", "note": "After a preposition, 'yo' becomes 'mí'. Never 'para yo'." },
-    { "s": "pedimos la cuenta", "gloss": "we ask for the bill", "note": "'pedir' is to ask *for* something. Asking a question is 'preguntar'." }
+    {
+      "s": "Buenas noches",
+      "gloss": "Good evening"
+    },
+    {
+      "s": "por favor",
+      "gloss": "please"
+    },
+    {
+      "s": "Para mí",
+      "gloss": "For me",
+      "note": "After a preposition, 'yo' becomes 'mí'. Never 'para yo'."
+    },
+    {
+      "s": "pedimos la cuenta",
+      "gloss": "we ask for the bill",
+      "note": "'pedir' is to ask *for* something. Asking a question is 'preguntar'."
+    }
   ]
 }

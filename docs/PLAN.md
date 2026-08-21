@@ -216,9 +216,9 @@ been consolidated.
 | A1 | 1–4 | ser/estar, present tense, gender, articles, gustar, querer/poder, numbers, time, hay |
 | A2 | 5–10 | perfecto, indefinido, imperfecto and the contrast, present continuous, future, conditional, object pronouns, imperative, usted |
 | B1 | 11–17 | present subjunctive across its triggers, negative imperative, compound tenses, passive/impersonal se, reported speech, relative clauses |
-| B2 | 18–23 | imperfect and pluperfect subjunctive, all three conditionals, formal register, argumentation, nuance, literary reading |
+| B2 | 18–24 | imperfect and pluperfect subjunctive, all three conditionals, formal register, argumentation, nuance, literary reading |
 
-At six texts per unit that is **138 texts** at completion.
+At six texts per unit that is **144 texts** at completion.
 
 **Second coverage audit (after Unit 16).** A sweep for structures *used in the texts but never
 explained anywhere* found nine gaps. They split into two kinds, and the distinction decided how
@@ -232,9 +232,25 @@ to fix them:
   the passive with `ser`. Those need texts, and together with the personal `a` and `si` clauses
   they became **B1 Unit 17**, pushing B2 to 18–23.
 
-The lesson for the remaining units: a structure can pass the vocabulary gate and still be
-invisible to a reader, because the gate checks words, not grammar. A periodic sweep for
-used-but-unexplained structures is worth repeating at the end of B2.
+**Third audit (A1/A2 and the B2 plan).** Extended the sweep to the lower levels and to B2's
+focus lists. Four more used-but-unexplained structures at A1/A2 — stem-changing present verbs
+(the e→ie / o→ue / e→i "boot"), days and months, adjective position, and the confusable verb
+pairs `saber`/`conocer` and `pedir`/`preguntar`. All four got reference pages; none needed texts.
+
+The B2 plan had five topics with **no home in any unit's focus list**: sequence of tenses,
+reported speech in the past, verbs of change (`ponerse`/`volverse`/`hacerse`/`quedarse`), 
+`estar` + participle, and advanced perífrasis. Folding them into the existing six units would have
+left U18 carrying five major topics and U23 carrying six, so B2 was restructured to **seven
+units**, with a new U19 (*Dijo que viniera*) absorbing everything that happens when the
+subjunctive moves into the past.
+
+Final shape: **24 units, 144 texts** — 4 / 6 / 7 / 7 across A1–B2, weighted toward the upper
+levels as the grammar load demands.
+
+The lesson worth carrying forward: a structure can pass the vocabulary gate and still be
+invisible to a reader, because the gate checks words, not grammar. Three audits found 18 such
+gaps in total, and 12 of them needed only a reference page — the texts were already teaching the
+structure implicitly. Worth one more sweep once B2 is written.
 
 ### 2.2 The progressive guarantee, machine-checked
 

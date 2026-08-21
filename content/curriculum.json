@@ -342,15 +342,29 @@
       "titleEn": "If I could",
       "focus": [
         "imperfect subjunctive",
+        "sequence of tenses",
         "second conditional",
-        "hypotheticals",
         "polite requests"
       ],
       "textIds": [],
-      "summaryEn": "'Si tuviera tiempo, iría' — talking about what is not the case. Also the source of the most polite way to ask for anything: 'quisiera'."
+      "summaryEn": "'Si tuviera tiempo, iría' — talking about what is not the case. Also the rule that governs the whole level: which subjunctive tense follows which main verb."
     },
     {
       "unit": 19,
+      "level": "B2",
+      "title": "Dijo que viniera",
+      "titleEn": "He said to come",
+      "focus": [
+        "reported speech in the past",
+        "subjunctive after past conjunctions",
+        "indirect commands",
+        "backshifting"
+      ],
+      "textIds": [],
+      "summaryEn": "Everything that happens when the subjunctive moves into the past: reporting what someone asked you to do, and the conjunctions that drag their verbs back a tense with them."
+    },
+    {
+      "unit": 20,
       "level": "B2",
       "title": "Si hubiera sabido",
       "titleEn": "If I had known",
@@ -364,21 +378,21 @@
       "summaryEn": "The hardest structure in everyday Spanish, and the one that unlocks regret: 'si hubiera sabido, habría venido'. All three conditional types side by side."
     },
     {
-      "unit": 20,
+      "unit": 21,
       "level": "B2",
       "title": "El mundo del trabajo",
       "titleEn": "The world of work",
       "focus": [
         "formal register",
         "professional correspondence",
-        "circumlocution",
+        "advanced perífrasis",
         "precision and hedging"
       ],
       "textIds": [],
-      "summaryEn": "Spanish at work — how formality reshapes verb forms, vocabulary and sentence length, and how to say something carefully rather than bluntly."
+      "summaryEn": "Spanish at work — how formality reshapes verb forms and sentence length, plus the verb chains that let you say something carefully rather than bluntly."
     },
     {
-      "unit": 21,
+      "unit": 22,
       "level": "B2",
       "title": "Debate",
       "titleEn": "Debate",
@@ -392,27 +406,27 @@
       "summaryEn": "Conceding a point before making your own, and the discourse markers that hold a long argument together."
     },
     {
-      "unit": 22,
+      "unit": 23,
       "level": "B2",
       "title": "Matices",
       "titleEn": "Shades of meaning",
       "focus": [
         "subjunctive in relative clauses",
         "ser vs estar advanced",
-        "past tense aspect",
-        "nuance"
+        "verbs of change",
+        "estar + participle"
       ],
       "textIds": [],
-      "summaryEn": "Where more than one form is grammatical and the choice changes the meaning — 'busco un piso que tiene' against 'que tenga'. This is what separates fluent Spanish from merely correct Spanish."
+      "summaryEn": "Where more than one form is grammatical and the choice changes the meaning — 'busco un piso que tiene' against 'que tenga', and the five different verbs Spanish uses for 'become'."
     },
     {
-      "unit": 23,
+      "unit": 24,
       "level": "B2",
       "title": "Cultura y literatura",
       "titleEn": "Culture and literature",
       "focus": [
         "literary tenses",
-        "register shifts",
+        "past tense aspect",
         "idiom and metaphor",
         "reading real texts"
       ],
