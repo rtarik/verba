@@ -472,8 +472,14 @@
         "idiom and metaphor",
         "reading real texts"
       ],
-      "textIds": [],
-      "summaryEn": "Reading Spanish written for Spanish speakers rather than for learners — the tenses that survive mainly in writing, and the idioms that refuse to translate."
+      "textIds": [
+        "b2-u24-01-apenas-hubo-terminado",
+        "b2-u24-02-llovia-y-llovio",
+        "b2-u24-03-estar-en-las-nubes",
+        "b2-u24-04-el-espanol-de-los-libros",
+        "b2-u24-05-lo-que-no-se-traduce",
+        "b2-u24-06-el-ultimo-texto"
+      ]
     }
   ]
 }

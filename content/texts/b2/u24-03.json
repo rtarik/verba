@@ -1,0 +1,69 @@
+{
+  "id": "b2-u24-03-estar-en-las-nubes",
+  "level": "B2",
+  "unit": 24,
+  "order": 3,
+  "title": "Estar en las nubes",
+  "titleEn": "To have your head in the clouds",
+  "blurbEn": "The last frontier, and the most thankless: expressions you cannot deduce.",
+  "grammarRefs": [
+    "modismos"
+  ],
+  "body": "Los modismos son la última frontera y la más ingrata, porque no se deducen: se saben o no se saben.\n\n«Estar en las nubes» es distraerse. «Ser pan comido» es fácil. «Tomar el pelo» es engañar en broma. «No tener pelos en la lengua» es decir lo que se piensa. «Costar un ojo de la cara» es caro. «Dar en el clavo» es acertar.\n\nNinguna se puede adivinar por las palabras que la componen, y todas aparecen constantemente.\n\nLo peor es que muchas tienen un equivalente en inglés que se parece justo lo suficiente para confundir. En español no se «rompe el hielo» igual que en inglés, pero casi. En cambio «estar de mala leche» no se parece a nada.\n\nEs un vocabulario que no se estudia por listas, sino por exposición repetida. Hay que oírlas en contexto varias veces antes de atreverse a usarlas: el riesgo de usar mal un modismo es que suena a disfraz.\n\nDiego me enseñó veinte en una tarde y olvidé dieciocho antes de llegar a casa.\n\nLas dos que recuerdo son «me suena» y «ni idea», que no son modismos elegantes sino las cosas que uno dice cien veces al día cuando no sabe algo.\n\nQuizá esas sean las importantes.",
+  "translationEn": "Idioms are the last frontier and the most thankless, because you can't work them out: you either know them or you don't.\n\n\"Estar en las nubes\" is to be distracted. \"Ser pan comido\" is easy. \"Tomar el pelo\" is to tease. \"No tener pelos en la lengua\" is to speak your mind. \"Costar un ojo de la cara\" is expensive. \"Dar en el clavo\" is to be exactly right.\n\nNone can be guessed from the words that make it up, and all of them come up constantly.\n\nThe worst part is that many have an English equivalent that resembles them just enough to confuse. In Spanish you don't \"break the ice\" quite as you do in English, but nearly. Whereas \"estar de mala leche\" resembles nothing at all.\n\nIt's a vocabulary you don't study in lists but through repeated exposure. You have to hear them in context several times before daring to use them: the risk of using an idiom wrongly is that it sounds like a costume.\n\nDiego taught me twenty in one afternoon and I forgot eighteen before I got home.\n\nThe two I remember are \"me suena\" and \"ni idea\", which aren't elegant idioms but the things you say a hundred times a day when you don't know something.\n\nMaybe those are the important ones.",
+  "newLemmas": [
+    "modismo",
+    "frontera",
+    "distraer",
+    "componer",
+    "equivalente",
+    "clavo",
+    "nube",
+    "exposición",
+    "riesgo",
+    "leche",
+    "cara",
+    "contexto",
+    "ojo",
+    "pan",
+    "lengua",
+    "acertar"
+  ],
+  "glosses": {
+    "Ser pan comido": {
+      "lemma": "pan",
+      "gloss": "to be a piece of cake",
+      "pos": "noun",
+      "note": "Literally 'to be eaten bread'. English reaches for cake, Spanish for bread — neither is deducible."
+    },
+    "estar de mala leche": {
+      "lemma": "leche",
+      "gloss": "to be in a foul mood",
+      "pos": "noun",
+      "note": "Common and mildly coarse. 'Leche' appears in a startling number of Spanish expressions."
+    },
+    "me suena": {
+      "lemma": "sonar",
+      "gloss": "it rings a bell",
+      "pos": "verb"
+    }
+  },
+  "phrases": [
+    {
+      "s": "Estar en las nubes",
+      "gloss": "To have your head in the clouds"
+    },
+    {
+      "s": "Tomar el pelo",
+      "gloss": "To pull someone's leg"
+    },
+    {
+      "s": "Dar en el clavo",
+      "gloss": "To hit the nail on the head"
+    },
+    {
+      "s": "ni idea",
+      "gloss": "no idea"
+    }
+  ]
+}

@@ -26,8 +26,26 @@ That is the whole rule.
 - the reflexive is **se**, not `te`: `No **se** preocupe.`
 - the object pronoun is **le**, not `te`: `**Le** doy las gracias.`
 
-The plural of `usted` is **ustedes**, taking the they-form. In Spain there is also `vosotros` for
-an informal group; in Latin America `ustedes` covers both.
+## The plural: ustedes and vosotros
+
+`usted` pluralises to **ustedes**, taking the they-form.
+
+Spain also has **vosotros**, an informal plural with its own endings:
+
+| | tú | vosotros |
+|---|---|---|
+| present | habl**as** | habl**áis** |
+| | tien**es** | ten**éis** |
+| | sab**es** | sab**éis** |
+| command | habla | habl**ad** |
+
+`vosotros` is used constantly in Spain and **does not exist in Latin America**, where `ustedes`
+covers both formal and informal plural. Latin American speakers understand it perfectly but never
+produce it.
+
+For a learner this is genuinely optional. If you learn Spanish for Spain you will need to
+recognise `vosotros` from day one and will pick up producing it naturally; if you learn for Latin
+America you can ignore it entirely except when reading.
 
 ## When to use it
 

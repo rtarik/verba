@@ -1,0 +1,21 @@
+{
+  "id": "b2-u24-06-el-ultimo-texto",
+  "level": "B2", "unit": 24, "order": 6,
+  "title": "El último texto",
+  "titleEn": "The last text",
+  "blurbEn": "The end of the course.",
+  "grammarRefs": ["leer-literatura", "aspecto-narrativo"],
+  "body": "Este es el último texto del curso.\n\nEmpecé hace catorce meses sin saber decir mi nombre completo y termino escribiendo doscientas palabras sobre tiempos verbales que ya casi nadie usa.\n\nNo sé español. Sé bastante español, que es distinto y suficiente, y me costó un año entender la diferencia.\n\nPuedo leer una novela con paciencia. Puedo discutir con Diego y perder por razones de contenido y no de vocabulario, que es un ascenso considerable. Puedo escribir un correo formal sin buscar nada. Puedo entender a mi abuela cuando habla rápido, casi siempre.\n\nLo que no puedo todavía es olvidarme de que estoy hablando otro idioma. Sigue habiendo una milésima de retraso entre lo que pienso y lo que sale, como un eco pequeño. Dicen que eso desaparece con los años. Ya veremos.\n\nEn julio voy a México. En agosto voy a ver a mi abuela y le voy a grabar la voz, aunque proteste, aunque diga que no hace falta, aunque le parezca una tontería sentimental.\n\nLe diré la verdad: que quiero oírla dentro de veinte años contando otra vez cómo se inventaba los cuentos.\n\nY se lo diré en español, que no es su idioma ni del todo el mío, pero es el que he elegido para decir las cosas importantes.\n\nSe acabó el curso. Empieza lo otro, que no tiene temario ni final.",
+  "translationEn": "This is the last text of the course.\n\nI started fourteen months ago unable to say my full name and I finish writing two hundred words about tenses almost nobody uses any more.\n\nI don't know Spanish. I know a fair amount of Spanish, which is different and enough, and it took me a year to understand the difference.\n\nI can read a novel with patience. I can argue with Diego and lose on grounds of content rather than vocabulary, which is a considerable promotion. I can write a formal email without looking anything up. I can understand my grandmother when she speaks fast, almost always.\n\nWhat I still can't do is forget that I'm speaking another language. There's still a thousandth of a second's delay between what I think and what comes out, like a small echo. They say that disappears with the years. We'll see.\n\nIn July I'm going to Mexico. In August I'm going to see my grandmother and record her voice, even if she protests, even if she says there's no need, even if she thinks it's sentimental nonsense.\n\nI'll tell her the truth: that I want to hear her in twenty years' time telling me again how she used to make up the stories.\n\nAnd I'll tell her in Spanish, which isn't her language nor entirely mine, but is the one I've chosen for saying important things.\n\nThe course is over. The other thing begins, and it has no syllabus and no end.",
+  "newLemmas": ["doscientos", "considerable", "milésimo", "eco", "agosto", "cuento", "sentimental", "temario"],
+  "glosses": {
+    "aunque proteste": { "lemma": "protestar", "gloss": "even if she protests", "pos": "verb", "note": "Three 'aunque' + subjunctive clauses in a row — none of them yet true, all of them expected." },
+    "Se acabó": { "lemma": "acabar", "gloss": "It's over", "pos": "verb" },
+    "temario": { "lemma": "temario", "gloss": "syllabus", "pos": "noun" }
+  },
+  "phrases": [
+    { "s": "Sé bastante español", "gloss": "I know a fair amount of Spanish" },
+    { "s": "un ascenso considerable", "gloss": "a considerable promotion" },
+    { "s": "no tiene temario ni final", "gloss": "has no syllabus and no end" }
+  ]
+}

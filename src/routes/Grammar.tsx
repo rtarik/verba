@@ -9,7 +9,15 @@ export default function Grammar() {
   const { id } = useParams()
   const doc = id ? grammarById(id) : null
   const [query, setQuery] = useState('')
+  const [level, setLevel] = useState<string>('all')
   const readState = useGrammarProgress()
+
+  /** Levels present in the corpus, in course order rather than alphabetical. */
+  const levels = useMemo(() => {
+    const order = ['A1', 'A2', 'B1', 'B2']
+    const present = new Set(grammarDocs.map((d) => d.level))
+    return order.filter((l) => present.has(l))
+  }, [])
 
   // Opening a reference page and staying on it counts as having read it.
   // The delay keeps a mis-click, or a bounce through on the way somewhere
@@ -22,11 +30,25 @@ export default function Grammar() {
 
   const groups = useMemo(() => {
     const q = query.trim().toLowerCase()
-    if (!q) return grammarByCategory
+    if (!q && level === 'all') return grammarByCategory
     return grammarByCategory
-      .map((g) => ({ category: g.category, docs: g.docs.filter((d) => d.title.toLowerCase().includes(q) || d.id.includes(q)) }))
+      .map((g) => ({
+        category: g.category,
+        docs: g.docs.filter(
+          (d) =>
+            (level === 'all' || d.level === level) &&
+            (!q || d.title.toLowerCase().includes(q) || d.id.includes(q))
+        ),
+      }))
       .filter((g) => g.docs.length > 0)
-  }, [query])
+  }, [query, level])
+
+  /** Page counts per level, so the chips say how much is behind them. */
+  const levelCounts = useMemo(() => {
+    const counts: Record<string, number> = { all: grammarDocs.length }
+    for (const d of grammarDocs) counts[d.level] = (counts[d.level] ?? 0) + 1
+    return counts
+  }, [])
 
   if (id && !doc) {
     return (
@@ -108,6 +130,24 @@ export default function Grammar() {
         uses words from texts you have already read.
       </p>
 
+      <div className="mt-5 flex flex-wrap items-center gap-1.5">
+        {['all', ...levels].map((l) => (
+          <button
+            key={l}
+            onClick={() => setLevel(l)}
+            className="rounded px-2.5 py-1.5 text-xs"
+            style={
+              level === l
+                ? { background: 'var(--accent)', color: 'var(--paper)' }
+                : { background: 'var(--accent-soft)', color: 'var(--ink-soft)' }
+            }
+          >
+            {l === 'all' ? 'All levels' : l}{' '}
+            <span className="tabular-nums opacity-70">{levelCounts[l] ?? 0}</span>
+          </button>
+        ))}
+      </div>
+
       <input
         value={query}
         onChange={(e) => setQuery(e.target.value)}
@@ -118,7 +158,8 @@ export default function Grammar() {
 
       {groups.length === 0 && (
         <p className="mt-8 text-center text-sm" style={{ color: 'var(--ink-soft)' }}>
-          Nothing matches “{query}”.
+          {query ? `Nothing matches “${query}”` : 'Nothing at this level'}
+          {query && level !== 'all' ? ` at ${level}.` : '.'}
         </p>
       )}
 
@@ -173,7 +214,8 @@ export default function Grammar() {
       ))}
 
       <p className="mt-8 text-xs" style={{ color: 'var(--ink-soft)' }}>
-        {grammarDocs.length} topics · {Object.keys(readState).length} read
+        {groups.reduce((n, g) => n + g.docs.length, 0)} of {grammarDocs.length} topics shown ·{' '}
+        {Object.keys(readState).length} read
       </p>
     </div>
   )

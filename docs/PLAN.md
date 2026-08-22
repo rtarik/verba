@@ -297,9 +297,29 @@ texts that use it. Cross-linked both ways with `grammarRefs`.
 Build a **vertical slice first**: Unit 1 complete (6 texts + audio + grammar docs + lexicon)
 before scaling out. If anything about the pipeline is wrong, it surfaces at 6 texts, not 60.
 
-**Status: A1, A2 and B1 complete, B2 Units 18–23.** 138 texts, 17,099 words, 1,475 lemmas, 91
-grammar pages, 42 MB audio — 96% of the planned 144 texts.
-Live at https://rtarik.github.io/verba/ Live at https://rtarik.github.io/verba/
+**Status: COMPLETE.** All 24 units, 144 texts, 18,258 words, 1,531 lemmas, 97 grammar pages,
+48 MB audio. Live at https://rtarik.github.io/verba/
+
+| Level | Units | Avg length | Recycled |
+|---|---|---|---|
+| A1 | 4 | 52 w | 62% |
+| A2 | 6 | 92 w | 83% |
+| B1 | 7 | 139 w | 86% |
+| B2 | 7 | 188 w | 89% |
+
+Texts grew from 39 words to 188 — nearly fivefold — while the new-word budget per text never
+moved from 8–13. That is only possible because recycling climbed to meet the length, which was
+the design bet from Unit 3 onward and the metric worth watching in any future content.
+
+**Final audit (all 144 texts).** The fourth and last sweep for structures used in the corpus but
+explained nowhere found three: the accidental `se` (`se me olvidó`), diminutives, and `vosotros`
+— the last two present only as a single table row and a single sentence respectively. All three
+now have proper coverage. **Zero used-but-untaught structures remain.**
+
+Across four audits, 21 gaps were found in total and 15 needed only a reference page. The
+recurring lesson: the vocabulary gate is machine-checked and catches every unintroduced *word*,
+but it cannot see an unexplained *structure*. Any future content should assume the same blind
+spot and re-run the sweep.
 
 | Unit | Avg length | Recycled vocabulary |
 |---|---|---|

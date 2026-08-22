@@ -1,0 +1,63 @@
+{
+  "id": "b2-u24-02-llovia-y-llovio",
+  "level": "B2",
+  "unit": 24,
+  "order": 2,
+  "title": "Llovía y llovió",
+  "titleEn": "It was raining and it rained",
+  "blurbEn": "In literature the imperfect stops being a rule and becomes an instrument.",
+  "grammarRefs": [
+    "aspecto-narrativo",
+    "imperfecto-vs-indefinido"
+  ],
+  "body": "En literatura, la diferencia entre imperfecto e indefinido deja de ser una regla y se convierte en un instrumento.\n\n«Llovía» abre una escena. «Llovió» la cierra. Un autor puede empezar un capítulo con imperfectos —hacía frío, la casa estaba vacía, nadie hablaba— y mantener así al lector suspendido, sin que ocurra nada, todo el tiempo que quiera.\n\nDespués basta un indefinido para que el relato arranque: «entonces llamaron a la puerta».\n\nAprendí a ver esto leyendo, no estudiando. En los primeros meses el imperfecto me parecía simplemente el pasado de las descripciones. Ahora veo que es el tiempo del ambiente, y que un escritor lo usa para retrasar las cosas.\n\nHay novelas enteras escritas casi en imperfecto. Producen una sensación rara, como de recuerdo o de sueño.\n\nY hay otras, sobre todo policíacas, escritas en indefinido puro: pasó esto, luego esto, luego esto. Avanzan mucho y respiran poco.\n\nNunca se me habría ocurrido pensar en un tiempo verbal como en una decisión de estilo.\n\nEs probablemente lo más interesante que he aprendido este año.",
+  "translationEn": "In literature, the difference between the imperfect and the preterite stops being a rule and becomes an instrument.\n\n\"Llovía\" opens a scene. \"Llovió\" closes it. An author can begin a chapter with imperfects — it was cold, the house was empty, nobody was speaking — and hold the reader suspended like that, with nothing happening, for as long as they like.\n\nThen a single preterite is enough for the story to get going: \"then there was a knock at the door\".\n\nI learned to see this by reading, not by studying. In the early months the imperfect seemed to me simply the past tense of descriptions. Now I see it's the tense of atmosphere, and that a writer uses it to delay things.\n\nThere are whole novels written almost entirely in the imperfect. They produce a strange sensation, like a memory or a dream.\n\nAnd there are others, detective novels especially, written in pure preterite: this happened, then this, then this. They move fast and breathe little.\n\nIt would never have occurred to me to think of a tense as a decision about style.\n\nIt's probably the most interesting thing I've learned this year.",
+  "newLemmas": [
+    "instrumento",
+    "suspender",
+    "relato",
+    "arrancar",
+    "ambiente",
+    "escritor",
+    "retrasar",
+    "policíaco",
+    "respirar",
+    "bastar",
+    "novela",
+    "vacío",
+    "producir"
+  ],
+  "glosses": {
+    "Llovía": {
+      "lemma": "llover",
+      "gloss": "It was raining",
+      "pos": "verb",
+      "note": "Opens a scene and holds it. Nothing has happened yet; the reader is waiting."
+    },
+    "Llovió": {
+      "lemma": "llover",
+      "gloss": "It rained",
+      "pos": "verb",
+      "note": "Closes it. A completed event, and the narrative can move on."
+    },
+    "escritas": {
+      "lemma": "escribir",
+      "gloss": "written",
+      "pos": "verb"
+    }
+  },
+  "phrases": [
+    {
+      "s": "el tiempo del ambiente",
+      "gloss": "the tense of atmosphere"
+    },
+    {
+      "s": "Avanzan mucho y respiran poco",
+      "gloss": "They move fast and breathe little"
+    },
+    {
+      "s": "una decisión de estilo",
+      "gloss": "a decision about style"
+    }
+  ]
+}

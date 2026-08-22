@@ -1,0 +1,58 @@
+{
+  "id": "b2-u24-01-apenas-hubo-terminado",
+  "level": "B2",
+  "unit": 24,
+  "order": 1,
+  "title": "Apenas hubo terminado",
+  "titleEn": "Hardly had he finished",
+  "blurbEn": "Two tenses you will only ever read, and the case for recognising them without learning them.",
+  "grammarRefs": [
+    "tiempos-literarios"
+  ],
+  "body": "Empecé a leer una novela del siglo diecinueve y en la segunda página me encontré con un tiempo verbal que no había visto nunca.\n\n«Apenas hubo terminado de hablar, se levantó y salió.»\n\n«Hubo terminado» es el pretérito anterior, y prácticamente ha desaparecido. Se forma con el indefinido de haber más participio, y significa lo mismo que el pluscuamperfecto, pero con un matiz de inmediatez: una acción que termina justo antes de otra.\n\nSolo aparece después de «apenas», «en cuanto», «cuando» y «así que», y solo en literatura. Ningún hispanohablante lo usa hablando. Cualquier autor moderno escribiría «en cuanto terminó de hablar».\n\nLo mismo pasa con el futuro de subjuntivo: «si alguien supiere algo», «donde fuere necesario». Sobrevive en refranes, en textos jurídicos y en el himno de algún país, y en ningún otro sitio.\n\nSon fósiles. Se leen, no se escriben.\n\nMi profesora dice que reconocerlos es útil y aprenderlos es una pérdida de tiempo.\n\nLe hice caso a medias, que es mi especialidad. Los reconozco. No los uso.\n\nY sin embargo me gusta que existan.",
+  "translationEn": "I started reading a nineteenth-century novel and on the second page I ran into a tense I had never seen.\n\n\"Hardly had he finished speaking, he stood up and left.\"\n\n\"Hubo terminado\" is the preterite anterior, and it has all but disappeared. It's formed with the preterite of haber plus a participle, and it means the same as the pluperfect, but with a shade of immediacy: an action ending just before another.\n\nIt only appears after \"apenas\", \"en cuanto\", \"cuando\" and \"así que\", and only in literature. No Spanish speaker uses it in speech. Any modern author would write \"en cuanto terminó de hablar\".\n\nThe same goes for the future subjunctive: \"si alguien supiere algo\", \"donde fuere necesario\". It survives in proverbs, in legal texts and in some country's national anthem, and nowhere else.\n\nThey're fossils. You read them, you don't write them.\n\nMy teacher says recognising them is useful and learning them is a waste of time.\n\nI half took her advice, which is my speciality. I recognise them. I don't use them.\n\nAnd even so I'm glad they exist.",
+  "newLemmas": [
+    "apenas",
+    "inmediatez",
+    "autor",
+    "sobrevivir",
+    "refrán",
+    "himno",
+    "especialidad",
+    "diecinueve",
+    "literatura"
+  ],
+  "glosses": {
+    "hubo terminado": {
+      "lemma": "haber",
+      "gloss": "had finished",
+      "pos": "verb",
+      "note": "The pretérito anterior. Means the same as 'había terminado' but stresses that it happened immediately before. Effectively extinct in speech."
+    },
+    "supiere": {
+      "lemma": "saber",
+      "gloss": "should know",
+      "pos": "verb",
+      "note": "Future subjunctive. Survives in proverbs, legal texts and anthems. You will never need to produce it."
+    },
+    "fuere": {
+      "lemma": "ser",
+      "gloss": "should be",
+      "pos": "verb"
+    }
+  },
+  "phrases": [
+    {
+      "s": "Apenas hubo terminado",
+      "gloss": "Hardly had he finished"
+    },
+    {
+      "s": "Se leen, no se escriben",
+      "gloss": "You read them, you don't write them"
+    },
+    {
+      "s": "a medias",
+      "gloss": "halfway"
+    }
+  ]
+}

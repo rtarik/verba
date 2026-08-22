@@ -1,0 +1,21 @@
+{
+  "id": "b2-u24-05-lo-que-no-se-traduce",
+  "level": "B2", "unit": 24, "order": 5,
+  "title": "Lo que no se traduce",
+  "titleEn": "What doesn't translate",
+  "blurbEn": "Words with no equivalent, and what their absence says about a place.",
+  "grammarRefs": ["modismos", "leer-literatura"],
+  "body": "Hay cosas que no se traducen y que uno tarda mucho en notar, porque su ausencia no se ve.\n\n«Sobremesa» es el rato que se queda uno en la mesa después de comer, hablando. No existe en inglés porque no existe la costumbre.\n\n«Estrenar» es usar algo por primera vez: estreno zapatos, estrenamos piso. Hace falta una frase entera para decirlo en otro idioma.\n\n«Friolero» es alguien a quien siempre le da frío. «Anteayer» ahorra dos palabras. «Merendar» es una comida que en muchos países ni siquiera se hace.\n\nY luego está «te quiero», que ocupa el enorme espacio entre «me caes bien» y «te amo», y que no tiene equivalente cómodo en ningún idioma que yo conozca.\n\nAprender esas palabras no es aprender vocabulario. Es enterarse de que hay maneras distintas de organizar el día, la familia y el afecto.\n\nCada idioma decide qué merece un nombre propio, y esa decisión dice más del país que cualquier manual de historia. Son huecos, y los huecos también informan.\n\nMi abuela me preguntó una vez qué se dice en inglés para «sobremesa».\n\nLe dije que nada, que la gente se levanta.\n\nSe quedó callada un momento y dijo: «pobres».",
+  "translationEn": "There are things that don't translate and that take a long time to notice, because their absence is invisible.\n\n\"Sobremesa\" is the time you stay at the table after eating, talking. It doesn't exist in English because the custom doesn't.\n\n\"Estrenar\" is to use something for the first time: I'm wearing new shoes, we're moving into a new flat. It takes a whole sentence to say in another language.\n\n\"Friolero\" is someone who always feels the cold. \"Anteayer\" saves two words. \"Merendar\" is a meal that in many countries isn't even eaten.\n\nAnd then there's \"te quiero\", which occupies the enormous space between \"I like you\" and \"I love you\", and which has no comfortable equivalent in any language I know.\n\nLearning those words isn't learning vocabulary. It's finding out there are different ways of organising the day, the family and affection.\n\nEvery language decides what deserves a name of its own, and that decision says more about a country than any history book. They're gaps, and gaps carry information too.\n\nMy grandmother once asked me what you say in English for \"sobremesa\".\n\nI told her nothing — that people get up.\n\nShe was quiet for a moment and said: \"poor them\".",
+  "newLemmas": ["sobremesa", "estrenar", "zapato", "friolero", "anteayer", "merendar", "amar", "ausencia", "hueco", "informar"],
+  "glosses": {
+    "sobremesa": { "lemma": "sobremesa", "gloss": "after-dinner conversation", "pos": "noun", "note": "The time spent at the table after a meal. English has no word because it has no reliable custom." },
+    "te quiero": { "lemma": "querer", "gloss": "I love you", "pos": "verb", "note": "Sits between English's 'I like you' and 'I love you', and is used with family, partners and close friends alike." },
+    "friolero": { "lemma": "friolero", "gloss": "sensitive to cold", "pos": "adjective" }
+  },
+  "phrases": [
+    { "s": "no se traducen", "gloss": "don't translate" },
+    { "s": "me caes bien", "gloss": "I like you" },
+    { "s": "los huecos también informan", "gloss": "gaps carry information too" }
+  ]
+}

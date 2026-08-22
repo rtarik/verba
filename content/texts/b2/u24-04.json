@@ -1,0 +1,21 @@
+{
+  "id": "b2-u24-04-el-espanol-de-los-libros",
+  "level": "B2", "unit": 24, "order": 4,
+  "title": "El español de los libros",
+  "titleEn": "The Spanish of books",
+  "blurbEn": "What changes when you read Spanish written for Spanish speakers.",
+  "grammarRefs": ["leer-literatura", "registro-formal"],
+  "body": "Leer literatura en español es distinto de leer periódicos, y mucho más distinto de escuchar a alguien hablar.\n\nEn una novela caben registros que no conviven en ningún otro sitio. Un mismo capítulo puede tener un narrador que usa el pretérito anterior y unos personajes que dicen «qué va» y «venga ya».\n\nEse contraste es deliberado. La distancia entre cómo narra un autor y cómo hablan sus personajes es una de las herramientas más antiguas que existen.\n\nAl principio yo no la percibía. Leía todo al mismo volumen, como si el narrador y los personajes hablaran igual.\n\nAhora noto cuándo alguien está siendo formal dentro de la ficción, que es una capa más de significado que antes se me escapaba entera.\n\nTambién he aprendido a soportar no entenderlo todo. En una novela hay palabras que aparecen una vez y no vuelven. Buscarlas todas es la mejor manera de no terminar ningún libro.\n\nAhora subrayo y sigo. Al final del capítulo, si algo se repitió tres veces, lo busco.\n\nEl resto se queda por el camino, y no pasa nada.",
+  "translationEn": "Reading literature in Spanish is different from reading newspapers, and much more different from listening to someone speak.\n\nA novel accommodates registers that coexist nowhere else. A single chapter can have a narrator using the preterite anterior and characters saying \"qué va\" and \"venga ya\".\n\nThat contrast is deliberate. The distance between how an author narrates and how their characters speak is one of the oldest tools there is.\n\nAt first I didn't perceive it. I read everything at the same volume, as if the narrator and the characters spoke alike.\n\nNow I notice when someone is being formal inside the fiction, which is a further layer of meaning that used to escape me entirely.\n\nI've also learned to tolerate not understanding everything. In a novel there are words that appear once and never return. Looking them all up is the best way to finish no book at all.\n\nNow I underline and carry on. At the end of the chapter, if something came up three times, I look it up.\n\nThe rest gets left by the wayside, and nothing happens.",
+  "newLemmas": ["convivir", "narrador", "contraste", "deliberado", "narrar", "herramienta", "percibir", "volumen", "ficción", "capa"],
+  "glosses": {
+    "qué va": { "lemma": "ir", "gloss": "no way", "pos": "verb", "note": "Emphatic disagreement, entirely spoken. Seeing it in a novel tells you a character is talking, not the narrator." },
+    "venga ya": { "lemma": "venir", "gloss": "come off it", "pos": "verb" },
+    "se me escapaba": { "lemma": "escapar", "gloss": "escaped me", "pos": "verb" }
+  },
+  "phrases": [
+    { "s": "al mismo volumen", "gloss": "at the same volume" },
+    { "s": "una capa más de significado", "gloss": "a further layer of meaning" },
+    { "s": "se queda por el camino", "gloss": "gets left by the wayside" }
+  ]
+}

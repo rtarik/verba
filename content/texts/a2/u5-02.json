@@ -1,20 +1,58 @@
 {
   "id": "a2-u5-02-ya-lo-he-hecho",
-  "level": "A2", "unit": 5, "order": 2,
+  "level": "A2",
+  "unit": 5,
+  "order": 2,
   "title": "Ya lo he hecho",
   "titleEn": "I've already done it",
   "blurbEn": "The two words that live with this tense: 'ya' for done, 'todavía no' for not yet.",
-  "grammarRefs": ["ya-todavia", "preterito-perfecto"],
+  "grammarRefs": [
+    "ya-todavia",
+    "preterito-perfecto",
+    "se-accidental"
+  ],
   "body": "Mi madre siempre pregunta lo mismo cuando vuelve a casa.\n\n—¿Has limpiado la cocina?\n\n—Sí, ya la he limpiado.\n\n—¿Has lavado la ropa?\n\n—Todavía no, pero la lavo esta tarde.\n\n—¿Y has llamado a tu abuela?\n\n—¡Ay! Se me ha olvidado.\n\nMi madre no dice nada. Solo mira el teléfono y sonríe. Sabe que siempre hago las cosas al final, pero nunca a tiempo.\n\nEsta noche voy a llamar a mi abuela. Ya lo he decidido.",
   "translationEn": "My mother always asks the same thing when she gets home.\n\n\"Have you cleaned the kitchen?\"\n\n\"Yes, I've already cleaned it.\"\n\n\"Have you washed the clothes?\"\n\n\"Not yet, but I'll wash them this afternoon.\"\n\n\"And have you called your grandmother?\"\n\n\"Oh no! I forgot.\"\n\nMy mother says nothing. She just looks at the phone and smiles. She knows I always do things in the end, but never on time.\n\nTonight I'm going to call my grandmother. I've already decided.",
-  "newLemmas": ["ya", "limpiar", "lavar", "ropa", "olvidar", "sonreír", "cosa", "final", "decidir", "ay"],
+  "newLemmas": [
+    "ya",
+    "limpiar",
+    "lavar",
+    "ropa",
+    "olvidar",
+    "sonreír",
+    "cosa",
+    "final",
+    "decidir",
+    "ay"
+  ],
   "glosses": {
-    "ya": { "lemma": "ya", "gloss": "already", "pos": "adverb", "note": "'ya' and 'todavía no' are a pair: done, and not done yet." },
-    "la": { "lemma": "la", "gloss": "it", "pos": "pronoun", "note": "Stands for 'la cocina'. It goes before 'he limpiado', never between the two words." }
+    "ya": {
+      "lemma": "ya",
+      "gloss": "already",
+      "pos": "adverb",
+      "note": "'ya' and 'todavía no' are a pair: done, and not done yet."
+    },
+    "la": {
+      "lemma": "la",
+      "gloss": "it",
+      "pos": "pronoun",
+      "note": "Stands for 'la cocina'. It goes before 'he limpiado', never between the two words."
+    }
   },
   "phrases": [
-    { "s": "ya la he limpiado", "gloss": "I've already cleaned it", "note": "Word order matters: pronoun, then helper, then participle. Nothing may come between 'he' and 'limpiado'." },
-    { "s": "Se me ha olvidado", "gloss": "I forgot", "note": "Literally 'it has forgotten itself to me'. Spanish often makes the mistake the subject, so nobody gets blamed." },
-    { "s": "a tiempo", "gloss": "on time" }
+    {
+      "s": "ya la he limpiado",
+      "gloss": "I've already cleaned it",
+      "note": "Word order matters: pronoun, then helper, then participle. Nothing may come between 'he' and 'limpiado'."
+    },
+    {
+      "s": "Se me ha olvidado",
+      "gloss": "I forgot",
+      "note": "Literally 'it has forgotten itself to me'. Spanish often makes the mistake the subject, so nobody gets blamed."
+    },
+    {
+      "s": "a tiempo",
+      "gloss": "on time"
+    }
   ]
 }
