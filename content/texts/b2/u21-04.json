@@ -1,0 +1,68 @@
+{
+  "id": "b2-u21-04-por-lo-visto",
+  "level": "B2",
+  "unit": 21,
+  "order": 4,
+  "title": "Por lo visto",
+  "titleEn": "Apparently",
+  "blurbEn": "Learning to hedge before learning to disagree, and discovering it works better.",
+  "grammarRefs": [
+    "matizar"
+  ],
+  "body": "En las reuniones aprendí antes a matizar que a opinar.\n\nEl español tiene un arsenal de fórmulas para decir algo sin comprometerse del todo. «Por lo visto» introduce información de segunda mano. «Al parecer» hace lo mismo con un poco más de distancia. «En principio» significa que sí, pero con reservas. «Todo apunta a que» presenta una conclusión sin firmarla.\n\nY luego está «no sé si», que precede a cualquier crítica: «no sé si sería mejor esperar» quiere decir «esperemos».\n\nEn mi primera reunión intenté decir directamente que el plazo era imposible. Se hizo un silencio corto y desagradable.\n\nEn la segunda dije «en principio es viable, aunque el calendario parece algo ajustado». Todo el mundo asintió y el plazo se amplió una semana.\n\nNo aprendí a mentir. Aprendí a dejar sitio para que otro tenga la idea.\n\nSigo prefiriendo la primera manera. Pero la segunda funciona, y en una reunión de doce personas eso pesa más que la sinceridad.",
+  "translationEn": "In meetings I learned to hedge before I learned to give an opinion.\n\nSpanish has an arsenal of formulas for saying something without fully committing to it. \"Por lo visto\" introduces second-hand information. \"Al parecer\" does the same with a little more distance. \"En principio\" means yes, but with reservations. \"Todo apunta a que\" presents a conclusion without signing it.\n\nAnd then there's \"no sé si\", which precedes any criticism: \"no sé si sería mejor esperar\" means \"let's wait\".\n\nIn my first meeting I tried to say directly that the deadline was impossible. There was a short, unpleasant silence.\n\nIn the second I said \"in principle it's viable, though the schedule looks a little tight\". Everyone nodded and the deadline was extended by a week.\n\nI didn't learn to lie. I learned to leave room for someone else to have the idea.\n\nI still prefer the first way. But the second works, and in a meeting of twelve people that counts for more than sincerity.",
+  "newLemmas": [
+    "matizar",
+    "arsenal",
+    "reserva",
+    "apuntar",
+    "crítica",
+    "viable",
+    "ajustado",
+    "asentir",
+    "ampliar",
+    "sinceridad",
+    "desagradable",
+    "conclusión",
+    "introducir",
+    "preceder"
+  ],
+  "glosses": {
+    "Por lo visto": {
+      "lemma": "ver",
+      "gloss": "Apparently",
+      "pos": "verb",
+      "note": "Marks the information as second-hand. It quietly transfers responsibility for it to someone unnamed."
+    },
+    "En principio": {
+      "lemma": "principio",
+      "gloss": "In principle",
+      "pos": "noun",
+      "note": "A qualified yes. In a Spanish meeting it usually means 'yes, unless something changes' — rarely an outright commitment."
+    },
+    "no sé si": {
+      "lemma": "saber",
+      "gloss": "I'm not sure whether",
+      "pos": "verb",
+      "note": "Almost never expresses real uncertainty. It introduces a suggestion you have already decided on."
+    }
+  },
+  "phrases": [
+    {
+      "s": "Por lo visto",
+      "gloss": "Apparently"
+    },
+    {
+      "s": "Al parecer",
+      "gloss": "It seems"
+    },
+    {
+      "s": "Todo apunta a que",
+      "gloss": "Everything suggests that"
+    },
+    {
+      "s": "algo ajustado",
+      "gloss": "a little tight"
+    }
+  ]
+}

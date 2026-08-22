@@ -1,0 +1,64 @@
+{
+  "id": "b2-u21-05-se-ruega-no-fumar",
+  "level": "B2",
+  "unit": 21,
+  "order": 5,
+  "title": "Se ruega no fumar",
+  "titleEn": "Smoking is not permitted",
+  "blurbEn": "The impersonal 'se' from Unit 15, wearing an administrative suit.",
+  "grammarRefs": [
+    "registro-formal",
+    "se-impersonal"
+  ],
+  "body": "En el edificio nuevo de la oficina hay carteles por todas partes y ninguno lleva sujeto.\n\n«Se ruega mantener el silencio en las zonas comunes.» «Se recuerda que está prohibido fumar.» «Se agradece dejar la sala ordenada.»\n\nEs el «se» impersonal que aprendí hace meses, en su versión administrativa. Nadie ruega, nadie recuerda, nadie agradece. La norma existe sola, sin nadie detrás, y por eso resulta difícil discutirla.\n\nEn español administrativo esto se lleva al extremo: «se procederá a la revisión» no dice quién hará qué ni cuándo.\n\nEs un recurso de distancia y también de cortesía, según quién lo use. En un cartel funciona. En un correo entre compañeros sonaría casi agresivo.\n\nDiego lo usa en broma. Cuando quiere café dice «se solicita una pausa» con voz de aeropuerto.\n\nYo he empezado a hacerlo también, y eso probablemente signifique que llevo demasiado tiempo en esta empresa.",
+  "translationEn": "In the office's new building there are signs everywhere and not one of them has a subject.\n\n\"Silence is requested in communal areas.\" \"It is recalled that smoking is forbidden.\" \"Leaving the room tidy is appreciated.\"\n\nIt's the impersonal \"se\" I learned months ago, in its administrative version. Nobody requests, nobody recalls, nobody appreciates. The rule exists on its own, with nobody behind it, and that's why it's hard to argue with.\n\nIn administrative Spanish this is taken to the extreme: \"the review will be proceeded with\" doesn't say who will do what or when.\n\nIt's a device of distance and also of politeness, depending on who uses it. On a sign it works. In an email between colleagues it would sound almost aggressive.\n\nDiego uses it as a joke. When he wants coffee he says \"a break is requested\" in an airport announcer's voice.\n\nI've started doing it too, which probably means I've been at this company too long.",
+  "newLemmas": [
+    "rogar",
+    "común",
+    "prohibir",
+    "agradecer",
+    "administrativo",
+    "norma",
+    "extremo",
+    "proceder",
+    "recurso",
+    "agresivo",
+    "broma",
+    "fumar",
+    "revisión",
+    "según"
+  ],
+  "glosses": {
+    "Se ruega": {
+      "lemma": "rogar",
+      "gloss": "It is requested",
+      "pos": "verb",
+      "note": "No subject at all. Nobody is doing the requesting, which is exactly the point — there is nobody to argue with."
+    },
+    "se procederá": {
+      "lemma": "proceder",
+      "gloss": "will be proceeded with",
+      "pos": "verb",
+      "note": "Administrative Spanish at full strength: a complete sentence naming neither the actor nor the time."
+    },
+    "sujeto": {
+      "lemma": "sujeto",
+      "gloss": "subject",
+      "pos": "noun"
+    }
+  },
+  "phrases": [
+    {
+      "s": "Se ruega mantener el silencio",
+      "gloss": "Silence is requested"
+    },
+    {
+      "s": "está prohibido fumar",
+      "gloss": "smoking is forbidden"
+    },
+    {
+      "s": "sin nadie detrás",
+      "gloss": "with nobody behind it"
+    }
+  ]
+}

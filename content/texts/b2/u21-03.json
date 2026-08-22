@@ -1,0 +1,66 @@
+{
+  "id": "b2-u21-03-acabe-por-aceptar",
+  "level": "B2",
+  "unit": 21,
+  "order": 3,
+  "title": "Acabé por aceptar",
+  "titleEn": "I ended up accepting",
+  "blurbEn": "Verb chains that carry meaning English handles with adverbs.",
+  "grammarRefs": [
+    "perifrasis-avanzadas"
+  ],
+  "body": "Al final acepté el cambio de equipo.\n\nTardé tres semanas en decidirme y acabé por aceptar un lunes por la mañana, sin haberlo meditado especialmente ese día.\n\nEl español encadena verbos con una precisión que el inglés resuelve con adverbios sueltos.\n\n«Acabar por» significa terminar haciendo algo después de resistirse. «Llegar a» marca que se alcanzó un punto que parecía difícil: llegué a entender, llegó a decirlo. «Venir a» sugiere aproximación: viene a costar unos treinta euros. «Dar por» cierra un asunto: doy por hecho que vendrás, lo dieron por perdido. «Pasar a» marca una transición: pasamos a hablar de otra cosa.\n\nNinguna de esas construcciones es imprescindible. Todas se pueden esquivar. Pero esquivarlas cuesta más palabras y suena a traducción literal.\n\nMi jefe me dijo que había llegado a pensar que no aceptaría nunca. Le dije que yo también.\n\nEmpiezo en enero. Hasta entonces sigo haciendo exactamente lo mismo, que es la parte que nadie cuenta de los cambios importantes: el largo intervalo entre decidir y empezar.",
+  "translationEn": "In the end I accepted the change of team.\n\nIt took me three weeks to make up my mind and I ended up accepting on a Monday morning, without having thought it over particularly that day.\n\nSpanish chains verbs together with a precision that English handles with loose adverbs.\n\n\"Acabar por\" means to end up doing something after resisting it. \"Llegar a\" marks that a point which seemed hard was reached: llegué a entender, llegó a decirlo. \"Venir a\" suggests approximation: viene a costar unos treinta euros. \"Dar por\" closes a matter: doy por hecho que vendrás, lo dieron por perdido. \"Pasar a\" marks a transition: pasamos a hablar de otra cosa.\n\nNone of those constructions is essential. All of them can be dodged. But dodging them costs more words and sounds like a literal translation.\n\nMy boss told me he had come to think I would never accept. I told him so had I.\n\nI start in January. Until then I go on doing exactly the same thing, which is the part nobody mentions about important changes: the long interval between deciding and beginning.",
+  "newLemmas": [
+    "resistir",
+    "alcanzar",
+    "aproximación",
+    "transición",
+    "meditar",
+    "esquivar",
+    "literal",
+    "intervalo",
+    "imprescindible",
+    "adverbio",
+    "construcción",
+    "sugerir",
+    "traducción"
+  ],
+  "glosses": {
+    "acabé por aceptar": {
+      "lemma": "acabar",
+      "gloss": "I ended up accepting",
+      "pos": "verb",
+      "note": "'acabar por' + infinitive: to end up doing something you were resisting. Compare 'acabar de', which means to have just done it."
+    },
+    "había llegado a pensar": {
+      "lemma": "llegar",
+      "gloss": "he had come to think",
+      "pos": "verb",
+      "note": "'llegar a' marks reaching a point that seemed unlikely — often stronger than the plain verb."
+    },
+    "doy por hecho": {
+      "lemma": "dar",
+      "gloss": "I take it as given",
+      "pos": "verb"
+    }
+  },
+  "phrases": [
+    {
+      "s": "acabé por aceptar",
+      "gloss": "I ended up accepting"
+    },
+    {
+      "s": "llegué a entender",
+      "gloss": "I came to understand"
+    },
+    {
+      "s": "lo dieron por perdido",
+      "gloss": "they gave it up for lost"
+    },
+    {
+      "s": "pasamos a hablar",
+      "gloss": "we moved on to talking"
+    }
+  ]
+}

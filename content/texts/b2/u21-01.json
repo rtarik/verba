@@ -1,0 +1,65 @@
+{
+  "id": "b2-u21-01-le-escribo-para",
+  "level": "B2",
+  "unit": 21,
+  "order": 1,
+  "title": "Le escribo para",
+  "titleEn": "I am writing to",
+  "blurbEn": "The same message twice: eight words to a colleague, twenty-two to a client, and no extra information in either.",
+  "grammarRefs": [
+    "registro-formal"
+  ],
+  "body": "Esta mañana he escrito dos mensajes sobre exactamente lo mismo.\n\nEl primero, a Diego: «oye, ¿me pasas el informe cuando puedas? gracias».\n\nEl segundo, al cliente: «Estimado señor Ruiz: le escribo para solicitarle el informe correspondiente al primer trimestre. Quedo a la espera de su respuesta. Atentamente, Ana».\n\nVeintidós palabras contra ocho, y ninguna información añadida.\n\nEl registro formal en español no es simplemente vocabulario más largo. Cambia tres cosas: el tratamiento pasa a usted, las peticiones se vuelven indirectas, y los verbos se alejan del presente.\n\n«¿Me pasas el informe?» se convierte en «¿podría enviarme el informe?». «Necesito» se convierte en «necesitaría». «Quiero» se convierte en «quisiera».\n\nEs el mismo mecanismo de cortesía que aprendí en el aeropuerto, aplicado con más ceremonia.\n\nAl principio me parecía absurdo. Ahora entiendo que no se trata de sonar culta, sino de dejar espacio: cuanto más indirecta es una petición, más fácil resulta decir que no.\n\nLa cortesía, en el fondo, es una forma de proteger al otro.\n\nDiego contestó en cuatro minutos. El cliente, en dos días.",
+  "translationEn": "This morning I wrote two messages about exactly the same thing.\n\nThe first, to Diego: \"hey, can you send me the report when you get a chance? thanks\".\n\nThe second, to the client: \"Dear Mr Ruiz: I am writing to request the report for the first quarter. I look forward to your reply. Yours sincerely, Ana\".\n\nTwenty-two words against eight, and no added information.\n\nFormal register in Spanish isn't simply longer vocabulary. It changes three things: the form of address shifts to usted, requests become indirect, and the verbs move away from the present.\n\n\"¿Me pasas el informe?\" becomes \"¿podría enviarme el informe?\". \"Necesito\" becomes \"necesitaría\". \"Quiero\" becomes \"quisiera\".\n\nIt's the same politeness mechanism I learned at the airport, applied with more ceremony.\n\nAt first it seemed absurd to me. Now I understand it isn't about sounding educated, but about leaving space: the more indirect a request is, the easier it becomes to say no.\n\nPoliteness, fundamentally, is a way of protecting the other person.\n\nDiego replied in four minutes. The client, in two days.",
+  "newLemmas": [
+    "solicitar",
+    "correspondiente",
+    "trimestre",
+    "espera",
+    "tratamiento",
+    "petición",
+    "culto",
+    "espacio",
+    "proteger",
+    "registro",
+    "señor",
+    "indirecto",
+    "estimado",
+    "atento",
+    "veintidós",
+    "contra"
+  ],
+  "glosses": {
+    "necesitaría": {
+      "lemma": "necesitar",
+      "gloss": "I would need",
+      "pos": "verb",
+      "note": "The conditional as politeness — Unit 18's mechanism, now doing professional work."
+    },
+    "quisiera": {
+      "lemma": "querer",
+      "gloss": "I would like",
+      "pos": "verb",
+      "note": "Imperfect subjunctive used as a courtesy formula. The most formal of the three."
+    },
+    "Atentamente": {
+      "lemma": "atento",
+      "gloss": "Yours sincerely",
+      "pos": "adverb"
+    }
+  },
+  "phrases": [
+    {
+      "s": "le escribo para",
+      "gloss": "I am writing to"
+    },
+    {
+      "s": "Quedo a la espera de su respuesta",
+      "gloss": "I look forward to your reply"
+    },
+    {
+      "s": "no se trata de",
+      "gloss": "it isn't a question of"
+    }
+  ]
+}

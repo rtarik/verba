@@ -1,0 +1,20 @@
+{
+  "id": "b2-u21-06-quedo-a-la-espera",
+  "level": "B2", "unit": 21, "order": 6,
+  "title": "Quedo a la espera",
+  "titleEn": "I look forward to hearing from you",
+  "blurbEn": "The last text of the unit: a first formal email sent without help, and what it did and didn't prove.",
+  "grammarRefs": ["correspondencia", "registro-formal"],
+  "body": "Ayer envié mi primer correo formal en español sin ayuda de nadie.\n\nLo escribí, lo releí cuatro veces, cambié dos palabras, lo volví a leer y lo mandé con el estómago encogido.\n\nEra un correo de nueve líneas a una empresa de Sevilla, pidiendo información sobre un curso de verano. Nada importante. Pero llevaba «estimados señores», «le agradecería que me facilitara» y «quedo a la espera de su respuesta», y las tres fórmulas las escribí sin buscarlas.\n\nContestaron a las dos horas con un correo casi idéntico al mío, lo cual me pareció una señal excelente: escribo como escriben ellos.\n\nHace un año no habría sido capaz de pedir un café por escrito.\n\nLo raro del registro formal es que es la parte del idioma que más se parece a un disfraz y, al mismo tiempo, la que más rápido se aprende. Son cuatro fórmulas y un poco de distancia calculada.\n\nLo difícil sigue siendo lo otro: hablar sin pensar, discutir sin preparar, contar algo gracioso a tiempo.\n\nEso no viene en ningún manual y no se puede ensayar.",
+  "translationEn": "Yesterday I sent my first formal email in Spanish with nobody's help.\n\nI wrote it, reread it four times, changed two words, read it again and sent it with my stomach in knots.\n\nIt was a nine-line email to a company in Seville, asking for information about a summer course. Nothing important. But it carried \"estimados señores\", \"le agradecería que me facilitara\" and \"quedo a la espera de su respuesta\", and I wrote all three formulas without looking them up.\n\nThey replied within two hours with an email almost identical to mine, which struck me as an excellent sign: I write the way they write.\n\nA year ago I wouldn't have been capable of ordering a coffee in writing.\n\nThe odd thing about formal register is that it's the part of the language that most resembles a costume and, at the same time, the part learned fastest. It's four formulas and a little calculated distance.\n\nThe hard part is still the other one: talking without thinking, arguing without preparing, saying something funny at the right moment.\n\nThat doesn't come in any manual and can't be rehearsed.",
+  "newLemmas": ["estómago", "encoger", "facilitar", "capaz", "disfraz", "gracioso", "excelente", "calcular", "ensayar"],
+  "glosses": {
+    "le agradecería que me facilitara": { "lemma": "agradecer", "gloss": "I would be grateful if you could provide me", "pos": "verb", "note": "Conditional in the main clause, imperfect subjunctive after it — the sequence of tenses doing formal work." },
+    "por escrito": { "lemma": "escribir", "gloss": "in writing", "pos": "verb" }
+  },
+  "phrases": [
+    { "s": "quedo a la espera de su respuesta", "gloss": "I look forward to your reply" },
+    { "s": "no habría sido capaz", "gloss": "I wouldn't have been able" },
+    { "s": "por escrito", "gloss": "in writing" }
+  ]
+}

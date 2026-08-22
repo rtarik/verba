@@ -412,8 +412,14 @@
         "advanced perífrasis",
         "precision and hedging"
       ],
-      "textIds": [],
-      "summaryEn": "Spanish at work — how formality reshapes verb forms and sentence length, plus the verb chains that let you say something carefully rather than bluntly."
+      "textIds": [
+        "b2-u21-01-le-escribo-para",
+        "b2-u21-02-estimado-senor",
+        "b2-u21-03-acabe-por-aceptar",
+        "b2-u21-04-por-lo-visto",
+        "b2-u21-05-se-ruega-no-fumar",
+        "b2-u21-06-quedo-a-la-espera"
+      ]
     },
     {
       "unit": 22,

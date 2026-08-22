@@ -1,0 +1,69 @@
+{
+  "id": "b2-u21-02-estimado-senor",
+  "level": "B2",
+  "unit": 21,
+  "order": 2,
+  "title": "Estimado señor",
+  "titleEn": "Dear Sir",
+  "blurbEn": "The conventions of a formal email, almost all of which live in the first line and the last.",
+  "grammarRefs": [
+    "correspondencia",
+    "registro-formal"
+  ],
+  "body": "Escribir un correo formal en español tiene sus reglas, y casi todas son de apertura y cierre.\n\nSe empieza con «Estimado señor» o «Estimada señora», seguido de dos puntos, no de coma. En español los dos puntos son obligatorios después del saludo; la coma es un préstamo del inglés que se ve cada vez más y que sigue siendo incorrecto.\n\nSi no se conoce el nombre, «Muy señores míos». Si hay confianza, «Hola, Marta» sirve perfectamente.\n\nEn el cuerpo, la fórmula más útil es «le escribo para», que anuncia el motivo en la primera línea. Después vienen las peticiones indirectas y, si hace falta, una disculpa por las molestias.\n\nEl cierre tiene una escala completa: «Un saludo» para casi todo, «Saludos cordiales» un escalón por encima, «Atentamente» para lo verdaderamente formal y «Le saluda atentamente» para cartas oficiales.\n\nMi jefe firma todo con «Un saludo», incluso las malas noticias. Diego firma con su nombre a secas.\n\nYo todavía dudo entre las cuatro opciones cada vez que escribo a alguien que no conozco.\n\nEs un idioma dentro del idioma.",
+  "translationEn": "Writing a formal email in Spanish has its rules, and almost all of them concern the opening and the closing.\n\nYou begin with \"Estimado señor\" or \"Estimada señora\", followed by a colon, not a comma. In Spanish the colon is compulsory after the greeting; the comma is a borrowing from English that appears more and more often and remains incorrect.\n\nIf you don't know the name, \"Muy señores míos\". If there's some familiarity, \"Hola, Marta\" works perfectly.\n\nIn the body, the most useful formula is \"le escribo para\", which announces the reason in the first line. Then come the indirect requests and, if necessary, an apology for the inconvenience.\n\nThe closing has a complete scale: \"Un saludo\" for almost everything, \"Saludos cordiales\" a rung above, \"Atentamente\" for the genuinely formal and \"Le saluda atentamente\" for official letters.\n\nMy boss signs everything with \"Un saludo\", even bad news. Diego signs with his name and nothing else.\n\nI still hesitate between the four options every time I write to someone I don't know.\n\nIt's a language inside the language.",
+  "newLemmas": [
+    "apertura",
+    "cierre",
+    "saludo",
+    "cuerpo",
+    "anunciar",
+    "disculpa",
+    "molestia",
+    "cordial",
+    "opción",
+    "carta",
+    "escala",
+    "incorrecto",
+    "saludar",
+    "verdadero",
+    "mío"
+  ],
+  "glosses": {
+    "dos puntos": {
+      "lemma": "punto",
+      "gloss": "colon",
+      "pos": "noun",
+      "note": "Spanish uses a colon after the greeting where English uses a comma. Using the comma is a visible anglicism."
+    },
+    "a secas": {
+      "lemma": "seco",
+      "gloss": "and nothing else",
+      "pos": "adjective"
+    },
+    "Muy señores míos": {
+      "lemma": "mío",
+      "gloss": "Dear Sirs",
+      "pos": "possessive",
+      "note": "The formula when you don't know who will read it. Increasingly replaced by 'Estimado equipo' or similar."
+    }
+  },
+  "phrases": [
+    {
+      "s": "Estimado señor",
+      "gloss": "Dear Sir"
+    },
+    {
+      "s": "Saludos cordiales",
+      "gloss": "Kind regards"
+    },
+    {
+      "s": "a secas",
+      "gloss": "and nothing else"
+    },
+    {
+      "s": "un idioma dentro del idioma",
+      "gloss": "a language inside the language"
+    }
+  ]
+}
