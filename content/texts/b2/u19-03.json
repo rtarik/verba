@@ -1,0 +1,64 @@
+{
+  "id": "b2-u19-03-antes-de-que-se-fuera",
+  "level": "B2",
+  "unit": 19,
+  "order": 3,
+  "title": "Antes de que se fuera",
+  "titleEn": "Before he left",
+  "blurbEn": "The Unit 13 conjunctions, moved into the past — including a future seen from inside one.",
+  "grammarRefs": [
+    "conjunciones-pasado"
+  ],
+  "body": "Mi abuela me contó una vez que, antes de que se fuera mi abuelo a trabajar, ella le preparaba el café a las cinco de la mañana.\n\nLo hizo durante cuarenta años, sin que él se lo pidiera nunca y sin que ella lo mencionara jamás. No era romanticismo. Era una rutina silenciosa, casi una ceremonia.\n\nLas conjunciones que exigen subjuntivo lo siguen exigiendo en pasado; simplemente cambian de tiempo. «Antes de que se vaya» en presente, «antes de que se fuera» en pasado. «Para que venga», «para que viniera». «Sin que lo sepa», «sin que lo supiera».\n\nY las que admiten los dos modos siguen admitiéndolos: «cuando llegaba» era costumbre; «cuando llegara» era todavía futuro, visto desde el pasado.\n\nEsa última construcción me costó semanas y todavía la pienso antes de decirla. Un futuro dentro de un pasado suena a contradicción y es una de las cosas más normales del mundo: «me dijo que me llamaría cuando llegara».\n\nMi abuela nunca ha abierto un libro de gramática y no comete un solo error. Le pregunté cómo lo sabía y me dijo que se aprende oyendo, que fue exactamente lo que dijo mi profesora el primer día.\n\nDos mujeres que no se conocen, la misma frase, cincuenta años de diferencia.\n\nYo lo anoté en una libreta.",
+  "translationEn": "My grandmother told me once that, before my grandfather left for work, she used to make his coffee at five in the morning.\n\nShe did it for forty years, without his ever asking her to and without her ever mentioning it. It wasn't romanticism. It was a silent routine, almost a ceremony.\n\nThe conjunctions that require the subjunctive go on requiring it in the past; they simply change tense. \"Antes de que se vaya\" in the present, \"antes de que se fuera\" in the past. \"Para que venga\", \"para que viniera\". \"Sin que lo sepa\", \"sin que lo supiera\".\n\nAnd the ones that allow both moods go on allowing them: \"cuando llegaba\" was a habit; \"cuando llegara\" was still the future, seen from the past.\n\nThat last construction took me weeks and I still think about it before saying it. A future inside a past sounds like a contradiction and is one of the most ordinary things in the world: \"he told me he'd call me when he arrived\".\n\nMy grandmother has never opened a grammar book and doesn't make a single mistake. I asked her how she knew and she said you learn by listening, which was exactly what my teacher said on the first day.\n\nTwo women who have never met, the same sentence, fifty years apart.\n\nI wrote it down in a notebook.",
+  "newLemmas": [
+    "exigir",
+    "jamás",
+    "romanticismo",
+    "rutina",
+    "silencioso",
+    "ceremonia",
+    "contradicción",
+    "anotar",
+    "libreta",
+    "cincuenta",
+    "conjunción",
+    "mujer"
+  ],
+  "glosses": {
+    "se fuera": {
+      "lemma": "ir",
+      "gloss": "he left",
+      "pos": "verb",
+      "note": "'Antes de que' always takes the subjunctive; in a past narrative it takes the imperfect one."
+    },
+    "llegara": {
+      "lemma": "llegar",
+      "gloss": "he arrived",
+      "pos": "verb",
+      "note": "A future seen from the past. He hadn't arrived yet at the moment of speaking, so 'cuando' takes the subjunctive — shifted back a tense."
+    },
+    "llegaba": {
+      "lemma": "llegar",
+      "gloss": "he used to arrive",
+      "pos": "verb",
+      "note": "Indicative, because this was a habit that really happened. Same conjunction, opposite mood — the Unit 13 test, one tense down."
+    }
+  },
+  "phrases": [
+    {
+      "s": "antes de que se fuera",
+      "gloss": "before he left",
+      "at": 7
+    },
+    {
+      "s": "sin que él se lo pidiera",
+      "gloss": "without his ever asking her to"
+    },
+    {
+      "s": "cuando llegara",
+      "gloss": "when he arrived",
+      "at": 111
+    }
+  ]
+}

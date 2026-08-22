@@ -1,0 +1,64 @@
+{
+  "id": "b2-u19-02-dijo-que-estaba-bien",
+  "level": "B2",
+  "unit": 19,
+  "order": 2,
+  "title": "Dijo que estaba bien",
+  "titleEn": "He said he was fine",
+  "blurbEn": "A forty-minute phone call, retold. Every tense in it steps down one rung.",
+  "grammarRefs": [
+    "estilo-indirecto-pasado"
+  ],
+  "body": "Pablo llamó anoche y estuvimos hablando cuarenta minutos. Esta mañana se lo he contado todo a mi hermana mientras desayunábamos, y me he dado cuenta de que contar una conversación es casi tan difícil como tenerla, y bastante menos divertido.\n\nDijo que estaba bien. Dijo que había cambiado de trabajo en enero. Dijo que vendría en primavera si conseguía las vacaciones. Dijo que había pensado mucho en el viaje del año pasado y que quería repetirlo.\n\nCada verbo baja un escalón, como si la memoria pesara. El presente se vuelve imperfecto; el perfecto y el indefinido se vuelven pluscuamperfecto; el futuro se vuelve condicional; el presente de subjuntivo se vuelve imperfecto de subjuntivo.\n\nEs una cadena lógica y completamente automática para un hispanohablante, que no sabe que la está aplicando.\n\nPara mí todavía no lo es. Mientras hablo voy traduciendo mentalmente, y a veces el segundo verbo llega tarde y estropea la frase entera.\n\nMi hermana me escuchó sin interrumpir, que en ella es casi un gesto de cariño. Al final dijo una sola cosa:\n\n—O sea, que viene en primavera.\n\nCuarenta minutos de conversación resumidos en seis palabras. Los hermanos tienen ese talento y ninguna piedad.",
+  "translationEn": "Pablo called last night and we talked for forty minutes. This morning I told my sister everything over breakfast, and I realised that reporting a conversation is almost as hard as having one, and considerably less fun.\n\nHe said he was fine. He said he had changed jobs in January. He said he would come in spring if he could get the time off. He said he had thought a lot about last year's trip and that he wanted to do it again.\n\nEvery verb drops a rung, as if memory had weight. The present becomes the imperfect; the perfect and the preterite become the pluperfect; the future becomes the conditional; the present subjunctive becomes the imperfect subjunctive.\n\nIt's a logical chain and completely automatic for a Spanish speaker, who doesn't know they're applying it.\n\nFor me it still isn't. While I talk I'm translating in my head, and sometimes the second verb arrives late and ruins the whole sentence.\n\nMy sister listened without interrupting, which from her is almost a gesture of affection. At the end she said one thing:\n\n\"So, he's coming in spring.\"\n\nForty minutes of conversation summarised in six words. Siblings have that talent and no mercy.",
+  "newLemmas": [
+    "enero",
+    "mental",
+    "interrumpir",
+    "estropear",
+    "resumir",
+    "pesar",
+    "piedad",
+    "indefinido"
+  ],
+  "glosses": {
+    "estaba": {
+      "lemma": "estar",
+      "gloss": "he was",
+      "pos": "verb",
+      "note": "He said 'estoy bien'. Present becomes imperfect."
+    },
+    "había cambiado": {
+      "lemma": "cambiar",
+      "gloss": "he had changed",
+      "pos": "verb",
+      "note": "He said 'cambié' — a preterite. Reported, it becomes pluperfect."
+    },
+    "vendría": {
+      "lemma": "venir",
+      "gloss": "he would come",
+      "pos": "verb",
+      "note": "He said 'iré'. Futures become conditionals."
+    },
+    "conseguía": {
+      "lemma": "conseguir",
+      "gloss": "he could get",
+      "pos": "verb",
+      "note": "The 'si' clause backshifts too: 'si consigo' becomes 'si conseguía'."
+    }
+  },
+  "phrases": [
+    {
+      "s": "Dijo que estaba bien",
+      "gloss": "He said he was fine"
+    },
+    {
+      "s": "baja un escalón",
+      "gloss": "drops a rung"
+    },
+    {
+      "s": "O sea",
+      "gloss": "So, in other words"
+    }
+  ]
+}

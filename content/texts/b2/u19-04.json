@@ -1,0 +1,60 @@
+{
+  "id": "b2-u19-04-me-pregunto-que-cuando-volvia",
+  "level": "B2",
+  "unit": 19,
+  "order": 4,
+  "title": "Me preguntó que cuándo volvía",
+  "titleEn": "She asked me when I was coming back",
+  "blurbEn": "Questions, reported and backshifted — plus a small Spanish habit that means nothing at all.",
+  "grammarRefs": [
+    "estilo-indirecto-pasado"
+  ],
+  "body": "En el aeropuerto, la mujer del mostrador me preguntó que cuándo volvía, con esa mezcla de prisa y amabilidad de la gente que repite las mismas preguntas diez horas al día.\n\nLe dije que en julio. Me preguntó si viajaba sola y si llevaba equipaje de mano. Me preguntó dónde había comprado el billete y por qué no lo había hecho por internet.\n\nLas preguntas contadas pierden los signos, ganan un «si» o una palabra interrogativa, y bajan de tiempo como todo lo demás. «¿Cuándo vuelves?» se convierte en «me preguntó que cuándo volvía». «¿Viajas sola?» en «me preguntó si viajaba sola».\n\nEse «que» delante de la palabra interrogativa es opcional y muy español. No significa nada; solo avisa de que viene una pregunta, como quien carraspea antes de hablar.\n\nContesté a todo con frases cortas, que es lo que hago cuando estoy nerviosa en un idioma que no es el mío. Ella no lo notó, o fingió no notarlo, que en atención al cliente viene a ser lo mismo.\n\nAl final me deseó buen viaje y me llamó «cariño», que en un aeropuerto español significa que todo ha ido bien.\n\nMe quedé pensando en eso durante todo el vuelo, entre la fila veintitrés y una película que no vi.",
+  "translationEn": "At the airport, the woman at the desk asked me when I was coming back, with that mixture of haste and kindness you get from people who repeat the same questions ten hours a day.\n\nI said in July. She asked whether I was travelling alone and whether I had hand luggage. She asked where I had bought the ticket and why I hadn't done it online.\n\nReported questions lose their marks, gain a \"si\" or a question word, and drop a tense like everything else. \"¿Cuándo vuelves?\" becomes \"me preguntó que cuándo volvía\". \"¿Viajas sola?\" becomes \"me preguntó si viajaba sola\".\n\nThat \"que\" in front of the question word is optional and very Spanish. It means nothing; it just signals that a question is coming, like someone clearing their throat before speaking.\n\nI answered everything in short sentences, which is what I do when I'm nervous in a language that isn't mine. She didn't notice, or pretended not to, which in customer service comes to the same thing.\n\nAt the end she wished me a good trip and called me \"cariño\", which in a Spanish airport means everything has gone well.\n\nI spent the whole flight thinking about that, between row twenty-three and a film I didn't watch.",
+  "newLemmas": [
+    "mezcla",
+    "equipaje",
+    "opcional",
+    "carraspear",
+    "atención",
+    "fila",
+    "veintitrés",
+    "asiento",
+    "cuándo"
+  ],
+  "glosses": {
+    "volvía": {
+      "lemma": "volver",
+      "gloss": "I was coming back",
+      "pos": "verb",
+      "note": "She asked '¿cuándo vuelves?'. Present becomes imperfect, exactly as in a reported statement."
+    },
+    "que cuándo": {
+      "lemma": "que",
+      "gloss": "(introduces a question)",
+      "pos": "conjunction",
+      "note": "Untranslatable and optional. Very common in speech, rarer in writing."
+    },
+    "asiento": {
+      "lemma": "asiento",
+      "gloss": "seat",
+      "pos": "noun"
+    }
+  },
+  "phrases": [
+    {
+      "s": "me preguntó que cuándo volvía",
+      "gloss": "she asked me when I was coming back",
+      "at": 7
+    },
+    {
+      "s": "me preguntó si viajaba sola",
+      "gloss": "she asked whether I was travelling alone",
+      "at": 36
+    },
+    {
+      "s": "equipaje de mano",
+      "gloss": "hand luggage"
+    }
+  ]
+}

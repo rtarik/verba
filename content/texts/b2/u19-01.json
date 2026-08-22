@@ -1,0 +1,55 @@
+{
+  "id": "b2-u19-01-me-pidio-que-lo-pensara",
+  "level": "B2",
+  "unit": 19,
+  "order": 1,
+  "title": "Me pidió que lo pensara",
+  "titleEn": "He asked me to think about it",
+  "blurbEn": "Orders, repeated. The sequence-of-tenses rule from Unit 18, now applied to everything anyone asks you to do.",
+  "grammarRefs": [
+    "ordenes-indirectas"
+  ],
+  "body": "El lunes mi jefe me pidió que pensara en el cambio de equipo. El viernes me preguntó si ya lo había pensado. Entre las dos preguntas hubo cuatro días y ninguna decisión.\n\nLe dije que necesitaba más tiempo, que es lo que digo siempre cuando no sé qué decir y no quiero admitirlo.\n\nCuando se cuenta una orden, el verbo se va al subjuntivo; y si el verbo principal está en pasado, al imperfecto de subjuntivo. Él dijo «piénsalo» y yo cuento «me pidió que lo pensara». Dijo «ven el viernes» y yo cuento «me dijo que viniera el viernes».\n\nEs la correlación de tiempos otra vez, aplicada a las órdenes. Nada nuevo: el mismo mecanismo en otro sitio.\n\nDiego opina que aceptar es lo lógico y que mi indecisión es un lujo. Tiene razón en lo primero y probablemente también en lo segundo.\n\nLo raro es que en español una orden contada suena más suave que la original, como si al repetirla perdiera filo. «Ven» es imperativo, casi un empujón. «Me dijo que viniera» ya parece una sugerencia.\n\nQuizá por eso repito las órdenes de mi jefe en voz alta antes de contestarlas. Suenan menos definitivas, más negociables.",
+  "translationEn": "On Monday my boss asked me to think about the change of team. On Friday he asked whether I had thought about it. Between the two questions there were four days and no decision.\n\nI told him I needed more time, which is what I always say when I don't know what to say and don't want to admit it.\n\nWhen you report an order, the verb goes into the subjunctive; and if the main verb is in the past, into the imperfect subjunctive. He said \"piénsalo\" and I report \"me pidió que lo pensara\". He said \"ven el viernes\" and I report \"me dijo que viniera el viernes\".\n\nIt's the sequence of tenses again, applied to orders. Nothing new: the same mechanism somewhere else.\n\nDiego reckons accepting is the logical thing and that my indecision is a luxury. He's right about the first and probably about the second too.\n\nThe odd thing is that in Spanish a reported order sounds softer than the original, as if repeating it blunted the edge. \"Ven\" is an imperative, almost a shove. \"Me dijo que viniera\" already sounds like a suggestion.\n\nMaybe that's why I repeat my boss's orders out loud before answering them. They sound less final, more negotiable.",
+  "newLemmas": [
+    "decisión",
+    "indecisión",
+    "lujo",
+    "filo",
+    "empujón",
+    "sugerencia",
+    "definitivo",
+    "negociable",
+    "original",
+    "pregunta"
+  ],
+  "glosses": {
+    "pensara": {
+      "lemma": "pensar",
+      "gloss": "think about",
+      "pos": "verb",
+      "note": "'Pidió' is past, so the subjunctive after it must be imperfect. Compare 'me pide que lo piense' — present main verb, present subjunctive."
+    },
+    "viniera": {
+      "lemma": "venir",
+      "gloss": "come",
+      "pos": "verb",
+      "note": "The original was the command 'ven'. Reported after a past verb, every command lands here."
+    }
+  },
+  "phrases": [
+    {
+      "s": "me pidió que pensara",
+      "gloss": "he asked me to think about"
+    },
+    {
+      "s": "me dijo que viniera",
+      "gloss": "he told me to come",
+      "at": 94
+    },
+    {
+      "s": "en voz alta",
+      "gloss": "out loud"
+    }
+  ]
+}

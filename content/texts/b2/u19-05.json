@@ -1,0 +1,60 @@
+{
+  "id": "b2-u19-05-dijo-que-la-tierra-es-redonda",
+  "level": "B2",
+  "unit": 19,
+  "order": 5,
+  "title": "Dijo que la tierra es redonda",
+  "titleEn": "He said the earth is round",
+  "blurbEn": "Where the backshifting rule stops being a rule and becomes a choice about what you mean.",
+  "grammarRefs": [
+    "estilo-indirecto-pasado"
+  ],
+  "body": "No todo baja de tiempo, y descubrirlo fue un alivio.\n\nSi lo que se dijo sigue siendo verdad ahora, el verbo puede quedarse en presente. «Me dijo que tiene dos hermanos» es perfectamente correcto: los sigue teniendo.\n\n«Me dijo que tenía dos hermanos» también lo es, pero suena a que aquello pertenece al pasado, o a que uno no está del todo seguro de que siga siendo cierto.\n\nLa diferencia es sutil y real. Con verdades generales casi nadie baja el tiempo: nadie dice «el profesor explicó que la tierra era redonda», salvo que quiera insinuar algo raro sobre el profesor.\n\nCon planes que todavía no han ocurrido pasa lo mismo. «Me dijo que viene en primavera» mantiene la primavera abierta. «Me dijo que vendría» la aleja un poco, aunque no la cancele.\n\nEs una de esas zonas donde la gramática deja de ser un sistema de reglas y se convierte en una cuestión de intención.\n\nAl principio esas zonas me daban miedo, porque no había una respuesta correcta que memorizar.\n\nAhora son mi parte favorita. Son donde el idioma deja de ser un examen y empieza a ser una manera de decir algo.",
+  "translationEn": "Not everything drops a tense, and discovering that was a relief.\n\nIf what was said is still true now, the verb can stay in the present. \"Me dijo que tiene dos hermanos\" is perfectly correct: he still has them.\n\n\"Me dijo que tenía dos hermanos\" is correct too, but it sounds as though that belongs to the past, or as though you aren't entirely sure it's still true.\n\nThe difference is subtle and real. With general truths almost nobody backshifts: nobody says \"the teacher explained that the earth was round\", unless they want to imply something odd about the teacher.\n\nWith plans that haven't happened yet it's the same. \"Me dijo que viene en primavera\" keeps spring open. \"Me dijo que vendría\" pushes it slightly further away, without cancelling it.\n\nIt's one of those areas where grammar stops being a system of rules and becomes a question of intention.\n\nAt first those areas frightened me, because there was no correct answer to memorise.\n\nNow they're my favourite part. They're where the language stops being an exam and starts being a way of saying something.",
+  "newLemmas": [
+    "alivio",
+    "tierra",
+    "redondo",
+    "salvo",
+    "insinuar",
+    "cancelar",
+    "zona",
+    "intención",
+    "memorizar",
+    "general"
+  ],
+  "glosses": {
+    "tiene": {
+      "lemma": "tener",
+      "gloss": "he has",
+      "pos": "verb",
+      "note": "No backshift, because he still has them. The rule bends when the statement is still true."
+    },
+    "era": {
+      "lemma": "ser",
+      "gloss": "was",
+      "pos": "verb",
+      "note": "Grammatically fine, but it quietly suggests the earth's roundness was a temporary opinion. Backshifting a general truth implies doubt about it."
+    },
+    "memorizar": {
+      "lemma": "memorizar",
+      "gloss": "to memorise",
+      "pos": "verb"
+    }
+  },
+  "phrases": [
+    {
+      "s": "sigue siendo verdad",
+      "gloss": "is still true"
+    },
+    {
+      "s": "una cuestión de intención",
+      "gloss": "a question of intention"
+    },
+    {
+      "s": "deja de ser",
+      "gloss": "stops being",
+      "at": 141
+    }
+  ]
+}

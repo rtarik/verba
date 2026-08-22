@@ -372,8 +372,14 @@
         "indirect commands",
         "backshifting"
       ],
-      "textIds": [],
-      "summaryEn": "Everything that happens when the subjunctive moves into the past: reporting what someone asked you to do, and the conjunctions that drag their verbs back a tense with them."
+      "textIds": [
+        "b2-u19-01-me-pidio-que-lo-pensara",
+        "b2-u19-02-dijo-que-estaba-bien",
+        "b2-u19-03-antes-de-que-se-fuera",
+        "b2-u19-04-me-pregunto-que-cuando-volvia",
+        "b2-u19-05-dijo-que-la-tierra-es-redonda",
+        "b2-u19-06-lo-que-dijo-mi-profesora"
+      ]
     },
     {
       "unit": 20,

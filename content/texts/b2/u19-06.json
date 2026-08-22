@@ -1,0 +1,60 @@
+{
+  "id": "b2-u19-06-lo-que-dijo-mi-profesora",
+  "level": "B2",
+  "unit": 19,
+  "order": 6,
+  "title": "Lo que dijo mi profesora",
+  "titleEn": "What my teacher said",
+  "blurbEn": "The last text of the unit: three subjunctives in a two-line email, and none of them put there to teach anything.",
+  "grammarRefs": [
+    "ordenes-indirectas",
+    "conjunciones-pasado"
+  ],
+  "body": "Ayer terminé de leer el primer libro entero en español. Tardé cinco semanas, no entendí el treinta por ciento y me salté dos capítulos, pero llegué al final.\n\nSe lo conté a mi profesora por correo, con más orgullo del que pretendía demostrar, y me contestó en dos líneas, que es su estilo.\n\nDijo que se alegraba mucho. Dijo que no me preocupara por ese treinta por ciento, porque el porcentaje bajaría solo. Y dijo que buscara otro libro esa misma semana, antes de que se me pasaran las ganas.\n\nLe hice caso. Empecé otro el domingo.\n\nReleyendo su mensaje me di cuenta de que hay tres subjuntivos en dos líneas, y de que hace un año no habría entendido ninguno: «que no me preocupara», «que buscara», «antes de que se me pasaran».\n\nElla no los puso ahí para enseñarme nada. Los puso porque es como se dice, y esa distinción lo es todo.\n\nCreo que esa es la única meta que tengo ahora: llegar a un punto en el que las formas difíciles no sean una decisión, sino simplemente la manera en que me sale la frase.\n\nTodavía falta. Pero ya no parece imposible, que es bastante más de lo que podía decir en enero.",
+  "translationEn": "Yesterday I finished reading my first whole book in Spanish. It took me five weeks, I didn't understand thirty per cent and I skipped two chapters, but I got to the end.\n\nI told my teacher by email, with more pride than I meant to show, and she replied in two lines, which is her style.\n\nShe said she was very glad. She said I shouldn't worry about that thirty per cent, because the percentage would come down on its own. And she said to look for another book that same week, before I lost the appetite for it.\n\nI did as she said. I started another on Sunday.\n\nRereading her message I realised there are three subjunctives in two lines, and that a year ago I wouldn't have understood any of them: \"que no me preocupara\", \"que buscara\", \"antes de que se me pasaran\".\n\nShe didn't put them there to teach me anything. She put them there because that's how you say it, and that distinction is everything.\n\nI think that's the only goal I have now: to reach a point where the difficult forms aren't a decision, but simply the way the sentence comes out.\n\nThere's a way to go. But it no longer seems impossible, which is considerably more than I could say in January.",
+  "newLemmas": [
+    "saltar",
+    "demostrar",
+    "línea",
+    "estilo",
+    "porcentaje",
+    "meta",
+    "punto",
+    "ahí"
+  ],
+  "glosses": {
+    "preocupara": {
+      "lemma": "preocupar",
+      "gloss": "worry",
+      "pos": "verb",
+      "note": "A reported negative command: 'no te preocupes' → 'dijo que no me preocupara'."
+    },
+    "buscara": {
+      "lemma": "buscar",
+      "gloss": "look for",
+      "pos": "verb",
+      "note": "A reported positive command, and it lands in the same form. Positive and negative commands merge once reported."
+    },
+    "pasaran": {
+      "lemma": "pasar",
+      "gloss": "went away",
+      "pos": "verb",
+      "note": "'antes de que' + imperfect subjunctive, because the main verb is past."
+    }
+  },
+  "phrases": [
+    {
+      "s": "que no me preocupara",
+      "gloss": "that I shouldn't worry",
+      "at": 59
+    },
+    {
+      "s": "antes de que se me pasaran las ganas",
+      "gloss": "before I lost the appetite for it"
+    },
+    {
+      "s": "es como se dice",
+      "gloss": "that's how you say it"
+    }
+  ]
+}
