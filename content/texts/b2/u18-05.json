@@ -1,0 +1,56 @@
+{
+  "id": "b2-u18-05-como-si-nada",
+  "level": "B2",
+  "unit": 18,
+  "order": 5,
+  "title": "Como si nada",
+  "titleEn": "As if nothing had happened",
+  "blurbEn": "Two constructions that always take this tense, and a grandmother who uses both without ever having studied grammar.",
+  "grammarRefs": [
+    "imperfecto-subjuntivo"
+  ],
+  "body": "Mi abuela habla de mi abuelo en presente, como si estuviera en la habitación de al lado, y a nadie de la familia le parece extraño.\n\n«Ya sabes cómo es», dice, aunque hace once años que murió.\n\n«Como si» siempre lleva imperfecto de subjuntivo, incluso cuando la frase principal está en presente. Habla como si estuviera aquí. Me mira como si supiera algo. Se comporta como si nada.\n\nEs una construcción rara y preciosa: describe algo falso sin llegar a llamarlo mentira.\n\n«Ojalá» funciona igual cuando el deseo es imposible. «Ojalá llueva» es una esperanza razonable. «Ojalá lloviera» significa que no va a llover y que aun así lo pido.\n\nLa diferencia entre las dos frases es exactamente la cantidad de esperanza que queda.\n\nMi abuela usa las dos formas sin haber estudiado gramática nunca. Dice «ojalá estuviera aquí» y luego sigue poniendo la mesa para uno, por costumbre o por terquedad.\n\nAl principio me incomodaba. Ahora me parece la forma más honesta de recordar a alguien.\n\nMi madre dice que es su manera de no despedirse. Yo creo que es su manera de seguir hablando con él.\n\nHay duelos que no terminan. Solo cambian de tiempo verbal.",
+  "translationEn": "My grandmother talks about my grandfather in the present, as if he were in the next room, and nobody in the family finds it strange.\n\n\"You know what he's like,\" she says, although he died eleven years ago.\n\n\"Como si\" always takes the imperfect subjunctive, even when the main clause is in the present. She talks as if he were here. She looks at me as if she knew something. She behaves as if nothing had happened.\n\nIt's a strange and lovely construction: it describes something false without going so far as to call it a lie.\n\n\"Ojalá\" works the same way when the wish is impossible. \"Ojalá llueva\" is a reasonable hope. \"Ojalá lloviera\" means it isn't going to rain and I'm asking anyway.\n\nThe difference between the two sentences is exactly the amount of hope left in them.\n\nMy grandmother uses both forms without ever having studied grammar. She says \"ojalá estuviera aquí\" and then goes on setting the table for one, out of habit or stubbornness.\n\nAt first it made me uncomfortable. Now it seems to me the most honest way of remembering someone.\n\nMy mother says it's her way of not saying goodbye. I think it's her way of going on talking to him.\n\nSome griefs don't end. They just change tense.",
+  "newLemmas": [
+    "morir",
+    "comportar",
+    "esperanza",
+    "razonable",
+    "incomodar",
+    "terquedad",
+    "duelo",
+    "verbal",
+    "despedir",
+    "construcción",
+    "describir",
+    "incluso"
+  ],
+  "glosses": {
+    "como si estuviera": {
+      "lemma": "estar",
+      "gloss": "as if he were",
+      "pos": "verb",
+      "note": "'como si' takes the imperfect subjunctive always, whatever tense the main verb is in. It describes something contrary to fact."
+    },
+    "lloviera": {
+      "lemma": "llover",
+      "gloss": "it rained",
+      "pos": "verb",
+      "note": "'Ojalá llueva' hopes; 'ojalá lloviera' has given up hoping and asks anyway."
+    }
+  },
+  "phrases": [
+    {
+      "s": "como si estuviera aquí",
+      "gloss": "as if he were here"
+    },
+    {
+      "s": "como si nada",
+      "gloss": "as if nothing had happened"
+    },
+    {
+      "s": "Solo cambian de tiempo verbal",
+      "gloss": "They just change tense"
+    }
+  ]
+}

@@ -21,8 +21,13 @@ const CONTENT = join(ROOT, 'content')
 
 export interface Diagnostics { errors: string[]; warnings: string[] }
 
-/** Lemmas that are proper nouns aren't vocabulary — they'd inflate stats. */
-const isName = (pos?: string) => pos === 'name'
+/**
+ * Tokens that aren't vocabulary and must stay out of the stats and the
+ * progressive gate: proper nouns, and — from B2 onwards, where the texts
+ * discuss grammar in Spanish — meta-linguistic fragments like the quoted
+ * suffixes in «-ron» and «-ra».
+ */
+const isName = (pos?: string) => pos === 'name' || pos === 'suffix'
 
 function walkJson(dir: string): string[] {
   if (!existsSync(dir)) return []

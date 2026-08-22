@@ -1,0 +1,59 @@
+{
+  "id": "b2-u18-01-si-tuviera-tiempo",
+  "level": "B2",
+  "unit": 18,
+  "order": 1,
+  "title": "Si tuviera tiempo",
+  "titleEn": "If I had time",
+  "blurbEn": "The tense for lives you are not living. Built, conveniently, from a form you already know.",
+  "grammarRefs": [
+    "imperfecto-subjuntivo"
+  ],
+  "body": "Si tuviera más tiempo, aprendería a tocar el piano.\n\nSi tuviera más dinero, viviría seis meses en México.\n\nSi tuviera más valor, dejaría el trabajo mañana por la mañana y no avisaría a nadie.\n\nNinguna de esas tres frases es verdad, y por eso están en subjuntivo. El imperfecto de subjuntivo es el modo de lo que no ocurre: los deseos imposibles, las excusas elegantes, las vidas paralelas que uno imagina los domingos por la tarde.\n\nSon las tres condicionales que me repito cada domingo, como una oración.\n\nSe forma de una manera curiosa. Coges la tercera persona del plural del pretérito —tuvieron, hicieron, fueron, dijeron—, quitas el «-ron» y añades «-ra». Tuvieron, tuviera. Hicieron, hiciera. Fueron, fuera.\n\nTodos los verbos irregulares del pretérito lo siguen siendo aquí, lo cual es una mala noticia y una buena a la vez: son exactamente los mismos de siempre.\n\nExiste también una segunda forma en «-se»: tuviese, hiciese, fuese. Significa lo mismo. En España se usan las dos; en América, sobre todo la primera.\n\nMi profesora dice que este es el tiempo verbal donde el español se pone melancólico. Tiene una teoría: que cada idioma tiene una forma de arrepentirse, y que esta es la nuestra.\n\nNo sé si es cierto. Suena bien, que a veces es suficiente.",
+  "translationEn": "If I had more time, I'd learn to play the piano.\n\nIf I had more money, I'd live six months in Mexico.\n\nIf I had more courage, I'd quit my job tomorrow morning and tell nobody.\n\nNone of those three sentences is true, and that's why they're in the subjunctive. The imperfect subjunctive is the mood of what doesn't happen: impossible wishes, elegant excuses, the parallel lives you imagine on Sunday afternoons.\n\nThey're the three conditionals I repeat to myself every Sunday, like a prayer.\n\nIt's formed in a curious way. You take the third person plural of the preterite — tuvieron, hicieron, fueron, dijeron — drop the \"-ron\" and add \"-ra\". Tuvieron, tuviera. Hicieron, hiciera. Fueron, fuera.\n\nEvery irregular preterite verb stays irregular here, which is bad news and good news at once: they're exactly the same ones as always.\n\nThere's also a second form in \"-se\": tuviese, hiciese, fuese. It means the same. In Spain both are used; in Latin America, mostly the first.\n\nMy teacher says this is the tense where Spanish turns melancholy. She has a theory: that every language has a way of regretting things, and this is ours.\n\nI don't know if that's true. It sounds good, which is sometimes enough.",
+  "newLemmas": [
+    "valor",
+    "avisar",
+    "paralelo",
+    "oración",
+    "noticia",
+    "melancólico",
+    "teoría",
+    "arrepentir",
+    "verbal"
+  ],
+  "glosses": {
+    "tuviera": {
+      "lemma": "tener",
+      "gloss": "I had",
+      "pos": "verb",
+      "note": "From 'tuvieron' minus '-ron', plus '-ra'. Every imperfect subjunctive is built this way, without exception."
+    },
+    "aprendería": {
+      "lemma": "aprender",
+      "gloss": "I would learn",
+      "pos": "verb",
+      "note": "The conditional from Unit 9. The 'si' half takes the subjunctive; the other half takes this."
+    },
+    "fuese": {
+      "lemma": "ser",
+      "gloss": "were",
+      "pos": "verb",
+      "note": "The alternative ending. Identical in meaning; slightly more formal and more common in writing."
+    }
+  },
+  "phrases": [
+    {
+      "s": "Si tuviera más tiempo",
+      "gloss": "If I had more time"
+    },
+    {
+      "s": "las vidas paralelas",
+      "gloss": "the parallel lives"
+    },
+    {
+      "s": "a la vez",
+      "gloss": "at once"
+    }
+  ]
+}

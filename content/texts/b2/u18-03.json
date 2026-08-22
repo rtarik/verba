@@ -1,0 +1,69 @@
+{
+  "id": "b2-u18-03-queria-que-vinieras",
+  "level": "B2",
+  "unit": 18,
+  "order": 3,
+  "title": "Quería que vinieras",
+  "titleEn": "I wanted you to come",
+  "blurbEn": "The rule that governs the rest of the level: the first verb decides the second.",
+  "grammarRefs": [
+    "correlacion-de-tiempos"
+  ],
+  "body": "Hay una regla en español que ordena todo lo demás y que nadie me explicó hasta hace poco.\n\nEl tiempo del verbo principal decide el tiempo del subjuntivo que viene después.\n\nSi el verbo principal está en presente, el subjuntivo va en presente: «quiero que vengas», «espero que llegues», «dudo que sepa».\n\nSi el verbo principal está en pasado, el subjuntivo va en imperfecto: «quería que vinieras», «esperaba que llegaras», «dudaba que supiera».\n\nNo se elige. No depende del significado. Depende únicamente del primer verbo.\n\nDurante meses estuve produciendo frases como «quería que vengas», que suenan mal sin que uno sepa exactamente por qué. Es el equivalente de decir «ayer voy» en vez de «ayer fui»: se entiende, pero delata.\n\nLa llaman correlación de tiempos, que suena a manual de ingeniería y es en realidad la columna que sostiene todo el subjuntivo.\n\nLa regla tiene excepciones, claro. Si el deseo sigue vigente ahora, se puede mantener el presente: «me pidió que lo piense una semana». Pero son excepciones, y funcionan precisamente porque la regla existe.\n\nAprender esto me arregló la mitad de los errores que cometía sin saber que los cometía.\n\nEs una de esas reglas que, una vez vistas, ya no se pueden dejar de ver.",
+  "translationEn": "There's a rule in Spanish that organises everything else and which nobody explained to me until recently.\n\nThe tense of the main verb decides the tense of the subjunctive that follows.\n\nIf the main verb is in the present, the subjunctive goes in the present: \"quiero que vengas\", \"espero que llegues\", \"dudo que sepa\".\n\nIf the main verb is in the past, the subjunctive goes in the imperfect: \"quería que vinieras\", \"esperaba que llegaras\", \"dudaba que supiera\".\n\nYou don't choose. It doesn't depend on the meaning. It depends solely on the first verb.\n\nFor months I was producing sentences like \"quería que vengas\", which sound wrong without your knowing exactly why. It's the equivalent of saying \"ayer voy\" instead of \"ayer fui\": it's understood, but it gives you away.\n\nThey call it the sequence of tenses, which sounds like an engineering manual and is really the column holding up the whole subjunctive.\n\nThe rule has exceptions, of course. If the wish still stands now, you can keep the present: \"me pidió que lo piense una semana\". But they're exceptions, and they work precisely because the rule exists.\n\nLearning this fixed half the mistakes I was making without knowing I was making them.\n\nIt's one of those rules that, once seen, you can't stop seeing.",
+  "newLemmas": [
+    "principal",
+    "único",
+    "producir",
+    "delatar",
+    "correlación",
+    "manual",
+    "ingeniería",
+    "excepción",
+    "vigente",
+    "mantener",
+    "columna",
+    "sostener",
+    "equivalente",
+    "preciso",
+    "significado"
+  ],
+  "glosses": {
+    "vinieras": {
+      "lemma": "venir",
+      "gloss": "you came",
+      "pos": "verb",
+      "note": "'Quería' is past, so the subjunctive after it must be imperfect. Not a choice — a consequence."
+    },
+    "vengas": {
+      "lemma": "venir",
+      "gloss": "you come",
+      "pos": "verb",
+      "note": "'Quiero' is present, so the present subjunctive follows. Same sentence, different first verb."
+    },
+    "columna": {
+      "lemma": "columna",
+      "gloss": "column, pillar",
+      "pos": "noun"
+    },
+    "sostiene": {
+      "lemma": "sostener",
+      "gloss": "holds up",
+      "pos": "verb"
+    }
+  },
+  "phrases": [
+    {
+      "s": "quiero que vengas",
+      "gloss": "I want you to come"
+    },
+    {
+      "s": "quería que vinieras",
+      "gloss": "I wanted you to come"
+    },
+    {
+      "s": "correlación de tiempos",
+      "gloss": "sequence of tenses"
+    }
+  ]
+}

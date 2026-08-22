@@ -21,6 +21,12 @@ export const zWordToken = z.object({
   lemma: z.string().min(1),
   /** Short English gloss shown on hover. */
   gloss: z.string().min(1),
+  /**
+   * Part of speech. Two values are load-bearing rather than cosmetic:
+   * 'name' (proper nouns) and 'suffix' (meta-linguistic fragments such as the
+   * quoted «-ron» in a text about verb endings) are excluded from vocabulary
+   * tracking and from the progressive gate.
+   */
   pos: z.string().optional(),
   /** Optional longer explanation, e.g. why this form is reflexive. */
   note: z.string().optional(),

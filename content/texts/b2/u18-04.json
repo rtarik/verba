@@ -1,0 +1,64 @@
+{
+  "id": "b2-u18-04-quisiera-pedirle-un-favor",
+  "level": "B2",
+  "unit": 18,
+  "order": 4,
+  "title": "Quisiera pedirle un favor",
+  "titleEn": "I'd like to ask you a favour",
+  "blurbEn": "Politeness in Spanish is a matter of distance — and the further from the present tense you get, the politer you sound.",
+  "grammarRefs": [
+    "peticiones-corteses"
+  ],
+  "body": "Ayer fui al banco a pedir una cita con el gestor y me di cuenta de que no sabía pedirla bien.\n\nEn español, la manera educada de pedir algo es alejarse del presente. Cuanto más lejos, más cortés.\n\n«Quiero una cita» es correcto y suena a orden.\n\n«Querría una cita» ya es amable.\n\n«Quisiera una cita» es lo que dice la gente educada en una ventanilla.\n\n«¿Podría darme una cita?» es todavía mejor, porque además pregunta en vez de afirmar.\n\nEs el mismo mecanismo que en otros idiomas, pero el español tiene un escalón más: el imperfecto de subjuntivo usado como pura fórmula de cortesía. «Quisiera» no significa nada hipotético. Significa «quiero», dicho con guantes.\n\nHay un vocabulario entero de la distancia educada, y se aprende escuchando a la gente en las colas.\n\nLa empleada me trató con la misma amabilidad impersonal y todo fue rápido y correcto.\n\nCuando salí pensé que la cortesía es una forma de gramática, y que aprender un idioma incluye aprender a molestar poco.\n\nEn eso también llevo retraso.",
+  "translationEn": "Yesterday I went to the bank to ask for an appointment with the adviser and realised I didn't know how to ask properly.\n\nIn Spanish, the polite way to ask for something is to move away from the present. The further away, the more courteous.\n\n\"Quiero una cita\" is correct and sounds like an order.\n\n\"Querría una cita\" is already pleasant.\n\n\"Quisiera una cita\" is what polite people say at a counter.\n\n\"¿Podría darme una cita?\" is better still, because it asks rather than states.\n\nIt's the same mechanism as in other languages, but Spanish has one extra step: the imperfect subjunctive used as a pure formula of politeness. \"Quisiera\" means nothing hypothetical. It means \"I want\", said with gloves on.\n\nThere's a whole vocabulary of polite distance, and you learn it by listening to people in queues.\n\nThe clerk treated me with the same impersonal kindness and everything was quick and correct.\n\nWhen I left I thought that politeness is a form of grammar, and that learning a language includes learning to be less of a nuisance.\n\nI'm behind on that too.",
+  "newLemmas": [
+    "gestor",
+    "alejar",
+    "cortés",
+    "ventanilla",
+    "mecanismo",
+    "escalón",
+    "empleado",
+    "amabilidad",
+    "retraso",
+    "guante",
+    "hipotético",
+    "incluir",
+    "puro",
+    "tratar",
+    "vocabulario"
+  ],
+  "glosses": {
+    "Quisiera": {
+      "lemma": "querer",
+      "gloss": "I would like",
+      "pos": "verb",
+      "note": "Imperfect subjunctive used purely for politeness. Nothing hypothetical about it — it simply means 'quiero', softened."
+    },
+    "Podría": {
+      "lemma": "poder",
+      "gloss": "Could you",
+      "pos": "verb",
+      "note": "The conditional. A question is politer than a statement, so this outranks 'quisiera' again."
+    },
+    "guantes": {
+      "lemma": "guante",
+      "gloss": "gloves",
+      "pos": "noun"
+    }
+  },
+  "phrases": [
+    {
+      "s": "Quisiera una cita",
+      "gloss": "I'd like an appointment"
+    },
+    {
+      "s": "¿Podría darme",
+      "gloss": "Could you give me"
+    },
+    {
+      "s": "dicho con guantes",
+      "gloss": "said with gloves on"
+    }
+  ]
+}

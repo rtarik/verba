@@ -11244,5 +11244,900 @@
     "lemma": "plan",
     "gloss": "plan",
     "pos": "noun"
+  },
+  "tuviera": {
+    "lemma": "tener",
+    "gloss": "had",
+    "pos": "verb"
+  },
+  "tuviese": {
+    "lemma": "tener",
+    "gloss": "had",
+    "pos": "verb"
+  },
+  "hiciera": {
+    "lemma": "hacer",
+    "gloss": "did",
+    "pos": "verb"
+  },
+  "hiciese": {
+    "lemma": "hacer",
+    "gloss": "did",
+    "pos": "verb"
+  },
+  "fueras": {
+    "lemma": "ser",
+    "gloss": "you were",
+    "pos": "verb"
+  },
+  "fuese": {
+    "lemma": "ser",
+    "gloss": "were",
+    "pos": "verb"
+  },
+  "dijera": {
+    "lemma": "decir",
+    "gloss": "said",
+    "pos": "verb"
+  },
+  "pudiera": {
+    "lemma": "poder",
+    "gloss": "could",
+    "pos": "verb"
+  },
+  "pudiéramos": {
+    "lemma": "poder",
+    "gloss": "we could",
+    "pos": "verb"
+  },
+  "supiera": {
+    "lemma": "saber",
+    "gloss": "knew",
+    "pos": "verb"
+  },
+  "viniera": {
+    "lemma": "venir",
+    "gloss": "came",
+    "pos": "verb"
+  },
+  "vinieras": {
+    "lemma": "venir",
+    "gloss": "you came",
+    "pos": "verb"
+  },
+  "llegaras": {
+    "lemma": "llegar",
+    "gloss": "you arrived",
+    "pos": "verb"
+  },
+  "estuviera": {
+    "lemma": "estar",
+    "gloss": "were",
+    "pos": "verb"
+  },
+  "lloviera": {
+    "lemma": "llover",
+    "gloss": "rained",
+    "pos": "verb"
+  },
+  "pusieran": {
+    "lemma": "poner",
+    "gloss": "they put",
+    "pos": "verb"
+  },
+  "diera": {
+    "lemma": "dar",
+    "gloss": "gave",
+    "pos": "verb"
+  },
+  "volviera": {
+    "lemma": "volver",
+    "gloss": "went back",
+    "pos": "verb"
+  },
+  "quisiera": {
+    "lemma": "querer",
+    "gloss": "I would like",
+    "pos": "verb"
+  },
+  "querría": {
+    "lemma": "querer",
+    "gloss": "I would like",
+    "pos": "verb"
+  },
+  "escriba": {
+    "lemma": "escribir",
+    "gloss": "I write",
+    "pos": "verb"
+  },
+  "sepa": {
+    "lemma": "saber",
+    "gloss": "knows",
+    "pos": "verb"
+  },
+  "dejaría": {
+    "lemma": "dejar",
+    "gloss": "I would leave",
+    "pos": "verb"
+  },
+  "avisaría": {
+    "lemma": "avisar",
+    "gloss": "I would tell",
+    "pos": "verb"
+  },
+  "compraría": {
+    "lemma": "comprar",
+    "gloss": "I would buy",
+    "pos": "verb"
+  },
+  "harías": {
+    "lemma": "hacer",
+    "gloss": "you would do",
+    "pos": "verb"
+  },
+  "haría": {
+    "lemma": "hacer",
+    "gloss": "I would do",
+    "pos": "verb"
+  },
+  "abriría": {
+    "lemma": "abrir",
+    "gloss": "I would open",
+    "pos": "verb"
+  },
+  "iría": {
+    "lemma": "ir",
+    "gloss": "I would go",
+    "pos": "verb"
+  },
+  "diría": {
+    "lemma": "decir",
+    "gloss": "I would say",
+    "pos": "verb"
+  },
+  "quedaríamos": {
+    "lemma": "quedar",
+    "gloss": "we would stay",
+    "pos": "verb"
+  },
+  "hablaría": {
+    "lemma": "hablar",
+    "gloss": "I would speak",
+    "pos": "verb"
+  },
+  "leería": {
+    "lemma": "leer",
+    "gloss": "I would read",
+    "pos": "verb"
+  },
+  "escribiré": {
+    "lemma": "escribir",
+    "gloss": "I will write",
+    "pos": "verb"
+  },
+  "avisar": {
+    "lemma": "avisar",
+    "gloss": "to warn, to tell",
+    "pos": "verb"
+  },
+  "arrepentirse": {
+    "lemma": "arrepentir",
+    "gloss": "to regret",
+    "pos": "verb"
+  },
+  "arrepentir": {
+    "lemma": "arrepentir",
+    "gloss": "to regret",
+    "pos": "verb"
+  },
+  "consiste": {
+    "lemma": "consistir",
+    "gloss": "consists",
+    "pos": "verb"
+  },
+  "consistir": {
+    "lemma": "consistir",
+    "gloss": "to consist",
+    "pos": "verb"
+  },
+  "pretende": {
+    "lemma": "pretender",
+    "gloss": "intends",
+    "pos": "verb"
+  },
+  "pretender": {
+    "lemma": "pretender",
+    "gloss": "to intend",
+    "pos": "verb"
+  },
+  "produciendo": {
+    "lemma": "producir",
+    "gloss": "producing",
+    "pos": "verb"
+  },
+  "producir": {
+    "lemma": "producir",
+    "gloss": "to produce",
+    "pos": "verb"
+  },
+  "delata": {
+    "lemma": "delatar",
+    "gloss": "gives you away",
+    "pos": "verb"
+  },
+  "delatar": {
+    "lemma": "delatar",
+    "gloss": "to give away",
+    "pos": "verb"
+  },
+  "mantener": {
+    "lemma": "mantener",
+    "gloss": "to keep",
+    "pos": "verb"
+  },
+  "alejarse": {
+    "lemma": "alejar",
+    "gloss": "to move away",
+    "pos": "verb"
+  },
+  "alejar": {
+    "lemma": "alejar",
+    "gloss": "to move away",
+    "pos": "verb"
+  },
+  "trató": {
+    "lemma": "tratar",
+    "gloss": "treated",
+    "pos": "verb"
+  },
+  "tratar": {
+    "lemma": "tratar",
+    "gloss": "to treat",
+    "pos": "verb"
+  },
+  "murió": {
+    "lemma": "morir",
+    "gloss": "died",
+    "pos": "verb"
+  },
+  "morir": {
+    "lemma": "morir",
+    "gloss": "to die",
+    "pos": "verb"
+  },
+  "comporta": {
+    "lemma": "comportar",
+    "gloss": "behaves",
+    "pos": "verb"
+  },
+  "comportar": {
+    "lemma": "comportar",
+    "gloss": "to behave",
+    "pos": "verb"
+  },
+  "incomodaba": {
+    "lemma": "incomodar",
+    "gloss": "made me uncomfortable",
+    "pos": "verb"
+  },
+  "incomodar": {
+    "lemma": "incomodar",
+    "gloss": "to make uncomfortable",
+    "pos": "verb"
+  },
+  "despedirse": {
+    "lemma": "despedir",
+    "gloss": "to say goodbye",
+    "pos": "verb"
+  },
+  "sospecho": {
+    "lemma": "sospechar",
+    "gloss": "I suspect",
+    "pos": "verb"
+  },
+  "sospechar": {
+    "lemma": "sospechar",
+    "gloss": "to suspect",
+    "pos": "verb"
+  },
+  "callarme": {
+    "lemma": "callar",
+    "gloss": "to keep quiet",
+    "pos": "verb"
+  },
+  "jugamos": {
+    "lemma": "jugar",
+    "gloss": "we play",
+    "pos": "verb"
+  },
+  "valor": {
+    "lemma": "valor",
+    "gloss": "courage",
+    "pos": "noun"
+  },
+  "oración": {
+    "lemma": "oración",
+    "gloss": "prayer, sentence",
+    "pos": "noun"
+  },
+  "teoría": {
+    "lemma": "teoría",
+    "gloss": "theory",
+    "pos": "noun"
+  },
+  "noticia": {
+    "lemma": "noticia",
+    "gloss": "piece of news",
+    "pos": "noun"
+  },
+  "juego": {
+    "lemma": "juego",
+    "gloss": "game",
+    "pos": "noun"
+  },
+  "revés": {
+    "lemma": "revés",
+    "gloss": "reverse",
+    "pos": "noun"
+  },
+  "correlación": {
+    "lemma": "correlación",
+    "gloss": "correlation",
+    "pos": "noun"
+  },
+  "manual": {
+    "lemma": "manual",
+    "gloss": "manual",
+    "pos": "noun"
+  },
+  "ingeniería": {
+    "lemma": "ingeniería",
+    "gloss": "engineering",
+    "pos": "noun"
+  },
+  "excepciones": {
+    "lemma": "excepción",
+    "gloss": "exceptions",
+    "pos": "noun"
+  },
+  "excepción": {
+    "lemma": "excepción",
+    "gloss": "exception",
+    "pos": "noun"
+  },
+  "gestor": {
+    "lemma": "gestor",
+    "gloss": "adviser",
+    "pos": "noun"
+  },
+  "ventanilla": {
+    "lemma": "ventanilla",
+    "gloss": "counter window",
+    "pos": "noun"
+  },
+  "mecanismo": {
+    "lemma": "mecanismo",
+    "gloss": "mechanism",
+    "pos": "noun"
+  },
+  "escalón": {
+    "lemma": "escalón",
+    "gloss": "step",
+    "pos": "noun"
+  },
+  "empleada": {
+    "lemma": "empleado",
+    "gloss": "employee",
+    "pos": "noun"
+  },
+  "empleado": {
+    "lemma": "empleado",
+    "gloss": "employee",
+    "pos": "noun"
+  },
+  "retraso": {
+    "lemma": "retraso",
+    "gloss": "delay",
+    "pos": "noun"
+  },
+  "amabilidad": {
+    "lemma": "amabilidad",
+    "gloss": "kindness",
+    "pos": "noun"
+  },
+  "esperanza": {
+    "lemma": "esperanza",
+    "gloss": "hope",
+    "pos": "noun"
+  },
+  "terquedad": {
+    "lemma": "terquedad",
+    "gloss": "stubbornness",
+    "pos": "noun"
+  },
+  "duelos": {
+    "lemma": "duelo",
+    "gloss": "griefs",
+    "pos": "noun"
+  },
+  "duelo": {
+    "lemma": "duelo",
+    "gloss": "grief",
+    "pos": "noun"
+  },
+  "vacío": {
+    "lemma": "vacío",
+    "gloss": "emptiness",
+    "pos": "noun"
+  },
+  "función": {
+    "lemma": "función",
+    "gloss": "function",
+    "pos": "noun"
+  },
+  "límite": {
+    "lemma": "límite",
+    "gloss": "limit",
+    "pos": "noun"
+  },
+  "arrepentimiento": {
+    "lemma": "arrepentimiento",
+    "gloss": "regret",
+    "pos": "noun"
+  },
+  "diálogos": {
+    "lemma": "diálogo",
+    "gloss": "dialogues",
+    "pos": "noun"
+  },
+  "diálogo": {
+    "lemma": "diálogo",
+    "gloss": "dialogue",
+    "pos": "noun"
+  },
+  "paralelas": {
+    "lemma": "paralelo",
+    "gloss": "parallel",
+    "pos": "adjective"
+  },
+  "paralelo": {
+    "lemma": "paralelo",
+    "gloss": "parallel",
+    "pos": "adjective"
+  },
+  "melancólico": {
+    "lemma": "melancólico",
+    "gloss": "melancholy",
+    "pos": "adjective"
+  },
+  "espectacular": {
+    "lemma": "espectacular",
+    "gloss": "spectacular",
+    "pos": "adjective"
+  },
+  "frecuente": {
+    "lemma": "frecuente",
+    "gloss": "frequent",
+    "pos": "adjective"
+  },
+  "audible": {
+    "lemma": "audible",
+    "gloss": "audible",
+    "pos": "adjective"
+  },
+  "cruel": {
+    "lemma": "cruel",
+    "gloss": "cruel",
+    "pos": "adjective"
+  },
+  "principal": {
+    "lemma": "principal",
+    "gloss": "main",
+    "pos": "adjective"
+  },
+  "únicamente": {
+    "lemma": "único",
+    "gloss": "solely",
+    "pos": "adverb"
+  },
+  "vigente": {
+    "lemma": "vigente",
+    "gloss": "still in force",
+    "pos": "adjective"
+  },
+  "cortés": {
+    "lemma": "cortés",
+    "gloss": "polite",
+    "pos": "adjective"
+  },
+  "razonable": {
+    "lemma": "razonable",
+    "gloss": "reasonable",
+    "pos": "adjective"
+  },
+  "mentirosos": {
+    "lemma": "mentiroso",
+    "gloss": "untruthful",
+    "pos": "adjective"
+  },
+  "mentiroso": {
+    "lemma": "mentiroso",
+    "gloss": "untruthful",
+    "pos": "adjective"
+  },
+  "parecida": {
+    "lemma": "parecido",
+    "gloss": "similar",
+    "pos": "adjective"
+  },
+  "parecido": {
+    "lemma": "parecido",
+    "gloss": "similar",
+    "pos": "adjective"
+  },
+  "verbal": {
+    "lemma": "verbal",
+    "gloss": "verbal",
+    "pos": "adjective"
+  },
+  "ra": {
+    "lemma": "-ra",
+    "gloss": "the -ra ending",
+    "pos": "suffix"
+  },
+  "ron": {
+    "lemma": "-ron",
+    "gloss": "the -ron ending",
+    "pos": "suffix"
+  },
+  "América": {
+    "lemma": "América",
+    "gloss": "Latin America",
+    "pos": "name"
+  },
+  "coges": {
+    "lemma": "coger",
+    "gloss": "you take",
+    "pos": "verb"
+  },
+  "quitas": {
+    "lemma": "quitar",
+    "gloss": "you drop",
+    "pos": "verb"
+  },
+  "añades": {
+    "lemma": "añadir",
+    "gloss": "you add",
+    "pos": "verb"
+  },
+  "tuvieron": {
+    "lemma": "tener",
+    "gloss": "they had",
+    "pos": "verb"
+  },
+  "hicieron": {
+    "lemma": "hacer",
+    "gloss": "they did",
+    "pos": "verb"
+  },
+  "dijeron": {
+    "lemma": "decir",
+    "gloss": "they said",
+    "pos": "verb"
+  },
+  "condicionales": {
+    "lemma": "condicional",
+    "gloss": "conditionals",
+    "pos": "noun"
+  },
+  "curiosa": {
+    "lemma": "curioso",
+    "gloss": "curious",
+    "pos": "adjective"
+  },
+  "elegantes": {
+    "lemma": "elegante",
+    "gloss": "elegant",
+    "pos": "adjective"
+  },
+  "imagina": {
+    "lemma": "imaginar",
+    "gloss": "imagines",
+    "pos": "verb"
+  },
+  "imposibles": {
+    "lemma": "imposible",
+    "gloss": "impossible",
+    "pos": "adjective"
+  },
+  "repito": {
+    "lemma": "repetir",
+    "gloss": "I repeat",
+    "pos": "verb"
+  },
+  "siguen": {
+    "lemma": "seguir",
+    "gloss": "they carry on",
+    "pos": "verb"
+  },
+  "usan": {
+    "lemma": "usar",
+    "gloss": "are used",
+    "pos": "verb"
+  },
+  "vidas": {
+    "lemma": "vida",
+    "gloss": "lives",
+    "pos": "noun"
+  },
+  "callada": {
+    "lemma": "callar",
+    "gloss": "quiet",
+    "pos": "verb"
+  },
+  "concreta": {
+    "lemma": "concreto",
+    "gloss": "concrete",
+    "pos": "adjective"
+  },
+  "cómodas": {
+    "lemma": "cómodo",
+    "gloss": "comfortable",
+    "pos": "adjective"
+  },
+  "error": {
+    "lemma": "error",
+    "gloss": "mistake",
+    "pos": "noun"
+  },
+  "haces": {
+    "lemma": "hacer",
+    "gloss": "you do",
+    "pos": "verb"
+  },
+  "ponerlo": {
+    "lemma": "poner",
+    "gloss": "putting it",
+    "pos": "verb"
+  },
+  "pregunto": {
+    "lemma": "preguntar",
+    "gloss": "I ask",
+    "pos": "verb"
+  },
+  "quedo": {
+    "lemma": "quedar",
+    "gloss": "I stay",
+    "pos": "verb"
+  },
+  "respuestas": {
+    "lemma": "respuesta",
+    "gloss": "answers",
+    "pos": "noun"
+  },
+  "rica": {
+    "lemma": "rico",
+    "gloss": "rich",
+    "pos": "adjective"
+  },
+  "rico": {
+    "lemma": "rico",
+    "gloss": "rich",
+    "pos": "adjective"
+  },
+  "arregló": {
+    "lemma": "arreglar",
+    "gloss": "fixed",
+    "pos": "verb"
+  },
+  "cometía": {
+    "lemma": "cometer",
+    "gloss": "I was making",
+    "pos": "verb"
+  },
+  "decide": {
+    "lemma": "decidir",
+    "gloss": "decides",
+    "pos": "verb"
+  },
+  "dudaba": {
+    "lemma": "dudar",
+    "gloss": "I doubted",
+    "pos": "verb"
+  },
+  "elige": {
+    "lemma": "elegir",
+    "gloss": "you choose",
+    "pos": "verb"
+  },
+  "equivalente": {
+    "lemma": "equivalente",
+    "gloss": "equivalent",
+    "pos": "noun"
+  },
+  "funcionan": {
+    "lemma": "funcionar",
+    "gloss": "work",
+    "pos": "verb"
+  },
+  "llaman": {
+    "lemma": "llamar",
+    "gloss": "they call",
+    "pos": "verb"
+  },
+  "precisamente": {
+    "lemma": "preciso",
+    "gloss": "precisely",
+    "pos": "adverb"
+  },
+  "preciso": {
+    "lemma": "preciso",
+    "gloss": "precise",
+    "pos": "adjective"
+  },
+  "pueden": {
+    "lemma": "poder",
+    "gloss": "can",
+    "pos": "verb"
+  },
+  "significado": {
+    "lemma": "significado",
+    "gloss": "meaning",
+    "pos": "noun"
+  },
+  "vistas": {
+    "lemma": "ver",
+    "gloss": "seen",
+    "pos": "verb"
+  },
+  "colas": {
+    "lemma": "cola",
+    "gloss": "queues",
+    "pos": "noun"
+  },
+  "hipotético": {
+    "lemma": "hipotético",
+    "gloss": "hypothetical",
+    "pos": "adjective"
+  },
+  "incluye": {
+    "lemma": "incluir",
+    "gloss": "includes",
+    "pos": "verb"
+  },
+  "incluir": {
+    "lemma": "incluir",
+    "gloss": "to include",
+    "pos": "verb"
+  },
+  "otros": {
+    "lemma": "otro",
+    "gloss": "other",
+    "pos": "adjective"
+  },
+  "pedirla": {
+    "lemma": "pedir",
+    "gloss": "to ask for it",
+    "pos": "verb"
+  },
+  "pensé": {
+    "lemma": "pensar",
+    "gloss": "I thought",
+    "pos": "verb"
+  },
+  "pura": {
+    "lemma": "puro",
+    "gloss": "pure",
+    "pos": "adjective"
+  },
+  "puro": {
+    "lemma": "puro",
+    "gloss": "pure",
+    "pos": "adjective"
+  },
+  "usado": {
+    "lemma": "usar",
+    "gloss": "used",
+    "pos": "verb"
+  },
+  "vocabulario": {
+    "lemma": "vocabulario",
+    "gloss": "vocabulary",
+    "pos": "noun"
+  },
+  "columna": {
+    "lemma": "columna",
+    "gloss": "column",
+    "pos": "noun"
+  },
+  "sostiene": {
+    "lemma": "sostener",
+    "gloss": "holds up",
+    "pos": "verb"
+  },
+  "sostener": {
+    "lemma": "sostener",
+    "gloss": "to hold up",
+    "pos": "verb"
+  },
+  "guantes": {
+    "lemma": "guante",
+    "gloss": "gloves",
+    "pos": "noun"
+  },
+  "guante": {
+    "lemma": "guante",
+    "gloss": "glove",
+    "pos": "noun"
+  },
+  "cambian": {
+    "lemma": "cambiar",
+    "gloss": "change",
+    "pos": "verb"
+  },
+  "construcción": {
+    "lemma": "construcción",
+    "gloss": "construction",
+    "pos": "noun"
+  },
+  "describe": {
+    "lemma": "describir",
+    "gloss": "describes",
+    "pos": "verb"
+  },
+  "describir": {
+    "lemma": "describir",
+    "gloss": "to describe",
+    "pos": "verb"
+  },
+  "honesta": {
+    "lemma": "honesto",
+    "gloss": "honest",
+    "pos": "adjective"
+  },
+  "incluso": {
+    "lemma": "incluso",
+    "gloss": "even",
+    "pos": "adverb"
+  },
+  "llamarlo": {
+    "lemma": "llamar",
+    "gloss": "to call it",
+    "pos": "verb"
+  },
+  "poniendo": {
+    "lemma": "poner",
+    "gloss": "setting",
+    "pos": "verb"
+  },
+  "terminan": {
+    "lemma": "terminar",
+    "gloss": "end",
+    "pos": "verb"
+  },
+  "conseguí": {
+    "lemma": "conseguir",
+    "gloss": "I achieved",
+    "pos": "verb"
+  },
+  "dejado": {
+    "lemma": "dejar",
+    "gloss": "given up",
+    "pos": "verb"
+  },
+  "noviembre": {
+    "lemma": "noviembre",
+    "gloss": "November",
+    "pos": "noun"
+  },
+  "tenían": {
+    "lemma": "tener",
+    "gloss": "had",
+    "pos": "verb"
+  },
+  "útiles": {
+    "lemma": "útil",
+    "gloss": "useful",
+    "pos": "adjective"
   }
 }

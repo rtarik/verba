@@ -352,8 +352,14 @@
         "second conditional",
         "polite requests"
       ],
-      "textIds": [],
-      "summaryEn": "'Si tuviera tiempo, iría' — talking about what is not the case. Also the rule that governs the whole level: which subjunctive tense follows which main verb."
+      "textIds": [
+        "b2-u18-01-si-tuviera-tiempo",
+        "b2-u18-02-si-fuera-rica",
+        "b2-u18-03-queria-que-vinieras",
+        "b2-u18-04-quisiera-pedirle-un-favor",
+        "b2-u18-05-como-si-nada",
+        "b2-u18-06-si-volviera-a-empezar"
+      ]
     },
     {
       "unit": 19,

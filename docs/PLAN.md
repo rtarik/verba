@@ -276,6 +276,12 @@ hyphenated forms. Mitigation is simply to spell numbers out in the Spanish text,
 practice for a learner anyway. If the assertion ever fires, the script names the offending text
 instead of silently shipping audio that drifts out of sync.
 
+**The TTS assertion earned its keep in Unit 18.** One text failed the word-count check on first
+generation — edge-tts had silently dropped word events partway through, which would have shipped
+90 seconds of audio drifting out of sync with the text. Re-running regenerated only that file
+(the pipeline is idempotent) and it aligned correctly. The failure was transient rather than
+structural, which is precisely the case a human would never catch by ear.
+
 Budget: ~400 KB per minute of audio. 60 texts averaging 90s ≈ **36 MB** committed — comfortable
 against the ~1 GB GH Pages limit.
 
@@ -291,8 +297,8 @@ texts that use it. Cross-linked both ways with `grammarRefs`.
 Build a **vertical slice first**: Unit 1 complete (6 texts + audio + grammar docs + lexicon)
 before scaling out. If anything about the pipeline is wrong, it surfaces at 6 texts, not 60.
 
-**Status: A1, A2 and B1 complete — Units 1–17.** 102 texts, 10,382 words, 1,086 lemmas, 68
-grammar pages, 26 MB audio — 71% of the planned 144 texts.
+**Status: A1, A2 and B1 complete, B2 Unit 18.** 108 texts, 11,538 words, 1,153 lemmas, 72
+grammar pages, 29 MB audio — 75% of the planned 144 texts.
 Live at https://rtarik.github.io/verba/ Live at https://rtarik.github.io/verba/
 
 | Unit | Avg length | Recycled vocabulary |
@@ -314,6 +320,7 @@ Live at https://rtarik.github.io/verba/ Live at https://rtarik.github.io/verba/
 | B1 15 Se dice que | 146 w | 85% |
 | B1 16 Opiniones | 147 w | 86% |
 | B1 17 Si puedo, iré | 172 w | 89% |
+| B2 18 Si pudiera | 193 w | 89% |
 
 That last column is the health metric for the course. If it ever falls while texts lengthen, new
 vocabulary is being pushed too fast. Target for A2 was 70–80% while texts grew toward 90–120 words. **Both met**: A2 finished at

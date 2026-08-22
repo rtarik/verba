@@ -1,0 +1,58 @@
+{
+  "id": "b2-u18-02-si-fuera-rica",
+  "level": "B2",
+  "unit": 18,
+  "order": 2,
+  "title": "Si fuera rica",
+  "titleEn": "If I were rich",
+  "blurbEn": "A game about other lives, and the one order the second conditional will not tolerate.",
+  "grammarRefs": [
+    "segunda-condicional"
+  ],
+  "body": "Diego y yo jugamos a veces a un juego que consiste en imaginar otras vidas. Es un juego cruel, porque las respuestas dicen más de lo que uno pretende.\n\n—Si fueras rica, ¿qué harías? —me pregunta.\n\n—Nada espectacular. Compraría una casa pequeña cerca del mar y trabajaría la mitad.\n\n—Eso es lo que dice todo el mundo. Si de verdad fueras rica, harías exactamente lo que haces ahora, pero con mejor café.\n\nProbablemente tiene razón.\n\nLa segunda condicional funciona así: «si» más imperfecto de subjuntivo, y después condicional. Si tuviera, iría. Si supiera, te lo diría. Si pudiéramos, nos quedaríamos.\n\nNunca al revés. El subjuntivo va siempre en la parte del «si», y el condicional en la otra. Ponerlo al contrario es el error más frecuente y el más audible.\n\n—¿Y tú? —le pregunto—. ¿Qué harías?\n\n—Yo abriría un bar —dice sin pensarlo—. Uno pequeño, con sillas cómodas, donde no pusieran música.\n\nEs la primera vez en dos años que le oigo una respuesta concreta sobre su futuro.\n\nMe quedo callada un rato, por si dice algo más. No dice nada.",
+  "translationEn": "Diego and I sometimes play a game that consists of imagining other lives. It's a cruel game, because the answers say more than you intend.\n\n\"If you were rich, what would you do?\" he asks me.\n\n\"Nothing spectacular. I'd buy a small house near the sea and work half as much.\"\n\n\"That's what everyone says. If you really were rich, you'd do exactly what you do now, but with better coffee.\"\n\nHe's probably right.\n\nThe second conditional works like this: \"si\" plus imperfect subjunctive, then the conditional. If I had, I'd go. If I knew, I'd tell you. If we could, we'd stay.\n\nNever the other way round. The subjunctive always goes in the \"si\" half and the conditional in the other. Putting it backwards is the most frequent mistake and the most audible.\n\n\"And you?\" I ask him. \"What would you do?\"\n\n\"I'd open a bar,\" he says without thinking. \"A small one, with comfortable chairs, where they didn't play music.\"\n\nIt's the first time in two years I've heard him give a concrete answer about his future.\n\nI stay quiet for a while, in case he says anything else. He doesn't.",
+  "newLemmas": [
+    "juego",
+    "consistir",
+    "cruel",
+    "pretender",
+    "espectacular",
+    "revés",
+    "frecuente",
+    "audible",
+    "rico"
+  ],
+  "glosses": {
+    "fueras": {
+      "lemma": "ser",
+      "gloss": "you were",
+      "pos": "verb",
+      "note": "'Si fueras rica' — not true, so subjunctive. English marks this too, with 'were' rather than 'was'."
+    },
+    "pusieran": {
+      "lemma": "poner",
+      "gloss": "they played",
+      "pos": "verb",
+      "note": "Subjunctive because the bar does not exist. A relative clause describing something imaginary — the topic of Unit 23."
+    },
+    "al revés": {
+      "lemma": "revés",
+      "gloss": "the other way round",
+      "pos": "noun"
+    }
+  },
+  "phrases": [
+    {
+      "s": "Si fueras rica, ¿qué harías?",
+      "gloss": "If you were rich, what would you do?"
+    },
+    {
+      "s": "Si tuviera, iría",
+      "gloss": "If I had, I'd go"
+    },
+    {
+      "s": "Nunca al revés",
+      "gloss": "Never the other way round"
+    }
+  ]
+}

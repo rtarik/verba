@@ -1,0 +1,60 @@
+{
+  "id": "b2-u18-06-si-volviera-a-empezar",
+  "level": "B2",
+  "unit": 18,
+  "order": 6,
+  "title": "Si volviera a empezar",
+  "titleEn": "If I started over",
+  "blurbEn": "The last text of the unit: three things she would do differently, and why doing them would probably have ruined it.",
+  "grammarRefs": [
+    "segunda-condicional",
+    "correlacion-de-tiempos"
+  ],
+  "body": "Si volviera a empezar a estudiar español, haría tres cosas distintas.\n\nHablaría desde el primer día, aunque fuera mal y aunque me diera vergüenza. Perdí seis meses esperando a tener algo que decir, y lo único que conseguí fue aprender a callarme en dos idiomas.\n\nLeería antes textos de verdad. Los diálogos de los libros de texto son útiles y mentirosos a partes iguales: nadie habla así, ni en español ni en ningún otro idioma.\n\nY no estudiaría gramática hasta el segundo mes. La gramática explica lo que ya has oído; si no has oído nada, explica el vacío.\n\nPero también sé que empezar así habría sido imposible, y que probablemente lo habría dejado en noviembre. Los errores tenían su función: cada uno me enseñó dónde estaba el límite.\n\nNada de esto es un arrepentimiento. Es una lista, que es distinto.\n\nMañana empieza otro nivel, y sospecho que dentro de un año escribiré una lista parecida sobre lo que estoy haciendo mal ahora mismo.\n\nOjalá la escriba en español, sin diccionario y sin tanta prisa.\n\nEso sí sería una diferencia real.",
+  "translationEn": "If I started learning Spanish over again, I'd do three things differently.\n\nI'd speak from the first day, even if it were bad and even if it embarrassed me. I lost six months waiting until I had something to say, and all I achieved was learning to keep quiet in two languages.\n\nI'd read real texts sooner. Textbook dialogues are useful and untruthful in equal measure: nobody talks like that, in Spanish or any other language.\n\nAnd I wouldn't study grammar until the second month. Grammar explains what you've already heard; if you've heard nothing, it explains the emptiness.\n\nBut I also know that starting that way would have been impossible, and that I'd probably have given up in November. The mistakes had their function: each one showed me where the limit was.\n\nNone of this is regret. It's a list, which is different.\n\nTomorrow another level starts, and I suspect that in a year I'll write a similar list about what I'm doing wrong right now.\n\nI hope I write it in Spanish, without a dictionary and in less of a hurry.\n\nThat would be a real difference.",
+  "newLemmas": [
+    "mentiroso",
+    "vacío",
+    "función",
+    "límite",
+    "arrepentimiento",
+    "sospechar",
+    "parecido",
+    "diálogo",
+    "noviembre"
+  ],
+  "glosses": {
+    "volviera": {
+      "lemma": "volver",
+      "gloss": "I started over",
+      "pos": "verb",
+      "note": "'Si volviera a empezar' — she is not starting over, so the subjunctive."
+    },
+    "diera": {
+      "lemma": "dar",
+      "gloss": "it embarrassed",
+      "pos": "verb",
+      "note": "'aunque' + imperfect subjunctive: allowing for something that is not the case."
+    },
+    "habría sido": {
+      "lemma": "ser",
+      "gloss": "would have been",
+      "pos": "verb",
+      "note": "The compound conditional from Unit 14. Its usual partner — 'si hubiera...' — waits until Unit 20."
+    }
+  },
+  "phrases": [
+    {
+      "s": "Si volviera a empezar",
+      "gloss": "If I started over"
+    },
+    {
+      "s": "a partes iguales",
+      "gloss": "in equal measure"
+    },
+    {
+      "s": "explica el vacío",
+      "gloss": "it explains the emptiness"
+    }
+  ]
+}
