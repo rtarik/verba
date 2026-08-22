@@ -1,0 +1,21 @@
+{
+  "id": "b2-u23-06-lo-que-no-se-puede-ensenar",
+  "level": "B2", "unit": 23, "order": 6,
+  "title": "Lo que no se puede enseñar",
+  "titleEn": "What can't be taught",
+  "blurbEn": "The second-to-last text: where the rules run out.",
+  "grammarRefs": ["subjuntivo-relativas", "verbos-de-cambio"],
+  "body": "Este es el penúltimo texto del curso.\n\nCuando empecé, creía que aprender un idioma consistía en acumular reglas hasta cubrirlo entero, como quien rellena un mapa. Ahora sé que las reglas se acaban bastante pronto y que después empieza otra cosa mucho más lenta.\n\nLas reglas ocupan un año. Los matices ocupan el resto.\n\nHe aprendido cuándo un subjuntivo describe algo que no existe. He aprendido que «está listo» y «es listo» no se parecen en nada. He aprendido cinco verbos distintos para decir que alguien cambió, y a elegir entre ellos sin pensarlo casi siempre.\n\nNada de eso me hace hablar mejor. Me hace equivocarme de otra manera, que resulta ser lo mismo que avanzar.\n\nMi profesora me escribió ayer para decirme que el curso termina la semana que viene y preguntarme qué voy a hacer después.\n\nLe he contestado que seguir leyendo, que es la única respuesta honesta y la más aburrida. Lo que no tengo es constancia, y eso no lo arregla ningún método.\n\nY que en julio voy a ver a mi abuela y voy a grabarle la voz, aunque proteste.\n\nEso no lo aprendí en español. Pero lo decidí en español, que es distinto. Me da un poco de pudor confesarlo.",
+  "translationEn": "This is the second-to-last text of the course.\n\nWhen I started, I thought learning a language consisted of accumulating rules until you'd covered the whole thing, like filling in a map. Now I know the rules run out fairly soon and that afterwards something much slower begins.\n\nThe rules take up a year. The nuances take up the rest.\n\nI've learned when a subjunctive describes something that doesn't exist. I've learned that \"está listo\" and \"es listo\" are nothing alike. I've learned five different verbs for saying someone changed, and to choose between them without thinking, almost always.\n\nNone of that makes me speak better. It makes me get things wrong differently, which turns out to be the same as progress.\n\nMy teacher wrote to me yesterday to say the course finishes next week and to ask what I'm going to do afterwards.\n\nI replied that I'd keep reading, which is the only honest answer and the most boring. What I don't have is perseverance, and no method fixes that.\n\nAnd that in July I'm going to see my grandmother and record her voice, even if she protests.\n\nThat I didn't learn in Spanish. But I decided it in Spanish, which is different. It slightly embarrasses me to admit it.",
+  "newLemmas": ["penúltimo", "ocupar", "rellenar", "mapa", "protestar", "constancia", "pudor"],
+  "glosses": {
+    "que no existe": { "lemma": "existir", "gloss": "that doesn't exist", "pos": "verb", "note": "The relative-clause subjunctive from text 1, used here without comment — which is the point." },
+    "proteste": { "lemma": "protestar", "gloss": "she protests", "pos": "verb", "note": "'aunque' + subjunctive: she hasn't protested yet, so it's a possibility rather than a fact." },
+    "constancia": { "lemma": "constancia", "gloss": "perseverance", "pos": "noun" }
+  },
+  "phrases": [
+    { "s": "Las reglas ocupan un año", "gloss": "The rules take up a year" },
+    { "s": "equivocarme de otra manera", "gloss": "get things wrong differently" },
+    { "s": "lo decidí en español", "gloss": "I decided it in Spanish" }
+  ]
+}

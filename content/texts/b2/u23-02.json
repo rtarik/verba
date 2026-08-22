@@ -1,0 +1,66 @@
+{
+  "id": "b2-u23-02-es-listo-esta-listo",
+  "level": "B2",
+  "unit": 23,
+  "order": 2,
+  "title": "Es listo, está listo",
+  "titleEn": "He's clever, he's ready",
+  "blurbEn": "Adjectives that mean two different things depending on which 'to be' they take.",
+  "grammarRefs": [
+    "ser-estar-avanzado"
+  ],
+  "body": "Hay un grupo de adjetivos que cambian de significado según lleven ser o estar, y ninguno de ellos avisa.\n\n«Es listo» significa inteligente. «Está listo» significa preparado.\n\n«Es aburrido» describe a una persona pesada. «Está aburrido» describe a alguien que se aburre en ese momento.\n\n«Es rico» es tener dinero. «Está rico» es que sabe bien.\n\n«Es malo» es una valoración moral. «Está malo» es que está enfermo, o que la comida se ha estropeado en la nevera.\n\n«Es verde» es el color. «Está verde» es que no está maduro, o que alguien no está preparado todavía.\n\nLa lógica de fondo es la misma de siempre: ser define, estar describe un estado transitorio. Pero cuando el estado y la definición son tan distintos, la misma palabra acaba significando dos cosas incompatibles.\n\nMi profesora me dijo una vez «estás muy español últimamente». Con ser habría sido un dato. Con estar era un elogio sobre mi manera de hablar esa semana.\n\nTardé dos días en darme cuenta de lo que había dicho, y otro más en creérmelo.\n\nEs la clase de matiz que no se estudia: se recibe.",
+  "translationEn": "There's a group of adjectives that change meaning depending on whether they take ser or estar, and none of them warns you.\n\n\"Es listo\" means intelligent. \"Está listo\" means ready.\n\n\"Es aburrido\" describes a tiresome person. \"Está aburrido\" describes someone who is bored at that moment.\n\n\"Es rico\" is having money. \"Está rico\" is that it tastes good.\n\n\"Es malo\" is a moral judgement. \"Está malo\" means he's ill, or that the food has gone off in the fridge.\n\n\"Es verde\" is the colour. \"Está verde\" means it isn't ripe, or that someone isn't ready yet.\n\nThe underlying logic is the same as always: ser defines, estar describes a temporary state. But when the state and the definition are that different, the same word ends up meaning two incompatible things.\n\nMy teacher once said to me \"estás muy español últimamente\". With ser it would have been a fact. With estar it was a compliment about the way I was speaking that week.\n\nIt took me two days to realise what she'd said, and another to believe it.\n\nIt's the kind of nuance you don't study: you receive it.",
+  "newLemmas": [
+    "pesado",
+    "valoración",
+    "moral",
+    "maduro",
+    "transitorio",
+    "incompatible",
+    "dato",
+    "elogio",
+    "enfermo",
+    "aburrir",
+    "adjetivo",
+    "color",
+    "definir",
+    "inteligente",
+    "recibir",
+    "verde"
+  ],
+  "glosses": {
+    "Es listo": {
+      "lemma": "listo",
+      "gloss": "He's clever",
+      "pos": "adjective",
+      "note": "'ser' defines what someone is. With 'estar' the same word means ready."
+    },
+    "Está verde": {
+      "lemma": "verde",
+      "gloss": "It isn't ripe",
+      "pos": "adjective",
+      "note": "Also used of people: not yet ready, still inexperienced."
+    },
+    "estás muy español": {
+      "lemma": "español",
+      "gloss": "you're being very Spanish",
+      "pos": "adjective",
+      "note": "'estar' + a nationality describes behaviour rather than origin. A compliment about how you're acting, not who you are."
+    }
+  },
+  "phrases": [
+    {
+      "s": "Es rico",
+      "gloss": "He's rich"
+    },
+    {
+      "s": "Está rico",
+      "gloss": "It tastes good"
+    },
+    {
+      "s": "no se estudia: se recibe",
+      "gloss": "you don't study it: you receive it"
+    }
+  ]
+}

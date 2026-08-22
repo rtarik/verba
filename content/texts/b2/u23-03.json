@@ -1,0 +1,76 @@
+{
+  "id": "b2-u23-03-se-puso-se-volvio-se-hizo",
+  "level": "B2",
+  "unit": 23,
+  "order": 3,
+  "title": "Se puso, se volvió, se hizo",
+  "titleEn": "Five ways to become",
+  "blurbEn": "English has one verb for becoming. Spanish has five, and they are not interchangeable.",
+  "grammarRefs": [
+    "verbos-de-cambio"
+  ],
+  "body": "En español hay cinco maneras de decir que algo cambió, y elegir mal suena rarísimo.\n\n«Ponerse» es para cambios rápidos y pasajeros: se puso nerviosa, se puso roja, se puso enferma.\n\n«Volverse» es para cambios de carácter, involuntarios y que duran: se volvió desconfiado, se volvió insoportable.\n\n«Hacerse» es para cambios voluntarios o lentos, sobre todo de profesión o creencia: se hizo médico, se hizo vegetariano, se hizo rico.\n\n«Quedarse» describe el resultado de una pérdida: se quedó sordo, se quedó sin trabajo, se quedó solo.\n\n«Convertirse en» es el más fuerte y el más literal: el agua se convierte en hielo.\n\nDiego se puso contentísimo cuando le dijeron el sueldo. Después se volvió insoportable durante tres días. Ahora se ha quedado sin excusas para quejarse, que es lo peor que le podía pasar.\n\nYo, mientras tanto, me he hecho lectora de periódicos españoles, que es una manera pretenciosa de decir que leo titulares en el metro.",
+  "translationEn": "In Spanish there are five ways of saying something changed, and choosing wrongly sounds extremely odd.\n\n\"Ponerse\" is for quick, passing changes: she got nervous, she went red, she fell ill.\n\n\"Volverse\" is for changes of character, involuntary and lasting: he became distrustful, he became unbearable.\n\n\"Hacerse\" is for voluntary or gradual changes, especially of profession or belief: he became a doctor, he became vegetarian, he became rich.\n\n\"Quedarse\" describes the result of a loss: he went deaf, he ended up out of work, he was left alone.\n\n\"Convertirse en\" is the strongest and most literal: water turns into ice.\n\nDiego became overjoyed when they told him the salary. Then he became unbearable for three days. Now he's been left with no excuses to complain, which is the worst thing that could happen to him.\n\nI, meanwhile, have become a reader of Spanish newspapers, which is a pretentious way of saying I read headlines on the underground.",
+  "newLemmas": [
+    "pasajero",
+    "carácter",
+    "involuntario",
+    "desconfiado",
+    "insoportable",
+    "voluntario",
+    "creencia",
+    "pérdida",
+    "sordo",
+    "hielo",
+    "lector",
+    "titular",
+    "profesión",
+    "fuerte",
+    "vegetariano"
+  ],
+  "glosses": {
+    "se puso": {
+      "lemma": "poner",
+      "gloss": "became",
+      "pos": "verb",
+      "note": "Sudden and temporary. Almost always with an adjective of mood, colour or health."
+    },
+    "se volvió": {
+      "lemma": "volver",
+      "gloss": "became",
+      "pos": "verb",
+      "note": "A lasting change of character, and not chosen. 'Se volvió insoportable' is a judgement."
+    },
+    "se hizo": {
+      "lemma": "hacer",
+      "gloss": "became",
+      "pos": "verb",
+      "note": "Chosen or gradual: professions, beliefs, wealth. 'Se hizo médico' implies effort."
+    },
+    "se quedó": {
+      "lemma": "quedar",
+      "gloss": "was left",
+      "pos": "verb",
+      "note": "The residue of a loss — deaf, alone, out of work."
+    }
+  },
+  "phrases": [
+    {
+      "s": "se puso nerviosa",
+      "gloss": "she got nervous"
+    },
+    {
+      "s": "se volvió insoportable",
+      "gloss": "he became unbearable",
+      "at": 44
+    },
+    {
+      "s": "se quedó sin trabajo",
+      "gloss": "he ended up out of work"
+    },
+    {
+      "s": "se convierte en hielo",
+      "gloss": "turns into ice"
+    }
+  ]
+}

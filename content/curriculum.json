@@ -452,8 +452,14 @@
         "verbs of change",
         "estar + participle"
       ],
-      "textIds": [],
-      "summaryEn": "Where more than one form is grammatical and the choice changes the meaning — 'busco un piso que tiene' against 'que tenga', and the five different verbs Spanish uses for 'become'."
+      "textIds": [
+        "b2-u23-01-busco-un-piso-que-tenga-luz",
+        "b2-u23-02-es-listo-esta-listo",
+        "b2-u23-03-se-puso-se-volvio-se-hizo",
+        "b2-u23-04-la-puerta-estaba-cerrada",
+        "b2-u23-05-un-piso-pequeno",
+        "b2-u23-06-lo-que-no-se-puede-ensenar"
+      ]
     },
     {
       "unit": 24,

@@ -1,0 +1,61 @@
+{
+  "id": "b2-u23-01-busco-un-piso-que-tenga-luz",
+  "level": "B2",
+  "unit": 23,
+  "order": 1,
+  "title": "Busco un piso que tenga luz",
+  "titleEn": "I'm looking for a flat with light",
+  "blurbEn": "A subjunctive that depends on nothing in the main verb — only on whether the thing exists.",
+  "grammarRefs": [
+    "subjuntivo-relativas"
+  ],
+  "body": "Mi hermana busca piso en Madrid y me ha pedido ayuda, que es su manera de pedir compañía.\n\n—Busco un piso que tenga luz y que no cueste una fortuna —dice.\n\nEse subjuntivo es el que me costó más entender de todos, porque no depende del verbo principal sino de si la cosa existe.\n\n«Busco un piso que tiene luz» significa que ya sé cuál es: lo he visto, existe, solo tengo que conseguirlo.\n\n«Busco un piso que tenga luz» significa que todavía no existe para mí. Es una descripción, no una identificación.\n\nLa misma diferencia aparece en negativo: «no conozco a nadie que hable ruso» lleva subjuntivo obligatorio, porque esa persona no existe en mi mundo.\n\nY en las preguntas: «¿hay alguien que sepa arreglar esto?» también, porque preguntar es admitir que quizá no.\n\nMi hermana ha visto once pisos en dos semanas. Todos tenían algún defecto: uno sin luz, otro sin ascensor, otro con una cocina del tamaño de un armario.\n\nSigue buscando uno que tenga las tres cosas.\n\nLe he dicho que ese piso lleva subjuntivo por una razón. Es el chiste más lingüístico que he hecho nunca y no le hizo ninguna gracia.",
+  "translationEn": "My sister is flat-hunting in Madrid and has asked me for help, which is her way of asking for company.\n\n\"I'm looking for a flat that has light and doesn't cost a fortune,\" she says.\n\nThat subjunctive is the one that took me longest to understand, because it doesn't depend on the main verb but on whether the thing exists.\n\n\"Busco un piso que tiene luz\" means I already know which one: I've seen it, it exists, I only have to get it.\n\n\"Busco un piso que tenga luz\" means it doesn't exist for me yet. It's a description, not an identification.\n\nThe same difference appears in the negative: \"no conozco a nadie que hable ruso\" takes the subjunctive compulsorily, because that person doesn't exist in my world.\n\nAnd in questions: \"¿hay alguien que sepa arreglar esto?\" too, because asking is admitting that maybe not.\n\nMy sister has seen eleven flats in two weeks. All of them had some flaw: one with no light, another with no lift, another with a kitchen the size of a cupboard.\n\nShe's still looking for one that has all three things.\n\nI told her that flat takes the subjunctive for a reason. It's the most linguistic joke I've ever made and she didn't find it funny at all.",
+  "newLemmas": [
+    "compañía",
+    "fortuna",
+    "descripción",
+    "identificación",
+    "ruso",
+    "defecto",
+    "tamaño",
+    "armario",
+    "lingüístico",
+    "buscar"
+  ],
+  "glosses": {
+    "tenga": {
+      "lemma": "tener",
+      "gloss": "has",
+      "pos": "verb",
+      "note": "Subjunctive because the flat doesn't exist yet — it's a specification, not a specific flat."
+    },
+    "tiene": {
+      "lemma": "tener",
+      "gloss": "has",
+      "pos": "verb",
+      "note": "Indicative, so the flat is real and identified. The trigger is existence, not the main verb."
+    },
+    "hable": {
+      "lemma": "hablar",
+      "gloss": "speaks",
+      "pos": "verb",
+      "note": "After a negative, the subjunctive is compulsory: the person does not exist to be described."
+    }
+  },
+  "phrases": [
+    {
+      "s": "un piso que tenga luz",
+      "gloss": "a flat that has light",
+      "at": 19
+    },
+    {
+      "s": "no conozco a nadie que hable ruso",
+      "gloss": "I don't know anyone who speaks Russian"
+    },
+    {
+      "s": "no le hizo ninguna gracia",
+      "gloss": "she didn't find it funny"
+    }
+  ]
+}

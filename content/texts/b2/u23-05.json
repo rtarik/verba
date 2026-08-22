@@ -1,0 +1,61 @@
+{
+  "id": "b2-u23-05-un-piso-pequeno",
+  "level": "B2",
+  "unit": 23,
+  "order": 5,
+  "title": "Un piso pequeño y un pequeño piso",
+  "titleEn": "A small flat and a little flat",
+  "blurbEn": "Nuances that fit no rule, and arrive only by accumulation.",
+  "grammarRefs": [
+    "posicion-adjetivos",
+    "ser-estar-avanzado"
+  ],
+  "body": "Hay matices que no caben en ninguna regla y que se aprenden por acumulación.\n\n«Un piso pequeño» y «un pequeño piso» no dicen exactamente lo mismo. El primero mide; el segundo valora, y suena más literario.\n\n«El pobre hombre» da lástima. «El hombre pobre» no tiene dinero.\n\n«Cierta información» es alguna. «Información cierta» es verdadera.\n\nLo mismo pasa con el orden de las palabras en la frase entera. El español coloca al final lo que quiere destacar, que es justo al revés que el inglés: «lo hizo Diego» y «Diego lo hizo» responden a preguntas distintas.\n\nNinguna de estas cosas aparece en los exámenes ni en los manuales. Todas aparecen en cuanto uno intenta escribir algo que no sea neutro.\n\nMi profesora dice que aquí empieza la parte que no se puede enseñar, solo corregir, y que por eso los profesores buenos leen mucho.\n\nLlevo catorce meses acumulando correcciones en los márgenes. Todavía escribo «un pequeño piso» cuando quiero decir otra cosa, y ya no me importa demasiado.\n\nEs un aprendizaje silencioso y bastante ingrato. Los matices llegan tarde. Pero llegan.",
+  "translationEn": "There are nuances that fit no rule and are learned by accumulation.\n\n\"Un piso pequeño\" and \"un pequeño piso\" don't say exactly the same thing. The first measures; the second evaluates, and sounds more literary.\n\n\"El pobre hombre\" is pitiable. \"El hombre pobre\" has no money.\n\n\"Cierta información\" is some information. \"Información cierta\" is true information.\n\nThe same goes for word order in the sentence as a whole. Spanish puts what it wants to emphasise at the end, which is exactly the reverse of English: \"lo hizo Diego\" and \"Diego lo hizo\" answer different questions.\n\nNone of these things appears in exams or in textbooks. All of them appear the moment you try to write something that isn't neutral.\n\nMy teacher says this is where the part that can't be taught begins, only corrected, and that's why good teachers read a lot.\n\nI've spent fourteen months accumulating corrections in the margins. I still write \"un pequeño piso\" when I mean something else, and I no longer mind much.\n\nIt's a silent and fairly thankless kind of learning. The nuances arrive late. But they arrive.",
+  "newLemmas": [
+    "acumulación",
+    "medir",
+    "valorar",
+    "lástima",
+    "destacar",
+    "corrección",
+    "acumular",
+    "aprendizaje",
+    "ingrato",
+    "responder"
+  ],
+  "glosses": {
+    "un pequeño piso": {
+      "lemma": "pequeño",
+      "gloss": "a little flat",
+      "pos": "adjective",
+      "note": "Before the noun the adjective evaluates rather than measures — warmer, more literary. After it, plain fact."
+    },
+    "El pobre hombre": {
+      "lemma": "pobre",
+      "gloss": "The poor man",
+      "pos": "adjective",
+      "note": "Before: pitiable. After: without money. One of the clearest position pairs."
+    },
+    "lo hizo Diego": {
+      "lemma": "hacer",
+      "gloss": "Diego did it",
+      "pos": "verb",
+      "note": "Spanish puts new or emphasised information last. This answers 'who did it?'; 'Diego lo hizo' answers 'what did Diego do?'."
+    }
+  },
+  "phrases": [
+    {
+      "s": "se aprenden por acumulación",
+      "gloss": "are learned by accumulation"
+    },
+    {
+      "s": "al revés que el inglés",
+      "gloss": "the reverse of English"
+    },
+    {
+      "s": "Los matices llegan tarde",
+      "gloss": "The nuances arrive late"
+    }
+  ]
+}

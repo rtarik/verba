@@ -1,0 +1,21 @@
+{
+  "id": "b2-u23-04-la-puerta-estaba-cerrada",
+  "level": "B2", "unit": 23, "order": 4,
+  "title": "La puerta estaba cerrada",
+  "titleEn": "The door was closed",
+  "blurbEn": "The difference between the action and the state it left behind.",
+  "grammarRefs": ["estar-participio", "voz-pasiva"],
+  "body": "Ayer llegué a la oficina antes que nadie y la puerta estaba cerrada.\n\nNo «fue cerrada», que sería el momento en que alguien la cerró. «Estaba cerrada» es el estado en que la encontré.\n\nEs la diferencia entre la acción y el resultado, y el español la marca con ser o estar, sin más aviso.\n\n«La carta fue escrita en mil novecientos veinte» describe el acto de escribirla. «La carta está escrita a mano» describe cómo es ahora.\n\nEn la práctica, «estar» más participio es muchísimo más frecuente, porque el resultado interesa casi siempre más que el acto: la tienda está cerrada, el problema está resuelto, la mesa está puesta, el asunto está zanjado.\n\nEl participio, en los dos casos, concuerda con el sujeto: cerrada, escrita, resueltos.\n\nAl final resultó que la puerta no estaba cerrada con llave, sino atascada por la humedad. Es un edificio antiguo y todo cruje. El conserje dice que en octubre es normal y nadie se queja, lo cual supongo que es una forma de afecto.\n\nDiego la abrió de un empujón y dijo que llevaba dos años esperando ese momento.\n\nSe puso muy contento. Volvió a ponerse insoportable a la hora de comer.",
+  "translationEn": "Yesterday I got to the office before anyone else and the door was closed.\n\nNot \"fue cerrada\", which would be the moment somebody closed it. \"Estaba cerrada\" is the state I found it in.\n\nIt's the difference between the action and the result, and Spanish marks it with ser or estar, with no further warning.\n\n\"La carta fue escrita en mil novecientos veinte\" describes the act of writing it. \"La carta está escrita a mano\" describes how it is now.\n\nIn practice, \"estar\" plus a participle is far more frequent, because the result is almost always more interesting than the act: the shop is closed, the problem is solved, the table is set, the matter is settled.\n\nThe participle, in both cases, agrees with the subject: cerrada, escrita, resueltos.\n\nIn the end it turned out the door wasn't locked but jammed by the damp. It's an old building and everything creaks. The caretaker says it's normal in October and nobody complains, which I suppose is a form of affection.\n\nDiego opened it with a shove and said he'd been waiting two years for that moment.\n\nHe became very happy. He went back to being unbearable by lunchtime.",
+  "newLemmas": ["acto", "llave", "atascar", "zanjar", "aviso", "humedad", "crujir", "conserje", "afecto"],
+  "glosses": {
+    "estaba cerrada": { "lemma": "cerrar", "gloss": "was closed", "pos": "verb", "note": "'estar' + participle describes the resulting state. The closing itself is not in view." },
+    "fue cerrada": { "lemma": "cerrar", "gloss": "was closed", "pos": "verb", "note": "'ser' + participle describes the action at the moment it happened. Far rarer in speech — see Unit 17." },
+    "está puesta": { "lemma": "poner", "gloss": "is set", "pos": "verb" }
+  },
+  "phrases": [
+    { "s": "la acción y el resultado", "gloss": "the action and the result" },
+    { "s": "está escrita a mano", "gloss": "is handwritten" },
+    { "s": "de un empujón", "gloss": "with a shove" }
+  ]
+}
