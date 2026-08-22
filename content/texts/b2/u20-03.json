@@ -1,0 +1,61 @@
+{
+  "id": "b2-u20-03-las-tres-condicionales",
+  "level": "B2",
+  "unit": 20,
+  "order": 3,
+  "title": "Las tres condicionales",
+  "titleEn": "The three conditionals",
+  "blurbEn": "All three side by side, and the mixed ones nobody teaches.",
+  "grammarRefs": [
+    "las-tres-condicionales"
+  ],
+  "body": "Puestas juntas, en la misma página, las tres condicionales son casi elegantes.\n\nSi tengo tiempo, voy. Presente y presente: puede pasar hoy mismo.\n\nSi tuviera tiempo, iría. Imperfecto de subjuntivo y condicional: no lo tengo, pero es imaginable.\n\nSi hubiera tenido tiempo, habría ido. Pluscuamperfecto de subjuntivo y condicional compuesto: ya no hay nada que hacer.\n\nLa primera es una posibilidad; la segunda, una hipótesis; la tercera, un lamento.\n\nLo bonito es que se distinguen únicamente por el tiempo del verbo. La estructura es idéntica en las tres. El español coloca toda la distancia entre lo real y lo imposible dentro de la conjugación, sin añadir una sola palabra.\n\nExisten además las mixtas, que combinan mitades de dos condicionales distintas: «si hubiera estudiado más, ahora hablaría mejor». Pasado imposible, consecuencia presente. Son frecuentísimas y casi nadie las enseña, quizá porque no caben en una tabla.\n\nCuando por fin entendí el sistema completo, tuve la sensación absurda de haber descubierto un mecanismo antiguo que llevaba funcionando siglos sin mí. Es la misma sensación que da entender un chiste tarde.\n\nNo es un pensamiento muy original. Pero lo pensé en español, y eso sí era nuevo.",
+  "translationEn": "Put together on the same page, the three conditionals are almost elegant.\n\nSi tengo tiempo, voy. Present and present: it could happen today.\n\nSi tuviera tiempo, iría. Imperfect subjunctive and conditional: I don't have it, but it's imaginable.\n\nSi hubiera tenido tiempo, habría ido. Pluperfect subjunctive and conditional perfect: there's nothing to be done now.\n\nThe first is a possibility; the second, a hypothesis; the third, a lament.\n\nThe elegant part is that they're distinguished purely by the tense of the verb. The structure is identical in all three. Spanish puts the whole distance between the real and the impossible inside the conjugation, without adding a single word.\n\nThere are also mixed ones, combining halves of two different conditionals: \"si hubiera estudiado más, ahora hablaría mejor\". Impossible past, present consequence. They're extremely frequent and almost nobody teaches them, perhaps because they don't fit in a table.\n\nWhen I finally understood the complete system, I had the absurd sensation of having discovered some ancient mechanism that had been running for centuries without me. It's the same feeling as getting a joke late.\n\nIt isn't a very original thought. But I thought it in Spanish, and that part was new.",
+  "newLemmas": [
+    "lamento",
+    "colocar",
+    "mixto",
+    "combinar",
+    "consecuencia",
+    "tabla",
+    "antiguo",
+    "pensamiento",
+    "arquitectura",
+    "conjugación",
+    "distinguir",
+    "idéntico",
+    "imaginable"
+  ],
+  "glosses": {
+    "hubiera tenido": {
+      "lemma": "haber",
+      "gloss": "I had had",
+      "pos": "verb"
+    },
+    "hablaría": {
+      "lemma": "hablar",
+      "gloss": "I would speak",
+      "pos": "verb",
+      "note": "A mixed conditional: the 'si' half is an impossible past, but the consequence is present. Not 'habría hablado' — the effect is still live."
+    },
+    "arquitectura": {
+      "lemma": "arquitectura",
+      "gloss": "architecture",
+      "pos": "noun"
+    }
+  },
+  "phrases": [
+    {
+      "s": "Si tuviera tiempo, iría",
+      "gloss": "If I had time, I'd go"
+    },
+    {
+      "s": "Si hubiera tenido tiempo, habría ido",
+      "gloss": "If I'd had time, I'd have gone"
+    },
+    {
+      "s": "no caben en una tabla",
+      "gloss": "they don't fit in a table"
+    }
+  ]
+}

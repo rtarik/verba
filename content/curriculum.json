@@ -392,8 +392,14 @@
         "condicional compuesto",
         "regret and hindsight"
       ],
-      "textIds": [],
-      "summaryEn": "The hardest structure in everyday Spanish, and the one that unlocks regret: 'si hubiera sabido, habría venido'. All three conditional types side by side."
+      "textIds": [
+        "b2-u20-01-si-lo-hubiera-sabido",
+        "b2-u20-02-si-hubiera-estudiado-mas",
+        "b2-u20-03-las-tres-condicionales",
+        "b2-u20-04-ojala-hubiera-preguntado",
+        "b2-u20-05-si-hubiera-estudiado-ahora-hablaria",
+        "b2-u20-06-lo-que-habria-pasado"
+      ]
     },
     {
       "unit": 21,

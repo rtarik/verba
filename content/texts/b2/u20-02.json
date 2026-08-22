@@ -1,0 +1,60 @@
+{
+  "id": "b2-u20-02-si-hubiera-estudiado-mas",
+  "level": "B2",
+  "unit": 20,
+  "order": 2,
+  "title": "Si hubiera estudiado más",
+  "titleEn": "If I'd studied more",
+  "blurbEn": "The third conditional: two halves, both in the past, both untrue.",
+  "grammarRefs": [
+    "tercera-condicional"
+  ],
+  "body": "La tercera condicional es la más difícil de construir y la más humana de todas.\n\n«Si hubiera estudiado más, habría aprobado a la primera.»\n\nDos mitades, las dos en pasado, las dos falsas. En la parte del «si» va el pluscuamperfecto de subjuntivo; en la otra, el condicional compuesto. Nunca al revés, igual que en la segunda.\n\nSirve para hablar de lo que no hicimos y de lo que habría pasado si lo hubiéramos hecho. Es un ejercicio inútil y absolutamente irresistible, como hurgar en una muela.\n\nSi hubiera empezado con español y no con francés, ahora llevaría diez años y no catorce meses. Si no hubiera conocido a Pablo, no habría empezado nunca. Si mi profesora no me hubiera dicho aquello de la nevera, probablemente lo habría dejado en el segundo mes.\n\nHay una versión coloquial que sustituye el condicional compuesto por el pluscuamperfecto de subjuntivo en las dos mitades: «si hubiera sabido, hubiera venido». Es correctísima al hablar, aunque en un examen conviene poner «habría».\n\nMi profesora dice que esta condicional es peligrosa porque no se puede comprobar.\n\nUno se inventa una vida entera con dos verbos y luego se la cree, que es lo grave.",
+  "translationEn": "The third conditional is the hardest to build and the most human of them all.\n\n\"Si hubiera estudiado más, habría aprobado a la primera.\"\n\nTwo halves, both in the past, both untrue. The \"si\" half takes the pluperfect subjunctive; the other takes the conditional perfect. Never the other way round, just as in the second conditional.\n\nIt's for talking about what we didn't do and what would have happened if we had. It's a useless exercise and absolutely irresistible, like poking at a sore tooth.\n\nIf I'd started with Spanish instead of French, I'd have ten years behind me now instead of fourteen months. If I hadn't met Pablo, I'd never have started. If my teacher hadn't said that thing about the fridge, I'd probably have given up in the second month.\n\nThere's a colloquial version that replaces the conditional perfect with the pluperfect subjunctive in both halves: \"si hubiera sabido, hubiera venido\". It's perfectly correct in speech, though in an exam it's wiser to write \"habría\".\n\nMy teacher says this conditional is dangerous because it can't be checked.\n\nYou invent an entire life out of two verbs and then believe it, which is the serious part.",
+  "newLemmas": [
+    "irresistible",
+    "hurgar",
+    "muela",
+    "francés",
+    "coloquial",
+    "sustituir",
+    "habla",
+    "convenir",
+    "peligroso",
+    "compuesto",
+    "humano",
+    "versión"
+  ],
+  "glosses": {
+    "hubiéramos": {
+      "lemma": "haber",
+      "gloss": "we had",
+      "pos": "verb"
+    },
+    "hubiera venido": {
+      "lemma": "haber",
+      "gloss": "I would have come",
+      "pos": "verb",
+      "note": "The colloquial substitution: 'hubiera' doing the job of 'habría' in the second half. Extremely common in speech, avoided in formal writing."
+    },
+    "convenir": {
+      "lemma": "convenir",
+      "gloss": "to be advisable",
+      "pos": "verb"
+    }
+  },
+  "phrases": [
+    {
+      "s": "Si hubiera estudiado más, habría aprobado",
+      "gloss": "If I'd studied more, I'd have passed"
+    },
+    {
+      "s": "Nunca al revés",
+      "gloss": "Never the other way round"
+    },
+    {
+      "s": "a la primera",
+      "gloss": "first time"
+    }
+  ]
+}

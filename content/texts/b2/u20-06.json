@@ -1,0 +1,60 @@
+{
+  "id": "b2-u20-06-lo-que-habria-pasado",
+  "level": "B2",
+  "unit": 20,
+  "order": 6,
+  "title": "Lo que habría pasado",
+  "titleEn": "What would have happened",
+  "blurbEn": "The last text of the unit: a chain of conditionals running backwards, and where it stops.",
+  "grammarRefs": [
+    "tercera-condicional",
+    "las-tres-condicionales"
+  ],
+  "body": "Si no hubiera aceptado aquel trabajo en dos mil dieciocho, no habría conocido a Diego.\n\nSi no hubiera conocido a Diego, no habría ido a aquella cena donde conocí a Pablo.\n\nSi no hubiera conocido a Pablo, no estaría escribiendo esto en español.\n\nEs un juego peligroso, porque funciona en las dos direcciones y no tiene final ni respuesta. Cada decisión pequeña sostiene una cadena entera de cosas que parecen inevitables solo cuando se miran hacia atrás.\n\nLa tercera condicional permite construir esas cadenas con una precisión que da un poco de vértigo y bastante melancolía.\n\nPero también permite lo contrario, y eso lo descubrí tarde: si hubiera hecho todo bien desde el principio, probablemente lo habría dejado. Los errores me mantuvieron interesada. La lentitud me dio tiempo a acostumbrarme al idioma en vez de memorizarlo.\n\nAsí que no, no cambiaría gran cosa.\n\nSolo habría empezado antes, que es la única condicional que sigue doliendo un poco.\n\nMañana empieza otro nivel. Ya no me asusta, y eso también es información valiosa.",
+  "translationEn": "If I hadn't taken that job in two thousand and eighteen, I wouldn't have met Diego.\n\nIf I hadn't met Diego, I wouldn't have gone to that dinner where I met Pablo.\n\nIf I hadn't met Pablo, I wouldn't be writing this in Spanish.\n\nIt's a dangerous game, because it works in both directions and has no end and no answer. Every small decision holds up a whole chain of things that look inevitable only when you look back at them.\n\nThe third conditional lets you build those chains with a precision that induces a slight vertigo and a good deal of melancholy.\n\nBut it also allows the opposite, and I discovered that late: if I'd done everything right from the start, I'd probably have given up. The mistakes kept me interested. The slowness gave me time to get used to the language instead of memorising it.\n\nSo no, I wouldn't change much.\n\nI'd only have started earlier, which is the one conditional that still stings a little.\n\nTomorrow another level starts. It no longer frightens me, and that is valuable information too.",
+  "newLemmas": [
+    "dieciocho",
+    "inevitable",
+    "precisión",
+    "vértigo",
+    "melancolía",
+    "lentitud",
+    "información",
+    "valioso",
+    "permitir",
+    "interesar"
+  ],
+  "glosses": {
+    "no estaría escribiendo": {
+      "lemma": "estar",
+      "gloss": "I wouldn't be writing",
+      "pos": "verb",
+      "note": "Mixed again: the meeting is a closed past, but the writing is happening now. Hence 'estaría', not 'habría estado'."
+    },
+    "mantuvieron": {
+      "lemma": "mantener",
+      "gloss": "kept",
+      "pos": "verb"
+    },
+    "dieciocho": {
+      "lemma": "dieciocho",
+      "gloss": "eighteen",
+      "pos": "number",
+      "note": "Years are read as full numbers: dos mil dieciocho."
+    }
+  },
+  "phrases": [
+    {
+      "s": "Si no hubiera aceptado",
+      "gloss": "If I hadn't taken"
+    },
+    {
+      "s": "en las dos direcciones",
+      "gloss": "in both directions"
+    },
+    {
+      "s": "no cambiaría gran cosa",
+      "gloss": "I wouldn't change much"
+    }
+  ]
+}

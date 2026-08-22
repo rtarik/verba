@@ -1,0 +1,54 @@
+{
+  "id": "b2-u20-01-si-lo-hubiera-sabido",
+  "level": "B2",
+  "unit": 20,
+  "order": 1,
+  "title": "Si lo hubiera sabido",
+  "titleEn": "If I'd known",
+  "blurbEn": "The tense for what did not happen and now cannot. Two pieces you already own, joined for the first time.",
+  "grammarRefs": [
+    "pluscuamperfecto-subjuntivo"
+  ],
+  "body": "Ayer me enteré por casualidad de que Diego lleva ocho meses buscando trabajo.\n\nNo me lo había dicho, y llevamos dos años compartiendo despacho. Se lo conté a mi hermana y ella me preguntó, con esa puntería suya, por qué no se lo había preguntado yo.\n\nSi lo hubiera sabido, habría insistido más en salir a comer. Si lo hubiera sabido, no me habría quejado tanto de mi propio trabajo delante de él, que es lo que más vergüenza me da ahora. Si lo hubiera sabido, habría hecho muchas cosas de otra manera.\n\nPero no lo sabía, y ahora todas esas frases van en un tiempo verbal que no sirve para nada práctico y que sin embargo usamos constantemente: el pluscuamperfecto de subjuntivo. Hubiera sabido. Hubiera dicho. Hubiera venido.\n\nSe forma con el imperfecto de subjuntivo de «haber» más un participio. Nada nuevo: dos piezas que ya conocía desde hace meses, encajadas por primera vez.\n\nEs el tiempo de lo que no ocurrió y ya no puede ocurrir. Todos los idiomas necesitan uno, supongo, aunque sea para castigarse un rato.\n\nLa culpa retrospectiva es un lujo bastante inútil. Y aun así ahí estaba yo, a las once de la noche, conjugando.\n\nHoy le he escrito a Diego para preguntarle si quiere comer el jueves. No arregla nada, pero es lo único que se puede hacer con el presente.",
+  "translationEn": "Yesterday I found out by chance that Diego has been looking for work for eight months.\n\nHe hadn't told me, and we've shared an office for two years. I told my sister and she asked me, with that aim of hers, why I hadn't asked him.\n\nIf I'd known, I'd have pushed harder to go out for lunch. If I'd known, I wouldn't have complained so much about my own job in front of him, which is what embarrasses me most now. If I'd known, I'd have done a lot of things differently.\n\nBut I didn't know, and now all those sentences go in a tense that serves no practical purpose and which we nevertheless use constantly: the pluperfect subjunctive. Hubiera sabido. Hubiera dicho. Hubiera venido.\n\nIt's formed with the imperfect subjunctive of \"haber\" plus a participle. Nothing new: two pieces I'd had for months, fitted together for the first time.\n\nIt's the tense of what didn't happen and can no longer happen. Every language needs one, I suppose, if only to punish yourself with for a while.\n\nRetrospective guilt is a fairly useless luxury. And even so there I was, at eleven at night, conjugating.\n\nToday I wrote to Diego to ask whether he wants lunch on Thursday. It fixes nothing, but it's the only thing you can do with the present.",
+  "newLemmas": [
+    "enterar",
+    "casualidad",
+    "compartir",
+    "puntería",
+    "práctico",
+    "castigar",
+    "retrospectivo",
+    "conjugar",
+    "sabido"
+  ],
+  "glosses": {
+    "hubiera sabido": {
+      "lemma": "haber",
+      "gloss": "I had known",
+      "pos": "verb",
+      "note": "The imperfect subjunctive of 'haber' from Unit 18, plus a participle from Unit 5. Genuinely nothing new — only the combination."
+    },
+    "habría insistido": {
+      "lemma": "haber",
+      "gloss": "I would have insisted",
+      "pos": "verb",
+      "note": "The conditional perfect from Unit 14. It has been waiting six units for this other half."
+    }
+  },
+  "phrases": [
+    {
+      "s": "Si lo hubiera sabido",
+      "gloss": "If I'd known",
+      "at": 46
+    },
+    {
+      "s": "por casualidad",
+      "gloss": "by chance"
+    },
+    {
+      "s": "lo que más vergüenza me da",
+      "gloss": "what embarrasses me most"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "b2-u20-05-si-hubiera-estudiado-ahora-hablaria",
+  "level": "B2",
+  "unit": 20,
+  "order": 5,
+  "title": "Si hubiera estudiado, ahora hablaría",
+  "titleEn": "If I'd studied, I'd speak better now",
+  "blurbEn": "Mixed conditionals — an impossible past with a consequence that is still going on.",
+  "grammarRefs": [
+    "las-tres-condicionales"
+  ],
+  "body": "Diego vino a comer el jueves y estuvimos tres horas en un restaurante que eligió él.\n\nMe contó que había dejado el trabajo en marzo, no en septiembre como yo creía, y que llevaba desde entonces enviando currículums sin decírselo a nadie, ni siquiera a su hermano.\n\n—Si me lo hubieras dicho, te habría ayudado —le dije.\n\n—Si te lo hubiera dicho, ahora estarías preocupada. Y yo tendría que consolarte a ti.\n\nTiene una lógica desesperante y bastante difícil de rebatir.\n\nEsa segunda frase suya es una condicional mixta: pasado imposible en la primera mitad, presente hipotético en la segunda. Si te lo hubiera dicho, ahora estarías preocupada. No «habrías estado»: «estarías». La consecuencia sigue viva.\n\nSon las más útiles de todas, porque casi todo lo que lamentamos del pasado sigue teniendo efectos medibles hoy.\n\nSi hubiera estudiado español a los veinte, ahora hablaría como una nativa. Si no hubiera cambiado de trabajo, seguiría en la misma oficina y con la misma vida.\n\nAl final le dije que me avisara la próxima vez, aunque fuera por educación.\n\nDijo que sí. Los dos sabemos que no. Fue una conversación honesta de todas formas.",
+  "translationEn": "Diego came for lunch on Thursday and we spent three hours in a restaurant he chose.\n\nHe told me he'd left his job in March, not September as I'd thought, and that he'd been sending out CVs ever since without telling anyone, not even his brother.\n\n\"If you'd told me, I'd have helped you,\" I said.\n\n\"If I'd told you, you'd be worried now. And I'd have to console you.\"\n\nHe has a maddening logic that's quite hard to argue with.\n\nThat second sentence of his is a mixed conditional: impossible past in the first half, hypothetical present in the second. Si te lo hubiera dicho, ahora estarías preocupada. Not \"habrías estado\": \"estarías\". The consequence is still live.\n\nThey're the most useful of all, because almost everything we regret about the past goes on having measurable effects today.\n\nIf I'd studied Spanish at twenty, I'd speak like a native now. If I hadn't changed jobs, I'd still be in the same office and the same life.\n\nIn the end I told him to let me know next time, even if only out of politeness.\n\nHe said he would. We both know he won't. It was an honest conversation all the same.",
+  "newLemmas": [
+    "currículum",
+    "desesperante",
+    "rebatir",
+    "efecto",
+    "medible",
+    "nativo",
+    "consolar",
+    "lamentar",
+    "educación",
+    "próximo"
+  ],
+  "glosses": {
+    "estarías": {
+      "lemma": "estar",
+      "gloss": "you would be",
+      "pos": "verb",
+      "note": "The plain conditional, not the perfect. The past is closed but the worry would be happening right now — that is what makes it mixed."
+    },
+    "hubieras dicho": {
+      "lemma": "haber",
+      "gloss": "you had told",
+      "pos": "verb"
+    },
+    "avisara": {
+      "lemma": "avisar",
+      "gloss": "to let me know",
+      "pos": "verb",
+      "note": "A reported order after a past verb — Unit 19, still working."
+    }
+  },
+  "phrases": [
+    {
+      "s": "Si te lo hubiera dicho, ahora estarías preocupada",
+      "gloss": "If I'd told you, you'd be worried now",
+      "at": 57
+    },
+    {
+      "s": "ni siquiera",
+      "gloss": "not even"
+    },
+    {
+      "s": "de todas formas",
+      "gloss": "all the same"
+    }
+  ]
+}

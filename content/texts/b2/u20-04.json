@@ -1,0 +1,61 @@
+{
+  "id": "b2-u20-04-ojala-hubiera-preguntado",
+  "level": "B2",
+  "unit": 20,
+  "order": 4,
+  "title": "Ojalá hubiera preguntado",
+  "titleEn": "I wish I'd asked",
+  "blurbEn": "The formulas of regret, and someone who has found a better way of remembering.",
+  "grammarRefs": [
+    "arrepentimiento",
+    "pluscuamperfecto-subjuntivo"
+  ],
+  "body": "Mi abuelo murió hace once años y nunca le pregunté nada.\n\nOjalá le hubiera preguntado por la guerra, aunque él nunca hablaba de eso. Ojalá le hubiera preguntado cómo conoció a mi abuela de verdad, no la versión oficial de la fiesta del pueblo. Ojalá le hubiera grabado la voz: ahora no recuerdo exactamente cómo sonaba, y eso me parece imperdonable.\n\n«Ojalá» más pluscuamperfecto de subjuntivo es la fórmula del arrepentimiento puro: un deseo sobre algo que ya no tiene remedio, formulado a destiempo.\n\nHay otras maneras. «Debería haberle preguntado» es más seca y más honesta. «Tendría que haber ido más veces» suena a obligación incumplida.\n\nTodas dicen lo mismo con distinta cantidad de dolor.\n\nMi abuela, que sigue viva y sigue hablando de él en presente, no usa ninguna de estas formas. Ella dice «cuando venga tu abuelo» y luego se corrige sola, sin dramatismo.\n\nCreo que ha encontrado una manera mejor de recordarlo que la mía.\n\nEste año voy a grabar a mi abuela. No he preguntado si le parece bien, porque diría que no.\n\nVoy a poner el móvil en la mesa y a dejarla hablar hasta que se canse.",
+  "translationEn": "My grandfather died eleven years ago and I never asked him anything.\n\nI wish I'd asked him about the war, although he never talked about it. I wish I'd asked him how he really met my grandmother, not the official version about the village party. I wish I'd recorded his voice: I no longer remember exactly how it sounded, and that seems unforgivable to me.\n\n\"Ojalá\" plus the pluperfect subjunctive is the formula of pure regret: a wish about something beyond remedy, expressed too late.\n\nThere are other ways. \"Debería haberle preguntado\" is drier and more honest. \"Tendría que haber ido más veces\" sounds like an unfulfilled obligation.\n\nThey all say the same thing with different quantities of pain.\n\nMy grandmother, who is still alive and still talks about him in the present, uses none of these forms. She says \"when your grandfather comes\" and then corrects herself, without any drama.\n\nI think she has found a better way of remembering him than mine.\n\nThis year I'm going to record my grandmother. I haven't asked whether she minds, because she'd say no.\n\nI'm going to put my phone on the table and let her talk until she's tired.",
+  "newLemmas": [
+    "versión",
+    "puro",
+    "remedio",
+    "formular",
+    "destiempo",
+    "incumplir",
+    "dramatismo",
+    "vivo",
+    "imperdonable",
+    "cansar",
+    "obligación"
+  ],
+  "glosses": {
+    "Ojalá le hubiera preguntado": {
+      "lemma": "haber",
+      "gloss": "I wish I'd asked him",
+      "pos": "verb",
+      "note": "'Ojalá' + pluperfect subjunctive. Compare 'ojalá venga' (a live hope) and 'ojalá viniera' (unlikely). This one is closed."
+    },
+    "Debería haberle preguntado": {
+      "lemma": "deber",
+      "gloss": "I should have asked him",
+      "pos": "verb",
+      "note": "'deber' in the conditional + 'haber' + participle. The plainest way to say you got it wrong."
+    },
+    "Tendría que haber ido": {
+      "lemma": "tener",
+      "gloss": "I ought to have gone",
+      "pos": "verb"
+    }
+  },
+  "phrases": [
+    {
+      "s": "Ojalá le hubiera grabado la voz",
+      "gloss": "I wish I'd recorded his voice"
+    },
+    {
+      "s": "a destiempo",
+      "gloss": "too late"
+    },
+    {
+      "s": "sin dramatismo",
+      "gloss": "without any drama"
+    }
+  ]
+}
