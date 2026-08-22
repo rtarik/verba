@@ -1,0 +1,59 @@
+{
+  "id": "b2-u22-03-puesto-que",
+  "level": "B2",
+  "unit": 22,
+  "order": 3,
+  "title": "Puesto que",
+  "titleEn": "Given that",
+  "blurbEn": "More ways to say 'because' than anyone needs, and one construction that ignores every rule you have learned.",
+  "grammarRefs": [
+    "causa-consecuencia"
+  ],
+  "body": "En español hay más maneras de decir «porque» de las que necesita nadie, y todas coexisten sin estorbarse.\n\n«Porque» sirve para todo y es la única que se usa hablando. «Ya que» y «puesto que» presentan una causa que el otro ya conoce: puesto que estamos todos, empezamos. «Dado que» es más frío y más escrito, propio de informes. «Como» va siempre al principio de la frase: como no contestabas, me fui.\n\nDel otro lado están las consecuencias. «Así que» es la coloquial. «Por lo tanto» y «por consiguiente» son formales. «De ahí que» introduce una consecuencia y exige subjuntivo: llegó tarde, de ahí que se perdiera la primera parte.\n\nEsa última me costó entenderla y todavía la uso con desconfianza. La consecuencia va en subjuntivo aunque sea un hecho comprobado, lo cual contradice todo lo que había aprendido sobre el modo y me pareció una traición.\n\nMi profesora me dijo que no buscara la lógica, que a veces una construcción se congela y deja de obedecer al sistema, como un fósil.\n\nFue la primera vez que alguien me dijo que en gramática también hay excepciones sin explicación.\n\nMe tranquilizó más de lo que esperaba.",
+  "translationEn": "In Spanish there are more ways of saying \"because\" than anyone needs, and they all coexist without getting in each other's way.\n\n\"Porque\" works for everything and is the only one used in speech. \"Ya que\" and \"puesto que\" present a cause the other person already knows: given that we're all here, let's start. \"Dado que\" is colder and more written, typical of reports. \"Como\" always goes at the start of the sentence: as you weren't answering, I left.\n\nOn the other side are the consequences. \"Así que\" is the colloquial one. \"Por lo tanto\" and \"por consiguiente\" are formal. \"De ahí que\" introduces a consequence and requires the subjunctive: he arrived late, hence he missed the first part.\n\nThat last one took me a while and I still use it with mistrust. The consequence goes in the subjunctive even though it's a verified fact, which contradicts everything I'd learned about mood and struck me as a betrayal.\n\nMy teacher told me not to look for the logic, that sometimes a construction freezes and stops obeying the system, like a fossil.\n\nIt was the first time anyone told me that grammar also has exceptions with no explanation.\n\nIt reassured me more than I expected.",
+  "newLemmas": [
+    "consiguiente",
+    "coexistir",
+    "estorbar",
+    "desconfianza",
+    "traición",
+    "congelar",
+    "obedecer",
+    "fósil"
+  ],
+  "glosses": {
+    "De ahí que": {
+      "lemma": "ahí",
+      "gloss": "Hence",
+      "pos": "adverb",
+      "note": "Always takes the subjunctive, even for a fact that certainly happened. It is a frozen construction, not a live application of the mood rules."
+    },
+    "perdiera": {
+      "lemma": "perder",
+      "gloss": "he missed",
+      "pos": "verb",
+      "note": "Subjunctive because 'de ahí que' demands it — not because anyone doubts he missed it."
+    },
+    "puesto que": {
+      "lemma": "poner",
+      "gloss": "given that",
+      "pos": "verb",
+      "note": "Presents a cause both speakers already know. Compare 'porque', which can introduce new information."
+    }
+  },
+  "phrases": [
+    {
+      "s": "puesto que estamos todos",
+      "gloss": "given that we're all here"
+    },
+    {
+      "s": "De ahí que",
+      "gloss": "Hence",
+      "at": 91
+    },
+    {
+      "s": "excepciones sin explicación",
+      "gloss": "exceptions with no explanation"
+    }
+  ]
+}

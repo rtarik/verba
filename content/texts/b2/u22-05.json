@@ -1,0 +1,64 @@
+{
+  "id": "b2-u22-05-no-obstante",
+  "level": "B2",
+  "unit": 22,
+  "order": 5,
+  "title": "No obstante",
+  "titleEn": "Notwithstanding",
+  "blurbEn": "Connectors have a register, and using the wrong one gives you away faster than a grammar mistake.",
+  "grammarRefs": [
+    "conectores-avanzados",
+    "registro-formal"
+  ],
+  "body": "Los conectores tienen registro, y usar el que no toca delata más que un error de gramática, porque el error se perdona y el registro no.\n\n«Pero» vale para todo. «Sin embargo» sube un escalón. «No obstante» es claramente formal y en una conversación suena raro. «Empero» es tan literario que hoy resulta casi cómico, un fósil con corbata.\n\nLo mismo pasa con las causas: «porque» hablando, «puesto que» escribiendo, «por cuanto» solo en documentos jurídicos y en sentencias.\n\nDiego dice «no obstante» en las reuniones a propósito, porque le divierte ver quién levanta la cabeza y quién no se entera.\n\nYo cometí el error contrario durante meses: escribía informes llenos de «pero» y «así que», y sonaban a mensaje de móvil escrito con prisa.\n\nMi jefe nunca me lo dijo. Me di cuenta yo sola comparando mi texto con el suyo, párrafo a párrafo.\n\nAhora tengo una lista mental de tres columnas: hablado, neutro, escrito. Elegir la columna correcta cuesta menos esfuerzo que aprender palabras nuevas y cambia mucho más el resultado.\n\nEs el tipo de detalle que separa un texto correcto de uno creíble. Nadie te lo enseña. Se deduce.",
+  "translationEn": "Connectors have a register, and using the wrong one gives you away more than a grammar mistake, because the mistake is forgiven and the register isn't.\n\n\"Pero\" works for everything. \"Sin embargo\" goes up a rung. \"No obstante\" is clearly formal and sounds strange in conversation. \"Empero\" is so literary that today it's almost comical, a fossil in a tie.\n\nThe same goes for causes: \"porque\" when speaking, \"puesto que\" when writing, \"por cuanto\" only in legal documents and court rulings.\n\nDiego says \"no obstante\" in meetings on purpose, because it amuses him to see who looks up and who doesn't notice.\n\nI made the opposite mistake for months: I wrote reports full of \"pero\" and \"así que\", and they sounded like a text message written in a hurry.\n\nMy boss never told me. I worked it out myself by comparing my text with his, paragraph by paragraph.\n\nNow I have a mental list of three columns: spoken, neutral, written. Choosing the right column takes less effort than learning new words and changes the result far more.\n\nIt's the kind of detail that separates a correct text from a credible one. Nobody teaches you. You deduce it.",
+  "newLemmas": [
+    "perdonar",
+    "cómico",
+    "corbata",
+    "jurídico",
+    "sentencia",
+    "divertir",
+    "comparar",
+    "creíble",
+    "deducir",
+    "empero",
+    "neutro",
+    "párrafo",
+    "columna",
+    "cabeza"
+  ],
+  "glosses": {
+    "Empero": {
+      "lemma": "empero",
+      "gloss": "however",
+      "pos": "conjunction",
+      "note": "Archaic. You will meet it in nineteenth-century prose and essentially nowhere else."
+    },
+    "por cuanto": {
+      "lemma": "cuanto",
+      "gloss": "inasmuch as",
+      "pos": "adjective",
+      "note": "Legal register only. In a normal email it would read as a joke."
+    },
+    "no se entera": {
+      "lemma": "enterar",
+      "gloss": "doesn't notice",
+      "pos": "verb"
+    }
+  },
+  "phrases": [
+    {
+      "s": "el que no toca",
+      "gloss": "the wrong one"
+    },
+    {
+      "s": "un fósil con corbata",
+      "gloss": "a fossil in a tie"
+    },
+    {
+      "s": "párrafo a párrafo",
+      "gloss": "paragraph by paragraph"
+    }
+  ]
+}

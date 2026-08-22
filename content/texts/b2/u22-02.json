@@ -1,0 +1,68 @@
+{
+  "id": "b2-u22-02-por-una-parte-por-otra",
+  "level": "B2",
+  "unit": 22,
+  "order": 2,
+  "title": "Por una parte, por otra",
+  "titleEn": "On the one hand, on the other",
+  "blurbEn": "Three hundred words with a shape: a thesis, two objections and an ending.",
+  "grammarRefs": [
+    "conectores-avanzados",
+    "argumentar"
+  ],
+  "body": "Mi profesora me ha pedido que escriba un texto argumentativo de trescientas palabras. Tema libre.\n\nHe elegido si aprender idiomas seguirá teniendo sentido dentro de veinte años, con las máquinas traduciendo cada vez mejor.\n\nPor una parte, traducir ya no es un problema técnico. Por otra, hablar con alguien no consiste en intercambiar información.\n\nNo obstante, sería ingenuo negar que la mayoría de la gente elegirá lo cómodo.\n\nAhora bien, aprender un idioma nunca ha sido solo un método para entenderse. También es una manera de pensar distinto durante un rato.\n\nEn definitiva, creo que seguirá mereciendo la pena, aunque cada vez sean menos los que lo hagan.\n\nTrescientas palabras exactas. Las conté tres veces.\n\nLo que más me sorprendió al releerlo no fue el contenido, que es discutible, sino que el texto tuviera forma: una tesis, dos objeciones y un final.\n\nHace un año escribía frases sueltas y las unía con «y».",
+  "translationEn": "My teacher has asked me to write a three-hundred-word argumentative text. Any topic.\n\nI chose whether learning languages will still make sense in twenty years, with machines translating better and better.\n\nOn the one hand, translating is no longer a technical problem. On the other, talking to someone doesn't consist of exchanging information.\n\nNevertheless, it would be naive to deny that most people will choose what's convenient.\n\nThat said, learning a language has never been only a method for understanding one another. It's also a way of thinking differently for a while.\n\nAll in all, I think it will go on being worth it, even if fewer and fewer people do it.\n\nExactly three hundred words. I counted them three times.\n\nWhat surprised me most on rereading it wasn't the content, which is debatable, but that the text had a shape: a thesis, two objections and an ending.\n\nA year ago I wrote loose sentences and joined them with \"and\".",
+  "newLemmas": [
+    "argumentativo",
+    "trescientos",
+    "máquina",
+    "técnico",
+    "intercambiar",
+    "ingenuo",
+    "mayoría",
+    "contenido",
+    "discutible",
+    "tesis",
+    "objeción",
+    "obstante",
+    "definitivo"
+  ],
+  "glosses": {
+    "No obstante": {
+      "lemma": "obstante",
+      "gloss": "Nevertheless",
+      "pos": "adjective",
+      "note": "Formal contrast. In speech it sounds noticeably bookish — see the register page."
+    },
+    "Ahora bien": {
+      "lemma": "ahora",
+      "gloss": "That said",
+      "pos": "adverb",
+      "note": "Introduces a qualification of your own previous point, rather than an objection to someone else's."
+    },
+    "En definitiva": {
+      "lemma": "definitivo",
+      "gloss": "All in all",
+      "pos": "adjective",
+      "note": "Signals the conclusion. 'En resumen' and 'en conclusión' do the same job."
+    }
+  },
+  "phrases": [
+    {
+      "s": "Por una parte",
+      "gloss": "On the one hand"
+    },
+    {
+      "s": "No obstante",
+      "gloss": "Nevertheless"
+    },
+    {
+      "s": "En definitiva",
+      "gloss": "All in all"
+    },
+    {
+      "s": "cada vez mejor",
+      "gloss": "better and better"
+    }
+  ]
+}

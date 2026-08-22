@@ -1,0 +1,64 @@
+{
+  "id": "b2-u22-01-a-pesar-de-todo",
+  "level": "B2",
+  "unit": 22,
+  "order": 1,
+  "title": "A pesar de todo",
+  "titleEn": "In spite of everything",
+  "blurbEn": "Four ways of granting half your opponent's point before taking it apart.",
+  "grammarRefs": [
+    "concesivas"
+  ],
+  "body": "Diego y yo llevamos una semana discutiendo si debería aceptar el ascenso que le han ofrecido.\n\n—A pesar de que el sueldo es mejor, no me convence —dice.\n\n—Pese a lo que digas, sé que lo vas a aceptar.\n\n—Aunque lo acepte, no significa que me guste.\n\nLas tres frases conceden algo antes de contradecirlo, y cada una lo hace de una manera distinta.\n\n«Aunque» ya lo conocía: con indicativo reconoce un hecho, con subjuntivo plantea una posibilidad. «A pesar de que» funciona igual y suena algo más formal. «Pese a» es la versión corta y escrita, y va seguida de un sustantivo o de «que».\n\nExiste además «si bien», que es puramente literario y que nunca he oído en una conversación: «si bien el sueldo es mejor, el horario empeora».\n\nTodas sirven para lo mismo: admitir la mitad del argumento del otro antes de desmontarlo.\n\nEs una estrategia vieja y funciona en todos los idiomas. En español solo cambia el vocabulario.",
+  "translationEn": "Diego and I have spent a week arguing about whether he should accept the promotion he's been offered.\n\n\"Even though the salary is better, it doesn't convince me,\" he says.\n\n\"Whatever you say, I know you're going to accept it.\"\n\n\"Even if I do accept it, that doesn't mean I like it.\"\n\nAll three sentences concede something before contradicting it, and each does it differently.\n\n\"Aunque\" I already knew: with the indicative it acknowledges a fact, with the subjunctive it raises a possibility. \"A pesar de que\" works the same way and sounds slightly more formal. \"Pese a\" is the short, written version, and is followed by a noun or by \"que\".\n\nThere's also \"si bien\", which is purely literary and which I've never heard in conversation: \"si bien el sueldo es mejor, el horario empeora\".\n\nThey all do the same job: granting half the other person's argument before dismantling it.\n\nIt's an old strategy and it works in every language. In Spanish only the vocabulary changes.",
+  "newLemmas": [
+    "ascenso",
+    "ofrecer",
+    "convencer",
+    "conceder",
+    "contradecir",
+    "empeorar",
+    "horario",
+    "desmontar",
+    "estrategia",
+    "argumento",
+    "pesar",
+    "literario",
+    "viejo"
+  ],
+  "glosses": {
+    "A pesar de que": {
+      "lemma": "pesar",
+      "gloss": "Even though",
+      "pos": "verb",
+      "note": "Takes the same mood choice as 'aunque': indicative for a fact, subjunctive for a possibility."
+    },
+    "Pese a": {
+      "lemma": "pesar",
+      "gloss": "Despite",
+      "pos": "verb",
+      "note": "Followed by a noun ('pese al sueldo') or by 'que'. Compact and mostly written."
+    },
+    "si bien": {
+      "lemma": "bien",
+      "gloss": "although",
+      "pos": "adverb",
+      "note": "Purely literary. You will read it and almost never hear it."
+    }
+  },
+  "phrases": [
+    {
+      "s": "A pesar de que",
+      "gloss": "Even though",
+      "at": 16
+    },
+    {
+      "s": "Pese a lo que digas",
+      "gloss": "Whatever you say"
+    },
+    {
+      "s": "Aunque lo acepte",
+      "gloss": "Even if I accept it"
+    }
+  ]
+}

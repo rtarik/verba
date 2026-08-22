@@ -1,0 +1,59 @@
+{
+  "id": "b2-u22-06-en-definitiva",
+  "level": "B2",
+  "unit": 22,
+  "order": 6,
+  "title": "En definitiva",
+  "titleEn": "All in all",
+  "blurbEn": "The last text of the unit: what arguing in another language turns out to require.",
+  "grammarRefs": [
+    "conectores-avanzados",
+    "argumentar"
+  ],
+  "body": "Diego aceptó el ascenso el jueves.\n\nMe lo dijo en el bar de siempre, con una cerveza y sin ningún entusiasmo, como quien confiesa una travesura.\n\n—Al final tenías razón —dijo.\n\n—No. Al final tenías razón tú, que llevabas una semana diciendo que lo ibas a aceptar sin decirlo.\n\nSe rió. Es lo más parecido a darme la razón que va a hacer nunca, y me pareció suficiente.\n\nEste año he aprendido a discutir en otro idioma, que resulta ser una habilidad distinta de hablarlo, casi un deporte de reflejos. Discutir exige velocidad, matices y una cantidad enorme de fórmulas que no significan casi nada pero que sostienen la conversación mientras uno piensa la frase siguiente.\n\n«Ya, bueno.» «No sé yo.» «Hombre, depende.» «Visto así.»\n\nNinguna de esas expresiones aparece en los libros de texto y todas aparecen cada cinco minutos en cualquier bar de Madrid.\n\nEn definitiva: se aprende un idioma para poder estar en desacuerdo con alguien y seguir cayéndole bien.\n\nEs una definición pobre y me sirve.\n\nTodo lo demás es vocabulario, que se compra en cualquier parte.",
+  "translationEn": "Diego accepted the promotion on Thursday.\n\nHe told me in the usual bar, over a beer and with no enthusiasm at all, like someone confessing to mischief.\n\n\"You were right in the end,\" he said.\n\n\"No. You were right in the end — you'd spent a week saying you were going to accept without saying it.\"\n\nHe laughed. It's the closest thing to admitting I'm right that he'll ever do, and it seemed enough.\n\nThis year I've learned to argue in another language, which turns out to be a different skill from speaking it, almost a sport of reflexes. Arguing demands speed, nuance and an enormous quantity of formulas that mean almost nothing but hold the conversation up while you think of the next sentence.\n\n\"Ya, bueno.\" \"No sé yo.\" \"Hombre, depende.\" \"Visto así.\"\n\nNone of those expressions appears in textbooks and all of them appear every five minutes in any bar in Madrid.\n\nAll in all: you learn a language so you can disagree with someone and still be liked by them.\n\nIt's a poor definition and it does for me.\n\nEverything else is vocabulary, which you can buy anywhere.",
+  "newLemmas": [
+    "cerveza",
+    "confesar",
+    "travesura",
+    "velocidad",
+    "matiz",
+    "definición",
+    "reflejo",
+    "caer"
+  ],
+  "glosses": {
+    "No sé yo": {
+      "lemma": "saber",
+      "gloss": "I'm not so sure",
+      "pos": "verb",
+      "note": "The inverted word order is the point: 'no sé yo' is scepticism, where 'yo no sé' would be plain ignorance."
+    },
+    "Visto así": {
+      "lemma": "ver",
+      "gloss": "Put like that",
+      "pos": "verb",
+      "note": "Concedes a point without agreeing to anything in particular."
+    },
+    "Hombre": {
+      "lemma": "hombre",
+      "gloss": "well",
+      "pos": "noun",
+      "note": "A filler with no gender force at all — said to women constantly. It softens a disagreement."
+    }
+  },
+  "phrases": [
+    {
+      "s": "como quien confiesa",
+      "gloss": "like someone confessing"
+    },
+    {
+      "s": "En definitiva",
+      "gloss": "All in all"
+    },
+    {
+      "s": "seguir cayéndole bien",
+      "gloss": "and still be liked by them"
+    }
+  ]
+}

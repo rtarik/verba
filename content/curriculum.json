@@ -432,8 +432,14 @@
         "advanced connectors",
         "structuring an argument"
       ],
-      "textIds": [],
-      "summaryEn": "Conceding a point before making your own, and the discourse markers that hold a long argument together."
+      "textIds": [
+        "b2-u22-01-a-pesar-de-todo",
+        "b2-u22-02-por-una-parte-por-otra",
+        "b2-u22-03-puesto-que",
+        "b2-u22-04-tienes-razon-pero",
+        "b2-u22-05-no-obstante",
+        "b2-u22-06-en-definitiva"
+      ]
     },
     {
       "unit": 23,

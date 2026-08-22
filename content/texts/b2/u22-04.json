@@ -1,0 +1,21 @@
+{
+  "id": "b2-u22-04-tienes-razon-pero",
+  "level": "B2", "unit": 22, "order": 4,
+  "title": "Tienes razón, pero",
+  "titleEn": "You're right, but",
+  "blurbEn": "The three-part move that wins arguments in Spanish, and why conceding first is not weakness.",
+  "grammarRefs": ["argumentar", "concesivas"],
+  "body": "La estructura más útil de cualquier discusión en español tiene tres partes.\n\nPrimero se concede: «tienes razón en que el sueldo importa». Después se gira: «ahora bien, no es lo único que importa». Y por último se remata: «yo, en tu lugar, esperaría».\n\nDiego lo hace mejor que yo. Concede mucho más de lo necesario, lo cual desarma a cualquiera, y luego dice exactamente lo que pensaba desde el principio.\n\nYo tiendo a empezar por el desacuerdo, que es más honesto y bastante menos eficaz.\n\nMi profesora dice que en español la cortesía discursiva no es hipocresía, sino arquitectura: se construye un espacio común antes de meter una diferencia dentro.\n\nSuena a filosofía barata, pero funciona.\n\nAyer discutimos otra vez sobre el ascenso. Empecé concediendo. A los diez minutos Diego dijo que quizá tenía razón.\n\nNo la tenía. Pero por primera vez me escuchó hasta el final.",
+  "translationEn": "The most useful structure in any Spanish argument has three parts.\n\nFirst you concede: \"you're right that the salary matters\". Then you turn: \"that said, it isn't the only thing that matters\". And finally you close: \"in your position, I'd wait\".\n\nDiego does it better than I do. He concedes far more than necessary, which disarms anyone, and then says exactly what he thought from the start.\n\nI tend to begin with the disagreement, which is more honest and considerably less effective.\n\nMy teacher says that in Spanish discursive politeness isn't hypocrisy but architecture: you build a shared space before putting a difference inside it.\n\nIt sounds like cheap philosophy, but it works.\n\nYesterday we argued about the promotion again. I started by conceding. Ten minutes later Diego said maybe I was right.\n\nI wasn't. But for the first time he listened to me all the way through.",
+  "newLemmas": ["rematar", "desarmar", "tender", "desacuerdo", "eficaz", "discursivo", "hipocresía", "filosofía", "meter"],
+  "glosses": {
+    "ahora bien": { "lemma": "ahora", "gloss": "that said", "pos": "adverb", "note": "The pivot. It signals that the concession is over and the real point is coming." },
+    "en tu lugar": { "lemma": "lugar", "gloss": "in your position", "pos": "noun", "note": "Softens advice by framing it hypothetically. Naturally paired with the conditional." },
+    "lo cual": { "lemma": "cual", "gloss": "which", "pos": "pronoun" }
+  },
+  "phrases": [
+    { "s": "tienes razón en que", "gloss": "you're right that" },
+    { "s": "yo, en tu lugar, esperaría", "gloss": "in your position, I'd wait" },
+    { "s": "no es hipocresía, sino arquitectura", "gloss": "isn't hypocrisy but architecture" }
+  ]
+}

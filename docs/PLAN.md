@@ -297,8 +297,8 @@ texts that use it. Cross-linked both ways with `grammarRefs`.
 Build a **vertical slice first**: Unit 1 complete (6 texts + audio + grammar docs + lexicon)
 before scaling out. If anything about the pipeline is wrong, it surfaces at 6 texts, not 60.
 
-**Status: A1, A2 and B1 complete, B2 Units 18–21.** 126 texts, 14,943 words, 1,347 lemmas, 83
-grammar pages, 37 MB audio — 88% of the planned 144 texts.
+**Status: A1, A2 and B1 complete, B2 Units 18–22.** 132 texts, 15,973 words, 1,409 lemmas, 87
+grammar pages, 40 MB audio — 92% of the planned 144 texts.
 Live at https://rtarik.github.io/verba/ Live at https://rtarik.github.io/verba/
 
 | Unit | Avg length | Recycled vocabulary |
@@ -324,6 +324,7 @@ Live at https://rtarik.github.io/verba/ Live at https://rtarik.github.io/verba/
 | B2 19 Dijo que viniera | 204 w | 90% |
 | B2 20 Si hubiera sabido | 196 w | 90% |
 | B2 21 El mundo del trabajo | 168 w | 87% |
+| B2 22 Debate | 172 w | 89% |
 
 That last column is the health metric for the course. If it ever falls while texts lengthen, new
 vocabulary is being pushed too fast. Target for A2 was 70–80% while texts grew toward 90–120 words. **Both met**: A2 finished at
