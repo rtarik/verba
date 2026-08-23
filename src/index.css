@@ -95,7 +95,13 @@ body {
 .prose-grammar p  { margin: .7rem 0; line-height: 1.7; color: var(--ink-soft); }
 .prose-grammar ul { margin: .7rem 0 .7rem 1.1rem; list-style: disc; }
 .prose-grammar li { margin: .3rem 0; line-height: 1.6; color: var(--ink-soft); }
-.prose-grammar table { width: 100%; margin: 1rem 0; border-collapse: collapse; font-size: .92rem; }
+/*
+  Conjugation tables run to seven columns, which cannot shrink to a phone
+  without turning every cell into a word ladder. The scroller lets a wide
+  table slide sideways on its own instead of pushing the page with it.
+*/
+.prose-grammar .table-scroll { margin: 1rem 0; overflow-x: auto; }
+.prose-grammar table { width: 100%; border-collapse: collapse; font-size: .92rem; }
 .prose-grammar th, .prose-grammar td { border: 1px solid var(--edge); padding: .45rem .7rem; text-align: left; }
 .prose-grammar th { background: var(--accent-soft); font-weight: 600; }
 .prose-grammar code { background: var(--accent-soft); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }

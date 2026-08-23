@@ -1,9 +1,22 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useState, type ReactNode } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { grammarDocs, grammarByCategory, grammarById, textsUsingGrammar } from '@/lib/content'
 import { grammarProgress, useGrammarProgress } from '@/lib/progress'
+
+/**
+ * Every table gets its own horizontal scroller. The conjugation reference runs
+ * to seven columns, and without this a wide table drags the whole page
+ * sideways on a phone instead of scrolling by itself.
+ */
+const markdownComponents = {
+  table: ({ children }: { children?: ReactNode }) => (
+    <div className="table-scroll">
+      <table>{children}</table>
+    </div>
+  ),
+}
 
 export default function Grammar() {
   const { id } = useParams()
@@ -73,7 +86,7 @@ export default function Grammar() {
         </div>
 
         <div className="prose-grammar mt-5 max-w-none">
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>{doc.body}</ReactMarkdown>
+          <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>{doc.body}</ReactMarkdown>
         </div>
 
         <button

@@ -147,6 +147,13 @@ export const zCurriculum = z.object({ units: z.array(zUnit) })
  * Grammar sections, in the order they are displayed. Keeping this a closed set
  * (rather than free text) is what stops the reference fragmenting into thirty
  * ad-hoc headings as it grows.
+ *
+ * 'Conjugation reference' is deliberately last and deliberately different: the
+ * other sections teach, one idea per page, and their tables are cut down to the
+ * forms a learner needs at that moment. These are lookup tables — every person
+ * including `vosotros`, every irregular spelled out, and the same verb repeated
+ * across pages on purpose. Redundancy is the feature; you should never have to
+ * hold two pages in your head at once to conjugate something.
  */
 export const GRAMMAR_CATEGORIES = [
   'Verbs',
@@ -154,6 +161,7 @@ export const GRAMMAR_CATEGORIES = [
   'Pronouns & possessives',
   'Numbers & time',
   'Sentences & questions',
+  'Conjugation reference',
 ] as const
 
 export const zGrammarMeta = z.object({
