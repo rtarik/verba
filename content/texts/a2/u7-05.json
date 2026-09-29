@@ -9,6 +9,7 @@
   "translationEn": "Last year I used to study at night, after work.\n\nWhile I was studying in the kitchen, my sister was watching television in the living room and my mother was talking on the phone. The house was never silent.\n\nOne night in March I could not concentrate. The neighbours were doing building work, the television was very loud and the cat wanted to play. Nobody ever complained, only me.\n\nI closed the book, picked up my coat and went out to the library.\n\nThere was no noise there. I studied three hours in a row and understood for the first time the difference between \"era\" and \"fue\".\n\nI came home very happy.",
   "newLemmas": ["salón", "marzo", "concentrar", "vecino", "obra", "abrigo", "biblioteca", "seguido", "quejar"],
   "glosses": {
+    "trabajo": { "lemma": "trabajo", "gloss": "work, job", "pos": "noun" },
     "estudiaba": { "lemma": "estudiar", "gloss": "I used to study", "pos": "verb", "note": "A habit across a whole year. Three verbs in the next sentence are all imperfecto too — they were all going on together." },
     "Cerré": { "lemma": "cerrar", "gloss": "I closed", "pos": "verb", "note": "Here the tense changes and the story moves. Three preterites in a row: closed, picked up, went out." }
   },

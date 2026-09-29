@@ -25,6 +25,7 @@
     "interesar"
   ],
   "glosses": {
+    "trabajo": { "lemma": "trabajo", "gloss": "work, job", "pos": "noun" },
     "no estaría escribiendo": {
       "lemma": "estar",
       "gloss": "I wouldn't be writing",

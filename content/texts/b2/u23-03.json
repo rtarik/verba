@@ -29,6 +29,7 @@
     "vegetariano"
   ],
   "glosses": {
+    "trabajo": { "lemma": "trabajo", "gloss": "work, job", "pos": "noun" },
     "se puso": {
       "lemma": "poner",
       "gloss": "became",

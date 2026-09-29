@@ -23,6 +23,7 @@
     "verbal"
   ],
   "glosses": {
+    "trabajo": { "lemma": "trabajo", "gloss": "work, job", "pos": "noun" },
     "tuviera": {
       "lemma": "tener",
       "gloss": "I had",

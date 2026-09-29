@@ -31,6 +31,20 @@ export const zWordToken = z.object({
   pos: z.string().optional(),
   /** Optional longer explanation, e.g. why this form is reflexive. */
   note: z.string().optional(),
+  /**
+   * Verbs only, added by the build from the conjugation engine: every
+   * reading of the form (hable → present subjunctive, yo or él). A form of
+   * haber and the participle after it share one compound-tense reading.
+   */
+  morph: z
+    .array(
+      z.object({
+        tense: z.string(),
+        persons: z.array(z.number().int().min(0).max(5)).optional(),
+        compound: z.string().optional(),
+      })
+    )
+    .optional(),
 })
 
 /** Punctuation and spacing. Rendered, never hoverable or tracked. */

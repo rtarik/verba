@@ -27,6 +27,7 @@
     "oficial"
   ],
   "glosses": {
+    "trabajo": { "lemma": "trabajo", "gloss": "work, job", "pos": "noun" },
     "cambiará": {
       "lemma": "cambiar",
       "gloss": "will change",

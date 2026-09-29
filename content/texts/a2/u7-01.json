@@ -9,6 +9,7 @@
   "translationEn": "When I was small, I lived in a very small village with my parents and my sister.\n\nEvery day I went to school on foot. The school was near home and the way there was very peaceful, between trees and fields.\n\nIn the afternoons I played in the square with my friends until dinner time. Nobody watched over us and nobody was afraid.\n\nIn summer we swam in the river and came home hungry.\n\nMy grandmother lived with us and cooked every Sunday. The house smelled wonderful.\n\nWe were happy and we did not know it. Now I remember it all very fondly.",
   "newLemmas": ["colegio", "pie", "camino", "entre", "vigilar", "río", "hambre", "oler", "recordar", "cariño"],
   "glosses": {
+    "camino": { "lemma": "camino", "gloss": "way, path", "pos": "noun" },
     "era": { "lemma": "ser", "gloss": "was, used to be", "pos": "verb", "note": "Imperfecto of 'ser'. One of only three irregular verbs in this whole tense." },
     "iba": { "lemma": "ir", "gloss": "used to go", "pos": "verb", "note": "Imperfecto of 'ir'. Note it does not look like 'fui' at all — different tense, different stem." },
     "vivía": { "lemma": "vivir", "gloss": "used to live", "pos": "verb", "note": "Regular: -er and -ir verbs take -ía. No exceptions worth worrying about." },

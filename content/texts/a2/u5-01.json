@@ -24,9 +24,11 @@
     "especial",
     "televisión",
     "nuevo",
-    "oficina"
+    "oficina",
+    "trabajo"
   ],
   "glosses": {
+    "trabajo": { "lemma": "trabajo", "gloss": "work, job", "pos": "noun" },
     "he": {
       "lemma": "haber",
       "gloss": "I have",

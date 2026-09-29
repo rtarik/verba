@@ -25,6 +25,7 @@
     "personal"
   ],
   "glosses": {
+    "trabajo": { "lemma": "trabajo", "gloss": "work, job", "pos": "noun" },
     "a Sofía": {
       "lemma": "a",
       "gloss": "(marks a person)",

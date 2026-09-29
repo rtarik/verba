@@ -23,6 +23,7 @@
     "único"
   ],
   "glosses": {
+    "trabajo": { "lemma": "trabajo", "gloss": "work, job", "pos": "noun" },
     "estaré": {
       "lemma": "estar",
       "gloss": "I will be",

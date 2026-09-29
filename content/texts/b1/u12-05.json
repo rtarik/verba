@@ -9,6 +9,7 @@
   "translationEn": "Diego is late for everything.\n\nI doubt he'll get to the meeting on time. I doubt he's even out of the house.\n\nMaybe he's on the underground. Maybe he's still asleep. With him you never know.\n\nIt's not that he's irresponsible. He simply isn't punctual, and I don't think he ever will be: he lives fifteen minutes behind the rest of the world.\n\nI've written him three messages. I don't think he'll read them until the afternoon.\n\nMy boss asks after him every two minutes. I tell him he's surely on his way, though I'm not remotely sure.\n\nAt twenty past ten he appears, with two coffees and a smile.\n\n\"Sorry. It's possible I lose track of time sometimes.\"\n\nNobody says anything to him. He brings coffee. That fixes everything.",
   "newLemmas": ["siquiera", "metro", "irresponsable", "puntual", "resto", "noción", "arreglar", "sonrisa", "detrás"],
   "glosses": {
+    "camino": { "lemma": "camino", "gloss": "way, path", "pos": "noun" },
     "llegue": { "lemma": "llegar", "gloss": "arrives", "pos": "verb", "note": "'dudar que' always takes the subjunctive — doubt is the trigger in its purest form." },
     "Quizás": { "lemma": "quizá", "gloss": "maybe", "pos": "adverb", "note": "'quizá' and 'tal vez' take the subjunctive when you are genuinely unsure, and the indicative when you are fairly confident. Here she is guessing." },
     "duerma": { "lemma": "dormir", "gloss": "is asleep", "pos": "verb" }

@@ -30,6 +30,7 @@
     "mío"
   ],
   "glosses": {
+    "coma": { "lemma": "coma", "gloss": "comma", "pos": "noun" },
     "dos puntos": {
       "lemma": "punto",
       "gloss": "colon",

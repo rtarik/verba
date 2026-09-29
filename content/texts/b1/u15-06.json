@@ -25,6 +25,7 @@
     "catorce"
   ],
   "glosses": {
+    "camino": { "lemma": "camino", "gloss": "way, path", "pos": "noun" },
     "se aprende": {
       "lemma": "aprender",
       "gloss": "one learns",

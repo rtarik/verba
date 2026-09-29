@@ -23,6 +23,7 @@
     "cuándo"
   ],
   "glosses": {
+    "pregunta": { "lemma": "pregunta", "gloss": "question", "pos": "noun" },
     "volvía": {
       "lemma": "volver",
       "gloss": "I was coming back",

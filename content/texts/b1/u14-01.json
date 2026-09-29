@@ -9,6 +9,7 @@
   "translationEn": "Yesterday I arranged to meet Diego at seven in the usual bar, the one with the uncomfortable chairs.\n\nI arrived at ten past seven. He had already left.\n\nHe left me a note on the counter: \"I waited eight minutes. A record. See you at the bookshop.\"\n\nWhen I got to the bookshop, he had already bought two books and sat down on the floor to read one.\n\n\"You're late,\" he said, without looking up.\n\n\"You've been late for everything since I've known you.\"\n\n\"That's why I came early today. To watch you be late for once.\"\n\nI had never seen Diego on time. I don't think anyone had.\n\nI took a photo as proof, in case nobody believed me. He pretended to be annoyed, but he kept the photo.",
   "newLemmas": ["bar", "silla", "incómodo", "barra", "récord", "suelo", "vista", "prueba", "guardar"],
   "glosses": {
+    "nota": { "lemma": "nota", "gloss": "note", "pos": "noun" },
     "había": { "lemma": "haber", "gloss": "had", "pos": "verb", "note": "The imperfecto of 'haber' plus a participle. Same construction as 'he ido', shifted one step further back." },
     "se había ido": { "lemma": "ir", "gloss": "had left", "pos": "verb", "note": "The leaving happened *before* the arriving. Both are past; this marks which came first." },
     "Nunca había visto": { "lemma": "ver", "gloss": "I had never seen", "pos": "verb" }

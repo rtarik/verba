@@ -24,6 +24,7 @@
     "próximo"
   ],
   "glosses": {
+    "trabajo": { "lemma": "trabajo", "gloss": "work, job", "pos": "noun" },
     "estarías": {
       "lemma": "estar",
       "gloss": "you would be",

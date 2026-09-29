@@ -32,6 +32,7 @@ export const TENSE_IDS = [
   'imperativo',
   'imperativo-negativo',
   'subj-futuro',
+  'preterito-anterior',
 ] as const
 export type TenseId = (typeof TENSE_IDS)[number]
 
@@ -42,7 +43,7 @@ export interface TenseInfo {
   level: 'A1' | 'A2' | 'B1' | 'B2'
   /** Conjugation reference page that tabulates it. */
   ref: string
-  /** Recognised when reading but never drilled: the literary future subjunctive. */
+  /** Recognised when reading but never drilled: the literary tenses. */
   readOnly?: boolean
 }
 
@@ -63,6 +64,7 @@ export const TENSES: Record<TenseId, TenseInfo> = {
   imperativo: { name: 'imperativo', en: 'command', level: 'A2', ref: 'conjugacion-imperativo' },
   'imperativo-negativo': { name: 'imperativo negativo', en: 'negative command', level: 'B1', ref: 'conjugacion-imperativo' },
   'subj-futuro': { name: 'futuro de subjuntivo', en: 'future subjunctive', level: 'B2', ref: 'tiempos-literarios', readOnly: true },
+  'preterito-anterior': { name: 'pretérito anterior', en: 'past anterior', level: 'B2', ref: 'tiempos-literarios', readOnly: true },
 }
 
 /** Tenses offered in drills. */
@@ -381,6 +383,7 @@ export function createConjugator(specs: VerbSpecs, opts: { spelling?: boolean; a
   }
 
   const COMPOUND: Partial<Record<TenseId, FiniteSimple>> = {
+    'preterito-anterior': 'preterito',
     perfecto: 'presente',
     pluscuamperfecto: 'imperfecto',
     'futuro-perfecto': 'futuro',

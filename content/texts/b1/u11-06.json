@@ -9,6 +9,7 @@
   "translationEn": "It's December again.\n\nLast year, around this time, I couldn't say almost anything in Spanish. Now I write this without a dictionary and only look up two or three words.\n\nFor next year I have wishes, not resolutions. Resolutions break in February.\n\nI hope I keep studying even if work gets complicated. I hope I go back to Mexico and this time understand the jokes. I hope my mother is well and my grandparents are still in their village, with the garden and the cat.\n\nI want my sister to enjoy university. I want Pablo to come to Madrid in spring. And I want someone, one day, to ask me something in Spanish on the street and not notice that I'm a foreigner.\n\nHere's hoping.\n\nIt's a lovely word. It means I'm still expecting something.",
   "newLemmas": ["diciembre", "fecha", "deseo", "propósito", "romper", "febrero", "complicar", "chiste", "extranjero", "precioso", "primavera"],
   "glosses": {
+    "trabajo": { "lemma": "trabajo", "gloss": "work, job", "pos": "noun" },
     "siga": { "lemma": "seguir", "gloss": "I keep", "pos": "verb", "note": "Subjunctive of 'seguir'. Here 'ojalá' is about the speaker herself — the subjunctive appears because of 'ojalá', not because of two subjects." },
     "se rompen": { "lemma": "romper", "gloss": "break", "pos": "verb", "note": "'se' makes it happen by itself — resolutions break, nobody breaks them." },
     "entienda": { "lemma": "entender", "gloss": "I understand", "pos": "verb" }

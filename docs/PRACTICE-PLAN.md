@@ -26,8 +26,9 @@ drill never asks for a form the engine gets wrong.
 
 ## Phase 2
 
-- [ ] Tense and person in the reader's hover card (`hubiera` → haber · pluperfect subj. · yo/él), linked to the table
-- [ ] Fill-the-blank from texts already read, with the sentence's audio after answering
+- [x] Tense and person in the reader's hover card (`hubiera` → haber · pluperfect subj. · yo/él), with the tense's row and this form picked out. Worked out at build time for every verb in every text; `había` + `ido` read together as one compound tense
+- [x] Fixed along the way: nouns tagged as verbs (`el trabajo` glossed "I work", `una pregunta` "asks"…) in 26 texts; `content:check` now warns on a verb straight after a determiner
+- ~~Fill-the-blank from texts already read~~ — dropped
 
 ## Phase 3
 

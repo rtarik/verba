@@ -23,6 +23,7 @@
     "sabido"
   ],
   "glosses": {
+    "trabajo": { "lemma": "trabajo", "gloss": "work, job", "pos": "noun" },
     "hubiera sabido": {
       "lemma": "haber",
       "gloss": "I had known",

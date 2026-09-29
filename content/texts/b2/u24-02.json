@@ -28,6 +28,7 @@
     "producir"
   ],
   "glosses": {
+    "recuerdo": { "lemma": "recuerdo", "gloss": "memory", "pos": "noun" },
     "Llovía": {
       "lemma": "llover",
       "gloss": "It was raining",

@@ -15,7 +15,7 @@ import {
   type Phrase, type LexiconEntry, type Curriculum, type AudioSidecar, type VerbEntry,
 } from '../../content/schema.ts'
 import { createConjugator, DRILL_TENSES, type VerbSpecs } from '../../engine/conjugate.ts'
-import { createAnalyzer } from '../../engine/analyze.ts'
+import { annotate, createAnalyzer } from '../../engine/analyze.ts'
 import { tokenize, wordSurfaces, hashBody } from './tokenize.ts'
 
 export const ROOT = resolve(fileURLToPath(new URL('../..', import.meta.url)))
@@ -109,12 +109,16 @@ export function compileAll(): CompiledCorpus {
       const lemma = word.lemma
       if (!introduced.has(lemma) && !declared.has(lemma)) unexplained.add(lemma)
       if (!lexicon[lemma]) {
+        // curated is keyed by surface form, so curated[lemma] can be another
+        // word spelled the same: the noun "trabajo" would find the verb form
+        // "trabajo" (I work). Only use the entry if it is this lemma.
+        const own = curated[lemma]?.lemma === lemma ? curated[lemma] : undefined
         lexicon[lemma] = {
           lemma,
-          gloss: curated[lemma]?.gloss ?? word.gloss,
-          pos: curated[lemma]?.pos ?? word.pos ?? 'unknown',
-          level: curated[lemma]?.level ?? src.level,
-          ...(curated[lemma]?.note ? { note: curated[lemma].note } : {}),
+          gloss: own?.gloss ?? word.gloss,
+          pos: own?.pos ?? word.pos ?? 'unknown',
+          level: own?.level ?? src.level,
+          ...(own?.note ? { note: own.note } : {}),
           firstSeenIn: id,
         }
       }
@@ -151,6 +155,9 @@ export function compileAll(): CompiledCorpus {
 
   return { texts, lexicon, curriculum, verbs, diagnostics: { errors, warnings } }
 }
+
+/** Words that only ever come before a noun, never before a verb. */
+const DETERMINERS = new Set(['el', 'un', 'una', 'unos', 'unas', 'del', 'mi', 'tu', 'su', 'mis', 'tus', 'sus', 'aquel', 'aquella', 'cada', 'nuestro', 'nuestra', 'vuestro', 'vuestra'])
 
 /**
  * The conjugation engine checked against the course: every verb form that
@@ -223,6 +230,30 @@ function checkVerbs(
         )
       }
     }
+  }
+
+  // Readings for the hover card, written onto the tokens themselves.
+  for (const t of texts) {
+    const words: Array<{ s: string; lemma: string; isVerb: boolean; joinedToNext: boolean; token: WordToken }> = []
+    t.tokens.forEach((tok, k) => {
+      if (tok.k !== 'w') return
+      let j = k + 1
+      while (j < t.tokens.length && t.tokens[j].k === 'p' && /^\s+$/.test((t.tokens[j] as { s: string }).s)) j++
+      words.push({ s: tok.s.toLowerCase(), lemma: tok.lemma, isVerb: tok.pos === 'verb', joinedToNext: t.tokens[j]?.k === 'w', token: tok })
+    })
+    annotate(analyzer, words).forEach((morph, i) => {
+      if (morph?.length) words[i].token.morph = morph
+    })
+
+    // A conjugated verb straight after a determiner is almost always a noun
+    // spelled like one: "el trabajo", "una pregunta". The shared lexicon is
+    // keyed by spelling, so the fix is a noun gloss in this text's glosses.
+    words.forEach((w, i) => {
+      const prev = words[i - 1]
+      if (!w.isVerb || !prev?.joinedToNext || !DETERMINERS.has(prev.s)) return
+      if (w.token.morph?.some((m) => m.tense === 'infinitivo' || m.tense === 'participio')) return
+      warnings.push(`${t.id}: "${prev.s} ${w.s}" — "${w.s}" is tagged as a verb after a determiner; if it is a noun, gloss it in this text`)
+    })
   }
 
   const entries: VerbEntry[] = []

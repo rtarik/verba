@@ -21,9 +21,11 @@
     "orden",
     "respuesta",
     "sensación",
-    "aumento"
+    "aumento",
+    "pregunta"
   ],
   "glosses": {
+    "pregunta": { "lemma": "pregunta", "gloss": "question", "pos": "noun" },
     "si": {
       "lemma": "si",
       "gloss": "whether",

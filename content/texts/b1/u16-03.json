@@ -25,6 +25,7 @@
     "hija"
   ],
   "glosses": {
+    "coma": { "lemma": "coma", "gloss": "comma", "pos": "noun" },
     "cuyo": {
       "lemma": "cuyo",
       "gloss": "whose",

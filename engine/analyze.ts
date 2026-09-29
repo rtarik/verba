@@ -8,7 +8,7 @@
  * "dímelo", "contándome", "sentaos".
  */
 import { attach } from './spelling.ts'
-import { PERSONS, type Conjugator, type Person, type TenseId } from './conjugate.ts'
+import { PERSONS, TENSE_IDS, TENSES, type Conjugator, type Person, type TenseId } from './conjugate.ts'
 
 export type Analysis =
   | { lemma: string; kind: 'finite'; tense: TenseId; person: Person }
@@ -64,4 +64,73 @@ export function createAnalyzer(c: Conjugator, lemmas: Iterable<string>) {
     /** Readings of a word as a form of this particular verb. */
     readingsAs: (word: string, lemma: string): Analysis[] => (index.get(word.toLowerCase()) ?? []).filter((a) => a.lemma === lemma),
   }
+}
+
+/* ---- readings for the reader ------------------------------------------ */
+
+export type Form = TenseId | 'infinitivo' | 'gerundio' | 'participio'
+
+/** One reading of a word on the page, persons merged: hable → subj-presente, yo or él. */
+export interface Morph {
+  tense: Form
+  persons?: Person[]
+  /** Set on both words of a compound tense: "había dicho". */
+  compound?: string
+}
+
+/** The compound tense each auxiliary tense makes: había + dicho → pluscuamperfecto. */
+export const COMPOUND_OF: Partial<Record<TenseId, TenseId>> = {
+  presente: 'perfecto',
+  imperfecto: 'pluscuamperfecto',
+  futuro: 'futuro-perfecto',
+  condicional: 'condicional-compuesto',
+  preterito: 'preterito-anterior',
+  'subj-presente': 'subj-perfecto',
+  'subj-imperfecto': 'subj-pluscuamperfecto',
+}
+
+/** Group analyses by tense, in tense order, merging persons. */
+export function toMorph(readings: Analysis[]): Morph[] {
+  const byTense = new Map<Form, Set<Person>>()
+  for (const r of readings) {
+    const key: Form = r.kind === 'finite' ? r.tense : r.kind
+    const persons = byTense.get(key) ?? new Set<Person>()
+    if (r.kind === 'finite') persons.add(r.person)
+    byTense.set(key, persons)
+  }
+  const order = (f: Form) => (TENSE_IDS as readonly string[]).indexOf(f) + (f in TENSES ? 0 : 100)
+  return [...byTense]
+    .sort(([a], [b]) => order(a) - order(b))
+    .map(([tense, ps]) => (ps.size ? { tense, persons: [...ps].sort() } : { tense }))
+}
+
+/**
+ * Readings for each word of a text, given its words in order and whether only
+ * spaces separate each word from the next. A form of haber directly followed
+ * by a participle is read, with it, as one compound tense.
+ */
+export function annotate(
+  analyzer: ReturnType<typeof createAnalyzer>,
+  words: Array<{ s: string; lemma: string; isVerb: boolean; joinedToNext: boolean }>,
+): Array<Morph[] | undefined> {
+  const out: Array<Morph[] | undefined> = words.map(() => undefined)
+  for (let i = 0; i < words.length; i++) {
+    const w = words[i]
+    if (!w.isVerb || out[i]) continue
+    const readings = analyzer.readingsAs(w.s, w.lemma)
+    const next = words[i + 1]
+    if (w.lemma === 'haber' && w.joinedToNext && next?.isVerb) {
+      const isParticiple = analyzer.readingsAs(next.s, next.lemma).some((r) => r.kind === 'participio')
+      const compound = toMorph(readings)
+        .filter((m) => m.tense in COMPOUND_OF)
+        .map((m) => ({ tense: COMPOUND_OF[m.tense as TenseId]!, persons: m.persons, compound: `${w.s} ${next.s}` }))
+      if (isParticiple && compound.length) {
+        out[i] = compound
+        out[i + 1] = compound
+        continue
+      }
+    }
+    out[i] = toMorph(readings)
+  }
+  return out
 }

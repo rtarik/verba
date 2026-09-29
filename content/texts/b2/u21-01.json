@@ -30,6 +30,7 @@
     "contra"
   ],
   "glosses": {
+    "espera": { "lemma": "espera", "gloss": "wait, waiting", "pos": "noun" },
     "necesitaría": {
       "lemma": "necesitar",
       "gloss": "I would need",
