@@ -28,6 +28,7 @@ content/
 engine/
   conjugate.ts     any form of any verb, from rules plus content/verbs.json
   analyze.ts       the engine run backwards: a word on the page -> verb, tense, person
+  check.ts         marks drill answers and diagnoses mistakes
   spelling.ts      stress and written-accent rules
 scripts/
   lib/tokenize.ts  the single authority on what counts as a word
@@ -43,7 +44,7 @@ src/
 
 ```bash
 npm run content:check    # validate — no app code loaded, safe to run anytime
-npm run test:conjugation # golden conjugation tables from the reference pages
+npm run test:conjugation # golden tables from the reference pages, plus answer marking
 npm run content:build    # compile content/ -> content/build/
 npm run content:audio    # generate narration + word timings for anything missing
 npm run content:all      # build, generate audio, rebuild to attach timings

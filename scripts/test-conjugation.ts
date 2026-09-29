@@ -5,7 +5,8 @@
  */
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { createConjugator, type TenseId, type VerbSpecs } from '../engine/conjugate.ts'
+import { createConjugator, type Person, type TenseId, type VerbSpecs } from '../engine/conjugate.ts'
+import { createChecker, difference, explain, normalize, type Diagnosis } from '../engine/check.ts'
 import { ROOT } from './lib/compile.ts'
 
 const specs = JSON.parse(readFileSync(join(ROOT, 'content', 'verbs.json'), 'utf8')) as VerbSpecs
@@ -218,9 +219,86 @@ has('tener', 'subj-imperfecto', 0, 'tuviese')
 has('ir', 'imperativo', 3, 'vayamos')
 has('saber', 'subj-pluscuamperfecto', 2, 'hubiese sabido')
 
-const total = CASES.length + NON_FINITE.length * 2 + 4
+/* ---- answer checking ---------------------------------------------------- */
+
+const checker = createChecker(specs)
+
+/** [verb, tense, person, typed answer, expected verdict or diagnosis kind, reflexive?] */
+type CheckCase = [string, TenseId, Person, string, 'correct' | 'accent' | Diagnosis['kind'], boolean?]
+
+const CHECKS: CheckCase[] = [
+  ['hablar', 'preterito', 2, 'habló', 'correct'],
+  ['hablar', 'preterito', 2, '  Él HABLÓ. ', 'correct'],
+  ['tener', 'subj-imperfecto', 0, 'tuviese', 'correct'],
+  ['ir', 'imperativo', 3, 'vayamos', 'correct'],
+  ['estar', 'presente', 4, 'estais', 'accent'],
+  ['conocer', 'subj-imperfecto', 3, 'conocieramos', 'accent'],
+  ['enviar', 'presente', 0, 'envio', 'accent'],
+  // The accent is the difference between two forms: marked wrong.
+  ['hablar', 'preterito', 2, 'hablo', 'accent-meaning'],
+  ['hablar', 'preterito', 0, 'hable', 'accent-meaning'],
+  ['hablar', 'presente', 0, 'habló', 'accent-meaning'],
+  ['hablar', 'subj-presente', 0, 'hablé', 'accent-meaning'],
+  ['tener', 'preterito', 0, 'tuvo', 'person'],
+  ['ser', 'imperfecto', 3, 'eramos', 'accent'],
+  ['tener', 'preterito', 0, 'tenía', 'tense'],
+  ['hablar', 'subj-imperfecto', 0, 'hablaba', 'tense'],
+  ['hacer', 'perfecto', 1, 'habías hecho', 'tense'],
+  ['levantar', 'presente', 0, 'levanto', 'pronoun', true],
+  ['levantar', 'imperativo', 1, 'levanta', 'pronoun', true],
+  ['buscar', 'preterito', 0, 'buscé', 'spelling'],
+  ['coger', 'presente', 0, 'cogo', 'spelling'],
+  ['leer', 'preterito', 2, 'leió', 'spelling'],
+  ['pensar', 'presente', 0, 'penso', 'stem'],
+  ['sentir', 'preterito', 2, 'sentió', 'stem'],
+  ['dormir', 'subj-presente', 3, 'dormamos', 'stem'],
+  ['mantener', 'presente', 1, 'mantenes', 'stem'],
+  ['tener', 'preterito', 0, 'tení', 'regularized'],
+  ['decir', 'futuro', 0, 'deciré', 'regularized'],
+  ['abrir', 'perfecto', 0, 'he abrido', 'regularized'],
+  ['poner', 'presente', 0, 'poneo', 'unknown'],
+  ['hablar', 'presente', 0, '', 'unknown'],
+]
+
+for (const [inf, tense, person, typed, want, refl] of CHECKS) {
+  const v = checker.check({ inf, tense, person, refl }, typed)
+  const got = v.result === 'wrong' ? v.diagnosis.kind : v.result
+  if (got !== want) fail(`check ${inf} ${tense} ${person} "${typed}": want ${want}, got ${got} (expected form ${v.expected})`)
+}
+
+if (normalize('¿Yo  HABLO?') !== 'hablo') fail(`normalize: got "${normalize('¿Yo  HABLO?')}"`)
+
+const DIFFS: [string, string, string][] = [
+  ['pensa', 'piensa', 'e → ie'],
+  ['sentió', 'sintió', 'e → i'],
+  ['jugo', 'juego', 'u → ue'],
+  ['dormamos', 'durmamos', 'o → u'],
+]
+for (const [a, b, want] of DIFFS) {
+  const got = difference(a, b).join(' → ')
+  if (got !== want) fail(`difference ${a} / ${b}: want ${want}, got ${got}`)
+}
+const stemText = explain({ kind: 'stem', change: 'e>ie' }, { inf: 'sentir', tense: 'preterito', person: 2 }, 'sentió', 'sintió').text
+if (!stemText.includes('e → i.')) fail(`explain stem: ${stemText}`)
+
+/* ---- identification ------------------------------------------------------ */
+
+const id = (form: string, inf: string, guess: [string, TenseId, Person], want: boolean) => {
+  const r = checker.checkIdentify({ inf, tense: guess[1], person: guess[2] }, form, { inf: guess[0], tense: guess[1], person: guess[2] })
+  if (r.correct !== want) fail(`identify "${form}" as ${guess.join(' ')}: want ${want}, got ${r.correct}`)
+}
+id('hablamos', 'hablar', ['hablar', 'presente', 3], true)
+id('hablamos', 'hablar', ['hablar', 'preterito', 3], true)
+id('hable', 'hablar', ['hablar', 'subj-presente', 0], true)
+id('hable', 'hablar', ['hablar', 'subj-presente', 2], true)
+id('hable', 'hablar', ['hablar', 'subj-presente', 1], false)
+id('hubiera dicho', 'decir', ['decir', 'subj-pluscuamperfecto', 0], true)
+id('hubiera dicho', 'decir', ['decir', 'pluscuamperfecto', 0], false)
+id('fue', 'ir', ['ser', 'preterito', 2], false)
+
+const total = CASES.length + NON_FINITE.length * 2 + 4 + CHECKS.length + 1 + DIFFS.length + 1 + 8
 if (failures) {
-  console.log(`\n\x1b[31m${failures} of ${total} conjugation checks failed\x1b[0m\n`)
+  console.log(`\n\x1b[31m${failures} of ${total} engine checks failed\x1b[0m\n`)
   process.exit(1)
 }
-console.log(`\x1b[32m${total} conjugation checks passed\x1b[0m`)
+console.log(`\x1b[32m${total} engine checks passed\x1b[0m`)

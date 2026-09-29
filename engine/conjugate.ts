@@ -166,7 +166,7 @@ const PRONOUNS = ['me', 'te', 'se', 'nos', 'os', 'se'] as const
  * Glue a stem to an ending, applying the spelling rules that keep the sound
  * of the stem: busc+é → busqué, cog+o → cojo, sigu+o → sigo, le+ió → leyó.
  */
-function join(stem: string, ending: string, conj: Conj): string {
+function spell(stem: string, ending: string, conj: Conj): string {
   const front = /^[eéií]/.test(ending)
   const back = /^[aoáó]/.test(ending)
   if (conj === 'ar' && front) {
@@ -238,8 +238,14 @@ export interface Conjugator {
   persons(inf: string, tense: TenseId): Person[]
 }
 
-export function createConjugator(specs: VerbSpecs): Conjugator {
+/**
+ * `spelling: false` skips the spelling rules (busc+é stays buscé), producing
+ * the forms a learner writes when they forget them. Only the answer checker
+ * wants that.
+ */
+export function createConjugator(specs: VerbSpecs, opts: { spelling?: boolean } = {}): Conjugator {
   const cache = new Map<string, Simple>()
+  const join = opts.spelling === false ? (stem: string, ending: string) => stem + ending : spell
 
   const spec = (inf: string): VerbSpec => specs[inf] ?? {}
 
