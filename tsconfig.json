@@ -18,8 +18,9 @@
     "noEmit": true,
     "paths": {
       "@/*": ["./src/*"],
-      "@content/*": ["./content/*"]
+      "@content/*": ["./content/*"],
+      "@engine/*": ["./engine/*"]
     }
   },
-  "include": ["src", "content", "scripts", "vite.config.ts"]
+  "include": ["src", "content", "engine", "scripts", "vite.config.ts"]
 }

@@ -8,6 +8,7 @@
     "build": "npm run content:build && tsc --noEmit && vite build",
     "preview": "vite preview",
     "content:check": "tsx scripts/validate.ts",
+    "test:conjugation": "tsx scripts/test-conjugation.ts",
     "content:audio": ".venv/bin/python scripts/tts.py",
     "content:new": "tsx scripts/new-text.ts",
     "content:build": "tsx scripts/build.ts",

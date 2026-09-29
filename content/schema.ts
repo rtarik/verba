@@ -9,6 +9,7 @@
  * cannot drift apart.
  */
 import { z } from 'zod'
+import type { VerbSpec } from '../engine/conjugate.ts'
 
 /** A real Spanish word: hoverable, trackable, and time-synced to audio. */
 export const zWordToken = z.object({
@@ -252,3 +253,58 @@ export type GlossEntry = z.infer<typeof zGlossEntry>
 export type SourcePhrase = z.infer<typeof zSourcePhrase>
 export type SourceText = z.infer<typeof zSourceText>
 export type AudioSidecar = z.infer<typeof zAudioSidecar>
+
+/* ------------------------------------------------------------------ *
+ * Verbs
+ *
+ * content/verbs.json lists only what each irregular verb does differently;
+ * engine/conjugate.ts derives everything else. The zod shape and the
+ * engine's interface are pinned together below, so neither can drift.
+ * ------------------------------------------------------------------ */
+
+const zCell = z.union([z.string().min(1), z.array(z.string().min(1)).min(1), z.null()])
+const zSix = z.array(zCell).length(6)
+
+export const zVerbSpec = z
+  .object({
+    base: z.string().optional(),
+    stem: z.enum(['e>ie', 'o>ue', 'u>ue', 'e>i']).optional(),
+    accent: z.boolean().optional(),
+    yo: z.string().optional(),
+    subj: z.string().optional(),
+    pret: z.string().optional(),
+    fut: z.string().optional(),
+    impf: z.string().optional(),
+    part: z.string().optional(),
+    ger: z.string().optional(),
+    impTu: z.string().optional(),
+    forms: z
+      .object({
+        presente: zSix.optional(),
+        preterito: zSix.optional(),
+        imperfecto: zSix.optional(),
+        'subj-presente': zSix.optional(),
+        imperativo: zSix.optional(),
+      })
+      .strict()
+      .optional(),
+    refl: z.boolean().optional(),
+    only: z.enum(['third', 'impersonal']).optional(),
+    noCommand: z.boolean().optional(),
+    gloss: z.string().optional(),
+  })
+  .strict()
+export const zVerbSpecs = z.record(z.string(), zVerbSpec)
+
+// Compile-time guarantee that verbs.json's schema is exactly what the engine reads.
+const _specsAgree: [VerbSpec, z.infer<typeof zVerbSpec>] = [{} as z.infer<typeof zVerbSpec>, {} as VerbSpec]
+void _specsAgree
+
+/** One drillable verb, as the build emits it for the app. */
+export interface VerbEntry {
+  inf: string
+  gloss: string
+  /** The text that introduces it; drills unlock the verb once that text is read. */
+  firstSeenIn: string
+  level: 'A1' | 'A2' | 'B1' | 'B2'
+}

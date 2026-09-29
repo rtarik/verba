@@ -6,7 +6,7 @@ import { mkdirSync, writeFileSync, rmSync } from 'node:fs'
 import { join } from 'node:path'
 import { compileAll, ROOT } from './lib/compile.ts'
 
-const { texts, lexicon, curriculum, diagnostics } = compileAll()
+const { texts, lexicon, curriculum, verbs, diagnostics } = compileAll()
 
 for (const w of diagnostics.warnings) console.log(`  ! ${w}`)
 if (diagnostics.errors.length) {
@@ -23,6 +23,9 @@ for (const t of texts) {
   writeFileSync(join(OUT, 'texts', `${t.id}.json`), JSON.stringify(t))
 }
 writeFileSync(join(OUT, 'lexicon.json'), JSON.stringify(lexicon, null, 2))
+// Irregularity data plus the course's verb list: all the app needs to run the
+// conjugation engine in the browser.
+writeFileSync(join(OUT, 'verbs.json'), JSON.stringify(verbs))
 
 // Library index: everything needed to list and sort texts without loading them.
 writeFileSync(

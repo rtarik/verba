@@ -28,6 +28,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run content:check
+      - run: npm run test:conjugation
 
   build:
     needs: content

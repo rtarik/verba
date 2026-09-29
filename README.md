@@ -23,7 +23,12 @@ content/
   texts/           authoring sources: prose + context-specific glosses
   audio/           timing sidecars written by the TTS script
   grammar/         markdown reference pages
+  verbs.json       what each irregular verb does differently (regular verbs need no entry)
   build/           compiled output the app imports (generated, gitignored)
+engine/
+  conjugate.ts     any form of any verb, from rules plus content/verbs.json
+  analyze.ts       the engine run backwards: a word on the page -> verb, tense, person
+  spelling.ts      stress and written-accent rules
 scripts/
   lib/tokenize.ts  the single authority on what counts as a word
   lib/compile.ts   source -> tokens, plus every content rule
@@ -38,6 +43,7 @@ src/
 
 ```bash
 npm run content:check    # validate — no app code loaded, safe to run anytime
+npm run test:conjugation # golden conjugation tables from the reference pages
 npm run content:build    # compile content/ -> content/build/
 npm run content:audio    # generate narration + word timings for anything missing
 npm run content:all      # build, generate audio, rebuild to attach timings
@@ -71,6 +77,8 @@ text 6 would have to re-gloss `mi`, `es`, `y` and `de`.
 - Every `grammarRefs` id resolves to a real grammar page.
 - Phrases actually occur in the body, and unambiguously.
 - Audio timings match the words they belong to, and go stale visibly when prose is edited.
+- Every word tagged as a verb is a form the conjugation engine produces for its lemma. A new
+  irregular verb fails here until `content/verbs.json` describes it.
 
 ## Audio
 

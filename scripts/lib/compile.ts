@@ -10,10 +10,12 @@ import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs'
 import { join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import {
-  zSourceText, zLexicon, zCurriculum, zAudioSidecar, zText, zGrammarMeta,
+  zSourceText, zLexicon, zCurriculum, zAudioSidecar, zText, zGrammarMeta, zVerbSpecs,
   type SourceText, type Text, type Token, type WordToken,
-  type Phrase, type LexiconEntry, type Curriculum, type AudioSidecar,
+  type Phrase, type LexiconEntry, type Curriculum, type AudioSidecar, type VerbEntry,
 } from '../../content/schema.ts'
+import { createConjugator, type VerbSpecs } from '../../engine/conjugate.ts'
+import { createAnalyzer } from '../../engine/analyze.ts'
 import { tokenize, wordSurfaces, hashBody } from './tokenize.ts'
 
 export const ROOT = resolve(fileURLToPath(new URL('../..', import.meta.url)))
@@ -47,6 +49,8 @@ export interface CompiledCorpus {
   /** Every lemma encountered, derived from the texts and curated overrides. */
   lexicon: Record<string, LexiconEntry & { firstSeenIn: string }>
   curriculum: Curriculum
+  /** Every verb the course uses, plus the irregularity data to conjugate them. */
+  verbs: { specs: VerbSpecs; entries: VerbEntry[] }
   diagnostics: Diagnostics
 }
 
@@ -140,7 +144,82 @@ export function compileAll(): CompiledCorpus {
 
   errors.push(...grammar().errors)
 
-  return { texts, lexicon, curriculum, diagnostics: { errors, warnings } }
+  const verbs = checkVerbs(texts, lexicon, curated, errors, warnings)
+
+  return { texts, lexicon, curriculum, verbs, diagnostics: { errors, warnings } }
+}
+
+/**
+ * The conjugation engine checked against the course: every verb form that
+ * appears in a text must be one the engine can produce for its lemma. This
+ * catches engine gaps and mis-lemmatised words alike, before a drill ever
+ * asks for a form the engine gets wrong.
+ */
+function checkVerbs(
+  texts: CompiledText[],
+  lexicon: CompiledCorpus['lexicon'],
+  curated: Record<string, LexiconEntry>,
+  errors: string[],
+  warnings: string[],
+): CompiledCorpus['verbs'] {
+  const parsed = zVerbSpecs.safeParse(readJson(join(CONTENT, 'verbs.json')))
+  if (!parsed.success) {
+    for (const issue of parsed.error.issues) errors.push(`verbs.json: ${issue.path.join('.')} — ${issue.message}`)
+    return { specs: {}, entries: [] }
+  }
+  const specs = parsed.data
+  // Lemmas of words tagged as verbs on the page. The compiled lexicon's own pos
+  // cannot be used: it is looked up by surface form, so the adjective
+  // "abierto" inherits the pos of the participle "abierto".
+  const known = new Set<string>()
+  for (const t of texts) for (const w of t.tokens) if (w.k === 'w' && w.pos === 'verb') known.add(w.lemma)
+  const lemmas = [...known]
+
+  for (const [inf, spec] of Object.entries(specs)) {
+    if (!known.has(inf)) warnings.push(`verbs.json: "${inf}" is not a verb any text uses`)
+    if (spec.base && !inf.endsWith(spec.base)) errors.push(`verbs.json: "${inf}" has base "${spec.base}", which is not its ending`)
+    if (spec.base && specs[spec.base] === undefined && !known.has(spec.base)) {
+      errors.push(`verbs.json: "${inf}" has base "${spec.base}", which has no entry and is not a course verb`)
+    }
+  }
+
+  const conj = createConjugator(specs)
+  let analyzer: ReturnType<typeof createAnalyzer>
+  try {
+    analyzer = createAnalyzer(conj, lemmas)
+  } catch (e) {
+    errors.push(`conjugation engine failed: ${(e as Error).message}`)
+    return { specs, entries: [] }
+  }
+
+  const seen = new Set<string>()
+  for (const t of texts) {
+    for (const w of t.tokens) {
+      if (w.k !== 'w' || w.pos !== 'verb') continue
+      const key = `${w.s.toLowerCase()}|${w.lemma}`
+      if (seen.has(key)) continue
+      seen.add(key)
+      if (!analyzer.readingsAs(w.s, w.lemma).length) {
+        const other = [...new Set(analyzer.analyze(w.s).map((a) => a.lemma))]
+        errors.push(
+          `${t.id}: "${w.s}" is tagged as a form of "${w.lemma}", but the engine cannot produce it` +
+            (other.length ? ` (it reads as: ${other.join(', ')})` : ' — fix content/verbs.json or the lemma')
+        )
+      }
+    }
+  }
+
+  const entries: VerbEntry[] = []
+  for (const inf of lemmas) {
+    const gloss = specs[inf]?.gloss ?? curated[inf]?.gloss
+    if (!gloss) {
+      errors.push(`verb "${inf}" has no gloss — add the infinitive to lexicon.json, or "gloss" in verbs.json`)
+      continue
+    }
+    const entry = lexicon[inf]
+    entries.push({ inf, gloss, firstSeenIn: entry.firstSeenIn, level: entry.level ?? 'A1' })
+  }
+  return { specs, entries }
 }
 
 let _grammar: { ids: Set<string>; errors: string[] } | null = null

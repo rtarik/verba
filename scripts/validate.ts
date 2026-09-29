@@ -5,7 +5,7 @@
  */
 import { compileAll } from './lib/compile.ts'
 
-const { texts, lexicon, curriculum, diagnostics } = compileAll()
+const { texts, lexicon, curriculum, verbs, diagnostics } = compileAll()
 const { errors, warnings } = diagnostics
 
 const RED = '\x1b[31m', YEL = '\x1b[33m', GRN = '\x1b[32m', DIM = '\x1b[2m', OFF = '\x1b[0m'
@@ -27,6 +27,7 @@ console.log(`  units      ${curriculum.units.length}`)
 console.log(`  texts      ${texts.length}  ${DIM}(${withAudio} with audio)${OFF}`)
 console.log(`  words      ${words}`)
 console.log(`  lexicon    ${Object.keys(lexicon).length} lemmas`)
+console.log(`  verbs      ${verbs.entries.length}  ${DIM}(${Object.keys(verbs.specs).length} with irregularities)${OFF}`)
 console.log(`${DIM}────────────────────────────────${OFF}`)
 
 if (errors.length) {
