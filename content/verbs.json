@@ -83,6 +83,7 @@
     "fut": "habr",
     "subj": "hay",
     "noCommand": true,
+    "drillIn": [],
     "forms": {
       "presente": ["he", "has", ["ha", "hay"], "hemos", "habéis", "han"]
     }

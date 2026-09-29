@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import { units, library, readingOrder } from '@/lib/content'
 import { coverage, useVocab } from '@/lib/vocab'
 import { useProgress, type ProgressState } from '@/lib/progress'
+import { unitVerbs } from '@/lib/practice'
+import { TENSES, type TenseId } from '@engine/conjugate'
 
 const LEVEL_NAMES: Record<string, string> = {
   A1: 'Beginner',
@@ -268,6 +270,24 @@ export default function Library() {
                         )
                       })}
                     </ul>
+                  )}
+
+                  {!planned && unit.practice && (
+                    <Link
+                      to={`/practice?unit=${unit.unit}`}
+                      className="mt-2 flex items-baseline justify-between gap-3 rounded-lg px-4 py-3"
+                      style={{ background: 'var(--accent-soft)', border: '1px solid var(--edge)' }}
+                    >
+                      <span>
+                        <span className="font-medium" style={{ fontFamily: 'var(--font-reading)' }}>Practice</span>
+                        <span className="ml-2 text-sm" style={{ color: 'var(--ink-soft)' }}>
+                          {unit.practice.tenses.map((t) => TENSES[t as TenseId].name).join(' · ')}
+                        </span>
+                      </span>
+                      <span className="shrink-0 text-xs" style={{ color: 'var(--ink-soft)' }}>
+                        {unitVerbs(unit.unit).length} verbs →
+                      </span>
+                    </Link>
                   )}
                 </div>
               )}

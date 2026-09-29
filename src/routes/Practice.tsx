@@ -1,13 +1,14 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import { TENSES, type Person, type TenseId } from '@engine/conjugate'
 import { explain, normalize, personLabel, type Prompt, type Verdict } from '@engine/check'
 import { AccentInput, AccentKeys } from '@/components/AccentInput'
 import { useGrammarProgress, useProgress } from '@/lib/progress'
 import {
   buildSession, candidatePairs, sessionLength, checker, conj, displayInf, loadSettings, saveSettings,
-  tensesByLevel, unlockPages, unlocked, verbByInf, verbs, type Item, type Settings, type Unlocked,
+  tensesByLevel, unitSettings, unlockPages, unlocked, verbByInf, verbs, type Item, type Settings, type Unlocked,
 } from '@/lib/practice'
+import { units } from '@/lib/content'
 
 /** One answered item: what was typed and how each cell was marked. */
 interface Answer {
@@ -62,6 +63,18 @@ export default function Practice() {
     if (items.length) setSession(newSession(s, items))
   }
 
+  // Arriving from a unit in the library (#/practice?unit=18) starts its set.
+  // The parameter is dropped straight away, so going back to this page later
+  // does not restart it.
+  const [params, setParams] = useSearchParams()
+  const unitParam = Number(params.get('unit'))
+  useEffect(() => {
+    if (!unitParam) return
+    const s = unitSettings(unitParam)
+    if (s) start(s)
+    setParams({}, { replace: true })
+  }, [unitParam])
+
   if (!session) return <Setup settings={settings} setSettings={setSettings} open={open} onStart={() => start(settings)} />
 
   const done = session.answers.length >= session.items.length
@@ -90,8 +103,15 @@ export default function Practice() {
     })
   }
 
+  const unit = session.settings.unit ? units.find((u) => u.unit === session.settings.unit) : undefined
+
   return (
     <div className="mx-auto max-w-2xl px-5 pt-8">
+      {unit && (
+        <div className="mb-3 text-xs" style={{ color: 'var(--ink-soft)' }}>
+          Unit {unit.unit} practice · <span style={{ fontFamily: 'var(--font-reading)', color: 'var(--ink)' }}>{unit.title}</span>
+        </div>
+      )}
       <div className="flex items-center gap-3">
         <div className="h-1 flex-1 overflow-hidden rounded" style={{ background: 'var(--edge)' }}>
           <div className="h-full rounded" style={{ width: `${(n / session.items.length) * 100}%`, background: 'var(--accent)' }} />

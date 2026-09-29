@@ -122,7 +122,10 @@ export interface VerbSpec {
   only?: 'third' | 'impersonal'
   /** No commands: haber, poder, soler. */
   noCommand?: boolean
-  /** Defective verbs are only drilled in these tenses: soler → presente, imperfecto. */
+  /**
+   * Only drilled in these tenses: soler → presente, imperfecto. Empty for
+   * haber, whose forms are drilled through every compound tense instead.
+   */
   drillIn?: TenseId[]
   /** English gloss, when the lexicon has no entry for the infinitive itself. */
   gloss?: string

@@ -9,7 +9,7 @@
  * cannot drift apart.
  */
 import { z } from 'zod'
-import { TENSE_IDS, type VerbSpec } from '../engine/conjugate.ts'
+import { TENSE_IDS, TENSES, type VerbSpec } from '../engine/conjugate.ts'
 
 /** A real Spanish word: hoverable, trackable, and time-synced to audio. */
 export const zWordToken = z.object({
@@ -134,6 +134,18 @@ export const zUnit = z.object({
   focus: z.array(z.string()),
   /** One line on what the unit covers. Shown for units not yet written. */
   summaryEn: z.string().optional(),
+  /**
+   * The unit's practice set: tenses drilled with the verbs from its texts.
+   * Units that introduce a tense drill it; the others review the tenses their
+   * texts lean on.
+   */
+  practice: z
+    .object({
+      tenses: z
+        .array(z.enum(TENSE_IDS).refine((t) => !TENSES[t].readOnly, { message: 'this tense is read-only, not drilled' }))
+        .min(1),
+    })
+    .optional(),
   /**
    * Reading order within the unit, and the spine of the progressive-vocabulary
    * walk. An empty list marks a unit as planned but not yet written — the

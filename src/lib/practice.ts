@@ -10,7 +10,7 @@ import type { VerbEntry } from '@content/schema'
 import verbsJson from '@content/build/verbs.json'
 import { DRILL_TENSES, TENSES, type Person, type TenseId, type VerbSpecs } from '@engine/conjugate'
 import { createChecker, type Prompt } from '@engine/check'
-import { grammarById, library } from '@/lib/content'
+import { grammarById, library, units } from '@/lib/content'
 import type { ProgressState, GrammarReadState } from '@/lib/progress'
 
 const data = verbsJson as { specs: VerbSpecs; entries: VerbEntry[]; unlock: Record<string, string[]> }
@@ -58,6 +58,11 @@ export interface Settings {
   verb: string
   /** Ignore unlocking and offer every tense and verb. */
   everything: boolean
+  /**
+   * A unit's own practice set: its tenses, with the verbs from its texts.
+   * Unlocking does not apply — the unit was chosen on purpose.
+   */
+  unit?: number
 }
 
 export interface Item extends Prompt {
@@ -76,10 +81,28 @@ const shuffle = <T,>(xs: T[]): T[] => {
   return a
 }
 
+/* ---- unit practice ------------------------------------------------------ */
+
+/** Verbs used in a unit's texts. */
+export function unitVerbs(unit: number): string[] {
+  const u = units.find((x) => x.unit === unit)
+  if (!u) return []
+  const found = new Set<string>()
+  for (const id of u.textIds) for (const l of library.find((t) => t.id === id)?.lemmas ?? []) if (verbByInf.has(l)) found.add(l)
+  return [...found]
+}
+
+/** Settings for a unit's practice set, or null if it has none. */
+export function unitSettings(unit: number): Settings | null {
+  const u = units.find((x) => x.unit === unit)
+  if (!u?.practice || !u.textIds.length) return null
+  return { mode: 'conjugate', tenses: u.practice.tenses as TenseId[], pool: 'met', verb: '', everything: true, unit }
+}
+
 /** Every verb × tense pair the settings allow. */
 export function candidatePairs(s: Settings, open: Unlocked): Array<{ inf: string; tense: TenseId }> {
-  const tenses = s.tenses.filter((t) => open.tenses.has(t))
-  const pool = s.pool === 'one' ? (verbByInf.has(s.verb) ? [s.verb] : []) : [...open.verbs]
+  const tenses = s.unit ? s.tenses : s.tenses.filter((t) => open.tenses.has(t))
+  const pool = s.unit ? unitVerbs(s.unit) : s.pool === 'one' ? (verbByInf.has(s.verb) ? [s.verb] : []) : [...open.verbs]
   const pairs: Array<{ inf: string; tense: TenseId }> = []
   for (const tense of tenses) {
     for (const inf of pool) {
@@ -144,7 +167,7 @@ export function loadSettings(): Settings | null {
     const raw = localStorage.getItem(SETTINGS_KEY)
     if (!raw) return null
     const s = JSON.parse(raw) as Settings
-    return { ...s, tenses: s.tenses.filter((t) => (DRILL_TENSES as readonly string[]).includes(t)) }
+    return { ...s, unit: undefined, tenses: s.tenses.filter((t) => (DRILL_TENSES as readonly string[]).includes(t)) }
   } catch {
     return null
   }

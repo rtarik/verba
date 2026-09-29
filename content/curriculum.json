@@ -12,6 +12,11 @@
         "articles",
         "introducing yourself"
       ],
+      "practice": {
+        "tenses": [
+          "presente"
+        ]
+      },
       "textIds": [
         "a1-u1-01-me-llamo-ana",
         "a1-u1-02-mi-familia",
@@ -32,6 +37,11 @@
         "telling the time",
         "daily routine"
       ],
+      "practice": {
+        "tenses": [
+          "presente"
+        ]
+      },
       "textIds": [
         "a1-u2-01-me-levanto-temprano",
         "a1-u2-02-el-desayuno",
@@ -52,6 +62,11 @@
         "directions",
         "numbers to 100"
       ],
+      "practice": {
+        "tenses": [
+          "presente"
+        ]
+      },
       "textIds": [
         "a1-u3-01-mi-barrio",
         "a1-u3-02-donde-esta-el-museo",
@@ -72,6 +87,11 @@
         "quantities",
         "ordering food"
       ],
+      "practice": {
+        "tenses": [
+          "presente"
+        ]
+      },
       "textIds": [
         "a1-u4-01-me-gusta-la-comida",
         "a1-u4-02-en-el-restaurante",
@@ -92,6 +112,11 @@
         "ya, todavía, nunca",
         "talking about today"
       ],
+      "practice": {
+        "tenses": [
+          "perfecto"
+        ]
+      },
       "textIds": [
         "a2-u5-01-que-has-hecho-hoy",
         "a2-u5-02-ya-lo-he-hecho",
@@ -112,6 +137,11 @@
         "irregular past forms",
         "telling a story"
       ],
+      "practice": {
+        "tenses": [
+          "preterito"
+        ]
+      },
       "textIds": [
         "a2-u6-01-ayer-trabaje-mucho",
         "a2-u6-02-el-fin-de-semana-pasado",
@@ -132,6 +162,12 @@
         "describing the past",
         "childhood and habits"
       ],
+      "practice": {
+        "tenses": [
+          "imperfecto",
+          "preterito"
+        ]
+      },
       "textIds": [
         "a2-u7-01-cuando-era-pequena",
         "a2-u7-02-la-casa-de-mi-infancia",
@@ -152,6 +188,12 @@
         "frequency",
         "what is happening now"
       ],
+      "practice": {
+        "tenses": [
+          "presente",
+          "perfecto"
+        ]
+      },
       "textIds": [
         "a2-u8-01-que-estas-haciendo",
         "a2-u8-02-esta-lloviendo-otra-vez",
@@ -172,6 +214,12 @@
         "conditional",
         "por vs para"
       ],
+      "practice": {
+        "tenses": [
+          "futuro",
+          "condicional"
+        ]
+      },
       "textIds": [
         "a2-u9-01-que-vas-a-hacer",
         "a2-u9-02-el-ano-que-viene",
@@ -192,6 +240,11 @@
         "affirmative imperative",
         "usted and formality"
       ],
+      "practice": {
+        "tenses": [
+          "imperativo"
+        ]
+      },
       "textIds": [
         "a2-u10-01-donde-lo-has-puesto",
         "a2-u10-02-se-lo-di-a-pablo",
@@ -212,6 +265,11 @@
         "querer que",
         "ojalá"
       ],
+      "practice": {
+        "tenses": [
+          "subj-presente"
+        ]
+      },
       "textIds": [
         "b1-u11-01-quiero-que-vengas",
         "b1-u11-02-ojala-llueva",
@@ -232,6 +290,11 @@
         "impersonal expressions",
         "subjunctive vs indicative"
       ],
+      "practice": {
+        "tenses": [
+          "subj-presente"
+        ]
+      },
       "textIds": [
         "b1-u12-01-no-creo-que-sea-tan-dificil",
         "b1-u12-02-me-alegro-de-que-estes-bien",
@@ -252,6 +315,12 @@
         "negative imperative",
         "referring to the future"
       ],
+      "practice": {
+        "tenses": [
+          "subj-presente",
+          "imperativo-negativo"
+        ]
+      },
       "textIds": [
         "b1-u13-01-cuando-llegues-llamame",
         "b1-u13-02-en-cuanto-termine",
@@ -272,6 +341,13 @@
         "condicional compuesto",
         "sequencing events"
       ],
+      "practice": {
+        "tenses": [
+          "pluscuamperfecto",
+          "futuro-perfecto",
+          "condicional-compuesto"
+        ]
+      },
       "textIds": [
         "b1-u14-01-ya-se-habia-ido",
         "b1-u14-02-nunca-habia-entendido-nada",
@@ -292,6 +368,13 @@
         "perífrasis verbales",
         "acabar de, seguir, volver a"
       ],
+      "practice": {
+        "tenses": [
+          "preterito",
+          "imperfecto",
+          "condicional"
+        ]
+      },
       "textIds": [
         "b1-u15-01-aqui-se-habla-espanol",
         "b1-u15-02-se-venden-pisos",
@@ -312,6 +395,11 @@
         "connectors",
         "agreeing and disagreeing"
       ],
+      "practice": {
+        "tenses": [
+          "subj-presente"
+        ]
+      },
       "textIds": [
         "b1-u16-01-la-chica-que-vive-arriba",
         "b1-u16-02-la-persona-con-quien-hable",
@@ -332,6 +420,12 @@
         "the personal a",
         "passive with ser"
       ],
+      "practice": {
+        "tenses": [
+          "subj-perfecto",
+          "futuro"
+        ]
+      },
       "textIds": [
         "b1-u17-01-si-apruebo-te-invito",
         "b1-u17-02-espero-que-hayas-llegado",
@@ -352,6 +446,12 @@
         "second conditional",
         "polite requests"
       ],
+      "practice": {
+        "tenses": [
+          "subj-imperfecto",
+          "condicional"
+        ]
+      },
       "textIds": [
         "b2-u18-01-si-tuviera-tiempo",
         "b2-u18-02-si-fuera-rica",
@@ -372,6 +472,12 @@
         "indirect commands",
         "backshifting"
       ],
+      "practice": {
+        "tenses": [
+          "subj-imperfecto",
+          "imperfecto"
+        ]
+      },
       "textIds": [
         "b2-u19-01-me-pidio-que-lo-pensara",
         "b2-u19-02-dijo-que-estaba-bien",
@@ -392,6 +498,12 @@
         "condicional compuesto",
         "regret and hindsight"
       ],
+      "practice": {
+        "tenses": [
+          "subj-pluscuamperfecto",
+          "condicional-compuesto"
+        ]
+      },
       "textIds": [
         "b2-u20-01-si-lo-hubiera-sabido",
         "b2-u20-02-si-hubiera-estudiado-mas",
@@ -412,6 +524,12 @@
         "advanced perífrasis",
         "precision and hedging"
       ],
+      "practice": {
+        "tenses": [
+          "condicional",
+          "subj-imperfecto"
+        ]
+      },
       "textIds": [
         "b2-u21-01-le-escribo-para",
         "b2-u21-02-estimado-senor",
@@ -432,6 +550,12 @@
         "advanced connectors",
         "structuring an argument"
       ],
+      "practice": {
+        "tenses": [
+          "subj-presente",
+          "subj-imperfecto"
+        ]
+      },
       "textIds": [
         "b2-u22-01-a-pesar-de-todo",
         "b2-u22-02-por-una-parte-por-otra",
@@ -452,6 +576,12 @@
         "verbs of change",
         "estar + participle"
       ],
+      "practice": {
+        "tenses": [
+          "subj-presente",
+          "preterito"
+        ]
+      },
       "textIds": [
         "b2-u23-01-busco-un-piso-que-tenga-luz",
         "b2-u23-02-es-listo-esta-listo",
@@ -472,6 +602,13 @@
         "idiom and metaphor",
         "reading real texts"
       ],
+      "practice": {
+        "tenses": [
+          "preterito",
+          "imperfecto",
+          "pluscuamperfecto"
+        ]
+      },
       "textIds": [
         "b2-u24-01-apenas-hubo-terminado",
         "b2-u24-02-llovia-y-llovio",
