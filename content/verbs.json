@@ -174,7 +174,7 @@
     }
   },
   "servir": { "stem": "e>i" },
-  "soler": { "stem": "o>ue", "noCommand": true },
+  "soler": { "stem": "o>ue", "noCommand": true, "drillIn": ["presente", "imperfecto"] },
   "sonar": { "stem": "o>ue" },
   "sonreír": { "base": "reír" },
   "sostener": { "base": "tener" },

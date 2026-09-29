@@ -14,12 +14,13 @@ export type { Text, Unit } from '@content/schema'
 
 export interface LibraryEntry {
   id: string
-  level: 'A1' | 'A2' | 'B1'
+  level: 'A1' | 'A2' | 'B1' | 'B2'
   unit: number
   order: number
   title: string
   titleEn: string
   blurbEn: string
+  grammarRefs: string[]
   wordCount: number
   hasAudio: boolean
   /** Distinct trackable lemmas, used for the known-coverage figure. */

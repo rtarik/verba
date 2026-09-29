@@ -9,7 +9,7 @@
  * cannot drift apart.
  */
 import { z } from 'zod'
-import type { VerbSpec } from '../engine/conjugate.ts'
+import { TENSE_IDS, type VerbSpec } from '../engine/conjugate.ts'
 
 /** A real Spanish word: hoverable, trackable, and time-synced to audio. */
 export const zWordToken = z.object({
@@ -291,6 +291,7 @@ export const zVerbSpec = z
     refl: z.boolean().optional(),
     only: z.enum(['third', 'impersonal']).optional(),
     noCommand: z.boolean().optional(),
+    drillIn: z.array(z.enum(TENSE_IDS)).optional(),
     gloss: z.string().optional(),
   })
   .strict()
@@ -299,6 +300,15 @@ export const zVerbSpecs = z.record(z.string(), zVerbSpec)
 // Compile-time guarantee that verbs.json's schema is exactly what the engine reads.
 const _specsAgree: [VerbSpec, z.infer<typeof zVerbSpec>] = [{} as z.infer<typeof zVerbSpec>, {} as VerbSpec]
 void _specsAgree
+
+/**
+ * content/practice.json: which grammar pages open each drill tense. A tense
+ * unlocks once any of its pages is read, or a text linking to one of them.
+ */
+export const zPractice = z.object({
+  unlock: z.record(z.string(), z.array(z.string()).min(1)),
+})
+export type Practice = z.infer<typeof zPractice>
 
 /** One drillable verb, as the build emits it for the app. */
 export interface VerbEntry {

@@ -122,6 +122,8 @@ export interface VerbSpec {
   only?: 'third' | 'impersonal'
   /** No commands: haber, poder, soler. */
   noCommand?: boolean
+  /** Defective verbs are only drilled in these tenses: soler → presente, imperfecto. */
+  drillIn?: TenseId[]
   /** English gloss, when the lexicon has no entry for the infinitive itself. */
   gloss?: string
 }
@@ -234,16 +236,18 @@ export interface Conjugator {
   gerund(inf: string): string
   participle(inf: string): string
   spec(inf: string): VerbSpec
-  /** The persons a verb is drilled in, respecting gustar-type and weather verbs. */
+  /** The persons a verb is drilled in, respecting gustar-type, weather and defective verbs. */
   persons(inf: string, tense: TenseId): Person[]
 }
 
 /**
- * `spelling: false` skips the spelling rules (busc+é stays buscé), producing
- * the forms a learner writes when they forget them. Only the answer checker
- * wants that.
+ * Two switches, for the answer checker's "what if the verb were regular"
+ * comparisons only:
+ *   - `spelling: false` skips the spelling rules (busc+é stays buscé).
+ *   - `auto: false` skips the irregularities that follow from the infinitive
+ *     alone, with no verbs.json entry: conocer → conozco, traducir → traduje.
  */
-export function createConjugator(specs: VerbSpecs, opts: { spelling?: boolean } = {}): Conjugator {
+export function createConjugator(specs: VerbSpecs, opts: { spelling?: boolean; auto?: boolean } = {}): Conjugator {
   const cache = new Map<string, Simple>()
   const join = opts.spelling === false ? (stem: string, ending: string) => stem + ending : spell
 
@@ -296,9 +300,10 @@ export function createConjugator(specs: VerbSpecs, opts: { spelling?: boolean } 
     const narrow = narrows ? changeStem(stem, s.stem!, true) : stem
 
     // conocer → conozco, traducir → traduzco. hacer and decir have their own yo.
-    const zc = conj !== 'ar' && /[aeiou]c$/.test(stem)
+    const auto = opts.auto !== false
+    const zc = auto && conj !== 'ar' && /[aeiou]c$/.test(stem)
     const yo = s.yo ?? (zc ? stem.slice(0, -1) + 'zco' : undefined)
-    const ducir = plain.endsWith('ducir')
+    const ducir = auto && plain.endsWith('ducir')
 
     const presente: string[] = PRESENT[conj].map((e, p) =>
       p === 0 && yo ? yo : join(BOOT.has(p) ? boot : stem, e, conj)
@@ -414,6 +419,8 @@ export function createConjugator(specs: VerbSpecs, opts: { spelling?: boolean } 
     participle: (inf) => simple(inf).part,
     spec,
     persons(inf, tense) {
+      const drillIn = spec(inf).drillIn
+      if (drillIn && !drillIn.includes(tense)) return []
       const only = spec(inf).only
       const all = isCommand(tense) ? PERSONS.filter((p) => p !== 0) : PERSONS
       if (only === 'impersonal') return all.filter((p) => p === 2)

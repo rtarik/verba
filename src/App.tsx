@@ -2,12 +2,14 @@ import { NavLink, Route, Routes } from 'react-router-dom'
 import Library from './routes/Library'
 import Reader from './routes/Reader'
 import Grammar from './routes/Grammar'
+import Practice from './routes/Practice'
 import Stats from './routes/Stats'
 import { ThemeToggle } from './components/ThemeToggle'
 
 const tabs = [
   { to: '/', label: 'Read', end: true },
   { to: '/grammar', label: 'Grammar', end: false },
+  { to: '/practice', label: 'Practice', end: false },
   { to: '/stats', label: 'Progress', end: false },
 ]
 
@@ -15,11 +17,11 @@ export default function App() {
   return (
     <div className="min-h-full">
       <header className="sticky top-0 z-40 backdrop-blur" style={{ background: 'color-mix(in srgb, var(--paper) 88%, transparent)', borderBottom: '1px solid var(--edge)' }}>
-        <div className="mx-auto flex max-w-5xl items-center gap-6 px-5 py-3">
+        <div className="mx-auto flex max-w-5xl items-center gap-3 px-4 py-3 sm:gap-6 sm:px-5">
           <NavLink to="/" className="text-lg font-semibold tracking-tight" style={{ fontFamily: 'var(--font-reading)' }}>
             Verba
           </NavLink>
-          <nav className="flex gap-4 text-sm">
+          <nav className="flex gap-2.5 text-sm sm:gap-4">
             {tabs.map((t) => (
               <NavLink
                 key={t.to}
@@ -43,6 +45,7 @@ export default function App() {
           <Route path="/read/:id" element={<Reader />} />
           <Route path="/grammar" element={<Grammar />} />
           <Route path="/grammar/:id" element={<Grammar />} />
+          <Route path="/practice" element={<Practice />} />
           <Route path="/stats" element={<Stats />} />
         </Routes>
       </main>

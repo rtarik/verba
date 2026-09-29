@@ -296,7 +296,29 @@ id('hubiera dicho', 'decir', ['decir', 'subj-pluscuamperfecto', 0], true)
 id('hubiera dicho', 'decir', ['decir', 'pluscuamperfecto', 0], false)
 id('fue', 'ir', ['ser', 'preterito', 2], false)
 
-const total = CASES.length + NON_FINITE.length * 2 + 4 + CHECKS.length + 1 + DIFFS.length + 1 + 8
+/* ---- regularity ------------------------------------------------------- */
+
+const REGULARITY: [string, TenseId, string][] = [
+  ['hablar', 'presente', 'regular'],
+  ['buscar', 'preterito', 'spelling'],
+  ['construir', 'presente', 'spelling'],
+  ['pensar', 'presente', 'stem'],
+  ['enviar', 'presente', 'stem'],
+  ['pedir', 'preterito', 'stem'],
+  ['tener', 'presente', 'irregular'],
+  ['tener', 'imperfecto', 'regular'],
+  ['conocer', 'presente', 'irregular'],
+  ['conocer', 'preterito', 'regular'],
+  ['hacer', 'perfecto', 'irregular'],
+  ['mantener', 'preterito', 'irregular'],
+]
+for (const [inf, tense, want] of REGULARITY) {
+  const got = checker.regularity(inf, tense)
+  if (got !== want) fail(`regularity ${inf} ${tense}: want ${want}, got ${got}`)
+}
+if (checker.check({ inf: 'conocer', tense: 'presente', person: 0 }, 'conoco').result !== 'wrong') fail('conoco should be wrong')
+
+const total = REGULARITY.length + 1 + CASES.length + NON_FINITE.length * 2 + 4 + CHECKS.length + 1 + DIFFS.length + 1 + 8
 if (failures) {
   console.log(`\n\x1b[31m${failures} of ${total} engine checks failed\x1b[0m\n`)
   process.exit(1)

@@ -23,6 +23,10 @@
   --unknown-bg: #e8eef7;
   --unknown-line: #a8c0e0;
   --playing: #fde68a;
+  --good: #3d7a4a;
+  --good-bg: #e6f1e4;
+  --bad: #b0413e;
+  --bad-bg: #f8e4e1;
 }
 
 /*
@@ -45,6 +49,10 @@
     --unknown-bg: #1e2836;
     --unknown-line: #3f5977;
     --playing: #5c4a12;
+    --good: #8fc79a;
+    --good-bg: #1c2e20;
+    --bad: #e8958f;
+    --bad-bg: #3a1f1c;
   }
 }
 
@@ -61,6 +69,10 @@
   --unknown-bg: #1e2836;
   --unknown-line: #3f5977;
   --playing: #5c4a12;
+  --good: #8fc79a;
+  --good-bg: #1c2e20;
+  --bad: #e8958f;
+  --bad-bg: #3a1f1c;
 }
 
 html, body, #root { height: 100%; }

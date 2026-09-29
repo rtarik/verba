@@ -39,6 +39,8 @@ export type Diagnosis =
   | { kind: 'regularized' }
   | { kind: 'unknown' }
 
+export type Regularity = 'regular' | 'spelling' | 'stem' | 'irregular'
+
 export type Verdict =
   | { result: 'correct'; expected: string }
   /** Right letters, wrong accents, and nothing else it could be mistaken for. */
@@ -107,11 +109,44 @@ export function createChecker(specs: VerbSpecs) {
     return c
   }
 
-  /** The verb conjugated as if it were entirely regular. */
-  const regular = createConjugator(Object.fromEntries(
-    // Keep haber, so compound tenses stay right while the participle regularises.
-    Object.entries(specs).filter(([inf]) => inf === 'haber')
-  ))
+  // The verb conjugated as if it were entirely regular. haber is kept, so
+  // compound tenses stay right while the participle regularises.
+  const onlyHaber: VerbSpecs = { haber: specs.haber }
+  const regular = createConjugator(onlyHaber, { auto: false })
+  const regularUnspelled = createConjugator(onlyHaber, { auto: false, spelling: false })
+
+  /** The verb conjugated with its stem change and nothing else irregular. */
+  const stemOnly = new Map<string, Conjugator>()
+  function withOnlyStemChange(inf: string): Conjugator {
+    let c = stemOnly.get(inf)
+    if (!c) {
+      const root = specs[rootOf(inf)] ?? {}
+      c = createConjugator({ ...onlyHaber, [inf]: { stem: root.stem, accent: root.accent } }, { auto: false })
+      stemOnly.set(inf, c)
+    }
+    return c
+  }
+
+  /**
+   * How a verb behaves in a tense, judged from the forms themselves: regular,
+   * regular apart from spelling (busqué, construyo), regular apart from a stem
+   * change (pienso, envío), or irregular.
+   */
+  const regularities = new Map<string, Regularity>()
+  function regularity(inf: string, tense: TenseId): Regularity {
+    const key = `${inf}|${tense}`
+    const hit = regularities.get(key)
+    if (hit) return hit
+    const firsts = (c: Conjugator) => c.table(inf, tense).map((cell) => cell[0] ?? '').join(' ')
+    const actual = firsts(conj)
+    const r: Regularity =
+      actual === firsts(regularUnspelled) ? 'regular'
+        : actual === firsts(regular) ? 'spelling'
+          : actual === firsts(withOnlyStemChange(inf)) ? 'stem'
+            : 'irregular'
+    regularities.set(key, r)
+    return r
+  }
 
   const same = (a: Reading, b: Reading) => a.tense === b.tense && a.person === b.person
   const matches = (forms: string[], bare: string) => forms.some((f) => stripAccents(f) === bare)
@@ -181,7 +216,7 @@ export function createChecker(specs: VerbSpecs) {
     return { inf, tense, person, correct: inf && tense && person, readings }
   }
 
-  return { check, checkIdentify, readingsOf, conjugator: conj }
+  return { check, checkIdentify, readingsOf, regularity, conjugator: conj }
 }
 
 export type Checker = ReturnType<typeof createChecker>
