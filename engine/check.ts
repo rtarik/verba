@@ -210,7 +210,9 @@ export function createChecker(specs: VerbSpecs) {
    */
   function checkIdentify(prompt: Prompt, form: string, guess: { inf: string; tense: TenseId; person: Person }) {
     const readings = readingsOf(prompt.inf, form, prompt.refl)
-    const inf = stripAccents(guess.inf.trim().toLowerCase()) === stripAccents(prompt.inf)
+    // Pronominal verbs may be named with or without their -se: levantarse, levantar.
+    const named = stripAccents(normalize(guess.inf))
+    const inf = named === stripAccents(prompt.inf) || (Boolean(prompt.refl) && named === `${stripAccents(prompt.inf)}se`)
     const tense = readings.some((r) => r.tense === guess.tense)
     const person = readings.some((r) => r.person === guess.person && (!tense || r.tense === guess.tense))
     return { inf, tense, person, correct: inf && tense && person, readings }

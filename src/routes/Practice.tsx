@@ -1,11 +1,11 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
-import { TENSES, type Person, type TenseId } from '@engine/conjugate'
+import { PERSONS, TENSES, type Person, type TenseId } from '@engine/conjugate'
 import { explain, normalize, personLabel, type Prompt, type Regularity, type Verdict } from '@engine/check'
 import { AccentInput, AccentKeys } from '@/components/AccentInput'
 import { useGrammarProgress, useProgress } from '@/lib/progress'
 import {
-  buildSession, candidatePairs, markAnswer, sessionLength, conj, displayInf, loadSettings, saveSettings,
+  buildSession, candidatePairs, checker, markAnswer, sessionLength, conj, displayInf, loadSettings, saveSettings,
   tensesByLevel, unitSettings, unlockPages, unlocked, verbByInf, verbs, type Item, type Settings, type Unlocked,
 } from '@/lib/practice'
 import { units } from '@/lib/content'
@@ -137,7 +137,9 @@ export default function Practice() {
       </div>
       {session.settings.mode === 'table'
         ? <TableCard key={n} item={item} draft={session.draft} setDraft={setDraft} onNext={next} />
-        : <ConjugateCard key={n} item={item} draft={session.draft} setDraft={setDraft} onNext={next} />}
+        : session.settings.mode === 'identify'
+          ? <IdentifyCard key={n} item={item} draft={session.draft} setDraft={setDraft} onNext={next} />
+          : <ConjugateCard key={n} item={item} draft={session.draft} setDraft={setDraft} onNext={next} />}
     </div>
   )
 }
@@ -215,6 +217,7 @@ function Setup({ settings, setSettings, open, onStart, onWeak }: {
       <div className="mt-2 flex flex-wrap gap-1.5">
         <Chip on={settings.mode === 'conjugate'} onClick={() => set({ mode: 'conjugate' })}>Conjugate · one form at a time</Chip>
         <Chip on={settings.mode === 'table'} onClick={() => set({ mode: 'table' })}>Full table · all six persons</Chip>
+        <Chip on={settings.mode === 'identify'} onClick={() => set({ mode: 'identify' })}>Identify · name the verb, tense and person</Chip>
       </div>
 
       <div className="mt-7 flex items-baseline justify-between gap-3">
@@ -505,6 +508,140 @@ function TableCard({ item, draft, setDraft, onNext }: CardProps) {
   )
 }
 
+/* ---- identify ----------------------------------------------------------- */
+
+const TENSE_GROUPS: Array<[string, TenseId[]]> = [
+  ['Indicativo', ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'perfecto', 'pluscuamperfecto', 'futuro-perfecto', 'condicional-compuesto']],
+  ['Subjuntivo', ['subj-presente', 'subj-imperfecto', 'subj-perfecto', 'subj-pluscuamperfecto']],
+  ['Imperativo', ['imperativo', 'imperativo-negativo']],
+]
+/** Chip labels drop what the group heading already says. */
+const shortTense = (t: TenseId) =>
+  t === 'imperativo' ? 'afirmativo' : t === 'imperativo-negativo' ? 'negativo' : TENSES[t].name.replace(' de subjuntivo', '').replace('pretérito ', '')
+const PERSON_CHIPS = ['yo', 'tú', 'él / usted', 'nosotros', 'vosotros', 'ellos / ustedes']
+
+/** Every reading of a form, e.g. "hablar · presente de subjuntivo, yo or él / usted". */
+function describeReadings(item: Item): string {
+  const readings = checker.readingsOf(item.inf, item.shown ?? '', item.refl)
+  const byTense = new Map<TenseId, Person[]>()
+  for (const r of readings) byTense.set(r.tense, [...(byTense.get(r.tense) ?? []), r.person])
+  const parts = [...byTense].map(([t, ps]) => `${TENSES[t].name}, ${ps.map((p) => personLabel(t, p)).join(' or ')}`)
+  return `${displayInf(item.inf)} · ${parts.join('; ')}`
+}
+
+/** An identification as typed: [infinitive, tense, person]. */
+function describeGuess(typed: string[]): string {
+  const [inf, tense, person] = typed
+  const t = tense as TenseId
+  return [inf || '—', TENSES[t]?.name ?? '—', person !== '' && TENSES[t] ? personLabel(t, Number(person) as Person) : '—'].join(' · ')
+}
+
+function IdentifyCard({ item, draft, setDraft, onNext }: CardProps) {
+  const [inf = '', tense = '', person = ''] = draft.typed
+  const verdict = draft.verdicts?.[0] ?? null
+  const set = (patch: { inf?: string; tense?: string; person?: string }) =>
+    setDraft({ typed: [patch.inf ?? inf, patch.tense ?? tense, patch.person ?? person], verdicts: null })
+  const ready = inf.trim() !== '' && tense !== '' && person !== ''
+
+  const result = verdict
+    ? checker.checkIdentify(item, item.shown ?? '', { inf, tense: tense as TenseId, person: Number(person) as Person })
+    : null
+
+  const submit = () => {
+    if (verdict) return onNext()
+    if (!ready) return
+    const r = checker.checkIdentify(item, item.shown ?? '', { inf, tense: tense as TenseId, person: Number(person) as Person })
+    setDraft({
+      typed: [inf, tense, person],
+      verdicts: [r.correct
+        ? { result: 'correct', expected: describeReadings(item) }
+        : { result: 'wrong', expected: describeReadings(item), diagnosis: { kind: 'unknown' } }],
+    })
+  }
+
+  const mark = (ok: boolean | undefined) =>
+    ok === undefined ? null : <span style={{ color: ok ? 'var(--good)' : 'var(--bad)' }}>{ok ? ' ✓' : ' ✗'}</span>
+
+  const chip = (on: boolean, onClick: () => void, label: string, key: string) => (
+    <button
+      key={key}
+      type="button"
+      // Keep focus in the text field, so Enter still checks.
+      onMouseDown={(e) => e.preventDefault()}
+      onClick={onClick}
+      disabled={Boolean(verdict)}
+      className="rounded px-2.5 py-1.5 text-xs"
+      style={on
+        ? { background: 'var(--accent)', color: 'var(--paper)' }
+        : { background: 'var(--accent-soft)', color: 'var(--ink-soft)' }}
+    >
+      {label}
+    </button>
+  )
+
+  return (
+    <div className="mt-6 rounded-xl px-5 py-5" style={{ background: 'var(--surface)', border: '1px solid var(--edge)' }}>
+      <div className="text-[11px] uppercase tracking-wide" style={{ color: 'var(--accent)' }}>What is this form?</div>
+      <div className="mt-2 text-3xl" style={{ fontFamily: 'var(--font-reading)' }}>{item.shown}</div>
+
+      <label className="mt-5 block text-xs" style={{ color: 'var(--ink-soft)' }}>
+        Infinitive{mark(result?.inf)}
+      </label>
+      <AccentInput
+        autoFocus
+        value={inf}
+        onChange={(v) => set({ inf: v })}
+        onEnter={submit}
+        readOnly={Boolean(verdict)}
+        placeholder="e.g. decir"
+        ariaLabel="Infinitive"
+        className="mt-1 w-full rounded-lg px-3 py-2 outline-none sm:w-64"
+        style={{ fontFamily: 'var(--font-reading)', background: 'var(--paper)', border: '1px solid var(--edge)', color: 'var(--ink)' }}
+      />
+
+      <div className="mt-4 text-xs" style={{ color: 'var(--ink-soft)' }}>Tense{mark(result?.tense)}</div>
+      <div className="mt-1 space-y-1.5">
+        {TENSE_GROUPS.map(([group, tenses]) => (
+          <div key={group} className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-1.5">
+            <span className="shrink-0 text-[11px] sm:w-20" style={{ color: 'var(--ink-soft)' }}>{group}</span>
+            <div className="flex flex-wrap gap-1.5">
+              {tenses.map((t) => chip(tense === t, () => set({ tense: t }), shortTense(t), t))}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="mt-4 text-xs" style={{ color: 'var(--ink-soft)' }}>Person{mark(result?.person)}</div>
+      <div className="mt-1 flex flex-wrap gap-1.5">
+        {PERSONS.map((p) => chip(person === String(p), () => set({ person: String(p) }), PERSON_CHIPS[p], String(p)))}
+      </div>
+
+      {verdict && (
+        <div className="mt-4 text-sm leading-relaxed">
+          <span className="font-medium" style={{ color: VERDICT_STYLE[verdict.result].color }}>
+            {verdict.result === 'correct' ? 'Correct' : 'Not quite'}
+          </span>
+          <span> — {verdict.expected}</span>
+          {(result?.readings.length ?? 0) > 1 && (
+            <div className="mt-1 text-xs" style={{ color: 'var(--ink-soft)' }}>This form has more than one reading; any of them counts.</div>
+          )}
+        </div>
+      )}
+
+      <button
+        onClick={submit}
+        disabled={!verdict && !ready}
+        className="mt-5 rounded-lg px-4 py-2 text-sm"
+        style={verdict || ready
+          ? { background: 'var(--accent)', color: 'var(--paper)' }
+          : { background: 'var(--edge)', color: 'var(--ink-soft)', cursor: 'not-allowed' }}
+      >
+        {verdict ? 'Next ↵' : 'Check ↵'}
+      </button>
+    </div>
+  )
+}
+
 /* ---- summary ------------------------------------------------------------ */
 
 function Summary({ session, onRetry, onAgain, onSettings }: {
@@ -545,6 +682,17 @@ function Summary({ session, onRetry, onAgain, onSettings }: {
           <ul className="mt-2 overflow-hidden rounded-lg" style={{ border: '1px solid var(--edge)' }}>
             {review.map(({ a, misses }, i) => (
               <li key={i} className="px-4 py-2.5 text-sm" style={{ background: 'var(--surface)', borderTop: i ? '1px solid var(--edge)' : undefined }}>
+                {a.item.shown ? (
+                  <>
+                    <div style={{ fontFamily: 'var(--font-reading)' }}>{a.item.shown}</div>
+                    <div className="mt-0.5 text-xs leading-relaxed">
+                      <s style={{ color: 'var(--bad)' }}>{describeGuess(a.typed)}</s>
+                      <span style={{ color: 'var(--ink-soft)' }}> → </span>
+                      <span style={{ color: 'var(--good)' }}>{misses[0]?.v.expected}</span>
+                    </div>
+                  </>
+                ) : (
+                <>
                 <div className="flex flex-wrap items-baseline gap-x-2">
                   <span style={{ fontFamily: 'var(--font-reading)' }}>{displayInf(a.item.inf)}</span>
                   <span className="text-xs" style={{ color: 'var(--ink-soft)' }}>{TENSES[a.item.tense].name}</span>
@@ -557,6 +705,8 @@ function Summary({ session, onRetry, onAgain, onSettings }: {
                     </span>
                   </div>
                 ))}
+                </>
+                )}
               </li>
             ))}
           </ul>

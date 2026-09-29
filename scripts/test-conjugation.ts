@@ -295,6 +295,10 @@ id('hable', 'hablar', ['hablar', 'subj-presente', 1], false)
 id('hubiera dicho', 'decir', ['decir', 'subj-pluscuamperfecto', 0], true)
 id('hubiera dicho', 'decir', ['decir', 'pluscuamperfecto', 0], false)
 id('fue', 'ir', ['ser', 'preterito', 2], false)
+{
+  const r = checker.checkIdentify({ inf: 'levantar', tense: 'preterito', person: 0, refl: true }, 'me levanté', { inf: 'Levantarse', tense: 'preterito', person: 0 })
+  if (!r.correct) fail('identify should accept "levantarse" for a pronominal verb')
+}
 
 /* ---- regularity ------------------------------------------------------- */
 
@@ -318,7 +322,7 @@ for (const [inf, tense, want] of REGULARITY) {
 }
 if (checker.check({ inf: 'conocer', tense: 'presente', person: 0 }, 'conoco').result !== 'wrong') fail('conoco should be wrong')
 
-const total = REGULARITY.length + 1 + CASES.length + NON_FINITE.length * 2 + 4 + CHECKS.length + 1 + DIFFS.length + 1 + 8
+const total = REGULARITY.length + 1 + CASES.length + NON_FINITE.length * 2 + 4 + CHECKS.length + 1 + DIFFS.length + 1 + 9
 if (failures) {
   console.log(`\n\x1b[31m${failures} of ${total} engine checks failed\x1b[0m\n`)
   process.exit(1)

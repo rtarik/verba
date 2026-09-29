@@ -22,7 +22,7 @@ drill never asks for a form the engine gets wrong.
 - [x] **4. Practice page** — `/practice`: tense chips (with unlocking), verb pool (met / irregular only / one verb); **Conjugate** and **Full table** modes; accent shortcuts; summary with "retry misses"
 - [x] **5. Unit practice** — `practice.tenses` per unit in `curriculum.json` (validated); a Practice entry on each unit in the library, drilling the verbs from that unit's texts
 - [x] **6. Mastery** — per tense × person × regularity store; heatmap on the Progress page (click a cell to drill it); **Weak spots** mode (~¼ of each set explores untried cells); drills and grammar-read state in export/import/reset
-- [ ] **7. Identify drill** — see `hubiera dicho`, name the verb, tense and person; ambiguous forms accept any reading
+- [x] **7. Identify drill** — see `hubiera dicho`, name the verb (typed), tense and person (chips); ambiguous forms accept any reading and list them all; `-ra` and `-se` forms both appear. Recognition, so it does not feed the production heatmap
 
 ## Phase 2
 

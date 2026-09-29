@@ -47,7 +47,8 @@ export function unlocked(read: ProgressState, grammarRead: GrammarReadState, eve
 
 /* ---- sessions ----------------------------------------------------------- */
 
-export type Mode = 'conjugate' | 'table'
+/** conjugate: produce one form · table: a whole paradigm · identify: name a form's verb, tense and person. */
+export type Mode = 'conjugate' | 'table' | 'identify'
 /** 'met': every unlocked verb; 'irregular': only where the tense is irregular or stem-changing. */
 export type Pool = 'met' | 'irregular' | 'one'
 
@@ -73,9 +74,16 @@ export interface Settings {
 export interface Item extends Prompt {
   /** Persons to fill in table mode; the single person otherwise. */
   persons: Person[]
+  /**
+   * Identify mode: the form on show. Where a cell has two spellings, either
+   * may appear — hablara and hablase both need recognising.
+   */
+  shown?: string
 }
 
-export const SESSION_LENGTH: Record<Mode, number> = { conjugate: 12, table: 5 }
+export const SESSION_LENGTH: Record<Mode, number> = { conjugate: 12, table: 5, identify: 12 }
+
+const pick = <T,>(xs: T[]): T => xs[Math.floor(Math.random() * xs.length)]
 
 const shuffle = <T,>(xs: T[]): T[] => {
   const a = [...xs]
@@ -167,7 +175,9 @@ export function buildSession(s: Settings, open: Unlocked, m: MasteryState = mast
     if (!fresh.length) continue
     const person = fresh[Math.floor(Math.random() * fresh.length)]
     asked.add(`${inf}|${tense}|${s.mode === 'table' ? '*' : person}`)
-    items.push({ inf, tense, person, refl, persons: s.mode === 'table' ? persons : [person] })
+    const it: Item = { inf, tense, person, refl, persons: s.mode === 'table' ? persons : [person] }
+    if (s.mode === 'identify') it.shown = pick(conj.conjugate(inf, tense, person, { refl }))
+    items.push(it)
   }
   return items
 }
