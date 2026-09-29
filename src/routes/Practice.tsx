@@ -1,14 +1,15 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { TENSES, type Person, type TenseId } from '@engine/conjugate'
-import { explain, normalize, personLabel, type Prompt, type Verdict } from '@engine/check'
+import { explain, normalize, personLabel, type Prompt, type Regularity, type Verdict } from '@engine/check'
 import { AccentInput, AccentKeys } from '@/components/AccentInput'
 import { useGrammarProgress, useProgress } from '@/lib/progress'
 import {
-  buildSession, candidatePairs, sessionLength, checker, conj, displayInf, loadSettings, saveSettings,
+  buildSession, candidatePairs, markAnswer, sessionLength, conj, displayInf, loadSettings, saveSettings,
   tensesByLevel, unitSettings, unlockPages, unlocked, verbByInf, verbs, type Item, type Settings, type Unlocked,
 } from '@/lib/practice'
 import { units } from '@/lib/content'
+import { useMastery } from '@/lib/mastery'
 
 /** One answered item: what was typed and how each cell was marked. */
 interface Answer {
@@ -63,19 +64,40 @@ export default function Practice() {
     if (items.length) setSession(newSession(s, items))
   }
 
-  // Arriving from a unit in the library (#/practice?unit=18) starts its set.
-  // The parameter is dropped straight away, so going back to this page later
-  // does not restart it.
+  // Links start a set: a unit from the library (?unit=18), weak spots
+  // (?weak=1) or one heatmap cell (?cell=preterito.3.irregular) from the
+  // Progress page. The parameter is dropped straight away, so coming back to
+  // this page later does not restart it.
   const [params, setParams] = useSearchParams()
-  const unitParam = Number(params.get('unit'))
+  const query = params.toString()
   useEffect(() => {
-    if (!unitParam) return
-    const s = unitSettings(unitParam)
-    if (s) start(s)
+    if (!query) return
+    const unit = Number(params.get('unit'))
+    const cell = params.get('cell')
+    const base: Settings = { ...settings, mode: 'conjugate', everything: false, unit: undefined }
+    if (unit) {
+      const s = unitSettings(unit)
+      if (s) start(s)
+    } else if (params.get('weak')) {
+      start({ ...base, weak: true })
+    } else if (cell) {
+      const [tense, person, reg] = cell.split('.')
+      start({ ...base, cell: { tense: tense as TenseId, person: Number(person) as Person, reg: (reg || undefined) as Regularity | undefined } })
+    }
     setParams({}, { replace: true })
-  }, [unitParam])
+  }, [query])
 
-  if (!session) return <Setup settings={settings} setSettings={setSettings} open={open} onStart={() => start(settings)} />
+  if (!session) {
+    return (
+      <Setup
+        settings={settings}
+        setSettings={setSettings}
+        open={open}
+        onStart={() => start(settings)}
+        onWeak={() => start({ ...settings, mode: 'conjugate', weak: true })}
+      />
+    )
+  }
 
   const done = session.answers.length >= session.items.length
   if (done) {
@@ -103,15 +125,9 @@ export default function Practice() {
     })
   }
 
-  const unit = session.settings.unit ? units.find((u) => u.unit === session.settings.unit) : undefined
-
   return (
     <div className="mx-auto max-w-2xl px-5 pt-8">
-      {unit && (
-        <div className="mb-3 text-xs" style={{ color: 'var(--ink-soft)' }}>
-          Unit {unit.unit} practice · <span style={{ fontFamily: 'var(--font-reading)', color: 'var(--ink)' }}>{unit.title}</span>
-        </div>
-      )}
+      <SessionLabel settings={session.settings} />
       <div className="flex items-center gap-3">
         <div className="h-1 flex-1 overflow-hidden rounded" style={{ background: 'var(--edge)' }}>
           <div className="h-full rounded" style={{ width: `${(n / session.items.length) * 100}%`, background: 'var(--accent)' }} />
@@ -124,6 +140,23 @@ export default function Practice() {
         : <ConjugateCard key={n} item={item} draft={session.draft} setDraft={setDraft} onNext={next} />}
     </div>
   )
+}
+
+const REG_NAMES: Record<Regularity, string> = {
+  regular: 'regular verbs',
+  spelling: 'verbs with spelling changes',
+  stem: 'stem-changing verbs',
+  irregular: 'irregular verbs',
+}
+
+/** What kind of set this is, when it is not the one built on the setup screen. */
+function SessionLabel({ settings }: { settings: Settings }) {
+  const unit = settings.unit ? units.find((u) => u.unit === settings.unit) : undefined
+  const text = unit ? <>Unit {unit.unit} practice · <span style={{ fontFamily: 'var(--font-reading)', color: 'var(--ink)' }}>{unit.title}</span></>
+    : settings.weak ? 'Weak spots'
+      : settings.cell ? `${TENSES[settings.cell.tense].name} · ${personLabel(settings.cell.tense, settings.cell.person)}${settings.cell.reg ? ` · ${REG_NAMES[settings.cell.reg]}` : ''}`
+        : null
+  return text ? <div className="mb-3 text-xs" style={{ color: 'var(--ink-soft)' }}>{text}</div> : null
 }
 
 /* ---- setup -------------------------------------------------------------- */
@@ -148,12 +181,14 @@ function Chip({ on, locked, title, onClick, children }: { on: boolean; locked?: 
   )
 }
 
-function Setup({ settings, setSettings, open, onStart }: {
+function Setup({ settings, setSettings, open, onStart, onWeak }: {
   settings: Settings
   setSettings: (s: Settings) => void
   open: Unlocked
   onStart: () => void
+  onWeak: () => void
 }) {
+  const practised = Object.keys(useMastery().cells).length
   const set = (patch: Partial<Settings>) => setSettings({ ...settings, ...patch })
   const toggleTense = (t: TenseId) =>
     set({ tenses: settings.tenses.includes(t) ? settings.tenses.filter((x) => x !== t) : [...settings.tenses, t] })
@@ -264,6 +299,21 @@ function Setup({ settings, setSettings, open, onStart }: {
         </span>
       </div>
 
+      {open.tenses.size > 0 && (
+        <button
+          onClick={onWeak}
+          className="mt-4 block w-full rounded-lg px-4 py-3 text-left"
+          style={{ background: 'var(--surface)', border: '1px solid var(--edge)' }}
+        >
+          <span className="font-medium" style={{ fontFamily: 'var(--font-reading)' }}>Weak spots</span>
+          <span className="ml-2 text-sm" style={{ color: 'var(--ink-soft)' }}>
+            {practised
+              ? 'Twelve forms from where you slip most, across every tense you have unlocked.'
+              : 'Nothing practised yet — this samples every tense you have unlocked, and learns from there.'}
+          </span>
+        </button>
+      )}
+
       <p className="mt-10 text-xs leading-relaxed" style={{ color: 'var(--ink-soft)' }}>
         Type accents as a' → á, n~ → ñ, u: → ü, or use the buttons. A missing accent counts as right,
         with a warning — unless the accent is what tells two forms apart, as in <i>hablo</i> / <i>habló</i>.
@@ -340,7 +390,7 @@ function ConjugateCard({ item, draft, setDraft, onNext }: CardProps) {
 
   const submit = () => {
     if (verdict) return onNext()
-    if (typed.trim()) setDraft({ typed: [typed], verdicts: [checker.check(item, typed)] })
+    if (typed.trim()) setDraft({ typed: [typed], verdicts: [markAnswer(item, typed)] })
   }
   const style = verdict ? VERDICT_STYLE[verdict.result] : null
 
@@ -397,7 +447,7 @@ function TableCard({ item, draft, setDraft, onNext }: CardProps) {
   const inputs = useRef<Array<HTMLInputElement | null>>([])
   const setTyped = (next: string[]) => setDraft({ typed: next, verdicts: null })
 
-  const check = () => setDraft({ typed, verdicts: item.persons.map((person, i) => checker.check({ ...item, person }, typed[i])) })
+  const check = () => setDraft({ typed, verdicts: item.persons.map((person, i) => markAnswer({ ...item, person }, typed[i])) })
   const enter = (i: number) => {
     if (verdicts) return onNext()
     if (i < item.persons.length - 1) inputs.current[i + 1]?.focus()

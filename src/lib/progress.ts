@@ -128,6 +128,13 @@ export const grammarProgress = {
     }
   },
 
+  /** Merge a backup in: a page read in either copy counts as read. */
+  merge(incoming: GrammarReadState) {
+    const next = { ...grammarState }
+    for (const [id, rec] of Object.entries(incoming)) if (!next[id] && rec?.readAt) next[id] = rec
+    commitGrammar(next)
+  },
+
   reset: () => commitGrammar({}),
 }
 

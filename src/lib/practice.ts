@@ -9,7 +9,8 @@
 import type { VerbEntry } from '@content/schema'
 import verbsJson from '@content/build/verbs.json'
 import { DRILL_TENSES, TENSES, type Person, type TenseId, type VerbSpecs } from '@engine/conjugate'
-import { createChecker, type Prompt } from '@engine/check'
+import { createChecker, type Prompt, type Regularity, type Verdict } from '@engine/check'
+import { mastery, score, cellKey, type MasteryState } from '@/lib/mastery'
 import { grammarById, library, units } from '@/lib/content'
 import type { ProgressState, GrammarReadState } from '@/lib/progress'
 
@@ -63,6 +64,10 @@ export interface Settings {
    * Unlocking does not apply — the unit was chosen on purpose.
    */
   unit?: number
+  /** Weak spots: cells drawn by how weak they are. */
+  weak?: boolean
+  /** One cell of the mastery grid, from the Progress page heatmap. */
+  cell?: { tense: TenseId; person: Person; reg?: Regularity }
 }
 
 export interface Item extends Prompt {
@@ -79,6 +84,13 @@ const shuffle = <T,>(xs: T[]): T[] => {
     ;[a[i], a[j]] = [a[j], a[i]]
   }
   return a
+}
+
+/** Mark an answer and record it against the learner's mastery. */
+export function markAnswer(item: Prompt, typed: string): Verdict {
+  const verdict = checker.check(item, typed)
+  mastery.record({ inf: item.inf, tense: item.tense, person: item.person, reg: checker.regularity(item.inf, item.tense), verdict })
+  return verdict
 }
 
 /* ---- unit practice ------------------------------------------------------ */
@@ -129,7 +141,9 @@ export function sessionLength(mode: Mode, pairs: Array<{ inf: string; tense: Ten
   return Math.min(SESSION_LENGTH[mode], available)
 }
 
-export function buildSession(s: Settings, open: Unlocked): Item[] {
+export function buildSession(s: Settings, open: Unlocked, m: MasteryState = mastery.snapshot()): Item[] {
+  if (s.weak) return weakSession(open, m)
+  if (s.cell) return cellSession(s.cell, open, m)
   const pairs = candidatePairs(s, open)
   if (!pairs.length) return []
   const length = sessionLength(s.mode, pairs)
@@ -158,6 +172,87 @@ export function buildSession(s: Settings, open: Unlocked): Item[] {
   return items
 }
 
+/* ---- weak spots --------------------------------------------------------- */
+
+const item = (inf: string, tense: TenseId, person: Person): Item => ({
+  inf, tense, person, refl: conj.spec(inf).refl ?? false, persons: [person],
+})
+
+/** Pick one entry, each with probability proportional to its weight. */
+function weighted<T>(entries: Array<[T, number]>): T {
+  const total = entries.reduce((n, [, w]) => n + w, 0)
+  let r = Math.random() * total
+  for (const [x, w] of entries) if ((r -= w) <= 0) return x
+  return entries[entries.length - 1][0]
+}
+
+/** Verbs that caused misses come up more often, but never exclusively. */
+const verbWeight = (inf: string, m: MasteryState) => 1 + Math.min(4, m.verbs[inf]?.misses ?? 0)
+
+/** Open verbs grouped by how they behave in each open tense. */
+function verbsByCell(open: Unlocked): Map<string, string[]> {
+  const groups = new Map<string, string[]>()
+  for (const tense of open.tenses) {
+    for (const inf of open.verbs) {
+      for (const person of conj.persons(inf, tense)) {
+        const k = cellKey(tense, person, checker.regularity(inf, tense))
+        const g = groups.get(k)
+        if (g) g.push(inf)
+        else groups.set(k, [inf])
+      }
+    }
+  }
+  return groups
+}
+
+/** Share of a weak-spots set spent exploring cells never practised. */
+const EXPLORE = 0.25
+
+/**
+ * Cells drawn in proportion to how weak they are. About a quarter of the set
+ * explores cells never practised — enough to find new weak spots, never
+ * enough to drown the known ones (there are far more untried cells than
+ * weak ones). With no history at all, the whole set explores.
+ */
+function weakSession(open: Unlocked, m: MasteryState): Item[] {
+  const groups = verbsByCell(open)
+  const seen: Array<[string, number]> = []
+  const unseen: Array<[string, number]> = []
+  for (const k of groups.keys()) {
+    const rec = m.cells[k]
+    if (rec) seen.push([k, Math.max(0.03, 1 - score(rec)) ** 1.5])
+    else unseen.push([k, 1])
+  }
+  if (!seen.length && !unseen.length) return []
+  const items: Item[] = []
+  const asked = new Set<string>()
+  for (let n = 0; items.length < SESSION_LENGTH.conjugate && n < 500; n++) {
+    const explore = !seen.length || (unseen.length > 0 && Math.random() < EXPLORE)
+    const k = weighted(explore ? unseen : seen)
+    const [tense, person] = k.split('|')
+    const inf = weighted(groups.get(k)!.map((v) => [v, verbWeight(v, m)] as [string, number]))
+    const id = `${inf}|${k}`
+    if (asked.has(id)) continue
+    asked.add(id)
+    items.push(item(inf, tense as TenseId, Number(person) as Person))
+  }
+  return items
+}
+
+/** One cell of the grid, with verbs of the chosen kind (or any kind). */
+function cellSession(cell: NonNullable<Settings['cell']>, open: Unlocked, m: MasteryState): Item[] {
+  const infs = [...open.verbs].filter(
+    (inf) => conj.persons(inf, cell.tense).includes(cell.person) && (!cell.reg || checker.regularity(inf, cell.tense) === cell.reg)
+  )
+  const picked: string[] = []
+  const pool = infs.map((v) => [v, verbWeight(v, m)] as [string, number])
+  while (picked.length < Math.min(SESSION_LENGTH.conjugate, infs.length)) {
+    const inf = weighted(pool.filter(([v]) => !picked.includes(v)))
+    picked.push(inf)
+  }
+  return picked.map((inf) => item(inf, cell.tense, cell.person))
+}
+
 /* ---- remembered settings ------------------------------------------------ */
 
 const SETTINGS_KEY = 'verba.practice.settings.v1'
@@ -167,7 +262,7 @@ export function loadSettings(): Settings | null {
     const raw = localStorage.getItem(SETTINGS_KEY)
     if (!raw) return null
     const s = JSON.parse(raw) as Settings
-    return { ...s, unit: undefined, tenses: s.tenses.filter((t) => (DRILL_TENSES as readonly string[]).includes(t)) }
+    return { ...s, unit: undefined, weak: undefined, cell: undefined, tenses: s.tenses.filter((t) => (DRILL_TENSES as readonly string[]).includes(t)) }
   } catch {
     return null
   }

@@ -2,7 +2,9 @@ import { useMemo, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { lexicon, readingOrder } from '@/lib/content'
 import { coverage, tally, useVocab, vocab, type Status } from '@/lib/vocab'
-import { progress, useProgress, type ProgressState } from '@/lib/progress'
+import { grammarProgress, progress, useGrammarProgress, useProgress, type GrammarReadState, type ProgressState } from '@/lib/progress'
+import { mastery, useMastery, type MasteryState } from '@/lib/mastery'
+import { MasteryGrid } from '@/components/MasteryGrid'
 
 const COLORS: Record<Status, string> = {
   known: 'var(--accent)',
@@ -16,6 +18,8 @@ const ROW_CAP = 200
 export default function Stats() {
   const state = useVocab()
   const readState = useProgress()
+  const grammarState = useGrammarProgress()
+  const masteryState = useMastery()
   const corpusLemmas = useMemo(() => Object.keys(lexicon), [])
   const counts = tally(state, corpusLemmas)
   const fileInput = useRef<HTMLInputElement>(null)
@@ -38,9 +42,12 @@ export default function Stats() {
   }, [state, filter, query])
 
   const download = () => {
-    // Both stores travel together — exporting only vocabulary would quietly
-    // drop which texts have been read.
-    const blob = new Blob([vocab.exportJSON({ progress: readState })], { type: 'application/json' })
+    // Every store travels together — exporting only vocabulary would quietly
+    // drop which texts and grammar pages have been read, and drill history.
+    const blob = new Blob(
+      [vocab.exportJSON({ progress: readState, grammar: grammarState, drills: masteryState })],
+      { type: 'application/json' }
+    )
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
     a.href = url
@@ -53,8 +60,10 @@ export default function Stats() {
     try {
       const raw = await file.text()
       const { added, merged } = vocab.importJSON(raw)
-      const parsed = JSON.parse(raw) as { progress?: ProgressState }
+      const parsed = JSON.parse(raw) as { progress?: ProgressState; grammar?: GrammarReadState; drills?: MasteryState }
       if (parsed.progress) progress.replace({ ...readState, ...parsed.progress })
+      if (parsed.grammar) grammarProgress.merge(parsed.grammar)
+      if (parsed.drills) mastery.merge(parsed.drills)
       setNotice(`Imported — ${added} new word${added === 1 ? '' : 's'}, ${merged} merged.`)
     } catch {
       setNotice('That file could not be read as a Verba backup.')
@@ -160,6 +169,9 @@ export default function Stats() {
         </p>
       )}
 
+      <h2 className="mt-10 text-lg font-semibold" style={{ fontFamily: 'var(--font-reading)' }}>Conjugation</h2>
+      <MasteryGrid />
+
       <h2 className="mt-10 text-lg font-semibold" style={{ fontFamily: 'var(--font-reading)' }}>Your data</h2>
       <p className="mt-1 max-w-xl text-sm leading-relaxed" style={{ color: 'var(--ink-soft)' }}>
         Progress lives in this browser only — there is no account and no server. Clearing site data
@@ -185,9 +197,11 @@ export default function Stats() {
         />
         <button
           onClick={() => {
-            if (confirm('Erase all vocabulary and reading progress? This cannot be undone.')) {
+            if (confirm('Erase all vocabulary, reading progress and drill history? This cannot be undone.')) {
               vocab.reset()
               progress.reset()
+              grammarProgress.reset()
+              mastery.reset()
               setNotice('Progress cleared.')
             }
           }}
