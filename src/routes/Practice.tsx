@@ -3,10 +3,9 @@ import { Link, useSearchParams } from 'react-router-dom'
 import { PERSONS, TENSES, type Person, type TenseId } from '@engine/conjugate'
 import { explain, normalize, personLabel, type Prompt, type Regularity, type Verdict } from '@engine/check'
 import { AccentInput, AccentKeys } from '@/components/AccentInput'
-import { useGrammarProgress, useProgress } from '@/lib/progress'
 import {
   buildSession, candidatePairs, checker, markAnswer, sessionLength, conj, displayInf, loadSettings, saveSettings,
-  tensesByLevel, unitSettings, unlockPages, unlocked, verbByInf, verbs, type Item, type Settings, type Unlocked,
+  tensesByLevel, unitSettings, verbByInf, verbs, type Item, type Settings,
 } from '@/lib/practice'
 import { units } from '@/lib/content'
 import { useMastery } from '@/lib/mastery'
@@ -40,27 +39,17 @@ const newSession = (settings: Settings, items: Item[]): Session => ({ settings, 
  */
 let sessionMemo: Session | null = null
 
-function defaultSettings(open: Unlocked): Settings {
-  // Start with the most advanced tenses the reading has reached.
-  const level = [...tensesByLevel].reverse().find((l) => l.tenses.some((t) => open.tenses.has(t)))
-  const tenses = level ? level.tenses.filter((t) => open.tenses.has(t)) : (['presente'] as TenseId[])
-  return { mode: 'conjugate', tenses, pool: 'met', verb: '', everything: false }
-}
+const DEFAULT_SETTINGS: Settings = { mode: 'conjugate', tenses: ['presente', 'preterito', 'imperfecto'], pool: 'all', verb: '' }
 
 export default function Practice() {
-  const read = useProgress()
-  const grammarRead = useGrammarProgress()
-  const [settings, setSettings] = useState<Settings>(
-    () => loadSettings() ?? defaultSettings(unlocked(read, grammarRead, false))
-  )
-  const open = useMemo(() => unlocked(read, grammarRead, settings.everything), [read, grammarRead, settings.everything])
+  const [settings, setSettings] = useState<Settings>(() => loadSettings() ?? DEFAULT_SETTINGS)
   const [session, setSession] = useState<Session | null>(sessionMemo)
 
   useEffect(() => { saveSettings(settings) }, [settings])
   useEffect(() => { sessionMemo = session }, [session])
 
   const start = (s: Settings) => {
-    const items = buildSession(s, unlocked(read, grammarRead, s.everything))
+    const items = buildSession(s)
     if (items.length) setSession(newSession(s, items))
   }
 
@@ -74,7 +63,7 @@ export default function Practice() {
     if (!query) return
     const unit = Number(params.get('unit'))
     const cell = params.get('cell')
-    const base: Settings = { ...settings, mode: 'conjugate', everything: false, unit: undefined }
+    const base: Settings = { ...settings, mode: 'conjugate', unit: undefined }
     if (unit) {
       const s = unitSettings(unit)
       if (s) start(s)
@@ -92,7 +81,6 @@ export default function Practice() {
       <Setup
         settings={settings}
         setSettings={setSettings}
-        open={open}
         onStart={() => start(settings)}
         onWeak={() => start({ ...settings, mode: 'conjugate', weak: true })}
       />
@@ -163,30 +151,24 @@ function SessionLabel({ settings }: { settings: Settings }) {
 
 /* ---- setup -------------------------------------------------------------- */
 
-function Chip({ on, locked, title, onClick, children }: { on: boolean; locked?: boolean; title?: string; onClick: () => void; children: ReactNode }) {
+function Chip({ on, title, onClick, children }: { on: boolean; title?: string; onClick: () => void; children: ReactNode }) {
   return (
     <button
       onClick={onClick}
-      disabled={locked}
       title={title}
       className="rounded px-2.5 py-1.5 text-xs"
-      style={
-        locked
-          ? { border: '1px dashed var(--edge)', color: 'var(--ink-soft)', opacity: 0.6, cursor: 'not-allowed' }
-          : on
-            ? { background: 'var(--accent)', color: 'var(--paper)' }
-            : { background: 'var(--accent-soft)', color: 'var(--ink-soft)' }
-      }
+      style={on
+        ? { background: 'var(--accent)', color: 'var(--paper)' }
+        : { background: 'var(--accent-soft)', color: 'var(--ink-soft)' }}
     >
       {children}
     </button>
   )
 }
 
-function Setup({ settings, setSettings, open, onStart, onWeak }: {
+function Setup({ settings, setSettings, onStart, onWeak }: {
   settings: Settings
   setSettings: (s: Settings) => void
-  open: Unlocked
   onStart: () => void
   onWeak: () => void
 }) {
@@ -194,7 +176,7 @@ function Setup({ settings, setSettings, open, onStart, onWeak }: {
   const set = (patch: Partial<Settings>) => setSettings({ ...settings, ...patch })
   const toggleTense = (t: TenseId) =>
     set({ tenses: settings.tenses.includes(t) ? settings.tenses.filter((x) => x !== t) : [...settings.tenses, t] })
-  const pairs = useMemo(() => candidatePairs(settings, open), [settings, open])
+  const pairs = useMemo(() => candidatePairs(settings), [settings])
   const length = sessionLength(settings.mode, pairs)
   const [verbText, setVerbText] = useState(settings.verb ? displayInf(settings.verb) : '')
 
@@ -209,8 +191,8 @@ function Setup({ settings, setSettings, open, onStart, onWeak }: {
     <div className="mx-auto max-w-2xl px-5 pt-8">
       <h1 className="text-2xl font-semibold" style={{ fontFamily: 'var(--font-reading)' }}>Practice</h1>
       <p className="mt-2 max-w-xl text-sm leading-relaxed" style={{ color: 'var(--ink-soft)' }}>
-        Conjugation drills built from the verbs in your texts. Tenses open as you read their grammar
-        pages, and verbs as you read the texts that introduce them.
+        Conjugation drills built from the verbs in the course texts. Pick any tenses; every
+        verb is available.
       </p>
 
       <h2 className="mt-7 text-[11px] uppercase tracking-wide" style={{ color: 'var(--accent)' }}>Drill</h2>
@@ -220,33 +202,17 @@ function Setup({ settings, setSettings, open, onStart, onWeak }: {
         <Chip on={settings.mode === 'identify'} onClick={() => set({ mode: 'identify' })}>Identify · name the verb, tense and person</Chip>
       </div>
 
-      <div className="mt-7 flex items-baseline justify-between gap-3">
-        <h2 className="text-[11px] uppercase tracking-wide" style={{ color: 'var(--accent)' }}>Tenses</h2>
-        <label className="flex items-center gap-1.5 text-xs" style={{ color: 'var(--ink-soft)' }}>
-          <input type="checkbox" checked={settings.everything} onChange={(e) => set({ everything: e.target.checked })} />
-          Show everything
-        </label>
-      </div>
+      <h2 className="mt-7 text-[11px] uppercase tracking-wide" style={{ color: 'var(--accent)' }}>Tenses</h2>
       <div className="mt-2 space-y-2.5">
         {tensesByLevel.map(({ level, tenses }) => (
           <div key={level} className="flex items-baseline gap-1.5">
             <span className="w-7 shrink-0 text-[11px]" style={{ color: 'var(--ink-soft)' }}>{level}</span>
             <div className="flex flex-wrap gap-1.5">
-            {tenses.map((t) => {
-              const locked = !open.tenses.has(t)
-              const page = unlockPages(t)[0]
-              return (
-                <Chip
-                  key={t}
-                  on={settings.tenses.includes(t)}
-                  locked={locked}
-                  title={locked && page ? `Read “${page.title}” to unlock` : TENSES[t].en}
-                  onClick={() => toggleTense(t)}
-                >
-                  {locked && '🔒 '}{TENSES[t].name}
-                </Chip>
-              )
-            })}
+            {tenses.map((t) => (
+              <Chip key={t} on={settings.tenses.includes(t)} title={TENSES[t].en} onClick={() => toggleTense(t)}>
+                {TENSES[t].name}
+              </Chip>
+            ))}
             </div>
           </div>
         ))}
@@ -254,8 +220,8 @@ function Setup({ settings, setSettings, open, onStart, onWeak }: {
 
       <h2 className="mt-7 text-[11px] uppercase tracking-wide" style={{ color: 'var(--accent)' }}>Verbs</h2>
       <div className="mt-2 flex flex-wrap items-center gap-1.5">
-        <Chip on={settings.pool === 'met'} onClick={() => set({ pool: 'met' })}>
-          All verbs you have met <span className="tabular-nums opacity-70">{open.verbs.size}</span>
+        <Chip on={settings.pool === 'all'} onClick={() => set({ pool: 'all' })}>
+          All verbs <span className="tabular-nums opacity-70">{verbs.length}</span>
         </Chip>
         <Chip on={settings.pool === 'irregular'} onClick={() => set({ pool: 'irregular' })}>Irregular and stem-changing only</Chip>
         <Chip on={settings.pool === 'one'} onClick={() => set({ pool: 'one' })}>One verb</Chip>
@@ -272,16 +238,13 @@ function Setup({ settings, setSettings, open, onStart, onWeak }: {
               style={{ background: 'var(--surface)', border: '1px solid var(--edge)', color: 'var(--ink)' }}
             />
             <datalist id="practice-verbs">
-              {verbs.filter((v) => open.verbs.has(v.inf)).map((v) => <option key={v.inf} value={displayInf(v.inf)}>{v.gloss}</option>)}
+              {verbs.map((v) => <option key={v.inf} value={displayInf(v.inf)}>{v.gloss}</option>)}
             </datalist>
           </>
         )}
       </div>
       {settings.pool === 'one' && verbText && !settings.verb && (
         <p className="mt-2 text-xs" style={{ color: 'var(--ink-soft)' }}>No course verb “{verbText}”.</p>
-      )}
-      {settings.pool === 'one' && settings.verb && !open.verbs.has(settings.verb) && (
-        <p className="mt-2 text-xs" style={{ color: 'var(--ink-soft)' }}>You have not met “{displayInf(settings.verb)}” in a text yet — tick “Show everything” to drill it anyway.</p>
       )}
 
       <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -298,24 +261,22 @@ function Setup({ settings, setSettings, open, onStart, onWeak }: {
         <span className="text-xs" style={{ color: 'var(--ink-soft)' }}>
           {pairs.length
             ? `Drawn from ${pairs.length} verb–tense combinations`
-            : settings.tenses.some((t) => open.tenses.has(t)) ? 'Nothing matches these settings.' : 'Pick at least one tense.'}
+            : settings.tenses.length ? 'Nothing matches these settings.' : 'Pick at least one tense.'}
         </span>
       </div>
 
-      {open.tenses.size > 0 && (
-        <button
-          onClick={onWeak}
-          className="mt-4 block w-full rounded-lg px-4 py-3 text-left"
-          style={{ background: 'var(--surface)', border: '1px solid var(--edge)' }}
-        >
-          <span className="font-medium" style={{ fontFamily: 'var(--font-reading)' }}>Weak spots</span>
-          <span className="ml-2 text-sm" style={{ color: 'var(--ink-soft)' }}>
-            {practised
-              ? 'Twelve forms from where you slip most, across every tense you have unlocked.'
-              : 'Nothing practised yet — this samples every tense you have unlocked, and learns from there.'}
-          </span>
-        </button>
-      )}
+      <button
+        onClick={onWeak}
+        className="mt-4 block w-full rounded-lg px-4 py-3 text-left"
+        style={{ background: 'var(--surface)', border: '1px solid var(--edge)' }}
+      >
+        <span className="font-medium" style={{ fontFamily: 'var(--font-reading)' }}>Weak spots</span>
+        <span className="ml-2 text-sm" style={{ color: 'var(--ink-soft)' }}>
+          {practised
+            ? 'Twelve forms from where you slip most, across every tense.'
+            : 'Nothing practised yet — this samples every tense, and learns from there.'}
+        </span>
+      </button>
 
       <p className="mt-10 text-xs leading-relaxed" style={{ color: 'var(--ink-soft)' }}>
         Type accents as a' → á, n~ → ñ, u: → ü, or use the buttons. A missing accent counts as right,

@@ -1,26 +1,23 @@
 /**
  * Practice: what can be drilled, and building a session from it.
  *
- * Unlocking follows the reading, the same way vocabulary does. A tense opens
- * once one of its grammar pages is read, or a text linking to one; a verb
- * opens once the text that introduces it is read. "Show everything" lifts
- * both, for anyone who wants to drill ahead.
+ * Every drill tense and every verb the course uses is always available;
+ * nothing waits on reading progress.
  */
 import type { VerbEntry } from '@content/schema'
 import verbsJson from '@content/build/verbs.json'
 import { DRILL_TENSES, TENSES, type Person, type TenseId, type VerbSpecs } from '@engine/conjugate'
 import { createChecker, type Prompt, type Regularity, type Verdict } from '@engine/check'
 import { mastery, score, cellKey, type MasteryState } from '@/lib/mastery'
-import { grammarById, library, units } from '@/lib/content'
-import type { ProgressState, GrammarReadState } from '@/lib/progress'
+import { library, units } from '@/lib/content'
 
-const data = verbsJson as { specs: VerbSpecs; entries: VerbEntry[]; unlock: Record<string, string[]> }
+const data = verbsJson as { specs: VerbSpecs; entries: VerbEntry[] }
 
 export const checker = createChecker(data.specs)
 export const conj = checker.conjugator
 export const verbs: VerbEntry[] = [...data.entries].sort((a, b) => a.inf.localeCompare(b.inf, 'es'))
 export const verbByInf = new Map(verbs.map((v) => [v.inf, v]))
-export const unlockPages = (t: TenseId) => (data.unlock[t] ?? []).map((id) => grammarById(id)).filter((d) => d !== undefined)
+const allVerbs = verbs.map((v) => v.inf)
 
 /** How a verb is shown: pronominal verbs with their -se. */
 export const displayInf = (inf: string) => (conj.spec(inf).refl ? `${inf}se` : inf)
@@ -28,29 +25,12 @@ export const displayInf = (inf: string) => (conj.spec(inf).refl ? `${inf}se` : i
 export const LEVELS = ['A1', 'A2', 'B1', 'B2'] as const
 export const tensesByLevel = LEVELS.map((level) => ({ level, tenses: DRILL_TENSES.filter((t) => TENSES[t].level === level) }))
 
-/* ---- unlocking ---------------------------------------------------------- */
-
-export interface Unlocked {
-  tenses: Set<TenseId>
-  verbs: Set<string>
-}
-
-export function unlocked(read: ProgressState, grammarRead: GrammarReadState, everything: boolean): Unlocked {
-  if (everything) return { tenses: new Set(DRILL_TENSES), verbs: new Set(verbs.map((v) => v.inf)) }
-  const met = new Set(Object.keys(grammarRead))
-  for (const t of library) if (read[t.id]) for (const g of t.grammarRefs) met.add(g)
-  return {
-    tenses: new Set(DRILL_TENSES.filter((t) => (data.unlock[t] ?? []).some((g) => met.has(g)))),
-    verbs: new Set(verbs.filter((v) => read[v.firstSeenIn]).map((v) => v.inf)),
-  }
-}
-
 /* ---- sessions ----------------------------------------------------------- */
 
 /** conjugate: produce one form · table: a whole paradigm · identify: name a form's verb, tense and person. */
 export type Mode = 'conjugate' | 'table' | 'identify'
-/** 'met': every unlocked verb; 'irregular': only where the tense is irregular or stem-changing. */
-export type Pool = 'met' | 'irregular' | 'one'
+/** 'all': every course verb; 'irregular': only where the tense is irregular or stem-changing. */
+export type Pool = 'all' | 'irregular' | 'one'
 
 export interface Settings {
   mode: Mode
@@ -58,12 +38,7 @@ export interface Settings {
   pool: Pool
   /** The verb for pool 'one'. */
   verb: string
-  /** Ignore unlocking and offer every tense and verb. */
-  everything: boolean
-  /**
-   * A unit's own practice set: its tenses, with the verbs from its texts.
-   * Unlocking does not apply — the unit was chosen on purpose.
-   */
+  /** A unit's own practice set: its tenses, with the verbs from its texts. */
   unit?: number
   /** Weak spots: cells drawn by how weak they are. */
   weak?: boolean
@@ -116,13 +91,13 @@ export function unitVerbs(unit: number): string[] {
 export function unitSettings(unit: number): Settings | null {
   const u = units.find((x) => x.unit === unit)
   if (!u?.practice || !u.textIds.length) return null
-  return { mode: 'conjugate', tenses: u.practice.tenses as TenseId[], pool: 'met', verb: '', everything: true, unit }
+  return { mode: 'conjugate', tenses: u.practice.tenses as TenseId[], pool: 'all', verb: '', unit }
 }
 
 /** Every verb × tense pair the settings allow. */
-export function candidatePairs(s: Settings, open: Unlocked): Array<{ inf: string; tense: TenseId }> {
-  const tenses = s.unit ? s.tenses : s.tenses.filter((t) => open.tenses.has(t))
-  const pool = s.unit ? unitVerbs(s.unit) : s.pool === 'one' ? (verbByInf.has(s.verb) ? [s.verb] : []) : [...open.verbs]
+export function candidatePairs(s: Settings): Array<{ inf: string; tense: TenseId }> {
+  const tenses = s.tenses
+  const pool = s.unit ? unitVerbs(s.unit) : s.pool === 'one' ? (verbByInf.has(s.verb) ? [s.verb] : []) : allVerbs
   const pairs: Array<{ inf: string; tense: TenseId }> = []
   for (const tense of tenses) {
     for (const inf of pool) {
@@ -149,10 +124,10 @@ export function sessionLength(mode: Mode, pairs: Array<{ inf: string; tense: Ten
   return Math.min(SESSION_LENGTH[mode], available)
 }
 
-export function buildSession(s: Settings, open: Unlocked, m: MasteryState = mastery.snapshot()): Item[] {
-  if (s.weak) return weakSession(open, m)
-  if (s.cell) return cellSession(s.cell, open, m)
-  const pairs = candidatePairs(s, open)
+export function buildSession(s: Settings, m: MasteryState = mastery.snapshot()): Item[] {
+  if (s.weak) return weakSession(m)
+  if (s.cell) return cellSession(s.cell, m)
+  const pairs = candidatePairs(s)
   if (!pairs.length) return []
   const length = sessionLength(s.mode, pairs)
 
@@ -199,11 +174,13 @@ function weighted<T>(entries: Array<[T, number]>): T {
 /** Verbs that caused misses come up more often, but never exclusively. */
 const verbWeight = (inf: string, m: MasteryState) => 1 + Math.min(4, m.verbs[inf]?.misses ?? 0)
 
-/** Open verbs grouped by how they behave in each open tense. */
-function verbsByCell(open: Unlocked): Map<string, string[]> {
+/** Verbs grouped by how they behave in each tense. Worked out once, on first use. */
+let cellGroups: Map<string, string[]> | null = null
+function verbsByCell(): Map<string, string[]> {
+  if (cellGroups) return cellGroups
   const groups = new Map<string, string[]>()
-  for (const tense of open.tenses) {
-    for (const inf of open.verbs) {
+  for (const tense of DRILL_TENSES) {
+    for (const inf of allVerbs) {
       for (const person of conj.persons(inf, tense)) {
         const k = cellKey(tense, person, checker.regularity(inf, tense))
         const g = groups.get(k)
@@ -212,6 +189,7 @@ function verbsByCell(open: Unlocked): Map<string, string[]> {
       }
     }
   }
+  cellGroups = groups
   return groups
 }
 
@@ -224,8 +202,8 @@ const EXPLORE = 0.25
  * enough to drown the known ones (there are far more untried cells than
  * weak ones). With no history at all, the whole set explores.
  */
-function weakSession(open: Unlocked, m: MasteryState): Item[] {
-  const groups = verbsByCell(open)
+function weakSession(m: MasteryState): Item[] {
+  const groups = verbsByCell()
   const seen: Array<[string, number]> = []
   const unseen: Array<[string, number]> = []
   for (const k of groups.keys()) {
@@ -250,8 +228,8 @@ function weakSession(open: Unlocked, m: MasteryState): Item[] {
 }
 
 /** One cell of the grid, with verbs of the chosen kind (or any kind). */
-function cellSession(cell: NonNullable<Settings['cell']>, open: Unlocked, m: MasteryState): Item[] {
-  const infs = [...open.verbs].filter(
+function cellSession(cell: NonNullable<Settings['cell']>, m: MasteryState): Item[] {
+  const infs = allVerbs.filter(
     (inf) => conj.persons(inf, cell.tense).includes(cell.person) && (!cell.reg || checker.regularity(inf, cell.tense) === cell.reg)
   )
   const picked: string[] = []
@@ -271,8 +249,15 @@ export function loadSettings(): Settings | null {
   try {
     const raw = localStorage.getItem(SETTINGS_KEY)
     if (!raw) return null
-    const s = JSON.parse(raw) as Settings
-    return { ...s, unit: undefined, weak: undefined, cell: undefined, tenses: s.tenses.filter((t) => (DRILL_TENSES as readonly string[]).includes(t)) }
+    const s = JSON.parse(raw) as Settings & { everything?: boolean }
+    // Older saves called the whole pool 'met' and carried an unlock override.
+    const { everything: _, ...rest } = s
+    return {
+      ...rest,
+      pool: (s.pool as string) === 'met' ? 'all' : s.pool,
+      unit: undefined, weak: undefined, cell: undefined,
+      tenses: s.tenses.filter((t) => (DRILL_TENSES as readonly string[]).includes(t)),
+    }
   } catch {
     return null
   }

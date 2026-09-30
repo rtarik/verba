@@ -327,20 +327,9 @@ export const zVerbSpecs = z.record(z.string(), zVerbSpec)
 const _specsAgree: [VerbSpec, z.infer<typeof zVerbSpec>] = [{} as z.infer<typeof zVerbSpec>, {} as VerbSpec]
 void _specsAgree
 
-/**
- * content/practice.json: which grammar pages open each drill tense. A tense
- * unlocks once any of its pages is read, or a text linking to one of them.
- */
-export const zPractice = z.object({
-  unlock: z.record(z.string(), z.array(z.string()).min(1)),
-})
-export type Practice = z.infer<typeof zPractice>
-
 /** One drillable verb, as the build emits it for the app. */
 export interface VerbEntry {
   inf: string
   gloss: string
-  /** The text that introduces it; drills unlock the verb once that text is read. */
-  firstSeenIn: string
   level: 'A1' | 'A2' | 'B1' | 'B2'
 }

@@ -10,11 +10,11 @@ import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs'
 import { join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import {
-  zSourceText, zLexicon, zCurriculum, zAudioSidecar, zText, zGrammarMeta, zVerbSpecs, zPractice,
+  zSourceText, zLexicon, zCurriculum, zAudioSidecar, zText, zGrammarMeta, zVerbSpecs,
   type SourceText, type Text, type Token, type WordToken,
   type Phrase, type LexiconEntry, type Curriculum, type AudioSidecar, type VerbEntry,
 } from '../../content/schema.ts'
-import { createConjugator, DRILL_TENSES, type VerbSpecs } from '../../engine/conjugate.ts'
+import { createConjugator, type VerbSpecs } from '../../engine/conjugate.ts'
 import { annotate, createAnalyzer } from '../../engine/analyze.ts'
 import { tokenize, wordSurfaces, hashBody } from './tokenize.ts'
 
@@ -49,11 +49,8 @@ export interface CompiledCorpus {
   /** Every lemma encountered, derived from the texts and curated overrides. */
   lexicon: Record<string, LexiconEntry & { firstSeenIn: string }>
   curriculum: Curriculum
-  /**
-   * Every verb the course uses, the irregularity data to conjugate them, and
-   * which grammar pages unlock each drill tense.
-   */
-  verbs: { specs: VerbSpecs; entries: VerbEntry[]; unlock: Record<string, string[]> }
+  /** Every verb the course uses, and the irregularity data to conjugate them. */
+  verbs: { specs: VerbSpecs; entries: VerbEntry[] }
   diagnostics: Diagnostics
 }
 
@@ -175,22 +172,10 @@ function checkVerbs(
   const parsed = zVerbSpecs.safeParse(readJson(join(CONTENT, 'verbs.json')))
   if (!parsed.success) {
     for (const issue of parsed.error.issues) errors.push(`verbs.json: ${issue.path.join('.')} — ${issue.message}`)
-    return { specs: {}, entries: [], unlock: {} }
+    return { specs: {}, entries: [] }
   }
   const specs = parsed.data
 
-  const practice = zPractice.safeParse(readJson(join(CONTENT, 'practice.json')))
-  const unlock = practice.success ? practice.data.unlock : {}
-  if (!practice.success) {
-    for (const issue of practice.error.issues) errors.push(`practice.json: ${issue.path.join('.')} — ${issue.message}`)
-  }
-  for (const tense of DRILL_TENSES) {
-    if (practice.success && !unlock[tense]) errors.push(`practice.json: no unlock pages for tense "${tense}"`)
-  }
-  for (const [tense, ids] of Object.entries(unlock)) {
-    if (!(DRILL_TENSES as readonly string[]).includes(tense)) errors.push(`practice.json: "${tense}" is not a drill tense`)
-    for (const id of ids) if (!grammar().ids.has(id)) errors.push(`practice.json: ${tense} unlocks from "${id}", which is not a grammar page`)
-  }
   // Lemmas of words tagged as verbs on the page. The compiled lexicon's own pos
   // cannot be used: it is looked up by surface form, so the adjective
   // "abierto" inherits the pos of the participle "abierto".
@@ -212,7 +197,7 @@ function checkVerbs(
     analyzer = createAnalyzer(conj, lemmas)
   } catch (e) {
     errors.push(`conjugation engine failed: ${(e as Error).message}`)
-    return { specs, entries: [], unlock }
+    return { specs, entries: [] }
   }
 
   const seen = new Set<string>()
@@ -264,9 +249,9 @@ function checkVerbs(
       continue
     }
     const entry = lexicon[inf]
-    entries.push({ inf, gloss, firstSeenIn: entry.firstSeenIn, level: entry.level ?? 'A1' })
+    entries.push({ inf, gloss, level: entry.level ?? 'A1' })
   }
-  return { specs, entries, unlock }
+  return { specs, entries }
 }
 
 let _grammar: { ids: Set<string>; errors: string[] } | null = null

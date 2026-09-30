@@ -39,11 +39,17 @@ export const AccentInput = forwardRef<HTMLInputElement, Props>(function AccentIn
   const input = useRef<HTMLInputElement>(null)
   useImperativeHandle(ref, () => input.current!)
 
+  // The accent keys call `insert` registered at focus time, long after that
+  // render's props have gone stale. Reading the live field and the latest
+  // onChange through a ref keeps a tap from writing an old value back.
+  const latest = useRef({ onChange, readOnly })
+  latest.current = { onChange, readOnly }
+
   /** Apply shortcuts, keeping the caret where it was relative to the text after it. */
   const update = (raw: string, caret: number) => {
     const next = applyShortcuts(raw)
     const after = raw.length - caret
-    onChange(next)
+    latest.current.onChange(next)
     requestAnimationFrame(() => {
       const el = input.current
       if (el && document.activeElement === el) el.setSelectionRange(next.length - after, next.length - after)
@@ -52,10 +58,11 @@ export const AccentInput = forwardRef<HTMLInputElement, Props>(function AccentIn
 
   const insert = (ch: string) => {
     const el = input.current
-    if (!el || readOnly) return
-    const start = el.selectionStart ?? value.length
-    const end = el.selectionEnd ?? value.length
-    update(value.slice(0, start) + ch + value.slice(end), start + ch.length)
+    if (!el || latest.current.readOnly) return
+    const current = el.value
+    const start = el.selectionStart ?? current.length
+    const end = el.selectionEnd ?? current.length
+    update(current.slice(0, start) + ch + current.slice(end), start + ch.length)
   }
 
   return (
